@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<rdf:RDF
+   xmlns:dct="http://purl.org/dc/terms/"
+   xmlns:airiv="https://w3id.org/airiv#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+
+
+<rdf:Description rdf:about="https://w3id.org/dpv/airiv#Purpose">
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <skos:prefLabel xml:lang="en">Purpose</skos:prefLabel>
+    <skos:definition xml:lang="en">Intended purpose of an AI system</skos:definition>
+    <dct:source rdf:resource="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://w3id.org/dpv/airiv#ContentGeneration">
+      <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+      <skos:prefLabel xml:lang="en">Content Generation</skos:prefLabel>
+      <skos:definition xml:lang="en">Generation or manipulation of content</skos:definition>
+      <dct:source rdf:resource="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206"/>
+      <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:broader rdf:resource="https://w3id.org/dpv/airiv#Purpose"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://w3id.org/dpv/airiv#GeneratingAudioContent">
+        <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <skos:prefLabel xml:lang="en">Generating Audio Content</skos:prefLabel>
+        <skos:definition xml:lang="en">Generation or manipulation of audio content</skos:definition>
+        <dct:source rdf:resource="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206"/>
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="https://w3id.org/dpv/airiv#ContentGeneration"/>
+      </rdf:Description>
+
+      <rdf:Description rdf:about="https://w3id.org/dpv/airiv#GeneratingImageContent">
+          <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+          <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+          <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+          <skos:prefLabel xml:lang="en">Generating Image Content</skos:prefLabel>
+          <skos:definition xml:lang="en">Generation or manipulation of image content</skos:definition>
+          <dct:source rdf:resource="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021PC0206"/>
+          <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+          <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+          <skos:broader rdf:resource="https://w3id.org/dpv/airiv#ContentGeneration"/>
+        </rdf:Description>
+
+
+</rdf:RDF>
