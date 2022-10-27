@@ -1,0 +1,2 @@
+# airiv
+AI risk vocabulary
