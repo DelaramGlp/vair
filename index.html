@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>AIRiV (AI Risk Vocabulary) </title>
+  <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
+  <script class="remove">
+    var respecConfig = {
+      // shortName: "",
+      // title: "",
+      subtitle: "version 0.1",
+      github: {
+        repoURL: "https://github.com/delaramglp/airiv",
+        branch: "main"
+      },
+      // subjectPrefix: "[]",
+      editors: [{
+        "name": "Delaram Golpaygani",
+        "url": "https://protect-network.eu/people/delaram-golpayegani-esr-4/",
+        "company": "Trinity College Dublin",
+        "companyURL": "https://www.tcd.ie/",
+        "mailto": "delaram.golpayegani@adaptcentre.ie"
+      },
+
+      ],
+
+    };
+  </script>
+  <style type="text/css">
+    .indent {
+      margin-left: 40px;
+    }
+
+    .head a:hover>img[src*='ogc'] {
+      opacity: 0.8;
+    }
+
+    .table-top {
+      background-color: grey;
+      text-align: center;
+      border-width: 5px;
+      color: white;
+      font-size: 15px;
+      border-width: 2px;
+      border-color: black;
+      border-style: solid;
+
+    }
+
+    .table-title {
+      background-color: rgba(128, 128, 128, 0.712);
+      text-align: center;
+      border-width: 5px;
+      color: white;
+      font-size: 14px;
+      border-width: 2px;
+      border-color: black;
+      border-style: solid;
+    }
+
+    .table-cell {
+      font-size: 13px;
+      border-style: solid;
+
+    }
+  </style>
+</head>
+
+<body>
+  <section id="abstract">
+    <p></p>
+  </section>
+  <section id="sotd">
+    <p></p>
+  </section>
+  <section class="informative">
+    <h2>Introduction</h2>
+    <a class="self-link" aria-label="§" href="https://w3id.org/hart/main.html#intro"></a>
+    <p>
+    AIRiV is a vocabulary of AI risks.
+    </p>
+
+  </section>
+
+
+
+
+  <section id="Namespaces">
+    <h2>Namespaces</h2>
+
+    <table class="def">
+      <tbody>
+        <tr>
+          <th>Prefix</th>
+          <th>Namespace</th>
+        </tr>
+        <tr>
+          <td>airiv</td>
+          <td>http://wwww.w3id.org/airiv#</td>
+        </tr>
+        <tr>
+          <td>rdfs</td>
+          <td>http://www.w3.org/2000/01/rdf-schema#</td>
+        </tr>
+        <tr>
+
+        <tr>
+          <td>dct</td>
+          <td>http://purl.org/dc/terms/</td>
+        </tr>
+
+        <tr>
+          <td>xsd</td>
+          <td>http://www.w3.org/2001/XMLSchema#</td>
+        </tr>
+        <td>dpv</td>
+        <td>http://www.w3.org/ns/dpv#</td>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </section>
+
+  <!-- <section id="conformance">
+    <p>
+      This is required for specifications that contain normative material.
+    </p>
+  </section> -->
+  <section id="KeyConcepts">
+    <h2 id="KeyConcepts">
+      <bdi class="secno"></bdi>Key Concepts
+      <a class="self-link" aria-label="§" href=""></a>
+    </h2>
+    <p>
+  In this section, key AIRiV concepts are represented:
+    </p>
+
+  <section data-dfn-for="Purpose">
+    <h2 id="Purpose">
+      <bdi class="secno"> </bdi> Purpose
+      <a class="self-link" aria-label="§" href="https://w3id.org/airiv#Purpose"></a>
+    </h2>
+    <table class="definition">
+      <tbody>
+        <tr>
+          <td> IRI </td>
+          <td><code> https://w3id.org/airiv#Purpose </code></td>
+        <tr>
+          <td> Term </td>
+          <td><code><dfn> Purpose </dfn></code></td>
+        </tr>
+        <tr>
+          <td> Label </td>
+          <td> Purpose </td>
+        </tr>
+        <tr>
+          <td> Definition </td>
+          <td> Intended purpose of an AI system</td>
+        </tr>
+        <tr>
+          <th>Source:</th>
+          <td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52021PC0206&from=EN">AI Act proposal</a>,</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</section>
+
+  <section id="purposes">
+    <h2 id="purposes">
+      <bdi class="secno"></bdi>AI Purposes
+      <a class="self-link" aria-label="§" href=""></a>
+    </h2>
+
+
+    <section data-dfn-for="ContentGeneration">
+      <h3 id="ContentGeneration">
+        <bdi class="secno"> </bdi> Content Generation
+        <a class="self-link" aria-label="§" href="https://w3id.org/airiv#ContentGeneration"></a>
+      </h3>
+      <table class="definition">
+        <tbody>
+          <tr>
+            <td> IRI </td>
+            <td><code> https://w3id.org/airiv#ContentGeneration </code></td>
+          <tr>
+            <td> Term </td>
+            <td><code><dfn> ContentGeneration </dfn></code></td>
+          </tr>
+          <tr>
+            <td> Label </td>
+            <td> Content Generation </td>
+          </tr>
+          <tr>
+            <td> Definition </td>
+            <td>Generation or manipulation of content</td>
+          </tr>
+          <tr>
+            <td> SubType of </td>
+            <td> <a href="https://w3id.org/airiv#Purpose"> airiv:Purpose <td>
+          </tr>
+          <tr>
+            <th>Source:</th>
+            <td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52021PC0206&from=EN">AI Act proposal</a>,</td>
+          </tr>
+        </tbody>
+      </table>
+
+    <section data-dfn-for="GeneratingAudioContent">
+      <h4 id="GeneratingAudioContent">
+        <bdi class="secno"> </bdi> Generating Audio Content
+        <a class="self-link" aria-label="§" href="https://w3id.org/airiv#GeneratingAudioContent"></a>
+      </h4>
+      <table class="definition">
+        <tbody>
+          <tr>
+            <td> IRI </td>
+            <td><code> https://w3id.org/airiv#GeneratingAudioContent </code></td>
+          <tr>
+            <td> Term </td>
+            <td><code><dfn> GeneratingAudioContent </dfn></code></td>
+          </tr>
+          <tr>
+            <td> Label </td>
+            <td> Generating Audio Content</td>
+          </tr>
+          <tr>
+            <td> Definition </td>
+            <td> Generation or manipulation of audio content</td>
+          </tr>
+          <tr>
+            <td> SubType of </td>
+            <td> <a href="https://w3id.org/airiv#ContentGeneration"> airiv:ContentGenration <td>
+          </tr>
+          <tr>
+            <th>Source:</th>
+            <td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52021PC0206&from=EN">AI Act proposal</a>,</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section data-dfn-for="GeneratingImageContent">
+      <h4 id="GeneratingImageContent">
+        <bdi class="secno"> </bdi> Generating Image Content
+        <a class="self-link" aria-label="§" href="https://w3id.org/airiv#GeneratingImageContent"></a>
+      </h4>
+      <table class="definition">
+        <tbody>
+          <tr>
+            <td> IRI </td>
+            <td><code> https://w3id.org/airiv#GeneratingImageContent </code></td>
+          <tr>
+            <td> Term </td>
+            <td><code><dfn> GeneratingImageContent </dfn></code></td>
+          </tr>
+          <tr>
+            <td> Label </td>
+            <td> Generating Image Content</td>
+          </tr>
+          <tr>
+            <td> Definition </td>
+            <td> Generation or manipulation of image content</td>
+          </tr>
+          <tr>
+            <td> SubType of </td>
+            <td> <a href="https://w3id.org/airiv#ContentGeneration"> airiv:ContentGenration <td>
+          </tr>
+          <tr>
+            <th>Source:</th>
+            <td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52021PC0206&from=EN">AI Act proposal</a>,</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section data-dfn-for="GeneratingVideoContent">
+      <h4 id="GeneratingVideoContent">
+        <bdi class="secno"> </bdi> Generating Video Content
+        <a class="self-link" aria-label="§" href="https://w3id.org/airiv#GeneratingVideoContent"></a>
+      </h4>
+      <table class="definition">
+        <tbody>
+          <tr>
+            <td> IRI </td>
+            <td><code> https://w3id.org/airiv#GeneratingVideoContent </code></td>
+          <tr>
+            <td> Term </td>
+            <td><code><dfn> GeneratingVideoContent </dfn></code></td>
+          </tr>
+          <tr>
+            <td> Label </td>
+            <td> Generating Video Content</td>
+          </tr>
+          <tr>
+            <td> Definition </td>
+            <td> Generation or manipulation of video content</td>
+          </tr>
+          <tr>
+            <td> SubType of </td>
+            <td> <a href="https://w3id.org/airiv#ContentGeneration"> airiv:ContentGenration <td>
+          </tr>
+          <tr>
+            <th>Source:</th>
+            <td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52021PC0206&from=EN">AI Act proposal</a>,</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </section>
+    </section>
+
+    <section id="AITechniques">
+      <h2 id="AITechniques">
+        <bdi class="secno"></bdi>AI Techniques
+        <a class="self-link" aria-label="§" href=""></a>
+      </h2>
+    </section>
+
+
+    <section id="AIRiskSources">
+      <h2>
+        <bdi class="secno"></bdi>AI Risk Sources
+        <a class="self-link" aria-label="§" href=""></a>
+      </h2>
+    </section>
+
+    <section id="AIRisks">
+      <h2>
+        <bdi class="secno"></bdi>AI Risks
+        <a class="self-link" aria-label="§" href=""></a>
+      </h2>
+    </section>
+
+    <section id="AIConsequences">
+      <h2>
+        <bdi class="secno"></bdi>AI Consequences
+          <a class="self-link" aria-label="§" href=""></a>
+      </h2>
+    </section>
+
+    <section id="AIImpacts">
+      <h2>
+        <bdi class="secno"></bdi>AI Impacts
+        <a class="self-link" aria-label="§" href=""></a>
+      </h2>
+    </section>
+
+    <section id="Impacted Areas">
+      <h2>
+        <bdi class="secno"></bdi>Impacted Areas
+        <a class="self-link" aria-label="§" href=""></a>
+      </h2>
+    </section>
+
+    <section id="AISubjects">
+      <h2>
+        <bdi class="secno"></bdi>AI Subjects
+        <a class="self-link" aria-label="§" href=""></a>
+      </h2>
+    </section>
+
+
+</body>
+
+</html>
