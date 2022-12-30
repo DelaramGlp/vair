@@ -1005,7 +1005,7 @@
   <skos:definition xml:lang="en">functional element that constructs an AI system. [ISo/IEC 22989, 3.1.2] </skos:definition>
   <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
 </rdf:Description>
-</rdf:RDF>
+
 
 
 </rdf:RDF>
