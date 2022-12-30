@@ -1124,4 +1124,42 @@
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
   </rdf:Description>
 
+#-----------Forms of AI-------------
+
+<rdf:Description rdf:about="https://w3id.org/airiv#Service">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Service</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AISystemForm"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#Product">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Product</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AISystemForm"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#Software">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Software</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AISystemForm"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#SafetyComponent">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Safety Component</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AISystemForm"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
 </rdf:RDF>
