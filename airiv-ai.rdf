@@ -6,7 +6,7 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-#
+#-----------Capability--------------
 <rdf:Description rdf:about="https://w3id.org/airiv#AutomaticSummarisation">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
@@ -277,4 +277,176 @@
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
   </rdf:Description>
 
+#-----------Techniqe--------------
+<rdf:Description rdf:about="https://w3id.org/airiv#SymbolicReasoning">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Symbolic Reasoning</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#KnowledgeBasedTechnique"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#LogicBasedTechnique">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Logic Based Technique</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Technique"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#KnowledgeRepresentation">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Knowledge Representation</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#KnowledgeBasedTechnique"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#StatisticalTechnique">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Statistical Technique</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Technique"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#OptimisationMethod">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Optimisation Method</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#StatisticalTechnique"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#BayesianEstimation">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Bayesian Estimation</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#StatisticalTechnique"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#CommonSenseReasoning">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Common Sense Reasoning</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#ReasoningTechnique"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#KnowledgeBasedTechnique">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Knowledge Based Technique</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Technique"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#UnsupervisedLearning">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Unsupervised Learning</skos:prefLabel>
+    <skos:definition xml:lang="en">machine learning that makes only use of unlabelled data during training [ISO/IEC 22989, 3.3.17]</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#MachineLearningTechnique"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#ReasoningTechnique">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">ReasoningTechnique</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Technique"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#SearchMethod">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Search Method</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#StatisticalTechnique"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#SupervisedLearning">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Supervised Learning</skos:prefLabel>
+    <skos:definition xml:lang="en">machine learning that makes only use of labelled data during training [ISO/IEC 22989, 3.3.11]</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#MachineLearningTechnique"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#InductiveProgramming">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Inductive Programming</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#KnowledgeBasedTechnique"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#BayesianOptimisation">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Bayesian Optimisation</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#StatisticalTechnique"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#ReinforcementLearning">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Reinforcement Learning</skos:prefLabel>
+    <skos:definition xml:lang="en">learning of an optimal sequence of actions to maximize a reward through interaction with an environment [ISO/IEC 22989, 3.3.9]</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#MachineLearningTechnique"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#MachineLearningTechnique">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">MachineLearningTechnique</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#LearningTechnique"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#LearningTechnique">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Learning Technique</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Technique"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#CaseBasedReasoning">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Case Based Reasoning</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#ReasoningTechnique"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#SemiSupervisedLearning">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Semi Supervised Learning</skos:prefLabel>
+    <skos:definition xml:lang="en">machine learning that makes use of both labelled and unlabelled data during training [ISO/IEC 22989, 3.3.11]</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#MachineLearningTechnique"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
 </rdf:RDF>
