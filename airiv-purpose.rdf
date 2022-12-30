@@ -8,6 +8,7 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
+#-----------Purpose--------------
   <rdf:Description rdf:about="https://w3id.org/airiv#EvaluatingRecruitmentTest">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
@@ -942,4 +943,7 @@
     <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Assessment"/>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
   </rdf:Description>
+
+
+
 </rdf:RDF>
