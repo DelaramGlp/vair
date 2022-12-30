@@ -1,9 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF
-   xmlns:dct="http://purl.org/dc/terms/"
    xmlns:airiv="https://w3id.org/airiv#"
    xmlns:airo="https://w3id.org/airo#"
-   xmlns:owl="http://www.w3.org/2002/07/owl#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
@@ -944,6 +942,161 @@
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
   </rdf:Description>
 
+#-----------Domain--------------
+<rdf:Description rdf:about="https://w3id.org/airiv#Education">
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+   <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+   <skos:prefLabel xml:lang="en">Education</skos:prefLabel>
+   <skos:definition xml:lang="en"></skos:definition>
+   <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Domain"/>
+   <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+ </rdf:Description>
+ <rdf:Description rdf:about="https://w3id.org/airiv#PublicService">
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+   <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+   <skos:prefLabel xml:lang="en">Public Service</skos:prefLabel>
+   <skos:definition xml:lang="en"></skos:definition>
+   <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Domain"/>
+   <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+ </rdf:Description>
+ <rdf:Description rdf:about="https://w3id.org/airiv#SelfEmployment">
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+   <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+   <skos:prefLabel xml:lang="en">Self-Employment</skos:prefLabel>
+   <skos:definition xml:lang="en"></skos:definition>
+   <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Domain"/>
+   <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+ </rdf:Description>
+ <rdf:Description rdf:about="https://w3id.org/airiv#VocationalTraining">
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+   <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+   <skos:prefLabel xml:lang="en">Vocational Training</skos:prefLabel>
+   <skos:definition xml:lang="en"></skos:definition>
+   <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Domain"/>
+   <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+ </rdf:Description>
+ <rdf:Description rdf:about="https://w3id.org/airiv#Asylum">
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+   <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+   <skos:prefLabel xml:lang="en">Asylum</skos:prefLabel>
+   <skos:definition xml:lang="en"></skos:definition>
+   <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Domain"/>
+   <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+ </rdf:Description>
+ <rdf:Description rdf:about="https://w3id.org/airiv#AdministrationOfDemocraticProcesses">
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+   <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+   <skos:prefLabel xml:lang="en">Administration Of Democratic Processes</skos:prefLabel>
+   <skos:definition xml:lang="en"></skos:definition>
+   <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Domain"/>
+   <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+ </rdf:Description>
+ <rdf:Description rdf:about="https://w3id.org/airiv#CriticalInfrastructure">
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+   <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+   <skos:prefLabel xml:lang="en">Critical Infrastructure</skos:prefLabel>
+   <skos:definition xml:lang="en"></skos:definition>
+   <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Domain"/>
+   <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+ </rdf:Description>
+ <rdf:Description rdf:about="https://w3id.org/airiv#Employment">
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+   <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+   <skos:prefLabel xml:lang="en">Employment</skos:prefLabel>
+   <skos:definition xml:lang="en"></skos:definition>
+   <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Domain"/>
+   <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+ </rdf:Description>
+ <rdf:Description rdf:about="https://w3id.org/airiv#AdministrationOfJustice">
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+   <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+   <skos:prefLabel xml:lang="en">Administration Of Justice</skos:prefLabel>
+   <skos:definition xml:lang="en"></skos:definition>
+   <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Domain"/>
+   <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+ </rdf:Description>
+ <rdf:Description rdf:about="https://w3id.org/airiv#BorderControl">
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+   <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+   <skos:prefLabel xml:lang="en">Border Control</skos:prefLabel>
+   <skos:definition xml:lang="en"></skos:definition>
+   <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Domain"/>
+   <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+ </rdf:Description>
+ <rdf:Description rdf:about="https://w3id.org/airiv#Migration">
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+   <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+   <skos:prefLabel xml:lang="en">Migration</skos:prefLabel>
+   <skos:definition xml:lang="en"></skos:definition>
+   <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Domain"/>
+   <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+ </rdf:Description>
+ <rdf:Description rdf:about="https://w3id.org/airiv#WorkersManagement">
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+   <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+   <skos:prefLabel xml:lang="en">Workers Management</skos:prefLabel>
+   <skos:definition xml:lang="en"></skos:definition>
+   <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Domain"/>
+   <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+ </rdf:Description>
+ <rdf:Description rdf:about="https://w3id.org/airiv#PrivateService">
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+   <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+   <skos:prefLabel xml:lang="en">Private Service</skos:prefLabel>
+   <skos:definition xml:lang="en"></skos:definition>
+   <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Domain"/>
+   <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+ </rdf:Description>
 
+ #-----------Enviroment of Use--------------
+ <rdf:Description rdf:about="https://w3id.org/airiv#DectectionOfCriminalOffences">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Dectection Of Criminal Offences</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#EnvironmentOfUse"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#ProsecutionOfCriminalOffences">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Prosecution Of Criminal Offences</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#EnvironmentOfUse"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#PubliclyAccessibleSpace">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Publicly Accessible Space</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#EnvironmentOfUse"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#InvestigationOfCriminalOffences">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Investigation Of Criminal Offences</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#EnvironmentOfUse"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
 
 </rdf:RDF>
