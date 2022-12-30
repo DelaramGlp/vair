@@ -276,6 +276,7 @@
     <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Capability"/>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
   </rdf:Description>
+
   #-----------Technique--------------
   <rdf:Description rdf:about="https://w3id.org/airiv#SymbolicReasoning">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -449,7 +450,7 @@
       <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
     </rdf:Description>
 
-#-----------Output-------------- 
+#-----------Output--------------
   <rdf:Description rdf:about="https://w3id.org/airiv#Inference">
       <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
       <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
@@ -504,4 +505,164 @@
       <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Output"/>
       <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
     </rdf:Description>
+#-----------Types of AI System--------------
+
+<rdf:Description rdf:about="https://w3id.org/airiv#NarrowAI">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Narrow AI</skos:prefLabel>
+    <skos:definition xml:lang="en">type of AI system that is focused on defined tasks to address a specific problem. [ISO/IEC 22989, 3.1.24]</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AISystem"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#RecommenderSystem">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Recommender System</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AISystem"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#MachineLearningTechnique"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#ExpertSystem">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Expert System</skos:prefLabel>
+    <skos:definition xml:lang="en">AI system that accumulates, combines and encapsulates knowledge provided by a human expert or experts in a specific domain to infer solutions to problems. [ISO/IEC 22989, 3.1.13]</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AISystem"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#ReasoningTechnique"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#SocialRobot">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Social Robot</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#RobotSystem"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#CognitiveComputing">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Cognitive Computing</skos:prefLabel>
+    <skos:definition xml:lang="en">category of AI systems that enables people and machines to interact more naturally [ISO/IEC 22989, 3.1.8]</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AISystem"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#DecisionSupportSystem">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Decision Support System</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AISystem"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#AGI">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">AGI</skos:prefLabel>
+    <skos:definition xml:lang="en">artificial general intelligence</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AISystem"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#GeneralAI"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#ServiceRobot">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Service Robot</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#RobotSystem"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#AutonomousSystem">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Autonomous System</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AISystem"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#IntelligentControlSystem">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Intelligent Control System</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AISystem"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#CognitiveSystem">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Cognitive System</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AISystem"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#MultiAgentSystem">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Multi Agent System</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AISystem"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#RobotSystem">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Robot System</skos:prefLabel>
+    <skos:definition xml:lang="en">automation system with actuators that performs intended tasks in the physical world, by means of sensing its environment and a software control system. [ISO/IEC 22989, 3.1.29]</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AISystem"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#NaturalLanguageProcessingSystem">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Natural Language Processing System</skos:prefLabel>
+    <skos:definition xml:lang="en">information processing based upon natural language understanding or natural language generation. [ISO/IEC 22989, 3.6.9]</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AISystem"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#GeneralAI">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">General AI</skos:prefLabel>
+    <skos:definition xml:lang="en">Type of AI system that addresses a broad range of tasks with a satisfactory level of performance. [ISO/IEC 22989, 3.1.14]</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AISystem"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#IoTSystem">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">IoT System</skos:prefLabel>
+    <skos:definition xml:lang="en">system providing functionalities of IoT. [ISO/IEC 22989, 3.1.20]</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AISystem"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#IndustrialRobot">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Industrial Robot</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#RobotSystem"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+
+
 </rdf:RDF>
