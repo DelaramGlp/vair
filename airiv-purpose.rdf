@@ -1,0 +1,945 @@
+<?xml version="1.0"?>
+<rdf:RDF
+   xmlns:dct="http://purl.org/dc/terms/"
+   xmlns:airiv="https://w3id.org/airiv#"
+   xmlns:airo="https://w3id.org/airo#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://w3id.org/airiv#EvaluatingRecruitmentTest">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Evaluating Recruitment Test</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Employment"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#ExaminingMigrationRelatedComplaints">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Examining Migration Related Complaints</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#ExaminingApplication"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Migration"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Asylum"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#OperatingCriticalDigitalInfrastructure">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Operating Critical Digital Infrastructure</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Operating"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#CriticalInfrastructure"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#InterpretingFacts">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Interpreting Facts</skos:prefLabel>
+    <skos:definition xml:lang="en">Researching and interpreting facts</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#KnowledgeReasoning"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Law"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#GeneratingVideoContent">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Generating Video Content</skos:prefLabel>
+    <skos:definition xml:lang="en">Generation or manipulation of video content</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#ContentGeneration"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#PredictingOccurrenceOfCriminalOffence">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Predicting Occurrence Of Criminal Offence</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#MakingPrediction"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#LawEnforcement"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#EvaluatingJobCandidates">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Evaluating Job Candidates</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Employment"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#MakingPromotionDecision">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Making Promotion Decision</skos:prefLabel>
+    <skos:definition xml:lang="en">Making decisions on promotion</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Employment"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#DispacthingEmergencyService">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Dispacthing Emergency Service</skos:prefLabel>
+    <skos:definition xml:lang="en">Dispatching of emergency first response services, including by firefighters and medical aid</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Planning"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#PublicService"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#EvaluatingInteview">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Evaluating Inteview</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Employment"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#ApplicationScreening">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Application Screening</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Employment"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#AssessingImmigrationEligibility">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Assessing Immigration Eligibility</skos:prefLabel>
+    <skos:definition xml:lang="en">Examination of applications for asylum, visa and residence permits and associated complaints</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Migration"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Asylum"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#OperatingSupplyOfElectricity">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Operating Supply Of Electricity</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Operating"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#CriticalInfrastructure"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#ManagingSupplyOfGas">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Managing Supply Of Gas</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Managing"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#CriticalInfrastructure"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#Identifying">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Identifying</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Purpose"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#AssessingPastCriminalBehaviour">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Assessing Past Criminal Behaviour</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#LawEnforcement"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#Monitoring">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Monitoring</skos:prefLabel>
+    <skos:definition xml:lang="en">Observing and keeping track of something</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Purpose"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#ManagingSupplyOfHeating">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Managing Supply Of Heating</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Managing"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#CriticalInfrastructure"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#RevokingPublicAssisstanceServices">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Revoking Public Assisstance Services</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#DecisionMaking"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#PublicService"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#BiometricCategorisation">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Biometric Categorisation</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#DecisionMaking"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#EvaluatingEligibilityToAccessPublicAssistanceServices">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Evaluating Eligibility To Access Public Assistance Services</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#PublicService"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#AssessingRiskOfReoffending">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Assessing Risk Of Reoffending</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#IndividualRiskAssessment"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#LawEnforcement"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#DeepFakeDetection">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Deep Fake Detection</skos:prefLabel>
+    <skos:definition xml:lang="en">Dectection of content that is generated using deep fake</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Detection"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#GeneratingImageContent">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Generating Image Content</skos:prefLabel>
+    <skos:definition xml:lang="en">Generation or manipulation of image content</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#ContentGeneration"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#PatternRecognition">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Pattern Recognition</skos:prefLabel>
+    <skos:definition xml:lang="en">Identification of unknown patterns in data</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Detection"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#HealthInsuranceRiskAssessment">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Health Insurance Risk Assessment</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#PublicService"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#PrivateService"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#Assessment">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Assessment</skos:prefLabel>
+    <skos:definition xml:lang="en">Assessment and evaluation</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#DecisionMaking"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#ApplyingTheLawToFacts">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Applying The Law To Facts</skos:prefLabel>
+    <skos:definition xml:lang="en">Applying the law to a concrete set of facts</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#KnowledgeReasoning"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Law"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#IndividualRiskAssessment">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Individual Risk Assessment</skos:prefLabel>
+    <skos:definition xml:lang="en">Assessing the risk of a natural person for offending or reoffending or the risk for potential victims of criminal offences</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#LawEnforcement"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#InterpretingLaw">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Interpreting Law</skos:prefLabel>
+    <skos:definition xml:lang="en">Researching and interpreting the law</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#KnowledgeReasoning"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Law"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#AssessingPersonalityTraits">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Assessing Personality Traits</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Assessment"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#Detection">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Detection</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#DecisionMaking"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#ExaminingResidencePermitsApplication">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Examining Residence Permits Application</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#ExaminingApplication"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Migration"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Asylum"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#DetectingEmotionalState">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">DetectingEmotionalState</skos:prefLabel>
+    <skos:definition xml:lang="en">Detection of the emotional state of a natural person</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Detection"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#AssessingRiskOfOffending">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Assessing Risk Of Offending</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#IndividualRiskAssessment"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#LawEnforcement"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#OperatingSupplyOfWater">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Operating Supply Of Water</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Operating"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#CriticalInfrastructure"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#HealthInsurancePricing">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">HealthInsurancePricing</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#DecisionMaking"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#PublicService"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#PrivateService"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#Planning">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Planning</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#DecisionMaking"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#Operating">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Operating</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Purpose"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#PredictingRecidivism">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Predicting Recidivism</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#MakingPrediction"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#LawEnforcement"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#ProducingRecommendation">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Producing Recommendation</skos:prefLabel>
+    <skos:definition xml:lang="en">producing meaningful recommendations to users of the system</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Purpose"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#AssesingStudent">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Assessing Student</skos:prefLabel>
+    <skos:definition xml:lang="en">Assessmening students in educational institutions</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Education"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#ExaminingVisaApplication">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Examining Visa Application</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#ExaminingApplication"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Migration"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Asylum"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#ReducingPublicAssisstanceServices">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Reducing Public Assisstance Services</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#DecisionMaking"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#PublicService"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#DeterminingAdmissionToEducationalInstitutions">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Determining Admission To EducationalI nstitutions
+</skos:prefLabel>
+    <skos:definition xml:lang="en">Determining admission to educational and vocational training institutions or programmes at all levels.</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Education"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#JobApplicationFiltering">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Job Application Filtering</skos:prefLabel>
+    <skos:definition xml:lang="en">Filtering applications for recruitment or selection of natural persons</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Employment"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#ProfilingPeople">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Profiling People</skos:prefLabel>
+    <skos:definition xml:lang="en">Profiling of natural persons </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#PredictingReoccurrenceOfCriminalOffence">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Predicting Reoccurrence Of Criminal Offence</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#MakingPrediction"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#LawEnforcement"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#AllocatingTasks">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Allocating Tasks</skos:prefLabel>
+    <skos:definition xml:lang="en">Assignment of tasks to persons</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Planning"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#BiometricIdentification">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Biometric Identification</skos:prefLabel>
+    <skos:definition xml:lang="en">Identifaction of natural persons using biometric data</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#DecisionMaking"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#DeterminingAccessToEducation">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Determining Access To Education</skos:prefLabel>
+    <skos:definition xml:lang="en">Determining access to educational and vocational training institutions or programmes at all levels.</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Education"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#EvaluatingLearningOutcomes">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Evaluating Learning Outcomes</skos:prefLabel>
+    <skos:definition xml:lang="en">Evaluating learning outcomes, including when those outcomes are used to steer the learning process of natural persons in educational and vocational training institutions or programmes at all levels.</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Education"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#ManagingCriticalDigitalInfrastructure">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Managing Critical Digital Infrastructure</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Managing"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#CriticalInfrastructure"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#EvaluatingReliabilityOfEvidence">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Evaluating Reliability Of Evidence</skos:prefLabel>
+    <skos:definition xml:lang="en">Evaluation of the reliability of evidence in the course of investigation or prosecution of criminal offences</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#LawEnforcement"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#Managing">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Managing</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Purpose"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#ManagingSupplyOfElectricity">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Managing Supply Of Electricity</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Managing"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#CriticalInfrastructure"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#LifeInsuranceRiskAssessment">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Life Insurance Risk Assessment</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#PublicService"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#PrivateService"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#KnowledgeReasoning">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Knowledge Reasoning</skos:prefLabel>
+    <skos:definition xml:lang="en">Capturing knowledge and acquiring new knowledge</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Purpose"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#OperatingRoadTraffic">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Operating Road Traffic</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Operating"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#CriticalInfrastructure"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#AssessingHealthRisk">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Assessing Health Risk</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <skos:related rdf:resource="https://w3id.org/airiv#LawEnforcement"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#LifeInsurancePricing">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Life Insurance Pricing</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#DecisionMaking"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#PublicService"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#PrivateService"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#OperatingSupplyOfGas">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Operating Supply Of Gas</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Operating"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#CriticalInfrastructure"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#MakingTerminationDecision">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Making Termination Decision</skos:prefLabel>
+    <skos:definition xml:lang="en">Making decisions on termination of work-related contractual relationship</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Employment"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#GrantingPublicAssistanceService">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Granting Public Assistance Service</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#DecisionMaking"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#PublicService"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#OperatingSupplyOfHeating">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Operating Supply Of Heating</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Operating"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#CriticalInfrastructure"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#ExaminingApplication">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Examining Application</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#DecisionMaking"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#ContentGeneration">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Content Generation</skos:prefLabel>
+    <skos:definition xml:lang="en">Generation or manipulation of audio content</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Purpose"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#VerifyingAuthenticityOfTravelDocument">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Verifying Authenticity Of Travel Document</skos:prefLabel>
+    <skos:definition xml:lang="en">Verifying of the authenticity of travel documents and supporting documentation of natural persons and detection of non-authentic documents by checking their security features.</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Migration"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Asylum"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#PublicService"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#MonitoringEmployeeBehaviour">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Monitoring Employee Behaviour </skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Monitoring"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Employment"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#DeterminingCreditScore">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Determining Credit Score</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Finance"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#PrioritisationOfEmergencyService">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Prioritisation Of Emergency Service</skos:prefLabel>
+    <skos:definition xml:lang="en">Establishing priority in the dispatching of emergency first response services, including by firefighters and medical aid</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Planning"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#PublicService"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#MakingPrediction">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Making Prediction</skos:prefLabel>
+    <skos:definition xml:lang="en">Predicting something based on the existing information</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Purpose"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#EvaluatingEmployeeBehaviour">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Evaluating Employee Behaviour</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Employment"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#AssessingRiskForPotentialVictimsOfCriminalOffences">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Assessing Risk For Potential Victims Of Criminal Offences</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#IndividualRiskAssessment"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#LawEnforcement"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#AssessingAdmissionTest">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Assessing Admission Test </skos:prefLabel>
+    <skos:definition xml:lang="en">Assessing tests required for admission to educational institutions</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Education"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#AssessingCreditworthiness">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Assessing Creditworthiness </skos:prefLabel>
+    <skos:definition xml:lang="en">Evaluation the creditworthiness of natural persons or establishing their credit score</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Finance"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#AssessingSecurityRisk">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Assessing Security Risk</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#IndividualRiskAssessment"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#LawEnforcement"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#RemoteIdentificationOfPeople">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Remote Identification Of People</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Identifying"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#Recruiting">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Recruiting</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Assessment"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#ManagingRoadTraffic">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Managing Road Traffic</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Managing"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#CriticalInfrastructure"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#AssessingRiskOfIrregularImmigration">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Assessing Risk Of Irregular Immigration</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#IndividualRiskAssessment"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#LawEnforcement"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Migration"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Asylum"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#EvaluatingEmployeePerformance">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Evaluating Employee Performance</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Employment"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#DecisionMaking">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Decision Making</skos:prefLabel>
+    <skos:definition xml:lang="en">Generation of decisions</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Purpose"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#ReclaimingPublicAssisstanceServices">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Reclaiming Public Assisstance Services</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#DecisionMaking"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#PublicService"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#MonitoringEmployeePerformance">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Monitoring Employee Performance</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Monitoring"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Employment"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#ExaminingAsylumApplication">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Examining Asylum Application</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#ExaminingApplication"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Migration"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Asylum"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#ManagingSupplyOfWater">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Managing Supply Of Water</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Managing"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#CriticalInfrastructure"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#DiscoveringCrimePatterns">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Discovering Crime Patterns</skos:prefLabel>
+    <skos:definition xml:lang="en">Identifying unkown patterns of crime</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Detection"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#LawEnforcemnet"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#DetectingNon-AuthenticDocument">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Detecting Non-Authentic Document</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Detection"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#EvaluatingEmployee">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Evaluating Employee</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Employment"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#AssigningPeopleToEducationalInstitutions">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Assigning People To Educational Institutions</skos:prefLabel>
+    <skos:definition xml:lang="en">Assigning natural persons to educational and vocational training institutions or programmes at all levels.</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Education"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#GeneratingAudioContent">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Generating Audio Content</skos:prefLabel>
+    <skos:definition xml:lang="en">Generation or manipulation of audio content</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#ContentGeneration"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#DiscoveringCrimeRelationships">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Discovering Crime Relationships</skos:prefLabel>
+    <skos:definition xml:lang="en">Discovering hidden relationships related to crime</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Detection"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#LawEnforcemnet"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#AdvertisingVacancies">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Advertising Vacancies</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/airiv#Employment"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/airiv#AssessingPeopleRelatedRisk">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+    <skos:prefLabel xml:lang="en">Assessing People Related Risk</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Assessment"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+  </rdf:Description>
+</rdf:RDF>
