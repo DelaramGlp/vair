@@ -664,5 +664,348 @@
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
   </rdf:Description>
 
+#
+
+<rdf:Description rdf:about="https://w3id.org/airiv#SupportVectorMachine">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en">Support Vector Machine</skos:prefLabel>
+  <skos:definition xml:lang="en">machine learning algorithm  that finds decision boundaries with maximal margins. [ISO/IEC 22989 3.3.13]</skos:definition>
+  <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#MachineLearningAlgorithm"/>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#MachineLearningFramework">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en">Machine Learning Framework</skos:prefLabel>
+  <skos:definition xml:lang="en"></skos:definition>
+  <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Framework"/>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#SVM">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en">SVM</skos:prefLabel>
+  <skos:definition xml:lang="en"></skos:definition>
+  <skos:related rdf:resource="https://w3id.org/airiv#SupportVectorMachine"/>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#Algorithm">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en"></skos:prefLabel>
+  <skos:definition xml:lang="en"></skos:definition>
+  <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AIComponent"/>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#Model">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en">Model</skos:prefLabel>
+  <skos:definition xml:lang="en">physical, mathematical or otherwise logical representation of a system, entity, phenomenon, process or data. [ISO/IEC 22989, 3.1.23] </skos:definition>
+  <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AIComponent"/>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#Tool">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en">Tool</skos:prefLabel>
+  <skos:definition xml:lang="en">A tool that has been used in development of an AI system.</skos:definition>
+  <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AIComponent"/>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#Library">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en">Library</skos:prefLabel>
+  <skos:definition xml:lang="en"></skos:definition>
+  <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AIComponent"/>
+  <skos:related rdf:resource="https://w3id.org/airiv#MachineLearningTechnique"/>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#BayesianNetwork">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en">Bayesian Network</skos:prefLabel>
+  <skos:definition xml:lang="en">probabilistic model  that uses Bayesian inference  for probability computations using a directed acyclic graph. [ISO/IEC 22989 3.3.1]</skos:definition>
+  <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Model"/>
+  <skos:related rdf:resource="https://w3id.org/airiv#MachineLearningTechnique"/>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#TrainedModel">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en">Trained Model</skos:prefLabel>
+  <skos:definition xml:lang="en">result of model training [ISO/IEC 22989, 3.3.14] </skos:definition>
+  <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Model"/>
+  <skos:related rdf:resource="https://w3id.org/airiv#ModelTraning"/>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#ConvolutionalNeuralNetwork">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en">Convolutional Neural Network</skos:prefLabel>
+  <skos:definition xml:lang="en">feed forward neural network using convolution  in at least one of its layers. [ISO/IEC 22989 3.4.2] </skos:definition>
+  <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#FeedForwardNeuralNetwork"/>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#ValidationData">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en">Validation Data</skos:prefLabel>
+  <skos:definition xml:lang="en">data used to compare the performance of different candidate models.   [ISO/IEC 22989, 3.2.15] </skos:definition>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#RecurrentNeuralNetwork">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en">Recurrent Neural Network</skos:prefLabel>
+  <skos:definition xml:lang="en">neural network in which outputs from both the previous layer and the previous processing step are fed into the current layer.  [ISO/IEC 22989 3.4.10] </skos:definition>
+  <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#NeuralNetwork"/>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#LongShortTermMemory">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en">Long ShortTerm Memory</skos:prefLabel>
+  <skos:definition xml:lang="en">type of recurrent neural network that processes sequential data with a satisfactory performance for both long and short span dependencies. [ISO/IEC 22989 3.4.7] </skos:definition>
+  <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#RecurrentNeuralNetwork"/>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#GeneticAlgorithm">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en">Genetic Algorithm</skos:prefLabel>
+  <skos:definition xml:lang="en">algorithm which simulates natural selection by creating and evolving a population of individuals (solutions) for optimization problems. [ISO/IEC 22989, 3.1.15] </skos:definition>
+  <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Algorithm"/>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#NeuralNetwork">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en">Neural Network</skos:prefLabel>
+  <skos:definition xml:lang="en">network of one or more layers of neurons connected by weighted links with adjustable weights, which takes input data and produces an output. [ISO/IEC 22989 3.4.8]</skos:definition>
+  <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Algorithm"/>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en"></skos:prefLabel>
+  <skos:definition xml:lang="en"></skos:definition>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#Hardware">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en">Hardware</skos:prefLabel>
+  <skos:definition xml:lang="en"></skos:definition>
+  <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AIComponent"/>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#MachineLearningModel">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en">Machine Learning Model</skos:prefLabel>
+  <skos:definition xml:lang="en">mathematical construct that generates an inference or prediction  based on input data or information. [ISO/IEC 22989, 3.3.7]</skos:definition>
+  <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Model"/>
+  <skos:related rdf:resource="https://w3id.org/airiv#MachineLearningTechnique"/>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#MachineLearningAlgorithm">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en">Machine Learning Algorithm</skos:prefLabel>
+  <skos:definition xml:lang="en">algorithm to determine parameters of a machine learning model from data according to given criteria.  [ISO/IEC 22989 3.3.6]</skos:definition>
+  <skos:related rdf:resource="https://w3id.org/airiv#MachineLearningTechnique"/>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#DecisionTree">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en">Decision Tree</skos:prefLabel>
+  <skos:definition xml:lang="en">model for which inference  is encoded as paths from the root to a leaf node in a tree structure. [ISO/IEC 22989 3.3.2]</skos:definition>
+  <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Model"/>
+  <skos:related rdf:resource="https://w3id.org/airiv#MachineLearningTechnique"/>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#ProductionData">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en">Production Data</skos:prefLabel>
+  <skos:definition xml:lang="en">data acquired during the operation phase of an AI system, for which a deployed AI system calculates a predicted output or inference. [ISO/IEC 22989, 3.2.12] </skos:definition>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#TrainingData">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en">Training Data</skos:prefLabel>
+  <skos:definition xml:lang="en">data used to train a machine learning model.  [ISO/IEC 22989, 3.3.16] </skos:definition>
+  <skos:related rdf:resource="https://w3id.org/airiv#MachineLearningModel"/>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#TensorProcessingUnit">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en">Tensor Processing Unit</skos:prefLabel>
+  <skos:definition xml:lang="en"></skos:definition>
+  <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#ApplicationSpecificIntegratedCircuit"/>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#EvaluationData">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en">Evaluation Data</skos:prefLabel>
+  <skos:definition xml:lang="en"></skos:definition>
+  <skos:related rdf:resource="https://w3id.org/airiv#TestData"/>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#ApplicationSpecificIntegratedCircuit">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en">Application Specific Integrated Circuit</skos:prefLabel>
+  <skos:definition xml:lang="en"></skos:definition>
+  <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Hardware"/>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#PreTrainedModel">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en"></skos:prefLabel>
+  <skos:definition xml:lang="en"></skos:definition>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#InputData">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en">Input Data</skos:prefLabel>
+  <skos:definition xml:lang="en">data for which an AI system calculates a predicted output or inference. [ISO/IEC 22989, 3.2.9] </skos:definition>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#TestData">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en">Test Data</skos:prefLabel>
+  <skos:definition xml:lang="en">data used to assess the performance of a final model. [ISO/IEC 22989, 3.2.14] </skos:definition>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#Data">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en">Data</skos:prefLabel>
+  <skos:definition xml:lang="en"></skos:definition>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#DevelopmentData">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en">Development Data</skos:prefLabel>
+  <skos:definition xml:lang="en"></skos:definition>
+  <skos:related rdf:resource="https://w3id.org/airiv#ValidationData"/>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#MachineLearningLibrary">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en">Machine Learning Library</skos:prefLabel>
+  <skos:definition xml:lang="en"></skos:definition>
+  <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Library"/>
+  <skos:related rdf:resource="https://w3id.org/airiv#MachineLearningTechnique"/>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#EvolutionaryAlgorithm">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en">Evolutionary Algorithm</skos:prefLabel>
+  <skos:definition xml:lang="en"></skos:definition>
+  <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Algorithm"/>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#PersonalData">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en">Personal Data</skos:prefLabel>
+  <skos:definition xml:lang="en">any information that (a) can be used to establish a link between the information and the natural person to whom such information relates, or (b) is or can be directly or indirectly linked to a natural person [ISO/IEC 22989, 3.2.11] </skos:definition>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#Dataset">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en">Dataset</skos:prefLabel>
+  <skos:definition xml:lang="en">Collection of data with a shared format. [ISO/IEC 22989, 3.2.5] </skos:definition>
+  <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AIComponent"/>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#MachineLearningPlatform">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en">Machine Learning Platform</skos:prefLabel>
+  <skos:definition xml:lang="en"></skos:definition>
+  <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#Platform"/>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#FeedForwardNeuralNetwork">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en">Feed Forward Neural Network</skos:prefLabel>
+  <skos:definition xml:lang="en">neural network where information is fed from the input layer to the output layer in one direction only. [ISO/IEC 22989 3.4.6] </skos:definition>
+  <rdfs:subClassOf rdf:resource="https://w3id.org/airiv#NeuralNetwork"/>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#Platform">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en"></skos:prefLabel>
+  <skos:definition xml:lang="en"></skos:definition>
+  <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AIComponent"/>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+<rdf:Description rdf:about="https://w3id.org/airiv#AIComponent">
+  <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:type rdf:resource="https://w3id.org/airiv#Concept"/>
+  <skos:inScheme rdf:resource="https://w3id.org/airiv#"/>
+  <skos:prefLabel xml:lang="en">AI Component</skos:prefLabel>
+  <skos:definition xml:lang="en">functional element that constructs an AI system. [ISo/IEC 22989, 3.1.2] </skos:definition>
+  <rdfs:isDefinedBy rdf:resource="https://w3id.org/airiv#"/>
+</rdf:Description>
+</rdf:RDF>
+
 
 </rdf:RDF>
