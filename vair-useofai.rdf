@@ -1,0 +1,1102 @@
+<?xml version="1.0"?>
+<rdf:RDF
+   xmlns:vair="https://w3id.org/vair#"
+   xmlns:airo="https://w3id.org/airo#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+#-----------Purpose--------------
+  <rdf:Description rdf:about="https://w3id.org/vair#EvaluatingRecruitmentTest">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Evaluating Recruitment Test</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Employment"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ExaminingMigrationRelatedComplaints">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Examining Migration Related Complaints</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#ExaminingApplication"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Migration"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Asylum"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#OperatingCriticalDigitalInfrastructure">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Operating Critical Digital Infrastructure</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Operating"/>
+    <skos:related rdf:resource="https://w3id.org/vair#CriticalInfrastructure"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#InterpretingFacts">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Interpreting Facts</skos:prefLabel>
+    <skos:definition xml:lang="en">Researching and interpreting facts</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#KnowledgeReasoning"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Law"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#GeneratingVideoContent">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Generating Video Content</skos:prefLabel>
+    <skos:definition xml:lang="en">Generation or manipulation of video content</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#ContentGeneration"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#PredictingOccurrenceOfCriminalOffence">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Predicting Occurrence Of Criminal Offence</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#MakingPrediction"/>
+    <skos:related rdf:resource="https://w3id.org/vair#LawEnforcement"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#EvaluatingJobCandidates">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Evaluating Job Candidates</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Employment"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#MakingPromotionDecision">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Making Promotion Decision</skos:prefLabel>
+    <skos:definition xml:lang="en">Making decisions on promotion</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Employment"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#DispacthingEmergencyService">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Dispacthing Emergency Service</skos:prefLabel>
+    <skos:definition xml:lang="en">Dispatching of emergency first response services, including by firefighters and medical aid</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Planning"/>
+    <skos:related rdf:resource="https://w3id.org/vair#PublicService"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#EvaluatingInteview">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Evaluating Inteview</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Employment"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ApplicationScreening">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Application Screening</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Employment"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#AssessingImmigrationEligibility">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Assessing Immigration Eligibility</skos:prefLabel>
+    <skos:definition xml:lang="en">Examination of applications for asylum, visa and residence permits and associated complaints</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Migration"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Asylum"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#OperatingSupplyOfElectricity">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Operating Supply Of Electricity</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Operating"/>
+    <skos:related rdf:resource="https://w3id.org/vair#CriticalInfrastructure"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ManagingSupplyOfGas">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Managing Supply Of Gas</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Managing"/>
+    <skos:related rdf:resource="https://w3id.org/vair#CriticalInfrastructure"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#Identifying">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Identifying</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Purpose"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#AssessingPastCriminalBehaviour">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Assessing Past Criminal Behaviour</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/vair#LawEnforcement"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#Monitoring">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Monitoring</skos:prefLabel>
+    <skos:definition xml:lang="en">Observing and keeping track of something</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Purpose"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ManagingSupplyOfHeating">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Managing Supply Of Heating</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Managing"/>
+    <skos:related rdf:resource="https://w3id.org/vair#CriticalInfrastructure"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#RevokingPublicAssisstanceServices">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Revoking Public Assisstance Services</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#DecisionMaking"/>
+    <skos:related rdf:resource="https://w3id.org/vair#PublicService"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#BiometricCategorisation">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Biometric Categorisation</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#DecisionMaking"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#EvaluatingEligibilityToAccessPublicAssistanceServices">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Evaluating Eligibility To Access Public Assistance Services</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/vair#PublicService"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#AssessingRiskOfReoffending">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Assessing Risk Of Reoffending</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#IndividualRiskAssessment"/>
+    <skos:related rdf:resource="https://w3id.org/vair#LawEnforcement"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#DeepFakeDetection">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Deep Fake Detection</skos:prefLabel>
+    <skos:definition xml:lang="en">Dectection of content that is generated using deep fake</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Detection"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#GeneratingImageContent">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Generating Image Content</skos:prefLabel>
+    <skos:definition xml:lang="en">Generation or manipulation of image content</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#ContentGeneration"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#PatternRecognition">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Pattern Recognition</skos:prefLabel>
+    <skos:definition xml:lang="en">Identification of unknown patterns in data</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Detection"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#HealthInsuranceRiskAssessment">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Health Insurance Risk Assessment</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/vair#PublicService"/>
+    <skos:related rdf:resource="https://w3id.org/vair#PrivateService"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#Assessment">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Assessment</skos:prefLabel>
+    <skos:definition xml:lang="en">Assessment and evaluation</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#DecisionMaking"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ApplyingTheLawToFacts">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Applying The Law To Facts</skos:prefLabel>
+    <skos:definition xml:lang="en">Applying the law to a concrete set of facts</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#KnowledgeReasoning"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Law"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#IndividualRiskAssessment">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Individual Risk Assessment</skos:prefLabel>
+    <skos:definition xml:lang="en">Assessing the risk of a natural person for offending or reoffending or the risk for potential victims of criminal offences</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/vair#LawEnforcement"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#InterpretingLaw">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Interpreting Law</skos:prefLabel>
+    <skos:definition xml:lang="en">Researching and interpreting the law</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#KnowledgeReasoning"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Law"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#AssessingPersonalityTraits">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Assessing Personality Traits</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Assessment"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#Detection">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Detection</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#DecisionMaking"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ExaminingResidencePermitsApplication">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Examining Residence Permits Application</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#ExaminingApplication"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Migration"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Asylum"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#DetectingEmotionalState">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">DetectingEmotionalState</skos:prefLabel>
+    <skos:definition xml:lang="en">Detection of the emotional state of a natural person</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Detection"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#AssessingRiskOfOffending">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Assessing Risk Of Offending</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#IndividualRiskAssessment"/>
+    <skos:related rdf:resource="https://w3id.org/vair#LawEnforcement"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#OperatingSupplyOfWater">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Operating Supply Of Water</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Operating"/>
+    <skos:related rdf:resource="https://w3id.org/vair#CriticalInfrastructure"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#HealthInsurancePricing">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">HealthInsurancePricing</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#DecisionMaking"/>
+    <skos:related rdf:resource="https://w3id.org/vair#PublicService"/>
+    <skos:related rdf:resource="https://w3id.org/vair#PrivateService"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#Planning">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Planning</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#DecisionMaking"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#Operating">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Operating</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Purpose"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#PredictingRecidivism">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Predicting Recidivism</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#MakingPrediction"/>
+    <skos:related rdf:resource="https://w3id.org/vair#LawEnforcement"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ProducingRecommendation">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Producing Recommendation</skos:prefLabel>
+    <skos:definition xml:lang="en">producing meaningful recommendations to users of the system</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Purpose"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#AssesingStudent">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Assessing Student</skos:prefLabel>
+    <skos:definition xml:lang="en">Assessmening students in educational institutions</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Education"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ExaminingVisaApplication">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Examining Visa Application</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#ExaminingApplication"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Migration"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Asylum"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ReducingPublicAssisstanceServices">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Reducing Public Assisstance Services</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#DecisionMaking"/>
+    <skos:related rdf:resource="https://w3id.org/vair#PublicService"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#DeterminingAdmissionToEducationalInstitutions">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Determining Admission To EducationalI nstitutions
+</skos:prefLabel>
+    <skos:definition xml:lang="en">Determining admission to educational and vocational training institutions or programmes at all levels.</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Education"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#JobApplicationFiltering">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Job Application Filtering</skos:prefLabel>
+    <skos:definition xml:lang="en">Filtering applications for recruitment or selection of natural persons</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Employment"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ProfilingPeople">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Profiling People</skos:prefLabel>
+    <skos:definition xml:lang="en">Profiling of natural persons </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#PredictingReoccurrenceOfCriminalOffence">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Predicting Reoccurrence Of Criminal Offence</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#MakingPrediction"/>
+    <skos:related rdf:resource="https://w3id.org/vair#LawEnforcement"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#AllocatingTasks">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Allocating Tasks</skos:prefLabel>
+    <skos:definition xml:lang="en">Assignment of tasks to persons</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Planning"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#BiometricIdentification">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Biometric Identification</skos:prefLabel>
+    <skos:definition xml:lang="en">Identifaction of natural persons using biometric data</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#DecisionMaking"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#DeterminingAccessToEducation">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Determining Access To Education</skos:prefLabel>
+    <skos:definition xml:lang="en">Determining access to educational and vocational training institutions or programmes at all levels.</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Education"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#EvaluatingLearningOutcomes">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Evaluating Learning Outcomes</skos:prefLabel>
+    <skos:definition xml:lang="en">Evaluating learning outcomes, including when those outcomes are used to steer the learning process of natural persons in educational and vocational training institutions or programmes at all levels.</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Education"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ManagingCriticalDigitalInfrastructure">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Managing Critical Digital Infrastructure</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Managing"/>
+    <skos:related rdf:resource="https://w3id.org/vair#CriticalInfrastructure"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#EvaluatingReliabilityOfEvidence">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Evaluating Reliability Of Evidence</skos:prefLabel>
+    <skos:definition xml:lang="en">Evaluation of the reliability of evidence in the course of investigation or prosecution of criminal offences</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/vair#LawEnforcement"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#Managing">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Managing</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Purpose"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ManagingSupplyOfElectricity">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Managing Supply Of Electricity</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Managing"/>
+    <skos:related rdf:resource="https://w3id.org/vair#CriticalInfrastructure"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#LifeInsuranceRiskAssessment">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Life Insurance Risk Assessment</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/vair#PublicService"/>
+    <skos:related rdf:resource="https://w3id.org/vair#PrivateService"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#KnowledgeReasoning">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Knowledge Reasoning</skos:prefLabel>
+    <skos:definition xml:lang="en">Capturing knowledge and acquiring new knowledge</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Purpose"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#OperatingRoadTraffic">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Operating Road Traffic</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Operating"/>
+    <skos:related rdf:resource="https://w3id.org/vair#CriticalInfrastructure"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#AssessingHealthRisk">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Assessing Health Risk</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <skos:related rdf:resource="https://w3id.org/vair#LawEnforcement"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#LifeInsurancePricing">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Life Insurance Pricing</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#DecisionMaking"/>
+    <skos:related rdf:resource="https://w3id.org/vair#PublicService"/>
+    <skos:related rdf:resource="https://w3id.org/vair#PrivateService"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#OperatingSupplyOfGas">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Operating Supply Of Gas</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Operating"/>
+    <skos:related rdf:resource="https://w3id.org/vair#CriticalInfrastructure"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#MakingTerminationDecision">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Making Termination Decision</skos:prefLabel>
+    <skos:definition xml:lang="en">Making decisions on termination of work-related contractual relationship</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Employment"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#GrantingPublicAssistanceService">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Granting Public Assistance Service</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#DecisionMaking"/>
+    <skos:related rdf:resource="https://w3id.org/vair#PublicService"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#OperatingSupplyOfHeating">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Operating Supply Of Heating</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Operating"/>
+    <skos:related rdf:resource="https://w3id.org/vair#CriticalInfrastructure"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ExaminingApplication">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Examining Application</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#DecisionMaking"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ContentGeneration">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Content Generation</skos:prefLabel>
+    <skos:definition xml:lang="en">Generation or manipulation of audio content</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Purpose"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#VerifyingAuthenticityOfTravelDocument">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Verifying Authenticity Of Travel Document</skos:prefLabel>
+    <skos:definition xml:lang="en">Verifying of the authenticity of travel documents and supporting documentation of natural persons and detection of non-authentic documents by checking their security features.</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Migration"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Asylum"/>
+    <skos:related rdf:resource="https://w3id.org/vair#PublicService"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#MonitoringEmployeeBehaviour">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Monitoring Employee Behaviour </skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Monitoring"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Employment"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#DeterminingCreditScore">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Determining Credit Score</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Finance"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#PrioritisationOfEmergencyService">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Prioritisation Of Emergency Service</skos:prefLabel>
+    <skos:definition xml:lang="en">Establishing priority in the dispatching of emergency first response services, including by firefighters and medical aid</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Planning"/>
+    <skos:related rdf:resource="https://w3id.org/vair#PublicService"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#MakingPrediction">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Making Prediction</skos:prefLabel>
+    <skos:definition xml:lang="en">Predicting something based on the existing information</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Purpose"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#EvaluatingEmployeeBehaviour">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Evaluating Employee Behaviour</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Employment"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#AssessingRiskForPotentialVictimsOfCriminalOffences">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Assessing Risk For Potential Victims Of Criminal Offences</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#IndividualRiskAssessment"/>
+    <skos:related rdf:resource="https://w3id.org/vair#LawEnforcement"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#AssessingAdmissionTest">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Assessing Admission Test </skos:prefLabel>
+    <skos:definition xml:lang="en">Assessing tests required for admission to educational institutions</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Education"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#AssessingCreditworthiness">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Assessing Creditworthiness </skos:prefLabel>
+    <skos:definition xml:lang="en">Evaluation the creditworthiness of natural persons or establishing their credit score</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Finance"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#AssessingSecurityRisk">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Assessing Security Risk</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#IndividualRiskAssessment"/>
+    <skos:related rdf:resource="https://w3id.org/vair#LawEnforcement"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#RemoteIdentificationOfPeople">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Remote Identification Of People</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Identifying"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#Recruiting">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Recruiting</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Assessment"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ManagingRoadTraffic">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Managing Road Traffic</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Managing"/>
+    <skos:related rdf:resource="https://w3id.org/vair#CriticalInfrastructure"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#AssessingRiskOfIrregularImmigration">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Assessing Risk Of Irregular Immigration</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#IndividualRiskAssessment"/>
+    <skos:related rdf:resource="https://w3id.org/vair#LawEnforcement"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Migration"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Asylum"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#EvaluatingEmployeePerformance">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Evaluating Employee Performance</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Employment"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#DecisionMaking">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Decision Making</skos:prefLabel>
+    <skos:definition xml:lang="en">Generation of decisions</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Purpose"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ReclaimingPublicAssisstanceServices">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Reclaiming Public Assisstance Services</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#DecisionMaking"/>
+    <skos:related rdf:resource="https://w3id.org/vair#PublicService"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#MonitoringEmployeePerformance">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Monitoring Employee Performance</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Monitoring"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Employment"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ExaminingAsylumApplication">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Examining Asylum Application</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#ExaminingApplication"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Migration"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Asylum"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ManagingSupplyOfWater">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Managing Supply Of Water</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Managing"/>
+    <skos:related rdf:resource="https://w3id.org/vair#CriticalInfrastructure"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#DiscoveringCrimePatterns">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Discovering Crime Patterns</skos:prefLabel>
+    <skos:definition xml:lang="en">Identifying unkown patterns of crime</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Detection"/>
+    <skos:related rdf:resource="https://w3id.org/vair#LawEnforcemnet"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#DetectingNon-AuthenticDocument">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Detecting Non-Authentic Document</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Detection"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#EvaluatingEmployee">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Evaluating Employee</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Employment"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#AssigningPeopleToEducationalInstitutions">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Assigning People To Educational Institutions</skos:prefLabel>
+    <skos:definition xml:lang="en">Assigning natural persons to educational and vocational training institutions or programmes at all levels.</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Education"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#GeneratingAudioContent">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Generating Audio Content</skos:prefLabel>
+    <skos:definition xml:lang="en">Generation or manipulation of audio content</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#ContentGeneration"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#DiscoveringCrimeRelationships">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Discovering Crime Relationships</skos:prefLabel>
+    <skos:definition xml:lang="en">Discovering hidden relationships related to crime</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Detection"/>
+    <skos:related rdf:resource="https://w3id.org/vair#LawEnforcemnet"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#AdvertisingVacancies">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Advertising Vacancies</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Assessment"/>
+    <skos:related rdf:resource="https://w3id.org/vair#Employment"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#AssessingPeopleRelatedRisk">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Assessing People Related Risk</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Assessment"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+
+#-----------Domain--------------
+<rdf:Description rdf:about="https://w3id.org/vair#Education">
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+   <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+   <skos:prefLabel xml:lang="en">Education</skos:prefLabel>
+   <skos:definition xml:lang="en"></skos:definition>
+   <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Domain"/>
+   <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+ </rdf:Description>
+ <rdf:Description rdf:about="https://w3id.org/vair#PublicService">
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+   <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+   <skos:prefLabel xml:lang="en">Public Service</skos:prefLabel>
+   <skos:definition xml:lang="en"></skos:definition>
+   <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Domain"/>
+   <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+ </rdf:Description>
+ <rdf:Description rdf:about="https://w3id.org/vair#SelfEmployment">
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+   <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+   <skos:prefLabel xml:lang="en">Self-Employment</skos:prefLabel>
+   <skos:definition xml:lang="en"></skos:definition>
+   <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Domain"/>
+   <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+ </rdf:Description>
+ <rdf:Description rdf:about="https://w3id.org/vair#VocationalTraining">
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+   <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+   <skos:prefLabel xml:lang="en">Vocational Training</skos:prefLabel>
+   <skos:definition xml:lang="en"></skos:definition>
+   <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Domain"/>
+   <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+ </rdf:Description>
+ <rdf:Description rdf:about="https://w3id.org/vair#Asylum">
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+   <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+   <skos:prefLabel xml:lang="en">Asylum</skos:prefLabel>
+   <skos:definition xml:lang="en"></skos:definition>
+   <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Domain"/>
+   <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+ </rdf:Description>
+ <rdf:Description rdf:about="https://w3id.org/vair#AdministrationOfDemocraticProcesses">
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+   <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+   <skos:prefLabel xml:lang="en">Administration Of Democratic Processes</skos:prefLabel>
+   <skos:definition xml:lang="en"></skos:definition>
+   <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Domain"/>
+   <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+ </rdf:Description>
+ <rdf:Description rdf:about="https://w3id.org/vair#CriticalInfrastructure">
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+   <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+   <skos:prefLabel xml:lang="en">Critical Infrastructure</skos:prefLabel>
+   <skos:definition xml:lang="en"></skos:definition>
+   <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Domain"/>
+   <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+ </rdf:Description>
+ <rdf:Description rdf:about="https://w3id.org/vair#Employment">
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+   <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+   <skos:prefLabel xml:lang="en">Employment</skos:prefLabel>
+   <skos:definition xml:lang="en"></skos:definition>
+   <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Domain"/>
+   <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+ </rdf:Description>
+ <rdf:Description rdf:about="https://w3id.org/vair#AdministrationOfJustice">
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+   <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+   <skos:prefLabel xml:lang="en">Administration Of Justice</skos:prefLabel>
+   <skos:definition xml:lang="en"></skos:definition>
+   <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Domain"/>
+   <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+ </rdf:Description>
+ <rdf:Description rdf:about="https://w3id.org/vair#BorderControl">
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+   <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+   <skos:prefLabel xml:lang="en">Border Control</skos:prefLabel>
+   <skos:definition xml:lang="en"></skos:definition>
+   <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Domain"/>
+   <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+ </rdf:Description>
+ <rdf:Description rdf:about="https://w3id.org/vair#Migration">
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+   <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+   <skos:prefLabel xml:lang="en">Migration</skos:prefLabel>
+   <skos:definition xml:lang="en"></skos:definition>
+   <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Domain"/>
+   <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+ </rdf:Description>
+ <rdf:Description rdf:about="https://w3id.org/vair#WorkersManagement">
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+   <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+   <skos:prefLabel xml:lang="en">Workers Management</skos:prefLabel>
+   <skos:definition xml:lang="en"></skos:definition>
+   <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Domain"/>
+   <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+ </rdf:Description>
+ <rdf:Description rdf:about="https://w3id.org/vair#PrivateService">
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+   <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+   <skos:prefLabel xml:lang="en">Private Service</skos:prefLabel>
+   <skos:definition xml:lang="en"></skos:definition>
+   <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Domain"/>
+   <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+ </rdf:Description>
+
+ #-----------Enviroment of Use--------------
+ <rdf:Description rdf:about="https://w3id.org/vair#DectectionOfCriminalOffences">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Dectection Of Criminal Offences</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#EnvironmentOfUse"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ProsecutionOfCriminalOffences">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Prosecution Of Criminal Offences</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#EnvironmentOfUse"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#PubliclyAccessibleSpace">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Publicly Accessible Space</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#EnvironmentOfUse"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#InvestigationOfCriminalOffences">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Investigation Of Criminal Offences</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#EnvironmentOfUse"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+
+</rdf:RDF>
