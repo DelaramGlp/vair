@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>vair (Vocabulary of AI Risk) </title>
+  <title>VAIR (Vocabulary of AI Risks) </title>
   <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
   <script class="remove">
     var respecConfig = {
@@ -28,43 +28,12 @@
     };
   </script>
   <style type="text/css">
-    .indent {
-      margin-left: 40px;
-    }
+  /* Table styles, March 2016 */
+  table {border-collapse:collapse}
 
-    .head a:hover>img[src*='ogc'] {
-      opacity: 0.8;
-    }
-
-    .table-top {
-      background-color: grey;
-      text-align: center;
-      border-width: 5px;
-      color: white;
-      font-size: 15px;
-      border-width: 2px;
-      border-color: black;
-      border-style: solid;
-
-    }
-
-    .table-title {
-      background-color: rgba(128, 128, 128, 0.712);
-      text-align: center;
-      border-width: 5px;
-      color: white;
-      font-size: 14px;
-      border-width: 2px;
-      border-color: black;
-      border-style: solid;
-    }
-
-    .table-cell {
-      font-size: 13px;
-      border-style: solid;
-
-    }
-  </style>
+  
+ 
+</style>
 </head>
 
 <body>
@@ -78,12 +47,12 @@
     <h2>Introduction</h2>
     <a class="self-link" aria-label="§" href="https://w3id.org/hart/main.html#intro"></a>
     <p>
-    vair is a vocabulary of AI risks.
+    VAIR is an open vocabulary for AI risks. VAIR is intended to assist with identification and documentation of risks by providing a common vocabulary that facilitates knowledge sharing and interoperability between actors in the AI value chain. 
+
+    VAIR provides semantic specifications for cataloguing AI risks in a FAIR (Findable, Accessible, Interoperable, Reusable) manner. It reuses core concepts of <a href="https://w3id.org/AIRO">AIRO</a> as its foundation and represents instances using the <a href="https://www.w3.org/TR/2009/REC-skos-reference-20090818"> SKOS (Simple Knowledge Organization System)</a> model.
     </p>
 
   </section>
-
-
 
 
   <section id="Namespaces">
@@ -100,6 +69,10 @@
           <td>http://wwww.w3id.org/vair#</td>
         </tr>
         <tr>
+          <td>airo</td>
+          <td>http://wwww.w3id.org/AIRO#</td>
+        </tr>
+        <tr>
           <td>rdfs</td>
           <td>http://www.w3.org/2000/01/rdf-schema#</td>
         </tr>
@@ -114,8 +87,7 @@
           <td>xsd</td>
           <td>http://www.w3.org/2001/XMLSchema#</td>
         </tr>
-        <td>dpv</td>
-        <td>http://www.w3.org/ns/dpv#</td>
+        
         <tr>
           <td></td>
           <td></td>
@@ -136,7 +108,7 @@
       <a class="self-link" aria-label="§" href=""></a>
     </h2>
     <p>
-  In this section, key vair concepts are represented:
+  VAIR reuses key concepts from AIRO (AI Risk Ontology) and therefore can be considered as its extension. The concepts reused from AIRO are listed in this section.
     </p>
 
   <section data-dfn-for="Purpose">
@@ -144,11 +116,11 @@
       <bdi class="secno"> </bdi> Purpose
       <a class="self-link" aria-label="§" href="https://w3id.org/vair#Purpose"></a>
     </h2>
-    <table class="definition">
+    <table class="def">
       <tbody>
         <tr>
           <td> IRI </td>
-          <td><code> https://w3id.org/vair#Purpose </code></td>
+          <td><code> https://w3id.org/airo#Purpose </code></td>
         <tr>
           <td> Term </td>
           <td><code><dfn> Purpose </dfn></code></td>
@@ -172,153 +144,434 @@
 
   <section id="purposes">
     <h2 id="purposes">
-      <bdi class="secno"></bdi>AI Purposes
+      <bdi class="secno"></bdi>Purposes
       <a class="self-link" aria-label="§" href=""></a>
     </h2>
 
-
-    <section data-dfn-for="ContentGeneration">
-      <h3 id="ContentGeneration">
-        <bdi class="secno"> </bdi> Content Generation
-        <a class="self-link" aria-label="§" href="https://w3id.org/vair#ContentGeneration"></a>
-      </h3>
-      <table class="definition">
-        <tbody>
-          <tr>
-            <td> IRI </td>
-            <td><code> https://w3id.org/vair#ContentGeneration </code></td>
-          <tr>
-            <td> Term </td>
-            <td><code><dfn> ContentGeneration </dfn></code></td>
-          </tr>
-          <tr>
-            <td> Label </td>
-            <td> Content Generation </td>
-          </tr>
-          <tr>
-            <td> Definition </td>
-            <td>Generation or manipulation of content</td>
-          </tr>
-          <tr>
-            <td> SubType of </td>
-            <td> <a href="https://w3id.org/vair#Purpose"> vair:Purpose <td>
-          </tr>
-          <tr>
-            <th>Source:</th>
-            <td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52021PC0206&from=EN">AI Act proposal</a>,</td>
-          </tr>
-        </tbody>
-      </table>
-
-    <section data-dfn-for="GeneratingAudioContent">
-      <h4 id="GeneratingAudioContent">
-        <bdi class="secno"> </bdi> Generating Audio Content
-        <a class="self-link" aria-label="§" href="https://w3id.org/vair#GeneratingAudioContent"></a>
-      </h4>
-      <table class="definition">
-        <tbody>
-          <tr>
-            <td> IRI </td>
-            <td><code> https://w3id.org/vair#GeneratingAudioContent </code></td>
-          <tr>
-            <td> Term </td>
-            <td><code><dfn> GeneratingAudioContent </dfn></code></td>
-          </tr>
-          <tr>
-            <td> Label </td>
-            <td> Generating Audio Content</td>
-          </tr>
-          <tr>
-            <td> Definition </td>
-            <td> Generation or manipulation of audio content</td>
-          </tr>
-          <tr>
-            <td> SubType of </td>
-            <td> <a href="https://w3id.org/vair#ContentGeneration"> vair:ContentGenration <td>
-          </tr>
-          <tr>
-            <th>Source:</th>
-            <td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52021PC0206&from=EN">AI Act proposal</a>,</td>
-          </tr>
-        </tbody>
-      </table>
+  
     </section>
-
-    <section data-dfn-for="GeneratingImageContent">
-      <h4 id="GeneratingImageContent">
-        <bdi class="secno"> </bdi> Generating Image Content
-        <a class="self-link" aria-label="§" href="https://w3id.org/vair#GeneratingImageContent"></a>
-      </h4>
-      <table class="definition">
-        <tbody>
-          <tr>
-            <td> IRI </td>
-            <td><code> https://w3id.org/vair#GeneratingImageContent </code></td>
-          <tr>
-            <td> Term </td>
-            <td><code><dfn> GeneratingImageContent </dfn></code></td>
-          </tr>
-          <tr>
-            <td> Label </td>
-            <td> Generating Image Content</td>
-          </tr>
-          <tr>
-            <td> Definition </td>
-            <td> Generation or manipulation of image content</td>
-          </tr>
-          <tr>
-            <td> SubType of </td>
-            <td> <a href="https://w3id.org/vair#ContentGeneration"> vair:ContentGenration <td>
-          </tr>
-          <tr>
-            <th>Source:</th>
-            <td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52021PC0206&from=EN">AI Act proposal</a>,</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <section data-dfn-for="GeneratingVideoContent">
-      <h4 id="GeneratingVideoContent">
-        <bdi class="secno"> </bdi> Generating Video Content
-        <a class="self-link" aria-label="§" href="https://w3id.org/vair#GeneratingVideoContent"></a>
-      </h4>
-      <table class="definition">
-        <tbody>
-          <tr>
-            <td> IRI </td>
-            <td><code> https://w3id.org/vair#GeneratingVideoContent </code></td>
-          <tr>
-            <td> Term </td>
-            <td><code><dfn> GeneratingVideoContent </dfn></code></td>
-          </tr>
-          <tr>
-            <td> Label </td>
-            <td> Generating Video Content</td>
-          </tr>
-          <tr>
-            <td> Definition </td>
-            <td> Generation or manipulation of video content</td>
-          </tr>
-          <tr>
-            <td> SubType of </td>
-            <td> <a href="https://w3id.org/vair#ContentGeneration"> vair:ContentGenration <td>
-          </tr>
-          <tr>
-            <th>Source:</th>
-            <td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52021PC0206&from=EN">AI Act proposal</a>,</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-  </section>
-    </section>
-
+<!-- ********************** AI Techniques **********************  -->
     <section id="AITechniques">
       <h2 id="AITechniques">
         <bdi class="secno"></bdi>AI Techniques
         <a class="self-link" aria-label="§" href=""></a>
       </h2>
+      <section data-dfn-for="ReasoningTechnique">
+      <h4 id="ReasoningTechnique"> <bdi class="secno"> </bdi>Reasoning Technique<a class="self-link"aria-label="§"href="https://w3id.org/vair#ReasoningTechnique"></a>
+      </h4>
+       <table class="def">
+        <tbody>
+          <tr>
+            <td> IRI </td>
+            <td><code> https://w3id.org/vair#ReasoningTechnique</code></td>
+          <tr>
+            <td> Term </td>
+            <td><code><dfn>ReasoningTechnique</dfn></code></td>
+          </tr>
+          <tr>
+            <td> Label </td>
+            <td>Reasoning Technique</td>
+          </tr>
+          <tr>
+            <td> Definition </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td> SubType of </td>
+            <td> <a href="https://w3id.org/AIRO#Technique"> airo:Technique</td>
+          </tr>
+          <tr>
+            <th>Source:</th>
+            <td><a href="https://ai-watch.ec.europa.eu/publications/ai-watch-defining-artificial-intelligence-20_en"> AI Watch. Defining Artificial Intelligence 2.0</a>,</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+      
+ <section data-dfn-for="LearningTechnique">
+      <h4 id="LearningTechnique"> <bdi class="secno"> </bdi>Learning Technique<a class="self-link"aria-label="§"href="https://w3id.org/vair#LearningTechnique"></a>
+      </h4>
+       <table class="def">
+        <tbody>
+          <tr>
+            <td> IRI </td>
+            <td><code> https://w3id.org/vair#LearningTechnique</code></td>
+          <tr>
+            <td> Term </td>
+            <td><code><dfn>LearningTechnique</dfn></code></td>
+          </tr>
+          <tr>
+            <td> Label </td>
+            <td>Learning Technique</td>
+          </tr>
+          <tr>
+            <td> Definition </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td> SubType of </td>
+            <td> <a href="https://w3id.org/AIRO#Technique"> airo:Technique<td>
+          </tr>
+          <tr>
+            <th>Source:</th>
+            <td><a href="https://ai-watch.ec.europa.eu/publications/ai-watch-defining-artificial-intelligence-20_en">AI Watch. Defining Artificial Intelligence 2.0 </a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    
+    <section data-dfn-for="MachineLearningTechnique">
+      <h4 id="MachineLearningTechnique"> <bdi class="secno"> </bdi>MachineLearningTechnique<a class="self-link"aria-label="§"href="https://w3id.org/vair#MachineLearningTechnique"></a>
+      </h4>
+       <table class="def">
+        <tbody>
+          <tr>
+            <td> IRI </td>
+            <td><code> https://w3id.org/vair#MachineLearningTechnique</code></td>
+          <tr>
+            <td> Term </td>
+            <td><code><dfn>MachineLearningTechnique</dfn></code></td>
+          </tr>
+          <tr>
+            <td> Label </td>
+            <td>MachineLearningTechnique</td>
+          </tr>
+          <tr>
+            <td> Definition </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td> SubType of </td>
+            <td> <a href="https://w3id.org/vair#LearningTechnique"> vair:LearningTechnique<td>
+          </tr>
+          <tr>
+            <th>Source:</th>
+            <td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52021PC0206&from=EN">AI Act proposal</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>   
+    
+    <section data-dfn-for="CaseBasedReasoning">
+      <h4 id="CaseBasedReasoning"> <bdi class="secno"> </bdi>Case Based Reasoning<a class="self-link"aria-label="§"href="https://w3id.org/vair#CaseBasedReasoning"></a>
+      </h4>
+       <table class="def">
+        <tbody>
+          <tr>
+            <td> IRI </td>
+            <td><code> https://w3id.org/vair#CaseBasedReasoning</code></td>
+          <tr>
+            <td> Term </td>
+            <td><code><dfn>CaseBasedReasoning</dfn></code></td>
+          </tr>
+          <tr>
+            <td> Label </td>
+            <td>Case Based Reasoning</td>
+          </tr>
+          <tr>
+            <td> Definition </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td> SubType of </td>
+            <td> <a href=""https://w3id.org/vair#ReasoningTechnique""> vair:ReasoningTechnique<td>
+          </tr>
+          <tr>
+            <th>Source:</th>
+            <td><a href=""></a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    
+    <section data-dfn-for="CommonSenseReasoning">
+      <h4 id="CommonSenseReasoning"> <bdi class="secno"> </bdi>Common Sense Reasoning<a class="self-link"aria-label="§"href="https://w3id.org/vair#CommonSenseReasoning"></a>
+      </h4>
+       <table class="def">
+        <tbody>
+          <tr>
+            <td> IRI </td>
+            <td><code> https://w3id.org/vair#CommonSenseReasoning</code></td>
+          <tr>
+            <td> Term </td>
+            <td><code><dfn>CommonSenseReasoning</dfn></code></td>
+          </tr>
+          <tr>
+            <td> Label </td>
+            <td>Common Sense Reasoning</td>
+          </tr>
+          <tr>
+            <td> Definition </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td> SubType of </td>
+            <td> <a href="https://w3id.org/vair#ReasoningTechnique"> vair:ReasoningTechnique<td>
+          </tr>
+          <tr>
+            <th>Source:</th>
+            <td><a href=""></a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+   
+ <section data-dfn-for="ReinforcementLearning">
+      <h4 id="ReinforcementLearning"> <bdi class="secno"> </bdi>Reinforcement Learning<a class="self-link"aria-label="§"href="https://w3id.org/vair#ReinforcementLearning"></a>
+      </h4>
+       <table class="def">
+        <tbody>
+          <tr>
+            <td> IRI </td>
+            <td><code> https://w3id.org/vair#ReinforcementLearning</code></td>
+          <tr>
+            <td> Term </td>
+            <td><code><dfn>ReinforcementLearning</dfn></code></td>
+          </tr>
+          <tr>
+            <td> Label </td>
+            <td>Reinforcement Learning</td>
+          </tr>
+          <tr>
+            <td> Definition </td>
+            <td> See <a href="https://www.iso.org/obp/ui/#iso:std:iso-iec:22989:ed-1:v1:en:term:3.3.9">ISO/IEC 22989:2022(en), 3.3.9</a></td>
+          </tr>
+          <tr>
+            <td> SubType of </td>
+            <td> <a href="https://w3id.org/vair#MachineLearningTechnique"> vair:MachineLearningTechnique<td>
+          </tr>
+          <tr>
+            <th>Source:</th>
+            <td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52021PC0206&from=EN">AI Act proposal</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section> 
+ <section data-dfn-for="SupervisedLearning">
+      <h4 id="SupervisedLearning"> <bdi class="secno"> </bdi>Supervised Learning<a class="self-link"aria-label="§"href="https://w3id.org/vair#SupervisedLearning"></a>
+      </h4>
+       <table class="def">
+        <tbody>
+          <tr>
+            <td> IRI </td>
+            <td><code> https://w3id.org/vair#SupervisedLearning</code></td>
+          <tr>
+            <td> Term </td>
+            <td><code><dfn>SupervisedLearning</dfn></code></td>
+          </tr>
+          <tr>
+            <td> Label </td>
+            <td>Supervised Learning</td>
+          </tr>
+          <tr>
+            <td> Definition </td>
+            <td> See <a href="https://www.iso.org/obp/ui/#iso:std:iso-iec:22989:ed-1:v1:en:term:3.3.12">ISO/IEC 22989:2022(en), 3.3.12</a></td>
+          </tr>
+          <tr>
+            <td> SubType of </td>
+            <td> <a href="https://w3id.org/vair#MachineLearningTechnique"> vair:MachineLearningTechnique<td>
+          </tr>
+          <tr>
+            <th>Source:</th>
+            <td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52021PC0206&from=EN">AI Act proposal</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section> 
+    
+    <section data-dfn-for="SemiSupervisedLearning">
+      <h4 id="SemiSupervisedLearning"> <bdi class="secno"> </bdi>Semi Supervised Learning<a class="self-link"aria-label="§"href="https://w3id.org/vair#SemiSupervisedLearning"></a>
+      </h4>
+       <table class="def">
+        <tbody>
+          <tr>
+            <td> IRI </td>
+            <td><code> https://w3id.org/vair#SemiSupervisedLearning</code></td>
+          <tr>
+            <td> Term </td>
+            <td><code><dfn>SemiSupervisedLearning</dfn></code></td>
+          </tr>
+          <tr>
+            <td> Label </td>
+            <td>Semi Supervised Learning</td>
+          </tr>
+          <tr>
+            <td> Definition </td>
+            <td> See <a href="https://www.iso.org/obp/ui/#iso:std:iso-iec:22989:ed-1:v1:en:term:3.3.11">ISO/IEC 22989:2022(en), 3.3.11</a></td>
+          </tr>
+          <tr>
+            <td> SubType of </td>
+            <td> <a href="https://w3id.org/vair#MachineLearningTechnique"> vair:MachineLearningTechnique<td>
+          </tr>
+          <tr>
+            <th>Source:</th>
+            <td><a href="https://www.iso.org/obp/ui/#iso:std:iso-iec:22989:ed-1:v1:en">ISO/IEC 22989:2022(en)</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section> 
+    
+    <section data-dfn-for="UnsupervisedLearning">
+      <h4 id="UnsupervisedLearning"> <bdi class="secno"> </bdi>Unsupervised Learning<a class="self-link"aria-label="§"href="https://w3id.org/vair#UnsupervisedLearning"></a>
+      </h4>
+       <table class="def">
+        <tbody>
+          <tr>
+            <td> IRI </td>
+            <td><code> https://w3id.org/vair#UnsupervisedLearning</code></td>
+          <tr>
+            <td> Term </td>
+            <td><code><dfn>UnsupervisedLearning</dfn></code></td>
+          </tr>
+          <tr>
+            <td> Label </td>
+            <td>Unsupervised Learning</td>
+          </tr>
+          <tr>
+            <td> Definition </td>
+            <td> See <a href="https://www.iso.org/obp/ui/#iso:std:iso-iec:22989:ed-1:v1:en:term:3.3.17">ISO/IEC 22989:2022(en), 3.3.17</a></td>
+          </tr>
+          <tr>
+            <td> SubType of </td>
+            <td> <a href="https://w3id.org/vair#MachineLearningTechnique"> vair:MachineLearningTechnique<td>
+          </tr>
+          <tr>
+            <th>Source:</th>
+            <td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52021PC0206&from=EN">AI Act proposal</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section> 
+    
+    <section data-dfn-for="KnowledgeBasedTechnique">
+      <h4 id="KnowledgeBasedTechnique"> <bdi class="secno"> </bdi>Knowledge Based Technique<a class="self-link"aria-label="§"href="https://w3id.org/vair#KnowledgeBasedTechnique"></a>
+      </h4>
+       <table class="def">
+        <tbody>
+          <tr>
+            <td> IRI </td>
+            <td><code> https://w3id.org/vair#KnowledgeBasedTechnique</code></td>
+          <tr>
+            <td> Term </td>
+            <td><code><dfn>KnowledgeBasedTechnique</dfn></code></td>
+          </tr>
+          <tr>
+            <td> Label </td>
+            <td>Knowledge Based Technique</td>
+          </tr>
+          <tr>
+            <td> Definition </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td> SubType of </td>
+            <td> <a href="https://w3id.org/AIRO#Technique"> airo:Technique<td>
+          </tr>
+          <tr>
+            <th>Source:</th>
+            <td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52021PC0206&from=EN">AI Act proposal</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    
+    <section data-dfn-for="InductiveProgramming">
+      <h4 id="InductiveProgramming"> <bdi class="secno"> </bdi>Inductive Programming<a class="self-link"aria-label="§"href="https://w3id.org/vair#InductiveProgramming"></a>
+      </h4>
+       <table class="def">
+        <tbody>
+          <tr>
+            <td> IRI </td>
+            <td><code> https://w3id.org/vair#InductiveProgramming</code></td>
+          <tr>
+            <td> Term </td>
+            <td><code><dfn>InductiveProgramming</dfn></code></td>
+          </tr>
+          <tr>
+            <td> Label </td>
+            <td>Inductive Programming</td>
+          </tr>
+          <tr>
+            <td> Definition </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td> SubType of </td>
+            <td> <a href="https://w3id.org/vair#KnowledgeBasedTechnique"> vair:KnowledgeBasedTechnique<td>
+          </tr>
+          <tr>
+            <th>Source:</th>
+            <td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52021PC0206&from=EN">AI Act proposal</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    
+    <section data-dfn-for="SymbolicReasoning">
+      <h4 id="SymbolicReasoning"> <bdi class="secno"> </bdi>Symbolic Reasoning<a class="self-link"aria-label="§"href="https://w3id.org/vair#SymbolicReasoning"></a>
+      </h4>
+       <table class="def">
+        <tbody>
+          <tr>
+            <td> IRI </td>
+            <td><code> https://w3id.org/vair#SymbolicReasoning</code></td>
+          <tr>
+            <td> Term </td>
+            <td><code><dfn>SymbolicReasoning</dfn></code></td>
+          </tr>
+          <tr>
+            <td> Label </td>
+            <td>Symbolic Reasoning</td>
+          </tr>
+          <tr>
+            <td> Definition </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td> SubType of </td>
+            <td> <a href="https://w3id.org/vair#KnowledgeBasedTechnique"> vair:KnowledgeBasedTechnique<td>
+          </tr>
+          <tr>
+            <th>Source:</th>
+            <td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52021PC0206&from=EN">AI Act proposal</a></td>
+            
+          </tr>
+        </tbody>
+      </table>
+    </section>  
+    
+    <section data-dfn-for="SymbolicReasoning">
+      <h4 id="SymbolicReasoning"> <bdi class="secno"> </bdi>Symbolic Reasoning<a class="self-link"aria-label="§"href="https://w3id.org/vair#SymbolicReasoning"></a>
+      </h4>
+       <table class="def">
+        <tbody>
+          <tr>
+            <td> IRI </td>
+            <td><code> https://w3id.org/vair#SymbolicReasoning</code></td>
+          <tr>
+            <td> Term </td>
+            <td><code><dfn>SymbolicReasoning</dfn></code></td>
+          </tr>
+          <tr>
+            <td> Label </td>
+            <td>Symbolic Reasoning</td>
+          </tr>
+          <tr>
+            <td> Definition </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td> SubType of </td>
+            <td> <a href="https://w3id.org/vair#KnowledgeBasedTechnique"> vair:KnowledgeBasedTechnique<td>
+          </tr>
+          <tr>
+            <th>Source:</th>
+            <td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52021PC0206&from=EN">AI Act proposal</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>  
+      
     </section>
 
 
