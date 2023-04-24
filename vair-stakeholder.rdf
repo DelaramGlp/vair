@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+<rdf:RDF
+   xmlns:dct="http://purl.org/dc/terms/"
+   xmlns:vair="https://w3id.org/vair#"
+   xmlns:airo="https://w3id.org/airo#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://w3id.org/vair#PublicAuthorityRepresentative">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Public Authority Representative</skos:prefLabel>
+    <skos:definition xml:lang="en">an entity that acts on behalf of public authorities</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Stakeholder"/>  
+  </rdf:Description>
+    
+  <rdf:Description rdf:about="https://w3id.org/vair#ConformityAssessmentBody">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Conformity Assessment Body</skos:prefLabel>
+    <skos:definition xml:lang="en">a body that performs third-party conformity assessment activities, including testing, certification and inspection</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Stakeholder"/>  
+  </rdf:Description>
+    
+  <rdf:Description rdf:about="https://w3id.org/vair#CompetentPublicAuthorityRepresentative">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Competent Public Authority Representative</skos:prefLabel>
+    <skos:definition xml:lang="en">an entity that acts on behalf of competent public authorities</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Stakeholder"/>  
+  
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#EuropeanDataProtectionSupervisor">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">European Data Protection Supervisor</skos:prefLabel>
+    <skos:definition xml:lang="en">The European Data Protection Supervisor (EDPS) is the European Union’s (EU) independent data protection authority</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+    <rdfs:subClassOf rdf:resource= "https://w3id.org/vair#Authority"/> 
+  </rdf:Description>
+    
+  <rdf:Description rdf:about="https://w3id.org/vair#Stakeholder">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Stakeholder</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#NationalCompetentAuthority">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">National Competent Authority</skos:prefLabel>
+    <skos:definition xml:lang="en">refers to any of the following: the national supervisory authority  and the market surveillance authority. As regards AI systems put into service or used by EU institutions, agencies, offices and bodies, the European Data Protection Supervisor shall fulfil the responsibilities that in the Member States are entrusted to the national competent authority and, as relevant, any reference to national competent authorities or market surveillance authorities in this Regulation shall be understood as referring to the European Data Protection Supervisor</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Stakeholder"/>  
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#LawEnforcementAuthorityRepresentative">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Law Enforcement Authority Representative</skos:prefLabel>
+    <skos:definition xml:lang="en">an entity that acts on behalf of law enforcement authorities</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Stakeholder"/>  
+  
+  </rdf:Description>
+    
+  <rdf:Description rdf:about="https://w3id.org/vair#AuthorisedRepresentative">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Operator"/>  
+    <skos:prefLabel xml:lang="en">Authorised Representative</skos:prefLabel>
+    <skos:definition xml:lang="en">means any natural or legal person physically present or established in the Union who has received and accepted a written mandate from a provider of an AI system to, respectively, perform and carry out on its behalf the obligations and procedures established by the AI Act.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+    
+
+  <rdf:Description rdf:about="https://w3id.org/vair#PublicAuthority">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Public Authority</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Authority"/> 
+  </rdf:Description>
+    
+  <rdf:Description rdf:about="https://w3id.org/vair#JudicialAuthorityRepresentative">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Judicial Authority Representative</skos:prefLabel>
+    <skos:definition xml:lang="en">an entity that acts on behalf on judicial authorities</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Stakeholder"/>  
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="https://w3id.org/vair#MarketSurveillanceAuthority">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Market Surveillance Authority</skos:prefLabel>
+    <skos:definition xml:lang="en">the national authority carrying out the activities and taking the measures pursuant to Regulation (EU) 2019/1020</skos:definition>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#NationalAuthority"/> 
+  </rdf:Description>
+    
+  <rdf:Description rdf:about="https://w3id.org/vair#LawEnforcementAuthority">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Law Enforcement Authority</skos:prefLabel>
+    <skos:definition xml:lang="en">any public authority competent for the prevention, investigation, detection or prosecution of criminal offences or the execution of criminal penalties, including the safeguarding against and the prevention of threats to public security; or any other body or entity entrusted by Member State law to exercise public authority and public powers for the purposes of the prevention, investigation, detection or prosecution of criminal offences or the execution of criminal penalties, including the safeguarding against and the prevention of threats to public security;</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Stakeholder"/>  
+  </rdf:Description>
+    
+  <rdf:Description rdf:about="https://w3id.org/vair#NotifiedBody">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Notified Body</skos:prefLabel>
+    <skos:definition xml:lang="en">a conformity assessment body designated in accordance with the AI Act and other relevant Union harmonisation legislation</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#ConformityAssessmentBody"/>  
+  </rdf:Description>
+ 
+  <rdf:Description rdf:about="https://w3id.org/vair#NationalPublicAuthority">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">National Public Authority</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#PublicAuthority"/>  
+  </rdf:Description>
+    
+  <rdf:Description rdf:about="https://w3id.org/vair#Importer">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Importer</skos:prefLabel>
+    <skos:definition xml:lang="en">any natural or legal person physically present or established in the Union that places on the market an AI system that bears the name or trademark of a natural or legal person established outside the Union.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Operator"/>  
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="https://w3id.org/vair#EuropeanArtificialIntelligenceBoard">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">European Artificial Intelligence Board</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Authority"/>  
+  </rdf:Description>
+
+  
+  <rdf:Description rdf:about="https://w3id.org/vair#ProductManufacturer">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Product Manufacturer</skos:prefLabel>
+    <skos:definition xml:lang="en">a manufacturer within the meaning of any of the Union harmonisation legislation listed in Annex II of the AI Act.</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Stakeholder"/> 
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#SmallScaleProvider">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Small Scale Provider</skos:prefLabel>
+    <skos:definition xml:lang="en">a provider that  is a micro (has fewer than 10 employee and annual turnover or balance sheet below €2 million) or small enterprise (has fewer than 50 employee and annual turnover or balance sheet below €10 million) </skos:definition>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AIProvider"/>  
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#Distributor">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Distributor</skos:prefLabel>
+    <skos:definition xml:lang="en">any natural or legal person in the supply chain, other than the provider
+or the importer, that makes an AI system available on the Union market</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+ 
+  <rdf:Description rdf:about="https://w3id.org/vair#Authority">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Authority</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+    
+ <rdf:Description rdf:about="https://w3id.org/vair#PublicAuthority">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Public Authority</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>    
+ 
+    
+  <rdf:Description rdf:about="https://w3id.org/vair#NotifyingAuthority">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Notifying Authority</skos:prefLabel>
+    <skos:definition xml:lang="en">the national authority responsible for setting up and carrying out the necessary procedures for the assessment, designation and notification of conformity assessment bodies and for their monitoring</skos:definition>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#NationalAuthority"/>  
+  </rdf:Description>
+</rdf:RDF>
