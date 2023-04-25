@@ -120,6 +120,206 @@
 
 
     
-#-----------Standards--------------    
+#-----------Standards-------------- 
+     <rdf:Description rdf:about="https://w3id.org/vair#ISOIEC23053-2022">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">ISO/IEC 23053:2022</skos:prefLabel>
+    <skos:definition xml:lang="en">Framework for Artificial Intelligence (AI) Systems Using Machine Learning (ML)</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#standard"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ISOIEC20546-2019">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">ISO/IEC 20546:2019</skos:prefLabel>
+    <skos:definition xml:lang="en">Information technology — Big data — Overview and vocabulary</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#standard"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ISOIECTR24029-1-2021">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">ISO/IEC TR 24029-1:2021</skos:prefLabel>
+    <skos:definition xml:lang="en">Artificial Intelligence (AI) — Assessment of the robustness of neural networks — Part 1: Overview</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#standard"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#IEC31010-2019">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">IEC 31010:2019</skos:prefLabel>
+    <skos:definition xml:lang="en">Risk management — Risk assessment techniques</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#standard"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ISOIECTR24368-2022">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">ISO/IEC TR 24368:2022</skos:prefLabel>
+    <skos:definition xml:lang="en">Information technology — Artificial intelligence — Overview of ethical and societal concerns</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#standard"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ISOIECTR24030-2021">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">ISO/IEC TR 24030:2021</skos:prefLabel>
+    <skos:definition xml:lang="en">Information technology — Artificial intelligence (AI) — Use cases</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#standard"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ISOIECTR20547-5-2018">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">ISO/IEC TR 20547-5:2018</skos:prefLabel>
+    <skos:definition xml:lang="en">Information technology — Big data reference architecture — Part 5: Standards roadmap</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#standard"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ISOIECTS4213-2022">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en"> ISO/IEC TS 4213:2022</skos:prefLabel>
+    <skos:definition xml:lang="en">Information technology — Artificial intelligence — Assessment of machine learning classification performance</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#standard"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ISOIECTR24028-2020">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">ISO/IEC TR 24028:2020</skos:prefLabel>
+    <skos:definition xml:lang="en">Information technology — Artificial intelligence — Overview of trustworthiness in artificial intelligence</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#standard"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ISOGuide73-2009">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">ISO Guide 73:2009</skos:prefLabel>
+    <skos:definition xml:lang="en">Risk management — Vocabulary</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#standard"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ISOIEC20547-3-2020">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">ISO/IEC 20547-3:2020</skos:prefLabel>
+    <skos:definition xml:lang="en">Information technology — Big data reference architecture — Part 3: Reference architecture</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#standard"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ISO31000-2018">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">ISO 31000:2018</skos:prefLabel>
+    <skos:definition xml:lang="en">Risk management — Guidelines</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#standard"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ISO10013-2021">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">ISO 10013:2021</skos:prefLabel>
+    <skos:definition xml:lang="en">Quality management systems — Guidance for documented information</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#standard"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ISO9001-2015">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">ISO 9001:2015</skos:prefLabel>
+    <skos:definition xml:lang="en">Quality management systems — Requirements</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#standard"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ISOIEC22989-2022">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">ISO/IEC 22989:2022</skos:prefLabel>
+    <skos:definition xml:lang="en">Information technology — Artificial intelligence — Artificial intelligence concepts and terminology</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#standard"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ISOIECTR24372-2021">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">ISO/IEC TR 24372:2021</skos:prefLabel>
+    <skos:definition xml:lang="en">Information technology — Artificial intelligence (AI) — Overview of computational approaches for AI systems</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#standard"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ISOIECTR24027-2021">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">ISO/IEC TR 24027:2021</skos:prefLabel>
+    <skos:definition xml:lang="en">Information technology — Artificial intelligence (AI) — Bias in AI systems and AI aided decision making</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#standard"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ISOIECTR20547-2-2018">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">ISO/IEC TR 20547-2:2018</skos:prefLabel>
+    <skos:definition xml:lang="en">Information technology — Big data reference architecture — Part 2: Use cases and derived requirements</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#standard"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ISOIECTR20547-1-2020">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">ISO/IEC TR 20547-1:2020</skos:prefLabel>
+    <skos:definition xml:lang="en">Information technology — Big data reference architecture — Part 1: Framework and application process</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#standard"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ISOIEC24668-2022">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">ISO/IEC 24668:2022</skos:prefLabel>
+    <skos:definition xml:lang="en">Information technology — Artificial intelligence — Process management framework for big data analytics</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#standard"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ISOIEC38507-2022">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en"> ISO/IEC 38507:2022</skos:prefLabel>
+    <skos:definition xml:lang="en">Information technology — Governance of IT — Governance implications of the use of artificial intelligence by organizations</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#standard"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ISOIEC23894-2023">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">ISO/IEC 23894:2023</skos:prefLabel>
+    <skos:definition xml:lang="en">Information technology — Artificial intelligence — Guidance on risk management</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#standard"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+
+    
 
 </rdf:RDF>
