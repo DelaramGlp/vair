@@ -196,15 +196,7 @@
     <skos:related rdf:resource="https://w3id.org/vair#PublicService"/>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/vair#BiometricCategorisation">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
-    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-    <skos:prefLabel xml:lang="en">Biometric Categorisation</skos:prefLabel>
-    <skos:definition xml:lang="en"></skos:definition>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#DecisionMaking"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-  </rdf:Description>
+  
   <rdf:Description rdf:about="https://w3id.org/vair#EvaluatingEligibilityToAccessPublicAssistanceServices">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
@@ -487,15 +479,7 @@
     <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Planning"/>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/vair#BiometricIdentification">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
-    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-    <skos:prefLabel xml:lang="en">Biometric Identification</skos:prefLabel>
-    <skos:definition xml:lang="en">Identifaction of natural persons using biometric data</skos:definition>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#DecisionMaking"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-  </rdf:Description>
+>
   <rdf:Description rdf:about="https://w3id.org/vair#DeterminingAccessToEducation">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>

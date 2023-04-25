@@ -1017,11 +1017,11 @@
     <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AILifecyclePhase"/>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/vair#Monitoring">
+  <rdf:Description rdf:about="https://w3id.org/vair#AIMonitoring">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-    <skos:prefLabel xml:lang="en">Monitoring</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">AI Monitoring</skos:prefLabel>
     <skos:definition xml:lang="en"></skos:definition>
     <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AILifecyclePhase"/>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
@@ -1097,11 +1097,11 @@
     <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AILifecyclePhase"/>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/vair#Training">
+  <rdf:Description rdf:about="https://w3id.org/vair#AITraining">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-    <skos:prefLabel xml:lang="en">Training</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">AI Training</skos:prefLabel>
     <skos:definition xml:lang="en"></skos:definition>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
   </rdf:Description>
