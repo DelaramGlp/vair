@@ -48,14 +48,7 @@
     <rdfs:subClassOf rdf:resource= "https://w3id.org/vair#Authority"/> 
   </rdf:Description>
     
-  <rdf:Description rdf:about="https://w3id.org/vair#Stakeholder">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
-    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-    <skos:prefLabel xml:lang="en">Stakeholder</skos:prefLabel>
-    <skos:definition xml:lang="en"></skos:definition>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-  </rdf:Description>
+  
   <rdf:Description rdf:about="https://w3id.org/vair#NationalCompetentAuthority">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
@@ -104,7 +97,7 @@
     <skos:prefLabel xml:lang="en">Judicial Authority Representative</skos:prefLabel>
     <skos:definition xml:lang="en">an entity that acts on behalf on judicial authorities</skos:definition>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Stakeholder"/>  
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Stakeholder"/>  
   </rdf:Description>
   
   <rdf:Description rdf:about="https://w3id.org/vair#MarketSurveillanceAuthority">
@@ -225,4 +218,159 @@ or the importer, that makes an AI system available on the Union market</skos:def
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
     <rdfs:subClassOf rdf:resource="https://w3id.org/vair#NationalAuthority"/>  
   </rdf:Description>
+   
+    <rdf:Description rdf:about="https://w3id.org/vair#Group">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Group</skos:prefLabel>
+    <skos:definition xml:lang="en">A group of persons such as citizens, marginsalised groups, etc.</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AISubject"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#ResidencePermitApplicant">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Residence Permit Applicant</skos:prefLabel>
+    <skos:definition xml:lang="en">A person who has applied for a residence permit</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Applicant"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#NaturalPerson">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Natural Person</skos:prefLabel>
+    <skos:definition xml:lang="en">An individual human being</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AISubject"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#Applicant">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Applicant</skos:prefLabel>
+    <skos:definition xml:lang="en">A person who has made an application</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AISubject"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#Passenger">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Passenger</skos:prefLabel>
+    <skos:definition xml:lang="en">A person who has entered or intends to a territory.</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AISubject"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#Child">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Child</skos:prefLabel>
+    <skos:definition xml:lang="en">An individual human being who is below the age of 18 (according to the UN Convention on the Rights of the Child)</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#NaturalPerson"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#JobApplicant">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Job Applicant</skos:prefLabel>
+    <skos:definition xml:lang="en">A person who has made an application for employment</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Applicant"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#Suspect">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Suspect</skos:prefLabel>
+    <skos:definition xml:lang="en">A person who is being accused of criminal offences</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AISubject"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#CitizenshipApplicant">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Citizenship Applicant</skos:prefLabel>
+    <skos:definition xml:lang="en">A person who has applied for citizenship</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Applicant"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#VisaApplicant">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Visa Applicant</skos:prefLabel>
+    <skos:definition xml:lang="en">A person who has applied for a visa</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Applicant"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#EducationalInstitutionApplicant">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Educational Institution Applicant</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Applicant"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#Perpetrator">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Perpetrator</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AISubject"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#Victim">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Victim</skos:prefLabel>
+    <skos:definition xml:lang="en">Victim of a crime</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AISubject"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#Employee">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Employee</skos:prefLabel>
+    <skos:definition xml:lang="en">A person in work-related contractual relationships</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AISubject"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#PublicServicesApplicant">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Public Services Applicant</skos:prefLabel>
+    <skos:definition xml:lang="en">A person who has applied for public services and benefits</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Applicant"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#TestParticipant">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Test Participant</skos:prefLabel>
+    <skos:definition xml:lang="en">A person who is participating in a test</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AISubject"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#AsylumSeeker">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Asylum Seeker</skos:prefLabel>
+    <skos:definition xml:lang="en">A person who has applied for asylum</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AISubject"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+    
 </rdf:RDF>
