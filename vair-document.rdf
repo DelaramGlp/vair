@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<rdf:RDF
+   xmlns:vair="https://w3id.org/vair#"
+   xmlns:airo="https://w3id.org/airo#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+#-----------Documents--------------
+
+  <rdf:Description rdf:about="https://w3id.org/vair#TestLog">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Test Log</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Document"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#TestReport">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Test Report</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Document"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#EUDeclarationOfConformity">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">EU Declaration Of Conformity</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Document"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#TechnicalDocumentation">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">TechnicalDocumentation</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Document"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#DesignSpecification">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Design Specification</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Document"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#Datasheet">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Datasheet</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Document"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#InstallationInstruction">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Installation Instruction</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Document"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#InstructionOfUse">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Instruction Of Use</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Document"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#PostMarketMonitoringPlan">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Post-market Monitoring Plan</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Document"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#PostMarketMonitoringSystemDescription">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Post-market Monitoring System Description</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Document"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#SystemArchitecture">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">System Architecture</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Document"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#Blueprint">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Blueprint</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Document"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+
+
+
+    
+#-----------Standards--------------    
+
+</rdf:RDF>
