@@ -1162,4 +1162,190 @@
     <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AISystemForm"/>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
   </rdf:Description>
+    
+    
+ #-----------AI Characteristics-------------
+    
+      <rdf:Description rdf:about="https://w3id.org/vair#Robustness">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Robustness</skos:prefLabel>
+    <skos:definition xml:lang="en">Ability of a system to maintain its level of performance under any circumstances</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Characteristic"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#Predictability">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Predictability</skos:prefLabel>
+    <skos:definition xml:lang="en">Property of an AI system that enables reliable assumptions by stakeholders about the output</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Characteristic"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#Usability">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Usability</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Characteristic"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#Privacy">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Privacy</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Characteristic"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="https://w3id.org/vair#Integrity">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Integrity</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Characteristic"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#Controllability">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Controllability</skos:prefLabel>
+    <skos:definition xml:lang="en">Property of an AI system that allows a human or another external agent to intervene in the system’s functioning</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Characteristic"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#Transparency">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Transparency</skos:prefLabel>
+    <skos:definition xml:lang="en">Property of a system that appropriate information about the system is made available to relevant stakeholders</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Characteristic"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#FaultTolerance">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Fault Tolerance</skos:prefLabel>
+    <skos:definition xml:lang="en">The system's ability to continue to operate when disruption, faults and failures occur within the system, potentially with degraded capabilities.</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Characteristic"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#Authenticity">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Authenticity</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Characteristic"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#Autonomy">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Autonomy</skos:prefLabel>
+    <skos:definition xml:lang="en">characteristic of a system that is capable of modifying its intended domain of use or goal without external intervention, control or oversight</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Characteristic"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#Availability">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Availability</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Characteristic"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#Reliability">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Reliability</skos:prefLabel>
+    <skos:definition xml:lang="en">Property of consistent intended behaviour and results. Reliability of an AI system refers to the ability that enables it to provide required prediction, recommendation and decision consistently correctly during its operation stage</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Characteristic"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#Heteronomy">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Heteronomy</skos:prefLabel>
+    <skos:definition xml:lang="en">characteristic of a system operating under the constraint of external intervention, control or oversight</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Characteristic"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#Security">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Security</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Characteristic"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#Fairness">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Fairness</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Characteristic"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#Resilience">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Resilience</skos:prefLabel>
+    <skos:definition xml:lang="en">Ability of a system to recover operational condition quickly following an incident</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Characteristic"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#Safety">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Safety</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Characteristic"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#Accountability">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Accountability</skos:prefLabel>
+    <skos:definition xml:lang="en"></skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Characteristic"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#Explainability">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Explainability</skos:prefLabel>
+    <skos:definition xml:lang="en">Property of an AI system to express important factors influencing the AI system results in a way that humans can understand</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Characteristic"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/vair#Performance">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+    <skos:prefLabel xml:lang="en">Performance</skos:prefLabel>
+    <skos:definition xml:lang="en">measurable result</skos:definition>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Characteristic"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+  </rdf:Description>
+    
 </rdf:RDF>
