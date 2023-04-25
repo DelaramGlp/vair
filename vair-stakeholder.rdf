@@ -73,7 +73,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Operator"/>  
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AIOperator"/>  
     <skos:prefLabel xml:lang="en">Authorised Representative</skos:prefLabel>
     <skos:definition xml:lang="en">means any natural or legal person physically present or established in the Union who has received and accepted a written mandate from a provider of an AI system to, respectively, perform and carry out on its behalf the obligations and procedures established by the AI Act.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
@@ -148,7 +148,7 @@
     <skos:prefLabel xml:lang="en">Importer</skos:prefLabel>
     <skos:definition xml:lang="en">any natural or legal person physically present or established in the Union that places on the market an AI system that bears the name or trademark of a natural or legal person established outside the Union.</skos:definition>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Operator"/>  
+    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AIOperator"/>  
   </rdf:Description>
   
   <rdf:Description rdf:about="https://w3id.org/vair#EuropeanArtificialIntelligenceBoard">
