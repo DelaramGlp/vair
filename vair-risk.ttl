@@ -1,0 +1,1240 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix airo: <https://w3id.org/airo#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vair: <https://w3id.org/vair#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#definition
+skos:definition rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+skos:inScheme rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+skos:prefLabel rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#related
+skos:related rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+skos:Concept rdf:type owl:Class .
+
+
+###  https://w3id.org/airo#Consequence
+airo:Consequence rdf:type owl:Class .
+
+
+###  https://w3id.org/airo#DataRiskSource
+airo:DataRiskSource rdf:type owl:Class .
+
+
+###  https://w3id.org/airo#DetectionControl
+airo:DetectionControl rdf:type owl:Class .
+
+
+###  https://w3id.org/airo#Impact
+airo:Impact rdf:type owl:Class .
+
+
+###  https://w3id.org/airo#ImpactedArea
+airo:ImpactedArea rdf:type owl:Class .
+
+
+###  https://w3id.org/airo#InputDataRiskSource
+airo:InputDataRiskSource rdf:type owl:Class .
+
+
+###  https://w3id.org/airo#ManualControl
+airo:ManualControl rdf:type owl:Class .
+
+
+###  https://w3id.org/airo#MitigationControl
+airo:MitigationControl rdf:type owl:Class .
+
+
+###  https://w3id.org/airo#OperationalControl
+airo:OperationalControl rdf:type owl:Class .
+
+
+###  https://w3id.org/airo#OrganisationalControl
+airo:OrganisationalControl rdf:type owl:Class .
+
+
+###  https://w3id.org/airo#OrganisationalRiskSource
+airo:OrganisationalRiskSource rdf:type owl:Class .
+
+
+###  https://w3id.org/airo#PerfomanceRiskSource
+airo:PerfomanceRiskSource rdf:type owl:Class .
+
+
+###  https://w3id.org/airo#RiskSource
+airo:RiskSource rdf:type owl:Class .
+
+
+###  https://w3id.org/airo#SemiAutomatedControl
+airo:SemiAutomatedControl rdf:type owl:Class .
+
+
+###  https://w3id.org/airo#SystemRiskSource
+airo:SystemRiskSource rdf:type owl:Class .
+
+
+###  https://w3id.org/airo#TestDataRiskSource
+airo:TestDataRiskSource rdf:type owl:Class .
+
+
+###  https://w3id.org/airo#TrainingDataRiskSource
+airo:TrainingDataRiskSource rdf:type owl:Class .
+
+
+###  https://w3id.org/airo#ValidationDataRiskSource
+airo:ValidationDataRiskSource rdf:type owl:Class .
+
+
+###  https://w3id.org/airo#WellbeingImpact
+airo:WellbeingImpact rdf:type owl:Class .
+
+
+###  https://w3id.org/vair#AdversarialAttack
+vair:AdversarialAttack rdf:type owl:Class ;
+                       rdfs:subClassOf vair:Attack .
+
+
+###  https://w3id.org/vair#Approval
+vair:Approval rdf:type owl:Class ;
+              rdfs:subClassOf airo:ManualControl .
+
+
+###  https://w3id.org/vair#Attack
+vair:Attack rdf:type owl:Class ;
+            rdfs:subClassOf airo:RiskSource .
+
+
+###  https://w3id.org/vair#Bias
+vair:Bias rdf:type owl:Class ;
+          rdfs:subClassOf airo:Consequence .
+
+
+###  https://w3id.org/vair#BiasDetection
+vair:BiasDetection rdf:type owl:Class ;
+                   rdfs:subClassOf airo:DetectionControl .
+
+
+###  https://w3id.org/vair#BiasedTestData
+vair:BiasedTestData rdf:type owl:Class ;
+                    rdfs:subClassOf airo:TestDataRiskSource .
+
+
+###  https://w3id.org/vair#BiasedTrainingData
+vair:BiasedTrainingData rdf:type owl:Class ;
+                        rdfs:subClassOf airo:TrainingDataRiskSource .
+
+
+###  https://w3id.org/vair#BiasedValidationData
+vair:BiasedValidationData rdf:type owl:Class ;
+                          rdfs:subClassOf airo:ValidationDataRiskSource .
+
+
+###  https://w3id.org/vair#Concept
+vair:Concept rdf:type owl:Class .
+
+
+###  https://w3id.org/vair#Cyberattack
+vair:Cyberattack rdf:type owl:Class ;
+                 rdfs:subClassOf vair:Attack .
+
+
+###  https://w3id.org/vair#DataPoisoning
+vair:DataPoisoning rdf:type owl:Class ;
+                   rdfs:subClassOf vair:Attack .
+
+
+###  https://w3id.org/vair#Death
+vair:Death rdf:type owl:Class ;
+           rdfs:subClassOf airo:WellbeingImpact .
+
+
+###  https://w3id.org/vair#DecreasedRobustness
+vair:DecreasedRobustness rdf:type owl:Class ;
+                         rdfs:subClassOf airo:Consequence .
+
+
+###  https://w3id.org/vair#DecreasedSecurity
+vair:DecreasedSecurity rdf:type owl:Class ;
+                       rdfs:subClassOf airo:Consequence .
+
+
+###  https://w3id.org/vair#DegradedAccuracy
+vair:DegradedAccuracy rdf:type owl:Class ;
+                      rdfs:subClassOf airo:Consequence .
+
+
+###  https://w3id.org/vair#DistortionInHumanBehaviour
+vair:DistortionInHumanBehaviour rdf:type owl:Class ;
+                                rdfs:subClassOf airo:WellbeingImpact .
+
+
+###  https://w3id.org/vair#ErroneousInputData
+vair:ErroneousInputData rdf:type owl:Class ;
+                        rdfs:subClassOf airo:InputDataRiskSource .
+
+
+###  https://w3id.org/vair#ErroneousTestData
+vair:ErroneousTestData rdf:type owl:Class ;
+                       rdfs:subClassOf airo:TestDataRiskSource .
+
+
+###  https://w3id.org/vair#ErroneousTrainingData
+vair:ErroneousTrainingData rdf:type owl:Class ;
+                           rdfs:subClassOf airo:TrainingDataRiskSource .
+
+
+###  https://w3id.org/vair#ErroneousValidationData
+vair:ErroneousValidationData rdf:type owl:Class ;
+                             rdfs:subClassOf airo:ValidationDataRiskSource .
+
+
+###  https://w3id.org/vair#ErrorInDataCollection
+vair:ErrorInDataCollection rdf:type owl:Class ;
+                           rdfs:subClassOf airo:DataRiskSource .
+
+
+###  https://w3id.org/vair#ErrorInDataPrepration
+vair:ErrorInDataPrepration rdf:type owl:Class ;
+                           rdfs:subClassOf airo:DataRiskSource .
+
+
+###  https://w3id.org/vair#Freedom
+vair:Freedom rdf:type owl:Class ;
+             rdfs:subClassOf airo:ImpactedArea .
+
+
+###  https://w3id.org/vair#Health
+vair:Health rdf:type owl:Class ;
+            rdfs:subClassOf airo:ImpactedArea .
+
+
+###  https://w3id.org/vair#HumanOversightMeasure
+vair:HumanOversightMeasure rdf:type owl:Class ;
+                           rdfs:subClassOf airo:SemiAutomatedControl .
+
+
+###  https://w3id.org/vair#InaccurateDecision
+vair:InaccurateDecision rdf:type owl:Class ;
+                        rdfs:subClassOf vair:LowAccuracy .
+
+
+###  https://w3id.org/vair#InaccuratePrediction
+vair:InaccuratePrediction rdf:type owl:Class ;
+                          rdfs:subClassOf vair:LowAccuracy .
+
+
+###  https://w3id.org/vair#InaccurateRecommendation
+vair:InaccurateRecommendation rdf:type owl:Class ;
+                              rdfs:subClassOf vair:LowAccuracy .
+
+
+###  https://w3id.org/vair#IncompleteTestData
+vair:IncompleteTestData rdf:type owl:Class ;
+                        rdfs:subClassOf airo:TestDataRiskSource .
+
+
+###  https://w3id.org/vair#IncompleteTrainingData
+vair:IncompleteTrainingData rdf:type owl:Class ;
+                            rdfs:subClassOf airo:TrainingDataRiskSource .
+
+
+###  https://w3id.org/vair#IncompleteValidationData
+vair:IncompleteValidationData rdf:type owl:Class ;
+                              rdfs:subClassOf airo:ValidationDataRiskSource .
+
+
+###  https://w3id.org/vair#InformationProvision
+vair:InformationProvision rdf:type owl:Class ;
+                          rdfs:subClassOf airo:OrganisationalControl .
+
+
+###  https://w3id.org/vair#InsufficientHumanOversightMeasure
+vair:InsufficientHumanOversightMeasure rdf:type owl:Class ;
+                                       rdfs:subClassOf airo:OrganisationalRiskSource .
+
+
+###  https://w3id.org/vair#InsufficientInstruction
+vair:InsufficientInstruction rdf:type owl:Class ;
+                             rdfs:subClassOf airo:OrganisationalRiskSource .
+
+
+###  https://w3id.org/vair#Interruption
+vair:Interruption rdf:type owl:Class ;
+                  rdfs:subClassOf airo:OperationalControl .
+
+
+###  https://w3id.org/vair#Intervention
+vair:Intervention rdf:type owl:Class ;
+                  rdfs:subClassOf airo:OperationalControl .
+
+
+###  https://w3id.org/vair#IrrelevantTestData
+vair:IrrelevantTestData rdf:type owl:Class ;
+                        rdfs:subClassOf airo:TestDataRiskSource .
+
+
+###  https://w3id.org/vair#IrrelevantTrainingData
+vair:IrrelevantTrainingData rdf:type owl:Class ;
+                            rdfs:subClassOf airo:TrainingDataRiskSource .
+
+
+###  https://w3id.org/vair#IrrelevantValidationData
+vair:IrrelevantValidationData rdf:type owl:Class ;
+                              rdfs:subClassOf airo:ValidationDataRiskSource .
+
+
+###  https://w3id.org/vair#LackOfTransparency
+vair:LackOfTransparency rdf:type owl:Class ;
+                        rdfs:subClassOf airo:OrganisationalRiskSource .
+
+
+###  https://w3id.org/vair#LowAccuracy
+vair:LowAccuracy rdf:type owl:Class ;
+                 rdfs:subClassOf airo:PerfomanceRiskSource .
+
+
+###  https://w3id.org/vair#LowRobustness
+vair:LowRobustness rdf:type owl:Class ;
+                   rdfs:subClassOf airo:PerfomanceRiskSource .
+
+
+###  https://w3id.org/vair#LowSecurity
+vair:LowSecurity rdf:type owl:Class ;
+                 rdfs:subClassOf airo:PerfomanceRiskSource .
+
+
+###  https://w3id.org/vair#ModelEvasion
+vair:ModelEvasion rdf:type owl:Class ;
+                  rdfs:subClassOf vair:Attack .
+
+
+###  https://w3id.org/vair#ModelInversion
+vair:ModelInversion rdf:type owl:Class ;
+                    rdfs:subClassOf vair:Attack .
+
+
+###  https://w3id.org/vair#Overreliance
+vair:Overreliance rdf:type owl:Class ;
+                  rdfs:subClassOf airo:Impact .
+
+
+###  https://w3id.org/vair#OverridingOutcome
+vair:OverridingOutcome rdf:type owl:Class ;
+                       rdfs:subClassOf airo:MitigationControl .
+
+
+###  https://w3id.org/vair#PhysicalHealth
+vair:PhysicalHealth rdf:type owl:Class ;
+                    rdfs:subClassOf vair:Health .
+
+
+###  https://w3id.org/vair#PhysicalInjury
+vair:PhysicalInjury rdf:type owl:Class ;
+                    rdfs:subClassOf airo:WellbeingImpact .
+
+
+###  https://w3id.org/vair#Principle
+vair:Principle rdf:type owl:Class ;
+               rdfs:subClassOf airo:ImpactedArea .
+
+
+###  https://w3id.org/vair#PsychologicalHarm
+vair:PsychologicalHarm rdf:type owl:Class ;
+                       rdfs:subClassOf airo:WellbeingImpact .
+
+
+###  https://w3id.org/vair#PsychologicalHealth
+vair:PsychologicalHealth rdf:type owl:Class ;
+                         rdfs:subClassOf vair:Health .
+
+
+###  https://w3id.org/vair#ReversingOutcome
+vair:ReversingOutcome rdf:type owl:Class ;
+                      rdfs:subClassOf airo:MitigationControl .
+
+
+###  https://w3id.org/vair#Right
+vair:Right rdf:type owl:Class ;
+           rdfs:subClassOf airo:ImpactedArea .
+
+
+###  https://w3id.org/vair#Safety
+vair:Safety rdf:type owl:Class ;
+            rdfs:subClassOf airo:ImpactedArea .
+
+
+###  https://w3id.org/vair#StaffIncompetence
+vair:StaffIncompetence rdf:type owl:Class ;
+                       rdfs:subClassOf airo:OrganisationalRiskSource .
+
+
+###  https://w3id.org/vair#SystemVulnerability
+vair:SystemVulnerability rdf:type owl:Class ;
+                         rdfs:subClassOf airo:SystemRiskSource .
+
+
+###  https://w3id.org/vair#Training
+vair:Training rdf:type owl:Class ;
+              rdfs:subClassOf airo:OrganisationalControl .
+
+
+###  https://w3id.org/vair#UnavailabilityOfDataSet
+vair:UnavailabilityOfDataSet rdf:type owl:Class ;
+                             rdfs:subClassOf airo:DataRiskSource .
+
+
+###  https://w3id.org/vair#UnrepresentativeTestData
+vair:UnrepresentativeTestData rdf:type owl:Class ;
+                              rdfs:subClassOf airo:TestDataRiskSource .
+
+
+###  https://w3id.org/vair#UnrepresentativeTrainingData
+vair:UnrepresentativeTrainingData rdf:type owl:Class ;
+                                  rdfs:subClassOf airo:TrainingDataRiskSource .
+
+
+###  https://w3id.org/vair#UnrepresentativeValidationData
+vair:UnrepresentativeValidationData rdf:type owl:Class ;
+                                    rdfs:subClassOf airo:ValidationDataRiskSource .
+
+
+###  https://w3id.org/vair#WrongDataSetDesignChoice
+vair:WrongDataSetDesignChoice rdf:type owl:Class ;
+                              rdfs:subClassOf airo:DataRiskSource .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/vair#
+vair: rdf:type owl:NamedIndividual ,
+               skos:Concept ,
+               vair:Concept ;
+      rdfs:isDefinedBy vair: ;
+      skos:definition ""@en ;
+      skos:inScheme vair: ;
+      skos:prefLabel ""@en .
+
+
+###  https://w3id.org/vair#AdversarialAttack
+vair:AdversarialAttack rdf:type owl:NamedIndividual ,
+                                skos:Concept ,
+                                vair:Concept .
+
+
+###  https://w3id.org/vair#Approval
+vair:Approval rdf:type owl:NamedIndividual ,
+                       skos:Concept ,
+                       vair:Concept .
+
+
+###  https://w3id.org/vair#Attack
+vair:Attack rdf:type owl:NamedIndividual ,
+                     skos:Concept ,
+                     vair:Concept .
+
+
+###  https://w3id.org/vair#Bias
+vair:Bias rdf:type owl:NamedIndividual ,
+                   skos:Concept ,
+                   vair:Concept .
+
+
+###  https://w3id.org/vair#BiasDetection
+vair:BiasDetection rdf:type owl:NamedIndividual ,
+                            skos:Concept ,
+                            vair:Concept .
+
+
+###  https://w3id.org/vair#BiasedTestData
+vair:BiasedTestData rdf:type owl:NamedIndividual ,
+                             skos:Concept ,
+                             vair:Concept .
+
+
+###  https://w3id.org/vair#BiasedTrainingData
+vair:BiasedTrainingData rdf:type owl:NamedIndividual ,
+                                 skos:Concept ,
+                                 vair:Concept .
+
+
+###  https://w3id.org/vair#BiasedValidationData
+vair:BiasedValidationData rdf:type owl:NamedIndividual ,
+                                   skos:Concept ,
+                                   vair:Concept .
+
+
+###  https://w3id.org/vair#Cyberattack
+vair:Cyberattack rdf:type owl:NamedIndividual ,
+                          skos:Concept ,
+                          vair:Concept .
+
+
+###  https://w3id.org/vair#DataPoisoning
+vair:DataPoisoning rdf:type owl:NamedIndividual ,
+                            skos:Concept ,
+                            vair:Concept .
+
+
+###  https://w3id.org/vair#Death
+vair:Death rdf:type owl:NamedIndividual ,
+                    skos:Concept ,
+                    vair:Concept .
+
+
+###  https://w3id.org/vair#DecreasedRobustness
+vair:DecreasedRobustness rdf:type owl:NamedIndividual ,
+                                  skos:Concept ,
+                                  vair:Concept .
+
+
+###  https://w3id.org/vair#DecreasedSecurity
+vair:DecreasedSecurity rdf:type owl:NamedIndividual ,
+                                skos:Concept ,
+                                vair:Concept .
+
+
+###  https://w3id.org/vair#DegradedAccuracy
+vair:DegradedAccuracy rdf:type owl:NamedIndividual ,
+                               skos:Concept ,
+                               vair:Concept .
+
+
+###  https://w3id.org/vair#DistortionInHumanBehaviour
+vair:DistortionInHumanBehaviour rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         vair:Concept .
+
+
+###  https://w3id.org/vair#ErroneousInputData
+vair:ErroneousInputData rdf:type owl:NamedIndividual ,
+                                 skos:Concept ,
+                                 vair:Concept .
+
+
+###  https://w3id.org/vair#ErroneousTestData
+vair:ErroneousTestData rdf:type owl:NamedIndividual ,
+                                skos:Concept ,
+                                vair:Concept .
+
+
+###  https://w3id.org/vair#ErroneousTrainingData
+vair:ErroneousTrainingData rdf:type owl:NamedIndividual ,
+                                    skos:Concept ,
+                                    vair:Concept .
+
+
+###  https://w3id.org/vair#ErroneousValidationData
+vair:ErroneousValidationData rdf:type owl:NamedIndividual ,
+                                      skos:Concept ,
+                                      vair:Concept .
+
+
+###  https://w3id.org/vair#ErrorInDataCollection
+vair:ErrorInDataCollection rdf:type owl:NamedIndividual ,
+                                    skos:Concept ,
+                                    vair:Concept .
+
+
+###  https://w3id.org/vair#ErrorInDataPrepration
+vair:ErrorInDataPrepration rdf:type owl:NamedIndividual ,
+                                    skos:Concept ,
+                                    vair:Concept .
+
+
+###  https://w3id.org/vair#ExplainingAlgorithm
+vair:ExplainingAlgorithm rdf:type owl:NamedIndividual ,
+                                  skos:Concept ,
+                                  vair:Concept ;
+                         rdfs:isDefinedBy vair: ;
+                         skos:definition "Providing an explaination of the algorithm used in the system."@en ;
+                         skos:inScheme vair: ;
+                         skos:prefLabel "Explaining Algorithm"@en ;
+                         skos:related vair:Algorithm .
+
+
+###  https://w3id.org/vair#Freedom
+vair:Freedom rdf:type owl:NamedIndividual ,
+                      skos:Concept ,
+                      vair:Concept .
+
+
+###  https://w3id.org/vair#Health
+vair:Health rdf:type owl:NamedIndividual ,
+                     skos:Concept ,
+                     vair:Concept .
+
+
+###  https://w3id.org/vair#HumanBehaviour
+vair:HumanBehaviour rdf:type owl:NamedIndividual ,
+                             skos:Concept ,
+                             vair:Concept ;
+                    rdfs:isDefinedBy vair: ;
+                    skos:definition "The way a person acts."@en ;
+                    skos:inScheme vair: ;
+                    skos:prefLabel "Human Behaviour"@en .
+
+
+###  https://w3id.org/vair#HumanOversightMeasure
+vair:HumanOversightMeasure rdf:type owl:NamedIndividual ,
+                                    skos:Concept ,
+                                    vair:Concept .
+
+
+###  https://w3id.org/vair#InaccurateDecision
+vair:InaccurateDecision rdf:type owl:NamedIndividual ,
+                                 skos:Concept ,
+                                 vair:Concept .
+
+
+###  https://w3id.org/vair#InaccuratePrediction
+vair:InaccuratePrediction rdf:type owl:NamedIndividual ,
+                                   skos:Concept ,
+                                   vair:Concept .
+
+
+###  https://w3id.org/vair#InaccurateRecommendation
+vair:InaccurateRecommendation rdf:type owl:NamedIndividual ,
+                                       skos:Concept ,
+                                       vair:Concept .
+
+
+###  https://w3id.org/vair#IncompleteTestData
+vair:IncompleteTestData rdf:type owl:NamedIndividual ,
+                                 skos:Concept ,
+                                 vair:Concept .
+
+
+###  https://w3id.org/vair#IncompleteTrainingData
+vair:IncompleteTrainingData rdf:type owl:NamedIndividual ,
+                                     skos:Concept ,
+                                     vair:Concept .
+
+
+###  https://w3id.org/vair#IncompleteValidationData
+vair:IncompleteValidationData rdf:type owl:NamedIndividual ,
+                                       skos:Concept ,
+                                       vair:Concept .
+
+
+###  https://w3id.org/vair#InformationProvision
+vair:InformationProvision rdf:type owl:NamedIndividual ,
+                                   skos:Concept ,
+                                   vair:Concept .
+
+
+###  https://w3id.org/vair#InsufficientHumanOversightMeasure
+vair:InsufficientHumanOversightMeasure rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                vair:Concept .
+
+
+###  https://w3id.org/vair#InsufficientInstruction
+vair:InsufficientInstruction rdf:type owl:NamedIndividual ,
+                                      skos:Concept ,
+                                      vair:Concept .
+
+
+###  https://w3id.org/vair#Interruption
+vair:Interruption rdf:type owl:NamedIndividual ,
+                           skos:Concept ,
+                           vair:Concept .
+
+
+###  https://w3id.org/vair#Intervention
+vair:Intervention rdf:type owl:NamedIndividual ,
+                           skos:Concept ,
+                           vair:Concept .
+
+
+###  https://w3id.org/vair#IrrelevantTestData
+vair:IrrelevantTestData rdf:type owl:NamedIndividual ,
+                                 skos:Concept ,
+                                 vair:Concept .
+
+
+###  https://w3id.org/vair#IrrelevantTrainingData
+vair:IrrelevantTrainingData rdf:type owl:NamedIndividual ,
+                                     skos:Concept ,
+                                     vair:Concept .
+
+
+###  https://w3id.org/vair#IrrelevantValidationData
+vair:IrrelevantValidationData rdf:type owl:NamedIndividual ,
+                                       skos:Concept ,
+                                       vair:Concept .
+
+
+###  https://w3id.org/vair#LackOfTransparency
+vair:LackOfTransparency rdf:type owl:NamedIndividual ,
+                                 skos:Concept ,
+                                 vair:Concept .
+
+
+###  https://w3id.org/vair#LowAccuracy
+vair:LowAccuracy rdf:type owl:NamedIndividual ,
+                          skos:Concept ,
+                          vair:Concept .
+
+
+###  https://w3id.org/vair#LowRobustness
+vair:LowRobustness rdf:type owl:NamedIndividual ,
+                            skos:Concept ,
+                            vair:Concept .
+
+
+###  https://w3id.org/vair#LowSecurity
+vair:LowSecurity rdf:type owl:NamedIndividual ,
+                          skos:Concept ,
+                          vair:Concept .
+
+
+###  https://w3id.org/vair#ModelEvasion
+vair:ModelEvasion rdf:type owl:NamedIndividual ,
+                           skos:Concept ,
+                           vair:Concept .
+
+
+###  https://w3id.org/vair#ModelInversion
+vair:ModelInversion rdf:type owl:NamedIndividual ,
+                             skos:Concept ,
+                             vair:Concept .
+
+
+###  https://w3id.org/vair#Overreliance
+vair:Overreliance rdf:type owl:NamedIndividual ,
+                           skos:Concept ,
+                           vair:Concept .
+
+
+###  https://w3id.org/vair#OverridingOutcome
+vair:OverridingOutcome rdf:type owl:NamedIndividual ,
+                                skos:Concept ,
+                                vair:Concept .
+
+
+###  https://w3id.org/vair#PhysicalHealth
+vair:PhysicalHealth rdf:type owl:NamedIndividual ,
+                             skos:Concept ,
+                             vair:Concept .
+
+
+###  https://w3id.org/vair#PhysicalInjury
+vair:PhysicalInjury rdf:type owl:NamedIndividual ,
+                             skos:Concept ,
+                             vair:Concept .
+
+
+###  https://w3id.org/vair#Principle
+vair:Principle rdf:type owl:NamedIndividual ,
+                        skos:Concept ,
+                        vair:Concept .
+
+
+###  https://w3id.org/vair#PsychologicalHarm
+vair:PsychologicalHarm rdf:type owl:NamedIndividual ,
+                                skos:Concept ,
+                                vair:Concept .
+
+
+###  https://w3id.org/vair#PsychologicalHealth
+vair:PsychologicalHealth rdf:type owl:NamedIndividual ,
+                                  skos:Concept ,
+                                  vair:Concept .
+
+
+###  https://w3id.org/vair#ReversingOutcome
+vair:ReversingOutcome rdf:type owl:NamedIndividual ,
+                               skos:Concept ,
+                               vair:Concept .
+
+
+###  https://w3id.org/vair#Right
+vair:Right rdf:type owl:NamedIndividual ,
+                    skos:Concept ,
+                    vair:Concept .
+
+
+###  https://w3id.org/vair#Safety
+vair:Safety rdf:type owl:NamedIndividual ,
+                     skos:Concept ,
+                     vair:Concept .
+
+
+###  https://w3id.org/vair#StaffIncompetence
+vair:StaffIncompetence rdf:type owl:NamedIndividual ,
+                                skos:Concept ,
+                                vair:Concept .
+
+
+###  https://w3id.org/vair#SystemVulnerability
+vair:SystemVulnerability rdf:type owl:NamedIndividual ,
+                                  skos:Concept ,
+                                  vair:Concept .
+
+
+###  https://w3id.org/vair#Training
+vair:Training rdf:type owl:NamedIndividual ,
+                       skos:Concept ,
+                       vair:Concept .
+
+
+###  https://w3id.org/vair#UnavailabilityOfDataSet
+vair:UnavailabilityOfDataSet rdf:type owl:NamedIndividual ,
+                                      skos:Concept ,
+                                      vair:Concept .
+
+
+###  https://w3id.org/vair#UnrepresentativeTestData
+vair:UnrepresentativeTestData rdf:type owl:NamedIndividual ,
+                                       skos:Concept ,
+                                       vair:Concept .
+
+
+###  https://w3id.org/vair#UnrepresentativeTrainingData
+vair:UnrepresentativeTrainingData rdf:type owl:NamedIndividual ,
+                                           skos:Concept ,
+                                           vair:Concept .
+
+
+###  https://w3id.org/vair#UnrepresentativeValidationData
+vair:UnrepresentativeValidationData rdf:type owl:NamedIndividual ,
+                                             skos:Concept ,
+                                             vair:Concept .
+
+
+###  https://w3id.org/vair#WrongDataSetDesignChoice
+vair:WrongDataSetDesignChoice rdf:type owl:NamedIndividual ,
+                                       skos:Concept ,
+                                       vair:Concept .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+vair:AdversarialAttack skos:related vair:Model ;
+                       skos:inScheme vair: ;
+                       rdfs:isDefinedBy vair: ;
+                       skos:definition "inputs designed to cause the model to make a mistake"@en ;
+                       skos:prefLabel "Adversarial Attack"@en .
+
+
+vair:Approval skos:inScheme vair: ;
+              rdfs:isDefinedBy vair: ;
+              skos:prefLabel "Approval"@en ;
+              skos:definition "Approval or refusual of a request, excutation of process, etc. to prevent or mitigate a risk."@en .
+
+
+vair:Attack skos:inScheme vair: ;
+            rdfs:isDefinedBy vair: ;
+            skos:prefLabel "Attack"@en ;
+            skos:definition ""@en .
+
+
+vair:Bias skos:definition "systematic difference in treatment of certain objects, people or groups in comparison to others"@en ;
+          skos:prefLabel "Bias"@en ;
+          skos:inScheme vair: ;
+          rdfs:isDefinedBy vair: .
+
+
+vair:BiasDetection skos:definition "Control that is applied to detect bias in datasets, models, algorithms, etc."@en ;
+                   skos:prefLabel "Bias Detection"@en ;
+                   rdfs:isDefinedBy vair: ;
+                   skos:inScheme vair: .
+
+
+vair:BiasedTestData skos:related vair:TestData ;
+                    rdfs:isDefinedBy vair: ;
+                    skos:prefLabel "Biased Test Data"@en ;
+                    skos:inScheme vair: ;
+                    skos:definition ""@en .
+
+
+vair:BiasedTrainingData skos:definition ""@en ;
+                        rdfs:isDefinedBy vair: ;
+                        skos:related vair:TrainingData ;
+                        skos:prefLabel "Biased Training Data"@en ;
+                        skos:inScheme vair: .
+
+
+vair:BiasedValidationData skos:prefLabel "Biased Validation Data"@en ;
+                          skos:inScheme vair: ;
+                          skos:definition ""@en ;
+                          rdfs:isDefinedBy vair: ;
+                          skos:related vair:ValidationData .
+
+
+vair:Cyberattack skos:prefLabel "Cyberattack"@en ;
+                 skos:inScheme vair: ;
+                 skos:definition ""@en ;
+                 rdfs:isDefinedBy vair: .
+
+
+vair:DataPoisoning skos:prefLabel "Data Poisoning"@en ;
+                   skos:inScheme vair: ;
+                   skos:related vair:TrainingData ;
+                   rdfs:isDefinedBy vair: ;
+                   skos:definition "Attack trying to manipulate the training dataset."@en .
+
+
+vair:Death skos:inScheme vair: ;
+           skos:definition ""@en ;
+           rdfs:isDefinedBy vair: ;
+           skos:prefLabel "Death"@en .
+
+
+vair:DecreasedRobustness rdfs:isDefinedBy vair: ;
+                         skos:definition "Decreased level of system's robustness resulted from materialisation of a risk."@en ;
+                         skos:inScheme vair: ;
+                         skos:prefLabel "Decreased Robustness"@en .
+
+
+vair:DecreasedSecurity rdfs:isDefinedBy vair: ;
+                       skos:prefLabel "Decreased Security"@en ;
+                       skos:definition "Decreased level of security of system resulted from materialisation of a risk."@en ;
+                       skos:inScheme vair: .
+
+
+vair:DegradedAccuracy skos:prefLabel "Degraded Accuracy"@en ;
+                      rdfs:isDefinedBy vair: ;
+                      skos:inScheme vair: ;
+                      skos:definition "Decreased level of system's accuracy resulted from materialisation of a risk."@en .
+
+
+vair:DistortionInHumanBehaviour skos:definition ""@en ;
+                                rdfs:isDefinedBy vair: ;
+                                skos:prefLabel "Distortion In Human Behaviour"@en ;
+                                skos:inScheme vair: .
+
+
+vair:ErroneousInputData rdfs:isDefinedBy vair: ;
+                        skos:definition ""@en ;
+                        skos:prefLabel "Erroneous Input Data"@en ;
+                        skos:related vair:InputData ;
+                        skos:inScheme vair: .
+
+
+vair:ErroneousTestData skos:inScheme vair: ;
+                       rdfs:isDefinedBy vair: ;
+                       skos:related vair:TestData ;
+                       skos:definition "Error in testing data"@en ;
+                       skos:prefLabel "Erroneous Test Data"@en .
+
+
+vair:ErroneousTrainingData skos:related vair:TrainingData ;
+                           rdfs:isDefinedBy vair: ;
+                           skos:prefLabel "Erroneous Training Data"@en ;
+                           skos:definition "Error in training data"@en ;
+                           skos:inScheme vair: .
+
+
+vair:ErroneousValidationData skos:definition "Error in validation data"@en ;
+                             rdfs:isDefinedBy vair: ;
+                             skos:related vair:ValidationData ;
+                             skos:prefLabel "Erroneous Validation Data"@en ;
+                             skos:inScheme vair: .
+
+
+vair:ErrorInDataCollection skos:prefLabel "Error In Data Collection"@en ;
+                           skos:definition ""@en ;
+                           skos:related vair:DataCollection ;
+                           rdfs:isDefinedBy vair: ;
+                           skos:inScheme vair: .
+
+
+vair:ErrorInDataPrepration skos:related vair:DataPrepration ;
+                           skos:prefLabel "Error In Data Prepration"@en ;
+                           skos:inScheme vair: ;
+                           rdfs:isDefinedBy vair: ;
+                           skos:definition ""@en .
+
+
+vair:Freedom skos:inScheme vair: ;
+             skos:definition ""@en ;
+             skos:prefLabel "Freedom"@en ;
+             rdfs:isDefinedBy vair: .
+
+
+vair:Health skos:definition ""@en ;
+            skos:inScheme vair: ;
+            rdfs:isDefinedBy vair: ;
+            skos:prefLabel "Health"@en .
+
+
+vair:HumanOversightMeasure rdfs:isDefinedBy vair: ;
+                           skos:inScheme vair: ;
+                           skos:prefLabel "Human Oversight Measure"@en ;
+                           skos:definition "Overseening the system by natural persons to detect, prevent or minimise risk."@en .
+
+
+vair:InaccurateDecision skos:prefLabel "Inaccurate Decision"@en ;
+                        skos:definition ""@en ;
+                        rdfs:isDefinedBy vair: ;
+                        skos:inScheme vair: .
+
+
+vair:InaccuratePrediction skos:inScheme vair: ;
+                          rdfs:isDefinedBy vair: ;
+                          skos:definition ""@en ;
+                          skos:prefLabel "Inaccurate Prediction"@en .
+
+
+vair:InaccurateRecommendation skos:inScheme vair: ;
+                              rdfs:isDefinedBy vair: ;
+                              skos:prefLabel "Inaccurate Recommendation"@en ;
+                              skos:definition ""@en .
+
+
+vair:IncompleteTestData skos:prefLabel "Incomplete Test Data"@en ;
+                        skos:definition "Incompleteness of testing data set"@en ;
+                        skos:related vair:TestData ;
+                        rdfs:isDefinedBy vair: ;
+                        skos:inScheme vair: .
+
+
+vair:IncompleteTrainingData rdfs:isDefinedBy vair: ;
+                            skos:related vair:TrainingData ;
+                            skos:prefLabel "Incomplete Training Data"@en ;
+                            skos:inScheme vair: ;
+                            skos:definition "Incompleteness of training data set"@en .
+
+
+vair:IncompleteValidationData skos:related vair:ValidationData ;
+                              rdfs:isDefinedBy vair: ;
+                              skos:prefLabel "Incomplete Validation Data"@en ;
+                              skos:definition "Incompleteness of validation data set"@en ;
+                              skos:inScheme vair: .
+
+
+vair:InformationProvision skos:inScheme vair: ;
+                          skos:definition "providing information to inform the user of in particular an AI system’s intended purpose and proper use, inclusive of the specific geographical, behavioural or functional setting within which the  AI system is intended to be used."@en ;
+                          rdfs:isDefinedBy vair: ;
+                          skos:prefLabel "Information Provision"@en .
+
+
+vair:InsufficientHumanOversightMeasure skos:definition ""@en ;
+                                       skos:inScheme vair: ;
+                                       skos:prefLabel "Insufficient Human Oversight Measure"@en ;
+                                       rdfs:isDefinedBy vair: .
+
+
+vair:InsufficientInstruction skos:definition "Lack of appropriate instruction for use"@en ;
+                             skos:prefLabel "Insufficient Instruction"@en ;
+                             rdfs:isDefinedBy vair: ;
+                             skos:inScheme vair: .
+
+
+vair:Interruption skos:definition "Interrupting the system's operation"@en ;
+                  rdfs:isDefinedBy vair: ;
+                  skos:inScheme vair: ;
+                  skos:prefLabel "Interruption"@en .
+
+
+vair:Intervention skos:prefLabel "Intervention"@en ;
+                  skos:inScheme vair: ;
+                  skos:definition "Intervention of system's operation"@en ;
+                  rdfs:isDefinedBy vair: .
+
+
+vair:IrrelevantTestData skos:related vair:TestData ;
+                        skos:inScheme vair: ;
+                        skos:prefLabel "Irrelevant Test Data"@en ;
+                        rdfs:isDefinedBy vair: ;
+                        skos:definition ""@en .
+
+
+vair:IrrelevantTrainingData skos:prefLabel "Irrelevant Training Data"@en ;
+                            rdfs:isDefinedBy vair: ;
+                            skos:definition ""@en ;
+                            skos:related vair:TrainingData ;
+                            skos:inScheme vair: .
+
+
+vair:IrrelevantValidationData skos:definition ""@en ;
+                              skos:related vair:ValidationData ;
+                              rdfs:isDefinedBy vair: ;
+                              skos:inScheme vair: ;
+                              skos:prefLabel "Irrelevant Validation Data"@en .
+
+
+vair:LackOfTransparency skos:inScheme vair: ;
+                        skos:definition ""@en ;
+                        rdfs:isDefinedBy vair: ;
+                        skos:prefLabel "Lack Of Transparency"@en .
+
+
+vair:LowAccuracy rdfs:isDefinedBy vair: ;
+                 skos:inScheme vair: ;
+                 skos:definition "Inacurracy of the predictions, recommondations, or decisions produced by the system."@en ;
+                 skos:prefLabel "Low Accuracy"@en .
+
+
+vair:LowRobustness skos:inScheme vair: ;
+                   skos:prefLabel "Low Robustness"@en ;
+                   rdfs:isDefinedBy vair: ;
+                   skos:definition ""@en .
+
+
+vair:LowSecurity rdfs:isDefinedBy vair: ;
+                 skos:prefLabel "Low Security"@en ;
+                 skos:definition "Lack Of Appropriate Level Of Security."@en ;
+                 skos:inScheme vair: .
+
+
+vair:ModelEvasion rdfs:isDefinedBy vair: ;
+                  skos:inScheme vair: ;
+                  skos:related vair:Model ;
+                  skos:prefLabel "Model Evasion"@en ;
+                  skos:definition ""@en .
+
+
+vair:ModelInversion skos:inScheme vair: ;
+                    rdfs:isDefinedBy vair: ;
+                    skos:related vair:Model ;
+                    skos:prefLabel "Model Inversion"@en ;
+                    skos:definition ""@en .
+
+
+vair:Overreliance skos:definition "tendency of automatically relying or over-relying on the output produced by an AI system"@en ;
+                  skos:prefLabel "Overreliance"@en ;
+                  skos:inScheme vair: ;
+                  rdfs:isDefinedBy vair: .
+
+
+vair:OverridingOutcome skos:definition "Overriding outcome of a system."@en ;
+                       rdfs:isDefinedBy vair: ;
+                       skos:related vair:Outcome ;
+                       skos:inScheme vair: ;
+                       skos:prefLabel "Overriding Outcome"@en .
+
+
+vair:PhysicalHealth skos:inScheme vair: ;
+                    rdfs:isDefinedBy vair: ;
+                    skos:definition ""@en ;
+                    skos:prefLabel "Physical Health"@en .
+
+
+vair:PhysicalInjury rdfs:isDefinedBy vair: ;
+                    skos:definition ""@en ;
+                    skos:prefLabel "Physical Injury"@en ;
+                    skos:inScheme vair: .
+
+
+vair:Principle skos:prefLabel "Principle"@en ;
+               skos:definition ""@en ;
+               skos:inScheme vair: ;
+               rdfs:isDefinedBy vair: .
+
+
+vair:PsychologicalHarm skos:prefLabel "Psychological Harm"@en ;
+                       skos:definition ""@en ;
+                       skos:inScheme vair: ;
+                       rdfs:isDefinedBy vair: .
+
+
+vair:PsychologicalHealth skos:prefLabel "Psychological Health"@en ;
+                         skos:definition ""@en ;
+                         skos:inScheme vair: ;
+                         rdfs:isDefinedBy vair: .
+
+
+vair:ReversingOutcome rdfs:isDefinedBy vair: ;
+                      skos:related vair:Outcome ;
+                      skos:inScheme vair: ;
+                      skos:definition "Reversing the outcome of a system."@en ;
+                      skos:prefLabel "Reversing Outcome"@en .
+
+
+vair:Right skos:definition ""@en ;
+           skos:inScheme vair: ;
+           skos:prefLabel "Right"@en ;
+           rdfs:isDefinedBy vair: .
+
+
+vair:Safety skos:inScheme vair: ;
+            rdfs:isDefinedBy vair: ;
+            skos:definition ""@en ;
+            skos:prefLabel "Safety"@en .
+
+
+vair:StaffIncompetence skos:inScheme vair: ;
+                       skos:definition "Incompetence of staff such as human oversight actors"@en ;
+                       skos:prefLabel "Staff Incompetence"@en ;
+                       rdfs:isDefinedBy vair: .
+
+
+vair:SystemVulnerability skos:definition "Weakness of a system can be exploited by one or more threats. [Source: ISO/IEC TR 24028, 3.48 with modifications]"@en ;
+                         rdfs:isDefinedBy vair: ;
+                         skos:prefLabel "System Vulnerability"@en ;
+                         skos:inScheme vair: .
+
+
+vair:Training skos:definition "Providing training to staff, users, etc."@en ;
+              rdfs:isDefinedBy vair: ;
+              skos:prefLabel "Training"@en ;
+              skos:inScheme vair: .
+
+
+vair:UnavailabilityOfDataSet skos:prefLabel "Unavailability Of Data Set"@en ;
+                             skos:definition ""@en ;
+                             rdfs:isDefinedBy vair: ;
+                             skos:inScheme vair: .
+
+
+vair:UnrepresentativeTestData rdfs:isDefinedBy vair: ;
+                              skos:related vair:TestData ;
+                              skos:inScheme vair: ;
+                              skos:prefLabel "Unrepresentative Test Data"@en ;
+                              skos:definition ""@en .
+
+
+vair:UnrepresentativeTrainingData skos:inScheme vair: ;
+                                  skos:related vair:TrainingData ;
+                                  rdfs:isDefinedBy vair: ;
+                                  skos:definition ""@en ;
+                                  skos:prefLabel "Unrepresentative Training Data"@en .
+
+
+vair:UnrepresentativeValidationData skos:related vair:ValidationData ;
+                                    rdfs:isDefinedBy vair: ;
+                                    skos:inScheme vair: ;
+                                    skos:prefLabel "Unrepresentative Validation Data"@en ;
+                                    skos:definition ""@en .
+
+
+vair:WrongDataSetDesignChoice skos:inScheme vair: ;
+                              skos:definition ""@en ;
+                              rdfs:isDefinedBy vair: ;
+                              skos:prefLabel "Wrong Data Set Design Choice"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
