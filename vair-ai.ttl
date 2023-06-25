@@ -1,0 +1,2150 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix airo: <https://w3id.org/airo#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vair: <https://w3id.org/vair#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#definition
+skos:definition rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+skos:inScheme rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+skos:prefLabel rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#related
+skos:related rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+skos:Concept rdf:type owl:Class .
+
+
+###  https://w3id.org/airo#AIComponent
+airo:AIComponent rdf:type owl:Class .
+
+
+###  https://w3id.org/airo#AILifecyclePhase
+airo:AILifecyclePhase rdf:type owl:Class .
+
+
+###  https://w3id.org/airo#AISystem
+airo:AISystem rdf:type owl:Class .
+
+
+###  https://w3id.org/airo#AISystemForm
+airo:AISystemForm rdf:type owl:Class .
+
+
+###  https://w3id.org/airo#Algorithm
+airo:Algorithm rdf:type owl:Class .
+
+
+###  https://w3id.org/airo#Capability
+airo:Capability rdf:type owl:Class .
+
+
+###  https://w3id.org/airo#Output
+airo:Output rdf:type owl:Class .
+
+
+###  https://w3id.org/airo#Technique
+airo:Technique rdf:type owl:Class .
+
+
+###  https://w3id.org/vair#AGI
+vair:AGI rdf:type owl:Class ;
+         rdfs:subClassOf airo:AISystem .
+
+
+###  https://w3id.org/vair#Action
+vair:Action rdf:type owl:Class ;
+            rdfs:subClassOf airo:Output .
+
+
+###  https://w3id.org/vair#ActionRecognition
+vair:ActionRecognition rdf:type owl:Class ;
+                       rdfs:subClassOf airo:Capability .
+
+
+###  https://w3id.org/vair#Algorithm
+vair:Algorithm rdf:type owl:Class ;
+               rdfs:subClassOf airo:AIComponent .
+
+
+###  https://w3id.org/vair#ApplicationSpecificIntegratedCircuit
+vair:ApplicationSpecificIntegratedCircuit rdf:type owl:Class ;
+                                          rdfs:subClassOf vair:Hardware .
+
+
+###  https://w3id.org/vair#AutomaticSummarisation
+vair:AutomaticSummarisation rdf:type owl:Class ;
+                            rdfs:subClassOf airo:Capability .
+
+
+###  https://w3id.org/vair#AutonomousSystem
+vair:AutonomousSystem rdf:type owl:Class ;
+                      rdfs:subClassOf airo:AISystem .
+
+
+###  https://w3id.org/vair#BayesianEstimation
+vair:BayesianEstimation rdf:type owl:Class ;
+                        rdfs:subClassOf vair:StatisticalTechnique .
+
+
+###  https://w3id.org/vair#BayesianNetwork
+vair:BayesianNetwork rdf:type owl:Class ;
+                     rdfs:subClassOf vair:Model .
+
+
+###  https://w3id.org/vair#BayesianOptimisation
+vair:BayesianOptimisation rdf:type owl:Class ;
+                          rdfs:subClassOf vair:StatisticalTechnique .
+
+
+###  https://w3id.org/vair#BehaviourAnalysis
+vair:BehaviourAnalysis rdf:type owl:Class ;
+                       rdfs:subClassOf airo:Capability .
+
+
+###  https://w3id.org/vair#BiometricIdentification
+vair:BiometricIdentification rdf:type owl:Class ;
+                             rdfs:subClassOf airo:Capability .
+
+
+###  https://w3id.org/vair#CaseBasedReasoning
+vair:CaseBasedReasoning rdf:type owl:Class ;
+                        rdfs:subClassOf vair:ReasoningTechnique .
+
+
+###  https://w3id.org/vair#CognitiveComputing
+vair:CognitiveComputing rdf:type owl:Class ;
+                        rdfs:subClassOf airo:AISystem .
+
+
+###  https://w3id.org/vair#CognitiveSystem
+vair:CognitiveSystem rdf:type owl:Class ;
+                     rdfs:subClassOf airo:AISystem .
+
+
+###  https://w3id.org/vair#CommonSenseReasoning
+vair:CommonSenseReasoning rdf:type owl:Class ;
+                          rdfs:subClassOf vair:ReasoningTechnique .
+
+
+###  https://w3id.org/vair#ComputerVision
+vair:ComputerVision rdf:type owl:Class ;
+                    rdfs:subClassOf airo:Capability .
+
+
+###  https://w3id.org/vair#Concept
+vair:Concept rdf:type owl:Class .
+
+
+###  https://w3id.org/vair#Content
+vair:Content rdf:type owl:Class ;
+             rdfs:subClassOf airo:Output .
+
+
+###  https://w3id.org/vair#ContinuousValidation
+vair:ContinuousValidation rdf:type owl:Class ;
+                          rdfs:subClassOf airo:AILifecyclePhase .
+
+
+###  https://w3id.org/vair#ConvolutionalNeuralNetwork
+vair:ConvolutionalNeuralNetwork rdf:type owl:Class ;
+                                rdfs:subClassOf vair:FeedForwardNeuralNetwork .
+
+
+###  https://w3id.org/vair#Dataset
+vair:Dataset rdf:type owl:Class ;
+             rdfs:subClassOf airo:AIComponent .
+
+
+###  https://w3id.org/vair#Decision
+vair:Decision rdf:type owl:Class ;
+              rdfs:subClassOf airo:Output .
+
+
+###  https://w3id.org/vair#DecisionSupportSystem
+vair:DecisionSupportSystem rdf:type owl:Class ;
+                           rdfs:subClassOf airo:AISystem .
+
+
+###  https://w3id.org/vair#DecisionTree
+vair:DecisionTree rdf:type owl:Class ;
+                  rdfs:subClassOf vair:Model .
+
+
+###  https://w3id.org/vair#Deployment
+vair:Deployment rdf:type owl:Class ;
+                rdfs:subClassOf airo:AILifecyclePhase .
+
+
+###  https://w3id.org/vair#Design
+vair:Design rdf:type owl:Class ;
+            rdfs:subClassOf airo:AILifecyclePhase .
+
+
+###  https://w3id.org/vair#Development
+vair:Development rdf:type owl:Class ;
+                 rdfs:subClassOf airo:AILifecyclePhase .
+
+
+###  https://w3id.org/vair#DialogueManagement
+vair:DialogueManagement rdf:type owl:Class ;
+                        rdfs:subClassOf airo:Capability .
+
+
+###  https://w3id.org/vair#EmotionRecognition
+vair:EmotionRecognition rdf:type owl:Class ;
+                        rdfs:subClassOf airo:Capability .
+
+
+###  https://w3id.org/vair#EvolutionaryAlgorithm
+vair:EvolutionaryAlgorithm rdf:type owl:Class ;
+                           rdfs:subClassOf vair:Algorithm .
+
+
+###  https://w3id.org/vair#ExpertSystem
+vair:ExpertSystem rdf:type owl:Class ;
+                  rdfs:subClassOf airo:AISystem .
+
+
+###  https://w3id.org/vair#FaceRecognition
+vair:FaceRecognition rdf:type owl:Class ;
+                     rdfs:subClassOf airo:Capability .
+
+
+###  https://w3id.org/vair#FeedForwardNeuralNetwork
+vair:FeedForwardNeuralNetwork rdf:type owl:Class ;
+                              rdfs:subClassOf vair:NeuralNetwork .
+
+
+###  https://w3id.org/vair#Framework
+vair:Framework rdf:type owl:Class .
+
+
+###  https://w3id.org/vair#GeneralAI
+vair:GeneralAI rdf:type owl:Class ;
+               rdfs:subClassOf airo:AISystem .
+
+
+###  https://w3id.org/vair#GeneticAlgorithm
+vair:GeneticAlgorithm rdf:type owl:Class ;
+                      rdfs:subClassOf vair:Algorithm .
+
+
+###  https://w3id.org/vair#GestureRecognition
+vair:GestureRecognition rdf:type owl:Class ;
+                        rdfs:subClassOf airo:Capability .
+
+
+###  https://w3id.org/vair#Hardware
+vair:Hardware rdf:type owl:Class ;
+              rdfs:subClassOf airo:AIComponent .
+
+
+###  https://w3id.org/vair#ImageRecognition
+vair:ImageRecognition rdf:type owl:Class ;
+                      rdfs:subClassOf airo:Capability .
+
+
+###  https://w3id.org/vair#Inception
+vair:Inception rdf:type owl:Class ;
+               rdfs:subClassOf airo:AILifecyclePhase .
+
+
+###  https://w3id.org/vair#InductiveProgramming
+vair:InductiveProgramming rdf:type owl:Class ;
+                          rdfs:subClassOf vair:KnowledgeBasedTechnique .
+
+
+###  https://w3id.org/vair#IndustrialRobot
+vair:IndustrialRobot rdf:type owl:Class ;
+                     rdfs:subClassOf vair:RobotSystem .
+
+
+###  https://w3id.org/vair#Inference
+vair:Inference rdf:type owl:Class ;
+               rdfs:subClassOf airo:Output .
+
+
+###  https://w3id.org/vair#InformationRetrieval
+vair:InformationRetrieval rdf:type owl:Class ;
+                          rdfs:subClassOf airo:Capability .
+
+
+###  https://w3id.org/vair#IntelligentControlSystem
+vair:IntelligentControlSystem rdf:type owl:Class ;
+                              rdfs:subClassOf airo:AISystem .
+
+
+###  https://w3id.org/vair#IoTSystem
+vair:IoTSystem rdf:type owl:Class ;
+               rdfs:subClassOf airo:AISystem .
+
+
+###  https://w3id.org/vair#KnowledgeBasedTechnique
+vair:KnowledgeBasedTechnique rdf:type owl:Class ;
+                             rdfs:subClassOf airo:Technique .
+
+
+###  https://w3id.org/vair#KnowledgeRepresentation
+vair:KnowledgeRepresentation rdf:type owl:Class ;
+                             rdfs:subClassOf vair:KnowledgeBasedTechnique .
+
+
+###  https://w3id.org/vair#LearningTechnique
+vair:LearningTechnique rdf:type owl:Class ;
+                       rdfs:subClassOf airo:Technique .
+
+
+###  https://w3id.org/vair#Library
+vair:Library rdf:type owl:Class ;
+             rdfs:subClassOf airo:AIComponent .
+
+
+###  https://w3id.org/vair#LogicBasedTechnique
+vair:LogicBasedTechnique rdf:type owl:Class ;
+                         rdfs:subClassOf airo:Technique .
+
+
+###  https://w3id.org/vair#LongShortTermMemory
+vair:LongShortTermMemory rdf:type owl:Class ;
+                         rdfs:subClassOf vair:RecurrentNeuralNetwork .
+
+
+###  https://w3id.org/vair#MachineLearningAlgorithm
+vair:MachineLearningAlgorithm rdf:type owl:Class .
+
+
+###  https://w3id.org/vair#MachineLearningFramework
+vair:MachineLearningFramework rdf:type owl:Class ;
+                              rdfs:subClassOf vair:Framework .
+
+
+###  https://w3id.org/vair#MachineLearningLibrary
+vair:MachineLearningLibrary rdf:type owl:Class ;
+                            rdfs:subClassOf vair:Library .
+
+
+###  https://w3id.org/vair#MachineLearningModel
+vair:MachineLearningModel rdf:type owl:Class ;
+                          rdfs:subClassOf vair:Model .
+
+
+###  https://w3id.org/vair#MachineLearningPlatform
+vair:MachineLearningPlatform rdf:type owl:Class ;
+                             rdfs:subClassOf vair:Platform .
+
+
+###  https://w3id.org/vair#MachineLearningTechnique
+vair:MachineLearningTechnique rdf:type owl:Class ;
+                              rdfs:subClassOf vair:LearningTechnique .
+
+
+###  https://w3id.org/vair#MachineTranslation
+vair:MachineTranslation rdf:type owl:Class ;
+                        rdfs:subClassOf airo:Capability .
+
+
+###  https://w3id.org/vair#Model
+vair:Model rdf:type owl:Class ;
+           rdfs:subClassOf airo:AIComponent .
+
+
+###  https://w3id.org/vair#Monitoring
+vair:Monitoring rdf:type owl:Class ;
+                rdfs:subClassOf airo:AILifecyclePhase .
+
+
+###  https://w3id.org/vair#MultiAgentSystem
+vair:MultiAgentSystem rdf:type owl:Class ;
+                      rdfs:subClassOf airo:AISystem .
+
+
+###  https://w3id.org/vair#MusicInformationRetrieval
+vair:MusicInformationRetrieval rdf:type owl:Class ;
+                               rdfs:subClassOf vair:InformationRetrieval .
+
+
+###  https://w3id.org/vair#NamedEntityRecognition
+vair:NamedEntityRecognition rdf:type owl:Class ;
+                            rdfs:subClassOf airo:Capability .
+
+
+###  https://w3id.org/vair#NarrowAI
+vair:NarrowAI rdf:type owl:Class ;
+              rdfs:subClassOf airo:AISystem .
+
+
+###  https://w3id.org/vair#NaturalLanguageGeneration
+vair:NaturalLanguageGeneration rdf:type owl:Class ;
+                               rdfs:subClassOf airo:Capability .
+
+
+###  https://w3id.org/vair#NaturalLanguageProcessingSystem
+vair:NaturalLanguageProcessingSystem rdf:type owl:Class ;
+                                     rdfs:subClassOf airo:AISystem .
+
+
+###  https://w3id.org/vair#NeuralNetwork
+vair:NeuralNetwork rdf:type owl:Class ;
+                   rdfs:subClassOf airo:Algorithm .
+
+
+###  https://w3id.org/vair#ObjectRecognition
+vair:ObjectRecognition rdf:type owl:Class ;
+                       rdfs:subClassOf airo:Capability .
+
+
+###  https://w3id.org/vair#Operation
+vair:Operation rdf:type owl:Class ;
+               rdfs:subClassOf airo:AILifecyclePhase .
+
+
+###  https://w3id.org/vair#OptimisationMethod
+vair:OptimisationMethod rdf:type owl:Class ;
+                        rdfs:subClassOf vair:StatisticalTechnique .
+
+
+###  https://w3id.org/vair#PartOfSpeechTagging
+vair:PartOfSpeechTagging rdf:type owl:Class ;
+                         rdfs:subClassOf airo:Capability .
+
+
+###  https://w3id.org/vair#PatternRecognition
+vair:PatternRecognition rdf:type owl:Class ;
+                        rdfs:subClassOf airo:Capability .
+
+
+###  https://w3id.org/vair#PersonalityTraitsAnalysis
+vair:PersonalityTraitsAnalysis rdf:type owl:Class ;
+                               rdfs:subClassOf airo:Capability .
+
+
+###  https://w3id.org/vair#Platform
+vair:Platform rdf:type owl:Class ;
+              rdfs:subClassOf airo:AIComponent .
+
+
+###  https://w3id.org/vair#Prediction
+vair:Prediction rdf:type owl:Class ;
+                rdfs:subClassOf airo:Output .
+
+
+###  https://w3id.org/vair#Product
+vair:Product rdf:type owl:Class ;
+             rdfs:subClassOf airo:AISystemForm .
+
+
+###  https://w3id.org/vair#Profiling
+vair:Profiling rdf:type owl:Class ;
+               rdfs:subClassOf airo:Capability .
+
+
+###  https://w3id.org/vair#QuestionAnswering
+vair:QuestionAnswering rdf:type owl:Class ;
+                       rdfs:subClassOf airo:Capability .
+
+
+###  https://w3id.org/vair#ReEvaluation
+vair:ReEvaluation rdf:type owl:Class ;
+                  rdfs:subClassOf airo:AILifecyclePhase .
+
+
+###  https://w3id.org/vair#ReasoningTechnique
+vair:ReasoningTechnique rdf:type owl:Class ;
+                        rdfs:subClassOf airo:Technique .
+
+
+###  https://w3id.org/vair#Recommendation
+vair:Recommendation rdf:type owl:Class ;
+                    rdfs:subClassOf airo:Output .
+
+
+###  https://w3id.org/vair#RecommenderSystem
+vair:RecommenderSystem rdf:type owl:Class ;
+                       rdfs:subClassOf airo:AISystem .
+
+
+###  https://w3id.org/vair#RecurrentNeuralNetwork
+vair:RecurrentNeuralNetwork rdf:type owl:Class ;
+                            rdfs:subClassOf vair:NeuralNetwork .
+
+
+###  https://w3id.org/vair#ReinforcementLearning
+vair:ReinforcementLearning rdf:type owl:Class ;
+                           rdfs:subClassOf vair:MachineLearningTechnique .
+
+
+###  https://w3id.org/vair#RelationshipExtraction
+vair:RelationshipExtraction rdf:type owl:Class ;
+                            rdfs:subClassOf airo:Capability .
+
+
+###  https://w3id.org/vair#Retirement
+vair:Retirement rdf:type owl:Class ;
+                rdfs:subClassOf airo:AILifecyclePhase .
+
+
+###  https://w3id.org/vair#RobotSystem
+vair:RobotSystem rdf:type owl:Class ;
+                 rdfs:subClassOf airo:AISystem .
+
+
+###  https://w3id.org/vair#SafetyComponent
+vair:SafetyComponent rdf:type owl:Class ;
+                     rdfs:subClassOf airo:AISystemForm .
+
+
+###  https://w3id.org/vair#SearchMethod
+vair:SearchMethod rdf:type owl:Class ;
+                  rdfs:subClassOf vair:StatisticalTechnique .
+
+
+###  https://w3id.org/vair#SemiSupervisedLearning
+vair:SemiSupervisedLearning rdf:type owl:Class ;
+                            rdfs:subClassOf vair:MachineLearningTechnique .
+
+
+###  https://w3id.org/vair#SentimentAnalysis
+vair:SentimentAnalysis rdf:type owl:Class ;
+                       rdfs:subClassOf airo:Capability .
+
+
+###  https://w3id.org/vair#Service
+vair:Service rdf:type owl:Class ;
+             rdfs:subClassOf airo:AISystemForm .
+
+
+###  https://w3id.org/vair#ServiceRobot
+vair:ServiceRobot rdf:type owl:Class ;
+                  rdfs:subClassOf vair:RobotSystem .
+
+
+###  https://w3id.org/vair#SocialRobot
+vair:SocialRobot rdf:type owl:Class ;
+                 rdfs:subClassOf vair:RobotSystem .
+
+
+###  https://w3id.org/vair#Software
+vair:Software rdf:type owl:Class ;
+              rdfs:subClassOf airo:AISystemForm .
+
+
+###  https://w3id.org/vair#SoundEventRecognition
+vair:SoundEventRecognition rdf:type owl:Class ;
+                           rdfs:subClassOf airo:Capability .
+
+
+###  https://w3id.org/vair#SoundSourceSeparation
+vair:SoundSourceSeparation rdf:type owl:Class ;
+                           rdfs:subClassOf airo:Capability .
+
+
+###  https://w3id.org/vair#SoundSynthesis
+vair:SoundSynthesis rdf:type owl:Class ;
+                    rdfs:subClassOf airo:Capability .
+
+
+###  https://w3id.org/vair#SpeakerRecognition
+vair:SpeakerRecognition rdf:type owl:Class ;
+                        rdfs:subClassOf airo:Capability .
+
+
+###  https://w3id.org/vair#SpeechRecognition
+vair:SpeechRecognition rdf:type owl:Class ;
+                       rdfs:subClassOf airo:Capability .
+
+
+###  https://w3id.org/vair#SpeechSynthesis
+vair:SpeechSynthesis rdf:type owl:Class ;
+                     rdfs:subClassOf airo:Capability .
+
+
+###  https://w3id.org/vair#StatisticalTechnique
+vair:StatisticalTechnique rdf:type owl:Class ;
+                          rdfs:subClassOf airo:Technique .
+
+
+###  https://w3id.org/vair#SupervisedLearning
+vair:SupervisedLearning rdf:type owl:Class ;
+                        rdfs:subClassOf vair:MachineLearningTechnique .
+
+
+###  https://w3id.org/vair#SupportVectorMachine
+vair:SupportVectorMachine rdf:type owl:Class ;
+                          rdfs:subClassOf vair:MachineLearningAlgorithm .
+
+
+###  https://w3id.org/vair#SymbolicReasoning
+vair:SymbolicReasoning rdf:type owl:Class ;
+                       rdfs:subClassOf vair:KnowledgeBasedTechnique .
+
+
+###  https://w3id.org/vair#TensorProcessingUnit
+vair:TensorProcessingUnit rdf:type owl:Class ;
+                          rdfs:subClassOf vair:ApplicationSpecificIntegratedCircuit .
+
+
+###  https://w3id.org/vair#Tool
+vair:Tool rdf:type owl:Class ;
+          rdfs:subClassOf airo:AIComponent .
+
+
+###  https://w3id.org/vair#TrainedModel
+vair:TrainedModel rdf:type owl:Class ;
+                  rdfs:subClassOf vair:Model .
+
+
+###  https://w3id.org/vair#UnsupervisedLearning
+vair:UnsupervisedLearning rdf:type owl:Class ;
+                          rdfs:subClassOf vair:MachineLearningTechnique .
+
+
+###  https://w3id.org/vair#Validation
+vair:Validation rdf:type owl:Class ;
+                rdfs:subClassOf airo:AILifecyclePhase .
+
+
+###  https://w3id.org/vair#Verification
+vair:Verification rdf:type owl:Class ;
+                  rdfs:subClassOf airo:AILifecyclePhase .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/vair#
+vair: rdf:type owl:NamedIndividual ,
+               skos:Concept ,
+               vair:Concept ;
+      rdfs:isDefinedBy vair: ;
+      skos:definition ""@en ;
+      skos:inScheme vair: ;
+      skos:prefLabel ""@en .
+
+
+###  https://w3id.org/vair#AGI
+vair:AGI rdf:type owl:NamedIndividual ,
+                  skos:Concept ,
+                  vair:Concept .
+
+
+###  https://w3id.org/vair#AIComponent
+vair:AIComponent rdf:type owl:NamedIndividual ,
+                          skos:Concept ,
+                          vair:Concept ;
+                 rdfs:isDefinedBy vair: ;
+                 skos:definition "functional element that constructs an AI system. [ISo/IEC 22989, 3.1.2]"@en ;
+                 skos:inScheme vair: ;
+                 skos:prefLabel "AI Component"@en .
+
+
+###  https://w3id.org/vair#Action
+vair:Action rdf:type owl:NamedIndividual ,
+                     skos:Concept ,
+                     vair:Concept .
+
+
+###  https://w3id.org/vair#ActionRecognition
+vair:ActionRecognition rdf:type owl:NamedIndividual ,
+                                skos:Concept ,
+                                vair:Concept .
+
+
+###  https://w3id.org/vair#Algorithm
+vair:Algorithm rdf:type owl:NamedIndividual ,
+                        skos:Concept ,
+                        vair:Concept .
+
+
+###  https://w3id.org/vair#ApplicationSpecificIntegratedCircuit
+vair:ApplicationSpecificIntegratedCircuit rdf:type owl:NamedIndividual ,
+                                                   skos:Concept ,
+                                                   vair:Concept .
+
+
+###  https://w3id.org/vair#AutomaticSummarisation
+vair:AutomaticSummarisation rdf:type owl:NamedIndividual ,
+                                     skos:Concept ,
+                                     vair:Concept .
+
+
+###  https://w3id.org/vair#AutonomousSystem
+vair:AutonomousSystem rdf:type owl:NamedIndividual ,
+                               skos:Concept ,
+                               vair:Concept .
+
+
+###  https://w3id.org/vair#BayesianEstimation
+vair:BayesianEstimation rdf:type owl:NamedIndividual ,
+                                 skos:Concept ,
+                                 vair:Concept .
+
+
+###  https://w3id.org/vair#BayesianNetwork
+vair:BayesianNetwork rdf:type owl:NamedIndividual ,
+                              skos:Concept ,
+                              vair:Concept .
+
+
+###  https://w3id.org/vair#BayesianOptimisation
+vair:BayesianOptimisation rdf:type owl:NamedIndividual ,
+                                   skos:Concept ,
+                                   vair:Concept .
+
+
+###  https://w3id.org/vair#BehaviourAnalysis
+vair:BehaviourAnalysis rdf:type owl:NamedIndividual ,
+                                skos:Concept ,
+                                vair:Concept .
+
+
+###  https://w3id.org/vair#BiometricIdentification
+vair:BiometricIdentification rdf:type owl:NamedIndividual ,
+                                      skos:Concept ,
+                                      vair:Concept .
+
+
+###  https://w3id.org/vair#CaseBasedReasoning
+vair:CaseBasedReasoning rdf:type owl:NamedIndividual ,
+                                 skos:Concept ,
+                                 vair:Concept .
+
+
+###  https://w3id.org/vair#CognitiveComputing
+vair:CognitiveComputing rdf:type owl:NamedIndividual ,
+                                 skos:Concept ,
+                                 vair:Concept .
+
+
+###  https://w3id.org/vair#CognitiveSystem
+vair:CognitiveSystem rdf:type owl:NamedIndividual ,
+                              skos:Concept ,
+                              vair:Concept .
+
+
+###  https://w3id.org/vair#CommonSenseReasoning
+vair:CommonSenseReasoning rdf:type owl:NamedIndividual ,
+                                   skos:Concept ,
+                                   vair:Concept .
+
+
+###  https://w3id.org/vair#ComputerVision
+vair:ComputerVision rdf:type owl:NamedIndividual ,
+                             skos:Concept ,
+                             vair:Concept .
+
+
+###  https://w3id.org/vair#Content
+vair:Content rdf:type owl:NamedIndividual ,
+                      skos:Concept ,
+                      vair:Concept .
+
+
+###  https://w3id.org/vair#ContinuousValidation
+vair:ContinuousValidation rdf:type owl:NamedIndividual ,
+                                   skos:Concept ,
+                                   vair:Concept .
+
+
+###  https://w3id.org/vair#ConvolutionalNeuralNetwork
+vair:ConvolutionalNeuralNetwork rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         vair:Concept .
+
+
+###  https://w3id.org/vair#Data
+vair:Data rdf:type owl:NamedIndividual ,
+                   skos:Concept ,
+                   vair:Concept ;
+          rdfs:isDefinedBy vair: ;
+          skos:definition ""@en ;
+          skos:inScheme vair: ;
+          skos:prefLabel "Data"@en .
+
+
+###  https://w3id.org/vair#Dataset
+vair:Dataset rdf:type owl:NamedIndividual ,
+                      skos:Concept ,
+                      vair:Concept .
+
+
+###  https://w3id.org/vair#Decision
+vair:Decision rdf:type owl:NamedIndividual ,
+                       skos:Concept ,
+                       vair:Concept .
+
+
+###  https://w3id.org/vair#DecisionSupportSystem
+vair:DecisionSupportSystem rdf:type owl:NamedIndividual ,
+                                    skos:Concept ,
+                                    vair:Concept .
+
+
+###  https://w3id.org/vair#DecisionTree
+vair:DecisionTree rdf:type owl:NamedIndividual ,
+                           skos:Concept ,
+                           vair:Concept .
+
+
+###  https://w3id.org/vair#Deployment
+vair:Deployment rdf:type owl:NamedIndividual ,
+                         skos:Concept ,
+                         vair:Concept .
+
+
+###  https://w3id.org/vair#Design
+vair:Design rdf:type owl:NamedIndividual ,
+                     skos:Concept ,
+                     vair:Concept .
+
+
+###  https://w3id.org/vair#Development
+vair:Development rdf:type owl:NamedIndividual ,
+                          skos:Concept ,
+                          vair:Concept .
+
+
+###  https://w3id.org/vair#DevelopmentData
+vair:DevelopmentData rdf:type owl:NamedIndividual ,
+                              skos:Concept ,
+                              vair:Concept ;
+                     rdfs:isDefinedBy vair: ;
+                     skos:definition ""@en ;
+                     skos:inScheme vair: ;
+                     skos:prefLabel "Development Data"@en ;
+                     skos:related vair:ValidationData .
+
+
+###  https://w3id.org/vair#DialogueManagement
+vair:DialogueManagement rdf:type owl:NamedIndividual ,
+                                 skos:Concept ,
+                                 vair:Concept .
+
+
+###  https://w3id.org/vair#EmotionRecognition
+vair:EmotionRecognition rdf:type owl:NamedIndividual ,
+                                 skos:Concept ,
+                                 vair:Concept .
+
+
+###  https://w3id.org/vair#EvaluationData
+vair:EvaluationData rdf:type owl:NamedIndividual ,
+                             skos:Concept ,
+                             vair:Concept ;
+                    rdfs:isDefinedBy vair: ;
+                    skos:definition ""@en ;
+                    skos:inScheme vair: ;
+                    skos:prefLabel "Evaluation Data"@en ;
+                    skos:related vair:TestData .
+
+
+###  https://w3id.org/vair#EvolutionaryAlgorithm
+vair:EvolutionaryAlgorithm rdf:type owl:NamedIndividual ,
+                                    skos:Concept ,
+                                    vair:Concept .
+
+
+###  https://w3id.org/vair#ExpertSystem
+vair:ExpertSystem rdf:type owl:NamedIndividual ,
+                           skos:Concept ,
+                           vair:Concept .
+
+
+###  https://w3id.org/vair#FaceRecognition
+vair:FaceRecognition rdf:type owl:NamedIndividual ,
+                              skos:Concept ,
+                              vair:Concept .
+
+
+###  https://w3id.org/vair#FeedForwardNeuralNetwork
+vair:FeedForwardNeuralNetwork rdf:type owl:NamedIndividual ,
+                                       skos:Concept ,
+                                       vair:Concept .
+
+
+###  https://w3id.org/vair#GeneralAI
+vair:GeneralAI rdf:type owl:NamedIndividual ,
+                        skos:Concept ,
+                        vair:Concept .
+
+
+###  https://w3id.org/vair#GeneticAlgorithm
+vair:GeneticAlgorithm rdf:type owl:NamedIndividual ,
+                               skos:Concept ,
+                               vair:Concept .
+
+
+###  https://w3id.org/vair#GestureRecognition
+vair:GestureRecognition rdf:type owl:NamedIndividual ,
+                                 skos:Concept ,
+                                 vair:Concept .
+
+
+###  https://w3id.org/vair#Hardware
+vair:Hardware rdf:type owl:NamedIndividual ,
+                       skos:Concept ,
+                       vair:Concept .
+
+
+###  https://w3id.org/vair#ImageRecognition
+vair:ImageRecognition rdf:type owl:NamedIndividual ,
+                               skos:Concept ,
+                               vair:Concept .
+
+
+###  https://w3id.org/vair#Inception
+vair:Inception rdf:type owl:NamedIndividual ,
+                        skos:Concept ,
+                        vair:Concept .
+
+
+###  https://w3id.org/vair#InductiveProgramming
+vair:InductiveProgramming rdf:type owl:NamedIndividual ,
+                                   skos:Concept ,
+                                   vair:Concept .
+
+
+###  https://w3id.org/vair#IndustrialRobot
+vair:IndustrialRobot rdf:type owl:NamedIndividual ,
+                              skos:Concept ,
+                              vair:Concept .
+
+
+###  https://w3id.org/vair#Inference
+vair:Inference rdf:type owl:NamedIndividual ,
+                        skos:Concept ,
+                        vair:Concept .
+
+
+###  https://w3id.org/vair#InformationRetrieval
+vair:InformationRetrieval rdf:type owl:NamedIndividual ,
+                                   skos:Concept ,
+                                   vair:Concept .
+
+
+###  https://w3id.org/vair#InputData
+vair:InputData rdf:type owl:NamedIndividual ,
+                        skos:Concept ,
+                        vair:Concept ;
+               rdfs:isDefinedBy vair: ;
+               skos:definition "data for which an AI system calculates a predicted output or inference. [ISO/IEC 22989, 3.2.9]"@en ;
+               skos:inScheme vair: ;
+               skos:prefLabel "Input Data"@en .
+
+
+###  https://w3id.org/vair#IntelligentControlSystem
+vair:IntelligentControlSystem rdf:type owl:NamedIndividual ,
+                                       skos:Concept ,
+                                       vair:Concept .
+
+
+###  https://w3id.org/vair#IoTSystem
+vair:IoTSystem rdf:type owl:NamedIndividual ,
+                        skos:Concept ,
+                        vair:Concept .
+
+
+###  https://w3id.org/vair#KnowledgeBasedTechnique
+vair:KnowledgeBasedTechnique rdf:type owl:NamedIndividual ,
+                                      skos:Concept ,
+                                      vair:Concept .
+
+
+###  https://w3id.org/vair#KnowledgeRepresentation
+vair:KnowledgeRepresentation rdf:type owl:NamedIndividual ,
+                                      skos:Concept ,
+                                      vair:Concept .
+
+
+###  https://w3id.org/vair#LearningTechnique
+vair:LearningTechnique rdf:type owl:NamedIndividual ,
+                                skos:Concept ,
+                                vair:Concept .
+
+
+###  https://w3id.org/vair#Library
+vair:Library rdf:type owl:NamedIndividual ,
+                      skos:Concept ,
+                      vair:Concept .
+
+
+###  https://w3id.org/vair#LogicBasedTechnique
+vair:LogicBasedTechnique rdf:type owl:NamedIndividual ,
+                                  skos:Concept ,
+                                  vair:Concept .
+
+
+###  https://w3id.org/vair#LongShortTermMemory
+vair:LongShortTermMemory rdf:type owl:NamedIndividual ,
+                                  skos:Concept ,
+                                  vair:Concept .
+
+
+###  https://w3id.org/vair#MachineLearningAlgorithm
+vair:MachineLearningAlgorithm rdf:type owl:NamedIndividual ,
+                                       skos:Concept ,
+                                       vair:Concept .
+
+
+###  https://w3id.org/vair#MachineLearningFramework
+vair:MachineLearningFramework rdf:type owl:NamedIndividual ,
+                                       skos:Concept ,
+                                       vair:Concept .
+
+
+###  https://w3id.org/vair#MachineLearningLibrary
+vair:MachineLearningLibrary rdf:type owl:NamedIndividual ,
+                                     skos:Concept ,
+                                     vair:Concept .
+
+
+###  https://w3id.org/vair#MachineLearningModel
+vair:MachineLearningModel rdf:type owl:NamedIndividual ,
+                                   skos:Concept ,
+                                   vair:Concept .
+
+
+###  https://w3id.org/vair#MachineLearningPlatform
+vair:MachineLearningPlatform rdf:type owl:NamedIndividual ,
+                                      skos:Concept ,
+                                      vair:Concept .
+
+
+###  https://w3id.org/vair#MachineLearningTechnique
+vair:MachineLearningTechnique rdf:type owl:NamedIndividual ,
+                                       skos:Concept ,
+                                       vair:Concept .
+
+
+###  https://w3id.org/vair#MachineTranslation
+vair:MachineTranslation rdf:type owl:NamedIndividual ,
+                                 skos:Concept ,
+                                 vair:Concept .
+
+
+###  https://w3id.org/vair#Model
+vair:Model rdf:type owl:NamedIndividual ,
+                    skos:Concept ,
+                    vair:Concept .
+
+
+###  https://w3id.org/vair#Monitoring
+vair:Monitoring rdf:type owl:NamedIndividual ,
+                         skos:Concept ,
+                         vair:Concept .
+
+
+###  https://w3id.org/vair#MultiAgentSystem
+vair:MultiAgentSystem rdf:type owl:NamedIndividual ,
+                               skos:Concept ,
+                               vair:Concept .
+
+
+###  https://w3id.org/vair#MusicInformationRetrieval
+vair:MusicInformationRetrieval rdf:type owl:NamedIndividual ,
+                                        skos:Concept ,
+                                        vair:Concept .
+
+
+###  https://w3id.org/vair#NamedEntityRecognition
+vair:NamedEntityRecognition rdf:type owl:NamedIndividual ,
+                                     skos:Concept ,
+                                     vair:Concept .
+
+
+###  https://w3id.org/vair#NarrowAI
+vair:NarrowAI rdf:type owl:NamedIndividual ,
+                       skos:Concept ,
+                       vair:Concept .
+
+
+###  https://w3id.org/vair#NaturalLanguageGeneration
+vair:NaturalLanguageGeneration rdf:type owl:NamedIndividual ,
+                                        skos:Concept ,
+                                        vair:Concept .
+
+
+###  https://w3id.org/vair#NaturalLanguageProcessingSystem
+vair:NaturalLanguageProcessingSystem rdf:type owl:NamedIndividual ,
+                                              skos:Concept ,
+                                              vair:Concept .
+
+
+###  https://w3id.org/vair#NeuralNetwork
+vair:NeuralNetwork rdf:type owl:NamedIndividual ,
+                            skos:Concept ,
+                            vair:Concept .
+
+
+###  https://w3id.org/vair#ObjectRecognition
+vair:ObjectRecognition rdf:type owl:NamedIndividual ,
+                                skos:Concept ,
+                                vair:Concept .
+
+
+###  https://w3id.org/vair#Operation
+vair:Operation rdf:type owl:NamedIndividual ,
+                        skos:Concept ,
+                        vair:Concept .
+
+
+###  https://w3id.org/vair#OptimisationMethod
+vair:OptimisationMethod rdf:type owl:NamedIndividual ,
+                                 skos:Concept ,
+                                 vair:Concept .
+
+
+###  https://w3id.org/vair#PartOfSpeechTagging
+vair:PartOfSpeechTagging rdf:type owl:NamedIndividual ,
+                                  skos:Concept ,
+                                  vair:Concept .
+
+
+###  https://w3id.org/vair#PatternRecognition
+vair:PatternRecognition rdf:type owl:NamedIndividual ,
+                                 skos:Concept ,
+                                 vair:Concept .
+
+
+###  https://w3id.org/vair#PersonalData
+vair:PersonalData rdf:type owl:NamedIndividual ,
+                           skos:Concept ,
+                           vair:Concept ;
+                  rdfs:isDefinedBy vair: ;
+                  skos:definition "any information that (a) can be used to establish a link between the information and the natural person to whom such information relates, or (b) is or can be directly or indirectly linked to a natural person [ISO/IEC 22989, 3.2.11]"@en ;
+                  skos:inScheme vair: ;
+                  skos:prefLabel "Personal Data"@en .
+
+
+###  https://w3id.org/vair#PersonalityTraitsAnalysis
+vair:PersonalityTraitsAnalysis rdf:type owl:NamedIndividual ,
+                                        skos:Concept ,
+                                        vair:Concept .
+
+
+###  https://w3id.org/vair#Platform
+vair:Platform rdf:type owl:NamedIndividual ,
+                       skos:Concept ,
+                       vair:Concept .
+
+
+###  https://w3id.org/vair#PreTrainedModel
+vair:PreTrainedModel rdf:type owl:NamedIndividual ,
+                              skos:Concept ,
+                              vair:Concept ;
+                     rdfs:isDefinedBy vair: ;
+                     skos:definition ""@en ;
+                     skos:inScheme vair: ;
+                     skos:prefLabel ""@en .
+
+
+###  https://w3id.org/vair#Prediction
+vair:Prediction rdf:type owl:NamedIndividual ,
+                         skos:Concept ,
+                         vair:Concept .
+
+
+###  https://w3id.org/vair#Product
+vair:Product rdf:type owl:NamedIndividual ,
+                      skos:Concept ,
+                      vair:Concept .
+
+
+###  https://w3id.org/vair#ProductionData
+vair:ProductionData rdf:type owl:NamedIndividual ,
+                             skos:Concept ,
+                             vair:Concept ;
+                    rdfs:isDefinedBy vair: ;
+                    skos:definition "data acquired during the operation phase of an AI system, for which a deployed AI system calculates a predicted output or inference. [ISO/IEC 22989, 3.2.12]"@en ;
+                    skos:inScheme vair: ;
+                    skos:prefLabel "Production Data"@en .
+
+
+###  https://w3id.org/vair#Profiling
+vair:Profiling rdf:type owl:NamedIndividual ,
+                        skos:Concept ,
+                        vair:Concept .
+
+
+###  https://w3id.org/vair#QuestionAnswering
+vair:QuestionAnswering rdf:type owl:NamedIndividual ,
+                                skos:Concept ,
+                                vair:Concept .
+
+
+###  https://w3id.org/vair#ReEvaluation
+vair:ReEvaluation rdf:type owl:NamedIndividual ,
+                           skos:Concept ,
+                           vair:Concept .
+
+
+###  https://w3id.org/vair#ReasoningTechnique
+vair:ReasoningTechnique rdf:type owl:NamedIndividual ,
+                                 skos:Concept ,
+                                 vair:Concept .
+
+
+###  https://w3id.org/vair#Recommendation
+vair:Recommendation rdf:type owl:NamedIndividual ,
+                             skos:Concept ,
+                             vair:Concept .
+
+
+###  https://w3id.org/vair#RecommenderSystem
+vair:RecommenderSystem rdf:type owl:NamedIndividual ,
+                                skos:Concept ,
+                                vair:Concept .
+
+
+###  https://w3id.org/vair#RecurrentNeuralNetwork
+vair:RecurrentNeuralNetwork rdf:type owl:NamedIndividual ,
+                                     skos:Concept ,
+                                     vair:Concept .
+
+
+###  https://w3id.org/vair#ReinforcementLearning
+vair:ReinforcementLearning rdf:type owl:NamedIndividual ,
+                                    skos:Concept ,
+                                    vair:Concept .
+
+
+###  https://w3id.org/vair#RelationshipExtraction
+vair:RelationshipExtraction rdf:type owl:NamedIndividual ,
+                                     skos:Concept ,
+                                     vair:Concept .
+
+
+###  https://w3id.org/vair#RemoteBiometricIdentification
+vair:RemoteBiometricIdentification rdf:type owl:NamedIndividual ,
+                                            skos:Concept ,
+                                            vair:Concept ;
+                                   rdfs:isDefinedBy vair: ;
+                                   skos:definition "Identifying natural persons at a distance through the comparison of a person’s biometric data with the biometric data contained in a reference database."@en ;
+                                   skos:inScheme vair: ;
+                                   skos:prefLabel "RemoteBiometricIdentification"@en .
+
+
+###  https://w3id.org/vair#Retirement
+vair:Retirement rdf:type owl:NamedIndividual ,
+                         skos:Concept ,
+                         vair:Concept .
+
+
+###  https://w3id.org/vair#RobotSystem
+vair:RobotSystem rdf:type owl:NamedIndividual ,
+                          skos:Concept ,
+                          vair:Concept .
+
+
+###  https://w3id.org/vair#SVM
+vair:SVM rdf:type owl:NamedIndividual ,
+                  skos:Concept ,
+                  vair:Concept ;
+         rdfs:isDefinedBy vair: ;
+         skos:definition ""@en ;
+         skos:inScheme vair: ;
+         skos:prefLabel "SVM"@en ;
+         skos:related vair:SupportVectorMachine .
+
+
+###  https://w3id.org/vair#SafetyComponent
+vair:SafetyComponent rdf:type owl:NamedIndividual ,
+                              skos:Concept ,
+                              vair:Concept .
+
+
+###  https://w3id.org/vair#SearchMethod
+vair:SearchMethod rdf:type owl:NamedIndividual ,
+                           skos:Concept ,
+                           vair:Concept .
+
+
+###  https://w3id.org/vair#SemiSupervisedLearning
+vair:SemiSupervisedLearning rdf:type owl:NamedIndividual ,
+                                     skos:Concept ,
+                                     vair:Concept .
+
+
+###  https://w3id.org/vair#SentimentAnalysis
+vair:SentimentAnalysis rdf:type owl:NamedIndividual ,
+                                skos:Concept ,
+                                vair:Concept .
+
+
+###  https://w3id.org/vair#Service
+vair:Service rdf:type owl:NamedIndividual ,
+                      skos:Concept ,
+                      vair:Concept .
+
+
+###  https://w3id.org/vair#ServiceRobot
+vair:ServiceRobot rdf:type owl:NamedIndividual ,
+                           skos:Concept ,
+                           vair:Concept .
+
+
+###  https://w3id.org/vair#SocialRobot
+vair:SocialRobot rdf:type owl:NamedIndividual ,
+                          skos:Concept ,
+                          vair:Concept .
+
+
+###  https://w3id.org/vair#Software
+vair:Software rdf:type owl:NamedIndividual ,
+                       skos:Concept ,
+                       vair:Concept .
+
+
+###  https://w3id.org/vair#SoundEventRecognition
+vair:SoundEventRecognition rdf:type owl:NamedIndividual ,
+                                    skos:Concept ,
+                                    vair:Concept .
+
+
+###  https://w3id.org/vair#SoundSourceSeparation
+vair:SoundSourceSeparation rdf:type owl:NamedIndividual ,
+                                    skos:Concept ,
+                                    vair:Concept .
+
+
+###  https://w3id.org/vair#SoundSynthesis
+vair:SoundSynthesis rdf:type owl:NamedIndividual ,
+                             skos:Concept ,
+                             vair:Concept .
+
+
+###  https://w3id.org/vair#SpeakerRecognition
+vair:SpeakerRecognition rdf:type owl:NamedIndividual ,
+                                 skos:Concept ,
+                                 vair:Concept .
+
+
+###  https://w3id.org/vair#SpeechRecognition
+vair:SpeechRecognition rdf:type owl:NamedIndividual ,
+                                skos:Concept ,
+                                vair:Concept .
+
+
+###  https://w3id.org/vair#SpeechSynthesis
+vair:SpeechSynthesis rdf:type owl:NamedIndividual ,
+                              skos:Concept ,
+                              vair:Concept .
+
+
+###  https://w3id.org/vair#StatisticalTechnique
+vair:StatisticalTechnique rdf:type owl:NamedIndividual ,
+                                   skos:Concept ,
+                                   vair:Concept .
+
+
+###  https://w3id.org/vair#SupervisedLearning
+vair:SupervisedLearning rdf:type owl:NamedIndividual ,
+                                 skos:Concept ,
+                                 vair:Concept .
+
+
+###  https://w3id.org/vair#SupportVectorMachine
+vair:SupportVectorMachine rdf:type owl:NamedIndividual ,
+                                   skos:Concept ,
+                                   vair:Concept .
+
+
+###  https://w3id.org/vair#SymbolicReasoning
+vair:SymbolicReasoning rdf:type owl:NamedIndividual ,
+                                skos:Concept ,
+                                vair:Concept .
+
+
+###  https://w3id.org/vair#TensorProcessingUnit
+vair:TensorProcessingUnit rdf:type owl:NamedIndividual ,
+                                   skos:Concept ,
+                                   vair:Concept .
+
+
+###  https://w3id.org/vair#TestData
+vair:TestData rdf:type owl:NamedIndividual ,
+                       skos:Concept ,
+                       vair:Concept ;
+              rdfs:isDefinedBy vair: ;
+              skos:definition "data used to assess the performance of a final model. [ISO/IEC 22989, 3.2.14]"@en ;
+              skos:inScheme vair: ;
+              skos:prefLabel "Test Data"@en .
+
+
+###  https://w3id.org/vair#Testing
+vair:Testing rdf:type owl:NamedIndividual ,
+                      skos:Concept ,
+                      vair:Concept ;
+             rdfs:isDefinedBy vair: ;
+             skos:definition ""@en ;
+             skos:inScheme vair: ;
+             skos:prefLabel "Testing"@en .
+
+
+###  https://w3id.org/vair#Tool
+vair:Tool rdf:type owl:NamedIndividual ,
+                   skos:Concept ,
+                   vair:Concept .
+
+
+###  https://w3id.org/vair#TrainedModel
+vair:TrainedModel rdf:type owl:NamedIndividual ,
+                           skos:Concept ,
+                           vair:Concept .
+
+
+###  https://w3id.org/vair#Training
+vair:Training rdf:type owl:NamedIndividual ,
+                       skos:Concept ,
+                       vair:Concept ;
+              rdfs:isDefinedBy vair: ;
+              skos:definition ""@en ;
+              skos:inScheme vair: ;
+              skos:prefLabel "Training"@en .
+
+
+###  https://w3id.org/vair#TrainingData
+vair:TrainingData rdf:type owl:NamedIndividual ,
+                           skos:Concept ,
+                           vair:Concept ;
+                  rdfs:isDefinedBy vair: ;
+                  skos:definition "data used to train a machine learning model.  [ISO/IEC 22989, 3.3.16]"@en ;
+                  skos:inScheme vair: ;
+                  skos:prefLabel "Training Data"@en ;
+                  skos:related vair:MachineLearningModel .
+
+
+###  https://w3id.org/vair#UnsupervisedLearning
+vair:UnsupervisedLearning rdf:type owl:NamedIndividual ,
+                                   skos:Concept ,
+                                   vair:Concept .
+
+
+###  https://w3id.org/vair#Validation
+vair:Validation rdf:type owl:NamedIndividual ,
+                         skos:Concept ,
+                         vair:Concept .
+
+
+###  https://w3id.org/vair#ValidationData
+vair:ValidationData rdf:type owl:NamedIndividual ,
+                             skos:Concept ,
+                             vair:Concept ;
+                    rdfs:isDefinedBy vair: ;
+                    skos:definition "data used to compare the performance of different candidate models.   [ISO/IEC 22989, 3.2.15]"@en ;
+                    skos:inScheme vair: ;
+                    skos:prefLabel "Validation Data"@en .
+
+
+###  https://w3id.org/vair#Verification
+vair:Verification rdf:type owl:NamedIndividual ,
+                           skos:Concept ,
+                           vair:Concept .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+vair:AGI skos:prefLabel "AGI"@en ;
+         rdfs:isDefinedBy vair: ;
+         skos:related vair:GeneralAI ;
+         skos:inScheme vair: ;
+         skos:definition "artificial general intelligence"@en .
+
+
+vair:Action skos:definition ""@en ;
+            skos:prefLabel "Action"@en ;
+            rdfs:isDefinedBy vair: ;
+            skos:inScheme vair: .
+
+
+vair:ActionRecognition skos:inScheme vair: ;
+                       skos:prefLabel "Action Recognition"@en ;
+                       skos:definition ""@en ;
+                       rdfs:isDefinedBy vair: .
+
+
+vair:Algorithm rdfs:isDefinedBy vair: ;
+               skos:definition ""@en ;
+               skos:prefLabel ""@en ;
+               skos:inScheme vair: .
+
+
+vair:ApplicationSpecificIntegratedCircuit skos:inScheme vair: ;
+                                          skos:prefLabel "Application Specific Integrated Circuit"@en ;
+                                          rdfs:isDefinedBy vair: ;
+                                          skos:definition ""@en .
+
+
+vair:AutomaticSummarisation skos:prefLabel "Automatic Summarisation"@en ;
+                            rdfs:isDefinedBy vair: ;
+                            skos:inScheme vair: ;
+                            skos:definition "shortening a portion of natural language content or text while retaining important semantic information. [ISO/IEC 22989, 3.6.1]"@en .
+
+
+vair:AutonomousSystem skos:definition ""@en ;
+                      skos:inScheme vair: ;
+                      skos:prefLabel "Autonomous System"@en ;
+                      rdfs:isDefinedBy vair: .
+
+
+vair:BayesianEstimation rdfs:isDefinedBy vair: ;
+                        skos:definition ""@en ;
+                        skos:prefLabel "Bayesian Estimation"@en ;
+                        skos:inScheme vair: .
+
+
+vair:BayesianNetwork skos:related vair:MachineLearningTechnique ;
+                     skos:inScheme vair: ;
+                     rdfs:isDefinedBy vair: ;
+                     skos:definition "probabilistic model  that uses Bayesian inference  for probability computations using a directed acyclic graph. [ISO/IEC 22989 3.3.1]"@en ;
+                     skos:prefLabel "Bayesian Network"@en .
+
+
+vair:BayesianOptimisation skos:definition ""@en ;
+                          skos:prefLabel "Bayesian Optimisation"@en ;
+                          rdfs:isDefinedBy vair: ;
+                          skos:inScheme vair: .
+
+
+vair:BehaviourAnalysis skos:prefLabel "Behaviour Analysis"@en ;
+                       skos:definition ""@en ;
+                       rdfs:isDefinedBy vair: ;
+                       skos:inScheme vair: .
+
+
+vair:BiometricIdentification skos:definition ""@en ;
+                             skos:prefLabel "Biometric Identification"@en ;
+                             rdfs:isDefinedBy vair: ;
+                             skos:inScheme vair: .
+
+
+vair:CaseBasedReasoning skos:definition ""@en ;
+                        skos:prefLabel "Case Based Reasoning"@en ;
+                        rdfs:isDefinedBy vair: ;
+                        skos:inScheme vair: .
+
+
+vair:CognitiveComputing skos:definition "category of AI systems that enables people and machines to interact more naturally [ISO/IEC 22989, 3.1.8]"@en ;
+                        rdfs:isDefinedBy vair: ;
+                        skos:inScheme vair: ;
+                        skos:prefLabel "Cognitive Computing"@en .
+
+
+vair:CognitiveSystem skos:definition ""@en ;
+                     skos:inScheme vair: ;
+                     skos:prefLabel "Cognitive System"@en ;
+                     rdfs:isDefinedBy vair: .
+
+
+vair:CommonSenseReasoning skos:inScheme vair: ;
+                          skos:definition ""@en ;
+                          skos:prefLabel "Common Sense Reasoning"@en ;
+                          rdfs:isDefinedBy vair: .
+
+
+vair:ComputerVision skos:inScheme vair: ;
+                    rdfs:isDefinedBy vair: ;
+                    skos:definition "capability of a functional unit to acquire, process and interpret data representing images or video. [ISO/IEC 22989, 3.7.1]"@en ;
+                    skos:prefLabel "Computer Vision"@en .
+
+
+vair:Content skos:inScheme vair: ;
+             skos:prefLabel "Content"@en ;
+             skos:definition "Content generated using an AI system."@en ;
+             rdfs:isDefinedBy vair: .
+
+
+vair:ContinuousValidation skos:inScheme vair: ;
+                          rdfs:isDefinedBy vair: ;
+                          skos:prefLabel "Continuous Validation"@en ;
+                          skos:definition ""@en .
+
+
+vair:ConvolutionalNeuralNetwork skos:prefLabel "Convolutional Neural Network"@en ;
+                                skos:inScheme vair: ;
+                                rdfs:isDefinedBy vair: ;
+                                skos:definition "feed forward neural network using convolution  in at least one of its layers. [ISO/IEC 22989 3.4.2]"@en .
+
+
+vair:Dataset skos:inScheme vair: ;
+             skos:definition "Collection of data with a shared format. [ISO/IEC 22989, 3.2.5]"@en ;
+             rdfs:isDefinedBy vair: ;
+             skos:prefLabel "Dataset"@en .
+
+
+vair:Decision skos:prefLabel "Decision"@en ;
+              skos:inScheme vair: ;
+              rdfs:isDefinedBy vair: ;
+              skos:definition "Decision generated by an AI system"@en .
+
+
+vair:DecisionSupportSystem rdfs:isDefinedBy vair: ;
+                           skos:inScheme vair: ;
+                           skos:prefLabel "Decision Support System"@en ;
+                           skos:definition ""@en .
+
+
+vair:DecisionTree rdfs:isDefinedBy vair: ;
+                  skos:prefLabel "Decision Tree"@en ;
+                  skos:inScheme vair: ;
+                  skos:definition "model for which inference  is encoded as paths from the root to a leaf node in a tree structure. [ISO/IEC 22989 3.3.2]"@en ;
+                  skos:related vair:MachineLearningTechnique .
+
+
+vair:Deployment skos:prefLabel "Deployment"@en ;
+                skos:definition ""@en ;
+                rdfs:isDefinedBy vair: ;
+                skos:inScheme vair: .
+
+
+vair:Design skos:definition ""@en ;
+            rdfs:isDefinedBy vair: ;
+            skos:inScheme vair: ;
+            skos:prefLabel "Design"@en .
+
+
+vair:Development skos:inScheme vair: ;
+                 skos:definition ""@en ;
+                 rdfs:isDefinedBy vair: ;
+                 skos:prefLabel "Development"@en .
+
+
+vair:DialogueManagement skos:definition "choosing the appropriate next move in a dialogue based on user input, the dialogue history and other contextual knowledge to meet a desired goal. [ISO/IEC 22989, 3.6.2]"@en ;
+                        skos:prefLabel "Dialogue Management"@en ;
+                        skos:inScheme vair: ;
+                        rdfs:isDefinedBy vair: .
+
+
+vair:EmotionRecognition skos:definition "computationally identifying and categorizing emotions expressed in a piece of text, speech, video or image or combination thereof. [ISO/IEC 22989, 3.6.3]"@en ;
+                        skos:inScheme vair: ;
+                        skos:prefLabel "Emotion Recognition"@en ;
+                        rdfs:isDefinedBy vair: .
+
+
+vair:EvolutionaryAlgorithm skos:definition ""@en ;
+                           rdfs:isDefinedBy vair: ;
+                           skos:prefLabel "Evolutionary Algorithm"@en ;
+                           skos:inScheme vair: .
+
+
+vair:ExpertSystem skos:definition "AI system that accumulates, combines and encapsulates knowledge provided by a human expert or experts in a specific domain to infer solutions to problems. [ISO/IEC 22989, 3.1.13]"@en ;
+                  skos:prefLabel "Expert System"@en ;
+                  rdfs:isDefinedBy vair: ;
+                  skos:inScheme vair: ;
+                  skos:related vair:ReasoningTechnique .
+
+
+vair:FaceRecognition skos:definition "automatic pattern recognition comparing stored images of human faces with the image of an actual face, indicating any matching, if it exists, and any data, if they exist, identifying the person to whom the face belongs. [ISO/IEC 22989, 3.7.2]"@en ;
+                     skos:inScheme vair: ;
+                     rdfs:isDefinedBy vair: ;
+                     skos:prefLabel "Face Recognition"@en .
+
+
+vair:FeedForwardNeuralNetwork skos:inScheme vair: ;
+                              rdfs:isDefinedBy vair: ;
+                              skos:definition "neural network where information is fed from the input layer to the output layer in one direction only. [ISO/IEC 22989 3.4.6]"@en ;
+                              skos:prefLabel "Feed Forward Neural Network"@en .
+
+
+vair:GeneralAI skos:inScheme vair: ;
+               rdfs:isDefinedBy vair: ;
+               skos:definition "Type of AI system that addresses a broad range of tasks with a satisfactory level of performance. [ISO/IEC 22989, 3.1.14]"@en ;
+               skos:prefLabel "General AI"@en .
+
+
+vair:GeneticAlgorithm skos:definition "algorithm which simulates natural selection by creating and evolving a population of individuals (solutions) for optimization problems. [ISO/IEC 22989, 3.1.15]"@en ;
+                      skos:prefLabel "Genetic Algorithm"@en ;
+                      rdfs:isDefinedBy vair: ;
+                      skos:inScheme vair: .
+
+
+vair:GestureRecognition rdfs:isDefinedBy vair: ;
+                        skos:definition ""@en ;
+                        skos:prefLabel "Gesture Recognition"@en ;
+                        skos:inScheme vair: .
+
+
+vair:Hardware skos:inScheme vair: ;
+              rdfs:isDefinedBy vair: ;
+              skos:definition ""@en ;
+              skos:prefLabel "Hardware"@en .
+
+
+vair:ImageRecognition skos:prefLabel "Image Recognition"@en ;
+                      skos:inScheme vair: ;
+                      rdfs:isDefinedBy vair: ;
+                      skos:definition "image classification process that classifies object(s), pattern(s) or concept(s) in an image  [ISO/IEC 22989, 3.7.4]"@en .
+
+
+vair:Inception skos:inScheme vair: ;
+               skos:definition ""@en ;
+               skos:prefLabel "Inception"@en ;
+               rdfs:isDefinedBy vair: .
+
+
+vair:InductiveProgramming skos:definition ""@en ;
+                          skos:prefLabel "Inductive Programming"@en ;
+                          skos:inScheme vair: ;
+                          rdfs:isDefinedBy vair: .
+
+
+vair:IndustrialRobot rdfs:isDefinedBy vair: ;
+                     skos:definition ""@en ;
+                     skos:prefLabel "Industrial Robot"@en ;
+                     skos:inScheme vair: .
+
+
+vair:Inference skos:prefLabel ""@en ;
+               skos:definition ""@en ;
+               skos:inScheme vair: ;
+               rdfs:isDefinedBy vair: .
+
+
+vair:InformationRetrieval skos:inScheme vair: ;
+                          rdfs:isDefinedBy vair: ;
+                          skos:prefLabel "Information Retrieval"@en ;
+                          skos:definition "retrieving relevant documents or parts of documents from a dataset, typically based on keyword or natural language queries. [ISO/IEC 22989, 3.6.4]"@en .
+
+
+vair:IntelligentControlSystem skos:prefLabel "Intelligent Control System"@en ;
+                              skos:definition ""@en ;
+                              rdfs:isDefinedBy vair: ;
+                              skos:inScheme vair: .
+
+
+vair:IoTSystem rdfs:isDefinedBy vair: ;
+               skos:definition "system providing functionalities of IoT. [ISO/IEC 22989, 3.1.20]"@en ;
+               skos:inScheme vair: ;
+               skos:prefLabel "IoT System"@en .
+
+
+vair:KnowledgeBasedTechnique skos:inScheme vair: ;
+                             rdfs:isDefinedBy vair: ;
+                             skos:prefLabel "Knowledge Based Technique"@en ;
+                             skos:definition ""@en .
+
+
+vair:KnowledgeRepresentation skos:definition ""@en ;
+                             skos:inScheme vair: ;
+                             skos:prefLabel "Knowledge Representation"@en ;
+                             rdfs:isDefinedBy vair: .
+
+
+vair:LearningTechnique skos:definition ""@en ;
+                       skos:inScheme vair: ;
+                       skos:prefLabel "Learning Technique"@en ;
+                       rdfs:isDefinedBy vair: .
+
+
+vair:Library rdfs:isDefinedBy vair: ;
+             skos:related vair:MachineLearningTechnique ;
+             skos:prefLabel "Library"@en ;
+             skos:inScheme vair: ;
+             skos:definition ""@en .
+
+
+vair:LogicBasedTechnique rdfs:isDefinedBy vair: ;
+                         skos:inScheme vair: ;
+                         skos:prefLabel "Logic Based Technique"@en ;
+                         skos:definition ""@en .
+
+
+vair:LongShortTermMemory rdfs:isDefinedBy vair: ;
+                         skos:inScheme vair: ;
+                         skos:prefLabel "Long ShortTerm Memory"@en ;
+                         skos:definition "type of recurrent neural network that processes sequential data with a satisfactory performance for both long and short span dependencies. [ISO/IEC 22989 3.4.7]"@en .
+
+
+vair:MachineLearningAlgorithm skos:prefLabel "Machine Learning Algorithm"@en ;
+                              skos:related vair:MachineLearningTechnique ;
+                              skos:definition "algorithm to determine parameters of a machine learning model from data according to given criteria.  [ISO/IEC 22989 3.3.6]"@en ;
+                              skos:inScheme vair: ;
+                              rdfs:isDefinedBy vair: .
+
+
+vair:MachineLearningFramework skos:definition ""@en ;
+                              skos:prefLabel "Machine Learning Framework"@en ;
+                              skos:inScheme vair: ;
+                              rdfs:isDefinedBy vair: .
+
+
+vair:MachineLearningLibrary skos:prefLabel "Machine Learning Library"@en ;
+                            skos:inScheme vair: ;
+                            skos:related vair:MachineLearningTechnique ;
+                            skos:definition ""@en ;
+                            rdfs:isDefinedBy vair: .
+
+
+vair:MachineLearningModel rdfs:isDefinedBy vair: ;
+                          skos:related vair:MachineLearningTechnique ;
+                          skos:definition "mathematical construct that generates an inference or prediction  based on input data or information. [ISO/IEC 22989, 3.3.7]"@en ;
+                          skos:prefLabel "Machine Learning Model"@en ;
+                          skos:inScheme vair: .
+
+
+vair:MachineLearningPlatform skos:inScheme vair: ;
+                             rdfs:isDefinedBy vair: ;
+                             skos:definition ""@en ;
+                             skos:prefLabel "Machine Learning Platform"@en .
+
+
+vair:MachineLearningTechnique skos:inScheme vair: ;
+                              rdfs:isDefinedBy vair: ;
+                              skos:prefLabel "MachineLearningTechnique"@en ;
+                              skos:definition ""@en .
+
+
+vair:MachineTranslation skos:inScheme vair: ;
+                        rdfs:isDefinedBy vair: ;
+                        skos:definition "Automated translation of text or speech from one natural language to another using a computer system. [ISO/IEC 22989, 3.6.5]"@en ;
+                        skos:prefLabel "Machine Translation"@en .
+
+
+vair:Model skos:prefLabel "Model"@en ;
+           rdfs:isDefinedBy vair: ;
+           skos:inScheme vair: ;
+           skos:definition "physical, mathematical or otherwise logical representation of a system, entity, phenomenon, process or data. [ISO/IEC 22989, 3.1.23]"@en .
+
+
+vair:Monitoring skos:inScheme vair: ;
+                skos:prefLabel "Monitoring"@en ;
+                rdfs:isDefinedBy vair: ;
+                skos:definition ""@en .
+
+
+vair:MultiAgentSystem skos:inScheme vair: ;
+                      skos:definition ""@en ;
+                      rdfs:isDefinedBy vair: ;
+                      skos:prefLabel "Multi Agent System"@en .
+
+
+vair:MusicInformationRetrieval rdfs:isDefinedBy vair: ;
+                               skos:prefLabel "Music Information Retrieval"@en ;
+                               skos:inScheme vair: ;
+                               skos:definition ""@en .
+
+
+vair:NamedEntityRecognition rdfs:isDefinedBy vair: ;
+                            skos:prefLabel "Named Entity Recognition"@en ;
+                            skos:definition "recognizing and labelling the denotational names of entities and their categories for sequences of words in a stream of text or speech. [ISO/IEC 22989, 3.6.6]"@en ;
+                            skos:inScheme vair: .
+
+
+vair:NarrowAI skos:inScheme vair: ;
+              skos:prefLabel "Narrow AI"@en ;
+              skos:definition "type of AI system that is focused on defined tasks to address a specific problem. [ISO/IEC 22989, 3.1.24]"@en ;
+              rdfs:isDefinedBy vair: .
+
+
+vair:NaturalLanguageGeneration skos:prefLabel "Natural Language Generation"@en ;
+                               skos:inScheme vair: ;
+                               rdfs:isDefinedBy vair: ;
+                               skos:definition "Converting data carrying semantics into natural language. [ISO/IEC 22989, 3.6.8]"@en .
+
+
+vair:NaturalLanguageProcessingSystem skos:prefLabel "Natural Language Processing System"@en ;
+                                     skos:inScheme vair: ;
+                                     skos:definition "information processing based upon natural language understanding or natural language generation. [ISO/IEC 22989, 3.6.9]"@en ;
+                                     rdfs:isDefinedBy vair: .
+
+
+vair:NeuralNetwork rdfs:isDefinedBy vair: ;
+                   skos:definition "network of one or more layers of neurons connected by weighted links with adjustable weights, which takes input data and produces an output. [ISO/IEC 22989 3.4.8]"@en ;
+                   skos:prefLabel "Neural Network"@en ;
+                   skos:inScheme vair: .
+
+
+vair:ObjectRecognition skos:definition ""@en ;
+                       skos:prefLabel "Object Recognition"@en ;
+                       skos:inScheme vair: ;
+                       rdfs:isDefinedBy vair: .
+
+
+vair:Operation skos:prefLabel "Operation"@en ;
+               skos:definition ""@en ;
+               skos:inScheme vair: ;
+               rdfs:isDefinedBy vair: .
+
+
+vair:OptimisationMethod skos:definition ""@en ;
+                        rdfs:isDefinedBy vair: ;
+                        skos:prefLabel "Optimisation Method"@en ;
+                        skos:inScheme vair: .
+
+
+vair:PartOfSpeechTagging rdfs:isDefinedBy vair: ;
+                         skos:inScheme vair: ;
+                         skos:definition "assigning a category (e.g. verb, noun, adjective) to a word based on its grammatical properties. [ISO/IEC 22989, 3.6.13]"@en ;
+                         skos:prefLabel "Part Of Speech Tagging"@en .
+
+
+vair:PatternRecognition skos:prefLabel "Pattern Recognition"@en ;
+                        skos:inScheme vair: ;
+                        rdfs:isDefinedBy vair: ;
+                        skos:definition ""@en .
+
+
+vair:PersonalityTraitsAnalysis skos:prefLabel "Personality Traits Analysis"@en ;
+                               rdfs:isDefinedBy vair: ;
+                               skos:definition ""@en ;
+                               skos:inScheme vair: .
+
+
+vair:Platform skos:definition ""@en ;
+              rdfs:isDefinedBy vair: ;
+              skos:inScheme vair: ;
+              skos:prefLabel ""@en .
+
+
+vair:Prediction skos:inScheme vair: ;
+                skos:definition "primary output of an AI system when provided with input data or information.[ISO/IEC 22989, 3.1.27]"@en ;
+                skos:prefLabel "Prediction"@en ;
+                rdfs:isDefinedBy vair: .
+
+
+vair:Product skos:prefLabel "Product"@en ;
+             rdfs:isDefinedBy vair: ;
+             skos:inScheme vair: ;
+             skos:definition ""@en .
+
+
+vair:Profiling skos:inScheme vair: ;
+               skos:prefLabel "Profiling"@en ;
+               skos:definition ""@en ;
+               rdfs:isDefinedBy vair: .
+
+
+vair:QuestionAnswering skos:definition "determining the most appropriate answer to a question provided in natural language.  [ISO/IEC 22989, 3.6.14]"@en ;
+                       rdfs:isDefinedBy vair: ;
+                       skos:prefLabel "Question Answering"@en ;
+                       skos:inScheme vair: .
+
+
+vair:ReEvaluation rdfs:isDefinedBy vair: ;
+                  skos:inScheme vair: ;
+                  skos:prefLabel "Re-Evaluation"@en ;
+                  skos:definition ""@en .
+
+
+vair:ReasoningTechnique skos:prefLabel "ReasoningTechnique"@en ;
+                        skos:inScheme vair: ;
+                        rdfs:isDefinedBy vair: ;
+                        skos:definition ""@en .
+
+
+vair:Recommendation skos:inScheme vair: ;
+                    rdfs:isDefinedBy vair: ;
+                    skos:definition ""@en ;
+                    skos:prefLabel "Recommendation"@en .
+
+
+vair:RecommenderSystem skos:inScheme vair: ;
+                       skos:related vair:MachineLearningTechnique ;
+                       rdfs:isDefinedBy vair: ;
+                       skos:prefLabel "Recommender System"@en ;
+                       skos:definition ""@en .
+
+
+vair:RecurrentNeuralNetwork skos:prefLabel "Recurrent Neural Network"@en ;
+                            skos:inScheme vair: ;
+                            rdfs:isDefinedBy vair: ;
+                            skos:definition "neural network in which outputs from both the previous layer and the previous processing step are fed into the current layer.  [ISO/IEC 22989 3.4.10]"@en .
+
+
+vair:ReinforcementLearning rdfs:isDefinedBy vair: ;
+                           skos:inScheme vair: ;
+                           skos:definition "learning of an optimal sequence of actions to maximize a reward through interaction with an environment [ISO/IEC 22989, 3.3.9]"@en ;
+                           skos:prefLabel "Reinforcement Learning"@en .
+
+
+vair:RelationshipExtraction rdfs:isDefinedBy vair: ;
+                            skos:definition "identifying relationships among entities mentioned in a text. [ISO/IEC 22989, 3.6.15]"@en ;
+                            skos:prefLabel "Relationship Extraction"@en ;
+                            skos:inScheme vair: .
+
+
+vair:Retirement skos:definition ""@en ;
+                skos:prefLabel "Retirement"@en ;
+                skos:inScheme vair: ;
+                rdfs:isDefinedBy vair: .
+
+
+vair:RobotSystem skos:inScheme vair: ;
+                 skos:prefLabel "Robot System"@en ;
+                 skos:definition "automation system with actuators that performs intended tasks in the physical world, by means of sensing its environment and a software control system. [ISO/IEC 22989, 3.1.29]"@en ;
+                 rdfs:isDefinedBy vair: .
+
+
+vair:SafetyComponent skos:definition ""@en ;
+                     skos:prefLabel "Safety Component"@en ;
+                     rdfs:isDefinedBy vair: ;
+                     skos:inScheme vair: .
+
+
+vair:SearchMethod rdfs:isDefinedBy vair: ;
+                  skos:prefLabel "Search Method"@en ;
+                  skos:definition ""@en ;
+                  skos:inScheme vair: .
+
+
+vair:SemiSupervisedLearning skos:prefLabel "Semi Supervised Learning"@en ;
+                            skos:definition "machine learning that makes use of both labelled and unlabelled data during training [ISO/IEC 22989, 3.3.11]"@en ;
+                            skos:inScheme vair: ;
+                            rdfs:isDefinedBy vair: .
+
+
+vair:SentimentAnalysis skos:definition "computationally identifying and categorizing opinions expressed in a piece of text, speech or image, to determine a range of feeling such as from positive to negative. [ISO/IEC 22989, 3.6.16]"@en ;
+                       skos:prefLabel "Sentiment Analysis"@en ;
+                       rdfs:isDefinedBy vair: ;
+                       skos:inScheme vair: .
+
+
+vair:Service skos:definition ""@en ;
+             rdfs:isDefinedBy vair: ;
+             skos:inScheme vair: ;
+             skos:prefLabel "Service"@en .
+
+
+vair:ServiceRobot skos:definition ""@en ;
+                  rdfs:isDefinedBy vair: ;
+                  skos:inScheme vair: ;
+                  skos:prefLabel "Service Robot"@en .
+
+
+vair:SocialRobot skos:definition ""@en ;
+                 rdfs:isDefinedBy vair: ;
+                 skos:prefLabel "Social Robot"@en ;
+                 skos:inScheme vair: .
+
+
+vair:Software rdfs:isDefinedBy vair: ;
+              skos:definition ""@en ;
+              skos:prefLabel "Software"@en ;
+              skos:inScheme vair: .
+
+
+vair:SoundEventRecognition skos:definition ""@en ;
+                           rdfs:isDefinedBy vair: ;
+                           skos:prefLabel "Sound Event Recognition"@en ;
+                           skos:inScheme vair: .
+
+
+vair:SoundSourceSeparation skos:inScheme vair: ;
+                           skos:prefLabel "Sound Source Separation"@en ;
+                           rdfs:isDefinedBy vair: ;
+                           skos:definition ""@en .
+
+
+vair:SoundSynthesis skos:inScheme vair: ;
+                    rdfs:isDefinedBy vair: ;
+                    skos:definition ""@en ;
+                    skos:prefLabel "Sound Synthesis"@en .
+
+
+vair:SpeakerRecognition rdfs:isDefinedBy vair: ;
+                        skos:definition ""@en ;
+                        skos:prefLabel "Speaker Recognition"@en ;
+                        skos:inScheme vair: .
+
+
+vair:SpeechRecognition skos:definition "converting a speech signal to a representation of the content of the speech. [ISO/IEC 22989, 3.6.17]"@en ;
+                       rdfs:isDefinedBy vair: ;
+                       skos:inScheme vair: ;
+                       skos:prefLabel "Speech Recognition"@en .
+
+
+vair:SpeechSynthesis skos:prefLabel "Speech Synthesis"@en ;
+                     rdfs:isDefinedBy vair: ;
+                     skos:inScheme vair: ;
+                     skos:definition "generation of artificial speech. [ISO/IEC 22989, 3.6.18]"@en .
+
+
+vair:StatisticalTechnique skos:definition ""@en ;
+                          skos:inScheme vair: ;
+                          rdfs:isDefinedBy vair: ;
+                          skos:prefLabel "Statistical Technique"@en .
+
+
+vair:SupervisedLearning skos:inScheme vair: ;
+                        skos:definition "machine learning that makes only use of labelled data during training [ISO/IEC 22989, 3.3.11]"@en ;
+                        rdfs:isDefinedBy vair: ;
+                        skos:prefLabel "Supervised Learning"@en .
+
+
+vair:SupportVectorMachine skos:definition "machine learning algorithm  that finds decision boundaries with maximal margins. [ISO/IEC 22989 3.3.13]"@en ;
+                          skos:prefLabel "Support Vector Machine"@en ;
+                          rdfs:isDefinedBy vair: ;
+                          skos:inScheme vair: .
+
+
+vair:SymbolicReasoning skos:inScheme vair: ;
+                       skos:definition ""@en ;
+                       skos:prefLabel "Symbolic Reasoning"@en ;
+                       rdfs:isDefinedBy vair: .
+
+
+vair:TensorProcessingUnit skos:prefLabel "Tensor Processing Unit"@en ;
+                          skos:inScheme vair: ;
+                          rdfs:isDefinedBy vair: ;
+                          skos:definition ""@en .
+
+
+vair:Tool skos:prefLabel "Tool"@en ;
+          skos:inScheme vair: ;
+          rdfs:isDefinedBy vair: ;
+          skos:definition "A tool that has been used in development of an AI system."@en .
+
+
+vair:TrainedModel skos:inScheme vair: ;
+                  skos:definition "result of model training [ISO/IEC 22989, 3.3.14]"@en ;
+                  rdfs:isDefinedBy vair: ;
+                  skos:related vair:ModelTraning ;
+                  skos:prefLabel "Trained Model"@en .
+
+
+vair:UnsupervisedLearning skos:inScheme vair: ;
+                          skos:definition "machine learning that makes only use of unlabelled data during training [ISO/IEC 22989, 3.3.17]"@en ;
+                          rdfs:isDefinedBy vair: ;
+                          skos:prefLabel "Unsupervised Learning"@en .
+
+
+vair:Validation skos:inScheme vair: ;
+                rdfs:isDefinedBy vair: ;
+                skos:prefLabel "Validation"@en ;
+                skos:definition ""@en .
+
+
+vair:Verification skos:prefLabel "Verification"@en ;
+                  skos:definition ""@en ;
+                  skos:inScheme vair: ;
+                  rdfs:isDefinedBy vair: .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
