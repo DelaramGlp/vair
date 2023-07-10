@@ -585,7 +585,6 @@ vair:RevokingPublicAssisstanceServices rdf:type owl:Class ;
 vair:LawEnforcement rdf:type owl:Class ;
                     rdfs:subClassOf airo:Domain .
 
-.
 
 ###  https://w3id.org/vair#VerifyingAuthenticityOfTravelDocument
 vair:VerifyingAuthenticityOfTravelDocument rdf:type owl:Class ;
