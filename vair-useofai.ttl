@@ -1960,7 +1960,7 @@ vair:RevokingPublicAssisstanceServices rdfs:isDefinedBy vair: ;
 
 vair:LawEnforcement skos:inScheme vair: ;
                     rdfs:isDefinedBy vair: ;
-                    skos:prefLabel "LawEnforcement"@en ;
+                    skos:prefLabel "Law Enforcement"@en ;
                     skos:definition ""@en .
 
 
