@@ -65,6 +65,9 @@ vair:AdministrationOfJustice rdf:type owl:Class ;
 vair:AdvertisingVacancies rdf:type owl:Class ;
                           rdfs:subClassOf vair:Assessment .
 
+###  https://w3id.org/vair#JobApplicationAnalysis
+vair:JobApplicationAnalysis rdf:type owl:Class ;
+                          rdfs:subClassOf vair:Purpose .
 
 ###  https://w3id.org/vair#AllocatingTasks
 vair:AllocatingTasks rdf:type owl:Class ;
@@ -180,9 +183,9 @@ vair:DecisionMaking rdf:type owl:Class ;
                     rdfs:subClassOf airo:Purpose .
 
 
-###  https://w3id.org/vair#DectectionOfCriminalOffences
-vair:DectectionOfCriminalOffences rdf:type owl:Class ;
-                                  rdfs:subClassOf airo:EnvironmentOfUse .
+###  https://w3id.org/vair#DectectingCriminalOffences
+vair:DectectingOfCriminalOffences rdf:type owl:Class ;
+                                  rdfs:subClassOf airo:Purpose .
 
 
 ###  https://w3id.org/vair#DeepFakeDetection
@@ -365,9 +368,9 @@ vair:InterpretingLaw rdf:type owl:Class ;
                      rdfs:subClassOf vair:KnowledgeReasoning .
 
 
-###  https://w3id.org/vair#InvestigationOfCriminalOffences
-vair:InvestigationOfCriminalOffences rdf:type owl:Class ;
-                                     rdfs:subClassOf airo:EnvironmentOfUse .
+###  https://w3id.org/vair#InvestigatingCriminalOffences
+vair:InvestigatingCriminalOffences rdf:type owl:Class ;
+                                     rdfs:subClassOf airo:Purpose .
 
 
 ###  https://w3id.org/vair#JobApplicationFiltering
@@ -535,10 +538,13 @@ vair:ProducingRecommendation rdf:type owl:Class ;
                              rdfs:subClassOf airo:Purpose .
 
 
-###  https://w3id.org/vair#ProsecutionOfCriminalOffences
-vair:ProsecutionOfCriminalOffences rdf:type owl:Class ;
-                                   rdfs:subClassOf airo:EnvironmentOfUse .
+###  https://w3id.org/vair#ProsecutingCriminalOffences
+vair:ProsecutingCriminalOffences rdf:type owl:Class ;
+                                   rdfs:subClassOf airo:Purpose .
 
+###  https://w3id.org/vair#PerformingBackgroundCheck
+vair:PerformingBackgroundCheck rdf:type owl:Class ;
+                                   rdfs:subClassOf airo:Purpose .
 
 ###  https://w3id.org/vair#PublicService
 vair:PublicService rdf:type owl:Class ;
@@ -579,11 +585,15 @@ vair:RevokingPublicAssisstanceServices rdf:type owl:Class ;
 vair:LawEnforcement rdf:type owl:Class ;
                     rdfs:subClassOf airo:Domain .
 
+.
 
 ###  https://w3id.org/vair#VerifyingAuthenticityOfTravelDocument
 vair:VerifyingAuthenticityOfTravelDocument rdf:type owl:Class ;
                                            rdfs:subClassOf vair:Assessment .
 
+###  https://w3id.org/vair#GrantingPublicAssistanceServices
+vair:GrantingPublicAssistanceServices rdf:type owl:Class ;
+                                           rdfs:subClassOf vair:Purpose .
 
 
 
@@ -753,8 +763,8 @@ vair:DecisionMaking rdf:type owl:NamedIndividual ,
                              vair:Concept .
 
 
-###  https://w3id.org/vair#DectectionOfCriminalOffences
-vair:DectectionOfCriminalOffences rdf:type owl:NamedIndividual ,
+###  https://w3id.org/vair#DectectingCriminalOffences
+vair:DectectingOfCriminalOffences rdf:type owl:NamedIndividual ,
                                            skos:Concept ,
                                            vair:Concept .
 
@@ -764,6 +774,10 @@ vair:DeepFakeDetection rdf:type owl:NamedIndividual ,
                                 skos:Concept ,
                                 vair:Concept .
 
+###  https://w3id.org/vair#PerformingBackgroundCheck
+vair:PerformingBackgroundCheck rdf:type owl:NamedIndividual ,
+                                skos:Concept ,
+                                vair:Concept .
 
 ###  https://w3id.org/vair#DetectingEmotionalState
 vair:DetectingEmotionalState rdf:type owl:NamedIndividual ,
@@ -824,6 +838,10 @@ vair:Education rdf:type owl:NamedIndividual ,
                         skos:Concept ,
                         vair:Concept .
 
+###  https://w3id.org/vair#GrantingPublicAssistanceServices
+vair:Education rdf:type owl:NamedIndividual ,
+                        skos:Concept ,
+                        vair:Concept .
 
 ###  https://w3id.org/vair#Employment
 vair:Employment rdf:type owl:NamedIndividual ,
@@ -975,10 +993,7 @@ vair:InterpretingLaw rdf:type owl:NamedIndividual ,
                               vair:Concept .
 
 
-###  https://w3id.org/vair#InvestigationOfCriminalOffences
-vair:InvestigationOfCriminalOffences rdf:type owl:NamedIndividual ,
-                                              skos:Concept ,
-                                              vair:Concept .
+
 
 
 ###  https://w3id.org/vair#JobApplicationFiltering
@@ -1034,6 +1049,11 @@ vair:ManagingCriticalDigitalInfrastructure rdf:type owl:NamedIndividual ,
                                                     skos:Concept ,
                                                     vair:Concept .
 
+
+###  https://w3id.org/vair#ManagementAndOperationOfSafety
+vair:ManagementAndOperationOfSafety rdf:type owl:NamedIndividual ,
+                                                    skos:Concept ,
+                                                    vair:Concept .
 
 ###  https://w3id.org/vair#ManagingRoadTraffic
 vair:ManagingRoadTraffic rdf:type owl:NamedIndividual ,
@@ -1194,6 +1214,15 @@ vair:ProsecutionOfCriminalOffences rdf:type owl:NamedIndividual ,
                                             skos:Concept ,
                                             vair:Concept .
 
+###  https://w3id.org/vair#InvestigatingCriminalOffences
+vair:InvestigatingCriminalOffences rdf:type owl:NamedIndividual ,
+                                            skos:Concept ,
+                                            vair:Concept .
+
+###  https://w3id.org/vair#ProsecutingCriminalOffences
+vair:ProsecutingCriminalOffences rdf:type owl:NamedIndividual ,
+                                            skos:Concept ,
+                                            vair:Concept .
 
 ###  https://w3id.org/vair#PublicService
 vair:PublicService rdf:type owl:NamedIndividual ,
@@ -1344,6 +1373,11 @@ vair:AssessingPersonalityTraits skos:inScheme vair: ;
                                 skos:definition ""@en ;
                                 rdfs:isDefinedBy vair: .
 
+vair:JobApplicationAnalysis skos:inScheme vair: ;
+                            rdfs:isDefinedBy vair: ;
+                            skos:related vair:Employment ;
+                            skos:prefLabel "Job Application Analysis"@en ;
+                            skos:definition ""@en .
 
 vair:AssessingRiskForPotentialVictimsOfCriminalOffences skos:inScheme vair: ;
                                                         rdfs:isDefinedBy vair: ;
@@ -1351,6 +1385,17 @@ vair:AssessingRiskForPotentialVictimsOfCriminalOffences skos:inScheme vair: ;
                                                         skos:prefLabel "Assessing Risk For Potential Victims Of Criminal Offences"@en ;
                                                         skos:definition ""@en .
 
+vair:InvestigatingCriminalOffences skos:inScheme vair: ;
+                                                        rdfs:isDefinedBy vair: ;
+                                                        skos:related vair:LawEnforcement ;
+                                                        skos:prefLabel "Investigating Criminal Offences"@en ;
+                                                        skos:definition ""@en .
+
+vair:ProsecutingCriminalOffences skos:inScheme vair: ;
+                                                        rdfs:isDefinedBy vair: ;
+                                                        skos:related vair:LawEnforcement ;
+                                                        skos:prefLabel "Prosecuting Criminal Offences"@en ;
+                                                        skos:definition ""@en .
 
 vair:AssessingRiskOfIrregularImmigration skos:definition ""@en ;
                                          rdfs:isDefinedBy vair: ;
@@ -1425,7 +1470,7 @@ vair:DecisionMaking skos:prefLabel "Decision Making"@en ;
                     skos:inScheme vair: .
 
 
-vair:DectectionOfCriminalOffences skos:prefLabel "Dectection Of Criminal Offences"@en ;
+vair:DectectingCriminalOffences skos:prefLabel "Dectecting Of Criminal Offences"@en ;
                                   skos:inScheme vair: ;
                                   skos:definition ""@en ;
                                   rdfs:isDefinedBy vair: .
@@ -1678,11 +1723,6 @@ vair:InterpretingLaw skos:inScheme vair: ;
                      rdfs:isDefinedBy vair: .
 
 
-vair:InvestigationOfCriminalOffences rdfs:isDefinedBy vair: ;
-                                     skos:inScheme vair: ;
-                                     skos:prefLabel "Investigation Of Criminal Offences"@en ;
-                                     skos:definition ""@en .
-
 
 vair:JobApplicationFiltering skos:prefLabel "Job Application Filtering"@en ;
                              skos:definition "Filtering applications for recruitment or selection of natural persons"@en ;
@@ -1733,6 +1773,12 @@ vair:MakingTerminationDecision skos:definition "Making decisions on termination 
                                rdfs:isDefinedBy vair: .
 
 
+vair:PerformingBackgroundCheck skos:definition ""@en ;
+                               skos:prefLabel "Performing Background Check"@en ;
+                               skos:inScheme vair: ;
+                               skos:related vair:LawEnforcement ;
+                               rdfs:isDefinedBy vair: .
+
 vair:Managing skos:prefLabel "Managing"@en ;
               skos:inScheme vair: ;
               rdfs:isDefinedBy vair: ;
@@ -1750,6 +1796,12 @@ vair:ManagingRoadTraffic skos:definition ""@en ;
                          skos:related vair:CriticalInfrastructure ;
                          rdfs:isDefinedBy vair: ;
                          skos:prefLabel "Managing Road Traffic"@en ;
+                         skos:inScheme vair: .
+
+vair:ManagementAndOperationOfSafety skos:definition ""@en ;
+                         skos:related vair:CriticalInfrastructure ;
+                         rdfs:isDefinedBy vair: ;
+                         skos:prefLabel "Management And Operation Of Safety"@en ;
                          skos:inScheme vair: .
 
 
@@ -1931,6 +1983,11 @@ vair:ReclaimingPublicAssisstanceServices rdfs:isDefinedBy vair: ;
                                          skos:prefLabel "Reclaiming Public Assisstance Services"@en ;
                                          skos:inScheme vair: .
 
+vair:GrantingPublicAssistanceServices rdfs:isDefinedBy vair: ;
+                                         skos:related vair:PublicService ;
+                                         skos:definition ""@en ;
+                                         skos:prefLabel "Granting Public Assistance Services"@en ;
+                                         skos:inScheme vair: .
 
 vair:Recruiting rdfs:isDefinedBy vair: ;
                 skos:inScheme vair: ;
