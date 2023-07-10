@@ -932,10 +932,21 @@
    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
    <skos:prefLabel xml:lang="en">Education</skos:prefLabel>
+   <skos:definition xml:lang="en">Refers to education and vocational training</skos:definition>
+   <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Domain"/>
+   <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+ </rdf:Description>
+
+<rdf:Description rdf:about="https://w3id.org/vair#LawEnforcement">
+   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+   <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+   <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+   <skos:prefLabel xml:lang="en">Law Enforcement</skos:prefLabel>
    <skos:definition xml:lang="en"></skos:definition>
    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Domain"/>
    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
  </rdf:Description>
+    
  <rdf:Description rdf:about="https://w3id.org/vair#PublicService">
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
@@ -945,24 +956,8 @@
    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Domain"/>
    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
  </rdf:Description>
- <rdf:Description rdf:about="https://w3id.org/vair#SelfEmployment">
-   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-   <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
-   <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-   <skos:prefLabel xml:lang="en">Self-Employment</skos:prefLabel>
-   <skos:definition xml:lang="en"></skos:definition>
-   <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Domain"/>
-   <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
- </rdf:Description>
- <rdf:Description rdf:about="https://w3id.org/vair#VocationalTraining">
-   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-   <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
-   <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-   <skos:prefLabel xml:lang="en">Vocational Training</skos:prefLabel>
-   <skos:definition xml:lang="en"></skos:definition>
-   <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Domain"/>
-   <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
- </rdf:Description>
+ 
+ 
  <rdf:Description rdf:about="https://w3id.org/vair#Asylum">
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
@@ -995,7 +990,7 @@
    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
    <skos:prefLabel xml:lang="en">Employment</skos:prefLabel>
-   <skos:definition xml:lang="en"></skos:definition>
+   <skos:definition xml:lang="en">Refers to  Employment, workers management and access to self-employment</skos:definition>
    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Domain"/>
    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
  </rdf:Description>
@@ -1026,15 +1021,7 @@
    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Domain"/>
    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
  </rdf:Description>
- <rdf:Description rdf:about="https://w3id.org/vair#WorkersManagement">
-   <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-   <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
-   <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-   <skos:prefLabel xml:lang="en">Workers Management</skos:prefLabel>
-   <skos:definition xml:lang="en"></skos:definition>
-   <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Domain"/>
-   <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
- </rdf:Description>
+ 
  <rdf:Description rdf:about="https://w3id.org/vair#PrivateService">
    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
@@ -1045,42 +1032,6 @@
    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
  </rdf:Description>
 
- #-----------Enviroment of Use--------------
- <rdf:Description rdf:about="https://w3id.org/vair#DectectionOfCriminalOffences">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
-    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-    <skos:prefLabel xml:lang="en">Dectection Of Criminal Offences</skos:prefLabel>
-    <skos:definition xml:lang="en"></skos:definition>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#EnvironmentOfUse"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/vair#ProsecutionOfCriminalOffences">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
-    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-    <skos:prefLabel xml:lang="en">Prosecution Of Criminal Offences</skos:prefLabel>
-    <skos:definition xml:lang="en"></skos:definition>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#EnvironmentOfUse"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/vair#PubliclyAccessibleSpace">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
-    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-    <skos:prefLabel xml:lang="en">Publicly Accessible Space</skos:prefLabel>
-    <skos:definition xml:lang="en"></skos:definition>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#EnvironmentOfUse"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/vair#InvestigationOfCriminalOffences">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
-    <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-    <skos:prefLabel xml:lang="en">Investigation Of Criminal Offences</skos:prefLabel>
-    <skos:definition xml:lang="en"></skos:definition>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/airo#EnvironmentOfUse"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-  </rdf:Description>
+ 
 
 </rdf:RDF>
