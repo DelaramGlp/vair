@@ -43,10 +43,6 @@ skos:Concept rdf:type owl:Class .
 airo:Domain rdf:type owl:Class .
 
 
-###  https://w3id.org/airo#EnvironmentOfUse
-airo:EnvironmentOfUse rdf:type owl:Class .
-
-
 ###  https://w3id.org/airo#Purpose
 airo:Purpose rdf:type owl:Class .
 
@@ -67,7 +63,7 @@ vair:AdvertisingVacancies rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#JobApplicationAnalysis
 vair:JobApplicationAnalysis rdf:type owl:Class ;
-                          rdfs:subClassOf vair:Purpose .
+                          rdfs:subClassOf airo:Purpose .
 
 ###  https://w3id.org/vair#AllocatingTasks
 vair:AllocatingTasks rdf:type owl:Class ;
@@ -97,7 +93,6 @@ vair:AssessingAdmissionTest rdf:type owl:Class ;
 ###  https://w3id.org/vair#AssessingCreditworthiness
 vair:AssessingCreditworthiness rdf:type owl:Class ;
                                rdfs:subClassOf vair:Assessment .
-
 
 ###  https://w3id.org/vair#AssessingImmigrationEligibility
 vair:AssessingImmigrationEligibility rdf:type owl:Class ;
@@ -372,6 +367,9 @@ vair:InterpretingLaw rdf:type owl:Class ;
 vair:InvestigatingCriminalOffences rdf:type owl:Class ;
                                      rdfs:subClassOf airo:Purpose .
 
+###  https://w3id.org/vair#DetectingCriminalOffences
+vair:DetectingCriminalOffences rdf:type owl:Class ;
+                                     rdfs:subClassOf airo:Purpose .
 
 ###  https://w3id.org/vair#JobApplicationFiltering
 vair:JobApplicationFiltering rdf:type owl:Class ;
@@ -447,6 +445,10 @@ vair:ManagingSupplyOfWater rdf:type owl:Class ;
 vair:Migration rdf:type owl:Class ;
                rdfs:subClassOf airo:Domain .
 
+
+###  https://w3id.org/vair#LawEnforcement
+vair:LawEnforcement rdf:type owl:Class ;
+               rdfs:subClassOf airo:Domain .
 
 ###  https://w3id.org/vair#Monitoring
 vair:Monitoring rdf:type owl:Class ;
@@ -532,9 +534,12 @@ vair:PrioritisationOfEmergencyService rdf:type owl:Class ;
 vair:PrivateService rdf:type owl:Class ;
                     rdfs:subClassOf airo:Domain .
 
-
 ###  https://w3id.org/vair#ProducingRecommendation
 vair:ProducingRecommendation rdf:type owl:Class ;
+                             rdfs:subClassOf airo:Purpose .
+
+###  https://w3id.org/vair#BorderControlSecurityCheck
+vair:BorderControlSecurityCheck rdf:type owl:Class ;
                              rdfs:subClassOf airo:Purpose .
 
 
@@ -551,9 +556,7 @@ vair:PublicService rdf:type owl:Class ;
                    rdfs:subClassOf airo:Domain .
 
 
-###  https://w3id.org/vair#PubliclyAccessibleSpace
-vair:PubliclyAccessibleSpace rdf:type owl:Class ;
-                             rdfs:subClassOf airo:EnvironmentOfUse .
+
 
 
 ###  https://w3id.org/vair#ReclaimingPublicAssisstanceServices
@@ -592,10 +595,16 @@ vair:VerifyingAuthenticityOfTravelDocument rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#GrantingPublicAssistanceServices
 vair:GrantingPublicAssistanceServices rdf:type owl:Class ;
-                                           rdfs:subClassOf vair:Purpose .
+                                           rdfs:subClassOf airo:Purpose .
+
+###  https://w3id.org/vair#VerificationOfMigrationSeekerClaims
+vair:VerificationOfMigrationSeekerClaims rdf:type owl:Class ;
+                                           rdfs:subClassOf airo:Purpose .
 
 
-
+###  https://w3id.org/vair#VerificationOfAsylumSeekerClaims
+vair:VerificationOfAsylumSeekerClaims rdf:type owl:Class ;
+                                           rdfs:subClassOf airo:Purpose .
 
 #################################################################
 #    Individuals
@@ -1223,6 +1232,10 @@ vair:ProsecutingCriminalOffences rdf:type owl:NamedIndividual ,
                                             skos:Concept ,
                                             vair:Concept .
 
+###  https://w3id.org/vair#DetectingCriminalOffences
+vair:DetectingCriminalOffences rdf:type owl:NamedIndividual ,
+                                            skos:Concept ,
+                                            vair:Concept .
 ###  https://w3id.org/vair#PublicService
 vair:PublicService rdf:type owl:NamedIndividual ,
                             skos:Concept ,
@@ -1276,10 +1289,20 @@ vair:VerifyingAuthenticityOfTravelDocument rdf:type owl:NamedIndividual ,
                                                     skos:Concept ,
                                                     vair:Concept .
 
+###  https://w3id.org/vair#VerificationOfMigrationSeekerClaims
+vair:VerificationOfMigrationSeekerClaims rdf:type owl:NamedIndividual ,
+                                                    skos:Concept ,
+                                                    vair:Concept .
 
+###  https://w3id.org/vair#VerificationOfAsylumSeekerClaims
+vair:VerificationOfMigrationSeekerClaims rdf:type owl:NamedIndividual ,
+                                                    skos:Concept ,
+                                                    vair:Concept .
 
-
-
+###  https://w3id.org/vair#BorderControlSecurityCheck
+vair:BorderControlSecurityCheck rdf:type owl:NamedIndividual ,
+                                                    skos:Concept ,
+                                                    vair:Concept .
 
 
 #################################################################
@@ -1350,8 +1373,7 @@ vair:AssessingImmigrationEligibility skos:definition "Examination of application
                                      skos:related vair:Migration ;
                                      skos:prefLabel "Assessing Immigration Eligibility"@en ;
                                      skos:inScheme vair: ;
-                                     rdfs:isDefinedBy vair: ;
-                                     skos:related vair:Asylum .
+                                     rdfs:isDefinedBy vair: .
 
 
 vair:AssessingPastCriminalBehaviour rdfs:isDefinedBy vair: ;
@@ -1395,13 +1417,18 @@ vair:ProsecutingCriminalOffences skos:inScheme vair: ;
                                                         skos:related vair:LawEnforcement ;
                                                         skos:prefLabel "Prosecuting Criminal Offences"@en ;
                                                         skos:definition ""@en .
+vair:DetectingCriminalOffences skos:inScheme vair: ;
+                                                        rdfs:isDefinedBy vair: ;
+                                                        skos:related vair:LawEnforcement ;
+                                                        skos:prefLabel "Detecting Criminal Offences"@en ;
+                                                        skos:definition ""@en .                                                        
 
 vair:AssessingRiskOfIrregularImmigration skos:definition ""@en ;
                                          rdfs:isDefinedBy vair: ;
                                          skos:related vair:LawEnforcement ,
                                                       vair:Migration ;
                                          skos:inScheme vair: ;
-                                         skos:related vair:Asylum ;
+                                
                                          skos:prefLabel "Assessing Risk Of Irregular Immigration"@en .
 
 
@@ -1626,12 +1653,11 @@ vair:ExaminingAsylumApplication skos:prefLabel "Examining Asylum Application"@en
                                 skos:related vair:Migration ;
                                 rdfs:isDefinedBy vair: ;
                                 skos:definition ""@en ;
-                                skos:inScheme vair: ;
-                                skos:related vair:Asylum .
+                                skos:inScheme vair: .
 
 
 vair:ExaminingMigrationRelatedComplaints skos:prefLabel "Examining Migration Related Complaints"@en ;
-                                         skos:related vair:Asylum ;
+                                       
                                          skos:definition ""@en ;
                                          rdfs:isDefinedBy vair: ;
                                          skos:related vair:Migration ;
@@ -1639,7 +1665,6 @@ vair:ExaminingMigrationRelatedComplaints skos:prefLabel "Examining Migration Rel
 
 
 vair:ExaminingResidencePermitsApplication skos:definition ""@en ;
-                                          skos:related vair:Asylum ;
                                           skos:prefLabel "Examining Residence Permits Application"@en ;
                                           skos:related vair:Migration ;
                                           skos:inScheme vair: ;
@@ -1650,7 +1675,6 @@ vair:ExaminingVisaApplication skos:related vair:Migration ;
                               skos:prefLabel "Examining Visa Application"@en ;
                               skos:definition ""@en ;
                               rdfs:isDefinedBy vair: ;
-                              skos:related vair:Asylum ;
                               skos:inScheme vair: .
 
 
@@ -1679,7 +1703,7 @@ vair:GrantingPublicAssistanceService skos:definition ""@en ;
                                      skos:inScheme vair: .
 
 
-vair:HealthInsurancePricing skos:prefLabel "HealthInsurancePricing"@en ;
+vair:HealthInsurancePricing skos:prefLabel "Health Insurance Pricing"@en ;
                             skos:inScheme vair: ;
                             skos:related vair:PrivateService ;
                             rdfs:isDefinedBy vair: ;
@@ -2020,18 +2044,32 @@ vair:LawEnforcement skos:inScheme vair: ;
                     skos:definition ""@en .
 
 
-vair:VerifyingAuthenticityOfTravelDocument skos:related vair:Asylum ;
+vair:VerifyingAuthenticityOfTravelDocument 
                                            skos:prefLabel "Verifying Authenticity Of Travel Document"@en ;
                                            rdfs:isDefinedBy vair: ;
                                            skos:inScheme vair: ;
-                                           skos:definition "Verifying of the authenticity of travel documents and supporting documentation of natural persons and detection of non-authentic documents by checking their security features."@en ;
-                                           skos:related vair:PublicService ,
-                                                        vair:Migration .
+                                           skos:definition "Verifying of the authenticity of travel documents and supporting documentation of natural persons and detection of non-authentic documents by checking their security features."@en .
+                                          
 
+vair:VerificationOfMigrationSeekerClaims 
+                                          skos:related vair:Migration ;  
+                                           skos:prefLabel "Verification Of Migration Seeker Claims"@en ;
+                                           rdfs:isDefinedBy vair: ;
+                                           skos:inScheme vair: ;
+                                           skos:definition ""@en .
+                                          
 
+vair:VerificationOfAsylumSeekerClaims 
+                                           skos:prefLabel "Verification Of Asylum Seeker Claims"@en ;
+                                           rdfs:isDefinedBy vair: ;
+                                           skos:inScheme vair: ;
+                                           skos:definition ""@en  .
 
-
-
+vair:BorderControlSecurityCheck skos:related vair:BorderControl ;
+                                           skos:prefLabel "BorderControlSecurityCheck"@en ;
+                                           rdfs:isDefinedBy vair: ;
+                                           skos:inScheme vair: ;
+                                           skos:definition ""@en  .
 
 
 
