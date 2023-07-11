@@ -1561,7 +1561,7 @@ vair:DiscoveringCrimeRelationships skos:prefLabel "Discovering Crime Relationshi
                                    skos:inScheme vair: .
 
 
-vair:Dispatching EmergencyService rdfs:isDefinedBy vair: ;
+vair:DispatchingEmergencyService rdfs:isDefinedBy vair: ;
                                  skos:related vair:PublicService ;
                                  skos:inScheme vair: ;
                                  skos:definition "Dispatching  of emergency first response services, including by firefighters and medical aid"@en ;
