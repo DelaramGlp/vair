@@ -1,2 +1,2 @@
-# airiv
+# VAIR
 AI risk vocabulary
