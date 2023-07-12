@@ -544,7 +544,7 @@ vair:CompetentPublicAuthorityRepresentative skos:prefLabel "Competent Public Aut
                                             skos:definition "an entity that acts on behalf of competent public authorities"@en ;
                                             rdfs:isDefinedBy vair: .
 
-vair:CompetentPublicAuthorityskos:prefLabel "Competent Public Authority "@en ;
+vair:CompetentPublicAuthority skos:prefLabel "Competent Public Authority "@en ;
                                             skos:inScheme vair: ;
                                             skos:definition "competent public authorities"@en ;
                                             rdfs:isDefinedBy vair: .
