@@ -246,11 +246,11 @@ vair:VisaApplicant rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#EmergencyService
 vair:EmergencyService rdf:type owl:Class ;
-                   rdfs:subClassOf vair:AIUser .
+                   rdfs:subClassOf airo:AIUser .
 
 ###  https://w3id.org/vair#FirstResponder
 vair:FirstResponder rdf:type owl:Class ;
-                   rdfs:subClassOf vair:AIUser .
+                   rdfs:subClassOf airo:AIUser .
 
 #################################################################
 #    Individuals
