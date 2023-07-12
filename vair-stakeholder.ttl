@@ -36,8 +36,8 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
 skos:Concept rdf:type owl:Class .
 
 
-###  https://w3id.org/airo#AIUser
-airo:AIUser rdf:type owl:Class .
+###  https://w3id.org/airo#AIOperator
+airo:AIOperator rdf:type owl:Class .
 
 
 ###  https://w3id.org/airo#AIProvider
@@ -48,13 +48,12 @@ airo:AIProvider rdf:type owl:Class .
 airo:AISubject rdf:type owl:Class .
 
 
+###  https://w3id.org/airo#AIUser
+airo:AIUser rdf:type owl:Class .
+
+
 ###  https://w3id.org/airo#Stakeholder
 airo:Stakeholder rdf:type owl:Class .
-
-
-###  https://w3id.org/vair#Applicant
-vair:Applicant rdf:type owl:Class ;
-               rdfs:subClassOf airo:AISubject .
 
 
 ###  https://w3id.org/vair#AsylumSeeker
@@ -78,16 +77,18 @@ vair:Child rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#CitizenshipApplicant
 vair:CitizenshipApplicant rdf:type owl:Class ;
-                          rdfs:subClassOf vair:Applicant .
+                          rdfs:subClassOf airo:AISubject .
+
+
+###  https://w3id.org/vair#CompetentPublicAuthority
+vair:CompetentPublicAuthority rdf:type owl:Class ;
+                              rdfs:subClassOf airo:AIUser .
 
 
 ###  https://w3id.org/vair#CompetentPublicAuthorityRepresentative
 vair:CompetentPublicAuthorityRepresentative rdf:type owl:Class ;
                                             rdfs:subClassOf airo:AIUser .
 
-###  https://w3id.org/vair#CompetentPublicAuthority
-vair:CompetentPublicAuthority rdf:type owl:Class ;
-                              rdfs:subClassOf airo:AIUser .
 
 ###  https://w3id.org/vair#Concept
 vair:Concept rdf:type owl:Class .
@@ -98,9 +99,14 @@ vair:ConformityAssessmentBody rdf:type owl:Class ;
                               rdfs:subClassOf airo:Stakeholder .
 
 
-###  https://w3id.org/vair#EducationalInstitutionApplicant
-vair:EducationalInstitutionApplicant rdf:type owl:Class ;
-                                     rdfs:subClassOf vair:Applicant .
+###  https://w3id.org/vair#CourseApplicant
+vair:CourseApplicant rdf:type owl:Class ;
+                     rdfs:subClassOf airo:AISubject .
+
+
+###  https://w3id.org/vair#EmergencyService
+vair:EmergencyService rdf:type owl:Class ;
+                      rdfs:subClassOf airo:AIUser .
 
 
 ###  https://w3id.org/vair#Employee
@@ -118,6 +124,12 @@ vair:EuropeanDataProtectionSupervisor rdf:type owl:Class ;
                                       rdfs:subClassOf vair:Authority .
 
 
+###  https://w3id.org/vair#FirstResponder
+vair:FirstResponder rdf:type owl:Class ;
+                    rdfs:subClassOf airo:AISubject ,
+                                    airo:AIUser .
+
+
 ###  https://w3id.org/vair#Group
 vair:Group rdf:type owl:Class ;
            rdfs:subClassOf airo:AISubject .
@@ -130,16 +142,18 @@ vair:Importer rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#JobApplicant
 vair:JobApplicant rdf:type owl:Class ;
-                  rdfs:subClassOf vair:Applicant .
+                  rdfs:subClassOf airo:AISubject .
+
+
+###  https://w3id.org/vair#JudicialAuthority
+vair:JudicialAuthority rdf:type owl:Class ;
+                       rdfs:subClassOf airo:AIUser .
 
 
 ###  https://w3id.org/vair#JudicialAuthorityRepresentative
 vair:JudicialAuthorityRepresentative rdf:type owl:Class ;
                                      rdfs:subClassOf airo:AIUser .
 
-###  https://w3id.org/vair#JudicialAuthority
-vair:JudicialAuthority rdf:type owl:Class ;
-                                     rdfs:subClassOf airo:AIUser .
 
 ###  https://w3id.org/vair#LawEnforcementAuthority
 vair:LawEnforcementAuthority rdf:type owl:Class ;
@@ -195,6 +209,11 @@ vair:Perpetrator rdf:type owl:Class ;
                  rdfs:subClassOf airo:AISubject .
 
 
+###  https://w3id.org/vair#PotentialJobApplicant
+vair:PotentialJobApplicant rdf:type owl:Class ;
+                           rdfs:subClassOf airo:AISubject .
+
+
 ###  https://w3id.org/vair#ProductManufacturer
 vair:ProductManufacturer rdf:type owl:Class ;
                          rdfs:subClassOf airo:Stakeholder .
@@ -212,12 +231,12 @@ vair:PublicAuthorityRepresentative rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#PublicServicesApplicant
 vair:PublicServicesApplicant rdf:type owl:Class ;
-                             rdfs:subClassOf vair:Applicant .
+                             rdfs:subClassOf airo:AISubject .
 
 
 ###  https://w3id.org/vair#ResidencePermitApplicant
 vair:ResidencePermitApplicant rdf:type owl:Class ;
-                              rdfs:subClassOf vair:Applicant .
+                              rdfs:subClassOf airo:AISubject .
 
 
 ###  https://w3id.org/vair#SmallScaleProvider
@@ -242,25 +261,12 @@ vair:Victim rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#VisaApplicant
 vair:VisaApplicant rdf:type owl:Class ;
-                   rdfs:subClassOf vair:Applicant .
+                   rdfs:subClassOf airo:AISubject .
 
-###  https://w3id.org/vair#EmergencyService
-vair:EmergencyService rdf:type owl:Class ;
-                   rdfs:subClassOf airo:AIUser .
-
-###  https://w3id.org/vair#FirstResponder
-vair:FirstResponder rdf:type owl:Class ;
-                   rdfs:subClassOf airo:AIUser .
 
 #################################################################
 #    Individuals
 #################################################################
-
-###  https://w3id.org/vair#Applicant
-vair:Applicant rdf:type owl:NamedIndividual ,
-                        skos:Concept ,
-                        vair:Concept .
-
 
 ###  https://w3id.org/vair#AsylumSeeker
 vair:AsylumSeeker rdf:type owl:NamedIndividual ,
@@ -292,19 +298,28 @@ vair:CitizenshipApplicant rdf:type owl:NamedIndividual ,
                                    vair:Concept .
 
 
+###  https://w3id.org/vair#CompetentPublicAuthority
+vair:CompetentPublicAuthority rdf:type owl:NamedIndividual ,
+                                       skos:Concept ,
+                                       vair:Concept .
+
+
 ###  https://w3id.org/vair#CompetentPublicAuthorityRepresentative
 vair:CompetentPublicAuthorityRepresentative rdf:type owl:NamedIndividual ,
                                                      skos:Concept ,
                                                      vair:Concept .
-###  https://w3id.org/vair#CompetentPublicAuthority
-vair:CompetentPublicAuthority rdf:type owl:NamedIndividual ,
-                                                     skos:Concept ,
-                                                     vair:Concept .
+
 
 ###  https://w3id.org/vair#ConformityAssessmentBody
 vair:ConformityAssessmentBody rdf:type owl:NamedIndividual ,
                                        skos:Concept ,
                                        vair:Concept .
+
+
+###  https://w3id.org/vair#CourseApplicant
+vair:CourseApplicant rdf:type owl:NamedIndividual ,
+                              skos:Concept ,
+                              vair:Concept .
 
 
 ###  https://w3id.org/vair#Distributor
@@ -318,10 +333,10 @@ or the importer, that makes an AI system available on the Union market"""@en ;
                  skos:prefLabel "Distributor"@en .
 
 
-###  https://w3id.org/vair#EducationalInstitutionApplicant
-vair:EducationalInstitutionApplicant rdf:type owl:NamedIndividual ,
-                                              skos:Concept ,
-                                              vair:Concept .
+###  https://w3id.org/vair#EmergencyService
+vair:EmergencyService rdf:type owl:NamedIndividual ,
+                               skos:Concept ,
+                               vair:Concept .
 
 
 ###  https://w3id.org/vair#Employee
@@ -342,6 +357,12 @@ vair:EuropeanDataProtectionSupervisor rdf:type owl:NamedIndividual ,
                                                vair:Concept .
 
 
+###  https://w3id.org/vair#FirstResponder
+vair:FirstResponder rdf:type owl:NamedIndividual ,
+                             skos:Concept ,
+                             vair:Concept .
+
+
 ###  https://w3id.org/vair#Group
 vair:Group rdf:type owl:NamedIndividual ,
                     skos:Concept ,
@@ -360,15 +381,17 @@ vair:JobApplicant rdf:type owl:NamedIndividual ,
                            vair:Concept .
 
 
+###  https://w3id.org/vair#JudicialAuthority
+vair:JudicialAuthority rdf:type owl:NamedIndividual ,
+                                skos:Concept ,
+                                vair:Concept .
+
+
 ###  https://w3id.org/vair#JudicialAuthorityRepresentative
 vair:JudicialAuthorityRepresentative rdf:type owl:NamedIndividual ,
                                               skos:Concept ,
                                               vair:Concept .
 
-###  https://w3id.org/vair#JudicialAuthority
-vair:JudicialAuthority rdf:type owl:NamedIndividual ,
-                                              skos:Concept ,
-                                              vair:Concept .
 
 ###  https://w3id.org/vair#LawEnforcementAuthority
 vair:LawEnforcementAuthority rdf:type owl:NamedIndividual ,
@@ -430,6 +453,12 @@ vair:Perpetrator rdf:type owl:NamedIndividual ,
                           vair:Concept .
 
 
+###  https://w3id.org/vair#PotentialJobApplicant
+vair:PotentialJobApplicant rdf:type owl:NamedIndividual ,
+                                    skos:Concept ,
+                                    vair:Concept .
+
+
 ###  https://w3id.org/vair#ProductManufacturer
 vair:ProductManufacturer rdf:type owl:NamedIndividual ,
                                   skos:Concept ,
@@ -489,25 +518,10 @@ vair:VisaApplicant rdf:type owl:NamedIndividual ,
                             skos:Concept ,
                             vair:Concept .
 
-###  https://w3id.org/vair#EmergencyService
-vair:EmergencyService rdf:type owl:NamedIndividual ,
-                            skos:Concept ,
-                            vair:Concept .
-
-###  https://w3id.org/vair#FirstResponder
-vair:FirstResponder rdf:type owl:NamedIndividual ,
-                            skos:Concept ,
-                            vair:Concept .
 
 #################################################################
 #    Annotations
 #################################################################
-
-vair:Applicant rdfs:isDefinedBy vair: ;
-               skos:prefLabel "Applicant"@en ;
-               skos:definition "A person who has made an application"@en ;
-               skos:inScheme vair: .
-
 
 vair:AsylumSeeker skos:prefLabel "Asylum Seeker"@en ;
                   rdfs:isDefinedBy vair: ;
@@ -521,8 +535,8 @@ vair:AuthorisedRepresentative skos:inScheme vair: ;
                               skos:definition "means any natural or legal person physically present or established in the Union who has received and accepted a written mandate from a provider of an AI system to, respectively, perform and carry out on its behalf the obligations and procedures established by the AI Act."@en .
 
 
-vair:Authority skos:definition ""@en ;
-               skos:prefLabel "Authority"@en ;
+vair:Authority skos:prefLabel "Authority"@en ;
+               skos:definition ""@en ;
                rdfs:isDefinedBy vair: ;
                skos:inScheme vair: .
 
@@ -535,19 +549,21 @@ vair:Child skos:prefLabel "Child"@en ;
 
 vair:CitizenshipApplicant rdfs:isDefinedBy vair: ;
                           skos:inScheme vair: ;
-                          skos:definition "A person who has applied for citizenship"@en ;
-                          skos:prefLabel "Citizenship Applicant"@en .
+                          skos:prefLabel "Citizenship Applicant"@en ;
+                          skos:definition "A person who has applied for citizenship"@en .
+
+
+vair:CompetentPublicAuthority skos:definition "competent public authorities"@en ;
+                              skos:inScheme vair: ;
+                              rdfs:isDefinedBy vair: ;
+                              skos:prefLabel "Competent Public Authority "@en .
 
 
 vair:CompetentPublicAuthorityRepresentative skos:prefLabel "Competent Public Authority Representative"@en ;
                                             skos:inScheme vair: ;
-                                            skos:definition "an entity that acts on behalf of competent public authorities"@en ;
-                                            rdfs:isDefinedBy vair: .
+                                            rdfs:isDefinedBy vair: ;
+                                            skos:definition "an entity that acts on behalf of competent public authorities"@en .
 
-vair:CompetentPublicAuthority skos:prefLabel "Competent Public Authority "@en ;
-                                            skos:inScheme vair: ;
-                                            skos:definition "competent public authorities"@en ;
-                                            rdfs:isDefinedBy vair: .
 
 vair:ConformityAssessmentBody skos:inScheme vair: ;
                               skos:definition "a body that performs third-party conformity assessment activities, including testing, certification and inspection"@en ;
@@ -555,10 +571,22 @@ vair:ConformityAssessmentBody skos:inScheme vair: ;
                               rdfs:isDefinedBy vair: .
 
 
-vair:EducationalInstitutionApplicant skos:prefLabel "Educational Institution Applicant"@en ;
-                                     rdfs:isDefinedBy vair: ;
-                                     skos:inScheme vair: ;
-                                     skos:definition ""@en .
+vair:CourseApplicant rdfs:isDefinedBy vair: ;
+                     skos:inScheme vair: ;
+                     skos:definition ""@en ;
+                     skos:prefLabel "Course Applicant"@en .
+
+
+vair:CourseAttendee skos:definition ""@en ;
+                    rdfs:isDefinedBy vair: ;
+                    skos:inScheme vair: ;
+                    skos:prefLabel "Course Attendee"@en .
+
+
+vair:EmergencyService skos:definition ""@en ;
+                      rdfs:isDefinedBy vair: ;
+                      skos:inScheme vair: ;
+                      skos:prefLabel "Emergency Service"@en .
 
 
 vair:Employee skos:prefLabel "Employee"@en ;
@@ -569,14 +597,20 @@ vair:Employee skos:prefLabel "Employee"@en ;
 
 vair:EuropeanArtificialIntelligenceBoard skos:definition ""@en ;
                                          rdfs:isDefinedBy vair: ;
-                                         skos:inScheme vair: ;
-                                         skos:prefLabel "European Artificial Intelligence Board"@en .
+                                         skos:prefLabel "European Artificial Intelligence Board"@en ;
+                                         skos:inScheme vair: .
 
 
 vair:EuropeanDataProtectionSupervisor rdfs:isDefinedBy vair: ;
                                       skos:definition "The European Data Protection Supervisor (EDPS) is the European Union’s (EU) independent data protection authority"@en ;
-                                      skos:inScheme vair: ;
-                                      skos:prefLabel "European Data Protection Supervisor"@en .
+                                      skos:prefLabel "European Data Protection Supervisor"@en ;
+                                      skos:inScheme vair: .
+
+
+vair:FirstResponder rdfs:isDefinedBy vair: ;
+                    skos:inScheme vair: ;
+                    skos:prefLabel "First Responder"@en ;
+                    skos:definition ""@en .
 
 
 vair:Group skos:inScheme vair: ;
@@ -592,9 +626,15 @@ vair:Importer skos:prefLabel "Importer"@en ;
 
 
 vair:JobApplicant rdfs:isDefinedBy vair: ;
-                  skos:inScheme vair: ;
                   skos:definition "A person who has made an application for employment"@en ;
+                  skos:inScheme vair: ;
                   skos:prefLabel "Job Applicant"@en .
+
+
+vair:JudicialAuthority skos:prefLabel "Judicial Authority "@en ;
+                       skos:inScheme vair: ;
+                       skos:definition "judicial authorities"@en ;
+                       rdfs:isDefinedBy vair: .
 
 
 vair:JudicialAuthorityRepresentative skos:definition "an entity that acts on behalf on judicial authorities"@en ;
@@ -602,10 +642,6 @@ vair:JudicialAuthorityRepresentative skos:definition "an entity that acts on beh
                                      skos:inScheme vair: ;
                                      rdfs:isDefinedBy vair: .
 
-vair:JudicialAuthority skos:definition "judicial authorities"@en ;
-                                     skos:prefLabel "Judicial Authority "@en ;
-                                     skos:inScheme vair: ;
-                                     rdfs:isDefinedBy vair: .
 
 vair:LawEnforcementAuthority skos:prefLabel "Law Enforcement Authority"@en ;
                              rdfs:isDefinedBy vair: ;
@@ -621,9 +657,9 @@ vair:LawEnforcementAuthorityRepresentative skos:definition "an entity that acts 
 
 vair:MarketSurveillanceAuthority skos:definition "the national authority carrying out the activities and taking the measures pursuant to Regulation (EU) 2019/1020"@en ;
                                  rdfs:isDefinedBy vair: ;
-                                 skos:prefLabel "Market Surveillance Authority"@en ;
                                  skos:definition ""@en ;
-                                 skos:inScheme vair: .
+                                 skos:inScheme vair: ;
+                                 skos:prefLabel "Market Surveillance Authority"@en .
 
 
 vair:NationalCompetentAuthority rdfs:isDefinedBy vair: ;
@@ -639,8 +675,8 @@ vair:NationalPublicAuthority skos:definition ""@en ;
 
 
 vair:NaturalPerson skos:definition "An individual human being"@en ;
-                   skos:prefLabel "Natural Person"@en ;
                    rdfs:isDefinedBy vair: ;
+                   skos:prefLabel "Natural Person"@en ;
                    skos:inScheme vair: .
 
 
@@ -666,6 +702,13 @@ vair:Perpetrator skos:definition ""@en ;
                  skos:prefLabel "Perpetrator"@en ;
                  rdfs:isDefinedBy vair: ;
                  skos:inScheme vair: .
+
+
+vair:PotentialJobApplicant skos:inScheme vair: ;
+                           rdfs:isDefinedBy vair: ;
+                           skos:prefLabel "Potential Job Applicant"@en ,
+                                          " Potential Job Applicant"@en ;
+                           skos:definition ""@en .
 
 
 vair:ProductManufacturer skos:prefLabel "Product Manufacturer"@en ;
@@ -727,14 +770,5 @@ vair:VisaApplicant skos:definition "A person who has applied for a visa"@en ;
                    skos:prefLabel "Visa Applicant"@en ;
                    rdfs:isDefinedBy vair: .
 
-vair:FirstResponder skos:definition ""@en ;
-                   skos:inScheme vair: ;
-                   skos:prefLabel "First Responder"@en ;
-                   rdfs:isDefinedBy vair: .
-
-vair:EmergencyService skos:definition ""@en ;
-                   skos:inScheme vair: ;
-                   skos:prefLabel "Emergency Service"@en ;
-                   rdfs:isDefinedBy vair: .
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
