@@ -36,8 +36,8 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
 skos:Concept rdf:type owl:Class .
 
 
-###  https://w3id.org/airo#AIOperator
-airo:AIOperator rdf:type owl:Class .
+###  https://w3id.org/airo#AIUser
+airo:AIUser rdf:type owl:Class .
 
 
 ###  https://w3id.org/airo#AIProvider
@@ -83,8 +83,11 @@ vair:CitizenshipApplicant rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#CompetentPublicAuthorityRepresentative
 vair:CompetentPublicAuthorityRepresentative rdf:type owl:Class ;
-                                            rdfs:subClassOf airo:Stakeholder .
+                                            rdfs:subClassOf airo:AIUser .
 
+###  https://w3id.org/vair#CompetentPublicAuthority
+vair:CompetentPublicAuthority rdf:type owl:Class ;
+                              rdfs:subClassOf airo:AIUser .
 
 ###  https://w3id.org/vair#Concept
 vair:Concept rdf:type owl:Class .
@@ -132,17 +135,20 @@ vair:JobApplicant rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#JudicialAuthorityRepresentative
 vair:JudicialAuthorityRepresentative rdf:type owl:Class ;
-                                     rdfs:subClassOf airo:Stakeholder .
+                                     rdfs:subClassOf airo:AIUser .
 
+###  https://w3id.org/vair#JudicialAuthority
+vair:JudicialAuthority rdf:type owl:Class ;
+                                     rdfs:subClassOf airo:AIUser .
 
 ###  https://w3id.org/vair#LawEnforcementAuthority
 vair:LawEnforcementAuthority rdf:type owl:Class ;
-                             rdfs:subClassOf airo:Stakeholder .
+                             rdfs:subClassOf airo:AIUser .
 
 
 ###  https://w3id.org/vair#LawEnforcementAuthorityRepresentative
 vair:LawEnforcementAuthorityRepresentative rdf:type owl:Class ;
-                                           rdfs:subClassOf airo:Stakeholder .
+                                           rdfs:subClassOf airo:AIUser .
 
 
 ###  https://w3id.org/vair#MarketSurveillanceAuthority
@@ -201,7 +207,7 @@ vair:PublicAuthority rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#PublicAuthorityRepresentative
 vair:PublicAuthorityRepresentative rdf:type owl:Class ;
-                                   rdfs:subClassOf airo:Stakeholder .
+                                   rdfs:subClassOf airo:AIUser .
 
 
 ###  https://w3id.org/vair#PublicServicesApplicant
@@ -238,6 +244,13 @@ vair:Victim rdf:type owl:Class ;
 vair:VisaApplicant rdf:type owl:Class ;
                    rdfs:subClassOf vair:Applicant .
 
+###  https://w3id.org/vair#EmergencyService
+vair:EmergencyService rdf:type owl:Class ;
+                   rdfs:subClassOf vair:AIUser .
+
+###  https://w3id.org/vair#FirstResponder
+vair:FirstResponder rdf:type owl:Class ;
+                   rdfs:subClassOf vair:AIUser .
 
 #################################################################
 #    Individuals
@@ -283,7 +296,10 @@ vair:CitizenshipApplicant rdf:type owl:NamedIndividual ,
 vair:CompetentPublicAuthorityRepresentative rdf:type owl:NamedIndividual ,
                                                      skos:Concept ,
                                                      vair:Concept .
-
+###  https://w3id.org/vair#CompetentPublicAuthority
+vair:CompetentPublicAuthority rdf:type owl:NamedIndividual ,
+                                                     skos:Concept ,
+                                                     vair:Concept .
 
 ###  https://w3id.org/vair#ConformityAssessmentBody
 vair:ConformityAssessmentBody rdf:type owl:NamedIndividual ,
@@ -349,6 +365,10 @@ vair:JudicialAuthorityRepresentative rdf:type owl:NamedIndividual ,
                                               skos:Concept ,
                                               vair:Concept .
 
+###  https://w3id.org/vair#JudicialAuthority
+vair:JudicialAuthority rdf:type owl:NamedIndividual ,
+                                              skos:Concept ,
+                                              vair:Concept .
 
 ###  https://w3id.org/vair#LawEnforcementAuthority
 vair:LawEnforcementAuthority rdf:type owl:NamedIndividual ,
@@ -469,6 +489,15 @@ vair:VisaApplicant rdf:type owl:NamedIndividual ,
                             skos:Concept ,
                             vair:Concept .
 
+###  https://w3id.org/vair#EmergencyService
+vair:EmergencyService rdf:type owl:NamedIndividual ,
+                            skos:Concept ,
+                            vair:Concept .
+
+###  https://w3id.org/vair#FirstResponder
+vair:FirstResponder rdf:type owl:NamedIndividual ,
+                            skos:Concept ,
+                            vair:Concept .
 
 #################################################################
 #    Annotations
@@ -515,6 +544,10 @@ vair:CompetentPublicAuthorityRepresentative skos:prefLabel "Competent Public Aut
                                             skos:definition "an entity that acts on behalf of competent public authorities"@en ;
                                             rdfs:isDefinedBy vair: .
 
+vair:CompetentPublicAuthorityskos:prefLabel "Competent Public Authority "@en ;
+                                            skos:inScheme vair: ;
+                                            skos:definition "competent public authorities"@en ;
+                                            rdfs:isDefinedBy vair: .
 
 vair:ConformityAssessmentBody skos:inScheme vair: ;
                               skos:definition "a body that performs third-party conformity assessment activities, including testing, certification and inspection"@en ;
@@ -569,6 +602,10 @@ vair:JudicialAuthorityRepresentative skos:definition "an entity that acts on beh
                                      skos:inScheme vair: ;
                                      rdfs:isDefinedBy vair: .
 
+vair:JudicialAuthority skos:definition "judicial authorities"@en ;
+                                     skos:prefLabel "Judicial Authority "@en ;
+                                     skos:inScheme vair: ;
+                                     rdfs:isDefinedBy vair: .
 
 vair:LawEnforcementAuthority skos:prefLabel "Law Enforcement Authority"@en ;
                              rdfs:isDefinedBy vair: ;
@@ -690,5 +727,14 @@ vair:VisaApplicant skos:definition "A person who has applied for a visa"@en ;
                    skos:prefLabel "Visa Applicant"@en ;
                    rdfs:isDefinedBy vair: .
 
+vair:FirstResponder skos:definition ""@en ;
+                   skos:inScheme vair: ;
+                   skos:prefLabel "First Responder"@en ;
+                   rdfs:isDefinedBy vair: .
+
+vair:EmergencyService skos:definition ""@en ;
+                   skos:inScheme vair: ;
+                   skos:prefLabel "Emergency Service"@en ;
+                   rdfs:isDefinedBy vair: .
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
