@@ -1,0 +1,900 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix airo: <https://w3id.org/airo#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vair: <https://w3id.org/vair#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#definition
+skos:definition rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+skos:inScheme rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+skos:prefLabel rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#related
+skos:related rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+skos:Concept rdf:type owl:Class .
+
+
+
+###  https://w3id.org/airo#Purpose
+airo:Purpose rdf:type owl:Class .
+
+
+
+###  https://w3id.org/vair#RemoteIdentificationOfPeople
+vair:RemoteIdentificationOfPeople rdf:type owl:Class ;
+                                  rdfs:subClassOf airo:Purpose .
+
+###  https://w3id.org/vair#RemoteIdentificationOfPeople
+vair:RemoteIdentificationOfPeople rdf:type owl:NamedIndividual ,
+                                           skos:Concept ,
+                                           vair:Concept .
+
+###  https://w3id.org/vair#ManagementAndOperationOfSafety
+vair:ManagementAndOperationOfSafety rdf:type owl:Class ;
+                                  rdfs:subClassOf airo:Purpose .
+
+###  https://w3id.org/vair#ManagementAndOperationOfSafety
+vair:ManagementAndOperationOfSafety rdf:type owl:NamedIndividual ,
+                                                    skos:Concept ,
+                                                    vair:Concept .
+
+
+
+
+###  https://w3id.org/vair#AssigningPeopleToEducationalInstitutions
+vair:AssigningPeopleToEducationalInstitutions rdf:type owl:Class ;
+                                              rdfs:subClassOf airo:Purpose .
+
+###  https://w3id.org/vair#AssigningPeopleToEducationalInstitutions
+vair:AssigningPeopleToEducationalInstitutions rdf:type owl:NamedIndividual ,
+                                                       skos:Concept ,
+                                                       vair:Concept .
+
+
+###  https://w3id.org/vair#DeterminingAccessToEducation
+vair:DeterminingAccessToEducation rdf:type owl:Class ;
+                                  rdfs:subClassOf airo:Purpose .
+
+###  https://w3id.org/vair#DeterminingAccessToEducation
+vair:DeterminingAccessToEducation rdf:type owl:NamedIndividual ,
+                                           skos:Concept ,
+                                           vair:Concept .
+
+
+
+###  https://w3id.org/vair#DeterminingAdmissionToEducationalInstitutions
+vair:DeterminingAdmissionToEducationalInstitutions rdf:type owl:Class ;
+                                                   rdfs:subClassOf airo:Purpose .
+
+
+###  https://w3id.org/vair#DeterminingAdmissionToEducationalInstitutions
+vair:DeterminingAdmissionToEducationalInstitutions rdf:type owl:NamedIndividual ,
+                                                            skos:Concept ,
+                                                            vair:Concept .
+
+
+###  https://w3id.org/vair#EvaluatingLearningOutcomes
+vair:EvaluatingLearningOutcomes rdf:type owl:Class ;
+                                rdfs:subClassOf airo:Purpose .
+
+
+###  https://w3id.org/vair#EvaluatingLearningOutcomes
+vair:EvaluatingLearningOutcomes rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         vair:Concept .
+
+###  https://w3id.org/vair#Recruiting
+vair:Recruiting rdf:type owl:Class ;
+                rdfs:subClassOf airo:Purpose .
+
+###  https://w3id.org/vair#Recruiting
+vair:Recruiting rdf:type owl:NamedIndividual ,
+                         skos:Concept ,
+                         vair:Concept .
+
+                         
+###  https://w3id.org/vair#AdvertisingVacancies
+vair:AdvertisingVacancies rdf:type owl:Class ;
+                          rdfs:subClassOf airo:Purpose .
+
+###  https://w3id.org/vair#AdvertisingVacancies
+vair:AdvertisingVacancies rdf:type owl:NamedIndividual ,
+                                   skos:Concept ,
+                                   vair:Concept .
+                                   
+###  https://w3id.org/vair#JobApplicationAnalysis
+vair:JobApplicationAnalysis rdf:type owl:Class ;
+                          rdfs:subClassOf airo:Purpose .
+###  https://w3id.org/vair#JobApplicationAnalysis
+vair:JobApplicationAnalysis rdf:type owl:NamedIndividual ,
+                                   skos:Concept ,
+                                   vair:Concept .                          
+###  https://w3id.org/vair#JobApplicationFiltering
+vair:JobApplicationFiltering rdf:type owl:Class ;
+                             rdfs:subClassOf airo:Purpose .
+###  https://w3id.org/vair#JobApplicationFiltering
+vair:JobApplicationFiltering rdf:type owl:NamedIndividual ,
+                                      skos:Concept ,
+                                      vair:Concept .
+
+###  https://w3id.org/vair#EvaluatingJobCandidates
+vair:EvaluatingJobCandidates rdf:type owl:Class ;
+                             rdfs:subClassOf airo:Purpose .
+
+###  https://w3id.org/vair#EvaluatingJobCandidates
+vair:EvaluatingJobCandidates rdf:type owl:NamedIndividual ,
+                                      skos:Concept ,
+                                      vair:Concept .
+
+###  https://w3id.org/vair#MakingPromotionDecision
+vair:MakingPromotionDecision rdf:type owl:Class ;
+                             rdfs:subClassOf airo:Purpose .
+###  https://w3id.org/vair#MakingPromotionDecision
+vair:MakingPromotionDecision rdf:type owl:NamedIndividual ,
+                                      skos:Concept ,
+                                      vair:Concept .
+
+
+###  https://w3id.org/vair#MakingTerminationDecision
+vair:MakingTerminationDecision rdf:type owl:Class ;
+                               rdfs:subClassOf airo:Purpose .
+
+
+###  https://w3id.org/vair#MakingTerminationDecision
+vair:MakingTerminationDecision rdf:type owl:NamedIndividual ,
+                                        skos:Concept ,
+                                        vair:Concept .
+###  https://w3id.org/vair#MonitoringEmployeeBehaviour
+vair:MonitoringEmployeeBehaviour rdf:type owl:Class ;
+                                 rdfs:subClassOf airo:Purpose .
+
+###  https://w3id.org/vair#MonitoringEmployeeBehaviour
+vair:MonitoringEmployeeBehaviour rdf:type owl:NamedIndividual ,
+                                          skos:Concept ,
+                                          vair:Concept .
+
+###  https://w3id.org/vair#MonitoringEmployeePerformance
+vair:MonitoringEmployeePerformance rdf:type owl:Class ;
+                                   rdfs:subClassOf airo:Purpose .
+
+
+###  https://w3id.org/vair#MonitoringEmployeePerformance
+vair:MonitoringEmployeePerformance rdf:type owl:NamedIndividual ,
+                                            skos:Concept ,
+                                            vair:Concept .
+
+###  https://w3id.org/vair#EvaluatingEmployeeBehaviour
+vair:EvaluatingEmployeeBehaviour rdf:type owl:Class ;
+                                 rdfs:subClassOf airo:Purpose .
+
+###  https://w3id.org/vair#EvaluatingEmployeeBehaviour
+vair:EvaluatingEmployeeBehaviour rdf:type owl:NamedIndividual ,
+                                          skos:Concept ,
+                                          vair:Concept .
+
+###  https://w3id.org/vair#EvaluatingEmployeePerformance
+vair:EvaluatingEmployeePerformance rdf:type owl:Class ;
+                                   rdfs:subClassOf airo:Purpose .
+
+###  https://w3id.org/vair#EvaluatingEmployeePerformance
+vair:EvaluatingEmployeePerformance rdf:type owl:NamedIndividual ,
+                                            skos:Concept ,
+                                            vair:Concept .
+ 
+###  https://w3id.org/vair#EvaluatingEligibilityToAccessPublicAssistanceServices
+vair:EvaluatingEligibilityToAccessPublicAssistanceServices rdf:type owl:Class ;
+                                                           rdfs:subClassOf airo:Purpose .                                           
+
+
+###  https://w3id.org/vair#EvaluatingEligibilityToAccessPublicAssistanceServices
+vair:EvaluatingEligibilityToAccessPublicAssistanceServices rdf:type owl:NamedIndividual ,
+                                                                    skos:Concept ,
+                                                                    vair:Concept .
+
+
+###  https://w3id.org/vair#GrantingPublicAssistanceServices
+vair:GrantingPublicAssistanceServices rdf:type owl:Class ;
+                                     rdfs:subClassOf airo:Purpose .
+
+###  https://w3id.org/vair#GrantingPublicAssistanceServices
+vair:GrantingPublicAssistanceServices rdf:type owl:NamedIndividual ,
+                                              skos:Concept ,
+                                              vair:Concept .
+###  https://w3id.org/vair#RevokingPublicAssistanceServices
+vair:RevokingPublicAssistanceServices rdf:type owl:Class ;
+                                       rdfs:subClassOf airo:Purpose .
+
+###  https://w3id.org/vair#RevokingPublicAssistanceServices
+vair:RevokingPublicAssistanceServices rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                vair:Concept .
+
+###  https://w3id.org/vair#ReclaimingPublicAssistanceServices
+vair:ReclaimingPublicAssistanceServices rdf:type owl:Class ;
+                                         rdfs:subClassOf airo:Purpose .
+
+###  https://w3id.org/vair#ReclaimingPublicAssistanceServices
+vair:ReclaimingPublicAssistanceServices rdf:type owl:NamedIndividual ,
+                                                  skos:Concept ,
+                                                  vair:Concept .
+
+###  https://w3id.org/vair#ReducingPublicAssistanceServices
+vair:ReducingPublicAssistanceServices rdf:type owl:Class ;
+                                         rdfs:subClassOf airo:Purpose .
+
+###  https://w3id.org/vair#ReducingPublicAssistanceServices
+vair:ReducingPublicAssistanceServices rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                vair:Concept .
+
+###  https://w3id.org/vair#AssessingCreditworthiness
+vair:AssessingCreditworthiness rdf:type owl:Class ;
+                               rdfs:subClassOf airo:Purpose .
+
+###  https://w3id.org/vair#AssessingCreditworthiness
+vair:AssessingCreditworthiness rdf:type owl:NamedIndividual ,
+                                        skos:Concept ,
+                                        vair:Concept .
+###  https://w3id.org/vair#DeterminingCreditScore
+vair:DeterminingCreditScore rdf:type owl:Class ;
+                            rdfs:subClassOf airo:Purpose .
+###  https://w3id.org/vair#DeterminingCreditScore
+vair:DeterminingCreditScore rdf:type owl:NamedIndividual ,
+                                          skos:Concept ,
+                                          vair:Concept .
+
+
+###  https://w3id.org/vair#DispatchingEmergencyService
+vair:DispatchingEmergencyService rdf:type owl:Class ;
+                                 rdfs:subClassOf airo:Purpose .
+###  https://w3id.org/vair#DispatchingEmergencyService
+vair:DispatchingEmergencyService rdf:type owl:NamedIndividual ,
+                                          skos:Concept ,
+                                          vair:Concept .
+
+
+###  https://w3id.org/vair#PrioritisationOfEmergencyService
+vair:PrioritisationOfEmergencyService rdf:type owl:Class ;
+                                      rdfs:subClassOf airo:Purpose .
+###  https://w3id.org/vair#PrioritisationOfEmergencyService
+vair:PrioritisationOfEmergencyService rdf:type owl:NamedIndividual ,
+                                          skos:Concept ,
+                                          vair:Concept .                                      
+
+###  https://w3id.org/vair#HealthInsuranceRiskAssessment
+vair:HealthInsuranceRiskAssessment rdf:type owl:Class ;
+                                   rdfs:subClassOf airo:Purpose .                                      
+###  https://w3id.org/vair#HealthInsuranceRiskAssessment
+vair:HealthInsuranceRiskAssessment rdf:type owl:NamedIndividual ,
+                                            skos:Concept ,
+                                            vair:Concept .
+
+
+###  https://w3id.org/vair#HealthInsurancePricing
+vair:HealthInsurancePricing rdf:type owl:Class ;
+                            rdfs:subClassOf airo:Purpose . 
+
+###  https://w3id.org/vair#HealthInsurancePricing
+vair:HealthInsurancePricing rdf:type owl:NamedIndividual ,
+                                     skos:Concept ,
+                                     vair:Concept .
+
+
+###  https://w3id.org/vair#LifeInsuranceRiskAssessment
+vair:LifeInsuranceRiskAssessment rdf:type owl:Class ;
+                                 rdfs:subClassOf airo:Purpose . 
+
+###  https://w3id.org/vair#LifeInsuranceRiskAssessment
+vair:LifeInsuranceRiskAssessment rdf:type owl:NamedIndividual ,
+                                          skos:Concept ,
+                                          vair:Concept .
+###  https://w3id.org/vair#LifeInsurancePricing
+vair:LifeInsurancePricing rdf:type owl:Class ;
+                          rdfs:subClassOf vair:DecisionMaking .
+
+###  https://w3id.org/vair#LifeInsurancePricing
+vair:LifeInsurancePricing rdf:type owl:NamedIndividual ,
+                                   skos:Concept ,
+                                   vair:Concept .
+
+###  https://w3id.org/vair#AssessingRiskOfOffending
+vair:AssessingRiskOfOffending rdf:type owl:Class ;
+                              rdfs:subClassOf airo:Purpose .
+###  https://w3id.org/vair#AssessingRiskOfOffending
+vair:AssessingRiskOfOffending rdf:type owl:NamedIndividual ,
+                                       skos:Concept ,
+                                       vair:Concept .
+
+###  https://w3id.org/vair#AssessingRiskOfReoffending
+vair:AssessingRiskOfReoffending rdf:type owl:Class ;
+                                rdfs:subClassOf airo:Purpose .
+
+###  https://w3id.org/vair#AssessingRiskOfReoffending
+vair:AssessingRiskOfReoffending rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         vair:Concept .
+
+###  https://w3id.org/vair#AssessingRiskForPotentialVictimsOfCriminalOffences
+vair:AssessingRiskForPotentialVictimsOfCriminalOffences rdf:type owl:Class ;
+                                                        rdfs:subClassOf airo:Purpose .
+
+
+###  https://w3id.org/vair#AssessingRiskForPotentialVictimsOfCriminalOffences
+vair:AssessingRiskForPotentialVictimsOfCriminalOffences rdf:type owl:NamedIndividual ,
+                                                                 skos:Concept ,
+                                                                 vair:Concept .
+ ###  https://w3id.org/vair#InvestigatingCriminalOffences
+vair:InvestigatingCriminalOffences rdf:type owl:Class ;
+                                     rdfs:subClassOf airo:Purpose .      
+
+
+###  https://w3id.org/vair#InvestigatingCriminalOffences
+vair:InvestigatingCriminalOffences rdf:type owl:NamedIndividual ,
+                                            skos:Concept ,
+                                            vair:Concept .
+
+###  https://w3id.org/vair#ProsecutingCriminalOffences
+vair:ProsecutingCriminalOffences rdf:type owl:Class ;
+                                   rdfs:subClassOf airo:Purpose .
+###  https://w3id.org/vair#ProsecutingCriminalOffences
+vair:ProsecutingCriminalOffences rdf:type owl:NamedIndividual ,
+                                            skos:Concept ,
+                                            vair:Concept .
+
+
+###  https://w3id.org/vair#EvaluatingReliabilityOfEvidence
+vair:EvaluatingReliabilityOfEvidence rdf:type owl:Class ;
+                                     rdfs:subClassOf airo:Purpose .
+
+
+###  https://w3id.org/vair#EvaluatingReliabilityOfEvidence
+vair:EvaluatingReliabilityOfEvidence rdf:type owl:NamedIndividual ,
+                                              skos:Concept ,
+                                              vair:Concept .
+
+###  https://w3id.org/vair#PredictingOccurrenceOfCriminalOffence
+vair:PredictingOccurrenceOfCriminalOffence rdf:type owl:Class ;
+                                           rdfs:subClassOf airo:Purpose .
+###  https://w3id.org/vair#PredictingOccurrenceOfCriminalOffence
+vair:PredictingOccurrenceOfCriminalOffence rdf:type owl:NamedIndividual ,
+                                                    skos:Concept ,
+                                                    vair:Concept . 
+
+###  https://w3id.org/vair#PredictingReoccurrenceOfCriminalOffence
+vair:PredictingReoccurrenceOfCriminalOffence rdf:type owl:Class ;
+                                             rdfs:subClassOf airo:Purpose .
+
+###  https://w3id.org/vair#PredictingReoccurrenceOfCriminalOffence
+vair:PredictingReoccurrenceOfCriminalOffence rdf:type owl:NamedIndividual ,
+                                                      skos:Concept ,
+                                                      vair:Concept .
+ ###  https://w3id.org/vair#AssessingPersonalityTraits
+vair:AssessingPersonalityTraits rdf:type owl:Class ;
+                                rdfs:subClassOf airo:Purpose .  
+###  https://w3id.org/vair#AssessingPersonalityTraits
+vair:AssessingPersonalityTraits rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         vair:Concept .    
+ 
+###  https://w3id.org/vair#AssessingPastCriminalBehaviour
+vair:AssessingPastCriminalBehaviour rdf:type owl:Class ;
+                                    rdfs:subClassOf airo:Purpose . 
+###  https://w3id.org/vair#AssessingPastCriminalBehaviour
+vair:AssessingPastCriminalBehaviour rdf:type owl:NamedIndividual ,
+                                           skos:Concept ,
+                                           vair:Concept .                                     
+
+###  https://w3id.org/vair#DetectingCriminalOffences
+vair:DectectingCriminalOffences rdf:type owl:Class ;
+                                  rdfs:subClassOf airo:Purpose .
+###  https://w3id.org/vair#DetectingCriminalOffences
+vair:DetectingCriminalOffences rdf:type owl:NamedIndividual ,
+                                           skos:Concept ,
+                                           vair:Concept .   
+
+###  https://w3id.org/vair#PerformingBackgroundCheck
+vair:PerformingBackgroundCheck rdf:type owl:Class ;
+                                   rdfs:subClassOf airo:Purpose .   
+###  https://w3id.org/vair#PerformingBackgroundCheck
+vair:PerformingBackgroundCheck rdf:type owl:NamedIndividual ,
+                                skos:Concept ,
+                                vair:Concept .   
+ ###  https://w3id.org/vair#VerificationOfMigrationSeekerClaims
+vair:VerificationOfMigrationSeekerClaims rdf:type owl:Class ;
+                                           rdfs:subClassOf airo:Purpose .
+###  https://w3id.org/vair#VerificationOfMigrationSeekerClaims
+vair:VerificationOfMigrationSeekerClaims rdf:type owl:NamedIndividual ,
+                                                    skos:Concept ,
+                                                    vair:Concept .
+
+###  https://w3id.org/vair#VerificationOfAsylumSeekerClaims
+vair:VerificationOfAsylumSeekerClaims rdf:type owl:NamedIndividual ,
+                                                    skos:Concept ,
+                                                    vair:Concept .
+
+###  https://w3id.org/vair#VerificationOfAsylumSeekerClaims
+vair:VerificationOfAsylumSeekerClaims rdf:type owl:Class ;
+                                           rdfs:subClassOf airo:Purpose .   
+
+###  https://w3id.org/vair#BorderControlSecurityCheck
+vair:BorderControlSecurityCheck rdf:type owl:Class ;
+                             rdfs:subClassOf airo:Purpose .
+ ###  https://w3id.org/vair#BorderControlSecurityCheck
+vair:BorderControlSecurityCheck rdf:type owl:NamedIndividual ,
+                                                    skos:Concept ,
+                                                    vair:Concept . 
+
+ 
+###  https://w3id.org/vair#AssessingPeopleRelatedRisk
+vair:AssessingPeopleRelatedRisk rdf:type owl:Class ;
+                                rdfs:subClassOf airo:Purpose .
+
+###  https://w3id.org/vair#AssessingPeopleRelatedRisk
+vair:AssessingPeopleRelatedRisk rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         vair:Concept .    
+###  https://w3id.org/vair#AssessingRiskOfIrregularImmigration
+vair:AssessingRiskOfIrregularImmigration rdf:type owl:Class ;
+                                         rdfs:subClassOf airo:Purpose .     
+
+###  https://w3id.org/vair#AssessingRiskOfIrregularImmigration
+vair:AssessingRiskOfIrregularImmigration rdf:type owl:NamedIndividual ,
+                                                  skos:Concept ,
+                                                  vair:Concept .  
+
+
+###  https://w3id.org/vair#AssessingSecurityRisk
+vair:AssessingSecurityRisk rdf:type owl:Class ;
+                           rdfs:subClassOf airo:Purpose .    
+###  https://w3id.org/vair#AssessingSecurityRisk
+vair:AssessingSecurityRisk rdf:type owl:NamedIndividual ,
+                                    skos:Concept ,
+                                    vair:Concept . 
+###  https://w3id.org/vair#AssessingHealthRisk
+vair:AssessingHealthRisk rdf:type owl:Class ;
+                           rdfs:subClassOf airo:Purpose .    
+###  https://w3id.org/vair#AssessingHealthRisk
+vair:AssessingHealthRisk rdf:type owl:NamedIndividual ,
+                                    skos:Concept ,
+                                    vair:Concept . 
+###  https://w3id.org/vair#ExaminingAsylumApplication
+vair:ExaminingAsylumApplication rdf:type owl:Class ;
+                                rdfs:subClassOf airo:Purpose .
+###  https://w3id.org/vair#ExaminingAsylumApplication
+vair:ExaminingAsylumApplication rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         vair:Concept .
+
+###  https://w3id.org/vair#ExaminingVisaApplication
+vair:ExaminingVisaApplication rdf:type owl:Class ;
+                              rdfs:subClassOf airo:Purpose .    
+
+###  https://w3id.org/vair#ExaminingVisaApplication
+vair:ExaminingVisaApplication rdf:type owl:NamedIndividual ,
+                                       skos:Concept ,
+                                       vair:Concept .  
+###  https://w3id.org/vair#ExaminingResidencePermitsApplication
+vair:ExaminingResidencePermitsApplication rdf:type owl:Class ;
+                                          rdfs:subClassOf airo:Purpose .  
+###  https://w3id.org/vair#ExaminingResidencePermitsApplication
+vair:ExaminingResidencePermitsApplication rdf:type owl:NamedIndividual ,
+                                                   skos:Concept ,
+                                                   vair:Concept .
+ 
+
+###  https://w3id.org/vair#ExaminingMigrationRelatedComplaints
+vair:ExaminingMigrationRelatedComplaints rdf:type owl:Class ;
+                                         rdfs:subClassOf airo:Purpose .   
+
+###  https://w3id.org/vair#ExaminingMigrationRelatedComplaints
+vair:ExaminingMigrationRelatedComplaints rdf:type owl:NamedIndividual ,
+                                                  skos:Concept ,
+                                                  vair:Concept .   
+###  https://w3id.org/vair#ApplyingTheLawToFacts
+vair:ApplyingTheLawToFacts rdf:type owl:Class ;
+                           rdfs:subClassOf airo:Purpose .    
+###  https://w3id.org/vair#ApplyingTheLawToFacts
+vair:ApplyingTheLawToFacts rdf:type owl:NamedIndividual ,
+                                    skos:Concept ,
+                                    vair:Concept .   
+ ###  https://w3id.org/vair#InterpretingFacts
+vair:InterpretingFacts rdf:type owl:Class ;
+                       rdfs:subClassOf airo:Purpose .
+###  https://w3id.org/vair#InterpretingFacts
+vair:InterpretingFacts rdf:type owl:NamedIndividual ,
+                                skos:Concept ,
+                                vair:Concept .
+
+
+###  https://w3id.org/vair#InterpretingLaw
+vair:InterpretingLaw rdf:type owl:NamedIndividual ,
+                              skos:Concept ,
+                              vair:Concept .
+
+###  https://w3id.org/vair#InterpretingLaw
+vair:InterpretingLaw rdf:type owl:Class ;
+                     rdfs:subClassOf airo:Purpose .                                                                                                                                                                                              
+
+
+
+###  https://w3id.org/vair#Concept
+vair:Concept rdf:type owl:Class .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+###  https://w3id.org/vair#ManagementAndOperationOfSafety
+vair:ManagementAndOperationOfSafety skos:definition ""@en ;
+                         skos:related vair:CriticalInfrastructure ;
+                         rdfs:isDefinedBy vair: ;
+                         skos:prefLabel "Management And Operation Of Safety"@en ;
+                         skos:inScheme vair: .
+vair:AdvertisingVacancies skos:definition ""@en ;
+                          rdfs:isDefinedBy vair: ;
+                          skos:inScheme vair: ;
+                          skos:prefLabel "Advertising Vacancies"@en ;
+                          skos:related vair:Employment .
+
+
+vair:InterpretingLaw skos:inScheme vair: ;
+                     skos:related vair:Law ;
+                     skos:definition "Researching and interpreting the law"@en ;
+                     skos:prefLabel "Interpreting Law"@en ;
+                     rdfs:isDefinedBy vair: .
+
+vair:ApplyingTheLawToFacts skos:prefLabel "Applying The Law To Facts"@en ;
+                           skos:related vair:Law ;
+                           skos:definition "Applying the law to a concrete set of facts"@en ;
+                           rdfs:isDefinedBy vair: ;
+                           skos:inScheme vair: .
+
+
+vair:InterpretingFacts skos:definition "Researching and interpreting facts"@en ;
+                       skos:inScheme vair: ;
+                       skos:related vair:Law ;
+                       rdfs:isDefinedBy vair: ;
+                       skos:prefLabel "Interpreting Facts"@en .
+
+
+vair:ExaminingMigrationRelatedComplaints skos:prefLabel "Examining Migration Related Complaints"@en ;
+                                       
+                                         skos:definition ""@en ;
+                                         rdfs:isDefinedBy vair: ;
+                                         skos:related vair:Migration ;
+                                         skos:inScheme vair: .
+
+
+
+vair:ExaminingResidencePermitsApplication skos:definition ""@en ;
+                                          skos:prefLabel "Examining Residence Permits Application"@en ;
+                                          skos:related vair:Migration ;
+                                          skos:inScheme vair: ;
+                                          rdfs:isDefinedBy vair: .
+
+vair:ExaminingAsylumApplication skos:prefLabel "Examining Asylum Application"@en ;
+                                skos:related vair:Migration ;
+                                rdfs:isDefinedBy vair: ;
+                                skos:definition ""@en ;
+                                skos:inScheme vair: .
+
+
+
+vair:ExaminingVisaApplication skos:related vair:Migration ;
+                              skos:prefLabel "Examining Visa Application"@en ;
+                              skos:definition ""@en ;
+                              rdfs:isDefinedBy vair: ;
+                              skos:inScheme vair: .
+
+
+vair:AssessingSecurityRisk skos:related vair:LawEnforcement ;
+                           skos:definition ""@en ;
+                           rdfs:isDefinedBy vair: ;
+                           skos:prefLabel "Assessing Security Risk"@en ;
+                           skos:inScheme vair: .
+
+
+vair:AssessingHealthRisk skos:related vair:LawEnforcement ;
+                           skos:definition ""@en ;
+                           rdfs:isDefinedBy vair: ;
+                           skos:prefLabel "Assessing Health Risk"@en ;
+                           skos:inScheme vair: .
+vair:AssessingRiskOfIrregularImmigration skos:definition ""@en ;
+                                         rdfs:isDefinedBy vair: ;
+                                         skos:related vair:LawEnforcement ,
+                                                      vair:Migration ;
+                                         skos:inScheme vair: ;
+                                
+                                         skos:prefLabel "Assessing Risk Of Irregular Immigration"@en .
+
+
+vair:AssessingPeopleRelatedRisk skos:definition ""@en ;
+                                rdfs:isDefinedBy vair: ;
+                                skos:prefLabel "Assessing People Related Risk"@en ;
+                                skos:inScheme vair: .
+
+vair:BorderControlSecurityCheck skos:related vair:BorderControl ;
+                                           skos:prefLabel "Border Control Security Check"@en ;
+                                           rdfs:isDefinedBy vair: ;
+                                           skos:inScheme vair: ;
+                                           skos:definition ""@en  .
+
+
+vair:VerificationOfAsylumSeekerClaims 
+                                           skos:prefLabel "Verification Of Asylum Seeker Claims"@en ;
+                                           rdfs:isDefinedBy vair: ;
+                                           skos:inScheme vair: ;
+                                           skos:definition ""@en  .
+
+         
+vair:VerificationOfMigrationSeekerClaims 
+                                          skos:related vair:Migration ;  
+                                           skos:prefLabel "Verification Of Migration Seeker Claims"@en ;
+                                           rdfs:isDefinedBy vair: ;
+                                           skos:inScheme vair: ;
+                                           skos:definition ""@en .                       
+
+vair:PerformingBackgroundCheck skos:definition ""@en ;
+                               skos:prefLabel "Performing Background Check"@en ;
+                               skos:inScheme vair: ;
+                               skos:related vair:LawEnforcement ;
+                               rdfs:isDefinedBy vair: .
+
+vair:DetectingCriminalOffences skos:inScheme vair: ;
+                                                        rdfs:isDefinedBy vair: ;
+                                                        skos:related vair:LawEnforcement ;
+                                                        skos:prefLabel "Detecting Criminal Offences"@en ;
+                                                        skos:definition ""@en . 
+
+vair:AssessingPastCriminalBehaviour rdfs:isDefinedBy vair: ;
+                                    skos:prefLabel "Assessing Past Criminal Behaviour"@en ;
+                                    skos:inScheme vair: ;
+                                    skos:definition ""@en ;
+                                    skos:related vair:LawEnforcement .  
+
+vair:AssessingPersonalityTraits skos:inScheme vair: ;
+                                skos:prefLabel "Assessing Personality Traits"@en ;
+                                skos:definition ""@en ;
+                                rdfs:isDefinedBy vair: .
+
+
+vair:PredictingReoccurrenceOfCriminalOffence skos:inScheme vair: ;
+                                             skos:related vair:LawEnforcement ;
+                                             skos:definition ""@en ;
+                                             rdfs:isDefinedBy vair: ;
+                                             skos:prefLabel "Predicting Reoccurrence Of Criminal Offence"@en .
+vair:PredictingOccurrenceOfCriminalOffence rdfs:isDefinedBy vair: ;
+                                           skos:inScheme vair: ;
+                                           skos:prefLabel "Predicting Occurrence Of Criminal Offence"@en ;
+                                           skos:related vair:LawEnforcement ;
+                                           skos:definition ""@en .
+
+vair:EvaluatingReliabilityOfEvidence skos:related vair:LawEnforcement ;
+                                     rdfs:isDefinedBy vair: ;
+                                     skos:definition "Evaluation of the reliability of evidence in the course of investigation or prosecution of criminal offences"@en ;
+                                     skos:prefLabel "Evaluating Reliability Of Evidence"@en ;
+                                     skos:inScheme vair: .
+vair:InvestigatingCriminalOffences skos:inScheme vair: ;
+                                                        rdfs:isDefinedBy vair: ;
+                                                        skos:related vair:LawEnforcement ;
+                                                        skos:prefLabel "Investigating Criminal Offences"@en ;
+                                                        skos:definition ""@en .                                    
+vair:ProsecutingCriminalOffences skos:inScheme vair: ;
+                                                        rdfs:isDefinedBy vair: ;
+                                                        skos:related vair:LawEnforcement ;
+                                                        skos:prefLabel "Prosecuting Criminal Offences"@en ;
+                                                        skos:definition ""@en .
+
+vair:AssessingRiskForPotentialVictimsOfCriminalOffences skos:inScheme vair: ;
+                                                        rdfs:isDefinedBy vair: ;
+                                                        skos:related vair:LawEnforcement ;
+                                                        skos:prefLabel "Assessing Risk For Potential Victims Of Criminal Offences"@en ;
+                                                        skos:definition ""@en .
+ vair:AssessingRiskOfOffending skos:definition ""@en ;
+                              skos:related vair:LawEnforcement ;
+                              skos:prefLabel "Assessing Risk Of Offending"@en ;
+                              skos:inScheme vair: ;
+                              rdfs:isDefinedBy vair: .
+
+
+vair:AssessingRiskOfReoffending rdfs:isDefinedBy vair: ;
+                                skos:prefLabel "Assessing Risk Of Reoffending"@en ;
+                                skos:related vair:LawEnforcement ;
+                                skos:inScheme vair: ;
+                                skos:definition ""@en .    
+
+vair:LifeInsurancePricing skos:definition ""@en ;
+                          skos:related vair:PublicService ;
+                          skos:prefLabel "Life Insurance Pricing"@en ;
+                          skos:related vair:PrivateService ;
+                          skos:inScheme vair: ;
+                          rdfs:isDefinedBy vair: .  
+
+vair:LifeInsuranceRiskAssessment rdfs:isDefinedBy vair: ;
+                                 skos:related vair:PublicService ;
+                                 skos:definition ""@en ;
+                                 skos:prefLabel "Life Insurance Risk Assessment"@en ;
+                                 skos:related vair:PrivateService ;
+                                 skos:inScheme vair: .    
+ 
+vair:HealthInsurancePricing skos:prefLabel "Health Insurance Pricing"@en ;
+                            skos:inScheme vair: ;
+                            skos:related vair:PrivateService ;
+                            rdfs:isDefinedBy vair: ;
+                            skos:definition ""@en ;
+                            skos:related vair:PublicService .
+
+vair:HealthInsuranceRiskAssessment skos:related vair:PublicService ;
+                                   skos:definition ""@en ;
+                                   skos:inScheme vair: ;
+                                   skos:prefLabel "Health Insurance Risk Assessment"@en ;
+                                   skos:related vair:PrivateService ;
+                                   rdfs:isDefinedBy vair: .  
+
+vair:PrioritisationOfEmergencyService skos:prefLabel "Prioritisation Of Emergency Service"@en ;
+                                      skos:related vair:PublicService ;
+                                      skos:inScheme vair: ;
+                                      skos:definition "Establishing priority in the dispatching of emergency first response services, including by firefighters and medical aid"@en ;
+                                      rdfs:isDefinedBy vair: .
+vair:DispatchingEmergencyService rdfs:isDefinedBy vair: ;
+                                 skos:related vair:PublicService ;
+                                 skos:inScheme vair: ;
+                                 skos:definition "Dispatching  of emergency first response services, including by firefighters and medical aid"@en ;
+                                 skos:prefLabel "Dispatching  Emergency Service"@en .
+vair:DeterminingCreditScore 
+                            skos:definition ""@en ;
+                            skos:prefLabel "Determining Credit Score"@en ;
+                            skos:inScheme vair: ;
+                            rdfs:isDefinedBy vair: .
+vair:AssessingCreditworthiness skos:inScheme vair: ;
+                               rdfs:isDefinedBy vair: ;
+                               skos:definition "Evaluation the creditworthiness of natural persons or establishing their credit score"@en ;
+                               skos:prefLabel "Assessing Creditworthiness"@en .  
+
+vair:ReducingPublicAssistanceServices rdfs:isDefinedBy vair: ;
+                                       skos:related vair:PublicService ;
+                                       skos:definition ""@en ;
+                                       skos:prefLabel "Reducing Public Assistance Services"@en ;
+                                       skos:inScheme vair: .
+
+vair:ReclaimingPublicAssistanceServices rdfs:isDefinedBy vair: ;
+                                         skos:related vair:PublicService ;
+                                         skos:definition ""@en ;
+                                         skos:prefLabel "Reclaiming Public Assistance Services"@en ;
+                                         skos:inScheme vair: .
+
+vair:RevokingPublicAssistanceServices rdfs:isDefinedBy vair: ;
+                                       skos:related vair:PublicService ;
+                                       skos:definition ""@en ;
+                                       skos:prefLabel "Revoking Public Assistance Services"@en ;
+                                       skos:inScheme vair: . 
+
+vair:GrantingPublicAssistanceServices rdfs:isDefinedBy vair: ;
+                                       skos:related vair:PublicService ;
+                                       skos:definition ""@en ;
+                                       skos:prefLabel "Granting Public AssistanceS ervices"@en ;
+                                       skos:inScheme vair: . 
+
+ vair:EvaluatingEligibilityToAccessPublicAssistanceServices skos:inScheme vair: ;
+                                                           skos:related vair:PublicService ;
+                                                           skos:definition ""@en ;
+                                                           skos:prefLabel "Evaluating Eligibility To Access Public Assistance Services"@en ;
+                                                           rdfs:isDefinedBy vair: . 
+
+vair:EvaluatingEmployeePerformance rdfs:isDefinedBy vair: ;
+                                   skos:related vair:Employment ;
+                                   skos:inScheme vair: ;
+                                   skos:prefLabel "Evaluating Employee Performance"@en ;
+                                   skos:definition ""@en . 
+
+vair:EvaluatingEmployeeBehaviour skos:definition ""@en ;
+                                 skos:inScheme vair: ;
+                                 skos:related vair:Employment ;
+                                 skos:prefLabel "Evaluating Employee Behaviour"@en ;
+                                 rdfs:isDefinedBy vair: .
+vair:MonitoringEmployeePerformance skos:definition ""@en ;
+                                   skos:prefLabel "Monitoring Employee Performance"@en ;
+                                   skos:related vair:Employment ;
+                                   rdfs:isDefinedBy vair: ;
+                                   skos:inScheme vair: .   
+vair:MonitoringEmployeeBehaviour rdfs:isDefinedBy vair: ;
+                                 skos:related vair:Employment ;
+                                 skos:definition ""@en ;
+                                 skos:inScheme vair: ;
+                                 skos:prefLabel "Monitoring Employee Behaviour"@en .
+
+vair:MakingPromotionDecision skos:prefLabel "Making Promotion Decision"@en ;
+                             skos:inScheme vair: ;
+                             skos:definition "Making decisions on promotion"@en ;
+                             skos:related vair:Employment ;
+                             rdfs:isDefinedBy vair: .
+
+
+vair:MakingTerminationDecision skos:definition "Making decisions on termination of work-related contractual relationship"@en ;
+                               skos:prefLabel "Making Termination Decision"@en ;
+                               skos:inScheme vair: ;
+                               skos:related vair:Employment ;
+                               rdfs:isDefinedBy vair: .  
+
+vair:EvaluatingJobCandidates skos:related vair:Employment ;
+                             rdfs:isDefinedBy vair: ;
+                             skos:definition ""@en ;
+                             skos:prefLabel "Evaluating Job Candidates"@en ;
+                             skos:inScheme vair: .  
+ 
+vair:JobApplicationFiltering skos:prefLabel "Job Application Filtering"@en ;
+                             skos:definition "Filtering applications for recruitment or selection of natural persons"@en ;
+                             skos:inScheme vair: ;
+                             skos:related vair:Employment ;
+                             rdfs:isDefinedBy vair: .   
+
+vair:JobApplicationAnalysis skos:inScheme vair: ;
+                            rdfs:isDefinedBy vair: ;
+                            skos:related vair:Employment ;
+                            skos:prefLabel "Job Application Analysis"@en ;
+                            skos:definition ""@en .
+vair:Recruiting rdfs:isDefinedBy vair: ;
+                skos:inScheme vair: ;
+                skos:prefLabel "Recruiting"@en ;
+                skos:definition ""@en .  
+
+vair:EvaluatingLearningOutcomes skos:related vair:Education ;
+                                skos:prefLabel "Evaluating Learning Outcomes"@en ;
+                                skos:definition "Evaluating learning outcomes, including when those outcomes are used to steer the learning process of natural persons in educational and vocational training institutions or programmes at all levels."@en ;
+                                rdfs:isDefinedBy vair: ;
+                                skos:inScheme vair: .  
+vair:DeterminingAdmissionToEducationalInstitutions skos:definition "Determining admission to educational and vocational training institutions or programmes at all levels."@en ;
+                                                   skos:related vair:Education ;
+                                                   skos:inScheme vair: ;
+                                                   skos:prefLabel "Determining Admission To Educationa Institutions"@en ;
+                                                   rdfs:isDefinedBy vair: .  
+
+vair:DeterminingAccessToEducation rdfs:isDefinedBy vair: ;
+                                  skos:definition "Determining access to educational and vocational training institutions or programmes at all levels."@en ;
+                                  skos:prefLabel "Determining Access To Education"@en ;
+                                  skos:related vair:Education ;
+                                  skos:inScheme vair: .                                                                                                                                                                                                                                                                              
+
+
+
+vair:AssigningPeopleToEducationalInstitutions skos:inScheme vair: ;
+                                              skos:definition "Assigning natural persons to educational and vocational training institutions or programmes at all levels."@en ;
+                                              rdfs:isDefinedBy vair: ;
+                                              skos:prefLabel "Assigning People To Educational Institutions"@en ;
+                                              skos:related vair:Education .
+
+vair:RemoteIdentificationOfPeople skos:prefLabel "Remote Identification Of People"@en ;
+                                  skos:definition ""@en ;
+                                  skos:inScheme vair: ;
+                                  rdfs:isDefinedBy vair: .
+
+                                          
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
