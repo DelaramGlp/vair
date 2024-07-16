@@ -1,0 +1,636 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix airo: <https://w3id.org/airo#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vair: <https://w3id.org/vair#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#definition
+skos:definition rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+skos:inScheme rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+skos:prefLabel rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+skos:Concept rdf:type owl:Class .
+
+
+###  https://w3id.org/airo#Document
+airo:Document rdf:type owl:Class .
+
+
+###  https://w3id.org/airo#standard
+airo:standard rdf:type owl:Class .
+
+
+###  https://w3id.org/vair#Blueprint
+vair:Blueprint rdf:type owl:Class ;
+               rdfs:subClassOf airo:Document .
+
+
+###  https://w3id.org/vair#Concept
+vair:Concept rdf:type owl:Class .
+
+
+###  https://w3id.org/vair#Datasheet
+vair:Datasheet rdf:type owl:Class ;
+               rdfs:subClassOf airo:Document .
+
+
+###  https://w3id.org/vair#DesignSpecification
+vair:DesignSpecification rdf:type owl:Class ;
+                         rdfs:subClassOf airo:Document .
+
+
+###  https://w3id.org/vair#EUDeclarationOfConformity
+vair:EUDeclarationOfConformity rdf:type owl:Class ;
+                               rdfs:subClassOf airo:Document .
+
+
+###  https://w3id.org/vair#IEC31010-2019
+vair:IEC31010-2019 rdf:type owl:Class ;
+                   rdfs:subClassOf airo:standard .
+
+
+###  https://w3id.org/vair#ISO10013-2021
+vair:ISO10013-2021 rdf:type owl:Class ;
+                   rdfs:subClassOf airo:standard .
+
+
+###  https://w3id.org/vair#ISO31000-2018
+vair:ISO31000-2018 rdf:type owl:Class ;
+                   rdfs:subClassOf airo:standard .
+
+
+###  https://w3id.org/vair#ISO9001-2015
+vair:ISO9001-2015 rdf:type owl:Class ;
+                  rdfs:subClassOf airo:standard .
+
+
+###  https://w3id.org/vair#ISOGuide73-2009
+vair:ISOGuide73-2009 rdf:type owl:Class ;
+                     rdfs:subClassOf airo:standard .
+
+
+###  https://w3id.org/vair#ISOIEC20546-2019
+vair:ISOIEC20546-2019 rdf:type owl:Class ;
+                      rdfs:subClassOf airo:standard .
+
+
+###  https://w3id.org/vair#ISOIEC20547-3-2020
+vair:ISOIEC20547-3-2020 rdf:type owl:Class ;
+                        rdfs:subClassOf airo:standard .
+
+
+###  https://w3id.org/vair#ISOIEC22989-2022
+vair:ISOIEC22989-2022 rdf:type owl:Class ;
+                      rdfs:subClassOf airo:standard .
+
+
+###  https://w3id.org/vair#ISOIEC23053-2022
+vair:ISOIEC23053-2022 rdf:type owl:Class ;
+                      rdfs:subClassOf airo:standard .
+
+
+###  https://w3id.org/vair#ISOIEC23894-2023
+vair:ISOIEC23894-2023 rdf:type owl:Class ;
+                      rdfs:subClassOf airo:standard .
+
+
+###  https://w3id.org/vair#ISOIEC24668-2022
+vair:ISOIEC24668-2022 rdf:type owl:Class ;
+                      rdfs:subClassOf airo:standard .
+
+
+###  https://w3id.org/vair#ISOIEC38507-2022
+vair:ISOIEC38507-2022 rdf:type owl:Class ;
+                      rdfs:subClassOf airo:standard .
+
+
+###  https://w3id.org/vair#ISOIECTR20547-1-2020
+vair:ISOIECTR20547-1-2020 rdf:type owl:Class ;
+                          rdfs:subClassOf airo:standard .
+
+
+###  https://w3id.org/vair#ISOIECTR20547-2-2018
+vair:ISOIECTR20547-2-2018 rdf:type owl:Class ;
+                          rdfs:subClassOf airo:standard .
+
+
+###  https://w3id.org/vair#ISOIECTR20547-5-2018
+vair:ISOIECTR20547-5-2018 rdf:type owl:Class ;
+                          rdfs:subClassOf airo:standard .
+
+
+###  https://w3id.org/vair#ISOIECTR24027-2021
+vair:ISOIECTR24027-2021 rdf:type owl:Class ;
+                        rdfs:subClassOf airo:standard .
+
+
+###  https://w3id.org/vair#ISOIECTR24028-2020
+vair:ISOIECTR24028-2020 rdf:type owl:Class ;
+                        rdfs:subClassOf airo:standard .
+
+
+###  https://w3id.org/vair#ISOIECTR24029-1-2021
+vair:ISOIECTR24029-1-2021 rdf:type owl:Class ;
+                          rdfs:subClassOf airo:standard .
+
+
+###  https://w3id.org/vair#ISOIECTR24030-2021
+vair:ISOIECTR24030-2021 rdf:type owl:Class ;
+                        rdfs:subClassOf airo:standard .
+
+
+###  https://w3id.org/vair#ISOIECTR24368-2022
+vair:ISOIECTR24368-2022 rdf:type owl:Class ;
+                        rdfs:subClassOf airo:standard .
+
+
+###  https://w3id.org/vair#ISOIECTR24372-2021
+vair:ISOIECTR24372-2021 rdf:type owl:Class ;
+                        rdfs:subClassOf airo:standard .
+
+
+###  https://w3id.org/vair#ISOIECTS4213-2022
+vair:ISOIECTS4213-2022 rdf:type owl:Class ;
+                       rdfs:subClassOf airo:standard .
+
+
+###  https://w3id.org/vair#InstallationInstruction
+vair:InstallationInstruction rdf:type owl:Class ;
+                             rdfs:subClassOf airo:Document .
+
+
+###  https://w3id.org/vair#InstructionOfUse
+vair:InstructionOfUse rdf:type owl:Class ;
+                      rdfs:subClassOf airo:Document .
+
+
+###  https://w3id.org/vair#PostMarketMonitoringPlan
+vair:PostMarketMonitoringPlan rdf:type owl:Class ;
+                              rdfs:subClassOf airo:Document .
+
+
+###  https://w3id.org/vair#PostMarketMonitoringSystemDescription
+vair:PostMarketMonitoringSystemDescription rdf:type owl:Class ;
+                                           rdfs:subClassOf airo:Document .
+
+
+###  https://w3id.org/vair#SystemArchitecture
+vair:SystemArchitecture rdf:type owl:Class ;
+                        rdfs:subClassOf airo:Document .
+
+
+###  https://w3id.org/vair#TechnicalDocumentation
+vair:TechnicalDocumentation rdf:type owl:Class ;
+                            rdfs:subClassOf airo:Document .
+
+
+###  https://w3id.org/vair#TestLog
+vair:TestLog rdf:type owl:Class ;
+             rdfs:subClassOf airo:Document .
+
+
+###  https://w3id.org/vair#TestReport
+vair:TestReport rdf:type owl:Class ;
+                rdfs:subClassOf airo:Document .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/vair#Blueprint
+vair:Blueprint rdf:type owl:NamedIndividual ,
+                        skos:Concept ,
+                        vair:Concept .
+
+
+###  https://w3id.org/vair#Datasheet
+vair:Datasheet rdf:type owl:NamedIndividual ,
+                        skos:Concept ,
+                        vair:Concept .
+
+
+###  https://w3id.org/vair#DesignSpecification
+vair:DesignSpecification rdf:type owl:NamedIndividual ,
+                                  skos:Concept ,
+                                  vair:Concept .
+
+
+###  https://w3id.org/vair#EUDeclarationOfConformity
+vair:EUDeclarationOfConformity rdf:type owl:NamedIndividual ,
+                                        skos:Concept ,
+                                        vair:Concept .
+
+
+###  https://w3id.org/vair#IEC31010-2019
+vair:IEC31010-2019 rdf:type owl:NamedIndividual ,
+                            skos:Concept ,
+                            vair:Concept .
+
+
+###  https://w3id.org/vair#ISO10013-2021
+vair:ISO10013-2021 rdf:type owl:NamedIndividual ,
+                            skos:Concept ,
+                            vair:Concept .
+
+
+###  https://w3id.org/vair#ISO31000-2018
+vair:ISO31000-2018 rdf:type owl:NamedIndividual ,
+                            skos:Concept ,
+                            vair:Concept .
+
+
+###  https://w3id.org/vair#ISO9001-2015
+vair:ISO9001-2015 rdf:type owl:NamedIndividual ,
+                           skos:Concept ,
+                           vair:Concept .
+
+
+###  https://w3id.org/vair#ISOGuide73-2009
+vair:ISOGuide73-2009 rdf:type owl:NamedIndividual ,
+                              skos:Concept ,
+                              vair:Concept .
+
+
+###  https://w3id.org/vair#ISOIEC20546-2019
+vair:ISOIEC20546-2019 rdf:type owl:NamedIndividual ,
+                               skos:Concept ,
+                               vair:Concept .
+
+
+###  https://w3id.org/vair#ISOIEC20547-3-2020
+vair:ISOIEC20547-3-2020 rdf:type owl:NamedIndividual ,
+                                 skos:Concept ,
+                                 vair:Concept .
+
+
+###  https://w3id.org/vair#ISOIEC22989-2022
+vair:ISOIEC22989-2022 rdf:type owl:NamedIndividual ,
+                               skos:Concept ,
+                               vair:Concept .
+
+
+###  https://w3id.org/vair#ISOIEC23053-2022
+vair:ISOIEC23053-2022 rdf:type owl:NamedIndividual ,
+                               skos:Concept ,
+                               vair:Concept .
+
+
+###  https://w3id.org/vair#ISOIEC23894-2023
+vair:ISOIEC23894-2023 rdf:type owl:NamedIndividual ,
+                               skos:Concept ,
+                               vair:Concept .
+
+
+###  https://w3id.org/vair#ISOIEC24668-2022
+vair:ISOIEC24668-2022 rdf:type owl:NamedIndividual ,
+                               skos:Concept ,
+                               vair:Concept .
+
+
+###  https://w3id.org/vair#ISOIEC38507-2022
+vair:ISOIEC38507-2022 rdf:type owl:NamedIndividual ,
+                               skos:Concept ,
+                               vair:Concept .
+
+
+###  https://w3id.org/vair#ISOIECTR20547-1-2020
+vair:ISOIECTR20547-1-2020 rdf:type owl:NamedIndividual ,
+                                   skos:Concept ,
+                                   vair:Concept .
+
+
+###  https://w3id.org/vair#ISOIECTR20547-2-2018
+vair:ISOIECTR20547-2-2018 rdf:type owl:NamedIndividual ,
+                                   skos:Concept ,
+                                   vair:Concept .
+
+
+###  https://w3id.org/vair#ISOIECTR20547-5-2018
+vair:ISOIECTR20547-5-2018 rdf:type owl:NamedIndividual ,
+                                   skos:Concept ,
+                                   vair:Concept .
+
+
+###  https://w3id.org/vair#ISOIECTR24027-2021
+vair:ISOIECTR24027-2021 rdf:type owl:NamedIndividual ,
+                                 skos:Concept ,
+                                 vair:Concept .
+
+
+###  https://w3id.org/vair#ISOIECTR24028-2020
+vair:ISOIECTR24028-2020 rdf:type owl:NamedIndividual ,
+                                 skos:Concept ,
+                                 vair:Concept .
+
+
+###  https://w3id.org/vair#ISOIECTR24029-1-2021
+vair:ISOIECTR24029-1-2021 rdf:type owl:NamedIndividual ,
+                                   skos:Concept ,
+                                   vair:Concept .
+
+
+###  https://w3id.org/vair#ISOIECTR24030-2021
+vair:ISOIECTR24030-2021 rdf:type owl:NamedIndividual ,
+                                 skos:Concept ,
+                                 vair:Concept .
+
+
+###  https://w3id.org/vair#ISOIECTR24368-2022
+vair:ISOIECTR24368-2022 rdf:type owl:NamedIndividual ,
+                                 skos:Concept ,
+                                 vair:Concept .
+
+
+###  https://w3id.org/vair#ISOIECTR24372-2021
+vair:ISOIECTR24372-2021 rdf:type owl:NamedIndividual ,
+                                 skos:Concept ,
+                                 vair:Concept .
+
+
+###  https://w3id.org/vair#ISOIECTS4213-2022
+vair:ISOIECTS4213-2022 rdf:type owl:NamedIndividual ,
+                                skos:Concept ,
+                                vair:Concept .
+
+
+###  https://w3id.org/vair#InstallationInstruction
+vair:InstallationInstruction rdf:type owl:NamedIndividual ,
+                                      skos:Concept ,
+                                      vair:Concept .
+
+
+###  https://w3id.org/vair#InstructionOfUse
+vair:InstructionOfUse rdf:type owl:NamedIndividual ,
+                               skos:Concept ,
+                               vair:Concept .
+
+
+###  https://w3id.org/vair#PostMarketMonitoringPlan
+vair:PostMarketMonitoringPlan rdf:type owl:NamedIndividual ,
+                                       skos:Concept ,
+                                       vair:Concept .
+
+
+###  https://w3id.org/vair#PostMarketMonitoringSystemDescription
+vair:PostMarketMonitoringSystemDescription rdf:type owl:NamedIndividual ,
+                                                    skos:Concept ,
+                                                    vair:Concept .
+
+
+###  https://w3id.org/vair#SystemArchitecture
+vair:SystemArchitecture rdf:type owl:NamedIndividual ,
+                                 skos:Concept ,
+                                 vair:Concept .
+
+
+###  https://w3id.org/vair#TechnicalDocumentation
+vair:TechnicalDocumentation rdf:type owl:NamedIndividual ,
+                                     skos:Concept ,
+                                     vair:Concept .
+
+
+###  https://w3id.org/vair#TestLog
+vair:TestLog rdf:type owl:NamedIndividual ,
+                      skos:Concept ,
+                      vair:Concept .
+
+
+###  https://w3id.org/vair#TestReport
+vair:TestReport rdf:type owl:NamedIndividual ,
+                         skos:Concept ,
+                         vair:Concept .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+vair:Blueprint rdfs:isDefinedBy vair: ;
+               skos:definition ""@en ;
+               skos:inScheme vair: ;
+               skos:prefLabel "Blueprint"@en .
+
+
+vair:Datasheet rdfs:isDefinedBy vair: ;
+               skos:definition ""@en ;
+               skos:inScheme vair: ;
+               skos:prefLabel "Datasheet"@en .
+
+
+vair:DesignSpecification rdfs:isDefinedBy vair: ;
+                         skos:definition ""@en ;
+                         skos:inScheme vair: ;
+                         skos:prefLabel "Design Specification"@en .
+
+
+vair:EUDeclarationOfConformity rdfs:isDefinedBy vair: ;
+                               skos:definition ""@en ;
+                               skos:inScheme vair: ;
+                               skos:prefLabel "EU Declaration Of Conformity"@en .
+
+
+vair:IEC31010-2019 rdfs:isDefinedBy vair: ;
+                   skos:definition "Risk management — Risk assessment techniques"@en ;
+                   skos:inScheme vair: ;
+                   skos:prefLabel "IEC 31010:2019"@en .
+
+
+vair:ISO10013-2021 rdfs:isDefinedBy vair: ;
+                   skos:definition "Quality management systems — Guidance for documented information"@en ;
+                   skos:inScheme vair: ;
+                   skos:prefLabel "ISO 10013:2021"@en .
+
+
+vair:ISO31000-2018 rdfs:isDefinedBy vair: ;
+                   skos:definition "Risk management — Guidelines"@en ;
+                   skos:inScheme vair: ;
+                   skos:prefLabel "ISO 31000:2018"@en .
+
+
+vair:ISO9001-2015 rdfs:isDefinedBy vair: ;
+                  skos:definition "Quality management systems — Requirements"@en ;
+                  skos:inScheme vair: ;
+                  skos:prefLabel "ISO 9001:2015"@en .
+
+
+vair:ISOGuide73-2009 rdfs:isDefinedBy vair: ;
+                     skos:definition "Risk management — Vocabulary"@en ;
+                     skos:inScheme vair: ;
+                     skos:prefLabel "ISO Guide 73:2009"@en .
+
+
+vair:ISOIEC20546-2019 rdfs:isDefinedBy vair: ;
+                      skos:definition "Information technology — Big data — Overview and vocabulary"@en ;
+                      skos:inScheme vair: ;
+                      skos:prefLabel "ISO/IEC 20546:2019"@en .
+
+
+vair:ISOIEC20547-3-2020 rdfs:isDefinedBy vair: ;
+                        skos:definition "Information technology — Big data reference architecture — Part 3: Reference architecture"@en ;
+                        skos:inScheme vair: ;
+                        skos:prefLabel "ISO/IEC 20547-3:2020"@en .
+
+
+vair:ISOIEC22989-2022 rdfs:isDefinedBy vair: ;
+                      skos:definition "Information technology — Artificial intelligence — Artificial intelligence concepts and terminology"@en ;
+                      skos:inScheme vair: ;
+                      skos:prefLabel "ISO/IEC 22989:2022"@en .
+
+
+vair:ISOIEC23053-2022 rdfs:isDefinedBy vair: ;
+                      skos:definition "Framework for Artificial Intelligence (AI) Systems Using Machine Learning (ML)"@en ;
+                      skos:inScheme vair: ;
+                      skos:prefLabel "ISO/IEC 23053:2022"@en .
+
+
+vair:ISOIEC23894-2023 rdfs:isDefinedBy vair: ;
+                      skos:definition "Information technology — Artificial intelligence — Guidance on risk management"@en ;
+                      skos:inScheme vair: ;
+                      skos:prefLabel "ISO/IEC 23894:2023"@en .
+
+
+vair:ISOIEC24668-2022 rdfs:isDefinedBy vair: ;
+                      skos:definition "Information technology — Artificial intelligence — Process management framework for big data analytics"@en ;
+                      skos:inScheme vair: ;
+                      skos:prefLabel "ISO/IEC 24668:2022"@en .
+
+
+vair:ISOIEC38507-2022 rdfs:isDefinedBy vair: ;
+                      skos:definition "Information technology — Governance of IT — Governance implications of the use of artificial intelligence by organizations"@en ;
+                      skos:inScheme vair: ;
+                      skos:prefLabel " ISO/IEC 38507:2022"@en .
+
+
+vair:ISOIECTR20547-1-2020 rdfs:isDefinedBy vair: ;
+                          skos:definition "Information technology — Big data reference architecture — Part 1: Framework and application process"@en ;
+                          skos:inScheme vair: ;
+                          skos:prefLabel "ISO/IEC TR 20547-1:2020"@en .
+
+
+vair:ISOIECTR20547-2-2018 rdfs:isDefinedBy vair: ;
+                          skos:definition "Information technology — Big data reference architecture — Part 2: Use cases and derived requirements"@en ;
+                          skos:inScheme vair: ;
+                          skos:prefLabel "ISO/IEC TR 20547-2:2018"@en .
+
+
+vair:ISOIECTR20547-5-2018 rdfs:isDefinedBy vair: ;
+                          skos:definition "Information technology — Big data reference architecture — Part 5: Standards roadmap"@en ;
+                          skos:inScheme vair: ;
+                          skos:prefLabel "ISO/IEC TR 20547-5:2018"@en .
+
+
+vair:ISOIECTR24027-2021 rdfs:isDefinedBy vair: ;
+                        skos:definition "Information technology — Artificial intelligence (AI) — Bias in AI systems and AI aided decision making"@en ;
+                        skos:inScheme vair: ;
+                        skos:prefLabel "ISO/IEC TR 24027:2021"@en .
+
+
+vair:ISOIECTR24028-2020 rdfs:isDefinedBy vair: ;
+                        skos:definition "Information technology — Artificial intelligence — Overview of trustworthiness in artificial intelligence"@en ;
+                        skos:inScheme vair: ;
+                        skos:prefLabel "ISO/IEC TR 24028:2020"@en .
+
+
+vair:ISOIECTR24029-1-2021 rdfs:isDefinedBy vair: ;
+                          skos:definition "Artificial Intelligence (AI) — Assessment of the robustness of neural networks — Part 1: Overview"@en ;
+                          skos:inScheme vair: ;
+                          skos:prefLabel "ISO/IEC TR 24029-1:2021"@en .
+
+
+vair:ISOIECTR24030-2021 rdfs:isDefinedBy vair: ;
+                        skos:definition "Information technology — Artificial intelligence (AI) — Use cases"@en ;
+                        skos:inScheme vair: ;
+                        skos:prefLabel "ISO/IEC TR 24030:2021"@en .
+
+
+vair:ISOIECTR24368-2022 rdfs:isDefinedBy vair: ;
+                        skos:definition "Information technology — Artificial intelligence — Overview of ethical and societal concerns"@en ;
+                        skos:inScheme vair: ;
+                        skos:prefLabel "ISO/IEC TR 24368:2022"@en .
+
+
+vair:ISOIECTR24372-2021 rdfs:isDefinedBy vair: ;
+                        skos:definition "Information technology — Artificial intelligence (AI) — Overview of computational approaches for AI systems"@en ;
+                        skos:inScheme vair: ;
+                        skos:prefLabel "ISO/IEC TR 24372:2021"@en .
+
+
+vair:ISOIECTS4213-2022 rdfs:isDefinedBy vair: ;
+                       skos:definition "Information technology — Artificial intelligence — Assessment of machine learning classification performance"@en ;
+                       skos:inScheme vair: ;
+                       skos:prefLabel " ISO/IEC TS 4213:2022"@en .
+
+
+vair:InstallationInstruction rdfs:isDefinedBy vair: ;
+                             skos:definition ""@en ;
+                             skos:inScheme vair: ;
+                             skos:prefLabel "Installation Instruction"@en .
+
+
+vair:InstructionOfUse rdfs:isDefinedBy vair: ;
+                      skos:definition ""@en ;
+                      skos:inScheme vair: ;
+                      skos:prefLabel "Instruction Of Use"@en .
+
+
+vair:PostMarketMonitoringPlan rdfs:isDefinedBy vair: ;
+                              skos:definition ""@en ;
+                              skos:inScheme vair: ;
+                              skos:prefLabel "Post-market Monitoring Plan"@en .
+
+
+vair:PostMarketMonitoringSystemDescription rdfs:isDefinedBy vair: ;
+                                           skos:definition ""@en ;
+                                           skos:inScheme vair: ;
+                                           skos:prefLabel "Post-market Monitoring System Description"@en .
+
+
+vair:SystemArchitecture rdfs:isDefinedBy vair: ;
+                        skos:definition ""@en ;
+                        skos:inScheme vair: ;
+                        skos:prefLabel "System Architecture"@en .
+
+
+vair:TechnicalDocumentation rdfs:isDefinedBy vair: ;
+                            skos:definition ""@en ;
+                            skos:inScheme vair: ;
+                            skos:prefLabel "TechnicalDocumentation"@en .
+
+
+vair:TestLog rdfs:isDefinedBy vair: ;
+             skos:definition ""@en ;
+             skos:inScheme vair: ;
+             skos:prefLabel "Test Log"@en .
+
+
+vair:TestReport rdfs:isDefinedBy vair: ;
+                skos:definition ""@en ;
+                skos:inScheme vair: ;
+                skos:prefLabel "Test Report"@en .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
