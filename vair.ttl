@@ -6,7 +6,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vair: <https://w3id.org/vair#> .
+@prefix terms:  <http://purl.org/dc/terms/> .
 @base <http://www.w3.org/2002/07/owl#> .
+
 
 [ rdf:type owl:Ontology
  ] .
@@ -1542,8 +1544,9 @@ vair:BehaviourAnalysis skos:prefLabel "Behaviour Analysis"@en ;
                        skos:inScheme vair: .
 
 
-vair:BiometricIdentification skos:definition ""@en ;
+vair:BiometricIdentification skos:definition "Automated recognition of physical, physiological and behavioural human features such as the face, eye movement, body shape, voice, prosody, gait, posture, heart rate, blood pressure, odour, keystrokes characteristics, for the purpose of establishing an individual’s identity by comparing biometric data of that individual to stored biometric data of individuals in a reference database, irrespective of whether the individual has given its consent or not"@en ;
                              skos:prefLabel "Biometric Identification"@en ;
+                             terms:source "AI Act, recital 16" ;
                              rdfs:isDefinedBy vair: ;
                              skos:inScheme vair: .
 
@@ -4598,6 +4601,11 @@ vair:ReducingPublicAssistanceServices rdf:type owl:Class ;
 vair:RemoteIdentificationOfPeople rdf:type owl:Class ;
                                   rdfs:subClassOf vair:Identifying .
 
+###  https://w3id.org/vair#RemoteIdentification
+vair:RemoteIdentification rdf:type owl:Class ;
+                                  rdfs:subClassOf vair:Identifying .
+
+
 
 ###  https://w3id.org/vair#RevokingPublicAssistanceServices
 vair:RevokingPublicAssistanceServices rdf:type owl:Class ;
@@ -5291,6 +5299,11 @@ vair:RemoteIdentificationOfPeople rdf:type owl:NamedIndividual ,
                                            skos:Concept ,
                                            vair:Concept .
 
+
+###  https://w3id.org/vair#RemoteIdentification
+vair:RemoteIdentification rdf:type owl:NamedIndividual ,
+                                           skos:Concept ,
+                                           vair:Concept .
 
 ###  https://w3id.org/vair#RevokingPublicAssistanceServices
 vair:RevokingPublicAssistanceServices rdf:type owl:NamedIndividual ,
@@ -6050,6 +6063,16 @@ vair:RemoteIdentificationOfPeople skos:prefLabel "Remote Identification Of Peopl
                                   skos:inScheme vair: ;
                                   rdfs:isDefinedBy vair: .
 
+vair:RemoteIdentification skos:prefLabel "Remote Identification"@en ;
+                                  skos:definition "Refers to the identification of natural persons without their active involvement, typically at a distance"@en ;
+                                  skos:inScheme vair: ;
+                                  terms:source "AI Act, Recital 17" ;
+                                  rdfs:isDefinedBy vair: .
+
+vair:RemoteIdentification skos:prefLabel "Remote Identification"@en ;
+                                  skos:definition ""@en ;
+                                  skos:inScheme vair: ;
+                                  rdfs:isDefinedBy vair: .
 
 vair:RevokingPublicAssistanceServices rdfs:isDefinedBy vair: ;
                                        skos:related vair:PublicService ;
