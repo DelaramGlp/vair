@@ -318,9 +318,13 @@ vair:Assessment rdf:type owl:Class ;
                 rdfs:subClassOf vair:DecisionMaking .
 
 
-###  https://w3id.org/vair#AssigningPeopleToEducationalInstitutions
-vair:AssigningPeopleToEducationalInstitutions rdf:type owl:Class ;
+###  https://w3id.org/vair#AssigningPersonsToEducationalInstitutions
+vair:AssigningPersonsToEducationalInstitutions rdf:type owl:Class ;
                                               rdfs:subClassOf vair:Assessment .
+
+###  https://w3id.org/vair#AssigningPersonsToVocationalTrainingInstitutions
+vair:AssigningPersonsToVocationalTrainingInstitutions rdf:type owl:Class ;
+                                              rdfs:subClassOf vair:Assessment .                                              
 
 
 ###  https://w3id.org/vair#Asylum
@@ -616,15 +620,22 @@ vair:Detection rdf:type owl:Class ;
                rdfs:subClassOf vair:DecisionMaking .
 
 
-###  https://w3id.org/vair#DeterminingAccessToEducation
-vair:DeterminingAccessToEducation rdf:type owl:Class ;
+###  https://w3id.org/vair#DeterminingAccessToEducationalInstitutions
+vair:DeterminingAccessToEducationalInstitutions rdf:type owl:Class ;
                                   rdfs:subClassOf vair:Assessment .
 
+###  https://w3id.org/vair#DeterminingAccessToVocationalTrainingInstitutions
+vair:DeterminingAccessToVocationalTrainingInstitutions rdf:type owl:Class ;
+                                  rdfs:subClassOf vair:Assessment .
 
 ###  https://w3id.org/vair#DeterminingAdmissionToEducationalInstitutions
 vair:DeterminingAdmissionToEducationalInstitutions rdf:type owl:Class ;
                                                    rdfs:subClassOf vair:Assessment .
 
+
+###  https://w3id.org/vair#DeterminingAdmissionToVocationalTrainingInstitutions
+vair:DeterminingAdmissionToVocationalTrainingInstitutions rdf:type owl:Class ;
+                                                   rdfs:subClassOf vair:Assessment .
 
 ###  https://w3id.org/vair#DeterminingCreditScore
 vair:DeterminingCreditScore rdf:type owl:Class ;
@@ -2237,11 +2248,14 @@ vair:Assessment rdf:type owl:NamedIndividual ,
                          vair:Concept .
 
 
-###  https://w3id.org/vair#AssigningPeopleToEducationalInstitutions
-vair:AssigningPeopleToEducationalInstitutions rdf:type owl:NamedIndividual ,
+###  https://w3id.org/vair#AssigningPersonsToEducationalInstitutions
+vair:AssigningPersonsToEducationalInstitutions rdf:type owl:NamedIndividual ,
                                                        skos:Concept ,
                                                        vair:Concept .
-
+###  https://w3id.org/vair#AssigningPersonsToVocationalTrainingInstitutions
+vair:AssigningPersonsToVocationalTrainingInstitutions rdf:type owl:NamedIndividual ,
+                                                       skos:Concept ,
+                                                       vair:Concept .
 
 ###  https://w3id.org/vair#Asylum
 vair:Asylum rdf:type owl:NamedIndividual ,
@@ -2595,8 +2609,13 @@ vair:Detection rdf:type owl:NamedIndividual ,
                         vair:Concept .
 
 
-###  https://w3id.org/vair#DeterminingAccessToEducation
-vair:DeterminingAccessToEducation rdf:type owl:NamedIndividual ,
+###  https://w3id.org/vair#DeterminingAccessToEducationalInstitutions
+vair:DeterminingAccessToEducationalInstitutions rdf:type owl:NamedIndividual ,
+                                           skos:Concept ,
+                                           vair:Concept .
+
+###  https://w3id.org/vair#DeterminingAccessToVocationalTrainingInstitutions
+vair:DeterminingAccessToVocationalTrainingInstitutions rdf:type owl:NamedIndividual ,
                                            skos:Concept ,
                                            vair:Concept .
 
@@ -2605,6 +2624,11 @@ vair:DeterminingAccessToEducation rdf:type owl:NamedIndividual ,
 vair:DeterminingAdmissionToEducationalInstitutions rdf:type owl:NamedIndividual ,
                                                             skos:Concept ,
                                                             vair:Concept .
+
+###  https://w3id.org/vair#DeterminingAdmissionToVocationalTrainingInstitutions
+vair:DeterminingAdmissionToVocationalTrainingInstitutions rdf:type owl:NamedIndividual ,
+                                                            skos:Concept ,
+                                                            vair:Concept .                                                            
 
 
 ###  https://w3id.org/vair#DeterminingCreditScore
@@ -4624,11 +4648,17 @@ vair:Assessment rdfs:isDefinedBy vair: ;
                 skos:prefLabel "Assessment"@en .
 
 
-vair:AssigningPeopleToEducationalInstitutions rdfs:isDefinedBy vair: ;
-                                              skos:definition "Assigning natural persons to educational and vocational training institutions or programmes at all levels."@en ;
+vair:AssigningPersonsToEducationalInstitutions rdfs:isDefinedBy vair: ;
+                                              skos:definition "Assigning natural persons to educational institutions at all levels."@en ;
                                               skos:inScheme vair: ;
-                                              skos:prefLabel "Assigning People To Educational Institutions"@en ;
+                                              skos:prefLabel "Assigning Persons To Educational Institutions"@en ;
                                               skos:related vair:Education .
+
+vair:AssigningPersonsToEVocationalTrainingInstitutions rdfs:isDefinedBy vair: ;
+                                              skos:definition "Assigning natural persons to vocational training institutions at all levels."@en ;
+                                              skos:inScheme vair: ;
+                                              skos:prefLabel "Assigning Persons To Vocational Training Institutions"@en ;
+                                              skos:related vair:Education .                                              
 
 
 vair:Asylum rdfs:isDefinedBy vair: ;
@@ -4988,17 +5018,29 @@ vair:Detection rdfs:isDefinedBy vair: ;
                skos:prefLabel "Detection"@en .
 
 
-vair:DeterminingAccessToEducation rdfs:isDefinedBy vair: ;
-                                  skos:definition "Determining access to educational and vocational training institutions or programmes at all levels."@en ;
+vair:DeterminingAccessToEducationalInstitutions rdfs:isDefinedBy vair: ;
+                                  skos:definition "Determining access to educational institutions all levels."@en ;
                                   skos:inScheme vair: ;
-                                  skos:prefLabel "Determining Access To Education"@en ;
+                                  skos:prefLabel "Determining Access To Educational Institutions"@en ;
+                                  skos:related vair:Education .
+                                  
+
+vair:DeterminingAccessToVocationalTrainingInstitutions rdfs:isDefinedBy vair: ;
+                                  skos:definition "Determining access to vocational training institutions all levels."@en ;
+                                  skos:inScheme vair: ;
+                                  skos:prefLabel "Determining Access To Vocational Training Institutions"@en ;
                                   skos:related vair:Education .
 
-
 vair:DeterminingAdmissionToEducationalInstitutions rdfs:isDefinedBy vair: ;
-                                                   skos:definition "Determining admission to educational and vocational training institutions or programmes at all levels."@en ;
+                                                   skos:definition "Determining admission to educational institutions at all levels."@en ;
                                                    skos:inScheme vair: ;
-                                                   skos:prefLabel "Determining Admission To Educationa Institutions"@en ;
+                                                   skos:prefLabel "Determining Admission To Educational Institutions"@en ;
+                                                   skos:related vair:Education .
+
+vair:DeterminingAdmissionToVocationalTrainingInstitutions rdfs:isDefinedBy vair: ;
+                                                   skos:definition "Determining admission to vocational training institutions at all levels."@en ;
+                                                   skos:inScheme vair: ;
+                                                   skos:prefLabel "Determining Admission To Vocational Training Institutions"@en ;
                                                    skos:related vair:Education .
 
 
@@ -5055,7 +5097,7 @@ vair:EUDeclarationOfConformity rdfs:isDefinedBy vair: ;
 
 
 vair:Education rdfs:isDefinedBy vair: ;
-               skos:definition ""@en ;
+               skos:definition "Indicates education or vocational training at any level or for any profession."@en ;
                skos:inScheme vair: ;
                skos:prefLabel "Education"@en .
 
