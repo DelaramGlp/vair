@@ -72,8 +72,8 @@ airo:AISystem rdf:type owl:Class .
 airo:AISystemForm rdf:type owl:Class .
 
 
-###  https://w3id.org/airo#AIUser
-airo:AIUser rdf:type owl:Class .
+###  https://w3id.org/airo#AIDeployer
+airo:AIDeployer rdf:type owl:Class .
 
 
 ###  https://w3id.org/airo#Algorithm
@@ -218,8 +218,8 @@ vair:AdversarialAttack rdf:type owl:Class ;
                        rdfs:subClassOf vair:Attack .
 
 
-###  https://w3id.org/vair#AdvertisingVacancies
-vair:AdvertisingVacancies rdf:type owl:Class ;
+###  https://w3id.org/vair#PlacingTargetedJobAdvert
+vair:PlacingTargetedJobAdvert rdf:type owl:Class ;
                           rdfs:subClassOf vair:Assessment .
 
 
@@ -288,8 +288,8 @@ vair:AssessingPersonalityTraits rdf:type owl:Class ;
                                 rdfs:subClassOf vair:Assessment .
 
 
-###  https://w3id.org/vair#AssessingRiskForPotentialVictimsOfCriminalOffences
-vair:AssessingRiskForPotentialVictimsOfCriminalOffences rdf:type owl:Class ;
+###  https://w3id.org/vair#AssessingRiskOfBecomingVictimOfCrime
+vair:AssessingRiskOfBecomingVictimOfCrime rdf:type owl:Class ;
                                                         rdfs:subClassOf vair:IndividualRiskAssessment .
 
 
@@ -461,14 +461,8 @@ vair:CommonSenseReasoning rdf:type owl:Class ;
                           rdfs:subClassOf vair:ReasoningTechnique .
 
 
-###  https://w3id.org/vair#CompetentPublicAuthority
-vair:CompetentPublicAuthority rdf:type owl:Class ;
-                              rdfs:subClassOf airo:AIUser .
 
 
-###  https://w3id.org/vair#CompetentPublicAuthorityRepresentative
-vair:CompetentPublicAuthorityRepresentative rdf:type owl:Class ;
-                                            rdfs:subClassOf airo:AIUser .
 
 
 ###  https://w3id.org/vair#ComputerVision
@@ -662,8 +656,8 @@ vair:DiscoveringCrimeRelationships rdf:type owl:Class ;
                                    rdfs:subClassOf vair:Detection .
 
 
-###  https://w3id.org/vair#DispatchingEmergencyService
-vair:DispatchingEmergencyService rdf:type owl:Class ;
+###  https://w3id.org/vair#DispatchingEmergencyServiceProvider
+vair:DispatchingEmergencyServiceProvider rdf:type owl:Class ;
                                  rdfs:subClassOf vair:Planning .
 
 
@@ -682,9 +676,9 @@ vair:Education rdf:type owl:Class ;
                rdfs:subClassOf airo:Domain .
 
 
-###  https://w3id.org/vair#EmergencyService
-vair:EmergencyService rdf:type owl:Class ;
-                      rdfs:subClassOf airo:AIUser .
+###  https://w3id.org/vair#EmergencyServiceProvider
+vair:EmergencyServiceProvider rdf:type owl:Class ;
+                      rdfs:subClassOf airo:AIDeployer .
 
 
 ###  https://w3id.org/vair#EmotionRecognition
@@ -746,9 +740,7 @@ vair:EuropeanDataProtectionSupervisor rdf:type owl:Class ;
                                       rdfs:subClassOf vair:Authority .
 
 
-###  https://w3id.org/vair#EvaluatingEligibilityToAccessPublicAssistanceServices
-vair:EvaluatingEligibilityToAccessPublicAssistanceServices rdf:type owl:Class ;
-                                                           rdfs:subClassOf vair:Assessment .
+
 
 
 ###  https://w3id.org/vair#EvaluatingEmployee
@@ -836,9 +828,6 @@ vair:FeedForwardNeuralNetwork rdf:type owl:Class ;
                               rdfs:subClassOf vair:NeuralNetwork .
 
 
-###  https://w3id.org/vair#FirstResponder
-vair:FirstResponder rdf:type owl:Class ;
-                    rdfs:subClassOf airo:AIUser .
 
 
 ###  https://w3id.org/vair#Framework
@@ -889,7 +878,7 @@ vair:GrantingPublicAssistanceService rdf:type owl:Class ;
 vair:GrantingPublicAssistanceServices rdf:type owl:Class ;
                                       rdfs:subClassOf airo:Purpose ;
                                       rdfs:isDefinedBy vair: ;
-                                      skos:definition ""@en ;
+                                      skos:definition "Granting natural persons essential public assistance benefits and services"@en ;
                                       skos:inScheme vair: ;
                                       skos:prefLabel "Granting Public Assistance Services"@en ;
                                       skos:related vair:PublicService .
@@ -1192,12 +1181,8 @@ vair:JobApplicant rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#JobApplicationAnalysis
 vair:JobApplicationAnalysis rdf:type owl:Class ;
-                            rdfs:subClassOf airo:Purpose ;
-                            rdfs:isDefinedBy vair: ;
-                            skos:definition ""@en ;
-                            skos:inScheme vair: ;
-                            skos:prefLabel "Job Application Analysis"@en ;
-                            skos:related vair:Employment .
+                            rdfs:subClassOf airo:Purpose .
+
 
 
 ###  https://w3id.org/vair#JobApplicationFiltering
@@ -1207,12 +1192,12 @@ vair:JobApplicationFiltering rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#JudicialAuthority
 vair:JudicialAuthority rdf:type owl:Class ;
-                       rdfs:subClassOf airo:AIUser .
+                       rdfs:subClassOf airo:AIDeployer .
 
 
 ###  https://w3id.org/vair#JudicialAuthorityRepresentative
 vair:JudicialAuthorityRepresentative rdf:type owl:Class ;
-                                     rdfs:subClassOf airo:AIUser .
+                                     rdfs:subClassOf airo:AIDeployer .
 
 
 ###  https://w3id.org/vair#KnowledgeBasedTechnique
@@ -1246,12 +1231,12 @@ vair:LawEnforcement rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#LawEnforcementAuthority
 vair:LawEnforcementAuthority rdf:type owl:Class ;
-                             rdfs:subClassOf airo:AIUser .
+                             rdfs:subClassOf airo:AIDeployer .
 
 
-###  https://w3id.org/vair#LawEnforcementAuthorityRepresentative
-vair:LawEnforcementAuthorityRepresentative rdf:type owl:Class ;
-                                           rdfs:subClassOf airo:AIUser .
+###  https://w3id.org/vair#LawEnforcementAuthorityAgent
+vair:LawEnforcementAuthorityAgent rdf:type owl:Class ;
+                                           rdfs:subClassOf airo:AIDeployer .
 
 
 ###  https://w3id.org/vair#LearningTechnique
@@ -1352,8 +1337,8 @@ vair:MakingPromotionDecision rdf:type owl:Class ;
                              rdfs:subClassOf vair:Assessment .
 
 
-###  https://w3id.org/vair#MakingTerminationDecision
-vair:MakingTerminationDecision rdf:type owl:Class ;
+###  https://w3id.org/vair#MakingContractTerminationDecision
+vair:MakingContractTerminationDecision rdf:type owl:Class ;
                                rdfs:subClassOf vair:Assessment .
 
 
@@ -1456,9 +1441,6 @@ vair:NarrowAI rdf:type owl:Class ;
 vair:NationalAuthority rdf:type owl:Class .
 
 
-###  https://w3id.org/vair#NationalCompetentAuthority
-vair:NationalCompetentAuthority rdf:type owl:Class ;
-                                rdfs:subClassOf airo:Stakeholder .
 
 
 ###  https://w3id.org/vair#NationalPublicAuthority
@@ -1694,12 +1676,12 @@ vair:PsychologicalHealth rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#PublicAuthority
 vair:PublicAuthority rdf:type owl:Class ;
-                     rdfs:subClassOf airo:AIUser .
+                     rdfs:subClassOf airo:AIDeployer .
 
 
-###  https://w3id.org/vair#PublicAuthorityRepresentative
-vair:PublicAuthorityRepresentative rdf:type owl:Class ;
-                                   rdfs:subClassOf airo:AIUser .
+###  https://w3id.org/vair#PublicAuthorityAgent
+vair:PublicAuthorityAgent rdf:type owl:Class ;
+                                   rdfs:subClassOf airo:AIDeployer .
 
 
 ###  https://w3id.org/vair#PublicService
@@ -2116,8 +2098,8 @@ vair:AdversarialAttack rdf:type owl:NamedIndividual ,
                                 vair:Concept .
 
 
-###  https://w3id.org/vair#AdvertisingVacancies
-vair:AdvertisingVacancies rdf:type owl:NamedIndividual ,
+###  https://w3id.org/vair#PlacingTargetedJobAdvert
+vair:PlacingTargetedJobAdvert rdf:type owl:NamedIndividual ,
                                    skos:Concept ,
                                    vair:Concept .
 
@@ -2211,8 +2193,8 @@ vair:AssessingPersonalityTraits rdf:type owl:NamedIndividual ,
                                          vair:Concept .
 
 
-###  https://w3id.org/vair#AssessingRiskForPotentialVictimsOfCriminalOffences
-vair:AssessingRiskForPotentialVictimsOfCriminalOffences rdf:type owl:NamedIndividual ,
+###  https://w3id.org/vair#AssessingRiskOfBecomingVictimOfCrime
+vair:AssessingRiskOfBecomingVictimOfCrime rdf:type owl:NamedIndividual ,
                                                                  skos:Concept ,
                                                                  vair:Concept .
 
@@ -2418,16 +2400,9 @@ vair:CommonSenseReasoning rdf:type owl:NamedIndividual ,
                                    vair:Concept .
 
 
-###  https://w3id.org/vair#CompetentPublicAuthority
-vair:CompetentPublicAuthority rdf:type owl:NamedIndividual ,
-                                       skos:Concept ,
-                                       vair:Concept .
 
 
-###  https://w3id.org/vair#CompetentPublicAuthorityRepresentative
-vair:CompetentPublicAuthorityRepresentative rdf:type owl:NamedIndividual ,
-                                                     skos:Concept ,
-                                                     vair:Concept .
+
 
 
 ###  https://w3id.org/vair#ComputerVision
@@ -2706,8 +2681,8 @@ vair:Education rdf:type owl:NamedIndividual ,
                         vair:Concept .
 
 
-###  https://w3id.org/vair#EmergencyService
-vair:EmergencyService rdf:type owl:NamedIndividual ,
+###  https://w3id.org/vair#EmergencyServiceProvider
+vair:EmergencyServiceProvider rdf:type owl:NamedIndividual ,
                                skos:Concept ,
                                vair:Concept .
 
@@ -2914,10 +2889,6 @@ vair:FeedForwardNeuralNetwork rdf:type owl:NamedIndividual ,
                                        vair:Concept .
 
 
-###  https://w3id.org/vair#FirstResponder
-vair:FirstResponder rdf:type owl:NamedIndividual ,
-                             skos:Concept ,
-                             vair:Concept .
 
 
 ###  https://w3id.org/vair#Freedom
@@ -3390,8 +3361,8 @@ vair:LawEnforcementAuthority rdf:type owl:NamedIndividual ,
                                       vair:Concept .
 
 
-###  https://w3id.org/vair#LawEnforcementAuthorityRepresentative
-vair:LawEnforcementAuthorityRepresentative rdf:type owl:NamedIndividual ,
+###  https://w3id.org/vair#LawEnforcementAuthorityAgent
+vair:LawEnforcementAuthorityAgent rdf:type owl:NamedIndividual ,
                                                     skos:Concept ,
                                                     vair:Concept .
 
@@ -3504,8 +3475,8 @@ vair:MakingPromotionDecision rdf:type owl:NamedIndividual ,
                                       vair:Concept .
 
 
-###  https://w3id.org/vair#MakingTerminationDecision
-vair:MakingTerminationDecision rdf:type owl:NamedIndividual ,
+###  https://w3id.org/vair#MakingContractTerminationDecision
+vair:MakingContractTerminationDecision rdf:type owl:NamedIndividual ,
                                         skos:Concept ,
                                         vair:Concept .
 
@@ -3635,10 +3606,6 @@ vair:NarrowAI rdf:type owl:NamedIndividual ,
                        vair:Concept .
 
 
-###  https://w3id.org/vair#NationalCompetentAuthority
-vair:NationalCompetentAuthority rdf:type owl:NamedIndividual ,
-                                         skos:Concept ,
-                                         vair:Concept .
 
 
 ###  https://w3id.org/vair#NationalPublicAuthority
@@ -3973,8 +3940,8 @@ vair:PublicAuthority rdf:type owl:NamedIndividual ,
                               vair:Concept .
 
 
-###  https://w3id.org/vair#PublicAuthorityRepresentative
-vair:PublicAuthorityRepresentative rdf:type owl:NamedIndividual ,
+###  https://w3id.org/vair#PublicAuthorityAgent
+vair:PublicAuthorityAgent rdf:type owl:NamedIndividual ,
                                             skos:Concept ,
                                             vair:Concept .
 
@@ -4160,10 +4127,6 @@ vair:SearchMethod rdf:type owl:NamedIndividual ,
                            vair:Concept .
 
 
-###  https://w3id.org/vair#SelfEmployment
-vair:SelfEmployment rdf:type owl:NamedIndividual ,
-                             skos:Concept ,
-                             vair:Concept .
 
 
 ###  https://w3id.org/vair#SemiSupervisedLearning
@@ -4513,10 +4476,10 @@ vair:AdversarialAttack rdfs:isDefinedBy vair: ;
                        skos:related vair:Model .
 
 
-vair:AdvertisingVacancies rdfs:isDefinedBy vair: ;
-                          skos:definition ""@en ;
+vair:PlacingTargetedJobAdvert rdfs:isDefinedBy vair: ;
+                          skos:definition "Placing targeted job advertisments"@en ;
                           skos:inScheme vair: ;
-                          skos:prefLabel "Advertising Vacancies"@en ;
+                          skos:prefLabel "Placing Targeted Job Advert"@en ;
                           skos:related vair:Employment .
 
 
@@ -4605,8 +4568,8 @@ vair:AssessingPersonalityTraits rdfs:isDefinedBy vair: ;
                                 skos:prefLabel "Assessing Personality Traits"@en .
 
 
-vair:AssessingRiskForPotentialVictimsOfCriminalOffences rdfs:isDefinedBy vair: ;
-                                                        skos:definition ""@en ;
+vair:AssessingRiskOfBecomingVictimOfCrime rdfs:isDefinedBy vair: ;
+                                                        skos:definition "Assessing risk of a natural person becoming the victim of criminal offences"@en ;
                                                         skos:inScheme vair: ;
                                                         skos:prefLabel "Assessing Risk For Potential Victims Of Criminal Offences"@en ;
                                                         skos:related vair:LawEnforcement .
@@ -4722,7 +4685,7 @@ vair:BayesianOptimisation rdfs:isDefinedBy vair: ;
 
 
 vair:BehaviourAnalysis rdfs:isDefinedBy vair: ;
-                       skos:definition ""@en ;
+                       skos:definition "Capability of a system for analysing people's behaviour"@en ;
                        skos:inScheme vair: ;
                        skos:prefLabel "Behaviour Analysis"@en .
 
@@ -4828,16 +4791,9 @@ vair:CommonSenseReasoning rdfs:isDefinedBy vair: ;
                           skos:prefLabel "Common Sense Reasoning"@en .
 
 
-vair:CompetentPublicAuthority rdfs:isDefinedBy vair: ;
-                              skos:definition "competent public authorities"@en ;
-                              skos:inScheme vair: ;
-                              skos:prefLabel "Competent Public Authority "@en .
 
 
-vair:CompetentPublicAuthorityRepresentative rdfs:isDefinedBy vair: ;
-                                            skos:definition "an entity that acts on behalf of competent public authorities"@en ;
-                                            skos:inScheme vair: ;
-                                            skos:prefLabel "Competent Public Authority Representative"@en .
+
 
 
 vair:ComputerVision rdfs:isDefinedBy vair: ;
@@ -5044,7 +5000,7 @@ vair:DeterminingAdmissionToVocationalTrainingInstitutions rdfs:isDefinedBy vair:
 
 
 vair:DeterminingCreditScore rdfs:isDefinedBy vair: ;
-                            skos:definition ""@en ;
+                            skos:definition "Determining credit score of a person"@en ;
                             skos:inScheme vair: ;
                             skos:prefLabel "Determining Credit Score"@en ;
                             skos:related vair:Finance .
@@ -5101,8 +5057,8 @@ vair:Education rdfs:isDefinedBy vair: ;
                skos:prefLabel "Education"@en .
 
 
-vair:EmergencyService rdfs:isDefinedBy vair: ;
-                      skos:definition ""@en ;
+vair:EmergencyServiceProvider rdfs:isDefinedBy vair: ;
+                      skos:definition "Provider of emergency first response services"@en ;
                       skos:inScheme vair: ;
                       skos:prefLabel "Emergency Service"@en .
 
@@ -5126,7 +5082,7 @@ vair:Employee rdfs:isDefinedBy vair: ;
 
 
 vair:Employment rdfs:isDefinedBy vair: ;
-                skos:definition ""@en ;
+                skos:definition "Refers to employment, workers’ management and access to self-employment"@en ;
                 skos:inScheme vair: ;
                 skos:prefLabel "Employment"@en .
 
@@ -5200,14 +5156,14 @@ vair:EvaluatingEmployee rdfs:isDefinedBy vair: ;
 
 
 vair:EvaluatingEmployeeBehaviour rdfs:isDefinedBy vair: ;
-                                 skos:definition ""@en ;
+                                 skos:definition "Evaluating the behaviour of persons in work-related relationships."@en ;
                                  skos:inScheme vair: ;
                                  skos:prefLabel "Evaluating Employee Behaviour"@en ;
                                  skos:related vair:Employment .
 
 
 vair:EvaluatingEmployeePerformance rdfs:isDefinedBy vair: ;
-                                   skos:definition ""@en ;
+                                   skos:definition "Evaluating the performance of persons in work-related relationships."@en ;
                                    skos:inScheme vair: ;
                                    skos:prefLabel "Evaluating Employee Performance"@en ;
                                    skos:related vair:Employment .
@@ -5221,7 +5177,7 @@ vair:EvaluatingInterview rdfs:isDefinedBy vair: ;
 
 
 vair:EvaluatingJobCandidates rdfs:isDefinedBy vair: ;
-                             skos:definition ""@en ;
+                             skos:definition "Evaluation of job candidates"@en ;
                              skos:inScheme vair: ;
                              skos:prefLabel "Evaluating Job Candidates"@en ;
                              skos:related vair:Employment .
@@ -5307,10 +5263,7 @@ vair:FeedForwardNeuralNetwork rdfs:isDefinedBy vair: ;
                               skos:prefLabel "Feed Forward Neural Network"@en .
 
 
-vair:FirstResponder rdfs:isDefinedBy vair: ;
-                    skos:definition ""@en ;
-                    skos:inScheme vair: ;
-                    skos:prefLabel "First Responder"@en .
+
 
 
 vair:Freedom rdfs:isDefinedBy vair: ;
@@ -5381,7 +5334,7 @@ vair:Health rdfs:isDefinedBy vair: ;
 
 
 vair:HealthInsurancePricing rdfs:isDefinedBy vair: ;
-                            skos:definition ""@en ;
+                            skos:definition "Pricing in relation to natural persons in the case of health insurance"@en ;
                             skos:inScheme vair: ;
                             skos:prefLabel "Health Insurance Pricing"@en ;
                             skos:related vair:PrivateService ,
@@ -5389,7 +5342,7 @@ vair:HealthInsurancePricing rdfs:isDefinedBy vair: ;
 
 
 vair:HealthInsuranceRiskAssessment rdfs:isDefinedBy vair: ;
-                                   skos:definition ""@en ;
+                                   skos:definition "Risk assessment in relation to natural persons in the case of health insurance"@en ;
                                    skos:inScheme vair: ;
                                    skos:prefLabel "Health Insurance Risk Assessment"@en ;
                                    skos:related vair:PrivateService ,
@@ -5779,7 +5732,7 @@ vair:LawEnforcementAuthority rdfs:isDefinedBy vair: ;
                              skos:prefLabel "Law Enforcement Authority"@en .
 
 
-vair:LawEnforcementAuthorityRepresentative rdfs:isDefinedBy vair: ;
+vair:LawEnforcementAuthorityAgent rdfs:isDefinedBy vair: ;
                                            skos:definition "an entity that acts on behalf of law enforcement authorities"@en ;
                                            skos:inScheme vair: ;
                                            skos:prefLabel "Law Enforcement Authority Representative"@en .
@@ -5799,7 +5752,7 @@ vair:Library rdfs:isDefinedBy vair: ;
 
 
 vair:LifeInsurancePricing rdfs:isDefinedBy vair: ;
-                          skos:definition ""@en ;
+                          skos:definition "Pricing in relation to natural persons in the case of life insurance"@en ;
                           skos:inScheme vair: ;
                           skos:prefLabel "Life Insurance Pricing"@en ;
                           skos:related vair:PrivateService ,
@@ -5807,7 +5760,7 @@ vair:LifeInsurancePricing rdfs:isDefinedBy vair: ;
 
 
 vair:LifeInsuranceRiskAssessment rdfs:isDefinedBy vair: ;
-                                 skos:definition ""@en ;
+                                 skos:definition "Risk assessment in relation to natural persons in the case of life insurance"@en ;
                                  skos:inScheme vair: ;
                                  skos:prefLabel "Life Insurance Risk Assessment"@en ;
                                  skos:related vair:PrivateService ,
@@ -5902,10 +5855,10 @@ vair:MakingPromotionDecision rdfs:isDefinedBy vair: ;
                              skos:related vair:Employment .
 
 
-vair:MakingTerminationDecision rdfs:isDefinedBy vair: ;
+vair:MakingContractTerminationDecision rdfs:isDefinedBy vair: ;
                                skos:definition "Making decisions on termination of work-related contractual relationship"@en ;
                                skos:inScheme vair: ;
-                               skos:prefLabel "Making Termination Decision"@en ;
+                               skos:prefLabel "Making Contract Termination Decision"@en ;
                                skos:related vair:Employment .
 
 
@@ -5998,14 +5951,14 @@ vair:Monitoring rdfs:isDefinedBy vair: ;
 
 
 vair:MonitoringEmployeeBehaviour rdfs:isDefinedBy vair: ;
-                                 skos:definition ""@en ;
+                                 skos:definition "Monitoring the behaviour of persons in work-related relationships."@en ;
                                  skos:inScheme vair: ;
                                  skos:prefLabel "Monitoring Employee Behaviour"@en ;
                                  skos:related vair:Employment .
 
 
 vair:MonitoringEmployeePerformance rdfs:isDefinedBy vair: ;
-                                   skos:definition ""@en ;
+                                   skos:definition "Monitoring the performance of persons in work-related relationships"@en ;
                                    skos:inScheme vair: ;
                                    skos:prefLabel "Monitoring Employee Performance"@en ;
                                    skos:related vair:Employment .
@@ -6035,10 +5988,7 @@ vair:NarrowAI rdfs:isDefinedBy vair: ;
               skos:prefLabel "Narrow AI"@en .
 
 
-vair:NationalCompetentAuthority rdfs:isDefinedBy vair: ;
-                                skos:definition "refers to any of the following: the national supervisory authority  and the market surveillance authority. As regards AI systems put into service or used by EU institutions, agencies, offices and bodies, the European Data Protection Supervisor shall fulfil the responsibilities that in the Member States are entrusted to the national competent authority and, as relevant, any reference to national competent authorities or market surveillance authorities in this Regulation shall be understood as referring to the European Data Protection Supervisor"@en ;
-                                skos:inScheme vair: ;
-                                skos:prefLabel "National Competent Authority"@en .
+
 
 
 vair:NationalPublicAuthority rdfs:isDefinedBy vair: ;
@@ -6195,7 +6145,7 @@ vair:Perpetrator rdfs:isDefinedBy vair: ;
 
 
 vair:PersonalityTraitsAnalysis rdfs:isDefinedBy vair: ;
-                               skos:definition ""@en ;
+                               skos:definition "Capability of a system in determining and analysing people's personality traits"@en ;
                                skos:inScheme vair: ;
                                skos:prefLabel "Personality Traits Analysis"@en .
 
@@ -6283,7 +6233,7 @@ vair:PrioritisationOfEmergencyService rdfs:isDefinedBy vair: ;
 
 
 vair:PrivateService rdfs:isDefinedBy vair: ;
-                    skos:definition ""@en ;
+                    skos:definition "Business of supplying a service by a private body"@en ;
                     skos:inScheme vair: ;
                     skos:prefLabel "Private Service"@en .
 
@@ -6337,14 +6287,14 @@ vair:PublicAuthority rdfs:isDefinedBy vair: ;
                      skos:prefLabel "Public Authority"@en .
 
 
-vair:PublicAuthorityRepresentative rdfs:isDefinedBy vair: ;
+vair:PublicAuthorityAgent rdfs:isDefinedBy vair: ;
                                    skos:definition "an entity that acts on behalf of public authorities"@en ;
                                    skos:inScheme vair: ;
                                    skos:prefLabel "Public Authority Representative"@en .
 
 
 vair:PublicService rdfs:isDefinedBy vair: ;
-                   skos:definition ""@en ;
+                   skos:definition "Business of supplying a commodity or a service by a govermental or public body"@en ;
                    skos:inScheme vair: ;
                    skos:prefLabel "Public Service"@en .
 
@@ -6374,14 +6324,14 @@ vair:ReasoningTechnique rdfs:isDefinedBy vair: ;
 
 
 vair:ReclaimingPublicAssistanceServices rdfs:isDefinedBy vair: ;
-                                        skos:definition ""@en ;
+                                        skos:definition "Reclaiming essential public assistance benefits and services"@en ;
                                         skos:inScheme vair: ;
                                         skos:prefLabel "Reclaiming Public Assistance Services"@en ;
                                         skos:related vair:PublicService .
 
 
 vair:RecognisingEmotions rdfs:isDefinedBy vair: ;
-                         skos:definition "recognising emotions of a natural person"@en ;
+                         skos:definition "Recognising emotions of a natural person"@en ;
                          skos:inScheme vair: ;
                          skos:prefLabel "Recognising Emotions "@en .
 
@@ -6400,7 +6350,7 @@ vair:RecommenderSystem rdfs:isDefinedBy vair: ;
 
 
 vair:Recruiting rdfs:isDefinedBy vair: ;
-                skos:definition ""@en ;
+                skos:definition "Recruiting people for a job"@en ;
                 skos:inScheme vair: ;
                 skos:prefLabel "Recruiting"@en .
 
@@ -6463,7 +6413,7 @@ vair:ReversingOutcome rdfs:isDefinedBy vair: ;
 
 
 vair:RevokingPublicAssistanceServices rdfs:isDefinedBy vair: ;
-                                      skos:definition ""@en ;
+                                      skos:definition "Revoking essential public assistance benefits and services"@en ;
                                       skos:inScheme vair: ;
                                       skos:prefLabel "Revoking Public Assistance Services"@en ;
                                       skos:related vair:PublicService .
@@ -7013,6 +6963,318 @@ vair:Detecting rdf:type owl:NamedIndividual ,
                                                    vair:Concept .
 
 vair:Detecting rdfs:isDefinedBy vair: ;
-                                                   skos:definition "Detecting purposes"@en ;
+                                                   skos:definition  "Purposes related to detecting"@en ;
                                                    skos:inScheme vair: ;
                                                    skos:prefLabel "Detecting"@en .
+###  https://w3id.org/vair#SelectingPeople
+vair:SelectingPeople rdf:type owl:Class ;
+                                                   rdfs:subClassOf vair:Assessment .
+
+###  https://w3id.org/vair#SelectingPeople
+vair:SelectingPeople rdf:type owl:NamedIndividual ,
+                                                   skos:Concept ,
+                                                   vair:Concept .
+
+vair:SelectingPeople rdfs:isDefinedBy vair: ;
+                                                   skos:definition "Selecting people for a job for a position "@en ;
+                                                   skos:inScheme vair: ;
+                                                   skos:prefLabel "Selecting People"@en .     
+
+
+vair:JobApplicationAnalysis rdfs:isDefinedBy vair: ;
+                            skos:definition "Analysis of job applications"@en ;
+                            skos:inScheme vair: ;
+                            skos:prefLabel "Job Application Analysis"@en ;
+                            skos:related vair:Employment .   
+
+###  https://w3id.org/vair#JobApplicationScreening
+vair:JobApplicationScreening rdf:type owl:Class ;
+                                                   rdfs:subClassOf airo:Purpose .
+
+###  https://w3id.org/vair#JobApplicationScreening
+vair:JobApplicationScreening rdf:type owl:NamedIndividual ,
+                                                   skos:Concept ,
+                                                   vair:Concept .
+
+vair:JobApplicationScreening rdfs:isDefinedBy vair: ;
+                                                   skos:definition "Screening job applications "@en ;
+                                                   skos:inScheme vair: ;
+                                                   skos:prefLabel "Job Application Screening"@en .
+
+###  https://w3id.org/vair#EvaluatingJobInterview
+vair:EvaluatingJobInterview rdf:type owl:Class ;
+                                                   rdfs:subClassOf vair:Assessment .
+
+###  https://w3id.org/vair#EvaluatingJobInterview
+vair:EvaluatingJobInterview rdf:type owl:NamedIndividual ,
+                                                   skos:Concept ,
+                                                   vair:Concept .
+
+vair:EvaluatingJobInterview rdfs:isDefinedBy vair: ;
+                                                   skos:definition "Evaluation of job interviews"@en ;
+                                                   skos:inScheme vair: ;
+                                                   skos:prefLabel "Evaluating Job Interview"@en . 
+
+###  https://w3id.org/vair#MakingDecisionOnTermsOfWorkRelatedRelations
+vair:MakingDecisionOnTermsofWorkRelatedRelations rdf:type owl:Class ;
+                                                   rdfs:subClassOf vair:Assessment .
+
+###  https://w3id.org/vair#MakingDecisionOnTermsOfWorkRelatedRelations
+vair:MakingDecisionOnTermsOfWorkRelatedRelations rdf:type owl:NamedIndividual ,
+                                                   skos:Concept ,
+                                                   vair:Concept .
+
+vair:MakingDecisionOnTermsOfWorkRelatedRelations rdfs:isDefinedBy vair: ;
+                                                   skos:definition "Making decisions affecting terms of work-related relationships"@en ;
+                                                   skos:inScheme vair: ;
+                                                   skos:prefLabel "Making Decision On Terms Of Work-Related Relations"@en .      
+###  https://w3id.org/vair#EvaluatingEligibilityForPublicAssistanceServices
+vair:EvaluatingEligibilityForPublicAssistanceServices rdf:type owl:Class ;
+                                                           rdfs:subClassOf vair:Assessment .
+
+###  https://w3id.org/vair#EvaluatingEligibilityForPublicAssistanceServices
+vair:EvaluatingEligibilityForPublicAssistanceServices rdf:type owl:NamedIndividual ,
+                                                   skos:Concept ,
+                                                   vair:Concept .
+
+vair:EvaluatingEligibilityForPublicAssistanceServices rdfs:isDefinedBy vair: ;
+                                                   skos:definition "Evaluating the eligibility of natural persons for essential public assistance benefits and services, including healthcare services,"@en ;
+                                                   skos:inScheme vair: ;
+                                                   skos:prefLabel "Evaluating Eligibility For Public Assistance Services"@en .
+### https://w3id.org/vair#EvaluatingEligibilityforHealthCareServices
+vair:EvaluatingEligibilityforHealthCareServices rdf:type owl:Class ;
+rdfs:subClassOf vair:EvaluatingEligibilityForPublicAssistanceServices . 
+### https://w3id.org/vair#EvaluatingEligibilityforHealthCareServices
+vair:EvaluatingEligibilityforHealthCareServices rdf:type owl:NamedIndividual , 
+                                                skos:Concept , 
+                                                vair:Concept . 
+
+vair:EvaluatingEligibilityforHealthCareServices rdfs:isDefinedBy vair: ;
+     skos:definition "Evaluating the eligibility of natural persons for healthcare services"@en ; 
+     skos:inScheme vair: ; 
+     skos:prefLabel "EvaluatingEligibilityforHealthCareServices"@en .                                                   
+
+###  https://w3id.org/vair#GrantingHealthCareServices
+vair:GrantingHealthCareServices rdf:type owl:Class ;
+                                                           rdfs:subClassOf vair:GrantingPublicAssistanceServices .
+
+###  https://w3id.org/vair#GrantingHealthCareServices
+vair:GrantingHealthCareServices rdf:type owl:NamedIndividual ,
+                                                   skos:Concept ,
+                                                   vair:Concept .
+
+vair:GrantingHealthCareServices rdfs:isDefinedBy vair: ;
+                                                   skos:definition "Granting natural persons healthcare services"@en ;
+                                                   skos:inScheme vair: ;
+                                                   skos:prefLabel "Granting Health Care Services"@en .
+
+###  https://w3id.org/vair#ReducingHealthCareServices
+vair:ReducingHealthCareServices rdf:type owl:Class ;
+                                        rdfs:subClassOf vair:ReducingPublicAssistanceServices .
+
+###  https://w3id.org/vair#ReducingHealthCareServices
+vair:ReducingHealthCareServices rdf:type owl:NamedIndividual ,
+                                                   skos:Concept ,
+                                                   vair:Concept .
+
+vair:ReducingHealthCareServices rdfs:isDefinedBy vair: ;
+                                                   skos:definition "Reducing natural persons healthcare services"@en ;
+                                                   skos:inScheme vair: ;
+                                                   skos:prefLabel "Reducing Health Care Services"@en .
+
+###  https://w3id.org/vair#RevokingHealthCareServices
+vair:RevokingHealthCareServices rdf:type owl:Class ;
+                                        rdfs:subClassOf vair:RevokingPublicAssistanceServices .
+
+###  https://w3id.org/vair#RevokingHealthCareServices
+vair:RevokingHealthCareServices rdf:type owl:NamedIndividual ,
+                                                   skos:Concept ,
+                                                   vair:Concept .
+
+vair:RevokingHealthCareServices rdfs:isDefinedBy vair: ;
+                                                   skos:definition "Revoking natural persons healthcare services"@en ;
+                                                   skos:inScheme vair: ;
+                                                   skos:prefLabel "Revoking Health Care Services"@en .  
+
+###  https://w3id.org/vair#ReclaimingHealthCareServices
+vair:ReclaimingHealthCareServices rdf:type owl:Class ;
+                                                           rdfs:subClassOf vair:ReclaimingPublicAssistanceServices .
+
+###  https://w3id.org/vair#ReclaimingHealthCareServices
+vair:ReclaimingHealthCareServices rdf:type owl:NamedIndividual ,
+                                                   skos:Concept ,
+                                                   vair:Concept .
+
+vair:ReclaimingHealthCareServices rdfs:isDefinedBy vair: ;
+                                                   skos:definition "Reclaiming natural persons healthcare services"@en ;
+                                                   skos:inScheme vair: ;
+                                                   skos:prefLabel "Reclaiming Health Care Services"@en .    
+
+###  https://w3id.org/vair#Family
+vair:Family rdf:type owl:Class ;
+                                                           rdfs:subClassOf airo:AISubject .
+
+###  https://w3id.org/vair#Family
+vair:Family rdf:type owl:NamedIndividual ,
+                                                   skos:Concept ,
+                                                   vair:Concept .
+
+vair:Family rdfs:isDefinedBy vair: ;
+                                                   skos:definition "A group of people related to each other by blood or marraige"@en ;
+                                                   skos:inScheme vair: ;
+                                                   skos:prefLabel "Family"@en .
+
+###  https://w3id.org/vair#PublicServicesRecipient
+vair:PublicServicesRecipient rdf:type owl:Class ;
+                                                           rdfs:subClassOf airo:AISubject .
+
+###  https://w3id.org/vair#PublicServicesRecipient
+vair:PublicServicesRecipient rdf:type owl:NamedIndividual ,
+                                                   skos:Concept ,
+                                                   vair:Concept .
+
+vair:PublicServicesRecipient rdfs:isDefinedBy vair: ;
+                                                   skos:definition "Person who is recipient of public services and benefits"@en ;
+                                                   skos:inScheme vair: ;
+                                                   skos:prefLabel "Public Services Recipient"@en . 
+###  https://w3id.org/vair#EmergancyTriage
+vair:EmergancyTriage rdf:type owl:Class ;
+                                                           rdfs:subClassOf vair:Assessment .
+
+###  https://w3id.org/vair#EmergancyTriage
+vair:EmergancyTriage rdf:type owl:NamedIndividual ,
+                                                   skos:Concept ,
+                                                   vair:Concept .
+
+vair:EmergancyTriage rdfs:isDefinedBy vair: ;
+                                                   skos:definition "Emergency healthcare patient triage"@en ;
+                                                   skos:inScheme vair: ;
+                                                   skos:prefLabel "Emergancy Triage"@en .    
+
+###  https://w3id.org/vair#Police
+vair:Police rdf:type owl:Class ;
+                                                           rdfs:subClassOf vair:EmergencyServiceProvider .
+
+###  https://w3id.org/vair#Police
+vair:Police rdf:type owl:NamedIndividual ,
+                                                   skos:Concept ,
+                                                   vair:Concept .
+
+vair:Police rdfs:isDefinedBy vair: ;
+                                                   skos:definition "Police"@en ;
+                                                   skos:inScheme vair: ;
+                                                   skos:prefLabel "Police"@en .
+###  https://w3id.org/vair#Firefighter
+vair:Firefighter rdf:type owl:Class ;
+                                                           rdfs:subClassOf vair:EmergencyServiceProvider .
+
+###  https://w3id.org/vair#Firefighter
+vair:Firefighter rdf:type owl:NamedIndividual ,
+                                                   skos:Concept ,
+                                                   vair:Concept .
+
+vair:Firefighter rdfs:isDefinedBy vair: ;
+                                                   skos:definition "Firefighters"@en ;
+                                                   skos:inScheme vair: ;
+                                                   skos:prefLabel "Firefighter"@en .
+###  https://w3id.org/vair#MedicalAid
+vair:MedicalAid  rdf:type owl:Class ;
+                                                           rdfs:subClassOf vair:EmergencyServiceProvider .
+
+###  https://w3id.org/vair#MedicalAid
+vair:MedicalAid  rdf:type owl:NamedIndividual ,
+                                                   skos:Concept ,
+                                                   vair:Concept .
+
+vair:MedicalAid  rdfs:isDefinedBy vair: ;
+                                                   skos:definition "Medical aid"@en ;
+                                                   skos:inScheme vair: ;
+                                                   skos:prefLabel "Medical Aid"@en .   
+
+###  https://w3id.org/vair#EvaluatingEmergencyCall
+
+vair:EvaluatingEmergencyCall rdf:type owl:Class ;
+                                                           rdfs:subClassOf vair:Assessment .
+
+###  https://w3id.org/vair#EvaluatingEmergencyCall
+vair:EvaluatingEmergencyCall  rdf:type owl:NamedIndividual ,
+                                                   skos:Concept ,
+                                                   vair:Concept .
+
+vair:EvaluatingEmergencyCall  rdfs:isDefinedBy vair: ;
+                                                   skos:definition "Evaluating emergency calls by natural persons"@en ;
+                                                   skos:inScheme vair: ;
+                                                   skos:prefLabel "Evaluating Emergency Call"@en .
+
+###  https://w3id.org/vair#ClassifyingEmergencyCall
+
+vair:ClassifyingEmergencyCall rdf:type owl:Class ;
+                                                           rdfs:subClassOf vair:Assessment .
+
+###  https://w3id.org/vair#ClassifyingEmergencyCall
+vair:ClassifyingEmergencyCall  rdf:type owl:NamedIndividual ,
+                                                   skos:Concept ,
+                                                   vair:Concept .
+
+vair:ClassifyingEmergencyCall  rdfs:isDefinedBy vair: ;
+                                                   skos:definition "Classifying emergency calls by natural persons"@en ;
+                                                   skos:inScheme vair: ;
+                                                   skos:prefLabel "Classifying Emergency Call"@en .  
+###  https://w3id.org/vair#EUInstitution
+
+vair:EUInstitution rdf:type owl:Class ;
+                                                           rdfs:subClassOf airo:AIOperator .
+
+###  https://w3id.org/vair#EUInstitution
+vair:EUInstitution  rdf:type owl:NamedIndividual ,
+                                                   skos:Concept ,
+                                                   vair:Concept .
+
+vair:EUInstitution  rdfs:isDefinedBy vair: ;
+                                                   skos:definition "Union institution"@en ;
+                                                   skos:inScheme vair: ;
+                                                   skos:prefLabel "EU Institution"@en .   
+###  https://w3id.org/vair#EUAgency
+
+vair:EUAgency rdf:type owl:Class ;
+                                                           rdfs:subClassOf airo:AIOperator .
+
+###  https://w3id.org/vair#EUAgency
+vair:EUAgency  rdf:type owl:NamedIndividual ,
+                                                   skos:Concept ,
+                                                   vair:Concept .
+
+vair:EUAgency  rdfs:isDefinedBy vair: ;
+                                                   skos:definition "Union agency"@en ;
+                                                   skos:inScheme vair: ;
+                                                   skos:prefLabel "EU Agency"@en .
+
+###  https://w3id.org/vair#EUOffice
+
+vair:EUOffice rdf:type owl:Class ;
+                                                           rdfs:subClassOf airo:AIOperator .
+
+###  https://w3id.org/vair#EUOffice
+vair:EUOffice  rdf:type owl:NamedIndividual ,
+                                                   skos:Concept ,
+                                                   vair:Concept .
+
+vair:EUOffice  rdfs:isDefinedBy vair: ;
+                                                   skos:definition "Union office"@en ;
+                                                   skos:inScheme vair: ;
+                                                   skos:prefLabel "EU Office"@en .
+
+###  https://w3id.org/vair#EUBody
+
+vair:EUBody rdf:type owl:Class ;
+                                                           rdfs:subClassOf airo:AIOperator .
+
+###  https://w3id.org/vair#EUBody
+vair:EUBody  rdf:type owl:NamedIndividual ,
+                                                   skos:Concept ,
+                                                   vair:Concept .
+
+vair:EUBody  rdfs:isDefinedBy vair: ;
+                                                   skos:definition "Union body"@en ;
+                                                   skos:inScheme vair: ;
+                                                   skos:prefLabel "EU Body"@en .                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
