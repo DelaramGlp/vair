@@ -280,7 +280,7 @@ vair:AssessingPastCriminalBehaviour rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#AssessingPeopleRelatedRisk
 vair:AssessingPeopleRelatedRisk rdf:type owl:Class ;
-                                rdfs:subClassOf vair:Assessment .
+                                rdfs:subClassOf vair:IndividualRiskAssessment .
 
 
 ###  https://w3id.org/vair#AssessingPersonalityTraits
@@ -295,7 +295,7 @@ vair:AssessingRiskOfBecomingVictimOfCrime rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#AssessingRiskOfIrregularImmigration
 vair:AssessingRiskOfIrregularImmigration rdf:type owl:Class ;
-                                         rdfs:subClassOf vair:IndividualRiskAssessment .
+                                         rdfs:subClassOf vair:AssessingPeopleRelatedRisk .
 
 
 ###  https://w3id.org/vair#AssessingRiskOfOffending
@@ -310,8 +310,11 @@ vair:AssessingRiskOfReoffending rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#AssessingSecurityRisk
 vair:AssessingSecurityRisk rdf:type owl:Class ;
-                           rdfs:subClassOf vair:IndividualRiskAssessment .
+                           rdfs:subClassOf vair:AssessingPeopleRelatedRisk .
 
+###  https://w3id.org/vair#AssessingHealthRisk
+vair:AssessingHealthRisk rdf:type owl:Class ;
+                           rdfs:subClassOf vair:AssessingPeopleRelatedRisk .
 
 ###  https://w3id.org/vair#Assessment
 vair:Assessment rdf:type owl:Class ;
@@ -327,8 +330,8 @@ vair:AssigningPersonsToVocationalTrainingInstitutions rdf:type owl:Class ;
                                               rdfs:subClassOf vair:Assessment .                                              
 
 
-###  https://w3id.org/vair#Asylum
-vair:Asylum rdf:type owl:Class ;
+###  https://w3id.org/vair#AsylumManagement
+vair:AsylumManagement rdf:type owl:Class ;
             rdfs:subClassOf airo:Domain .
 
 
@@ -426,8 +429,8 @@ vair:Blueprint rdf:type owl:Class ;
                rdfs:subClassOf airo:Document .
 
 
-###  https://w3id.org/vair#BorderControl
-vair:BorderControl rdf:type owl:Class ;
+###  https://w3id.org/vair#BorderControlManagement
+vair:BorderControlManagement rdf:type owl:Class ;
                    rdfs:subClassOf airo:Domain .
 
 
@@ -778,10 +781,13 @@ vair:EvaluatingRecruitmentTest rdf:type owl:Class ;
                                rdfs:subClassOf vair:Assessment .
 
 
-###  https://w3id.org/vair#EvaluatingReliabilityOfEvidence
-vair:EvaluatingReliabilityOfEvidence rdf:type owl:Class ;
+###  https://w3id.org/vair#EvaluatingReliabilityOfEvidenceInInvestigationOfCriminalOffences
+vair:EvaluatingReliabilityOfEvidenceInInvestigationOfCriminalOffences rdf:type owl:Class ;
                                      rdfs:subClassOf vair:Assessment .
 
+###  https://w3id.org/vair#EvaluatingReliabilityOfEvidenceInProsecutionOfCriminalOffences
+vair:EvaluatingReliabilityOfEvidenceInProsecutionOfCriminalOffences rdf:type owl:Class ;
+                                     rdfs:subClassOf vair:Assessment .
 
 ###  https://w3id.org/vair#EvolutionaryAlgorithm
 vair:EvolutionaryAlgorithm rdf:type owl:Class ;
@@ -1024,8 +1030,8 @@ vair:ISOIECTS4213-2022 rdf:type owl:Class ;
                        rdfs:subClassOf airo:standard .
 
 
-###  https://w3id.org/vair#Identifying
-vair:Identifying rdf:type owl:Class ;
+###  https://w3id.org/vair#IdentiftyingIndividuals
+vair:IdentiftyingIndividuals rdf:type owl:Class ;
                  rdfs:subClassOf airo:Purpose .
 
 
@@ -1192,12 +1198,12 @@ vair:JobApplicationFiltering rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#JudicialAuthority
 vair:JudicialAuthority rdf:type owl:Class ;
-                       rdfs:subClassOf airo:AIDeployer .
+                       rdfs:subClassOf airo:AIOperator .
 
 
-###  https://w3id.org/vair#JudicialAuthorityRepresentative
-vair:JudicialAuthorityRepresentative rdf:type owl:Class ;
-                                     rdfs:subClassOf airo:AIDeployer .
+###  https://w3id.org/vair#JudicialAuthorityAgent
+vair:JudicialAuthorityAgent rdf:type owl:Class ;
+                                     rdfs:subClassOf airo:AIOperator .
 
 
 ###  https://w3id.org/vair#KnowledgeBasedTechnique
@@ -1231,12 +1237,12 @@ vair:LawEnforcement rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#LawEnforcementAuthority
 vair:LawEnforcementAuthority rdf:type owl:Class ;
-                             rdfs:subClassOf airo:AIDeployer .
+                             rdfs:subClassOf airo:AIOperator .
 
 
 ###  https://w3id.org/vair#LawEnforcementAuthorityAgent
 vair:LawEnforcementAuthorityAgent rdf:type owl:Class ;
-                                           rdfs:subClassOf airo:AIDeployer .
+                                           rdfs:subClassOf airo:AIOperator .
 
 
 ###  https://w3id.org/vair#LearningTechnique
@@ -1383,7 +1389,7 @@ vair:MarketSurveillanceAuthority rdf:type owl:Class ;
 
 
 ###  https://w3id.org/vair#Migration
-vair:Migration rdf:type owl:Class ;
+vair:MigrationManagement rdf:type owl:Class ;
                rdfs:subClassOf airo:Domain .
 
 
@@ -1676,12 +1682,12 @@ vair:PsychologicalHealth rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#PublicAuthority
 vair:PublicAuthority rdf:type owl:Class ;
-                     rdfs:subClassOf airo:AIDeployer .
+                     rdfs:subClassOf airo:AIOperator .
 
 
 ###  https://w3id.org/vair#PublicAuthorityAgent
 vair:PublicAuthorityAgent rdf:type owl:Class ;
-                                   rdfs:subClassOf airo:AIDeployer .
+                                   rdfs:subClassOf airo:AIOperator .
 
 
 ###  https://w3id.org/vair#PublicService
@@ -1756,12 +1762,12 @@ vair:RelationshipExtraction rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#RemoteIdentification
 vair:RemoteIdentification rdf:type owl:Class ;
-                          rdfs:subClassOf vair:Identifying .
+                          rdfs:subClassOf vair:IdentiftyingIndividuals .
 
 
 ###  https://w3id.org/vair#RemoteIdentificationOfPeople
 vair:RemoteIdentificationOfPeople rdf:type owl:Class ;
-                                  rdfs:subClassOf vair:Identifying .
+                                  rdfs:subClassOf vair:IdentiftyingIndividuals .
 
 
 ###  https://w3id.org/vair#ResidencePermitApplicant
@@ -2079,6 +2085,10 @@ vair:ActionRecognition rdf:type owl:NamedIndividual ,
                                 skos:Concept ,
                                 vair:Concept .
 
+###  https://w3id.org/vair#LieDetection
+vair:LieDetection rdf:type owl:NamedIndividual ,
+                                skos:Concept ,
+                                vair:Concept .
 
 ###  https://w3id.org/vair#AdministrationOfDemocraticProcesses
 vair:AdministrationOfDemocraticProcesses rdf:type owl:NamedIndividual ,
@@ -2163,10 +2173,9 @@ vair:AssessingHealthRisk rdf:type owl:NamedIndividual ,
                                   skos:Concept ,
                                   vair:Concept ;
                          rdfs:isDefinedBy vair: ;
-                         skos:definition ""@en ;
+                         skos:definition "Assessing health risk posed by a person"@en ;
                          skos:inScheme vair: ;
-                         skos:prefLabel "Assessing Health Risk"@en ;
-                         skos:related vair:LawEnforcement .
+                         skos:prefLabel "Assessing Health Risk"@en .
 
 
 ###  https://w3id.org/vair#AssessingImmigrationEligibility
@@ -2221,7 +2230,10 @@ vair:AssessingRiskOfReoffending rdf:type owl:NamedIndividual ,
 vair:AssessingSecurityRisk rdf:type owl:NamedIndividual ,
                                     skos:Concept ,
                                     vair:Concept .
-
+###  https://w3id.org/vair#AssessingHealthRisk
+vair:AssessingHealthRisk rdf:type owl:NamedIndividual ,
+                                    skos:Concept ,
+                                    vair:Concept .
 
 ###  https://w3id.org/vair#Assessment
 vair:Assessment rdf:type owl:NamedIndividual ,
@@ -2238,8 +2250,8 @@ vair:AssigningPersonsToVocationalTrainingInstitutions rdf:type owl:NamedIndividu
                                                        skos:Concept ,
                                                        vair:Concept .
 
-###  https://w3id.org/vair#Asylum
-vair:Asylum rdf:type owl:NamedIndividual ,
+###  https://w3id.org/vair#AsylumManagement
+vair:AsylumManagement rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      vair:Concept .
 
@@ -2358,8 +2370,8 @@ vair:Blueprint rdf:type owl:NamedIndividual ,
                         vair:Concept .
 
 
-###  https://w3id.org/vair#BorderControl
-vair:BorderControl rdf:type owl:NamedIndividual ,
+###  https://w3id.org/vair#BorderControlManagement
+vair:BorderControlManagement rdf:type owl:NamedIndividual ,
                             skos:Concept ,
                             vair:Concept .
 
@@ -2807,10 +2819,15 @@ vair:EvaluatingRecruitmentTest rdf:type owl:NamedIndividual ,
                                         vair:Concept .
 
 
-###  https://w3id.org/vair#EvaluatingReliabilityOfEvidence
-vair:EvaluatingReliabilityOfEvidence rdf:type owl:NamedIndividual ,
+###  https://w3id.org/vair#EvaluatingReliabilityOfEvidenceInInvestigationOfCriminalOffences
+vair:EvaluatingReliabilityOfEvidenceInInvestigationOfCriminalOffences rdf:type owl:NamedIndividual ,
                                               skos:Concept ,
                                               vair:Concept .
+
+###  https://w3id.org/vair#EvaluatingReliabilityOfEvidenceInProsecutionOfCriminalOffences
+vair:EvaluatingReliabilityOfEvidenceInProsecutionOfCriminalOffences rdf:type owl:NamedIndividual ,
+                                              skos:Concept ,
+                                              vair:Concept .                                              
 
 
 ###  https://w3id.org/vair#EvaluationData
@@ -3117,8 +3134,8 @@ vair:ISOIECTS4213-2022 rdf:type owl:NamedIndividual ,
                                 vair:Concept .
 
 
-###  https://w3id.org/vair#Identifying
-vair:Identifying rdf:type owl:NamedIndividual ,
+###  https://w3id.org/vair#IdentiftyingIndividuals
+vair:IdentiftyingIndividuals rdf:type owl:NamedIndividual ,
                           skos:Concept ,
                           vair:Concept .
 
@@ -3325,8 +3342,8 @@ vair:JudicialAuthority rdf:type owl:NamedIndividual ,
                                 vair:Concept .
 
 
-###  https://w3id.org/vair#JudicialAuthorityRepresentative
-vair:JudicialAuthorityRepresentative rdf:type owl:NamedIndividual ,
+###  https://w3id.org/vair#JudicialAuthorityAgent
+vair:JudicialAuthorityAgent rdf:type owl:NamedIndividual ,
                                               skos:Concept ,
                                               vair:Concept .
 
@@ -3541,7 +3558,7 @@ vair:MarketSurveillanceAuthority rdf:type owl:NamedIndividual ,
 
 
 ###  https://w3id.org/vair#Migration
-vair:Migration rdf:type owl:NamedIndividual ,
+vair:MigrationManagement rdf:type owl:NamedIndividual ,
                         skos:Concept ,
                         vair:Concept .
 
@@ -4458,13 +4475,13 @@ vair:ActionRecognition rdfs:isDefinedBy vair: ;
 
 
 vair:AdministrationOfDemocraticProcesses rdfs:isDefinedBy vair: ;
-                                         skos:definition ""@en ;
+                                         skos:definition "Administration of democratic processes "@en ;
                                          skos:inScheme vair: ;
                                          skos:prefLabel "Administration Of Democratic Processes"@en .
 
 
 vair:AdministrationOfJustice rdfs:isDefinedBy vair: ;
-                             skos:definition ""@en ;
+                             skos:definition "Administration of justice"@en ;
                              skos:inScheme vair: ;
                              skos:prefLabel "Administration Of Justice"@en .
 
@@ -4546,24 +4563,24 @@ vair:AssessingImmigrationEligibility rdfs:isDefinedBy vair: ;
                                      skos:definition "Examination of applications for asylum, visa and residence permits and associated complaints"@en ;
                                      skos:inScheme vair: ;
                                      skos:prefLabel "Assessing Immigration Eligibility"@en ;
-                                     skos:related vair:Migration .
+                                     skos:related vair:MigrationManagement .
 
 
 vair:AssessingPastCriminalBehaviour rdfs:isDefinedBy vair: ;
-                                    skos:definition ""@en ;
+                                    skos:definition "Assessing past criminal behaviour of natural persons or groups"@en ;
                                     skos:inScheme vair: ;
                                     skos:prefLabel "Assessing Past Criminal Behaviour"@en ;
                                     skos:related vair:LawEnforcement .
 
 
 vair:AssessingPeopleRelatedRisk rdfs:isDefinedBy vair: ;
-                                skos:definition ""@en ;
+                                skos:definition "Assessing a risk, e.g. a security risk, a risk of irregular migration, or a health risk, posed by a natural person"@en ;
                                 skos:inScheme vair: ;
                                 skos:prefLabel "Assessing People Related Risk"@en .
 
 
 vair:AssessingPersonalityTraits rdfs:isDefinedBy vair: ;
-                                skos:definition ""@en ;
+                                skos:definition "Assessing personality of natural persons or groups"@en ;
                                 skos:inScheme vair: ;
                                 skos:prefLabel "Assessing Personality Traits"@en .
 
@@ -4576,32 +4593,31 @@ vair:AssessingRiskOfBecomingVictimOfCrime rdfs:isDefinedBy vair: ;
 
 
 vair:AssessingRiskOfIrregularImmigration rdfs:isDefinedBy vair: ;
-                                         skos:definition ""@en ;
+                                         skos:definition "Assessing risk of irregular immigration posed by a person"@en ;
                                          skos:inScheme vair: ;
                                          skos:prefLabel "Assessing Risk Of Irregular Immigration"@en ;
                                          skos:related vair:LawEnforcement ,
-                                                      vair:Migration .
+                                                      vair:MigrationManagement .
 
 
 vair:AssessingRiskOfOffending rdfs:isDefinedBy vair: ;
-                              skos:definition ""@en ;
+                              skos:definition "Assessing the risk of a natural person offending"@en ;
                               skos:inScheme vair: ;
                               skos:prefLabel "Assessing Risk Of Offending"@en ;
                               skos:related vair:LawEnforcement .
 
 
 vair:AssessingRiskOfReoffending rdfs:isDefinedBy vair: ;
-                                skos:definition ""@en ;
+                                skos:definition "Assessing the risk of a natural person re-offending"@en ;
                                 skos:inScheme vair: ;
                                 skos:prefLabel "Assessing Risk Of Reoffending"@en ;
                                 skos:related vair:LawEnforcement .
 
 
 vair:AssessingSecurityRisk rdfs:isDefinedBy vair: ;
-                           skos:definition ""@en ;
+                           skos:definition "Assess security risk posed by a person"@en ;
                            skos:inScheme vair: ;
-                           skos:prefLabel "Assessing Security Risk"@en ;
-                           skos:related vair:LawEnforcement .
+                           skos:prefLabel "Assessing Security Risk"@en .
 
 
 vair:Assessment rdfs:isDefinedBy vair: ;
@@ -4623,10 +4639,10 @@ vair:AssigningPersonsToEVocationalTrainingInstitutions rdfs:isDefinedBy vair: ;
                                               skos:related vair:Education .                                              
 
 
-vair:Asylum rdfs:isDefinedBy vair: ;
-            skos:definition ""@en ;
+vair:AsylumManagement rdfs:isDefinedBy vair: ;
+            skos:definition "Asylum management"@en ;
             skos:inScheme vair: ;
-            skos:prefLabel "Asylum"@en .
+            skos:prefLabel "Asylum Management"@en .
 
 
 vair:AsylumSeeker rdfs:isDefinedBy vair: ;
@@ -4748,10 +4764,10 @@ vair:Blueprint rdfs:isDefinedBy vair: ;
                skos:prefLabel "Blueprint"@en .
 
 
-vair:BorderControl rdfs:isDefinedBy vair: ;
-                   skos:definition ""@en ;
+vair:BorderControlManagement rdfs:isDefinedBy vair: ;
+                   skos:definition "Border control management"@en ;
                    skos:inScheme vair: ;
-                   skos:prefLabel "Border Control"@en .
+                   skos:prefLabel "Border Control Management"@en .
 
 
 vair:BorderControlSecurityCheck rdfs:isDefinedBy vair: ;
@@ -4949,7 +4965,7 @@ vair:DesignSpecification rdfs:isDefinedBy vair: ;
 
 
 vair:DetectingCriminalOffences rdfs:isDefinedBy vair: ;
-                               skos:definition ""@en ;
+                               skos:definition "Detection of criminal offences"@en ;
                                skos:inScheme vair: ;
                                skos:prefLabel "Detecting Criminal Offences"@en ;
                                skos:related vair:LawEnforcement .
@@ -5197,11 +5213,17 @@ vair:EvaluatingRecruitmentTest rdfs:isDefinedBy vair: ;
                                skos:related vair:Employment .
 
 
-vair:EvaluatingReliabilityOfEvidence rdfs:isDefinedBy vair: ;
-                                     skos:definition "Evaluation of the reliability of evidence in the course of investigation or prosecution of criminal offences"@en ;
+vair:EvaluatingReliabilityOfEvidenceInInvestigationOfCriminalOffences rdfs:isDefinedBy vair: ;
+                                     skos:definition "Evaluation of the reliability of evidence in the course of investigation of criminal offences"@en ;
                                      skos:inScheme vair: ;
-                                     skos:prefLabel "Evaluating Reliability Of Evidence"@en ;
+                                     skos:prefLabel "Evaluating Reliability Of Evidence In Investigation Of Criminal Offences "@en ;
                                      skos:related vair:LawEnforcement .
+
+
+vair:EvaluatingReliabilityOfEvidenceInProsecutionOfCriminalOffences rdfs:isDefinedBy vair: ;
+                                     skos:definition "Evaluation of the reliability of evidence in the course of prosecution of criminal offences"@en ;
+                                     skos:inScheme vair: ;
+                                     skos:prefLabel "Evaluating Reliability Of Evidence In Prosecution Of Criminal Offences "@en .
 
 
 vair:EvolutionaryAlgorithm rdfs:isDefinedBy vair: ;
@@ -5220,28 +5242,28 @@ vair:ExaminingAsylumApplication rdfs:isDefinedBy vair: ;
                                 skos:definition ""@en ;
                                 skos:inScheme vair: ;
                                 skos:prefLabel "Examining Asylum Application"@en ;
-                                skos:related vair:Migration .
+                                skos:related vair:MigrationManagement .
 
 
 vair:ExaminingMigrationRelatedComplaints rdfs:isDefinedBy vair: ;
                                          skos:definition ""@en ;
                                          skos:inScheme vair: ;
                                          skos:prefLabel "Examining Migration Related Complaints"@en ;
-                                         skos:related vair:Migration .
+                                         skos:related vair:MigrationManagement .
 
 
 vair:ExaminingResidencePermitsApplication rdfs:isDefinedBy vair: ;
                                           skos:definition ""@en ;
                                           skos:inScheme vair: ;
                                           skos:prefLabel "Examining Residence Permits Application"@en ;
-                                          skos:related vair:Migration .
+                                          skos:related vair:MigrationManagement .
 
 
 vair:ExaminingVisaApplication rdfs:isDefinedBy vair: ;
                               skos:definition ""@en ;
                               skos:inScheme vair: ;
                               skos:prefLabel "Examining Visa Application"@en ;
-                              skos:related vair:Migration .
+                              skos:related vair:MigrationManagement.
 
 
 vair:ExpertSystem rdfs:isDefinedBy vair: ;
@@ -5487,10 +5509,10 @@ vair:ISOIECTS4213-2022 rdfs:isDefinedBy vair: ;
                        skos:prefLabel " ISO/IEC TS 4213:2022"@en .
 
 
-vair:Identifying rdfs:isDefinedBy vair: ;
-                 skos:definition ""@en ;
+vair:IdentiftyingIndividuals rdfs:isDefinedBy vair: ;
+                 skos:definition "Identifying natural persons"@en ;
                  skos:inScheme vair: ;
-                 skos:prefLabel "Identifying"@en .
+                 skos:prefLabel "Identiftying Individuals"@en .
 
 
 vair:ImageRecognition rdfs:isDefinedBy vair: ;
@@ -5618,14 +5640,14 @@ vair:IntelligentControlSystem rdfs:isDefinedBy vair: ;
 
 
 vair:InterpretingFacts rdfs:isDefinedBy vair: ;
-                       skos:definition "Researching and interpreting facts"@en ;
+                       skos:definition "Interpreting facts"@en ;
                        skos:inScheme vair: ;
                        skos:prefLabel "Interpreting Facts"@en ;
                        skos:related vair:Law .
 
 
 vair:InterpretingLaw rdfs:isDefinedBy vair: ;
-                     skos:definition "Researching and interpreting the law"@en ;
+                     skos:definition "Interpreting the law"@en ;
                      skos:inScheme vair: ;
                      skos:prefLabel "Interpreting Law"@en ;
                      skos:related vair:Law .
@@ -5644,7 +5666,7 @@ vair:Intervention rdfs:isDefinedBy vair: ;
 
 
 vair:InvestigatingCriminalOffences rdfs:isDefinedBy vair: ;
-                                   skos:definition ""@en ;
+                                   skos:definition "Investigation of criminal offences"@en ;
                                    skos:inScheme vair: ;
                                    skos:prefLabel "Investigating Criminal Offences"@en ;
                                    skos:related vair:LawEnforcement .
@@ -5696,10 +5718,10 @@ vair:JudicialAuthority rdfs:isDefinedBy vair: ;
                        skos:prefLabel "Judicial Authority "@en .
 
 
-vair:JudicialAuthorityRepresentative rdfs:isDefinedBy vair: ;
-                                     skos:definition "an entity that acts on behalf on judicial authorities"@en ;
+vair:JudicialAuthorityAgent rdfs:isDefinedBy vair: ;
+                                     skos:definition "An entity that acts on behalf on judicial authorities"@en ;
                                      skos:inScheme vair: ;
-                                     skos:prefLabel "Judicial Authority Representative"@en .
+                                     skos:prefLabel "Judicial Authority Agent"@en .
 
 
 vair:KnowledgeBasedTechnique rdfs:isDefinedBy vair: ;
@@ -5917,10 +5939,10 @@ vair:MarketSurveillanceAuthority rdfs:isDefinedBy vair: ;
                                  skos:prefLabel "Market Surveillance Authority"@en .
 
 
-vair:Migration rdfs:isDefinedBy vair: ;
-               skos:definition ""@en ;
+vair:MigrationManagement rdfs:isDefinedBy vair: ;
+               skos:definition "Migration management"@en ;
                skos:inScheme vair: ;
-               skos:prefLabel "Migration"@en .
+               skos:prefLabel "Migration Management"@en .
 
 
 vair:Model rdfs:isDefinedBy vair: ;
@@ -5990,11 +6012,6 @@ vair:NarrowAI rdfs:isDefinedBy vair: ;
 
 
 
-
-vair:NationalPublicAuthority rdfs:isDefinedBy vair: ;
-                             skos:definition ""@en ;
-                             skos:inScheme vair: ;
-                             skos:prefLabel "National Public Authority"@en .
 
 
 vair:NaturalLanguageGeneration rdfs:isDefinedBy vair: ;
@@ -6263,7 +6280,7 @@ vair:Profiling rdfs:isDefinedBy vair: ;
 
 
 vair:ProsecutingCriminalOffences rdfs:isDefinedBy vair: ;
-                                 skos:definition ""@en ;
+                                 skos:definition "Prosecution of criminal offences"@en ;
                                  skos:inScheme vair: ;
                                  skos:prefLabel "Prosecuting Criminal Offences"@en ;
                                  skos:related vair:LawEnforcement .
@@ -6282,7 +6299,7 @@ vair:PsychologicalHealth rdfs:isDefinedBy vair: ;
 
 
 vair:PublicAuthority rdfs:isDefinedBy vair: ;
-                     skos:definition ""@en ;
+                     skos:definition "Public authority"@en ;
                      skos:inScheme vair: ;
                      skos:prefLabel "Public Authority"@en .
 
@@ -6692,7 +6709,7 @@ vair:VerificationOfMigrationSeekerClaims rdfs:isDefinedBy vair: ;
                                          skos:definition ""@en ;
                                          skos:inScheme vair: ;
                                          skos:prefLabel "Verification Of Migration Seeker Claims"@en ;
-                                         skos:related vair:Migration .
+                                         skos:related vair:MigrationManagement .
 
 
 vair:VerifyingAuthenticityOfTravelDocument rdfs:isDefinedBy vair: ;
@@ -7277,4 +7294,172 @@ vair:EUBody  rdf:type owl:NamedIndividual ,
 vair:EUBody  rdfs:isDefinedBy vair: ;
                                                    skos:definition "Union body"@en ;
                                                    skos:inScheme vair: ;
-                                                   skos:prefLabel "EU Body"@en .                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+                                                   skos:prefLabel "EU Body"@en . 
+
+###  https://w3id.org/vair#IndividualIntendsToEnterState
+
+vair:IndividualIntendsToEnterState  rdf:type owl:Class ;
+                                                           rdfs:subClassOf airo:AISubject .
+
+###  https://w3id.org/vair#IndividualIntendsToEnterState 
+vair:IndividualIntendsToEnterState   rdf:type owl:NamedIndividual ,
+                                                   skos:Concept ,
+                                                   vair:Concept .
+
+vair:IndividualIntendsToEnterState   rdfs:isDefinedBy vair: ;
+                                                   skos:definition "A person who intends to enter into the territory of a State"@en ;
+                                                   skos:inScheme vair: ;
+                                                   skos:prefLabel "Individual Intends To Enter State"@en .    
+
+
+###  https://w3id.org/vair#IndividualEnteredState
+
+vair:IndividualEnteredState  rdf:type owl:Class ;
+                                                           rdfs:subClassOf airo:AISubject .
+
+###  https://w3id.org/vair#IndividualEnteredState 
+vair:IndividualEnteredState   rdf:type owl:NamedIndividual ,
+                                                   skos:Concept ,
+                                                   vair:Concept .
+
+vair:IndividualEnteredState   rdfs:isDefinedBy vair: ;
+                                                   skos:definition "A person who has entered into the territory of a State"@en ;
+                                                   skos:inScheme vair: ;
+                                                   skos:prefLabel "Individual Entered State"@en .
+
+
+
+
+###  https://w3id.org/vair#EvaluatingReliabilityOfEvidenceInMigarationRelatedApplications
+
+vair:EvaluatingReliabilityOfEvidenceInMigarationRelatedApplications  rdf:type owl:Class ;
+                                                           rdfs:subClassOf vair:Assessment .
+
+###  https://w3id.org/vair#EvaluatingReliabilityOfEvidenceInMigarationRelatedApplications 
+vair:EvaluatingReliabilityOfEvidenceInMigarationRelatedApplications   rdf:type owl:NamedIndividual ,
+                                                   skos:Concept ,
+                                                   vair:Concept .
+
+vair:EvaluatingReliabilityOfEvidenceInMigarationRelatedApplications   rdfs:isDefinedBy vair: ;
+                                                   skos:definition "Assessments of the reliability of evidence in the examination of applications for asylum, visa or residence permits and for associated complaints with regard to the eligibility of the natural persons applying for a status "@en ;
+                                                   skos:inScheme vair: ;
+                                                   skos:prefLabel "Evaluating Reliability Of Evidence In Migaration-Related Applications"@en .
+
+
+
+
+###  https://w3id.org/vair#RecognisingIndividuals
+
+vair:RecognisingIndividuals  rdf:type owl:Class ;
+                                                           rdfs:subClassOf vair:Assessment .
+
+###  https://w3id.org/vair#RecognisingIndividuals 
+vair:RecognisingIndividuals   rdf:type owl:NamedIndividual ,
+                                                   skos:Concept ,
+                                                   vair:Concept .
+
+vair:RecognisingIndividuals   rdfs:isDefinedBy vair: ;
+                                                   skos:definition "Recognising natural persons "@en ;
+                                                   skos:inScheme vair: ;
+                                                   skos:prefLabel "Recognising Individuals"@en .
+
+###  https://w3id.org/vair#DetectingIndividuals
+
+vair:DetectingIndividuals  rdf:type owl:Class ;
+                                                           rdfs:subClassOf vair:Assessment .
+
+###  https://w3id.org/vair#DetectingIndividuals 
+vair:DetectingIndividuals   rdf:type owl:NamedIndividual ,
+                                                   skos:Concept ,
+                                                   vair:Concept .
+
+vair:DetectingIndividuals   rdfs:isDefinedBy vair: ;
+                                                   skos:definition "Detecting natural persons "@en ;
+                                                   skos:inScheme vair: ;
+                                                   skos:prefLabel "Detecting Individuals"@en .
+
+
+
+
+###  https://w3id.org/vair#ResearchingFacts
+
+vair:ResearchingFacts  rdf:type owl:Class ;
+                                                           rdfs:subClassOf airo:Purpose .
+
+###  https://w3id.org/vair#ResearchingFacts 
+vair:ResearchingFacts   rdf:type owl:NamedIndividual ,
+                                                   skos:Concept ,
+                                                   vair:Concept .
+
+vair:ResearchingFacts   rdfs:isDefinedBy vair: ;
+                                                   skos:definition "Researching facts"@en ;
+                                                   skos:inScheme vair: ;
+                                                   skos:prefLabel "Researching Facts"@en .
+
+
+
+###  https://w3id.org/vair#ResearchingLaw
+
+vair:ResearchingLaw  rdf:type owl:Class ;
+                                                           rdfs:subClassOf airo:Purpose .
+
+###  https://w3id.org/vair#ResearchingLaw 
+vair:ResearchingLaw   rdf:type owl:NamedIndividual ,
+                                                   skos:Concept ,
+                                                   vair:Concept .
+
+vair:ResearchingLaw   rdfs:isDefinedBy vair: ;
+                                                   skos:definition "Researching the law"@en ;
+                                                   skos:inScheme vair: ;
+                                                   skos:prefLabel "Researching Law"@en .
+
+###  https://w3id.org/vair#SettlingDispute
+
+vair:SettlingDispute  rdf:type owl:Class ;
+                                                           rdfs:subClassOf airo:Purpose .
+
+###  https://w3id.org/vair#SettlingDispute 
+vair:SettlingDispute   rdf:type owl:NamedIndividual ,
+                                                   skos:Concept ,
+                                                   vair:Concept .
+
+vair:SettlingDispute   rdfs:isDefinedBy vair: ;
+                                                   skos:definition "Alternative dispute resolution"@en ;
+                                                   skos:inScheme vair: ;
+                                                   skos:prefLabel "Settling Dispute"@en .
+
+
+
+
+###  https://w3id.org/vair#InfluencingElectionOutcome
+
+vair:InfluencingElectionOutcome  rdf:type owl:Class ;
+                                                           rdfs:subClassOf airo:Purpose .
+
+###  https://w3id.org/vair#InfluencingElectionOutcome 
+vair:InfluencingElectionOutcome   rdf:type owl:NamedIndividual ,
+                                                   skos:Concept ,
+                                                   vair:Concept .
+
+vair:InfluencingElectionOutcome   rdfs:isDefinedBy vair: ;
+                                                   skos:definition "Influencing the outcome of an election."@en ;
+                                                   skos:inScheme vair: ;
+                                                   skos:prefLabel "Influencing Election Outcome"@en .
+
+###  https://w3id.org/vair#InfluencingReferendumOutcome
+
+vair:InfluencingReferendumOutcome  rdf:type owl:Class ;
+                                                           rdfs:subClassOf airo:Purpose .
+
+###  https://w3id.org/vair#InfluencingReferendumOutcome 
+vair:InfluencingReferendumOutcome   rdf:type owl:NamedIndividual ,
+                                                   skos:Concept ,
+                                                   vair:Concept .
+
+vair:InfluencingReferendumOutcome   rdfs:isDefinedBy vair: ;
+                                                   skos:definition "Influencing the outcome of a referendum."@en ;
+                                                   skos:inScheme vair: ;
+                                                   skos:prefLabel "Influencing Referendum Outcome"@en .                                                   
+
+
+
