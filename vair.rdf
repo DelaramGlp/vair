@@ -1,16 +1,44 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.w3.org/2002/07/owl"
+<rdf:RDF 
+     xml:base="https://w3id.org/vair"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:airo="https://w3id.org/airo#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:vair="https://w3id.org/vair#"
      xmlns:terms="http://purl.org/dc/terms/">
-    <Ontology/>
+     <owl:Ontology rdf:about="https://w3id.org/vair">
+        <owl:versionIRI rdf:resource="https://w3id.org/vair/1.0"/>
+        <terms:bibliographicCitation>Delaram Golpayegani, Harshvardhan J. Pandit, and Dave Lewis. To Be High-Risk, or Not To Be—Semantic Specifications and Implications of the AI Act’s High-Risk AI Applications and Harmonised Standards. Proceedings of the 2023 ACM Conference on Fairness, Accountability, and Transparency. 2023</terms:bibliographicCitation>
+        <terms:contributor>Dave Lewis</terms:contributor>
+        <terms:contributor>Harshvardhan J. Pandit</terms:contributor>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-12-22</terms:created>
+        <terms:creator>Delaram Golpayegani</terms:creator>
+        <terms:description xml:lang="en">VAIR is a taxonomy of AI and risk concepts.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-01-01</terms:issued>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-07-18</terms:modified>
+        <terms:publisher>ADAPT Centre, Trinity College Dublin</terms:publisher>
+        <terms:source xml:lang="en">EU AI Act</terms:source>
+        <terms:source xml:lang="en">ISO 31000 series</terms:source>
+        <terms:source xml:lang="en">ISO/IEC 22989:2023</terms:source>
+        <terms:title>VAIR</terms:title>
+        <bibo:doi xml:lang="en">10.5281/zenodo.10894914</bibo:doi>
+        <bibo:status>http://purl.org/ontology/bibo/status/published</bibo:status>
+        <vann:preferredNamespacePrefix>vair</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/vair#</vann:preferredNamespaceUri>
+        <rdfs:label xml:lang="en">Vocabulary of AI Risks</rdfs:label>
+        <owl:versionInfo xml:lang="en">1.0</owl:versionInfo>
+        <foaf:logo rdf:resource="https://github.com/DelaramGlp/airo/blob/main/figures/airo-logo.png?raw=true"/>
+    </owl:Ontology>
+
+
     
 
 
