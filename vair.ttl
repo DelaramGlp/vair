@@ -12,6 +12,31 @@
 [ rdf:type owl:Ontology
  ] .
 
+<https://w3id.org/vair> rdf:type owl:Ontology ;
+                         owl:versionIRI <https://w3id.org/vair/1.0> ;
+                         <http://purl.org/dc/terms/bibliographicCitation> "Delaram Golpayegani, Harshvardhan J. Pandit, and Dave Lewis. To Be High-Risk, or Not To Be—Semantic Specifications and Implications of the AI Act’s High-Risk AI Applications and Harmonised Standards. Proceedings of the 2023 ACM Conference on Fairness, Accountability, and Transparency. 2023" ;
+                         <http://purl.org/dc/terms/contributor> "Dave Lewis" ,
+                                                                "Harshvardhan J. Pandit" ;
+                         <http://purl.org/dc/terms/created> "2022-12-22"^^xsd:date ;
+                         <http://purl.org/dc/terms/creator> "Delaram Golpayegani" ;
+                         <http://purl.org/dc/terms/description> "VAIR is a taxonomy of AI and risk concepts."@en ;
+                         <http://purl.org/dc/terms/issued> "2023-01-01"^^xsd:date ;
+                         <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                         <http://purl.org/dc/terms/modified> "2024-07-18"^^xsd:date ;
+                         <http://purl.org/dc/terms/publisher> "ADAPT Centre, Trinity College Dublin" ;
+                         <http://purl.org/dc/terms/source> "EU AI Act"@en ,
+                                                           "ISO 31000 series"@en ,
+                                                           "ISO/IEC 22989:2023"@en ;
+                         <http://purl.org/dc/terms/title> "VAIR" ;
+                         <http://purl.org/ontology/bibo/doi> "10.5281/zenodo.10894914"@en ;
+                         <http://purl.org/ontology/bibo/status> "http://purl.org/ontology/bibo/status/published" ;
+                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "vair" ;
+                         <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/vair#" ;
+                         rdfs:label "Vocabulary of AI Risks"@en ;
+                         owl:versionInfo "1.0"@en ;
+                         <http://xmlns.com/foaf/0.1/logo> <https://github.com/DelaramGlp/airo/blob/main/figures/airo-logo.png?raw=true> .
+
+
 #################################################################
 #    Annotation properties
 #################################################################
