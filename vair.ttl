@@ -1995,8 +1995,8 @@ vair:TrainedModel rdf:type owl:Class ;
                   rdfs:subClassOf vair:Model .
 
 
-###  https://w3id.org/vair#Training
-vair:Training rdf:type owl:Class ;
+###  https://w3id.org/vair#UserTraining
+vair:UserTraining rdf:type owl:Class ;
               rdfs:subClassOf airo:OrganisationalControl .
 
 
@@ -4377,8 +4377,8 @@ vair:TrainedModel rdf:type owl:NamedIndividual ,
                            vair:Concept .
 
 
-###  https://w3id.org/vair#Training
-vair:Training rdf:type owl:NamedIndividual ,
+###  https://w3id.org/vair#UserTraining
+vair:UserTraining rdf:type owl:NamedIndividual ,
                        skos:Concept ,
                        vair:Concept .
 
@@ -6678,11 +6678,10 @@ vair:TrainedModel rdfs:isDefinedBy vair: ;
                   skos:related vair:ModelTraning .
 
 
-vair:Training rdfs:isDefinedBy vair: ;
-              skos:definition ""@en ,
-                              "Providing training to staff, users, etc."@en ;
+vair:UserTraining rdfs:isDefinedBy vair: ;
+              skos:definition  "Providing training to staff, users, etc."@en ;
               skos:inScheme vair: ;
-              skos:prefLabel "Training"@en .
+              skos:prefLabel "Use Training"@en .
 
 
 vair:UnavailabilityOfDataSet rdfs:isDefinedBy vair: ;
@@ -7498,7 +7497,38 @@ vair:InfluencingReferendumOutcome   rdfs:isDefinedBy vair: ;
                             skos:Concept ,
                             vair:Concept .
 
-:Software rdfs:isDefinedBy : ;
+:Software rdfs:isDefinedBy vair: ;
              skos:definition "Refers to a stand alone software system "@en ;
-             skos:inScheme : ;
-             skos:prefLabel "Software"@en .  
+             skos:inScheme vair: ;
+             skos:prefLabel "Software"@en .
+
+###  https://w3id.org/vair#DeepLearning
+:DeepLearning rdf:type owl:Class ;
+             rdfs:subClassOf vair:MachineLearning .
+
+###  https://w3id.org/vair#DeepLearning
+:DeepLearning rdf:type owl:NamedIndividual ,
+                            skos:Concept ,
+                            vair:Concept .
+
+:DeepLearning rdfs:isDefinedBy vair: ;
+             skos:definition "Approach to creating rich hierarchical representations through the training of neural networks with many hidden layers"@en ;
+             terms:source "ISO/IEC 22989, 3.4.4" ;
+             skos:inScheme vair: ;
+             skos:prefLabel "Deep Learning"@en .   
+
+
+###  https://w3id.org/vair#MachineLearning
+:MachineLearning rdf:type owl:Class ;
+             rdfs:subClassOf airo:Technique .
+
+###  https://w3id.org/vair#MachineLearning
+:MachineLearning rdf:type owl:NamedIndividual ,
+                            skos:Concept ,
+                            vair:Concept .
+
+:MachineLearning rdfs:isDefinedBy vair: ;
+             skos:definition "Process of optimizing model parameters through computational techniques, such that the model's  behaviour reflects the data or experience"@en ;
+             terms:source "ISO/IEC 22989, 3.3.5" ;
+             skos:inScheme vair: ;
+             skos:prefLabel "Machine Learning"@en .                              
