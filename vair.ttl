@@ -253,10 +253,6 @@ skos:Concept rdf:type owl:Class .
 airo:AIComponent rdf:type owl:Class .
 
 
-###  https://w3id.org/airo#AIDeployer
-airo:AIDeployer rdf:type owl:Class .
-
-
 ###  https://w3id.org/airo#AILifecyclePhase
 airo:AILifecyclePhase rdf:type owl:Class .
 
@@ -587,7 +583,7 @@ vair:Attack rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#AuthorisedRepresentative
 vair:AuthorisedRepresentative rdf:type owl:Class ;
-                              rdfs:subClassOf airo:AIOperator .
+                              rdfs:subClassOf airo:Stakeholder .
 
 
 ###  https://w3id.org/vair#Authority
@@ -955,7 +951,7 @@ vair:Education rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#EducationalInstitution
 vair:EducationalInstitution rdf:type owl:Class ;
-                            rdfs:subClassOf airo:Stakeholder .
+                            rdfs:subClassOf airo:AIOperator .
 
 
 ###  https://w3id.org/vair#EmergancyTriage
@@ -963,9 +959,18 @@ vair:EmergancyTriage rdf:type owl:Class ;
                      rdfs:subClassOf vair:Assessment .
 
 
+###  https://w3id.org/vair#EmergencyHealthCareProvider
+vair:EmergencyHealthCareProvider rdf:type owl:Class ;
+                                 rdfs:subClassOf vair:EmergencyServiceProvider ;
+                                 rdfs:comment "Refer to emergency healthcare providers"@en ;
+                                 rdfs:label "Emergency Healthcare Provider"@en ;
+                                 skos:definition "Refer to emergency healthcare providers"@en ;
+                                 skos:prefLabel "Emergency Healthcare Provider"@en .
+
+
 ###  https://w3id.org/vair#EmergencyServiceProvider
 vair:EmergencyServiceProvider rdf:type owl:Class ;
-                              rdfs:subClassOf airo:AIDeployer .
+                              rdfs:subClassOf airo:AIOperator .
 
 
 ###  https://w3id.org/vair#EmotionRecognition
@@ -1142,9 +1147,14 @@ vair:FeedForwardNeuralNetwork rdf:type owl:Class ;
                               rdfs:subClassOf vair:NeuralNetwork .
 
 
-###  https://w3id.org/vair#Firefighter
-vair:Firefighter rdf:type owl:Class ;
-                 rdfs:subClassOf vair:EmergencyServiceProvider .
+###  https://w3id.org/vair#FireBrigade
+vair:FireBrigade rdf:type owl:Class ;
+                 rdfs:subClassOf vair:EmergencyServiceProvider ;
+                 rdfs:isDefinedBy vair: ;
+                 rdfs:label "Fire Brigade"@en ;
+                 skos:definition "Refers to fire department"@en ;
+                 skos:inScheme vair: ;
+                 skos:prefLabel "Fire Brigade"@en .
 
 
 ###  https://w3id.org/vair#Framework
@@ -1358,7 +1368,7 @@ vair:ImageRecognition rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#Importer
 vair:Importer rdf:type owl:Class ;
-              rdfs:subClassOf airo:AIOperator .
+              rdfs:subClassOf airo:Stakeholder .
 
 
 ###  https://w3id.org/vair#InaccurateDecision
@@ -1738,9 +1748,15 @@ vair:MarketSurveillanceAuthority rdf:type owl:Class ;
                                  rdfs:subClassOf vair:NationalAuthority .
 
 
-###  https://w3id.org/vair#MedicalAid
-vair:MedicalAid rdf:type owl:Class ;
-                rdfs:subClassOf vair:EmergencyServiceProvider .
+###  https://w3id.org/vair#MedicalAidProvider
+vair:MedicalAidProvider rdf:type owl:Class ;
+                        rdfs:subClassOf vair:EmergencyServiceProvider ;
+                        rdfs:comment "Entity that provides medical aid"@en ;
+                        rdfs:isDefinedBy vair: ;
+                        rdfs:label "Medical Aid Provider"@en ;
+                        skos:definition "Entity that provides medical aid"@en ;
+                        skos:inScheme vair: ;
+                        skos:prefLabel "Medical Aid Provider"@en .
 
 
 ###  https://w3id.org/vair#MigrationManagement
@@ -1805,11 +1821,6 @@ vair:NarrowAI rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#NationalAuthority
 vair:NationalAuthority rdf:type owl:Class .
-
-
-###  https://w3id.org/vair#NationalPublicAuthority
-vair:NationalPublicAuthority rdf:type owl:Class ;
-                             rdfs:subClassOf vair:PublicAuthority .
 
 
 ###  https://w3id.org/vair#NaturalLanguageGeneration
@@ -2499,7 +2510,7 @@ vair:VisaApplicant rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#VocationalTrainingInstitution
 vair:VocationalTrainingInstitution rdf:type owl:Class ;
-                                   rdfs:subClassOf airo:Stakeholder .
+                                   rdfs:subClassOf airo:AIOperator .
 
 
 ###  https://w3id.org/vair#WrongDataSetDesignChoice
@@ -5904,13 +5915,13 @@ vair:ContentGeneration rdfs:isDefinedBy vair: ;
                        skos:prefLabel "Content Generation"@en .
 
 
-vair:ContinuousValidation rdfs:isDefinedBy vair: ;
-                          skos:definition "Refers to validation phase of continuous learning AI systems, wherein incremental training takes place on an ongoing basis while the system is running in production."@en ;
+vair:ContinuousValidation terms:source "ISO/IEC 22989, 6.2.7" ;
                           rdfs:comment "Refers to validation phase of continuous learning AI systems, wherein incremental training takes place on an ongoing basis while the system is running in production."@en ;
-                          skos:inScheme vair: ;
+                          rdfs:isDefinedBy vair: ;
                           rdfs:label "Continuous Validation"@en ;
-                          skos:prefLabel "Continuous Validation"@en;
-                          terms:source "ISO/IEC 22989, 6.2.7" .
+                          skos:definition "Refers to validation phase of continuous learning AI systems, wherein incremental training takes place on an ongoing basis while the system is running in production."@en ;
+                          skos:inScheme vair: ;
+                          skos:prefLabel "Continuous Validation"@en .
 
 
 vair:ConvolutionalNeuralNetwork rdfs:isDefinedBy vair: ;
@@ -6014,20 +6025,20 @@ vair:DegradedAccuracy rdfs:isDefinedBy vair: ;
                       skos:prefLabel "Degraded Accuracy"@en .
 
 
-vair:Deployment rdfs:isDefinedBy vair: ;
-                skos:definition "Refers to deployment phase when the AI system is installed, released or configured for operation in a target environment."@en ;
+vair:Deployment terms:source "ISO/IEC 22989, 6.2.5" ;
                 rdfs:comment "Refers to deployment phase oThe AI system is installed, released or configured for operation in a target environment."@en ;
-                skos:inScheme vair: ;
+                rdfs:isDefinedBy vair: ;
                 rdfs:label "Deployment"@en ;
-                skos:prefLabel "Deployment"@en;
-                terms:source "ISO/IEC 22989, 6.2.5" .
+                skos:definition "Refers to deployment phase when the AI system is installed, released or configured for operation in a target environment."@en ;
+                skos:inScheme vair: ;
+                skos:prefLabel "Deployment"@en .
 
 
-vair:Design rdfs:isDefinedBy vair: ;
-            skos:definition "Refers to design phase of AI development"@en ;
-            rdfs:comment "Refers to design phase of AI development"@en ;
-            skos:inScheme vair: ;
+vair:Design rdfs:comment "Refers to design phase of AI development"@en ;
+            rdfs:isDefinedBy vair: ;
             rdfs:label "Design"@en ;
+            skos:definition "Refers to design phase of AI development"@en ;
+            skos:inScheme vair: ;
             skos:prefLabel "Design"@en .
 
 
@@ -6115,11 +6126,11 @@ vair:DeterminingCreditScore rdfs:isDefinedBy vair: ;
                             skos:related vair:Finance .
 
 
-vair:Development rdfs:isDefinedBy vair: ;
-                 skos:definition "Refers to the development phase in AI lifecyle"@en ;
-                 rdfs:comment "Refers to the development phase in AI lifecyle"@en ;
-                 skos:inScheme vair: ;
+vair:Development rdfs:comment "Refers to the development phase in AI lifecyle"@en ;
+                 rdfs:isDefinedBy vair: ;
                  rdfs:label "Development"@en ;
+                 skos:definition "Refers to the development phase in AI lifecyle"@en ;
+                 skos:inScheme vair: ;
                  skos:prefLabel "Development"@en .
 
 
@@ -6149,13 +6160,18 @@ vair:DistortionInHumanBehaviour rdfs:isDefinedBy vair: ;
                                 skos:prefLabel "Distortion In Human Behaviour"@en .
 
 
-vair:EUAgency rdfs:isDefinedBy vair: ;
+vair:EUAgency terms:source "" ;
+              rdfs:comment "Union agency"@en ;
+              rdfs:isDefinedBy vair: ;
+              rdfs:label "EU Agency"@en ;
               skos:definition "Union agency"@en ;
               skos:inScheme vair: ;
               skos:prefLabel "EU Agency"@en .
 
 
-vair:EUBody rdfs:isDefinedBy vair: ;
+vair:EUBody rdfs:comment "Union body"@en ;
+            rdfs:isDefinedBy vair: ;
+            rdfs:label "EU Body"@en ;
             skos:definition "Union body"@en ;
             skos:inScheme vair: ;
             skos:prefLabel "EU Body"@en .
@@ -6167,14 +6183,18 @@ vair:EUDeclarationOfConformity rdfs:isDefinedBy vair: ;
                                skos:prefLabel "EU Declaration Of Conformity"@en .
 
 
-vair:EUInstitution rdfs:isDefinedBy vair: ;
+vair:EUInstitution rdfs:comment "Union institution"@en ;
+                   rdfs:isDefinedBy vair: ;
+                   rdfs:label "EU Institution"@en ;
                    skos:definition "Union institution"@en ;
                    skos:inScheme vair: ;
                    skos:prefLabel "EU Institution"@en .
 
 
-vair:EUOffice rdfs:isDefinedBy vair: ;
-              skos:definition "Union office"@en ;
+vair:EUOffice rdfs:comment "EU office"@en ;
+              rdfs:isDefinedBy vair: ;
+              rdfs:label "EU Office"@en ;
+              skos:definition "EU office"@en ;
               skos:inScheme vair: ;
               skos:prefLabel "EU Office"@en .
 
@@ -6185,7 +6205,9 @@ vair:Education rdfs:isDefinedBy vair: ;
                skos:prefLabel "Education"@en .
 
 
-vair:EducationalInstitution rdfs:isDefinedBy vair: ;
+vair:EducationalInstitution rdfs:comment "Educational institution at any level"@en ;
+                            rdfs:isDefinedBy vair: ;
+                            rdfs:label "Educational Institution"@en ;
                             skos:definition "Educational institution at any level"@en ;
                             skos:inScheme vair: ;
                             skos:prefLabel "Educational Institution"@en .
@@ -6197,10 +6219,12 @@ vair:EmergancyTriage rdfs:isDefinedBy vair: ;
                      skos:prefLabel "Emergancy Triage"@en .
 
 
-vair:EmergencyServiceProvider rdfs:isDefinedBy vair: ;
+vair:EmergencyServiceProvider rdfs:comment "Provider of emergency first response services"@en ;
+                              rdfs:isDefinedBy vair: ;
+                              rdfs:label "Emergency Service Provider"@en ;
                               skos:definition "Provider of emergency first response services"@en ;
                               skos:inScheme vair: ;
-                              skos:prefLabel "Emergency Service"@en .
+                              skos:prefLabel "Emergency Service Provider"@en .
 
 
 vair:EmotionRecognition rdfs:isDefinedBy vair: ;
@@ -6430,12 +6454,6 @@ vair:FeedForwardNeuralNetwork rdfs:isDefinedBy vair: ;
                               skos:definition "neural network where information is fed from the input layer to the output layer in one direction only. [ISO/IEC 22989 3.4.6]"@en ;
                               skos:inScheme vair: ;
                               skos:prefLabel "Feed Forward Neural Network"@en .
-
-
-vair:Firefighter rdfs:isDefinedBy vair: ;
-                 skos:definition "Firefighters"@en ;
-                 skos:inScheme vair: ;
-                 skos:prefLabel "Firefighter"@en .
 
 
 vair:Freedom rdfs:isDefinedBy vair: ;
@@ -6706,12 +6724,12 @@ vair:InaccurateRecommendation rdfs:isDefinedBy vair: ;
                               skos:prefLabel "Inaccurate Recommendation"@en .
 
 
-vair:Inception rdfs:isDefinedBy vair: ;
-               skos:definition "Inception occurs when one or more stakeholders decides to turn an idea into a tangible system"@en ;
+vair:Inception terms:source "ISO/IEC 22989, 6.2.2" ;
                rdfs:comment "Inception occurs when one or more stakeholders decides to turn an idea into a tangible system"@en ;
-               skos:inScheme vair: ;
+               rdfs:isDefinedBy vair: ;
                rdfs:label "Inception"@en ;
-               terms:source "ISO/IEC 22989, 6.2.2";
+               skos:definition "Inception occurs when one or more stakeholders decides to turn an idea into a tangible system"@en ;
+               skos:inScheme vair: ;
                skos:prefLabel "Inception"@en .
 
 
@@ -6906,13 +6924,17 @@ vair:JobApplicationScreening rdfs:isDefinedBy vair: ;
                              skos:prefLabel "Job Application Screening"@en .
 
 
-vair:JudicialAuthority rdfs:isDefinedBy vair: ;
-                       skos:definition "judicial authorities"@en ;
+vair:JudicialAuthority rdfs:comment "An authority to administer justice"@en ;
+                       rdfs:isDefinedBy vair: ;
+                       rdfs:label "Judicial Authority"@en ;
+                       skos:definition "An authority to administer justice"@en ;
                        skos:inScheme vair: ;
                        skos:prefLabel "Judicial Authority "@en .
 
 
-vair:JudicialAuthorityAgent rdfs:isDefinedBy vair: ;
+vair:JudicialAuthorityAgent rdfs:comment "An entity that acts on behalf on judicial authorities" ;
+                            rdfs:isDefinedBy vair: ;
+                            rdfs:label "Judicial Authority Agent"@en ;
                             skos:definition "An entity that acts on behalf on judicial authorities"@en ;
                             skos:inScheme vair: ;
                             skos:prefLabel "Judicial Authority Agent"@en .
@@ -6942,16 +6964,25 @@ vair:LackOfTransparency rdfs:isDefinedBy vair: ;
                         skos:prefLabel "Lack Of Transparency"@en .
 
 
-vair:LawEnforcementAuthority rdfs:isDefinedBy vair: ;
-                             skos:definition "any public authority competent for the prevention, investigation, detection or prosecution of criminal offences or the execution of criminal penalties, including the safeguarding against and the prevention of threats to public security; or any other body or entity entrusted by Member State law to exercise public authority and public powers for the purposes of the prevention, investigation, detection or prosecution of criminal offences or the execution of criminal penalties, including the safeguarding against and the prevention of threats to public security;"@en ;
+vair:LawEnforcementAuthority terms:source "AI Act, Art. 3(45)" ;
+                             rdfs:comment """Law enforcement authority means:
+(a) any public authority competent for the prevention, investigation, detection or prosecution of criminal offences or the execution of criminal penalties, including the safeguarding against and the prevention of threats to public security; or
+(b) any other body or entity entrusted by Member State law to exercise public authority and public powers for the purposes of the prevention, investigation, detection or prosecution of criminal offences or the execution of criminal penalties, including the safeguarding against and the prevention of threats to public security."""@en ;
+                             rdfs:isDefinedBy vair: ;
+                             rdfs:label "Law Enforcement Authority"@en ;
+                             skos:definition """Law enforcement authority means:
+(a) any public authority competent for the prevention, investigation, detection or prosecution of criminal offences or the execution of criminal penalties, including the safeguarding against and the prevention of threats to public security; or
+(b) any other body or entity entrusted by Member State law to exercise public authority and public powers for the purposes of the prevention, investigation, detection or prosecution of criminal offences or the execution of criminal penalties, including the safeguarding against and the prevention of threats to public security."""@en ;
                              skos:inScheme vair: ;
                              skos:prefLabel "Law Enforcement Authority"@en .
 
 
-vair:LawEnforcementAuthorityAgent rdfs:isDefinedBy vair: ;
-                                  skos:definition "an entity that acts on behalf of law enforcement authorities"@en ;
+vair:LawEnforcementAuthorityAgent rdfs:comment "An entity that acts on behalf of law enforcement authorities."@en ;
+                                  rdfs:isDefinedBy vair: ;
+                                  rdfs:label "Law Enforcement Authority Agent"@en ;
+                                  skos:definition "An entity that acts on behalf of law enforcement authorities"@en ;
                                   skos:inScheme vair: ;
-                                  skos:prefLabel "Law Enforcement Authority Representative"@en .
+                                  skos:prefLabel "Law Enforcement Authority Agent"@en .
 
 
 vair:LearningTechnique rdfs:isDefinedBy vair: ;
@@ -7145,12 +7176,6 @@ vair:MarketSurveillanceAuthority rdfs:isDefinedBy vair: ;
                                  skos:prefLabel "Market Surveillance Authority"@en .
 
 
-vair:MedicalAid rdfs:isDefinedBy vair: ;
-                skos:definition "Medical aid"@en ;
-                skos:inScheme vair: ;
-                skos:prefLabel "Medical Aid"@en .
-
-
 vair:MigrationManagement rdfs:isDefinedBy vair: ;
                          skos:definition "Migration management"@en ;
                          skos:inScheme vair: ;
@@ -7318,13 +7343,13 @@ vair:OperatingSupplyOfWater rdfs:isDefinedBy vair: ;
                             skos:related vair:CriticalInfrastructure .
 
 
-vair:Operation rdfs:isDefinedBy vair: ;
-               skos:definition "Refers to the operation stage when an AI system is running and generally available for use."@en ;
+vair:Operation terms:source "ISO/IEC 22989, 6.2.6" ;
                rdfs:comment "Refers to the operation stage when an AI system is running and generally available for use."@en ;
-               skos:inScheme vair: ;
+               rdfs:isDefinedBy vair: ;
                rdfs:label "Operation"@en ;
-               skos:prefLabel "Operation"@en ;
-               terms:source "ISO/IEC 22989, 6.2.6".
+               skos:definition "Refers to the operation stage when an AI system is running and generally available for use."@en ;
+               skos:inScheme vair: ;
+               skos:prefLabel "Operation"@en .
 
 
 vair:OptimisationMethod rdfs:isDefinedBy vair: ;
@@ -7409,7 +7434,9 @@ vair:Planning rdfs:isDefinedBy vair: ;
               skos:prefLabel "Planning"@en .
 
 
-vair:Police rdfs:isDefinedBy vair: ;
+vair:Police rdfs:comment "Police"@en ;
+            rdfs:isDefinedBy vair: ;
+            rdfs:label "Police"@en ;
             skos:definition "Police"@en ;
             skos:inScheme vair: ;
             skos:prefLabel "Police"@en .
@@ -7522,16 +7549,20 @@ vair:PsychologicalHealth rdfs:isDefinedBy vair: ;
                          skos:prefLabel "Psychological Health"@en .
 
 
-vair:PublicAuthority rdfs:isDefinedBy vair: ;
-                     skos:definition "Public authority"@en ;
+vair:PublicAuthority rdfs:comment "Public Authority"@en ,
+                                  "Refers to public authorities and bodies."@en ;
+                     rdfs:isDefinedBy vair: ;
+                     skos:definition "Refers to public authorities and bodies."@en ;
                      skos:inScheme vair: ;
                      skos:prefLabel "Public Authority"@en .
 
 
-vair:PublicAuthorityAgent rdfs:isDefinedBy vair: ;
-                          skos:definition "an entity that acts on behalf of public authorities"@en ;
+vair:PublicAuthorityAgent rdfs:comment "An entity that acts on behalf of public authorities."@en ,
+                                       "Public Authority Agent"@en ;
+                          rdfs:isDefinedBy vair: ;
+                          skos:definition "An entity that acts on behalf of public authorities."@en ;
                           skos:inScheme vair: ;
-                          skos:prefLabel "Public Authority Representative"@en .
+                          skos:prefLabel "Public Authority Agent"@en .
 
 
 vair:PublicService rdfs:isDefinedBy vair: ;
@@ -7558,13 +7589,13 @@ vair:QuestionAnswering rdfs:isDefinedBy vair: ;
                        skos:prefLabel "Question Answering"@en .
 
 
-vair:ReEvaluation rdfs:isDefinedBy vair: ;
+vair:ReEvaluation terms:source "ISO/IEC 22989, 6.2.8" ;
+                  rdfs:comment "After the operation and monitoring stage, based on the results of the work of the AI system, the need for a reassessment can arise."@en ,
+                               "Re-Evaluation"@en ;
+                  rdfs:isDefinedBy vair: ;
                   skos:definition "After the operation and monitoring stage, based on the results of the work of the AI system, the need for a reassessment can arise."@en ;
-                  rdfs:comment "After the operation and monitoring stage, based on the results of the work of the AI system, the need for a reassessment can arise."@en ;
                   skos:inScheme vair: ;
-                  skos:prefLabel "Re-Evaluation"@en ;
-                  rdfs:comment "Re-Evaluation"@en ;
-                  terms:source "ISO/IEC 22989, 6.2.8" .
+                  skos:prefLabel "Re-Evaluation"@en .
 
 
 vair:ReasoningTechnique rdfs:isDefinedBy vair: ;
@@ -7679,13 +7710,13 @@ vair:ResidencePermitApplicant rdfs:isDefinedBy vair: ;
                               skos:prefLabel "Residence Permit Applicant"@en .
 
 
-vair:Retirement rdfs:isDefinedBy vair: ;
-                skos:definition "The stage the AI system become obsolete"@en ;
+vair:Retirement terms:source "ISO/IEC 22989, 6.2.9" ;
                 rdfs:comment "The stage the AI system become obsolete"@en ;
+                rdfs:isDefinedBy vair: ;
+                rdfs:label "Retirement"@en ;
+                skos:definition "The stage the AI system become obsolete"@en ;
                 skos:inScheme vair: ;
-                skos:prefLabel "Retirement"@en;
-                rdfs:label "Retirement"@en;
-                terms:source "ISO/IEC 22989, 6.2.9" .
+                skos:prefLabel "Retirement"@en .
 
 
 vair:ReversingOutcome rdfs:isDefinedBy vair: ;
@@ -8043,22 +8074,22 @@ vair:UserTraining rdfs:isDefinedBy vair: ;
                   skos:prefLabel "Use Training"@en .
 
 
-vair:Validation rdfs:isDefinedBy vair: ;
-                skos:definition "Validating that the AI system from the design and development stage works according to requirements and meets objectives."@en ;
+vair:Validation terms:source "ISO/IEC 22989, 6.2.4" ;
                 rdfs:comment "Validating that the AI system from the design and development stage works according to requirements and meets objectives."@en ;
+                rdfs:isDefinedBy vair: ;
+                rdfs:label "Validation"@en ;
+                skos:definition "Validating that the AI system from the design and development stage works according to requirements and meets objectives."@en ;
                 skos:inScheme vair: ;
-                skos:prefLabel "Validation"@en;
-                rdfs:label "Validation"@en;
-                terms:source "ISO/IEC 22989, 6.2.4".
+                skos:prefLabel "Validation"@en .
 
 
-vair:Verification rdfs:isDefinedBy vair: ;
-                  skos:definition "Verifying the AI system from the design and development stage works according to requirements and meets objectives."@en ;
+vair:Verification terms:source "ISO/IEC 22989, 6.2.4" ;
                   rdfs:comment "Verifying the AI system from the design and development stage works according to requirements and meets objectives."@en ;
+                  rdfs:isDefinedBy vair: ;
+                  rdfs:label "Verification"@en ;
+                  skos:definition "Verifying the AI system from the design and development stage works according to requirements and meets objectives."@en ;
                   skos:inScheme vair: ;
-                  skos:prefLabel "Verification"@en;
-                  rdfs:label "Verification"@en; 
-                  terms:source "ISO/IEC 22989, 6.2.4".
+                  skos:prefLabel "Verification"@en .
 
 
 vair:VerificationOfMigrationSeekerClaims rdfs:isDefinedBy vair: ;
@@ -8086,7 +8117,9 @@ vair:VisaApplicant rdfs:isDefinedBy vair: ;
                    skos:prefLabel "Visa Applicant"@en .
 
 
-vair:VocationalTrainingInstitution rdfs:isDefinedBy vair: ;
+vair:VocationalTrainingInstitution rdfs:comment "Vocational training institution at any level"@en ;
+                                   rdfs:isDefinedBy vair: ;
+                                   rdfs:label "Vocational Training Institution"@en ;
                                    skos:definition "Vocational training institution at any level"@en ;
                                    skos:inScheme vair: ;
                                    skos:prefLabel "Vocational Training Institution"@en .
