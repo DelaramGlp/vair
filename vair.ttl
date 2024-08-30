@@ -130,9 +130,69 @@ xsd:date rdf:type rdfs:Datatype .
 #    Classes
 #################################################################
 
+###  http://www.semanticweb.org/owl/owlapi/turtle#API
+:API rdf:type owl:Class ;
+     rdfs:subClassOf airo:AIComponent .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#ActiveInvolvement
+:ActiveInvolvement rdf:type owl:Class ;
+                   rdfs:subClassOf airo:HumanInvovlvement .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#AssistiveAutomation
+:AssistiveAutomation rdf:type owl:Class ;
+                     rdfs:subClassOf airo:AutomationLevel .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Autonomy
+:Autonomy rdf:type owl:Class ;
+          rdfs:subClassOf airo:AutomationLevel .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#CannotOptOutOfOutput
+:CannotOptOutOfOutput rdf:type owl:Class ;
+                      rdfs:subClassOf airo:ModeOfOutputControllability .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#ChallengeOutput
+:ChallengeOutput rdf:type owl:Class ;
+                 rdfs:subClassOf airo:ModeOfOutputControllability .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#ConditionalAutomation
+:ConditionalAutomation rdf:type owl:Class ;
+                       rdfs:subClassOf airo:AutomationLevel .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#CorrectOutput
+:CorrectOutput rdf:type owl:Class ;
+               rdfs:subClassOf airo:ModeOfOutputControllability .
+
+
 ###  http://www.semanticweb.org/owl/owlapi/turtle#DeepLearning
 :DeepLearning rdf:type owl:Class ;
               rdfs:subClassOf vair:MachineLearning .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#FullAutomation
+:FullAutomation rdf:type owl:Class ;
+                rdfs:subClassOf airo:AutomationLevel .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#HighAutomation
+:HighAutomation rdf:type owl:Class ;
+                rdfs:subClassOf airo:AutomationLevel .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#InformedInvolvement
+:InformedInvolvement rdf:type owl:Class ;
+                     rdfs:subClassOf airo:HumanInvovlvement .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#IntendedInvolvement
+:IntendedInvolvement rdf:type owl:Class ;
+                     rdfs:subClassOf airo:HumanInvovlvement .
 
 
 ###  http://www.semanticweb.org/owl/owlapi/turtle#MachineLearning
@@ -140,9 +200,49 @@ xsd:date rdf:type rdfs:Datatype .
                  rdfs:subClassOf airo:Technique .
 
 
+###  http://www.semanticweb.org/owl/owlapi/turtle#NoAutomation
+:NoAutomation rdf:type owl:Class ;
+              rdfs:subClassOf airo:AutomationLevel .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#OpttingInOutput
+:OpttingInOutput rdf:type owl:Class ;
+                 rdfs:subClassOf airo:ModeOfOutputControllability .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#OpttingOutOfOutput
+:OpttingOutOfOutput rdf:type owl:Class ;
+                    rdfs:subClassOf airo:ModeOfOutputControllability .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#PartialAutomation
+:PartialAutomation rdf:type owl:Class ;
+                   rdfs:subClassOf airo:AutomationLevel .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#PassiveInvolvement
+:PassiveInvolvement rdf:type owl:Class ;
+                    rdfs:subClassOf airo:HumanInvovlvement .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#ReverseOutput
+:ReverseOutput rdf:type owl:Class ;
+               rdfs:subClassOf airo:ModeOfOutputControllability .
+
+
 ###  http://www.semanticweb.org/owl/owlapi/turtle#Software
 :Software rdf:type owl:Class ;
           rdfs:subClassOf airo:Modality .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#UninformedInvolvement
+:UninformedInvolvement rdf:type owl:Class ;
+                       rdfs:subClassOf airo:HumanInvovlvement .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#UnintendedInvolvement
+:UnintendedInvolvement rdf:type owl:Class ;
+                       rdfs:subClassOf airo:HumanInvovlvement .
 
 
 ###  http://www.w3.org/2004/02/skos/core#Concept
@@ -185,6 +285,10 @@ airo:AISystemForm rdf:type owl:Class .
 airo:Algorithm rdf:type owl:Class .
 
 
+###  https://w3id.org/airo#AutomationLevel
+airo:AutomationLevel rdf:type owl:Class .
+
+
 ###  https://w3id.org/airo#Capability
 airo:Capability rdf:type owl:Class .
 
@@ -209,6 +313,10 @@ airo:Document rdf:type owl:Class .
 airo:Domain rdf:type owl:Class .
 
 
+###  https://w3id.org/airo#HumanInvovlvement
+airo:HumanInvovlvement rdf:type owl:Class .
+
+
 ###  https://w3id.org/airo#Impact
 airo:Impact rdf:type owl:Class .
 
@@ -231,6 +339,10 @@ airo:MitigationControl rdf:type owl:Class .
 
 ###  https://w3id.org/airo#Modality
 airo:Modality rdf:type owl:Class .
+
+
+###  https://w3id.org/airo#ModeOfOutputControllability
+airo:ModeOfOutputControllability rdf:type owl:Class .
 
 
 ###  https://w3id.org/airo#OperationalControl
@@ -335,6 +447,17 @@ vair:Algorithm rdf:type owl:Class ;
 ###  https://w3id.org/vair#AllocatingTasks
 vair:AllocatingTasks rdf:type owl:Class ;
                      rdfs:subClassOf vair:Planning .
+
+
+###  https://w3id.org/vair#ApplicationPlatform
+vair:ApplicationPlatform rdf:type owl:Class ;
+                         rdfs:subClassOf airo:AIComponent ;
+                         rdfs:comment "Resource on which an application runs."@en ;
+                         rdfs:isDefinedBy vair: ;
+                         rdfs:label "Application Platform"@en ;
+                         skos:definition "Resource on which an application runs."@en ;
+                         skos:inScheme vair: ;
+                         skos:prefLabel "Application Platform"@en .
 
 
 ###  https://w3id.org/vair#ApplicationScreening
@@ -638,11 +761,6 @@ vair:Cyberattack rdf:type owl:Class ;
 ###  https://w3id.org/vair#DataPoisoning
 vair:DataPoisoning rdf:type owl:Class ;
                    rdfs:subClassOf vair:Attack .
-
-
-###  https://w3id.org/vair#Dataset
-vair:Dataset rdf:type owl:Class ;
-             rdfs:subClassOf airo:AIComponent .
 
 
 ###  https://w3id.org/vair#Datasheet
@@ -977,11 +1095,6 @@ vair:EvaluatingReliabilityOfEvidenceInMigarationRelatedApplications rdf:type owl
 ###  https://w3id.org/vair#EvaluatingReliabilityOfEvidenceInProsecutionOfCriminalOffences
 vair:EvaluatingReliabilityOfEvidenceInProsecutionOfCriminalOffences rdf:type owl:Class ;
                                                                     rdfs:subClassOf vair:Assessment .
-
-
-###  https://w3id.org/vair#EvolutionaryAlgorithm
-vair:EvolutionaryAlgorithm rdf:type owl:Class ;
-                           rdfs:subClassOf vair:Algorithm .
 
 
 ###  https://w3id.org/vair#ExaminingApplication
@@ -1552,7 +1665,7 @@ vair:MachineLearningModel rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#MachineLearningPlatform
 vair:MachineLearningPlatform rdf:type owl:Class ;
-                             rdfs:subClassOf vair:Platform .
+                             rdfs:subClassOf vair:ApplicationPlatform .
 
 
 ###  https://w3id.org/vair#MachineLearningTechnique
@@ -1838,11 +1951,6 @@ vair:PlacingTargetedJobAdvert rdf:type owl:Class ;
 ###  https://w3id.org/vair#Planning
 vair:Planning rdf:type owl:Class ;
               rdfs:subClassOf vair:DecisionMaking .
-
-
-###  https://w3id.org/vair#Platform
-vair:Platform rdf:type owl:Class ;
-              rdfs:subClassOf airo:AIComponent .
 
 
 ###  https://w3id.org/vair#Police
@@ -2403,10 +2511,82 @@ vair:WrongDataSetDesignChoice rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
+###  http://www.semanticweb.org/owl/owlapi/turtle#API
+:API rdf:type owl:NamedIndividual ,
+              skos:Concept ,
+              vair:Concept .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#ActiveInvolvement
+:ActiveInvolvement rdf:type owl:NamedIndividual ,
+                            skos:Concept ,
+                            vair:Concept .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#AssistiveAutomation
+:AssistiveAutomation rdf:type owl:NamedIndividual ,
+                              skos:Concept ,
+                              vair:Concept .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Autonomy
+:Autonomy rdf:type owl:NamedIndividual ,
+                   skos:Concept ,
+                   vair:Concept .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#CannotOptOutOfOutput
+:CannotOptOutOfOutput rdf:type owl:NamedIndividual ,
+                               skos:Concept ,
+                               vair:Concept .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#ChallengeOutput
+:ChallengeOutput rdf:type owl:NamedIndividual ,
+                          skos:Concept ,
+                          vair:Concept .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#ConditionalAutomation
+:ConditionalAutomation rdf:type owl:NamedIndividual ,
+                                skos:Concept ,
+                                vair:Concept .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#CorrectOutput
+:CorrectOutput rdf:type owl:NamedIndividual ,
+                        skos:Concept ,
+                        vair:Concept .
+
+
 ###  http://www.semanticweb.org/owl/owlapi/turtle#DeepLearning
 :DeepLearning rdf:type owl:NamedIndividual ,
                        skos:Concept ,
                        vair:Concept .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#FullAutomation
+:FullAutomation rdf:type owl:NamedIndividual ,
+                         skos:Concept ,
+                         vair:Concept .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#HighAutomation
+:HighAutomation rdf:type owl:NamedIndividual ,
+                         skos:Concept ,
+                         vair:Concept .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#InformedInvolvement
+:InformedInvolvement rdf:type owl:NamedIndividual ,
+                              skos:Concept ,
+                              vair:Concept .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#IntendedInvolvement
+:IntendedInvolvement rdf:type owl:NamedIndividual ,
+                              skos:Concept ,
+                              vair:Concept .
 
 
 ###  http://www.semanticweb.org/owl/owlapi/turtle#MachineLearning
@@ -2415,10 +2595,58 @@ vair:WrongDataSetDesignChoice rdf:type owl:Class ;
                           vair:Concept .
 
 
+###  http://www.semanticweb.org/owl/owlapi/turtle#NoAutomation
+:NoAutomation rdf:type owl:NamedIndividual ,
+                       skos:Concept ,
+                       vair:Concept .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#OpttingInOutput
+:OpttingInOutput rdf:type owl:NamedIndividual ,
+                          skos:Concept ,
+                          vair:Concept .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#OpttingOutOfOutput
+:OpttingOutOfOutput rdf:type owl:NamedIndividual ,
+                             skos:Concept ,
+                             vair:Concept .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#PartialAutomation
+:PartialAutomation rdf:type owl:NamedIndividual ,
+                            skos:Concept ,
+                            vair:Concept .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#PassiveInvolvement
+:PassiveInvolvement rdf:type owl:NamedIndividual ,
+                             skos:Concept ,
+                             vair:Concept .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#ReverseOutput
+:ReverseOutput rdf:type owl:NamedIndividual ,
+                        skos:Concept ,
+                        vair:Concept .
+
+
 ###  http://www.semanticweb.org/owl/owlapi/turtle#Software
 :Software rdf:type owl:NamedIndividual ,
                    skos:Concept ,
                    vair:Concept .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#UninformedInvolvement
+:UninformedInvolvement rdf:type owl:NamedIndividual ,
+                                skos:Concept ,
+                                vair:Concept .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#UnintendedInvolvement
+:UnintendedInvolvement rdf:type owl:NamedIndividual ,
+                                skos:Concept ,
+                                vair:Concept .
 
 
 ###  https://w3id.org/vair#
@@ -5126,11 +5354,90 @@ vair:WrongDataSetDesignChoice rdf:type owl:NamedIndividual ,
 #    Annotations
 #################################################################
 
+:API rdfs:comment "Application Programming Interface."@en ;
+     rdfs:isDefinedBy vair: ;
+     rdfs:label "API"@en ;
+     skos:definition "Application Programming Interface."@en ;
+     skos:inScheme vair: ;
+     skos:prefLabel "API"@en .
+
+
+:ActiveInvolvement rdfs:isDefinedBy vair: ;
+                   skos:definition "Represents active interactation with an AI system."@en ;
+                   skos:inScheme vair: ;
+                   skos:prefLabel "Active Involvement"@en .
+
+
+:AssistiveAutomation terms:source "ISO/IEC 22989, 5.13" ;
+                     rdfs:isDefinedBy vair: ;
+                     skos:definition "The level of automation where the system assists an operator"@en ;
+                     skos:inScheme vair: ;
+                     skos:prefLabel "Assistive Automation"@en .
+
+
+:Autonomy terms:source "ISO/IEC 22989, 5.13" ;
+          rdfs:isDefinedBy vair: ;
+          skos:definition "The level of automation where the system is capable of modifying its intended domain of use or its goals without external intervention, control or oversight."@en ;
+          skos:inScheme vair: ;
+          skos:prefLabel "Autonomy"@en .
+
+
+:CannotOptOutOfOutput rdfs:isDefinedBy vair: ;
+                      skos:definition "A mode of controllability that stakeholders cannot opt out of the system’s output."@en ;
+                      skos:inScheme vair: ;
+                      skos:prefLabel "Cannot Opt Out Of Output"@en .
+
+
+:ChallengeOutput rdfs:isDefinedBy vair: ;
+                 skos:definition "A mode of controllability that stakeholders can challenge the system’s output."@en ;
+                 skos:inScheme vair: ;
+                 skos:prefLabel "Challenge Output"@en .
+
+
+:ConditionalAutomation terms:source "ISO/IEC 22989, 5.13" ;
+                       rdfs:isDefinedBy vair: ;
+                       skos:definition "The level of automation where there is sustained and specific performance by a system, with an external agent being ready to take over when necessary."@en ;
+                       skos:inScheme vair: ;
+                       skos:prefLabel "Conditional Automation"@en .
+
+
+:CorrectOutput rdfs:isDefinedBy vair: ;
+               skos:definition "A mode of controllability that stakeholders can correct the system’s output."@en ;
+               skos:inScheme vair: ;
+               skos:prefLabel "Correct Output"@en .
+
+
 :DeepLearning terms:source "ISO/IEC 22989, 3.4.4" ;
               rdfs:isDefinedBy vair: ;
               skos:definition "Approach to creating rich hierarchical representations through the training of neural networks with many hidden layers"@en ;
               skos:inScheme vair: ;
               skos:prefLabel "Deep Learning"@en .
+
+
+:FullAutomation terms:source "ISO/IEC 22989, 5.13" ;
+                rdfs:isDefinedBy vair: ;
+                skos:definition "The level of automation where is capable of performing its entire mission without external intervention."@en ;
+                skos:inScheme vair: ;
+                skos:prefLabel "Full Automation"@en .
+
+
+:HighAutomation terms:source "ISO/IEC 22989, 5.13" ;
+                rdfs:isDefinedBy vair: ;
+                skos:definition "The level of automation where there the system performs parts of its mission without external intervention."@en ;
+                skos:inScheme vair: ;
+                skos:prefLabel "High Automation"@en .
+
+
+:InformedInvolvement rdfs:isDefinedBy vair: ;
+                     skos:definition "Represents that a specific actor was informed that an AI system is in place."@en ;
+                     skos:inScheme vair: ;
+                     skos:prefLabel "Informed Involvement"@en .
+
+
+:IntendedInvolvement rdfs:isDefinedBy vair: ;
+                     skos:definition "Represents involvement of a specific actor is as intended."@en ;
+                     skos:inScheme vair: ;
+                     skos:prefLabel "Intended Involvement"@en .
 
 
 :MachineLearning terms:source "ISO/IEC 22989, 3.3.5" ;
@@ -5140,10 +5447,60 @@ vair:WrongDataSetDesignChoice rdf:type owl:NamedIndividual ,
                  skos:prefLabel "Machine Learning"@en .
 
 
+:NoAutomation terms:source "ISO/IEC 22989, 5.13" ;
+              rdfs:isDefinedBy vair: ;
+              skos:definition "The level of automation where an operator fully controls the system"@en ;
+              skos:inScheme vair: ;
+              skos:prefLabel "No Automation"@en .
+
+
+:OpttingInOutput rdfs:isDefinedBy vair: ;
+                 skos:definition "A mode of controllability that stakeholders can opt in  the system’s output."@en ;
+                 skos:inScheme vair: ;
+                 skos:prefLabel "Optting In Output"@en .
+
+
+:OpttingOutOfOutput rdfs:isDefinedBy vair: ;
+                    skos:definition "A mode of controllability that stakeholders can opt out of the system’s output."@en ;
+                    skos:inScheme vair: ;
+                    skos:prefLabel "Optting Out Of Output"@en .
+
+
+:PartialAutomation terms:source "ISO/IEC 22989, 5.13" ;
+                   rdfs:isDefinedBy vair: ;
+                   skos:definition "The level of automation where some sub-functions of the system are fully automated while the system remains under the control of an external agent"@en ;
+                   skos:inScheme vair: ;
+                   skos:prefLabel "Partial Automation"@en .
+
+
+:PassiveInvolvement rdfs:isDefinedBy vair: ;
+                    skos:definition "Represents passive interactation with an AI system."@en ;
+                    skos:inScheme vair: ;
+                    skos:prefLabel "Passive Involvement"@en .
+
+
+:ReverseOutput rdfs:isDefinedBy vair: ;
+               skos:definition "A mode of controllability that stakeholders can reverse the system’s output ex-post."@en ;
+               skos:inScheme vair: ;
+               skos:prefLabel "Reverse Output"@en .
+
+
 :Software rdfs:isDefinedBy vair: ;
           skos:definition "Refers to a stand alone software system "@en ;
           skos:inScheme vair: ;
           skos:prefLabel "Software"@en .
+
+
+:UninformedInvolvement rdfs:isDefinedBy vair: ;
+                       skos:definition "Represents that a specific actor was not informed that an AI system is in place."@en ;
+                       skos:inScheme vair: ;
+                       skos:prefLabel "Uninformed Involvement"@en .
+
+
+:UnintendedInvolvement rdfs:isDefinedBy vair: ;
+                       skos:definition "Represents unintended involvement of a specific actor."@en ;
+                       skos:inScheme vair: ;
+                       skos:prefLabel "Unintended Involvement"@en .
 
 
 vair:AGI rdfs:isDefinedBy vair: ;
@@ -5184,8 +5541,10 @@ vair:AdversarialAttack rdfs:isDefinedBy vair: ;
                        skos:related vair:Model .
 
 
-vair:Algorithm rdfs:isDefinedBy vair: ;
-               skos:definition ""@en ;
+vair:Algorithm rdfs:comment "Defines a set of instructions" ;
+               rdfs:isDefinedBy vair: ;
+               rdfs:label "Algorithm"@en ;
+               skos:definition "Defines a set of instructions"@en ;
                skos:inScheme vair: ;
                skos:prefLabel "Algorithm"@en .
 
@@ -5203,8 +5562,10 @@ vair:ApplicationScreening rdfs:isDefinedBy vair: ;
                           skos:related vair:Employment .
 
 
-vair:ApplicationSpecificIntegratedCircuit rdfs:isDefinedBy vair: ;
-                                          skos:definition ""@en ;
+vair:ApplicationSpecificIntegratedCircuit rdfs:comment "An integrated circuit chip customized for a particular use."@en ;
+                                          rdfs:isDefinedBy vair: ;
+                                          rdfs:label "Application Specific Integrated Circuit"@en ;
+                                          skos:definition "An integrated circuit chip customized for a particular use"@en ;
                                           skos:inScheme vair: ;
                                           skos:prefLabel "Application Specific Integrated Circuit"@en .
 
@@ -5390,8 +5751,11 @@ vair:BayesianEstimation rdfs:isDefinedBy vair: ;
                         skos:prefLabel "Bayesian Estimation"@en .
 
 
-vair:BayesianNetwork rdfs:isDefinedBy vair: ;
-                     skos:definition "probabilistic model  that uses Bayesian inference  for probability computations using a directed acyclic graph. [ISO/IEC 22989 3.3.1]"@en ;
+vair:BayesianNetwork terms:source "ISO/IEC 22989 3.3.1" ;
+                     rdfs:comment "Probabilistic model  that uses Bayesian inference  for probability computations using a directed acyclic graph."@en ;
+                     rdfs:isDefinedBy vair: ;
+                     rdfs:label "Bayesian Network"@en ;
+                     skos:definition "Probabilistic model  that uses Bayesian inference  for probability computations using a directed acyclic graph."@en ;
                      skos:inScheme vair: ;
                      skos:prefLabel "Bayesian Network"@en ;
                      skos:related vair:MachineLearningTechnique .
@@ -5583,12 +5947,6 @@ vair:DataPoisoning rdfs:isDefinedBy vair: ;
                    skos:related vair:TrainingData .
 
 
-vair:Dataset rdfs:isDefinedBy vair: ;
-             skos:definition "Collection of data with a shared format. [ISO/IEC 22989, 3.2.5]"@en ;
-             skos:inScheme vair: ;
-             skos:prefLabel "Dataset"@en .
-
-
 vair:Datasheet rdfs:isDefinedBy vair: ;
                skos:definition ""@en ;
                skos:inScheme vair: ;
@@ -5619,8 +5977,11 @@ vair:DecisionSupportSystem rdfs:isDefinedBy vair: ;
                            skos:prefLabel "Decision Support System"@en .
 
 
-vair:DecisionTree rdfs:isDefinedBy vair: ;
-                  skos:definition "model for which inference  is encoded as paths from the root to a leaf node in a tree structure. [ISO/IEC 22989 3.3.2]"@en ;
+vair:DecisionTree terms:source "ISO/IEC 22989 3.3.2" ;
+                  rdfs:comment "Model for which inference  is encoded as paths from the root to a leaf node in a tree structure."@en ;
+                  rdfs:isDefinedBy vair: ;
+                  rdfs:label "Decision Tree"@en ;
+                  skos:definition "Model for which inference  is encoded as paths from the root to a leaf node in a tree structure."@en ;
                   skos:inScheme vair: ;
                   skos:prefLabel "Decision Tree"@en ;
                   skos:related vair:MachineLearningTechnique .
@@ -5762,7 +6123,7 @@ vair:DiscoveringCrimePatterns rdfs:isDefinedBy vair: ;
                               skos:definition "Identifying unkown patterns of crime"@en ;
                               skos:inScheme vair: ;
                               skos:prefLabel "Discovering Crime Patterns"@en ;
-                              skos:related vair:LawEnforcemnet .
+                              skos:related vair:LawEnforcement .
 
 
 vair:DiscoveringCrimeRelationships rdfs:isDefinedBy vair: ;
@@ -6002,12 +6363,6 @@ vair:EvaluatingReliabilityOfEvidenceInProsecutionOfCriminalOffences rdfs:isDefin
                                                                     skos:prefLabel "Evaluating Reliability Of Evidence In Prosecution Of Criminal Offences "@en .
 
 
-vair:EvolutionaryAlgorithm rdfs:isDefinedBy vair: ;
-                           skos:definition ""@en ;
-                           skos:inScheme vair: ;
-                           skos:prefLabel "Evolutionary Algorithm"@en .
-
-
 vair:ExaminingApplication rdfs:isDefinedBy vair: ;
                           skos:definition ""@en ;
                           skos:inScheme vair: ;
@@ -6103,8 +6458,11 @@ vair:GeneratingVideoContent rdfs:isDefinedBy vair: ;
                             skos:prefLabel "Generating Video Content"@en .
 
 
-vair:GeneticAlgorithm rdfs:isDefinedBy vair: ;
-                      skos:definition "algorithm which simulates natural selection by creating and evolving a population of individuals (solutions) for optimization problems. [ISO/IEC 22989, 3.1.15]"@en ;
+vair:GeneticAlgorithm terms:source "ISO/IEC 22989, 3.1.15"@en ;
+                      rdfs:comment "Algorithm which simulates natural selection by creating and evolving a population of individuals (solutions) for optimization problems"@en ;
+                      rdfs:isDefinedBy vair: ;
+                      rdfs:label "Genetic Algorithm"@en ;
+                      skos:definition "Algorithm which simulates natural selection by creating and evolving a population of individuals (solutions) for optimization problems. [ISO/IEC 22989, 3.1.15]"@en ;
                       skos:inScheme vair: ;
                       skos:prefLabel "Genetic Algorithm"@en .
 
@@ -6134,8 +6492,10 @@ vair:Group rdfs:isDefinedBy vair: ;
            skos:prefLabel "Group"@en .
 
 
-vair:Hardware rdfs:isDefinedBy vair: ;
-              skos:definition ""@en ;
+vair:Hardware rdfs:comment "Physical equipment/components"@en ;
+              rdfs:isDefinedBy vair: ;
+              rdfs:label "Hardware"@en ;
+              skos:definition "Physical equipment/components"@en ;
               skos:inScheme vair: ;
               skos:prefLabel "Hardware"@en .
 
@@ -6588,6 +6948,7 @@ vair:LearningTechnique rdfs:isDefinedBy vair: ;
 
 
 vair:Library rdfs:isDefinedBy vair: ;
+             rdfs:label "Library"@en ;
              skos:definition ""@en ;
              skos:inScheme vair: ;
              skos:prefLabel "Library"@en ;
@@ -6666,15 +7027,20 @@ vair:MachineLearningLibrary rdfs:isDefinedBy vair: ;
                             skos:related vair:MachineLearningTechnique .
 
 
-vair:MachineLearningModel rdfs:isDefinedBy vair: ;
-                          skos:definition "mathematical construct that generates an inference or prediction  based on input data or information. [ISO/IEC 22989, 3.3.7]"@en ;
+vair:MachineLearningModel terms:source "ISO/IEC 22989, 3.3.7" ;
+                          rdfs:comment "Mathematical construct that generates an inference or prediction  based on input data or information."@en ;
+                          rdfs:isDefinedBy vair: ;
+                          rdfs:label "Machine Learning Model"@en ;
+                          skos:definition "Mathematical construct that generates an inference or prediction  based on input data or information."@en ;
                           skos:inScheme vair: ;
                           skos:prefLabel "Machine Learning Model"@en ;
                           skos:related vair:MachineLearningTechnique .
 
 
-vair:MachineLearningPlatform rdfs:isDefinedBy vair: ;
-                             skos:definition ""@en ;
+vair:MachineLearningPlatform rdfs:comment "Resource on which a ML model runs."@en ;
+                             rdfs:isDefinedBy vair: ;
+                             rdfs:label "Machine Learning Platform"@en ;
+                             skos:definition "Resource on which a ML model runs."@en ;
                              skos:inScheme vair: ;
                              skos:prefLabel "Machine Learning Platform"@en .
 
@@ -7025,12 +7391,6 @@ vair:Planning rdfs:isDefinedBy vair: ;
               skos:definition ""@en ;
               skos:inScheme vair: ;
               skos:prefLabel "Planning"@en .
-
-
-vair:Platform rdfs:isDefinedBy vair: ;
-              skos:definition ""@en ;
-              skos:inScheme vair: ;
-              skos:prefLabel ""@en .
 
 
 vair:Police rdfs:isDefinedBy vair: ;
@@ -7584,8 +7944,9 @@ vair:TechnicalDocumentation rdfs:isDefinedBy vair: ;
                             skos:prefLabel "TechnicalDocumentation"@en .
 
 
-vair:TensorProcessingUnit rdfs:isDefinedBy vair: ;
-                          skos:definition ""@en ;
+vair:TensorProcessingUnit rdfs:comment "An AI application-specific integrated circuit developed by Google."@en ;
+                          rdfs:isDefinedBy vair: ;
+                          skos:definition "An AI application-specific integrated circuit developed by Google."@en ;
                           skos:inScheme vair: ;
                           skos:prefLabel "Tensor Processing Unit"@en .
 
@@ -7602,15 +7963,20 @@ vair:TestReport rdfs:isDefinedBy vair: ;
                 skos:prefLabel "Test Report"@en .
 
 
-vair:Tool rdfs:comment "Tool" ;
+vair:Tool rdfs:comment "Refers to a software tool"@en ,
+                       "Tool" ;
           rdfs:isDefinedBy vair: ;
-          skos:definition "A tool that has been used in development of an AI system."@en ;
+          rdfs:label "Tool"@en ;
+          skos:definition "Refers to a software tool"@en ;
           skos:inScheme vair: ;
           skos:prefLabel "Tool"@en .
 
 
-vair:TrainedModel rdfs:isDefinedBy vair: ;
-                  skos:definition "result of model training [ISO/IEC 22989, 3.3.14]"@en ;
+vair:TrainedModel terms:source "ISO/IEC 22989, 3.3.14" ;
+                  rdfs:comment "Model resulted from model training."@en ;
+                  rdfs:isDefinedBy vair: ;
+                  rdfs:label "Trained Model" ;
+                  skos:definition "Model resulted from model training."@en ;
                   skos:inScheme vair: ;
                   skos:prefLabel "Trained Model"@en ;
                   skos:related vair:ModelTraning .
@@ -7703,282 +8069,5 @@ vair:WrongDataSetDesignChoice rdfs:isDefinedBy vair: ;
                               skos:inScheme vair: ;
                               skos:prefLabel "Wrong Data Set Design Choice"@en .
 
-###  https://w3id.org/vair#NoAutomation
-:NoAutomation rdf:type owl:Class ;
-             rdfs:subClassOf airo:AutomationLevel .
-
-###  https://w3id.org/vair#NoAutomation
-:NoAutomation rdf:type owl:NamedIndividual ,
-                            skos:Concept ,
-                            vair:Concept .
-
-:NoAutomation rdfs:isDefinedBy vair: ;
-             skos:definition "The level of automation where an operator fully controls the system"@en ;
-             terms:source "ISO/IEC 22989, 5.13" ;
-             skos:inScheme vair: ;
-             skos:prefLabel "No Automation"@en . 
-
-
-###  https://w3id.org/vair#AssistiveAutomation
-:AssistiveAutomation rdf:type owl:Class ;
-             rdfs:subClassOf airo:AutomationLevel .
-
-###  https://w3id.org/vair#AssistiveAutomation
-:AssistiveAutomation rdf:type owl:NamedIndividual ,
-                            skos:Concept ,
-                            vair:Concept .
-
-:AssistiveAutomation rdfs:isDefinedBy vair: ;
-             skos:definition "The level of automation where the system assists an operator"@en ;
-             terms:source "ISO/IEC 22989, 5.13" ;
-             skos:inScheme vair: ;
-             skos:prefLabel "Assistive Automation"@en .          
-###  https://w3id.org/vair#PartialAutomation
-:PartialAutomation rdf:type owl:Class ;
-             rdfs:subClassOf airo:AutomationLevel .
-
-###  https://w3id.org/vair#PartialAutomation
-:PartialAutomation rdf:type owl:NamedIndividual ,
-                            skos:Concept ,
-                            vair:Concept .
-
-:PartialAutomation rdfs:isDefinedBy vair: ;
-             skos:definition "The level of automation where some sub-functions of the system are fully automated while the system remains under the control of an external agent"@en ;
-             terms:source "ISO/IEC 22989, 5.13" ;
-             skos:inScheme vair: ;
-             skos:prefLabel "Partial Automation"@en .  
-
-###  https://w3id.org/vair#ConditionalAutomation
-:ConditionalAutomation rdf:type owl:Class ;
-             rdfs:subClassOf airo:AutomationLevel .
-
-###  https://w3id.org/vair#ConditionalAutomation
-:ConditionalAutomation rdf:type owl:NamedIndividual ,
-                            skos:Concept ,
-                            vair:Concept .
-
-:ConditionalAutomation rdfs:isDefinedBy vair: ;
-             skos:definition "The level of automation where there is sustained and specific performance by a system, with an external agent being ready to take over when necessary."@en ;
-             terms:source "ISO/IEC 22989, 5.13" ;
-             skos:inScheme vair: ;
-             skos:prefLabel "Conditional Automation"@en . 
-
-###  https://w3id.org/vair#HighAutomation
-:HighAutomation rdf:type owl:Class ;
-             rdfs:subClassOf airo:AutomationLevel .
-
-###  https://w3id.org/vair#HighAutomation
-:HighAutomation rdf:type owl:NamedIndividual ,
-                            skos:Concept ,
-                            vair:Concept .
-
-:HighAutomation rdfs:isDefinedBy vair: ;
-             skos:definition "The level of automation where there the system performs parts of its mission without external intervention."@en ;
-             terms:source "ISO/IEC 22989, 5.13" ;
-             skos:inScheme vair: ;
-             skos:prefLabel "High Automation"@en .  
-
-###  https://w3id.org/vair#FullAutomation
-:FullAutomation rdf:type owl:Class ;
-             rdfs:subClassOf airo:AutomationLevel .
-
-###  https://w3id.org/vair#FullAutomation
-:FullAutomation rdf:type owl:NamedIndividual ,
-                            skos:Concept ,
-                            vair:Concept .
-
-:FullAutomation rdfs:isDefinedBy vair: ;
-             skos:definition "The level of automation where is capable of performing its entire mission without external intervention."@en ;
-             terms:source "ISO/IEC 22989, 5.13" ;
-             skos:inScheme vair: ;
-             skos:prefLabel "Full Automation"@en . 
-
-###  https://w3id.org/vair#Autonomy
-:Autonomy rdf:type owl:Class ;
-             rdfs:subClassOf airo:AutomationLevel .
-
-###  https://w3id.org/vair#Autonomy
-:Autonomy rdf:type owl:NamedIndividual ,
-                            skos:Concept ,
-                            vair:Concept .
-
-:Autonomy rdfs:isDefinedBy vair: ;
-             skos:definition "The level of automation where the system is capable of modifying its intended domain of use or its goals without external intervention, control or oversight."@en ;
-             terms:source "ISO/IEC 22989, 5.13" ;
-             skos:inScheme vair: ;
-             skos:prefLabel "Autonomy"@en .  
-
-
-###  https://w3id.org/vair#IntendedInvolvement
-:IntendedInvolvement rdf:type owl:Class ;
-             rdfs:subClassOf airo:HumanInvovlvement .
-
-###  https://w3id.org/vair#IntendedInvolvement
-:IntendedInvolvement rdf:type owl:NamedIndividual ,
-                            skos:Concept ,
-                            vair:Concept .
-
-:IntendedInvolvement rdfs:isDefinedBy vair: ;
-             skos:definition "Represents involvement of a specific actor is as intended."@en ;
-    
-             skos:inScheme vair: ;
-             skos:prefLabel "Intended Involvement"@en .  
-
-###  https://w3id.org/vair#UnintendedInvolvement
-:UnintendedInvolvement rdf:type owl:Class ;
-             rdfs:subClassOf airo:HumanInvovlvement .
-
-###  https://w3id.org/vair#UnintendedInvolvement
-:UnintendedInvolvement rdf:type owl:NamedIndividual ,
-                            skos:Concept ,
-                            vair:Concept .
-
-:UnintendedInvolvement rdfs:isDefinedBy vair: ;
-             skos:definition "Represents unintended involvement of a specific actor."@en ;
-    
-             skos:inScheme vair: ;
-             skos:prefLabel "Unintended Involvement"@en .    
-
-###  https://w3id.org/vair#ActiveInvolvement
-:ActiveInvolvement rdf:type owl:Class ;
-             rdfs:subClassOf airo:HumanInvovlvement .
-
-###  https://w3id.org/vair#ActiveInvolvement
-:ActiveInvolvement rdf:type owl:NamedIndividual ,
-                            skos:Concept ,
-                            vair:Concept .
-
-:ActiveInvolvement rdfs:isDefinedBy vair: ;
-             skos:definition "Represents active interactation with an AI system."@en ;
-             skos:inScheme vair: ;
-             skos:prefLabel "Active Involvement"@en .                                                                                                                                     
-
-###  https://w3id.org/vair#PassiveInvolvement
-:PassiveInvolvement rdf:type owl:Class ;
-             rdfs:subClassOf airo:HumanInvovlvement .
-
-###  https://w3id.org/vair#PassiveInvolvement
-:PassiveInvolvement rdf:type owl:NamedIndividual ,
-                            skos:Concept ,
-                            vair:Concept .
-
-:PassiveInvolvement rdfs:isDefinedBy vair: ;
-             skos:definition "Represents passive interactation with an AI system."@en ;
-             skos:inScheme vair: ;
-             skos:prefLabel "Passive Involvement"@en . 
-
-###  https://w3id.org/vair#InformedInvolvement
-:InformedInvolvement rdf:type owl:Class ;
-             rdfs:subClassOf airo:HumanInvovlvement .
-
-###  https://w3id.org/vair#InformedInvolvement
-:InformedInvolvement rdf:type owl:NamedIndividual ,
-                            skos:Concept ,
-                            vair:Concept .
-
-:InformedInvolvement rdfs:isDefinedBy vair: ;
-             skos:definition "Represents that a specific actor was informed that an AI system is in place."@en ;
-             skos:inScheme vair: ;
-             skos:prefLabel "Informed Involvement"@en . 
-
-###  https://w3id.org/vair#UninformedInvolvement
-:UninformedInvolvement rdf:type owl:Class ;
-             rdfs:subClassOf airo:HumanInvovlvement .
-
-###  https://w3id.org/vair#UninformedInvolvement
-:UninformedInvolvement rdf:type owl:NamedIndividual ,
-                            skos:Concept ,
-                            vair:Concept .
-
-:UninformedInvolvement rdfs:isDefinedBy vair: ;
-             skos:definition "Represents that a specific actor was not informed that an AI system is in place."@en ;
-             skos:inScheme vair: ;
-             skos:prefLabel "Uninformed Involvement"@en .   
-
-
-###  https://w3id.org/vair#OpttingInOutput
-:OpttingInOutput rdf:type owl:Class ;
-             rdfs:subClassOf airo:ModeOfOutputControllability .
-
-###  https://w3id.org/vair#OpttingInOutput
-:OpttingInOutput rdf:type owl:NamedIndividual ,
-                            skos:Concept ,
-                            vair:Concept .
-
-:OpttingInOutput rdfs:isDefinedBy vair: ;
-             skos:definition "A mode of controllability that stakeholders can opt in  the system’s output."@en ;
-             skos:inScheme vair: ;
-             skos:prefLabel "Optting In Output"@en .    
-
-###  https://w3id.org/vair#OpttingOutOfOutput
-:OpttingOutOfOutput rdf:type owl:Class ;
-             rdfs:subClassOf airo:ModeOfOutputControllability .
-
-###  https://w3id.org/vair#OpttingOutOfOutput
-:OpttingOutOfOutput rdf:type owl:NamedIndividual ,
-                            skos:Concept ,
-                            vair:Concept .
-
-:OpttingOutOfOutput rdfs:isDefinedBy vair: ;
-             skos:definition "A mode of controllability that stakeholders can opt out of the system’s output."@en ;
-             skos:inScheme vair: ;
-             skos:prefLabel "Optting Out Of Output"@en .   
-
-###  https://w3id.org/vair#ChallengeOutput
-:ChallengeOutput rdf:type owl:Class ;
-             rdfs:subClassOf airo:ModeOfOutputControllability .
-
-###  https://w3id.org/vair#ChallengeOutput
-:ChallengeOutput rdf:type owl:NamedIndividual ,
-                            skos:Concept ,
-                            vair:Concept .
-
-:ChallengeOutput rdfs:isDefinedBy vair: ;
-             skos:definition "A mode of controllability that stakeholders can challenge the system’s output."@en ;
-             skos:inScheme vair: ;
-             skos:prefLabel "Challenge Output"@en .    
-
-
-###  https://w3id.org/vair#CorrectOutput
-:CorrectOutput rdf:type owl:Class ;
-             rdfs:subClassOf airo:ModeOfOutputControllability .
-
-###  https://w3id.org/vair#CorrectOutput
-:CorrectOutput rdf:type owl:NamedIndividual ,
-                            skos:Concept ,
-                            vair:Concept .
-
-:CorrectOutput rdfs:isDefinedBy vair: ;
-             skos:definition "A mode of controllability that stakeholders can correct the system’s output."@en ;
-             skos:inScheme vair: ;
-             skos:prefLabel "Correct Output"@en .  
-
-###  https://w3id.org/vair#ReverseOutput
-:ReverseOutput rdf:type owl:Class ;
-             rdfs:subClassOf airo:ModeOfOutputControllability .
-
-###  https://w3id.org/vair#ReverseOutput
-:ReverseOutput rdf:type owl:NamedIndividual ,
-                            skos:Concept ,
-                            vair:Concept .
-
-:ReverseOutput rdfs:isDefinedBy vair: ;
-             skos:definition "A mode of controllability that stakeholders can reverse the system’s output ex-post."@en ;
-             skos:inScheme vair: ;
-             skos:prefLabel "Reverse Output"@en .      
-
-###  https://w3id.org/vair#CannotOptOutOfOutput
-:CannotOptOutOfOutput rdf:type owl:Class ;
-             rdfs:subClassOf airo:ModeOfOutputControllability .
-
-###  https://w3id.org/vair#CannotOptOutOfOutput
-:CannotOptOutOfOutput rdf:type owl:NamedIndividual ,
-                            skos:Concept ,
-                            vair:Concept .
-
-:CannotOptOutOfOutput rdfs:isDefinedBy vair: ;
-             skos:definition "A mode of controllability that stakeholders cannot opt out of the system’s output."@en ;
-             skos:inScheme vair: ;
-             skos:prefLabel "Cannot Opt Out Of Output"@en .                                                                                             
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
