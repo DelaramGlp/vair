@@ -5905,9 +5905,12 @@ vair:ContentGeneration rdfs:isDefinedBy vair: ;
 
 
 vair:ContinuousValidation rdfs:isDefinedBy vair: ;
-                          skos:definition ""@en ;
+                          skos:definition "Refers to validation phase of continuous learning AI systems, wherein incremental training takes place on an ongoing basis while the system is running in production."@en ;
+                          rdfs:comment "Refers to validation phase of continuous learning AI systems, wherein incremental training takes place on an ongoing basis while the system is running in production."@en ;
                           skos:inScheme vair: ;
-                          skos:prefLabel "Continuous Validation"@en .
+                          rdfs:label "Continuous Validation"@en ;
+                          skos:prefLabel "Continuous Validation"@en;
+                          terms:source "ISO/IEC 22989, 6.2.7" .
 
 
 vair:ConvolutionalNeuralNetwork rdfs:isDefinedBy vair: ;
@@ -6012,14 +6015,19 @@ vair:DegradedAccuracy rdfs:isDefinedBy vair: ;
 
 
 vair:Deployment rdfs:isDefinedBy vair: ;
-                skos:definition ""@en ;
+                skos:definition "Refers to deployment phase when the AI system is installed, released or configured for operation in a target environment."@en ;
+                rdfs:comment "Refers to deployment phase oThe AI system is installed, released or configured for operation in a target environment."@en ;
                 skos:inScheme vair: ;
-                skos:prefLabel "Deployment"@en .
+                rdfs:label "Deployment"@en ;
+                skos:prefLabel "Deployment"@en;
+                terms:source "ISO/IEC 22989, 6.2.5" .
 
 
 vair:Design rdfs:isDefinedBy vair: ;
-            skos:definition ""@en ;
+            skos:definition "Refers to design phase of AI development"@en ;
+            rdfs:comment "Refers to design phase of AI development"@en ;
             skos:inScheme vair: ;
+            rdfs:label "Design"@en ;
             skos:prefLabel "Design"@en .
 
 
@@ -6108,8 +6116,10 @@ vair:DeterminingCreditScore rdfs:isDefinedBy vair: ;
 
 
 vair:Development rdfs:isDefinedBy vair: ;
-                 skos:definition ""@en ;
+                 skos:definition "Refers to the development phase in AI lifecyle"@en ;
+                 rdfs:comment "Refers to the development phase in AI lifecyle"@en ;
                  skos:inScheme vair: ;
+                 rdfs:label "Development"@en ;
                  skos:prefLabel "Development"@en .
 
 
@@ -6697,8 +6707,11 @@ vair:InaccurateRecommendation rdfs:isDefinedBy vair: ;
 
 
 vair:Inception rdfs:isDefinedBy vair: ;
-               skos:definition ""@en ;
+               skos:definition "Inception occurs when one or more stakeholders decides to turn an idea into a tangible system"@en ;
+               rdfs:comment "Inception occurs when one or more stakeholders decides to turn an idea into a tangible system"@en ;
                skos:inScheme vair: ;
+               rdfs:label "Inception"@en ;
+               terms:source "ISO/IEC 22989, 6.2.2";
                skos:prefLabel "Inception"@en .
 
 
@@ -7306,9 +7319,12 @@ vair:OperatingSupplyOfWater rdfs:isDefinedBy vair: ;
 
 
 vair:Operation rdfs:isDefinedBy vair: ;
-               skos:definition ""@en ;
+               skos:definition "Refers to the operation stage when an AI system is running and generally available for use."@en ;
+               rdfs:comment "Refers to the operation stage when an AI system is running and generally available for use."@en ;
                skos:inScheme vair: ;
-               skos:prefLabel "Operation"@en .
+               rdfs:label "Operation"@en ;
+               skos:prefLabel "Operation"@en ;
+               terms:source "ISO/IEC 22989, 6.2.6".
 
 
 vair:OptimisationMethod rdfs:isDefinedBy vair: ;
@@ -7543,9 +7559,12 @@ vair:QuestionAnswering rdfs:isDefinedBy vair: ;
 
 
 vair:ReEvaluation rdfs:isDefinedBy vair: ;
-                  skos:definition ""@en ;
+                  skos:definition "After the operation and monitoring stage, based on the results of the work of the AI system, the need for a reassessment can arise."@en ;
+                  rdfs:comment "After the operation and monitoring stage, based on the results of the work of the AI system, the need for a reassessment can arise."@en ;
                   skos:inScheme vair: ;
-                  skos:prefLabel "Re-Evaluation"@en .
+                  skos:prefLabel "Re-Evaluation"@en ;
+                  rdfs:comment "Re-Evaluation"@en ;
+                  terms:source "ISO/IEC 22989, 6.2.8" .
 
 
 vair:ReasoningTechnique rdfs:isDefinedBy vair: ;
@@ -7661,9 +7680,12 @@ vair:ResidencePermitApplicant rdfs:isDefinedBy vair: ;
 
 
 vair:Retirement rdfs:isDefinedBy vair: ;
-                skos:definition ""@en ;
+                skos:definition "The stage the AI system become obsolete"@en ;
+                rdfs:comment "The stage the AI system become obsolete"@en ;
                 skos:inScheme vair: ;
-                skos:prefLabel "Retirement"@en .
+                skos:prefLabel "Retirement"@en;
+                rdfs:label "Retirement"@en;
+                terms:source "ISO/IEC 22989, 6.2.9" .
 
 
 vair:ReversingOutcome rdfs:isDefinedBy vair: ;
@@ -8022,15 +8044,21 @@ vair:UserTraining rdfs:isDefinedBy vair: ;
 
 
 vair:Validation rdfs:isDefinedBy vair: ;
-                skos:definition ""@en ;
+                skos:definition "Validating that the AI system from the design and development stage works according to requirements and meets objectives."@en ;
+                rdfs:comment "Validating that the AI system from the design and development stage works according to requirements and meets objectives."@en ;
                 skos:inScheme vair: ;
-                skos:prefLabel "Validation"@en .
+                skos:prefLabel "Validation"@en;
+                rdfs:label "Validation"@en;
+                terms:source "ISO/IEC 22989, 6.2.4".
 
 
 vair:Verification rdfs:isDefinedBy vair: ;
-                  skos:definition ""@en ;
+                  skos:definition "Verifying the AI system from the design and development stage works according to requirements and meets objectives."@en ;
+                  rdfs:comment "Verifying the AI system from the design and development stage works according to requirements and meets objectives."@en ;
                   skos:inScheme vair: ;
-                  skos:prefLabel "Verification"@en .
+                  skos:prefLabel "Verification"@en;
+                  rdfs:label "Verification"@en; 
+                  terms:source "ISO/IEC 22989, 6.2.4".
 
 
 vair:VerificationOfMigrationSeekerClaims rdfs:isDefinedBy vair: ;
