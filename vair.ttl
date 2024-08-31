@@ -208,11 +208,6 @@ airo:HumanInvovlvement rdf:type owl:Class .
 airo:Impact rdf:type owl:Class .
 
 
-###  https://w3id.org/airo#InputDataRiskSource
-airo:InputDataRiskSource rdf:type owl:Class ;
-                         rdfs:subClassOf vair:DataRiskSource .
-
-
 ###  https://w3id.org/airo#Modality
 airo:Modality rdf:type owl:Class .
 
@@ -221,18 +216,8 @@ airo:Modality rdf:type owl:Class .
 airo:ModeOfOutputControllability rdf:type owl:Class .
 
 
-###  https://w3id.org/airo#OrganisationalRiskSource
-airo:OrganisationalRiskSource rdf:type owl:Class ;
-                              rdfs:subClassOf airo:RiskSource .
-
-
 ###  https://w3id.org/airo#Output
 airo:Output rdf:type owl:Class .
-
-
-###  https://w3id.org/airo#PerfomanceRiskSource
-airo:PerfomanceRiskSource rdf:type owl:Class ;
-                          rdfs:subClassOf airo:RiskSource .
 
 
 ###  https://w3id.org/airo#Purpose
@@ -245,26 +230,6 @@ airo:RiskSource rdf:type owl:Class .
 
 ###  https://w3id.org/airo#Standard
 airo:Standard rdf:type owl:Class .
-
-
-###  https://w3id.org/airo#SystemRiskSource
-airo:SystemRiskSource rdf:type owl:Class ;
-                      rdfs:subClassOf airo:RiskSource .
-
-
-###  https://w3id.org/airo#TestDataRiskSource
-airo:TestDataRiskSource rdf:type owl:Class ;
-                        rdfs:subClassOf vair:DataRiskSource .
-
-
-###  https://w3id.org/airo#TrainingDataRiskSource
-airo:TrainingDataRiskSource rdf:type owl:Class ;
-                            rdfs:subClassOf vair:DataRiskSource .
-
-
-###  https://w3id.org/airo#ValidationDataRiskSource
-airo:ValidationDataRiskSource rdf:type owl:Class ;
-                              rdfs:subClassOf vair:DataRiskSource .
 
 
 ###  https://w3id.org/vair#AGI
@@ -534,17 +499,17 @@ vair:BiasDetection rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#BiasedTestData
 vair:BiasedTestData rdf:type owl:Class ;
-                    rdfs:subClassOf airo:TestDataRiskSource .
+                    rdfs:subClassOf vair:TestDataRiskSource .
 
 
 ###  https://w3id.org/vair#BiasedTrainingData
 vair:BiasedTrainingData rdf:type owl:Class ;
-                        rdfs:subClassOf airo:TrainingDataRiskSource .
+                        rdfs:subClassOf vair:TrainingDataRiskSource .
 
 
 ###  https://w3id.org/vair#BiasedValidationData
 vair:BiasedValidationData rdf:type owl:Class ;
-                          rdfs:subClassOf airo:ValidationDataRiskSource .
+                          rdfs:subClassOf vair:ValidationDataRiskSource .
 
 
 ###  https://w3id.org/vair#BiometricCategorisation
@@ -679,11 +644,6 @@ vair:CourseAttendee rdf:type owl:Class ;
 ###  https://w3id.org/vair#CriticalInfrastructure
 vair:CriticalInfrastructure rdf:type owl:Class ;
                             rdfs:subClassOf airo:Domain .
-
-
-###  https://w3id.org/vair#Cyberattack
-vair:Cyberattack rdf:type owl:Class ;
-                 rdfs:subClassOf vair:Attack .
 
 
 ###  https://w3id.org/vair#DataPoisoning
@@ -930,22 +890,22 @@ vair:Employment rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#ErroneousInputData
 vair:ErroneousInputData rdf:type owl:Class ;
-                        rdfs:subClassOf airo:InputDataRiskSource .
+                        rdfs:subClassOf vair:InputDataRiskSource .
 
 
 ###  https://w3id.org/vair#ErroneousTestData
 vair:ErroneousTestData rdf:type owl:Class ;
-                       rdfs:subClassOf airo:TestDataRiskSource .
+                       rdfs:subClassOf vair:TestDataRiskSource .
 
 
 ###  https://w3id.org/vair#ErroneousTrainingData
 vair:ErroneousTrainingData rdf:type owl:Class ;
-                           rdfs:subClassOf airo:TrainingDataRiskSource .
+                           rdfs:subClassOf vair:TrainingDataRiskSource .
 
 
 ###  https://w3id.org/vair#ErroneousValidationData
 vair:ErroneousValidationData rdf:type owl:Class ;
-                             rdfs:subClassOf airo:ValidationDataRiskSource .
+                             rdfs:subClassOf vair:ValidationDataRiskSource .
 
 
 ###  https://w3id.org/vair#ErrorInDataCollection
@@ -1329,17 +1289,17 @@ vair:Inception rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#IncompleteTestData
 vair:IncompleteTestData rdf:type owl:Class ;
-                        rdfs:subClassOf airo:TestDataRiskSource .
+                        rdfs:subClassOf vair:TestDataRiskSource .
 
 
 ###  https://w3id.org/vair#IncompleteTrainingData
 vair:IncompleteTrainingData rdf:type owl:Class ;
-                            rdfs:subClassOf airo:TrainingDataRiskSource .
+                            rdfs:subClassOf vair:TrainingDataRiskSource .
 
 
 ###  https://w3id.org/vair#IncompleteValidationData
 vair:IncompleteValidationData rdf:type owl:Class ;
-                              rdfs:subClassOf airo:ValidationDataRiskSource .
+                              rdfs:subClassOf vair:ValidationDataRiskSource .
 
 
 ###  https://w3id.org/vair#IndividualEnteredState
@@ -1398,6 +1358,15 @@ vair:InformedInvolvement rdf:type owl:Class ;
                          skos:prefLabel "Informed Involvement"@en .
 
 
+###  https://w3id.org/vair#InputDataRiskSource
+vair:InputDataRiskSource rdf:type owl:Class ;
+                         rdfs:subClassOf vair:DataRiskSource ;
+                         rdfs:comment "Risk sources related to input data"@en ;
+                         rdfs:label "Input Data Risk Source"@en ;
+                         skos:definition "Risk sources related to input data"@en ;
+                         skos:prefLabel "Input Data Risk Source"@en .
+
+
 ###  https://w3id.org/vair#InstallationInstruction
 vair:InstallationInstruction rdf:type owl:Class ;
                              rdfs:subClassOf airo:Documentation .
@@ -1417,12 +1386,12 @@ vair:InstructionForUse rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#InsufficientHumanOversightMeasure
 vair:InsufficientHumanOversightMeasure rdf:type owl:Class ;
-                                       rdfs:subClassOf airo:OrganisationalRiskSource .
+                                       rdfs:subClassOf vair:OrganisationalRiskSource .
 
 
 ###  https://w3id.org/vair#InsufficientInstruction
 vair:InsufficientInstruction rdf:type owl:Class ;
-                             rdfs:subClassOf airo:OrganisationalRiskSource .
+                             rdfs:subClassOf vair:OrganisationalRiskSource .
 
 
 ###  https://w3id.org/vair#IntelligentControlSystem
@@ -1473,17 +1442,17 @@ vair:IoTSystem rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#IrrelevantTestData
 vair:IrrelevantTestData rdf:type owl:Class ;
-                        rdfs:subClassOf airo:TestDataRiskSource .
+                        rdfs:subClassOf vair:TestDataRiskSource .
 
 
 ###  https://w3id.org/vair#IrrelevantTrainingData
 vair:IrrelevantTrainingData rdf:type owl:Class ;
-                            rdfs:subClassOf airo:TrainingDataRiskSource .
+                            rdfs:subClassOf vair:TrainingDataRiskSource .
 
 
 ###  https://w3id.org/vair#IrrelevantValidationData
 vair:IrrelevantValidationData rdf:type owl:Class ;
-                              rdfs:subClassOf airo:ValidationDataRiskSource .
+                              rdfs:subClassOf vair:ValidationDataRiskSource .
 
 
 ###  https://w3id.org/vair#JobApplicant
@@ -1549,7 +1518,7 @@ vair:KnowledgeRepresentation rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#LackOfTransparency
 vair:LackOfTransparency rdf:type owl:Class ;
-                        rdfs:subClassOf airo:OrganisationalRiskSource .
+                        rdfs:subClassOf vair:OrganisationalRiskSource .
 
 
 ###  https://w3id.org/vair#LawEnforcement
@@ -1605,17 +1574,17 @@ vair:LongShortTermMemory rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#LowAccuracy
 vair:LowAccuracy rdf:type owl:Class ;
-                 rdfs:subClassOf airo:PerfomanceRiskSource .
+                 rdfs:subClassOf vair:PerfomanceRiskSource .
 
 
 ###  https://w3id.org/vair#LowRobustness
 vair:LowRobustness rdf:type owl:Class ;
-                   rdfs:subClassOf airo:PerfomanceRiskSource .
+                   rdfs:subClassOf vair:PerfomanceRiskSource .
 
 
 ###  https://w3id.org/vair#LowSecurity
 vair:LowSecurity rdf:type owl:Class ;
-                 rdfs:subClassOf airo:PerfomanceRiskSource .
+                 rdfs:subClassOf vair:PerfomanceRiskSource .
 
 
 ###  https://w3id.org/vair#MachineLearning
@@ -1764,6 +1733,15 @@ vair:ModelEvasion rdf:type owl:Class ;
 ###  https://w3id.org/vair#ModelInversion
 vair:ModelInversion rdf:type owl:Class ;
                     rdfs:subClassOf vair:Attack .
+
+
+###  https://w3id.org/vair#ModelRiskSource
+vair:ModelRiskSource rdf:type owl:Class ;
+                     rdfs:subClassOf airo:RiskSource ;
+                     rdfs:comment "Risk sources related to the AI model"@en ;
+                     rdfs:label "Model Risk Source"@en ;
+                     skos:definition "Risk sources related to AI model"@en ;
+                     skos:prefLabel "Model Risk Source"@en .
 
 
 ###  https://w3id.org/vair#Monitoring
@@ -1916,6 +1894,15 @@ vair:OrganisationalControl rdf:type owl:Class ;
                            skos:prefLabel "Organisational Control"@en .
 
 
+###  https://w3id.org/vair#OrganisationalRiskSource
+vair:OrganisationalRiskSource rdf:type owl:Class ;
+                              rdfs:subClassOf airo:RiskSource ;
+                              rdfs:comment "Risk sources related with the organisation developing, deploying, or using AI."@en ;
+                              rdfs:label "Organisational Risk Source"@en ;
+                              skos:definition "Risk sources related with the organisation developing, deploying, or using AI."@en ;
+                              skos:prefLabel "Organisational Risk Source"@en .
+
+
 ###  https://w3id.org/vair#Overreliance
 vair:Overreliance rdf:type owl:Class ;
                   rdfs:subClassOf airo:Impact .
@@ -1958,6 +1945,15 @@ vair:PassiveInvolvement rdf:type owl:Class ;
 vair:PatternRecognition rdf:type owl:Class ;
                         rdfs:subClassOf airo:AICapability ,
                                         vair:Detection .
+
+
+###  https://w3id.org/vair#PerfomanceRiskSource
+vair:PerfomanceRiskSource rdf:type owl:Class ;
+                          rdfs:subClassOf airo:RiskSource ;
+                          rdfs:comment "Risk sources related to performance"@en ;
+                          rdfs:label "Perfomance Risk Source"@en ;
+                          skos:definition "Risk sources related to performance"@en ;
+                          skos:prefLabel "Perfomance Risk Source"@en .
 
 
 ###  https://w3id.org/vair#PerformingBackgroundCheck
@@ -2404,7 +2400,7 @@ vair:SpeechSynthesis rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#StaffIncompetence
 vair:StaffIncompetence rdf:type owl:Class ;
-                       rdfs:subClassOf airo:OrganisationalRiskSource .
+                       rdfs:subClassOf vair:OrganisationalRiskSource .
 
 
 ###  https://w3id.org/vair#StatisticalTechnique
@@ -2438,9 +2434,13 @@ vair:SystemArchitectureDocumentation rdf:type owl:Class ;
                                      skos:prefLabel "System Architecture Documentation"@en .
 
 
-###  https://w3id.org/vair#SystemVulnerability
-vair:SystemVulnerability rdf:type owl:Class ;
-                         rdfs:subClassOf airo:SystemRiskSource .
+###  https://w3id.org/vair#SystemRiskSource
+vair:SystemRiskSource rdf:type owl:Class ;
+                      rdfs:subClassOf airo:RiskSource ;
+                      rdfs:comment "Risk sources related to the AI system"@en ;
+                      rdfs:label "System Risk Source"@en ;
+                      skos:definition "Risk sources related to the AI system"@en ;
+                      skos:prefLabel "System Risk Source"@en .
 
 
 ###  https://w3id.org/vair#TechnicalDocumentation
@@ -2451,6 +2451,13 @@ vair:TechnicalDocumentation rdf:type owl:Class ;
 ###  https://w3id.org/vair#TensorProcessingUnit
 vair:TensorProcessingUnit rdf:type owl:Class ;
                           rdfs:subClassOf vair:ApplicationSpecificIntegratedCircuit .
+
+
+###  https://w3id.org/vair#TestDataRiskSource
+vair:TestDataRiskSource rdf:type owl:Class ;
+                        rdfs:subClassOf vair:DataRiskSource ;
+                        rdfs:comment "Risk sources related to test data"@en ;
+                        skos:definition "Risk sources related to test data"@en .
 
 
 ###  https://w3id.org/vair#TestLog
@@ -2473,9 +2480,18 @@ vair:TrainedModel rdf:type owl:Class ;
                   rdfs:subClassOf vair:Model .
 
 
-###  https://w3id.org/vair#UnavailabilityOfDataSet
-vair:UnavailabilityOfDataSet rdf:type owl:Class ;
-                             rdfs:subClassOf vair:DataRiskSource .
+###  https://w3id.org/vair#TrainingDataRiskSource
+vair:TrainingDataRiskSource rdf:type owl:Class ;
+                            rdfs:subClassOf vair:DataRiskSource ;
+                            rdfs:comment "Risk sources related to training data"@en ;
+                            rdfs:label "Training Data Risk Source"@en ;
+                            skos:definition "Risk sources related to training data"@en ;
+                            skos:prefLabel "Training Data Risk Source"@en .
+
+
+###  https://w3id.org/vair#UnavailabilityOfData
+vair:UnavailabilityOfData rdf:type owl:Class ;
+                          rdfs:subClassOf vair:DataRiskSource .
 
 
 ###  https://w3id.org/vair#UninformedInvolvement
@@ -2502,17 +2518,17 @@ vair:UnintendedInvolvement rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#UnrepresentativeTestData
 vair:UnrepresentativeTestData rdf:type owl:Class ;
-                              rdfs:subClassOf airo:TestDataRiskSource .
+                              rdfs:subClassOf vair:TestDataRiskSource .
 
 
 ###  https://w3id.org/vair#UnrepresentativeTrainingData
 vair:UnrepresentativeTrainingData rdf:type owl:Class ;
-                                  rdfs:subClassOf airo:TrainingDataRiskSource .
+                                  rdfs:subClassOf vair:TrainingDataRiskSource .
 
 
 ###  https://w3id.org/vair#UnrepresentativeValidationData
 vair:UnrepresentativeValidationData rdf:type owl:Class ;
-                                    rdfs:subClassOf airo:ValidationDataRiskSource .
+                                    rdfs:subClassOf vair:ValidationDataRiskSource .
 
 
 ###  https://w3id.org/vair#UnsupervisedLearning
@@ -2528,6 +2544,15 @@ vair:UserTraining rdf:type owl:Class ;
 ###  https://w3id.org/vair#Validation
 vair:Validation rdf:type owl:Class ;
                 rdfs:subClassOf airo:AILifecyclePhase .
+
+
+###  https://w3id.org/vair#ValidationDataRiskSource
+vair:ValidationDataRiskSource rdf:type owl:Class ;
+                              rdfs:subClassOf vair:DataRiskSource ;
+                              rdfs:comment "Risk sources related to validation data"@en ;
+                              rdfs:label "Validation Data Risk Source"@en ;
+                              skos:definition "Risk sources related to validation data"@en ;
+                              skos:prefLabel "Validation Data Risk Source"@en .
 
 
 ###  https://w3id.org/vair#Verification
@@ -2573,9 +2598,9 @@ vair:WellbeingImpact rdf:type owl:Class ;
                      skos:prefLabel "Wellbeing Impact"@en .
 
 
-###  https://w3id.org/vair#WrongDataSetDesignChoice
-vair:WrongDataSetDesignChoice rdf:type owl:Class ;
-                              rdfs:subClassOf vair:DataRiskSource .
+###  https://w3id.org/vair#WrongDataDesignChoice
+vair:WrongDataDesignChoice rdf:type owl:Class ;
+                           rdfs:subClassOf vair:DataRiskSource .
 
 
 #################################################################
@@ -5327,10 +5352,10 @@ vair:TrainingData rdf:type owl:NamedIndividual ,
                   skos:related vair:MachineLearningModel .
 
 
-###  https://w3id.org/vair#UnavailabilityOfDataSet
-vair:UnavailabilityOfDataSet rdf:type owl:NamedIndividual ,
-                                      skos:Concept ,
-                                      vair:Concept .
+###  https://w3id.org/vair#UnavailabilityOfData
+vair:UnavailabilityOfData rdf:type owl:NamedIndividual ,
+                                   skos:Concept ,
+                                   vair:Concept .
 
 
 ###  https://w3id.org/vair#UnrepresentativeTestData
@@ -5415,10 +5440,10 @@ vair:VocationalTrainingInstitution rdf:type owl:NamedIndividual ,
                                             vair:Concept .
 
 
-###  https://w3id.org/vair#WrongDataSetDesignChoice
-vair:WrongDataSetDesignChoice rdf:type owl:NamedIndividual ,
-                                       skos:Concept ,
-                                       vair:Concept .
+###  https://w3id.org/vair#WrongDataDesignChoice
+vair:WrongDataDesignChoice rdf:type owl:NamedIndividual ,
+                                    skos:Concept ,
+                                    vair:Concept .
 
 
 #################################################################
@@ -5485,8 +5510,10 @@ vair:AdministrationOfJustice rdfs:comment "Activities related to administration 
                              skos:prefLabel "Administration Of Justice"@en .
 
 
-vair:AdversarialAttack rdfs:isDefinedBy vair: ;
-                       skos:definition "inputs designed to cause the model to make a mistake"@en ;
+vair:AdversarialAttack rdfs:comment "Inputs designed to cause the model to make a mistake"@en ;
+                       rdfs:isDefinedBy vair: ;
+                       rdfs:label "Adversarial Attack"@en ;
+                       skos:definition "Inputs designed to cause the model to make a mistake"@en ;
                        skos:inScheme vair: ;
                        skos:prefLabel "Adversarial Attack"@en ;
                        skos:related vair:Model .
@@ -5672,8 +5699,10 @@ vair:AsylumSeeker rdfs:comment "A person who has applied for asylum"@en ;
                   skos:prefLabel "Asylum Seeker"@en .
 
 
-vair:Attack rdfs:isDefinedBy vair: ;
-            skos:definition ""@en ;
+vair:Attack rdfs:comment "Malicious attempts to exploit vulnerabilities"@en ;
+            rdfs:isDefinedBy vair: ;
+            rdfs:label "Attack"@en ;
+            skos:definition "Malicious attempts to exploit vulnerabilities"@en ;
             skos:inScheme vair: ;
             skos:prefLabel "Attack"@en .
 
@@ -5735,22 +5764,28 @@ vair:BiasDetection rdfs:comment "Control that is applied to detect bias in datas
                    skos:prefLabel "Bias Detection"@en .
 
 
-vair:BiasedTestData rdfs:isDefinedBy vair: ;
-                    skos:definition ""@en ;
+vair:BiasedTestData rdfs:comment "Bias in test data"@en ;
+                    rdfs:isDefinedBy vair: ;
+                    rdfs:label "Biased Test Data"@en ;
+                    skos:definition "Bias in test data"@en ;
                     skos:inScheme vair: ;
                     skos:prefLabel "Biased Test Data"@en ;
                     skos:related vair:TestData .
 
 
-vair:BiasedTrainingData rdfs:isDefinedBy vair: ;
-                        skos:definition ""@en ;
+vair:BiasedTrainingData rdfs:comment "Bias in training data"@en ;
+                        rdfs:isDefinedBy vair: ;
+                        rdfs:label "Biased Training Data"@en ;
+                        skos:definition "Bias in training data"@en ;
                         skos:inScheme vair: ;
                         skos:prefLabel "Biased Training Data"@en ;
                         skos:related vair:TrainingData .
 
 
-vair:BiasedValidationData rdfs:isDefinedBy vair: ;
-                          skos:definition ""@en ;
+vair:BiasedValidationData rdfs:comment "Bias in validation data"@en ;
+                          rdfs:isDefinedBy vair: ;
+                          rdfs:label "Biased Validation Data"@en ;
+                          skos:definition "Bias in validation data"@en ;
                           skos:inScheme vair: ;
                           skos:prefLabel "Biased Validation Data"@en ;
                           skos:related vair:ValidationData .
@@ -5858,13 +5893,9 @@ vair:CriticalInfrastructure rdfs:comment "Refers to the sector or activities tha
                             skos:prefLabel "Critical Infrastructure"@en .
 
 
-vair:Cyberattack rdfs:isDefinedBy vair: ;
-                 skos:definition ""@en ;
-                 skos:inScheme vair: ;
-                 skos:prefLabel "Cyberattack"@en .
-
-
-vair:DataPoisoning rdfs:isDefinedBy vair: ;
+vair:DataPoisoning rdfs:comment "Attack trying to manipulate the training dataset."@en ;
+                   rdfs:isDefinedBy vair: ;
+                   rdfs:label "Data Poisoning"@en ;
                    skos:definition "Attack trying to manipulate the training dataset."@en ;
                    skos:inScheme vair: ;
                    skos:prefLabel "Data Poisoning"@en ;
@@ -6170,43 +6201,54 @@ vair:Employment rdfs:comment "Refers to employment, workers’ management and ac
                 skos:prefLabel "Employment"@en .
 
 
-vair:ErroneousInputData rdfs:isDefinedBy vair: ;
-                        skos:definition ""@en ;
+vair:ErroneousInputData rdfs:comment "Error in data used as input"@en ;
+                        rdfs:isDefinedBy vair: ;
+                        rdfs:label "Erroneous Input Data"@en ;
+                        skos:definition "Error in data used as input"@en ;
                         skos:inScheme vair: ;
                         skos:prefLabel "Erroneous Input Data"@en ;
                         skos:related vair:InputData .
 
 
-vair:ErroneousTestData rdfs:isDefinedBy vair: ;
-                       skos:definition "Error in testing data"@en ;
+vair:ErroneousTestData rdfs:comment "Error in test data"@en ;
+                       rdfs:isDefinedBy vair: ;
+                       rdfs:label "Erroneous Test Data"@en ;
+                       skos:definition "Error in test data"@en ;
                        skos:inScheme vair: ;
                        skos:prefLabel "Erroneous Test Data"@en ;
                        skos:related vair:TestData .
 
 
-vair:ErroneousTrainingData rdfs:isDefinedBy vair: ;
+vair:ErroneousTrainingData rdfs:comment "Error in training data" ;
+                           rdfs:isDefinedBy vair: ;
+                           rdfs:label "Erroneous Training Data"@en ;
                            skos:definition "Error in training data"@en ;
                            skos:inScheme vair: ;
                            skos:prefLabel "Erroneous Training Data"@en ;
                            skos:related vair:TrainingData .
 
 
-vair:ErroneousValidationData rdfs:isDefinedBy vair: ;
+vair:ErroneousValidationData rdfs:comment "Error in validation data"@en ;
+                             rdfs:isDefinedBy vair: ;
+                             rdfs:label "Erroneous Validation Data"@en ;
                              skos:definition "Error in validation data"@en ;
                              skos:inScheme vair: ;
                              skos:prefLabel "Erroneous Validation Data"@en ;
                              skos:related vair:ValidationData .
 
 
-vair:ErrorInDataCollection rdfs:isDefinedBy vair: ;
-                           skos:definition ""@en ;
+vair:ErrorInDataCollection rdfs:comment "Refers to errors in data collection process"@en ;
+                           rdfs:isDefinedBy vair: ;
+                           rdfs:label "Error In Data Collection"@en ;
+                           skos:definition "Refers to errors in data collection process"@en ;
                            skos:inScheme vair: ;
                            skos:prefLabel "Error In Data Collection"@en ;
                            skos:related vair:DataCollection .
 
 
-vair:ErrorInDataPrepration rdfs:isDefinedBy vair: ;
-                           skos:definition ""@en ;
+vair:ErrorInDataPrepration rdfs:comment "Refers to errors in data prepration process"@en ;
+                           rdfs:isDefinedBy vair: ;
+                           skos:definition "Refers to errors in data prepration process"@en ;
                            skos:inScheme vair: ;
                            skos:prefLabel "Error In Data Prepration"@en ;
                            skos:related vair:DataPrepration .
@@ -6669,20 +6711,26 @@ vair:ImageRecognition terms:source "ISO/IEC 22989, 3.7.4" ;
                       skos:prefLabel "Image Recognition"@en .
 
 
-vair:InaccurateDecision rdfs:isDefinedBy vair: ;
-                        skos:definition ""@en ;
+vair:InaccurateDecision rdfs:comment "Inaccurate decision generated by the system."@en ;
+                        rdfs:isDefinedBy vair: ;
+                        rdfs:label "Inaccurate Decision" ;
+                        skos:definition "Inaccurate decision generated by the system."@en ;
                         skos:inScheme vair: ;
                         skos:prefLabel "Inaccurate Decision"@en .
 
 
-vair:InaccuratePrediction rdfs:isDefinedBy vair: ;
-                          skos:definition ""@en ;
+vair:InaccuratePrediction rdfs:comment "Inaccurate prediction generated by the system."@en ;
+                          rdfs:isDefinedBy vair: ;
+                          rdfs:label "Inaccurate Prediction"@en ;
+                          skos:definition "Inaccurate prediction generated by the system."@en ;
                           skos:inScheme vair: ;
                           skos:prefLabel "Inaccurate Prediction"@en .
 
 
-vair:InaccurateRecommendation rdfs:isDefinedBy vair: ;
-                              skos:definition ""@en ;
+vair:InaccurateRecommendation rdfs:comment "Inaccurate recommendation generated by the system."@en ;
+                              rdfs:isDefinedBy vair: ;
+                              rdfs:label "Inaccurate Recommendation"@en ;
+                              skos:definition "Inaccurate recommendation generated by the system."@en ;
                               skos:inScheme vair: ;
                               skos:prefLabel "Inaccurate Recommendation"@en .
 
@@ -6696,21 +6744,27 @@ vair:Inception terms:source "ISO/IEC 22989, 6.2.2" ;
                skos:prefLabel "Inception"@en .
 
 
-vair:IncompleteTestData rdfs:isDefinedBy vair: ;
+vair:IncompleteTestData rdfs:comment "Incompleteness of testing data set"@en ;
+                        rdfs:isDefinedBy vair: ;
+                        rdfs:label "Incomplete Test Data"@en ;
                         skos:definition "Incompleteness of testing data set"@en ;
                         skos:inScheme vair: ;
                         skos:prefLabel "Incomplete Test Data"@en ;
                         skos:related vair:TestData .
 
 
-vair:IncompleteTrainingData rdfs:isDefinedBy vair: ;
+vair:IncompleteTrainingData rdfs:comment "Incompleteness of training data set"@en ;
+                            rdfs:isDefinedBy vair: ;
+                            rdfs:label "Incomplete Training Data"@en ;
                             skos:definition "Incompleteness of training data set"@en ;
                             skos:inScheme vair: ;
                             skos:prefLabel "Incomplete Training Data"@en ;
                             skos:related vair:TrainingData .
 
 
-vair:IncompleteValidationData rdfs:isDefinedBy vair: ;
+vair:IncompleteValidationData rdfs:comment "Incompleteness of validation data set"@en ;
+                              rdfs:isDefinedBy vair: ;
+                              rdfs:label "Incomplete Validation Data"@en ;
                               skos:definition "Incompleteness of validation data set"@en ;
                               skos:inScheme vair: ;
                               skos:prefLabel "Incomplete Validation Data"@en ;
@@ -6795,13 +6849,17 @@ vair:InstallationInstruction rdfs:comment "Instruction for installing an applica
                              skos:prefLabel "Installation Instruction"@en .
 
 
-vair:InsufficientHumanOversightMeasure rdfs:isDefinedBy vair: ;
-                                       skos:definition ""@en ;
+vair:InsufficientHumanOversightMeasure rdfs:comment "Lack of appropriate human oversight measures"@en ;
+                                       rdfs:isDefinedBy vair: ;
+                                       rdfs:label "Insufficient Human Oversight Measure"@en ;
+                                       skos:definition "Lack of appropriate human oversight measures"@en ;
                                        skos:inScheme vair: ;
                                        skos:prefLabel "Insufficient Human Oversight Measure"@en .
 
 
-vair:InsufficientInstruction rdfs:isDefinedBy vair: ;
+vair:InsufficientInstruction rdfs:comment "Lack of appropriate instruction for use"@en ;
+                             rdfs:isDefinedBy vair: ;
+                             rdfs:label "Insufficient Instruction"@en ;
                              skos:definition "Lack of appropriate instruction for use"@en ;
                              skos:inScheme vair: ;
                              skos:prefLabel "Insufficient Instruction"@en .
@@ -6863,22 +6921,28 @@ vair:IoTSystem terms:source "ISO/IEC 22989, 3.1.20" ;
                skos:prefLabel "IoT System"@en .
 
 
-vair:IrrelevantTestData rdfs:isDefinedBy vair: ;
-                        skos:definition ""@en ;
+vair:IrrelevantTestData rdfs:comment "Use of irrelevant data for testing"@en ;
+                        rdfs:isDefinedBy vair: ;
+                        rdfs:label "Irrelevant Test Data"@en ;
+                        skos:definition "Use of irrelevant data for testing"@en ;
                         skos:inScheme vair: ;
                         skos:prefLabel "Irrelevant Test Data"@en ;
                         skos:related vair:TestData .
 
 
-vair:IrrelevantTrainingData rdfs:isDefinedBy vair: ;
-                            skos:definition ""@en ;
+vair:IrrelevantTrainingData rdfs:comment "Use of irrelevant data for training"@en ;
+                            rdfs:isDefinedBy vair: ;
+                            rdfs:label "Irrelevant Training Data"@en ;
+                            skos:definition "Use of irrelevant data for training"@en ;
                             skos:inScheme vair: ;
                             skos:prefLabel "Irrelevant Training Data"@en ;
                             skos:related vair:TrainingData .
 
 
-vair:IrrelevantValidationData rdfs:isDefinedBy vair: ;
-                              skos:definition ""@en ;
+vair:IrrelevantValidationData rdfs:comment "Use of irrelevant data for validation"@en ;
+                              rdfs:isDefinedBy vair: ;
+                              rdfs:label "Irrelevant Validation Data"@en ;
+                              skos:definition "Use of irrelevant data for validation"@en ;
                               skos:inScheme vair: ;
                               skos:prefLabel "Irrelevant Validation Data"@en ;
                               skos:related vair:ValidationData .
@@ -6944,8 +7008,10 @@ vair:KnowledgeRepresentation rdfs:comment "Encoding knowledge in a formal langua
                              skos:prefLabel "Knowledge Representation"@en .
 
 
-vair:LackOfTransparency rdfs:isDefinedBy vair: ;
-                        skos:definition ""@en ;
+vair:LackOfTransparency rdfs:comment "Refers to lack transparency regarding AI, its development, deployement, or use"@en ;
+                        rdfs:isDefinedBy vair: ;
+                        rdfs:label "Lack Of Transparency"@en ;
+                        skos:definition "Refers to lack transparency regarding AI, its development, deployement, or use"@en ;
                         skos:inScheme vair: ;
                         skos:prefLabel "Lack Of Transparency"@en .
 
@@ -7016,20 +7082,26 @@ vair:LongShortTermMemory rdfs:isDefinedBy vair: ;
                          skos:prefLabel "Long ShortTerm Memory"@en .
 
 
-vair:LowAccuracy rdfs:isDefinedBy vair: ;
+vair:LowAccuracy rdfs:comment "Inacurracy of the predictions, recommondations, or decisions produced by the system."@en ;
+                 rdfs:isDefinedBy vair: ;
+                 rdfs:label "Low Accuracy"@en ;
                  skos:definition "Inacurracy of the predictions, recommondations, or decisions produced by the system."@en ;
                  skos:inScheme vair: ;
                  skos:prefLabel "Low Accuracy"@en .
 
 
-vair:LowRobustness rdfs:isDefinedBy vair: ;
-                   skos:definition ""@en ;
+vair:LowRobustness rdfs:comment "Lack of appropriate level of robustness"@en ;
+                   rdfs:isDefinedBy vair: ;
+                   rdfs:label "Low Robustness"@en ;
+                   skos:definition "Lack of appropriate level of robustness"@en ;
                    skos:inScheme vair: ;
                    skos:prefLabel "Low Robustness"@en .
 
 
-vair:LowSecurity rdfs:isDefinedBy vair: ;
-                 skos:definition "Lack Of Appropriate Level Of Security."@en ;
+vair:LowSecurity rdfs:comment "Lack of appropriate level of security."@en ;
+                 rdfs:isDefinedBy vair: ;
+                 rdfs:label "Low Security"@en ;
+                 skos:definition "Lack of appropriate level of security."@en ;
                  skos:inScheme vair: ;
                  skos:prefLabel "Low Security"@en .
 
@@ -7157,15 +7229,21 @@ vair:Model rdfs:isDefinedBy vair: ;
            skos:prefLabel "Model"@en .
 
 
-vair:ModelEvasion rdfs:isDefinedBy vair: ;
-                  skos:definition ""@en ;
+vair:ModelEvasion terms:source "ALTAI" ;
+                  rdfs:comment "An input, which seems normal for a human but is wrongly classified by ML models."@en ;
+                  rdfs:isDefinedBy vair: ;
+                  rdfs:label "Model Evasion"@en ;
+                  skos:definition "An input, which seems normal for a human but is wrongly classified by ML models."@en ;
                   skos:inScheme vair: ;
                   skos:prefLabel "Model Evasion"@en ;
                   skos:related vair:Model .
 
 
-vair:ModelInversion rdfs:isDefinedBy vair: ;
-                    skos:definition ""@en ;
+vair:ModelInversion terms:source "ALTAI" ;
+                    rdfs:comment "A type of attack to AI models, in which the access to a model is abused to infer information about the training data."@en ;
+                    rdfs:isDefinedBy vair: ;
+                    rdfs:label "Model Inversion"@en ;
+                    skos:definition "A type of attack to AI models, in which the access to a model is abused to infer information about the training data."@en ;
                     skos:inScheme vair: ;
                     skos:prefLabel "Model Inversion"@en ;
                     skos:related vair:Model .
@@ -8003,7 +8081,9 @@ vair:SpeechSynthesis terms:source "ISO/IEC 22989, 3.6.18" ;
                      skos:prefLabel "Speech Synthesis"@en .
 
 
-vair:StaffIncompetence rdfs:isDefinedBy vair: ;
+vair:StaffIncompetence rdfs:comment "Incompetence of staff such as human oversight actors"@en ;
+                       rdfs:isDefinedBy vair: ;
+                       rdfs:label "Staff Incompetence"@en ;
                        skos:definition "Incompetence of staff such as human oversight actors"@en ;
                        skos:inScheme vair: ;
                        skos:prefLabel "Staff Incompetence"@en .
@@ -8041,12 +8121,6 @@ vair:SymbolicReasoning rdfs:comment "Reasoning based on the knowledge encoded in
                        skos:definition "Reasoning based on the knowledge encoded in a formal language"@en ;
                        skos:inScheme vair: ;
                        skos:prefLabel "Symbolic Reasoning"@en .
-
-
-vair:SystemVulnerability rdfs:isDefinedBy vair: ;
-                         skos:definition "Weakness of a system can be exploited by one or more threats. [Source: ISO/IEC TR 24028, 3.48 with modifications]"@en ;
-                         skos:inScheme vair: ;
-                         skos:prefLabel "System Vulnerability"@en .
 
 
 vair:TechnicalDocumentation rdfs:comment "Documentation required by the AI Act, Article 11."@en ;
@@ -8099,28 +8173,36 @@ vair:TrainedModel terms:source "ISO/IEC 22989, 3.3.14" ;
                   skos:related vair:ModelTraning .
 
 
-vair:UnavailabilityOfDataSet rdfs:isDefinedBy vair: ;
-                             skos:definition ""@en ;
-                             skos:inScheme vair: ;
-                             skos:prefLabel "Unavailability Of Data Set"@en .
+vair:UnavailabilityOfData rdfs:comment "Use of datasets that are not available"@en ;
+                          rdfs:isDefinedBy vair: ;
+                          rdfs:label "Unavailability Of Data"@en ;
+                          skos:definition "Use of datasets that are not available"@en ;
+                          skos:inScheme vair: ;
+                          skos:prefLabel "Unavailability Of Data"@en .
 
 
-vair:UnrepresentativeTestData rdfs:isDefinedBy vair: ;
-                              skos:definition ""@en ;
+vair:UnrepresentativeTestData rdfs:comment "Use of unrepresentative  data for testing"@en ;
+                              rdfs:isDefinedBy vair: ;
+                              rdfs:label "Unrepresentative Test Data"@en ;
+                              skos:definition "Use of unrepresentative data for testing"@en ;
                               skos:inScheme vair: ;
                               skos:prefLabel "Unrepresentative Test Data"@en ;
                               skos:related vair:TestData .
 
 
-vair:UnrepresentativeTrainingData rdfs:isDefinedBy vair: ;
-                                  skos:definition ""@en ;
+vair:UnrepresentativeTrainingData rdfs:comment "Use of unrepresentative data for training"@en ;
+                                  rdfs:isDefinedBy vair: ;
+                                  rdfs:label "Unrepresentative Training Data"@en ;
+                                  skos:definition "Use of unrepresentative data for training"@en ;
                                   skos:inScheme vair: ;
                                   skos:prefLabel "Unrepresentative Training Data"@en ;
                                   skos:related vair:TrainingData .
 
 
-vair:UnrepresentativeValidationData rdfs:isDefinedBy vair: ;
-                                    skos:definition ""@en ;
+vair:UnrepresentativeValidationData rdfs:comment "Use of unrepresentative data for validation"@en ;
+                                    rdfs:isDefinedBy vair: ;
+                                    rdfs:label "Unrepresentative Validation Data"@en ;
+                                    skos:definition "Use of unrepresentative data for validation"@en ;
                                     skos:inScheme vair: ;
                                     skos:prefLabel "Unrepresentative Validation Data"@en ;
                                     skos:related vair:ValidationData .
@@ -8190,10 +8272,12 @@ vair:VocationalTrainingInstitution rdfs:comment "Vocational training institution
                                    skos:prefLabel "Vocational Training Institution"@en .
 
 
-vair:WrongDataSetDesignChoice rdfs:isDefinedBy vair: ;
-                              skos:definition ""@en ;
-                              skos:inScheme vair: ;
-                              skos:prefLabel "Wrong Data Set Design Choice"@en .
+vair:WrongDataDesignChoice rdfs:comment "Refers to the wrong choice made in the selecting datasets."@en ;
+                           rdfs:isDefinedBy vair: ;
+                           rdfs:label "Wrong Data Design Choice"@en ;
+                           skos:definition "Refers to the wrong choice made in the selecting datasets."@en ;
+                           skos:inScheme vair: ;
+                           skos:prefLabel "Wrong Data Design Choice"@en .
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
