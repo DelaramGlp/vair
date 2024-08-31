@@ -1332,14 +1332,32 @@ vair:IndustrialRobot rdf:type owl:Class ;
                      rdfs:subClassOf vair:Robot .
 
 
+###  https://w3id.org/vair#Influencing
+vair:Influencing rdf:type owl:Class ;
+                 rdfs:subClassOf airo:Purpose ;
+                 rdfs:comment "Purpose of influencing"@en ;
+                 rdfs:label "Influencing"@en ;
+                 skos:definition "Purpose of influencing"@en ;
+                 skos:prefLabel "Influencing"@en .
+
+
 ###  https://w3id.org/vair#InfluencingElectionOutcome
 vair:InfluencingElectionOutcome rdf:type owl:Class ;
-                                rdfs:subClassOf airo:Purpose .
+                                rdfs:subClassOf vair:Influencing .
 
 
 ###  https://w3id.org/vair#InfluencingReferendumOutcome
 vair:InfluencingReferendumOutcome rdf:type owl:Class ;
-                                  rdfs:subClassOf airo:Purpose .
+                                  rdfs:subClassOf vair:Influencing .
+
+
+###  https://w3id.org/vair#InfluencingVotingBehaviour
+vair:InfluencingVotingBehaviour rdf:type owl:Class ;
+                                rdfs:subClassOf vair:Influencing ;
+                                rdfs:comment "Purpose of influencing voting behaviour of people"@en ;
+                                rdfs:label "Influencing Voting Behaviour"@en ;
+                                skos:definition "Purpose of influencing voting behaviour of people"@en ;
+                                skos:prefLabel "Influencing Voting Behaviour"@en .
 
 
 ###  https://w3id.org/vair#InformationProvision
@@ -1470,12 +1488,12 @@ vair:JobApplicant rdf:type owl:Class ;
 ###  https://w3id.org/vair#JobApplicationAnalysis
 vair:JobApplicationAnalysis rdf:type owl:Class ;
                             rdfs:subClassOf airo:Purpose ;
-                            rdfs:isDefinedBy vair: ;
-                            skos:definition "Analysis of job applications"@en ;
                             rdfs:comment "Analysis of job applications"@en ;
+                            rdfs:isDefinedBy vair: ;
+                            rdfs:label "Job Application Analysis"@en ;
+                            skos:definition "Analysis of job applications"@en ;
                             skos:inScheme vair: ;
                             skos:prefLabel "Job Application Analysis"@en ;
-                            rdfs:label "Job Application Analysis"@en ;
                             skos:related vair:Employment .
 
 
@@ -1653,41 +1671,6 @@ vair:MakingPromotionDecision rdf:type owl:Class ;
                              rdfs:subClassOf vair:Assessment .
 
 
-###  https://w3id.org/vair#Managing
-vair:Managing rdf:type owl:Class ;
-              rdfs:subClassOf airo:Purpose .
-
-
-###  https://w3id.org/vair#ManagingCriticalDigitalInfrastructure
-vair:ManagingCriticalDigitalInfrastructure rdf:type owl:Class ;
-                                           rdfs:subClassOf vair:Managing .
-
-
-###  https://w3id.org/vair#ManagingRoadTraffic
-vair:ManagingRoadTraffic rdf:type owl:Class ;
-                         rdfs:subClassOf vair:Managing .
-
-
-###  https://w3id.org/vair#ManagingSupplyOfElectricity
-vair:ManagingSupplyOfElectricity rdf:type owl:Class ;
-                                 rdfs:subClassOf vair:Managing .
-
-
-###  https://w3id.org/vair#ManagingSupplyOfGas
-vair:ManagingSupplyOfGas rdf:type owl:Class ;
-                         rdfs:subClassOf vair:Managing .
-
-
-###  https://w3id.org/vair#ManagingSupplyOfHeating
-vair:ManagingSupplyOfHeating rdf:type owl:Class ;
-                             rdfs:subClassOf vair:Managing .
-
-
-###  https://w3id.org/vair#ManagingSupplyOfWater
-vair:ManagingSupplyOfWater rdf:type owl:Class ;
-                           rdfs:subClassOf vair:Managing .
-
-
 ###  https://w3id.org/vair#ManualControl
 vair:ManualControl rdf:type owl:Class ;
                    rdfs:subClassOf airo:Control ;
@@ -1836,41 +1819,6 @@ vair:NoAutomation rdf:type owl:Class ;
 ###  https://w3id.org/vair#ObjectRecognition
 vair:ObjectRecognition rdf:type owl:Class ;
                        rdfs:subClassOf vair:ComputerVision .
-
-
-###  https://w3id.org/vair#Operating
-vair:Operating rdf:type owl:Class ;
-               rdfs:subClassOf airo:Purpose .
-
-
-###  https://w3id.org/vair#OperatingCriticalDigitalInfrastructure
-vair:OperatingCriticalDigitalInfrastructure rdf:type owl:Class ;
-                                            rdfs:subClassOf vair:Operating .
-
-
-###  https://w3id.org/vair#OperatingRoadTraffic
-vair:OperatingRoadTraffic rdf:type owl:Class ;
-                          rdfs:subClassOf vair:Operating .
-
-
-###  https://w3id.org/vair#OperatingSupplyOfElectricity
-vair:OperatingSupplyOfElectricity rdf:type owl:Class ;
-                                  rdfs:subClassOf vair:Operating .
-
-
-###  https://w3id.org/vair#OperatingSupplyOfGas
-vair:OperatingSupplyOfGas rdf:type owl:Class ;
-                          rdfs:subClassOf vair:Operating .
-
-
-###  https://w3id.org/vair#OperatingSupplyOfHeating
-vair:OperatingSupplyOfHeating rdf:type owl:Class ;
-                              rdfs:subClassOf vair:Operating .
-
-
-###  https://w3id.org/vair#OperatingSupplyOfWater
-vair:OperatingSupplyOfWater rdf:type owl:Class ;
-                            rdfs:subClassOf vair:Operating .
 
 
 ###  https://w3id.org/vair#Operation
@@ -4365,11 +4313,11 @@ vair:MakingContractTerminationDecision rdf:type owl:NamedIndividual ,
 vair:MakingDecisionOnTermsOfWorkRelatedRelations rdf:type owl:NamedIndividual ,
                                                           skos:Concept ,
                                                           vair:Concept ;
-                                                 rdfs:isDefinedBy vair: ;
-                                                 skos:definition "Making decisions affecting terms of work-related relationships"@en ;
                                                  rdfs:comment "Making decisions affecting terms of work-related relationships"@en ;
-                                                 skos:inScheme vair: ;
+                                                 rdfs:isDefinedBy vair: ;
                                                  rdfs:label "Making Decision On Terms Of Work-Related Relations"@en ;
+                                                 skos:definition "Making decisions affecting terms of work-related relationships"@en ;
+                                                 skos:inScheme vair: ;
                                                  skos:prefLabel "Making Decision On Terms Of Work-Related Relations"@en .
 
 
@@ -5577,10 +5525,10 @@ vair:Algorithm rdfs:comment "Defines a set of instructions" ;
                skos:prefLabel "Algorithm"@en .
 
 
-vair:AllocatingTasks rdfs:isDefinedBy vair: ;
-                     skos:definition "Assignment of tasks to persons"@en ;
+vair:AllocatingTasks rdfs:comment "Assignment of tasks to persons"@en ;
+                     rdfs:isDefinedBy vair: ;
                      rdfs:label "Allocating Tasks"@en ;
-                     rdfs:comment "Assignment of tasks to persons"@en ;
+                     skos:definition "Assignment of tasks to persons"@en ;
                      skos:inScheme vair: ;
                      skos:prefLabel "Allocating Tasks"@en .
 
@@ -5622,11 +5570,11 @@ vair:AssesingStudent rdfs:isDefinedBy vair: ;
                      skos:related vair:Education .
 
 
-vair:AssessingAccessibleLevelOfEducation rdfs:isDefinedBy vair: ;
+vair:AssessingAccessibleLevelOfEducation rdfs:comment "Assessing the appropriate level of education that an individual will be able to access"@en ;
+                                         rdfs:isDefinedBy vair: ;
+                                         rdfs:label "Assessing Accessible Level Of Education"@en ;
                                          skos:definition "Assessing the appropriate level of education that an individual will be able to access"@en ;
-                                         rdfs:comment "Assessing the appropriate level of education that an individual will be able to access"@en ;
                                          skos:inScheme vair: ;
-                                         rdfs:label  "Assessing Accessible Level Of Education"@en ;
                                          skos:prefLabel "Assessing Accessible Level Of Education"@en .
 
 
@@ -5657,12 +5605,12 @@ vair:AssessingImmigrationEligibility rdfs:isDefinedBy vair: ;
                                      skos:related vair:MigrationManagement .
 
 
-vair:AssessingLevelOfEducation rdfs:isDefinedBy vair: ;
+vair:AssessingLevelOfEducation rdfs:comment "Assessing the appropriate level of education that an individual will receive"@en ;
+                               rdfs:isDefinedBy vair: ;
+                               rdfs:label "Assessing Level Of Education"@en ;
                                skos:definition "Assessing the appropriate level of education that an individual will receive"@en ;
-                               rdfs:comment "Assessing the appropriate level of education that an individual will receive"@en ;
                                skos:inScheme vair: ;
-                               skos:prefLabel "Assessing Level Of Education"@en ;
-                               rdfs:label "Assessing Level Of Education"@en .
+                               skos:prefLabel "Assessing Level Of Education"@en .
 
 
 vair:AssessingPastCriminalBehaviour rdfs:isDefinedBy vair: ;
@@ -5725,22 +5673,22 @@ vair:Assessment rdfs:isDefinedBy vair: ;
                 skos:prefLabel "Assessment"@en .
 
 
-vair:AssigningPersonsToVocationalTrainingInstitutions rdfs:isDefinedBy vair: ;
-                                                       skos:definition "Assigning natural persons to vocational training institutions at all levels."@en ;
-                                                       rdfs:comment "Assigning natural persons to vocational training institutions at all levels."@en ;
-                                                       skos:inScheme vair: ;
-                                                       skos:prefLabel "Assigning Persons To Vocational Training Institutions"@en ;
-                                                        rdfs:label "Assigning Persons To Vocational Training Institutions"@en ;
-                                                       skos:related vair:Education .
-
-
-vair:AssigningPersonsToEducationalInstitutions rdfs:isDefinedBy vair: ;
+vair:AssigningPersonsToEducationalInstitutions rdfs:comment "Assigning natural persons to educational institutions at all levels."@en ;
+                                               rdfs:isDefinedBy vair: ;
+                                               rdfs:label "Assigning Persons To Educational Institutions"@en ;
                                                skos:definition "Assigning natural persons to educational institutions at all levels."@en ;
-                                               rdfs:comment "Assigning natural persons to educational institutions at all levels."@en ;
                                                skos:inScheme vair: ;
                                                skos:prefLabel "Assigning Persons To Educational Institutions"@en ;
-                                               rdfs:label "Assigning Persons To Educational Institutions"@en ;
                                                skos:related vair:Education .
+
+
+vair:AssigningPersonsToVocationalTrainingInstitutions rdfs:comment "Assigning natural persons to vocational training institutions at all levels."@en ;
+                                                      rdfs:isDefinedBy vair: ;
+                                                      rdfs:label "Assigning Persons To Vocational Training Institutions"@en ;
+                                                      skos:definition "Assigning natural persons to vocational training institutions at all levels."@en ;
+                                                      skos:inScheme vair: ;
+                                                      skos:prefLabel "Assigning Persons To Vocational Training Institutions"@en ;
+                                                      skos:related vair:Education .
 
 
 vair:AsylumManagement rdfs:comment "Activities related to asylum management"@en ;
@@ -5923,7 +5871,9 @@ vair:Content rdfs:comment "Content generated using an AI system."@en ;
              skos:prefLabel "Content"@en .
 
 
-vair:ContentGeneration rdfs:isDefinedBy vair: ;
+vair:ContentGeneration rdfs:comment "Generation or manipulation of audio content"@en ;
+                       rdfs:isDefinedBy vair: ;
+                       rdfs:label "Content Generation"@en ;
                        skos:definition "Generation or manipulation of audio content"@en ;
                        skos:inScheme vair: ;
                        skos:prefLabel "Content Generation"@en .
@@ -6077,11 +6027,11 @@ vair:DetectingNon-AuthenticDocument rdfs:isDefinedBy vair: ;
                                     skos:prefLabel "Detecting Non-Authentic Document"@en .
 
 
-vair:DetectingProhibitedBehaviourDuringTest rdfs:isDefinedBy vair: ;
-                                            skos:definition "Detecting prohibited behaviour during tests"@en ;
-                                            rdfs:comment "Detecting prohibited behaviour during tests"@en ;
-                                            skos:inScheme vair: ;
+vair:DetectingProhibitedBehaviourDuringTest rdfs:comment "Detecting prohibited behaviour during tests"@en ;
+                                            rdfs:isDefinedBy vair: ;
                                             rdfs:label "Detecting Prohibited Behaviour During Test"@en ;
+                                            skos:definition "Detecting prohibited behaviour during tests"@en ;
+                                            skos:inScheme vair: ;
                                             skos:prefLabel "Detecting Prohibited Behaviour During Test"@en .
 
 
@@ -6092,39 +6042,39 @@ vair:Detection rdfs:comment "Purposes related to detecting"@en ;
                skos:prefLabel "Detection"@en .
 
 
-vair:DeterminingAccessToEducationalInstitutions rdfs:isDefinedBy vair: ;
+vair:DeterminingAccessToEducationalInstitutions rdfs:comment "Determining access to educational institutions all levels."@en ;
+                                                rdfs:isDefinedBy vair: ;
+                                                rdfs:label "Determining Access To Educational Institutions"@en ;
                                                 skos:definition "Determining access to educational institutions all levels."@en ;
-                                                rdfs:comment "Determining access to educational institutions all levels."@en ;
                                                 skos:inScheme vair: ;
                                                 skos:prefLabel "Determining Access To Educational Institutions"@en ;
-                                                rdfs:label "Determining Access To Educational Institutions"@en ;
                                                 skos:related vair:Education .
 
 
-vair:DeterminingAccessToVocationalTrainingInstitutions rdfs:isDefinedBy vair: ;
+vair:DeterminingAccessToVocationalTrainingInstitutions rdfs:comment "Determining access to vocational training institutions all levels."@en ;
+                                                       rdfs:isDefinedBy vair: ;
+                                                       rdfs:label "Determining Access To Vocational Training Institutions"@en ;
                                                        skos:definition "Determining access to vocational training institutions all levels."@en ;
-                                                       rdfs:comment "Determining access to vocational training institutions all levels."@en ;
                                                        skos:inScheme vair: ;
                                                        skos:prefLabel "Determining Access To Vocational Training Institutions"@en ;
-                                                       rdfs:label "Determining Access To Vocational Training Institutions"@en ;
                                                        skos:related vair:Education .
 
 
-vair:DeterminingAdmissionToEducationalInstitutions rdfs:isDefinedBy vair: ;
+vair:DeterminingAdmissionToEducationalInstitutions rdfs:comment "Determining admission to educational institutions at all levels."@en ;
+                                                   rdfs:isDefinedBy vair: ;
+                                                   rdfs:label "Determining Admission To Educational Institutions"@en ;
                                                    skos:definition "Determining admission to educational institutions at all levels."@en ;
-                                                   rdfs:comment "Determining admission to educational institutions at all levels."@en ;
                                                    skos:inScheme vair: ;
                                                    skos:prefLabel "Determining Admission To Educational Institutions"@en ;
-                                                   rdfs:label "Determining Admission To Educational Institutions"@en ;
                                                    skos:related vair:Education .
 
 
-vair:DeterminingAdmissionToVocationalTrainingInstitutions rdfs:isDefinedBy vair: ;
+vair:DeterminingAdmissionToVocationalTrainingInstitutions rdfs:comment "Determining admission to vocational training institutions at all levels."@en ;
+                                                          rdfs:isDefinedBy vair: ;
+                                                          rdfs:label "Determining Admission To Vocational Training Institutions"@en ;
                                                           skos:definition "Determining admission to vocational training institutions at all levels."@en ;
-                                                          rdfs:comment "Determining admission to vocational training institutions at all levels."@en ;
                                                           skos:inScheme vair: ;
                                                           skos:prefLabel "Determining Admission To Vocational Training Institutions"@en ;
-                                                          rdfs:label "Determining Admission To Vocational Training Institutions"@en ;
                                                           skos:related vair:Education .
 
 
@@ -6348,21 +6298,21 @@ vair:EvaluatingEmployee rdfs:isDefinedBy vair: ;
                         skos:related vair:Employment .
 
 
-vair:EvaluatingEmployeeBehaviour rdfs:isDefinedBy vair: ;
+vair:EvaluatingEmployeeBehaviour rdfs:comment "Evaluating the behaviour of persons in work-related relationships."@en ;
+                                 rdfs:isDefinedBy vair: ;
+                                 rdfs:label "Evaluating Employee Behaviour"@en ;
                                  skos:definition "Evaluating the behaviour of persons in work-related relationships."@en ;
-                                 rdfs:comment "Evaluating the behaviour of persons in work-related relationships."@en ;
                                  skos:inScheme vair: ;
                                  skos:prefLabel "Evaluating Employee Behaviour"@en ;
-                                 rdfs:label "Evaluating Employee Behaviour"@en ;
                                  skos:related vair:Employment .
 
 
-vair:EvaluatingEmployeePerformance rdfs:isDefinedBy vair: ;
+vair:EvaluatingEmployeePerformance rdfs:comment "Evaluating the performance of persons in work-related relationships."@en ;
+                                   rdfs:isDefinedBy vair: ;
+                                   rdfs:label "Evaluating Employee Performance"@en ;
                                    skos:definition "Evaluating the performance of persons in work-related relationships."@en ;
-                                   rdfs:comment "Evaluating the performance of persons in work-related relationships."@en ;
                                    skos:inScheme vair: ;
                                    skos:prefLabel "Evaluating Employee Performance"@en ;
-                                   rdfs:label "Evaluating Employee Performance"@en ;
                                    skos:related vair:Employment .
 
 
@@ -6373,29 +6323,29 @@ vair:EvaluatingInterview rdfs:isDefinedBy vair: ;
                          skos:related vair:Employment .
 
 
-vair:EvaluatingJobCandidates rdfs:isDefinedBy vair: ;
+vair:EvaluatingJobCandidates rdfs:comment "Evaluation of job candidates"@en ;
+                             rdfs:isDefinedBy vair: ;
+                             rdfs:label "Evaluating Job Candidates"@en ;
                              skos:definition "Evaluation of job candidates"@en ;
-                             rdfs:comment "Evaluation of job candidates"@en ;
                              skos:inScheme vair: ;
                              skos:prefLabel "Evaluating Job Candidates"@en ;
-                             rdfs:label "Evaluating Job Candidates"@en ;
                              skos:related vair:Employment .
 
 
-vair:EvaluatingJobInterview rdfs:isDefinedBy vair: ;
-                            skos:definition "Evaluation of job interviews"@en ;
-                            rdfs:comment "Evaluation of job interviews"@en ;
-                            skos:inScheme vair: ;
+vair:EvaluatingJobInterview rdfs:comment "Evaluation of job interviews"@en ;
+                            rdfs:isDefinedBy vair: ;
                             rdfs:label "Evaluating Job Interview"@en ;
+                            skos:definition "Evaluation of job interviews"@en ;
+                            skos:inScheme vair: ;
                             skos:prefLabel "Evaluating Job Interview"@en .
 
 
-vair:EvaluatingLearningOutcomes rdfs:isDefinedBy vair: ;
+vair:EvaluatingLearningOutcomes rdfs:comment "Evaluating learning outcomes, including when those outcomes are used to steer the learning process of natural persons in educational and vocational training institutions or programmes at all levels."@en ;
+                                rdfs:isDefinedBy vair: ;
+                                rdfs:label "Evaluating Learning Outcomes"@en ;
                                 skos:definition "Evaluating learning outcomes, including when those outcomes are used to steer the learning process of natural persons in educational and vocational training institutions or programmes at all levels."@en ;
-                                rdfs:comment "Evaluating learning outcomes, including when those outcomes are used to steer the learning process of natural persons in educational and vocational training institutions or programmes at all levels."@en ;
                                 skos:inScheme vair: ;
                                 skos:prefLabel "Evaluating Learning Outcomes"@en ;
-                                rdfs:label "Evaluating Learning Outcomes"@en ;
                                 skos:related vair:Education .
 
 
@@ -6512,19 +6462,25 @@ vair:GeneralAI terms:source "ISO/IEC 22989, 3.1.14" ;
                skos:prefLabel "General AI"@en .
 
 
-vair:GeneratingAudioContent rdfs:isDefinedBy vair: ;
+vair:GeneratingAudioContent rdfs:comment "Generation or manipulation of audio content"@en ;
+                            rdfs:isDefinedBy vair: ;
+                            rdfs:label "Generating Audio Content"@en ;
                             skos:definition "Generation or manipulation of audio content"@en ;
                             skos:inScheme vair: ;
                             skos:prefLabel "Generating Audio Content"@en .
 
 
-vair:GeneratingImageContent rdfs:isDefinedBy vair: ;
+vair:GeneratingImageContent rdfs:comment "Generation or manipulation of image content"@en ;
+                            rdfs:isDefinedBy vair: ;
+                            rdfs:label "Generating Image Content"@en ;
                             skos:definition "Generation or manipulation of image content"@en ;
                             skos:inScheme vair: ;
                             skos:prefLabel "Generating Image Content"@en .
 
 
-vair:GeneratingVideoContent rdfs:isDefinedBy vair: ;
+vair:GeneratingVideoContent rdfs:comment "Generation or manipulation of video content"@en ;
+                            rdfs:isDefinedBy vair: ;
+                            rdfs:label "Generating Video Content" ;
                             skos:definition "Generation or manipulation of video content"@en ;
                             skos:inScheme vair: ;
                             skos:prefLabel "Generating Video Content"@en .
@@ -6893,13 +6849,17 @@ vair:IndustrialRobot terms:source "AI Watch, Defining Artificial Intelligence 2.
                      skos:prefLabel "Industrial Robot"@en .
 
 
-vair:InfluencingElectionOutcome rdfs:isDefinedBy vair: ;
+vair:InfluencingElectionOutcome rdfs:comment "Influencing the outcome of an election."@en ;
+                                rdfs:isDefinedBy vair: ;
+                                rdfs:label "Influencing Election Outcome"@en ;
                                 skos:definition "Influencing the outcome of an election."@en ;
                                 skos:inScheme vair: ;
                                 skos:prefLabel "Influencing Election Outcome"@en .
 
 
-vair:InfluencingReferendumOutcome rdfs:isDefinedBy vair: ;
+vair:InfluencingReferendumOutcome rdfs:comment "Influencing the outcome of a referendum."@en ;
+                                  rdfs:isDefinedBy vair: ;
+                                  rdfs:label "Influencing Referendum Outcome"@en ;
                                   skos:definition "Influencing the outcome of a referendum."@en ;
                                   skos:inScheme vair: ;
                                   skos:prefLabel "Influencing Referendum Outcome"@en .
@@ -7037,21 +6997,29 @@ vair:JobApplicant rdfs:comment "A person who has made an application for employm
                   skos:prefLabel "Job Applicant"@en .
 
 
-vair:JobApplicationFiltering rdfs:isDefinedBy vair: ;
+vair:JobApplicationFiltering rdfs:comment "Filtering applications for recruitment or selection of natural persons"@en ;
+                             rdfs:isDefinedBy vair: ;
+                             rdfs:label "Job Application Filtering"@en ;
                              skos:definition "Filtering applications for recruitment or selection of natural persons"@en ;
-                             rdfs:comment "Filtering applications for recruitment or selection of natural persons"@en ;
                              skos:inScheme vair: ;
                              skos:prefLabel "Job Application Filtering"@en ;
-                             rdfs:label "Job Application Filtering"@en ;
                              skos:related vair:Employment .
 
 
-vair:JobApplicationScreening rdfs:isDefinedBy vair: ;
-                             skos:definition "Screening job applications "@en ;
-                             rdfs:comment "Screening job applications"@en ;
-                             skos:inScheme vair: ;
+vair:JobApplicationScreening rdfs:comment "Screening job applications"@en ;
+                             rdfs:isDefinedBy vair: ;
                              rdfs:label "Job Application Screening"@en ;
+                             skos:definition "Screening job applications "@en ;
+                             skos:inScheme vair: ;
                              skos:prefLabel "Job Application Screening"@en .
+
+
+vair:JobCandidateSelection rdfs:comment "Selecting people for a job for a position "@en ;
+                           rdfs:isDefinedBy vair: ;
+                           rdfs:label "Job Candidate Selection"@en ;
+                           skos:definition "Selecting people for a job for a position "@en ;
+                           skos:inScheme vair: ;
+                           skos:prefLabel "Job Candidate Selection"@en .
 
 
 vair:JudicialAuthority rdfs:comment "An authority to administer justice"@en ;
@@ -7232,12 +7200,12 @@ vair:MachineTranslation terms:source "ISO/IEC 22989, 3.6.5" ;
                         skos:prefLabel "Machine Translation"@en .
 
 
-vair:MakingContractTerminationDecision rdfs:isDefinedBy vair: ;
+vair:MakingContractTerminationDecision rdfs:comment "Making Contract Termination Decision"@en ,
+                                                    "Making decisions on termination of work-related contractual relationship"@en ;
+                                       rdfs:isDefinedBy vair: ;
                                        skos:definition "Making decisions on termination of work-related contractual relationship"@en ;
-                                       rdfs:comment "Making decisions on termination of work-related contractual relationship"@en ;
                                        skos:inScheme vair: ;
                                        skos:prefLabel "Making Contract Termination Decision"@en ;
-                                       rdfs:comment "Making Contract Termination Decision"@en ;
                                        skos:related vair:Employment .
 
 
@@ -7247,61 +7215,13 @@ vair:MakingPrediction rdfs:isDefinedBy vair: ;
                       skos:prefLabel "Making Prediction"@en .
 
 
-vair:MakingPromotionDecision rdfs:isDefinedBy vair: ;
-                             skos:definition "Making decisions on promotion"@en ;
-                             rdfs:comment "Making decisions on promotion"@en ;
-                             skos:inScheme vair: ;
+vair:MakingPromotionDecision rdfs:comment "Making decisions on promotion"@en ;
+                             rdfs:isDefinedBy vair: ;
                              rdfs:label "Making Promotion Decision"@en ;
+                             skos:definition "Making decisions on promotion"@en ;
+                             skos:inScheme vair: ;
                              skos:prefLabel "Making Promotion Decision"@en ;
                              skos:related vair:Employment .
-
-
-vair:Managing rdfs:isDefinedBy vair: ;
-              skos:definition ""@en ;
-              skos:inScheme vair: ;
-              skos:prefLabel "Managing"@en .
-
-
-vair:ManagingCriticalDigitalInfrastructure rdfs:isDefinedBy vair: ;
-                                           skos:definition ""@en ;
-                                           skos:inScheme vair: ;
-                                           skos:prefLabel "Managing Critical Digital Infrastructure"@en ;
-                                           skos:related vair:CriticalInfrastructure .
-
-
-vair:ManagingRoadTraffic rdfs:isDefinedBy vair: ;
-                         skos:definition ""@en ;
-                         skos:inScheme vair: ;
-                         skos:prefLabel "Managing Road Traffic"@en ;
-                         skos:related vair:CriticalInfrastructure .
-
-
-vair:ManagingSupplyOfElectricity rdfs:isDefinedBy vair: ;
-                                 skos:definition ""@en ;
-                                 skos:inScheme vair: ;
-                                 skos:prefLabel "Managing Supply Of Electricity"@en ;
-                                 skos:related vair:CriticalInfrastructure .
-
-
-vair:ManagingSupplyOfGas rdfs:isDefinedBy vair: ;
-                         skos:definition ""@en ;
-                         skos:inScheme vair: ;
-                         skos:prefLabel "Managing Supply Of Gas"@en ;
-                         skos:related vair:CriticalInfrastructure .
-
-
-vair:ManagingSupplyOfHeating rdfs:isDefinedBy vair: ;
-                             skos:definition ""@en ;
-                             skos:inScheme vair: ;
-                             skos:prefLabel "Managing Supply Of Heating"@en ;
-                             skos:related vair:CriticalInfrastructure .
-
-
-vair:ManagingSupplyOfWater rdfs:isDefinedBy vair: ;
-                           skos:definition ""@en ;
-                           skos:inScheme vair: ;
-                           skos:prefLabel "Managing Supply Of Water"@en ;
-                           skos:related vair:CriticalInfrastructure .
 
 
 vair:MigrationManagement rdfs:comment "Activities related to managing migration."@en ;
@@ -7345,29 +7265,29 @@ vair:Monitoring rdfs:isDefinedBy vair: ;
                 skos:prefLabel "Monitoring"@en .
 
 
-vair:MonitoringEmployeeBehaviour rdfs:isDefinedBy vair: ;
+vair:MonitoringEmployeeBehaviour rdfs:comment "Monitoring the behaviour of persons in work-related relationships."@en ;
+                                 rdfs:isDefinedBy vair: ;
+                                 rdfs:label "Monitoring Employee Behaviour"@en ;
                                  skos:definition "Monitoring the behaviour of persons in work-related relationships."@en ;
-                                 rdfs:comment "Monitoring the behaviour of persons in work-related relationships."@en ;
                                  skos:inScheme vair: ;
                                  skos:prefLabel "Monitoring Employee Behaviour"@en ;
-                                 rdfs:label "Monitoring Employee Behaviour"@en ;
                                  skos:related vair:Employment .
 
 
-vair:MonitoringEmployeePerformance rdfs:isDefinedBy vair: ;
+vair:MonitoringEmployeePerformance rdfs:comment "Monitoring the performance of persons in work-related relationships"@en ;
+                                   rdfs:isDefinedBy vair: ;
+                                   rdfs:label "Monitoring Employee Performance"@en ;
                                    skos:definition "Monitoring the performance of persons in work-related relationships"@en ;
-                                   rdfs:comment "Monitoring the performance of persons in work-related relationships"@en ;
                                    skos:inScheme vair: ;
                                    skos:prefLabel "Monitoring Employee Performance"@en ;
-                                   rdfs:label "Monitoring Employee Performance"@en ;
                                    skos:related vair:Employment .
 
 
-vair:MonitoringProhibitedBehaviourDuringTest rdfs:isDefinedBy vair: ;
-                                             skos:definition "Monitoring prohibited behaviour during tests"@en ;
-                                             rdfs:comment "Monitoring prohibited behaviour during tests"@en ;
-                                             skos:inScheme vair: ;
+vair:MonitoringProhibitedBehaviourDuringTest rdfs:comment "Monitoring prohibited behaviour during tests"@en ;
+                                             rdfs:isDefinedBy vair: ;
                                              rdfs:label "Monitoring Prohibited Behaviour During Test"@en ;
+                                             skos:definition "Monitoring prohibited behaviour during tests"@en ;
+                                             skos:inScheme vair: ;
                                              skos:prefLabel "Monitoring Prohibited Behaviour During Test"@en .
 
 
@@ -7448,54 +7368,6 @@ vair:ObjectRecognition terms:source "AI Watch, Defining Artificial Intelligence 
                        skos:definition "The capability to recognise objects."@en ;
                        skos:inScheme vair: ;
                        skos:prefLabel "Object Recognition"@en .
-
-
-vair:Operating rdfs:isDefinedBy vair: ;
-               skos:definition ""@en ;
-               skos:inScheme vair: ;
-               skos:prefLabel "Operating"@en .
-
-
-vair:OperatingCriticalDigitalInfrastructure rdfs:isDefinedBy vair: ;
-                                            skos:definition ""@en ;
-                                            skos:inScheme vair: ;
-                                            skos:prefLabel "Operating Critical Digital Infrastructure"@en ;
-                                            skos:related vair:CriticalInfrastructure .
-
-
-vair:OperatingRoadTraffic rdfs:isDefinedBy vair: ;
-                          skos:definition ""@en ;
-                          skos:inScheme vair: ;
-                          skos:prefLabel "Operating Road Traffic"@en ;
-                          skos:related vair:CriticalInfrastructure .
-
-
-vair:OperatingSupplyOfElectricity rdfs:isDefinedBy vair: ;
-                                  skos:definition ""@en ;
-                                  skos:inScheme vair: ;
-                                  skos:prefLabel "Operating Supply Of Electricity"@en ;
-                                  skos:related vair:CriticalInfrastructure .
-
-
-vair:OperatingSupplyOfGas rdfs:isDefinedBy vair: ;
-                          skos:definition ""@en ;
-                          skos:inScheme vair: ;
-                          skos:prefLabel "Operating Supply Of Gas"@en ;
-                          skos:related vair:CriticalInfrastructure .
-
-
-vair:OperatingSupplyOfHeating rdfs:isDefinedBy vair: ;
-                              skos:definition ""@en ;
-                              skos:inScheme vair: ;
-                              skos:prefLabel "Operating Supply Of Heating"@en ;
-                              skos:related vair:CriticalInfrastructure .
-
-
-vair:OperatingSupplyOfWater rdfs:isDefinedBy vair: ;
-                            skos:definition ""@en ;
-                            skos:inScheme vair: ;
-                            skos:prefLabel "Operating Supply Of Water"@en ;
-                            skos:related vair:CriticalInfrastructure .
 
 
 vair:Operation terms:source "ISO/IEC 22989, 6.2.6" ;
@@ -7596,12 +7468,12 @@ vair:PhysicalInjury rdfs:comment "Represent physical injuries caused by AI"@en ;
                     skos:prefLabel "Physical Injury"@en .
 
 
-vair:PlacingTargetedJobAdvert rdfs:isDefinedBy vair: ;
+vair:PlacingTargetedJobAdvert rdfs:comment "Placing targeted job advertisments"@en ;
+                              rdfs:isDefinedBy vair: ;
+                              rdfs:label "Placing Targeted Job Advert"@en ;
                               skos:definition "Placing targeted job advertisments"@en ;
-                              rdfs:comment "Placing targeted job advertisments"@en ;
                               skos:inScheme vair: ;
                               skos:prefLabel "Placing Targeted Job Advert"@en ;
-                              rdfs:label "Placing Targeted Job Advert"@en ;
                               skos:related vair:Employment .
 
 
@@ -7835,11 +7707,11 @@ vair:Recommendation rdfs:comment "Recommendation generated by an AI system"@en ;
                     skos:prefLabel "Recommendation"@en .
 
 
-vair:Recruiting rdfs:isDefinedBy vair: ;
-                skos:definition "Recruiting people for a job"@en ;
-                rdfs:comment "Recruiting people for a job"@en ;
-                skos:inScheme vair: ;
+vair:Recruiting rdfs:comment "Recruiting people for a job"@en ;
+                rdfs:isDefinedBy vair: ;
                 rdfs:label "Recruiting"@en ;
+                skos:definition "Recruiting people for a job"@en ;
+                skos:inScheme vair: ;
                 skos:prefLabel "Recruiting"@en .
 
 
@@ -7981,14 +7853,6 @@ vair:SearchMethod rdfs:comment "Refers to statistical-based search Methods"@en ;
                   skos:prefLabel "Search Method"@en .
 
 
-vair:JobCandidateSelection rdfs:isDefinedBy vair: ;
-                     skos:definition "Selecting people for a job for a position "@en ;
-                     rdfs:comment "Selecting people for a job for a position "@en ;
-                     skos:inScheme vair: ;
-                     rdfs:label "Job Candidate Selection"@en ;
-                     skos:prefLabel "Job Candidate Selection"@en .
-
-
 vair:SemiSupervisedLearning terms:source "ISO/IEC 22989, 3.3.11" ;
                             rdfs:comment "Machine learning that makes use of both labelled and unlabelled data during training"@en ;
                             rdfs:isDefinedBy vair: ;
@@ -8052,89 +7916,89 @@ vair:ServingSafetyFunctionInManagement rdfs:comment "Purpose of providing safety
 
 vair:ServingSafetyFunctionInManagementOfRoadTraffic rdfs:comment "Purpose of providing safety function in management of road traffic"@en ;
                                                     rdfs:isDefinedBy vair: ;
-                                                    rdfs:label "Serving Safety Function In Management Of Road Traffic"@en;
+                                                    rdfs:label "Serving Safety Function In Management Of Road Traffic"@en ;
                                                     skos:definition "Purpose of providing safety function in management of road traffic"@en ;
                                                     skos:inScheme vair: ;
                                                     skos:prefLabel "Serving Safety Function In Management Of Road Traffic"@en .
 
 
-vair:ServingSafetyFunctionInManagementOfTheSupplyOfElectricity rdfs:isDefinedBy vair: ;
+vair:ServingSafetyFunctionInManagementOfTheSupplyOfElectricity rdfs:comment "Purpose of providing safety function in management of the supply of electricity"@en ;
+                                                               rdfs:isDefinedBy vair: ;
+                                                               rdfs:label "Serving Safety Function In Management Of The Supply Of Electricity"@en ;
                                                                skos:definition "Purpose of providing safety function in management of the supply of electricity"@en ;
-                                                               rdfs:comment "Purpose of providing safety function in management of the supply of electricity"@en ;
                                                                skos:inScheme vair: ;
-                                                               rdfs:label "Serving Safety Function In Management Of The Supply Of Electricity"@en;
                                                                skos:prefLabel "Serving Safety Function In Management Of The Supply Of Electricity"@en .
 
 
-vair:ServingSafetyFunctionInManagementOfTheSupplyOfGas rdfs:isDefinedBy vair: ;
-                                                       skos:definition "Purpose of providing safety function in management of the supply of gas"@en ;
-                                                       rdfs:comment "Purpose of providing safety function in management of the supply of gas"@en ;
+vair:ServingSafetyFunctionInManagementOfTheSupplyOfGas rdfs:comment "Purpose of providing safety function in management of the supply of gas"@en ;
+                                                       rdfs:isDefinedBy vair: ;
                                                        rdfs:label "Serving Safety Function In Management Of The Supply Of Gas"@en ;
+                                                       skos:definition "Purpose of providing safety function in management of the supply of gas"@en ;
                                                        skos:inScheme vair: ;
                                                        skos:prefLabel "Serving Safety Function In Management Of The Supply Of Gas"@en .
 
 
-vair:ServingSafetyFunctionInManagementOfTheSupplyOfHeating rdfs:isDefinedBy vair: ;
-                                                           skos:definition "Purpose of providing safety function in management of the supply of heating"@en ;
-                                                           rdfs:comment "Purpose of providing safety function in management of the supply of heating"@en ;
-                                                           skos:inScheme vair: ;
+vair:ServingSafetyFunctionInManagementOfTheSupplyOfHeating rdfs:comment "Purpose of providing safety function in management of the supply of heating"@en ;
+                                                           rdfs:isDefinedBy vair: ;
                                                            rdfs:label "Serving Safety Function In Management Of The Supply Of Heating"@en ;
+                                                           skos:definition "Purpose of providing safety function in management of the supply of heating"@en ;
+                                                           skos:inScheme vair: ;
                                                            skos:prefLabel "Serving Safety Function In Management Of The Supply Of Heating"@en .
 
 
-vair:ServingSafetyFunctionInManagementOfTheSupplyOfWater rdfs:isDefinedBy vair: ;
+vair:ServingSafetyFunctionInManagementOfTheSupplyOfWater rdfs:comment "Purpose of providing safety function in management of the supply of water"@en ;
+                                                         rdfs:isDefinedBy vair: ;
+                                                         rdfs:label "Serving Safety Function In Management Of The Supply Of Water"@en ;
                                                          skos:definition "Purpose of providing safety function in management of the supply of water"@en ;
-                                                         rdfs:comment "Purpose of providing safety function in management of the supply of water"@en ;
                                                          skos:inScheme vair: ;
-                                                         rdfs:label  "Serving Safety Function In Management Of The Supply Of Water"@en ;
                                                          skos:prefLabel "Serving Safety Function In Management Of The Supply Of Water"@en .
 
 
-vair:ServingSafetyFunctionInOperation rdfs:isDefinedBy vair: ;
-                                      skos:definition "Purpose of providing safety function in operation of services"@en ;
-                                      rdfs:comment "Purpose of providing safety function in operation of services"@en ;
-                                      skos:inScheme vair: ;
+vair:ServingSafetyFunctionInOperation rdfs:comment "Purpose of providing safety function in operation of services"@en ;
+                                      rdfs:isDefinedBy vair: ;
                                       rdfs:label "Serving Safety Function In Operation"@en ;
+                                      skos:definition "Purpose of providing safety function in operation of services"@en ;
+                                      skos:inScheme vair: ;
                                       skos:prefLabel "Serving Safety Function In Operation"@en .
 
 
-vair:ServingSafetyFunctionInOperationOfRoadTraffic rdfs:isDefinedBy vair: ;
-                                                   skos:definition "Purpose of providing safety function in operation of road traffic"@en ;
-                                                   rdfs:comment "Purpose of providing safety function in operation of road traffic"@en ;
-                                                   skos:inScheme vair: ;
+vair:ServingSafetyFunctionInOperationOfRoadTraffic rdfs:comment "Purpose of providing safety function in operation of road traffic"@en ;
+                                                   rdfs:isDefinedBy vair: ;
                                                    rdfs:label "Serving Safety Function In Operation Of Road Traffic"@en ;
+                                                   skos:definition "Purpose of providing safety function in operation of road traffic"@en ;
+                                                   skos:inScheme vair: ;
                                                    skos:prefLabel "Serving Safety Function In Operation Of Road Traffic"@en .
 
 
-vair:ServingSafetyFunctionInOperationOfTheSupplyOfElectricity rdfs:isDefinedBy vair: ;
-                                                              skos:definition "Purpose of providing safety function in operation of the supply of electricity"@en ;
-                                                              rdfs:comment "Purpose of providing safety function in operation of the supply of electricity"@en ;
-                                                              skos:inScheme vair: ;
+vair:ServingSafetyFunctionInOperationOfTheSupplyOfElectricity rdfs:comment "Purpose of providing safety function in operation of the supply of electricity"@en ;
+                                                              rdfs:isDefinedBy vair: ;
                                                               rdfs:label "Serving Safety Function In Operation Of The Supply Of Electricity"@en ;
+                                                              skos:definition "Purpose of providing safety function in operation of the supply of electricity"@en ;
+                                                              skos:inScheme vair: ;
                                                               skos:prefLabel "Serving Safety Function In Operation Of The Supply Of Electricity"@en .
 
 
-vair:ServingSafetyFunctionInOperationOfTheSupplyOfGas rdfs:isDefinedBy vair: ;
-                                                      skos:definition "Purpose of providing safety function in operation of the supply of gas"@en ;
-                                                      rdfs:comment "Purpose of providing safety function in operation of the supply of gas"@en ;
-                                                      skos:inScheme vair: ;
+vair:ServingSafetyFunctionInOperationOfTheSupplyOfGas rdfs:comment "Purpose of providing safety function in operation of the supply of gas"@en ;
+                                                      rdfs:isDefinedBy vair: ;
                                                       rdfs:label "Serving Safety Function In Operation Of The Supply Of Gas"@en ;
+                                                      skos:definition "Purpose of providing safety function in operation of the supply of gas"@en ;
+                                                      skos:inScheme vair: ;
                                                       skos:prefLabel "Serving Safety Function In Operation Of The Supply Of Gas"@en .
 
 
-vair:ServingSafetyFunctionInOperationOfTheSupplyOfHeating rdfs:isDefinedBy vair: ;
-                                                          skos:definition "Purpose of providing safety function in operation of the supply of heating"@en ;
-                                                          rdfs:comment "Purpose of providing safety function in operation of the supply of heating"@en ;
-                                                          skos:inScheme vair: ;
+vair:ServingSafetyFunctionInOperationOfTheSupplyOfHeating rdfs:comment "Purpose of providing safety function in operation of the supply of heating"@en ;
+                                                          rdfs:isDefinedBy vair: ;
                                                           rdfs:label "Serving Safety Function In Operation Of The Supply Of Heating"@en ;
+                                                          skos:definition "Purpose of providing safety function in operation of the supply of heating"@en ;
+                                                          skos:inScheme vair: ;
                                                           skos:prefLabel "Serving Safety Function In Operation Of The Supply Of Heating"@en .
 
 
-vair:ServingSafetyFunctionInOperationOfTheSupplyOfWater rdfs:isDefinedBy vair: ;
-                                                        skos:definition "Purpose of providing safety function in operation of the supply of water"@en ;
-                                                        rdfs:comment "Purpose of providing safety function in operation of the supply of water"@en ;
-                                                        skos:inScheme vair: ;
+vair:ServingSafetyFunctionInOperationOfTheSupplyOfWater rdfs:comment "Purpose of providing safety function in operation of the supply of water"@en ;
+                                                        rdfs:isDefinedBy vair: ;
                                                         rdfs:label "Serving Safety Function In Operation Of The Supply Of Water"@en ;
+                                                        skos:definition "Purpose of providing safety function in operation of the supply of water"@en ;
+                                                        skos:inScheme vair: ;
                                                         skos:prefLabel "Serving Safety Function In Operation Of The Supply Of Water"@en .
 
 
