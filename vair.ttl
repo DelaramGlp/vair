@@ -172,6 +172,10 @@ airo:AISubject rdf:type owl:Class .
 airo:AISystem rdf:type owl:Class .
 
 
+###  https://w3id.org/airo#AITechnique
+airo:AITechnique rdf:type owl:Class .
+
+
 ###  https://w3id.org/airo#AreaOfImpact
 airo:AreaOfImpact rdf:type owl:Class .
 
@@ -271,10 +275,6 @@ airo:Standard rdf:type owl:Class .
 ###  https://w3id.org/airo#SystemRiskSource
 airo:SystemRiskSource rdf:type owl:Class ;
                       rdfs:subClassOf airo:RiskSource .
-
-
-###  https://w3id.org/airo#Technique
-airo:Technique rdf:type owl:Class .
 
 
 ###  https://w3id.org/airo#TestDataRiskSource
@@ -1560,7 +1560,7 @@ vair:JudicialAuthorityAgent rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#KnowledgeBasedTechnique
 vair:KnowledgeBasedTechnique rdf:type owl:Class ;
-                             rdfs:subClassOf airo:Technique .
+                             rdfs:subClassOf airo:AITechnique .
 
 
 ###  https://w3id.org/vair#KnowledgeReasoning
@@ -1621,7 +1621,7 @@ vair:LifeInsuranceRiskAssessment rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#LogicBasedTechnique
 vair:LogicBasedTechnique rdf:type owl:Class ;
-                         rdfs:subClassOf airo:Technique .
+                         rdfs:subClassOf airo:AITechnique .
 
 
 ###  https://w3id.org/vair#LongShortTermMemory
@@ -1646,7 +1646,7 @@ vair:LowSecurity rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#MachineLearning
 vair:MachineLearning rdf:type owl:Class ;
-                     rdfs:subClassOf airo:Technique ;
+                     rdfs:subClassOf airo:AITechnique ;
                      terms:source "ISO/IEC 22989, 3.3.5" ;
                      rdfs:comment "Process of optimizing model parameters through computational techniques, such that the model's behaviour reflects the data or experience."@en ;
                      rdfs:label "Machine Learning"@en ;
@@ -2117,7 +2117,7 @@ vair:ReEvaluation rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#ReasoningTechnique
 vair:ReasoningTechnique rdf:type owl:Class ;
-                        rdfs:subClassOf airo:Technique .
+                        rdfs:subClassOf airo:AITechnique .
 
 
 ###  https://w3id.org/vair#ReclaimingHealthCareServices
@@ -2399,7 +2399,7 @@ vair:StaffIncompetence rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#StatisticalTechnique
 vair:StatisticalTechnique rdf:type owl:Class ;
-                          rdfs:subClassOf airo:Technique .
+                          rdfs:subClassOf airo:AITechnique .
 
 
 ###  https://w3id.org/vair#SupervisedLearning
@@ -5682,8 +5682,10 @@ vair:BayesianNetwork terms:source "ISO/IEC 22989 3.3.1" ;
                      skos:prefLabel "Bayesian Network"@en .
 
 
-vair:BayesianOptimisation rdfs:isDefinedBy vair: ;
-                          skos:definition ""@en ;
+vair:BayesianOptimisation rdfs:comment "Refers to Bayesian optimisation technique."@en ;
+                          rdfs:isDefinedBy vair: ;
+                          rdfs:label "Bayesian Optimisation"@en ;
+                          skos:definition "Refers to Bayesian optimisation technique."@en ;
                           skos:inScheme vair: ;
                           skos:prefLabel "Bayesian Optimisation"@en .
 
@@ -7305,8 +7307,10 @@ vair:Operation terms:source "ISO/IEC 22989, 6.2.6" ;
                skos:prefLabel "Operation"@en .
 
 
-vair:OptimisationMethod rdfs:isDefinedBy vair: ;
-                        skos:definition ""@en ;
+vair:OptimisationMethod rdfs:comment "Refers to optimisation Method"@en ;
+                        rdfs:isDefinedBy vair: ;
+                        rdfs:label "Optimisation Method"@en ;
+                        skos:definition "Refers to optimisation Method"@en ;
                         skos:inScheme vair: ;
                         skos:prefLabel "Optimisation Method"@en .
 
@@ -7757,8 +7761,10 @@ vair:SafetyComponent terms:source "AI Act, Art. 3(14)" ;
                      skos:prefLabel "Safety Component"@en .
 
 
-vair:SearchMethod rdfs:isDefinedBy vair: ;
-                  skos:definition ""@en ;
+vair:SearchMethod rdfs:comment "Refers to statistical-based search Methods"@en ;
+                  rdfs:isDefinedBy vair: ;
+                  rdfs:label "Search Method"@en ;
+                  skos:definition "Refers to statistical-based search Methods"@en ;
                   skos:inScheme vair: ;
                   skos:prefLabel "Search Method"@en .
 
