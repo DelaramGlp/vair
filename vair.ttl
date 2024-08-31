@@ -1256,11 +1256,6 @@ vair:ISO9001-2015 rdf:type owl:Class ;
                   rdfs:subClassOf airo:Standard .
 
 
-###  https://w3id.org/vair#ISOGuide73-2009
-vair:ISOGuide73-2009 rdf:type owl:Class ;
-                     rdfs:subClassOf airo:Standard .
-
-
 ###  https://w3id.org/vair#ISOIEC20546-2019
 vair:ISOIEC20546-2019 rdf:type owl:Class ;
                       rdfs:subClassOf airo:Standard .
@@ -6504,136 +6499,172 @@ vair:HumanOversightMeasure rdfs:isDefinedBy vair: ;
                            skos:prefLabel "Human Oversight Measure"@en .
 
 
-vair:IEC31010-2019 rdfs:isDefinedBy vair: ;
+vair:IEC31010-2019 rdfs:comment "Risk management — Risk assessment techniques"@en ;
+                   rdfs:isDefinedBy vair: ;
+                   rdfs:label "IEC 31010:2019"@en ;
                    skos:definition "Risk management — Risk assessment techniques"@en ;
                    skos:inScheme vair: ;
                    skos:prefLabel "IEC 31010:2019"@en .
 
 
-vair:ISO10013-2021 rdfs:isDefinedBy vair: ;
+vair:ISO10013-2021 rdfs:comment "Quality management systems — Guidance for documented information"@en ;
+                   rdfs:isDefinedBy vair: ;
+                   rdfs:label "ISO 10013:2021"@en ;
                    skos:definition "Quality management systems — Guidance for documented information"@en ;
                    skos:inScheme vair: ;
                    skos:prefLabel "ISO 10013:2021"@en .
 
 
-vair:ISO31000-2018 rdfs:isDefinedBy vair: ;
+vair:ISO31000-2018 rdfs:comment "Risk management — Guidelines"@en ;
+                   rdfs:isDefinedBy vair: ;
+                   rdfs:label "ISO 31000:2018"@en ;
                    skos:definition "Risk management — Guidelines"@en ;
                    skos:inScheme vair: ;
                    skos:prefLabel "ISO 31000:2018"@en .
 
 
-vair:ISO9001-2015 rdfs:isDefinedBy vair: ;
+vair:ISO9001-2015 rdfs:comment "Quality management systems — Requirements"@en ;
+                  rdfs:isDefinedBy vair: ;
+                  rdfs:label "ISO 9001:2015"@en ;
                   skos:definition "Quality management systems — Requirements"@en ;
                   skos:inScheme vair: ;
                   skos:prefLabel "ISO 9001:2015"@en .
 
 
-vair:ISOGuide73-2009 rdfs:isDefinedBy vair: ;
-                     skos:definition "Risk management — Vocabulary"@en ;
-                     skos:inScheme vair: ;
-                     skos:prefLabel "ISO Guide 73:2009"@en .
-
-
-vair:ISOIEC20546-2019 rdfs:isDefinedBy vair: ;
+vair:ISOIEC20546-2019 rdfs:comment "Information technology — Big data — Overview and vocabulary"@en ;
+                      rdfs:isDefinedBy vair: ;
+                      rdfs:label "ISO/IEC 20546:2019"@en ;
                       skos:definition "Information technology — Big data — Overview and vocabulary"@en ;
                       skos:inScheme vair: ;
                       skos:prefLabel "ISO/IEC 20546:2019"@en .
 
 
-vair:ISOIEC20547-3-2020 rdfs:isDefinedBy vair: ;
+vair:ISOIEC20547-3-2020 rdfs:comment "Information technology — Big data reference architecture — Part 3: Reference architecture"@en ;
+                        rdfs:isDefinedBy vair: ;
+                        rdfs:label "ISO/IEC 20547-3:2020"@en ;
                         skos:definition "Information technology — Big data reference architecture — Part 3: Reference architecture"@en ;
                         skos:inScheme vair: ;
                         skos:prefLabel "ISO/IEC 20547-3:2020"@en .
 
 
-vair:ISOIEC22989-2022 rdfs:isDefinedBy vair: ;
+vair:ISOIEC22989-2022 rdfs:comment "Information technology — Artificial intelligence — Artificial intelligence concepts and terminology"@en ;
+                      rdfs:isDefinedBy vair: ;
+                      rdfs:label "ISO/IEC 22989:2022"@en ;
                       skos:definition "Information technology — Artificial intelligence — Artificial intelligence concepts and terminology"@en ;
                       skos:inScheme vair: ;
                       skos:prefLabel "ISO/IEC 22989:2022"@en .
 
 
-vair:ISOIEC23053-2022 rdfs:isDefinedBy vair: ;
+vair:ISOIEC23053-2022 rdfs:comment "Framework for Artificial Intelligence (AI) Systems Using Machine Learning (ML)"@en ;
+                      rdfs:isDefinedBy vair: ;
+                      rdfs:label "ISO/IEC 23053:2022"@en ;
                       skos:definition "Framework for Artificial Intelligence (AI) Systems Using Machine Learning (ML)"@en ;
                       skos:inScheme vair: ;
                       skos:prefLabel "ISO/IEC 23053:2022"@en .
 
 
-vair:ISOIEC23894-2023 rdfs:isDefinedBy vair: ;
+vair:ISOIEC23894-2023 rdfs:comment "Information technology — Artificial intelligence — Guidance on risk management"@en ;
+                      rdfs:isDefinedBy vair: ;
+                      rdfs:label "ISO/IEC 23894:2023"@en ;
                       skos:definition "Information technology — Artificial intelligence — Guidance on risk management"@en ;
                       skos:inScheme vair: ;
                       skos:prefLabel "ISO/IEC 23894:2023"@en .
 
 
-vair:ISOIEC24668-2022 rdfs:isDefinedBy vair: ;
+vair:ISOIEC24668-2022 rdfs:comment "Information technology — Artificial intelligence — Process management framework for big data analytics"@en ;
+                      rdfs:isDefinedBy vair: ;
+                      rdfs:label "ISO/IEC 24668:2022"@en ;
                       skos:definition "Information technology — Artificial intelligence — Process management framework for big data analytics"@en ;
                       skos:inScheme vair: ;
                       skos:prefLabel "ISO/IEC 24668:2022"@en .
 
 
-vair:ISOIEC38507-2022 rdfs:isDefinedBy vair: ;
+vair:ISOIEC38507-2022 rdfs:comment "Information technology — Governance of IT — Governance implications of the use of artificial intelligence by organizations"@en ;
+                      rdfs:isDefinedBy vair: ;
+                      rdfs:label "ISO/IEC 38507:2022"@en ;
                       skos:definition "Information technology — Governance of IT — Governance implications of the use of artificial intelligence by organizations"@en ;
                       skos:inScheme vair: ;
-                      skos:prefLabel " ISO/IEC 38507:2022"@en .
+                      skos:prefLabel "ISO/IEC 38507:2022"@en .
 
 
-vair:ISOIECTR20547-1-2020 rdfs:isDefinedBy vair: ;
+vair:ISOIECTR20547-1-2020 rdfs:comment "Information technology — Big data reference architecture — Part 1: Framework and application process"@en ;
+                          rdfs:isDefinedBy vair: ;
+                          rdfs:label "ISO/IEC TR 20547-1:2020"@en ;
                           skos:definition "Information technology — Big data reference architecture — Part 1: Framework and application process"@en ;
                           skos:inScheme vair: ;
                           skos:prefLabel "ISO/IEC TR 20547-1:2020"@en .
 
 
-vair:ISOIECTR20547-2-2018 rdfs:isDefinedBy vair: ;
+vair:ISOIECTR20547-2-2018 rdfs:comment "Information technology — Big data reference architecture — Part 2: Use cases and derived requirements"@en ;
+                          rdfs:isDefinedBy vair: ;
+                          rdfs:label "ISO/IEC TR 20547-2:2018"@en ;
                           skos:definition "Information technology — Big data reference architecture — Part 2: Use cases and derived requirements"@en ;
                           skos:inScheme vair: ;
                           skos:prefLabel "ISO/IEC TR 20547-2:2018"@en .
 
 
-vair:ISOIECTR20547-5-2018 rdfs:isDefinedBy vair: ;
+vair:ISOIECTR20547-5-2018 rdfs:comment "Information technology — Big data reference architecture — Part 5: Standards roadmap"@en ;
+                          rdfs:isDefinedBy vair: ;
+                          rdfs:label "ISO/IEC TR 20547-5:2018"@en ;
                           skos:definition "Information technology — Big data reference architecture — Part 5: Standards roadmap"@en ;
                           skos:inScheme vair: ;
                           skos:prefLabel "ISO/IEC TR 20547-5:2018"@en .
 
 
-vair:ISOIECTR24027-2021 rdfs:isDefinedBy vair: ;
+vair:ISOIECTR24027-2021 rdfs:comment "Information technology — Artificial intelligence (AI) — Bias in AI systems and AI aided decision making"@en ;
+                        rdfs:isDefinedBy vair: ;
+                        rdfs:label "ISO/IEC TR 24027:2021"@en ;
                         skos:definition "Information technology — Artificial intelligence (AI) — Bias in AI systems and AI aided decision making"@en ;
                         skos:inScheme vair: ;
                         skos:prefLabel "ISO/IEC TR 24027:2021"@en .
 
 
-vair:ISOIECTR24028-2020 rdfs:isDefinedBy vair: ;
+vair:ISOIECTR24028-2020 rdfs:comment "v"@en ;
+                        rdfs:isDefinedBy vair: ;
+                        rdfs:label "ISO/IEC TR 24028:2020"@en ;
                         skos:definition "Information technology — Artificial intelligence — Overview of trustworthiness in artificial intelligence"@en ;
                         skos:inScheme vair: ;
                         skos:prefLabel "ISO/IEC TR 24028:2020"@en .
 
 
-vair:ISOIECTR24029-1-2021 rdfs:isDefinedBy vair: ;
+vair:ISOIECTR24029-1-2021 rdfs:comment "Artificial Intelligence (AI) — Assessment of the robustness of neural networks — Part 1: Overview"@en ;
+                          rdfs:isDefinedBy vair: ;
+                          rdfs:label "ISO/IEC TR 24029-1:2021" ;
                           skos:definition "Artificial Intelligence (AI) — Assessment of the robustness of neural networks — Part 1: Overview"@en ;
                           skos:inScheme vair: ;
                           skos:prefLabel "ISO/IEC TR 24029-1:2021"@en .
 
 
-vair:ISOIECTR24030-2021 rdfs:isDefinedBy vair: ;
+vair:ISOIECTR24030-2021 rdfs:comment "Information technology — Artificial intelligence (AI) — Use cases"@en ;
+                        rdfs:isDefinedBy vair: ;
+                        rdfs:label "ISO/IEC TR 24030:2021"@en ;
                         skos:definition "Information technology — Artificial intelligence (AI) — Use cases"@en ;
                         skos:inScheme vair: ;
                         skos:prefLabel "ISO/IEC TR 24030:2021"@en .
 
 
-vair:ISOIECTR24368-2022 rdfs:isDefinedBy vair: ;
+vair:ISOIECTR24368-2022 rdfs:comment "Information technology — Artificial intelligence — Overview of ethical and societal concerns"@en ;
+                        rdfs:isDefinedBy vair: ;
+                        rdfs:label "ISO/IEC TR 24368:2022"@en ;
                         skos:definition "Information technology — Artificial intelligence — Overview of ethical and societal concerns"@en ;
                         skos:inScheme vair: ;
                         skos:prefLabel "ISO/IEC TR 24368:2022"@en .
 
 
-vair:ISOIECTR24372-2021 rdfs:isDefinedBy vair: ;
+vair:ISOIECTR24372-2021 rdfs:comment "Information technology — Artificial intelligence (AI) — Overview of computational approaches for AI systems"@en ;
+                        rdfs:isDefinedBy vair: ;
+                        rdfs:label "ISO/IEC TR 24372:2021"@en ;
                         skos:definition "Information technology — Artificial intelligence (AI) — Overview of computational approaches for AI systems"@en ;
                         skos:inScheme vair: ;
                         skos:prefLabel "ISO/IEC TR 24372:2021"@en .
 
 
-vair:ISOIECTS4213-2022 rdfs:isDefinedBy vair: ;
+vair:ISOIECTS4213-2022 rdfs:comment "Information technology — Artificial intelligence — Assessment of machine learning classification performance"@en ;
+                       rdfs:isDefinedBy vair: ;
+                       rdfs:label "ISO/IEC TS 4213:2022" ;
                        skos:definition "Information technology — Artificial intelligence — Assessment of machine learning classification performance"@en ;
                        skos:inScheme vair: ;
-                       skos:prefLabel " ISO/IEC TS 4213:2022"@en .
+                       skos:prefLabel "ISO/IEC TS 4213:2022"@en .
 
 
 vair:IdentiftyingIndividuals rdfs:isDefinedBy vair: ;
