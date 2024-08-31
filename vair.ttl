@@ -192,11 +192,6 @@ airo:Consequence rdf:type owl:Class .
 airo:Control rdf:type owl:Class .
 
 
-###  https://w3id.org/airo#DetectionControl
-airo:DetectionControl rdf:type owl:Class ;
-                      rdfs:subClassOf airo:Control .
-
-
 ###  https://w3id.org/airo#Documentation
 airo:Documentation rdf:type owl:Class .
 
@@ -218,27 +213,12 @@ airo:InputDataRiskSource rdf:type owl:Class ;
                          rdfs:subClassOf vair:DataRiskSource .
 
 
-###  https://w3id.org/airo#ManualControl
-airo:ManualControl rdf:type owl:Class ;
-                   rdfs:subClassOf airo:Control .
-
-
-###  https://w3id.org/airo#MitigationControl
-airo:MitigationControl rdf:type owl:Class ;
-                       rdfs:subClassOf airo:Control .
-
-
 ###  https://w3id.org/airo#Modality
 airo:Modality rdf:type owl:Class .
 
 
 ###  https://w3id.org/airo#ModeOfOutputControllability
 airo:ModeOfOutputControllability rdf:type owl:Class .
-
-
-###  https://w3id.org/airo#OperationalControl
-airo:OperationalControl rdf:type owl:Class ;
-                        rdfs:subClassOf airo:Control .
 
 
 ###  https://w3id.org/airo#OrganisationalRiskSource
@@ -261,11 +241,6 @@ airo:Purpose rdf:type owl:Class .
 
 ###  https://w3id.org/airo#RiskSource
 airo:RiskSource rdf:type owl:Class .
-
-
-###  https://w3id.org/airo#SemiAutomatedControl
-airo:SemiAutomatedControl rdf:type owl:Class ;
-                          rdfs:subClassOf airo:Control .
 
 
 ###  https://w3id.org/airo#Standard
@@ -380,7 +355,7 @@ vair:ApplyingTheLawToFacts rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#Approval
 vair:Approval rdf:type owl:Class ;
-              rdfs:subClassOf airo:ManualControl .
+              rdfs:subClassOf vair:ManualControl .
 
 
 ###  https://w3id.org/vair#AssesingStudent
@@ -554,7 +529,7 @@ vair:Bias rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#BiasDetection
 vair:BiasDetection rdf:type owl:Class ;
-                   rdfs:subClassOf airo:DetectionControl .
+                   rdfs:subClassOf vair:DetectionControl .
 
 
 ###  https://w3id.org/vair#BiasedTestData
@@ -818,6 +793,15 @@ vair:DetectingProhibitedBehaviourDuringTest rdf:type owl:Class ;
 ###  https://w3id.org/vair#Detection
 vair:Detection rdf:type owl:Class ;
                rdfs:subClassOf vair:DecisionMaking .
+
+
+###  https://w3id.org/vair#DetectionControl
+vair:DetectionControl rdf:type owl:Class ;
+                      rdfs:subClassOf airo:Control ;
+                      rdfs:comment "Control that is applied for detection purposes, e.g. detecting risks"@en ;
+                      rdfs:label "Detection Control"@en ;
+                      skos:definition "Control that is applied for detection purposes, e.g. detecting risks"@en ;
+                      skos:prefLabel "Detection Control"@en .
 
 
 ###  https://w3id.org/vair#DeterminingAccessToEducationalInstitutions
@@ -1205,7 +1189,7 @@ vair:HighAutomation rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#HumanOversightMeasure
 vair:HumanOversightMeasure rdf:type owl:Class ;
-                           rdfs:subClassOf airo:SemiAutomatedControl .
+                           rdfs:subClassOf vair:SemiAutomatedControl .
 
 
 ###  https://w3id.org/vair#IEC31010-2019
@@ -1469,12 +1453,12 @@ vair:InterpretingLaw rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#Interruption
 vair:Interruption rdf:type owl:Class ;
-                  rdfs:subClassOf airo:OperationalControl .
+                  rdfs:subClassOf vair:OperationalControl .
 
 
 ###  https://w3id.org/vair#Intervention
 vair:Intervention rdf:type owl:Class ;
-                  rdfs:subClassOf airo:OperationalControl .
+                  rdfs:subClassOf vair:OperationalControl .
 
 
 ###  https://w3id.org/vair#InvestigatingCriminalOffences
@@ -1724,6 +1708,15 @@ vair:ManagingSupplyOfWater rdf:type owl:Class ;
                            rdfs:subClassOf vair:Managing .
 
 
+###  https://w3id.org/vair#ManualControl
+vair:ManualControl rdf:type owl:Class ;
+                   rdfs:subClassOf airo:Control ;
+                   rdfs:comment "Controls implemented manually by human actors"@en ;
+                   rdfs:label "Manual Control"@en ;
+                   skos:definition "Controls implemented manually by human actors"@en ;
+                   skos:prefLabel "Manual Control"@en .
+
+
 ###  https://w3id.org/vair#MedicalAidProvider
 vair:MedicalAidProvider rdf:type owl:Class ;
                         rdfs:subClassOf vair:EmergencyServiceProvider ;
@@ -1738,6 +1731,15 @@ vair:MedicalAidProvider rdf:type owl:Class ;
 ###  https://w3id.org/vair#MigrationManagement
 vair:MigrationManagement rdf:type owl:Class ;
                          rdfs:subClassOf airo:Domain .
+
+
+###  https://w3id.org/vair#MitigationControl
+vair:MitigationControl rdf:type owl:Class ;
+                       rdfs:subClassOf airo:Control ;
+                       rdfs:comment "Control that is applied for mitigation purposes, e.g. ,mitigating risk sources, impacts, etc."@en ;
+                       rdfs:label "Mitigation Control"@en ;
+                       skos:definition "Control that is applied for mitigation purposes, e.g. ,mitigating risk sources, impacts, etc."@en ;
+                       skos:prefLabel "Mitigation Control"@en .
 
 
 ###  https://w3id.org/vair#Model
@@ -1881,6 +1883,15 @@ vair:Operation rdf:type owl:Class ;
                rdfs:subClassOf airo:AILifecyclePhase .
 
 
+###  https://w3id.org/vair#OperationalControl
+vair:OperationalControl rdf:type owl:Class ;
+                        rdfs:subClassOf airo:Control ;
+                        rdfs:comment "Control related to operation of the system."@en ;
+                        rdfs:label "Operational Control"@en ;
+                        skos:definition "Control related to operation of the system."@en ;
+                        skos:prefLabel "Operational Control"@en .
+
+
 ###  https://w3id.org/vair#OptimisationMethod
 vair:OptimisationMethod rdf:type owl:Class ;
                         rdfs:subClassOf vair:StatisticalTechnique .
@@ -1912,7 +1923,7 @@ vair:Overreliance rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#OverridingOutcome
 vair:OverridingOutcome rdf:type owl:Class ;
-                       rdfs:subClassOf airo:MitigationControl .
+                       rdfs:subClassOf vair:MitigationControl .
 
 
 ###  https://w3id.org/vair#PartOfSpeechTagging
@@ -2202,7 +2213,7 @@ vair:ReverseOutput rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#ReversingOutcome
 vair:ReversingOutcome rdf:type owl:Class ;
-                      rdfs:subClassOf airo:MitigationControl .
+                      rdfs:subClassOf vair:MitigationControl .
 
 
 ###  https://w3id.org/vair#RevokingHealthCareServices
@@ -2250,6 +2261,15 @@ vair:SearchMethod rdf:type owl:Class ;
 ###  https://w3id.org/vair#SelectingPeople
 vair:SelectingPeople rdf:type owl:Class ;
                      rdfs:subClassOf vair:Assessment .
+
+
+###  https://w3id.org/vair#SemiAutomatedControl
+vair:SemiAutomatedControl rdf:type owl:Class ;
+                          rdfs:subClassOf airo:Control ;
+                          rdfs:comment "Controls that are implemeted in a semi automated manner."@en ;
+                          rdfs:label "Semi Automated Control"@en ;
+                          skos:definition "Controls that are implemeted in a semi automated manner."@en ;
+                          skos:prefLabel "Semi Automated Control"@en .
 
 
 ###  https://w3id.org/vair#SemiSupervisedLearning
@@ -5508,7 +5528,9 @@ vair:ApplyingTheLawToFacts rdfs:isDefinedBy vair: ;
                            skos:related vair:Law .
 
 
-vair:Approval rdfs:isDefinedBy vair: ;
+vair:Approval rdfs:comment "Approval or refusual of a request, excutation of process, etc. to prevent or mitigate a risk."@en ;
+              rdfs:isDefinedBy vair: ;
+              rdfs:label "Approval"@en ;
               skos:definition "Approval or refusual of a request, excutation of process, etc. to prevent or mitigate a risk."@en ;
               skos:inScheme vair: ;
               skos:prefLabel "Approval"@en .
@@ -5705,7 +5727,9 @@ vair:Bias rdfs:comment "Systematic difference in treatment of certain objects, p
           skos:prefLabel "Bias"@en .
 
 
-vair:BiasDetection rdfs:isDefinedBy vair: ;
+vair:BiasDetection rdfs:comment "Control that is applied to detect bias in datasets, models, algorithms, etc."@en ;
+                   rdfs:isDefinedBy vair: ;
+                   rdfs:label "Bias Detection"@en ;
                    skos:definition "Control that is applied to detect bias in datasets, models, algorithms, etc."@en ;
                    skos:inScheme vair: ;
                    skos:prefLabel "Bias Detection"@en .
@@ -6454,7 +6478,9 @@ vair:HealthInsuranceRiskAssessment rdfs:isDefinedBy vair: ;
                                                 vair:PublicService .
 
 
-vair:HumanOversightMeasure rdfs:isDefinedBy vair: ;
+vair:HumanOversightMeasure rdfs:comment "Overseening the system by natural persons to detect, prevent or minimise risk."@en ;
+                           rdfs:isDefinedBy vair: ;
+                           rdfs:label "Human Oversight Measure"@en ;
                            skos:definition "Overseening the system by natural persons to detect, prevent or minimise risk."@en ;
                            skos:inScheme vair: ;
                            skos:prefLabel "Human Oversight Measure"@en .
@@ -6744,8 +6770,10 @@ vair:InfluencingReferendumOutcome rdfs:isDefinedBy vair: ;
                                   skos:prefLabel "Influencing Referendum Outcome"@en .
 
 
-vair:InformationProvision rdfs:isDefinedBy vair: ;
-                          skos:definition "providing information to inform the user of in particular an AI system’s intended purpose and proper use, inclusive of the specific geographical, behavioural or functional setting within which the  AI system is intended to be used."@en ;
+vair:InformationProvision rdfs:comment "Providing information to inform the user of in particular an AI system’s intended purpose and proper use, inclusive of the specific geographical, behavioural or functional setting within which the  AI system is intended to be used."@en ;
+                          rdfs:isDefinedBy vair: ;
+                          rdfs:label "Information Provision"@en ;
+                          skos:definition "Providing information to inform the user of in particular an AI system’s intended purpose and proper use, inclusive of the specific geographical, behavioural or functional setting within which the  AI system is intended to be used."@en ;
                           skos:inScheme vair: ;
                           skos:prefLabel "Information Provision"@en .
 
@@ -6803,13 +6831,17 @@ vair:InterpretingLaw rdfs:isDefinedBy vair: ;
                      skos:related vair:Law .
 
 
-vair:Interruption rdfs:isDefinedBy vair: ;
+vair:Interruption rdfs:comment "Interrupting the system's operation"@en ;
+                  rdfs:isDefinedBy vair: ;
+                  rdfs:label "Interruption"@en ;
                   skos:definition "Interrupting the system's operation"@en ;
                   skos:inScheme vair: ;
                   skos:prefLabel "Interruption"@en .
 
 
-vair:Intervention rdfs:isDefinedBy vair: ;
+vair:Intervention rdfs:comment "Intervention of system's operation"@en ;
+                  rdfs:isDefinedBy vair: ;
+                  rdfs:label "Intervention"@en ;
                   skos:definition "Intervention of system's operation"@en ;
                   skos:inScheme vair: ;
                   skos:prefLabel "Intervention"@en .
@@ -7334,7 +7366,9 @@ vair:Overreliance rdfs:isDefinedBy vair: ;
                   skos:prefLabel "Overreliance"@en .
 
 
-vair:OverridingOutcome rdfs:isDefinedBy vair: ;
+vair:OverridingOutcome rdfs:comment "Overriding outcome of a system."@en ;
+                       rdfs:isDefinedBy vair: ;
+                       rdfs:label "Overriding Outcome"@en ;
                        skos:definition "Overriding outcome of a system."@en ;
                        skos:inScheme vair: ;
                        skos:prefLabel "Overriding Outcome"@en ;
@@ -7717,7 +7751,9 @@ vair:ReverseOutput rdfs:comment "A mode of controllability that stakeholders can
                    skos:prefLabel "Reverse Output"@en .
 
 
-vair:ReversingOutcome rdfs:isDefinedBy vair: ;
+vair:ReversingOutcome rdfs:comment "Reversing the outcome of a system."@en ;
+                      rdfs:isDefinedBy vair: ;
+                      rdfs:label "Reversing Outcome"@en ;
                       skos:definition "Reversing the outcome of a system."@en ;
                       skos:inScheme vair: ;
                       skos:prefLabel "Reversing Outcome"@en ;
@@ -8099,10 +8135,12 @@ vair:UnsupervisedLearning terms:source "ISO/IEC 22989, 3.3.17" ;
                           skos:prefLabel "Unsupervised Learning"@en .
 
 
-vair:UserTraining rdfs:isDefinedBy vair: ;
+vair:UserTraining rdfs:comment "Providing training to staff, users, etc."@en ;
+                  rdfs:isDefinedBy vair: ;
+                  rdfs:label "User Training"@en ;
                   skos:definition "Providing training to staff, users, etc."@en ;
                   skos:inScheme vair: ;
-                  skos:prefLabel "Use Training"@en .
+                  skos:prefLabel "User Training"@en .
 
 
 vair:Validation terms:source "ISO/IEC 22989, 6.2.4" ;
