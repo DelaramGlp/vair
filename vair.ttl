@@ -273,10 +273,6 @@ airo:AISubject rdf:type owl:Class .
 airo:AISystem rdf:type owl:Class .
 
 
-###  https://w3id.org/airo#AISystemForm
-airo:AISystemForm rdf:type owl:Class .
-
-
 ###  https://w3id.org/airo#Algorithm
 airo:Algorithm rdf:type owl:Class .
 
@@ -595,11 +591,6 @@ vair:AutomaticSummarisation rdf:type owl:Class ;
                             rdfs:subClassOf airo:Capability .
 
 
-###  https://w3id.org/vair#AutonomousSystem
-vair:AutonomousSystem rdf:type owl:Class ;
-                      rdfs:subClassOf airo:AISystem .
-
-
 ###  https://w3id.org/vair#BayesianEstimation
 vair:BayesianEstimation rdf:type owl:Class ;
                         rdfs:subClassOf vair:StatisticalTechnique .
@@ -695,11 +686,6 @@ vair:CognitiveComputing rdf:type owl:Class ;
                         rdfs:subClassOf airo:AISystem .
 
 
-###  https://w3id.org/vair#CognitiveSystem
-vair:CognitiveSystem rdf:type owl:Class ;
-                     rdfs:subClassOf airo:AISystem .
-
-
 ###  https://w3id.org/vair#CommonSenseReasoning
 vair:CommonSenseReasoning rdf:type owl:Class ;
                           rdfs:subClassOf vair:ReasoningTechnique .
@@ -783,11 +769,6 @@ vair:Decision rdf:type owl:Class ;
 ###  https://w3id.org/vair#DecisionMaking
 vair:DecisionMaking rdf:type owl:Class ;
                     rdfs:subClassOf airo:Purpose .
-
-
-###  https://w3id.org/vair#DecisionSupportSystem
-vair:DecisionSupportSystem rdf:type owl:Class ;
-                           rdfs:subClassOf airo:AISystem .
 
 
 ###  https://w3id.org/vair#DecisionTree
@@ -1434,7 +1415,7 @@ vair:InductiveProgramming rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#IndustrialRobot
 vair:IndustrialRobot rdf:type owl:Class ;
-                     rdfs:subClassOf vair:RobotSystem .
+                     rdfs:subClassOf vair:Robot .
 
 
 ###  https://w3id.org/vair#Inference
@@ -1672,7 +1653,8 @@ vair:MachineLearning rdf:type owl:Class .
 
 
 ###  https://w3id.org/vair#MachineLearningAlgorithm
-vair:MachineLearningAlgorithm rdf:type owl:Class .
+vair:MachineLearningAlgorithm rdf:type owl:Class ;
+                              rdfs:subClassOf vair:Algorithm .
 
 
 ###  https://w3id.org/vair#MachineLearningFramework
@@ -2044,7 +2026,7 @@ vair:ProducingRecommendation rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#Product
 vair:Product rdf:type owl:Class ;
-             rdfs:subClassOf airo:AISystemForm .
+             rdfs:subClassOf airo:Modality .
 
 
 ###  https://w3id.org/vair#ProductManufacturer
@@ -2137,11 +2119,6 @@ vair:Recommendation rdf:type owl:Class ;
                     rdfs:subClassOf airo:Output .
 
 
-###  https://w3id.org/vair#RecommenderSystem
-vair:RecommenderSystem rdf:type owl:Class ;
-                       rdfs:subClassOf airo:AISystem .
-
-
 ###  https://w3id.org/vair#Recruiting
 vair:Recruiting rdf:type owl:Class ;
                 rdfs:subClassOf vair:Assessment .
@@ -2222,9 +2199,16 @@ vair:Right rdf:type owl:Class ;
            rdfs:subClassOf airo:ImpactedArea .
 
 
-###  https://w3id.org/vair#RobotSystem
-vair:RobotSystem rdf:type owl:Class ;
-                 rdfs:subClassOf airo:AISystem .
+###  https://w3id.org/vair#Robot
+vair:Robot rdf:type owl:Class ;
+           rdfs:subClassOf airo:AISystem ;
+           rdfs:comment "An automation system with actuators that performs intended tasks in the physical world, by means of sensing its environment and a software control system."@en ;
+           rdfs:isDefinedBy vair: ;
+           rdfs:label "Robot"@en ,
+                      "ISO/IEC 22989, 3.1.29" ;
+           skos:definition "An automation system with actuators that performs intended tasks in the physical world, by means of sensing its environment and a software control system."@en ;
+           skos:inScheme vair: ;
+           skos:prefLabel "Robot"@en .
 
 
 ###  https://w3id.org/vair#Safety
@@ -2234,7 +2218,7 @@ vair:Safety rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#SafetyComponent
 vair:SafetyComponent rdf:type owl:Class ;
-                     rdfs:subClassOf airo:AISystemForm .
+                     rdfs:subClassOf airo:Modality .
 
 
 ###  https://w3id.org/vair#SearchMethod
@@ -2264,12 +2248,12 @@ vair:SentimentAnalysis rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#Service
 vair:Service rdf:type owl:Class ;
-             rdfs:subClassOf airo:AISystemForm .
+             rdfs:subClassOf airo:Modality .
 
 
 ###  https://w3id.org/vair#ServiceRobot
 vair:ServiceRobot rdf:type owl:Class ;
-                  rdfs:subClassOf vair:RobotSystem .
+                  rdfs:subClassOf vair:Robot .
 
 
 ###  https://w3id.org/vair#ServingSafetyFunction
@@ -2344,12 +2328,12 @@ vair:SettlingDispute rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#SocialRobot
 vair:SocialRobot rdf:type owl:Class ;
-                 rdfs:subClassOf vair:RobotSystem .
+                 rdfs:subClassOf vair:Robot .
 
 
 ###  https://w3id.org/vair#Software
 vair:Software rdf:type owl:Class ;
-              rdfs:subClassOf airo:AISystemForm .
+              rdfs:subClassOf airo:Modality .
 
 
 ###  https://w3id.org/vair#SoundEventRecognition
@@ -5517,10 +5501,13 @@ vair:WrongDataSetDesignChoice rdf:type owl:NamedIndividual ,
                        skos:prefLabel "Unintended Involvement"@en .
 
 
-vair:AGI rdfs:isDefinedBy vair: ;
-         skos:definition "artificial general intelligence"@en ;
+vair:AGI terms:source "ISO/IEC 22989, 3.1.14" ;
+         rdfs:comment "Type of AI system that addresses a broad range of tasks with a satisfactory level of performance."@en ;
+         rdfs:isDefinedBy vair: ;
+         rdfs:label "Artificial General Intelligence"@en ;
+         skos:definition "Type of AI system that addresses a broad range of tasks with a satisfactory level of performance."@en ;
          skos:inScheme vair: ;
-         skos:prefLabel "AGI"@en ;
+         skos:prefLabel "Artificial General Intelligence"@en ;
          skos:related vair:GeneralAI .
 
 
@@ -5755,12 +5742,6 @@ vair:AutomaticSummarisation rdfs:isDefinedBy vair: ;
                             skos:prefLabel "Automatic Summarisation"@en .
 
 
-vair:AutonomousSystem rdfs:isDefinedBy vair: ;
-                      skos:definition ""@en ;
-                      skos:inScheme vair: ;
-                      skos:prefLabel "Autonomous System"@en .
-
-
 vair:BayesianEstimation rdfs:isDefinedBy vair: ;
                         skos:definition ""@en ;
                         skos:inScheme vair: ;
@@ -5878,16 +5859,13 @@ vair:ClassifyingEmergencyCall rdfs:isDefinedBy vair: ;
                               skos:prefLabel "Classifying Emergency Call"@en .
 
 
-vair:CognitiveComputing rdfs:isDefinedBy vair: ;
-                        skos:definition "category of AI systems that enables people and machines to interact more naturally [ISO/IEC 22989, 3.1.8]"@en ;
+vair:CognitiveComputing terms:source "ISO/IEC 22989, 3.1.8" ;
+                        rdfs:comment "Category of AI systems that enables people and machines to interact more naturally."@en ;
+                        rdfs:isDefinedBy vair: ;
+                        rdfs:label "Cognitive Computing"@en ;
+                        skos:definition "Category of AI systems that enables people and machines to interact more naturally."@en ;
                         skos:inScheme vair: ;
                         skos:prefLabel "Cognitive Computing"@en .
-
-
-vair:CognitiveSystem rdfs:isDefinedBy vair: ;
-                     skos:definition ""@en ;
-                     skos:inScheme vair: ;
-                     skos:prefLabel "Cognitive System"@en .
 
 
 vair:CommonSenseReasoning rdfs:isDefinedBy vair: ;
@@ -5976,12 +5954,6 @@ vair:DecisionMaking rdfs:isDefinedBy vair: ;
                     skos:definition "Generation of decisions"@en ;
                     skos:inScheme vair: ;
                     skos:prefLabel "Decision Making"@en .
-
-
-vair:DecisionSupportSystem rdfs:isDefinedBy vair: ;
-                           skos:definition ""@en ;
-                           skos:inScheme vair: ;
-                           skos:prefLabel "Decision Support System"@en .
 
 
 vair:DecisionTree terms:source "ISO/IEC 22989 3.3.2" ;
@@ -6426,8 +6398,11 @@ vair:ExaminingVisaApplication rdfs:isDefinedBy vair: ;
                               skos:related vair:MigrationManagement .
 
 
-vair:ExpertSystem rdfs:isDefinedBy vair: ;
-                  skos:definition "AI system that accumulates, combines and encapsulates knowledge provided by a human expert or experts in a specific domain to infer solutions to problems. [ISO/IEC 22989, 3.1.13]"@en ;
+vair:ExpertSystem terms:source "ISO/IEC 22989, 3.1.13" ;
+                  rdfs:comment "AI system that accumulates, combines and encapsulates knowledge provided by a human expert or experts in a specific domain to infer solutions to problems."@en ;
+                  rdfs:isDefinedBy vair: ;
+                  rdfs:label "Expert System"@en ;
+                  skos:definition "AI system that accumulates, combines and encapsulates knowledge provided by a human expert or experts in a specific domain to infer solutions to problems."@en ;
                   skos:inScheme vair: ;
                   skos:prefLabel "Expert System"@en ;
                   skos:related vair:ReasoningTechnique .
@@ -6459,8 +6434,11 @@ vair:Freedom rdfs:isDefinedBy vair: ;
              skos:prefLabel "Freedom"@en .
 
 
-vair:GeneralAI rdfs:isDefinedBy vair: ;
-               skos:definition "Type of AI system that addresses a broad range of tasks with a satisfactory level of performance. [ISO/IEC 22989, 3.1.14]"@en ;
+vair:GeneralAI terms:source "ISO/IEC 22989, 3.1.14" ;
+               rdfs:comment "Type of AI system that addresses a broad range of tasks with a satisfactory level of performance."@en ;
+               rdfs:isDefinedBy vair: ;
+               rdfs:label "General AI" ;
+               skos:definition "Type of AI system that addresses a broad range of tasks with a satisfactory level of performance."@en ;
                skos:inScheme vair: ;
                skos:prefLabel "General AI"@en .
 
@@ -6780,8 +6758,12 @@ vair:InductiveProgramming rdfs:isDefinedBy vair: ;
                           skos:prefLabel "Inductive Programming"@en .
 
 
-vair:IndustrialRobot rdfs:isDefinedBy vair: ;
-                     skos:definition ""@en ;
+vair:IndustrialRobot terms:source "AI Watch, Defining Artificial Intelligence 2.0" ,
+                                  "ISO/IEC 22989, 3.1.29" ;
+                     rdfs:comment "A robot for use in industrial automation applications."@en ;
+                     rdfs:isDefinedBy vair: ;
+                     rdfs:label "Industrial Robot"@en ;
+                     skos:definition "A robot for use in industrial automation applications."@en ;
                      skos:inScheme vair: ;
                      skos:prefLabel "Industrial Robot"@en .
 
@@ -6840,8 +6822,12 @@ vair:InsufficientInstruction rdfs:isDefinedBy vair: ;
                              skos:prefLabel "Insufficient Instruction"@en .
 
 
-vair:IntelligentControlSystem rdfs:isDefinedBy vair: ;
-                              skos:definition ""@en ;
+vair:IntelligentControlSystem terms:source "AI Watch, Defining Artificial Intelligence 2.0" ;
+                              rdfs:comment "An AI-based control system"@en ;
+                              rdfs:isDefinedBy vair: ;
+                              rdfs:label "Intelligent Control System"@en ;
+                              skos:definition ""@en ,
+                                              "An AI-based control system" ;
                               skos:inScheme vair: ;
                               skos:prefLabel "Intelligent Control System"@en .
 
@@ -6879,8 +6865,11 @@ vair:InvestigatingCriminalOffences rdfs:isDefinedBy vair: ;
                                    skos:related vair:LawEnforcement .
 
 
-vair:IoTSystem rdfs:isDefinedBy vair: ;
-               skos:definition "system providing functionalities of IoT. [ISO/IEC 22989, 3.1.20]"@en ;
+vair:IoTSystem terms:source "ISO/IEC 22989, 3.1.20" ;
+               rdfs:comment "A system providing functionalities of IoT."@en ;
+               rdfs:isDefinedBy vair: ;
+               rdfs:label "IoT System"@en ;
+               skos:definition "A system providing functionalities of IoT."@en ;
                skos:inScheme vair: ;
                skos:prefLabel "IoT System"@en .
 
@@ -7054,8 +7043,11 @@ vair:LowSecurity rdfs:isDefinedBy vair: ;
                  skos:prefLabel "Low Security"@en .
 
 
-vair:MachineLearningAlgorithm rdfs:isDefinedBy vair: ;
-                              skos:definition "algorithm to determine parameters of a machine learning model from data according to given criteria.  [ISO/IEC 22989 3.3.6]"@en ;
+vair:MachineLearningAlgorithm terms:source "ISO/IEC 22989 3.3.6" ;
+                              rdfs:comment "An algorithm to determine parameters of a machine learning model from data according to given criteria."@en ;
+                              rdfs:isDefinedBy vair: ;
+                              rdfs:label "Machine Learning Algorithm"@en ;
+                              skos:definition "An algorithm to determine parameters of a machine learning model from data according to given criteria."@en ;
                               skos:inScheme vair: ;
                               skos:prefLabel "Machine Learning Algorithm"@en ;
                               skos:related vair:MachineLearningTechnique .
@@ -7232,8 +7224,11 @@ vair:MonitoringProhibitedBehaviourDuringTest rdfs:isDefinedBy vair: ;
                                              skos:prefLabel "Monitoring Prohibited Behaviour During Test"@en .
 
 
-vair:MultiAgentSystem rdfs:isDefinedBy vair: ;
-                      skos:definition ""@en ;
+vair:MultiAgentSystem rdfs:comment "A system consisting of multiple AI agents."@en ;
+                      rdfs:isDefinedBy vair: ;
+                      rdfs:label "Multi Agent System"@en ,
+                                 "AI Watch, Defining Artificial Intelligence 2.0" ;
+                      skos:definition "A system consisting of multiple AI agents."@en ;
                       skos:inScheme vair: ;
                       skos:prefLabel "Multi Agent System"@en .
 
@@ -7250,8 +7245,11 @@ vair:NamedEntityRecognition rdfs:isDefinedBy vair: ;
                             skos:prefLabel "Named Entity Recognition"@en .
 
 
-vair:NarrowAI rdfs:isDefinedBy vair: ;
-              skos:definition "type of AI system that is focused on defined tasks to address a specific problem. [ISO/IEC 22989, 3.1.24]"@en ;
+vair:NarrowAI terms:source "ISO/IEC 22989, 3.1.24" ;
+              rdfs:comment "Type of AI system that is focused on defined tasks to address a specific problem."@en ;
+              rdfs:isDefinedBy vair: ;
+              rdfs:label "Narrow AI"@en ;
+              skos:definition "Type of AI system that is focused on defined tasks to address a specific problem."@en ;
               skos:inScheme vair: ;
               skos:prefLabel "Narrow AI"@en .
 
@@ -7262,8 +7260,11 @@ vair:NaturalLanguageGeneration rdfs:isDefinedBy vair: ;
                                skos:prefLabel "Natural Language Generation"@en .
 
 
-vair:NaturalLanguageProcessingSystem rdfs:isDefinedBy vair: ;
-                                     skos:definition "information processing based upon natural language understanding or natural language generation. [ISO/IEC 22989, 3.6.9]"@en ;
+vair:NaturalLanguageProcessingSystem terms:source "ISO/IEC 22989, 3.6.9" ;
+                                     rdfs:comment "Information processing based upon natural language understanding or natural language generation."@en ;
+                                     rdfs:isDefinedBy vair: ;
+                                     rdfs:label "Natural Language Processing System"@en ;
+                                     skos:definition "Information processing based upon natural language understanding or natural language generation."@en ;
                                      skos:inScheme vair: ;
                                      skos:prefLabel "Natural Language Processing System"@en .
 
@@ -7634,13 +7635,6 @@ vair:Recommendation rdfs:isDefinedBy vair: ;
                     skos:prefLabel "Recommendation"@en .
 
 
-vair:RecommenderSystem rdfs:isDefinedBy vair: ;
-                       skos:definition ""@en ;
-                       skos:inScheme vair: ;
-                       skos:prefLabel "Recommender System"@en ;
-                       skos:related vair:MachineLearningTechnique .
-
-
 vair:Recruiting rdfs:isDefinedBy vair: ;
                 skos:definition "Recruiting people for a job"@en ;
                 skos:inScheme vair: ;
@@ -7746,12 +7740,6 @@ vair:Right rdfs:isDefinedBy vair: ;
            skos:prefLabel "Right"@en .
 
 
-vair:RobotSystem rdfs:isDefinedBy vair: ;
-                 skos:definition "automation system with actuators that performs intended tasks in the physical world, by means of sensing its environment and a software control system. [ISO/IEC 22989, 3.1.29]"@en ;
-                 skos:inScheme vair: ;
-                 skos:prefLabel "Robot System"@en .
-
-
 vair:Safety rdfs:isDefinedBy vair: ;
             skos:definition ""@en ;
             skos:inScheme vair: ;
@@ -7800,8 +7788,13 @@ vair:Service rdfs:isDefinedBy vair: ;
              skos:prefLabel "Service"@en .
 
 
-vair:ServiceRobot rdfs:isDefinedBy vair: ;
-                  skos:definition ""@en ;
+vair:ServiceRobot terms:source "AI Watch, Defining Artificial Intelligence 2.0" ,
+                               "ISO/IEC 22989, 3.1.29" ,
+                               "SOURCE: ISO 8373:2021, 3.7" ;
+                  rdfs:comment "A robot in personal use or professional use that performs useful tasks for humans or equipment."@en ;
+                  rdfs:isDefinedBy vair: ;
+                  rdfs:label "Service Robot"@en ;
+                  skos:definition "A robot in personal use or professional use that performs useful tasks for humans or equipment."@en ;
                   skos:inScheme vair: ;
                   skos:prefLabel "Service Robot"@en .
 
@@ -7890,8 +7883,11 @@ vair:SettlingDispute rdfs:isDefinedBy vair: ;
                      skos:prefLabel "Settling Dispute"@en .
 
 
-vair:SocialRobot rdfs:isDefinedBy vair: ;
-                 skos:definition ""@en ;
+vair:SocialRobot terms:source "AI Watch, Defining Artificial Intelligence 2.0" ;
+                 rdfs:comment "Robots with social interaction functions."@en ;
+                 rdfs:isDefinedBy vair: ;
+                 rdfs:label "Social Robot" ;
+                 skos:definition "Robots with social interaction functions."@en ;
                  skos:inScheme vair: ;
                  skos:prefLabel "Social Robot"@en .
 
@@ -7956,8 +7952,11 @@ vair:SupervisedLearning rdfs:isDefinedBy vair: ;
                         skos:prefLabel "Supervised Learning"@en .
 
 
-vair:SupportVectorMachine rdfs:isDefinedBy vair: ;
-                          skos:definition "machine learning algorithm  that finds decision boundaries with maximal margins. [ISO/IEC 22989 3.3.13]"@en ;
+vair:SupportVectorMachine terms:source "ISO/IEC 22989 3.3.13" ;
+                          rdfs:comment "a machine learning algorithm that finds decision boundaries with maximal margins."@en ;
+                          rdfs:isDefinedBy vair: ;
+                          rdfs:label "Support Vector Machine"@en ;
+                          skos:definition "a machine learning algorithm that finds decision boundaries with maximal margins."@en ;
                           skos:inScheme vair: ;
                           skos:prefLabel "Support Vector Machine"@en .
 
