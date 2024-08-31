@@ -139,11 +139,6 @@ xsd:date rdf:type rdfs:Datatype .
      rdfs:subClassOf airo:AIComponent .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#ActiveInvolvement
-:ActiveInvolvement rdf:type owl:Class ;
-                   rdfs:subClassOf airo:HumanInvovlvement .
-
-
 ###  http://www.semanticweb.org/owl/owlapi/turtle#CannotOptOutOfOutput
 :CannotOptOutOfOutput rdf:type owl:Class ;
                       rdfs:subClassOf airo:ModeOfOutputControllability .
@@ -164,16 +159,6 @@ xsd:date rdf:type rdfs:Datatype .
               rdfs:subClassOf vair:MachineLearning .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#InformedInvolvement
-:InformedInvolvement rdf:type owl:Class ;
-                     rdfs:subClassOf airo:HumanInvovlvement .
-
-
-###  http://www.semanticweb.org/owl/owlapi/turtle#IntendedInvolvement
-:IntendedInvolvement rdf:type owl:Class ;
-                     rdfs:subClassOf airo:HumanInvovlvement .
-
-
 ###  http://www.semanticweb.org/owl/owlapi/turtle#MachineLearning
 :MachineLearning rdf:type owl:Class ;
                  rdfs:subClassOf airo:Technique .
@@ -189,11 +174,6 @@ xsd:date rdf:type rdfs:Datatype .
                     rdfs:subClassOf airo:ModeOfOutputControllability .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#PassiveInvolvement
-:PassiveInvolvement rdf:type owl:Class ;
-                    rdfs:subClassOf airo:HumanInvovlvement .
-
-
 ###  http://www.semanticweb.org/owl/owlapi/turtle#ReverseOutput
 :ReverseOutput rdf:type owl:Class ;
                rdfs:subClassOf airo:ModeOfOutputControllability .
@@ -202,16 +182,6 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.semanticweb.org/owl/owlapi/turtle#Software
 :Software rdf:type owl:Class ;
           rdfs:subClassOf airo:Modality .
-
-
-###  http://www.semanticweb.org/owl/owlapi/turtle#UninformedInvolvement
-:UninformedInvolvement rdf:type owl:Class ;
-                       rdfs:subClassOf airo:HumanInvovlvement .
-
-
-###  http://www.semanticweb.org/owl/owlapi/turtle#UnintendedInvolvement
-:UnintendedInvolvement rdf:type owl:Class ;
-                       rdfs:subClassOf airo:HumanInvovlvement .
 
 
 ###  http://www.w3.org/2004/02/skos/core#Concept
@@ -384,6 +354,17 @@ vair:Action rdf:type owl:Class ;
 ###  https://w3id.org/vair#ActionRecognition
 vair:ActionRecognition rdf:type owl:Class ;
                        rdfs:subClassOf vair:ComputerVision .
+
+
+###  https://w3id.org/vair#ActiveInvolvement
+vair:ActiveInvolvement rdf:type owl:Class ;
+                       rdfs:subClassOf airo:HumanInvovlvement ;
+                       rdfs:comment "Represents active interactation with an AI system."@en ;
+                       rdfs:isDefinedBy vair: ;
+                       rdfs:label "Active Involvement"@en ;
+                       skos:definition "Represents active interactation with an AI system."@en ;
+                       skos:inScheme vair: ;
+                       skos:prefLabel "Active Involvement"@en .
 
 
 ###  https://w3id.org/vair#AdministrationOfDemocraticProcesses
@@ -1459,6 +1440,17 @@ vair:InformationRetrieval rdf:type owl:Class ;
                           rdfs:subClassOf airo:AICapability .
 
 
+###  https://w3id.org/vair#InformedInvolvement
+vair:InformedInvolvement rdf:type owl:Class ;
+                         rdfs:subClassOf airo:HumanInvovlvement ;
+                         rdfs:comment "Represents that a specific actor was informed that an AI system is in place."@en ;
+                         rdfs:isDefinedBy vair: ;
+                         rdfs:label "Informed Involvement"@en ;
+                         skos:definition "Represents that a specific actor was informed that an AI system is in place."@en ;
+                         skos:inScheme vair: ;
+                         skos:prefLabel "Informed Involvement"@en .
+
+
 ###  https://w3id.org/vair#InstallationInstruction
 vair:InstallationInstruction rdf:type owl:Class ;
                              rdfs:subClassOf airo:Documentation .
@@ -1482,6 +1474,17 @@ vair:InsufficientInstruction rdf:type owl:Class ;
 ###  https://w3id.org/vair#IntelligentControlSystem
 vair:IntelligentControlSystem rdf:type owl:Class ;
                               rdfs:subClassOf airo:AISystem .
+
+
+###  https://w3id.org/vair#IntendedInvolvement
+vair:IntendedInvolvement rdf:type owl:Class ;
+                         rdfs:subClassOf airo:HumanInvovlvement ;
+                         rdfs:comment "Represents involvement of a specific actor is as intended."@en ;
+                         rdfs:isDefinedBy vair: ;
+                         rdfs:label "Intended Involvement"@en ;
+                         skos:definition "Represents involvement of a specific actor is as intended."@en ;
+                         skos:inScheme vair: ;
+                         skos:prefLabel "Intended Involvement"@en .
 
 
 ###  https://w3id.org/vair#InterpretingFacts
@@ -1934,6 +1937,17 @@ vair:PartialAutomation rdf:type owl:Class ;
                        skos:definition "The level of automation where some sub-functions of the system are fully automated while the system remains under the control of an external agent"@en ;
                        skos:inScheme vair: ;
                        skos:prefLabel "Partial Automation"@en .
+
+
+###  https://w3id.org/vair#PassiveInvolvement
+vair:PassiveInvolvement rdf:type owl:Class ;
+                        rdfs:subClassOf airo:HumanInvovlvement ;
+                        rdfs:comment "Represents passive interactation with an AI system."@en ;
+                        rdfs:isDefinedBy vair: ;
+                        rdfs:label "Passive Involvement"@en ;
+                        skos:definition "Represents passive interactation with an AI system."@en ;
+                        skos:inScheme vair: ;
+                        skos:prefLabel "Passive Involvement"@en .
 
 
 ###  https://w3id.org/vair#PatternRecognition
@@ -2443,6 +2457,28 @@ vair:TrainedModel rdf:type owl:Class ;
 ###  https://w3id.org/vair#UnavailabilityOfDataSet
 vair:UnavailabilityOfDataSet rdf:type owl:Class ;
                              rdfs:subClassOf vair:DataRiskSource .
+
+
+###  https://w3id.org/vair#UninformedInvolvement
+vair:UninformedInvolvement rdf:type owl:Class ;
+                           rdfs:subClassOf airo:HumanInvovlvement ;
+                           rdfs:comment "Represents that a specific actor was not informed that an AI system is in place."@en ;
+                           rdfs:isDefinedBy vair: ;
+                           rdfs:label "Uninformed Involvement"@en ;
+                           skos:definition "Represents that a specific actor was not informed that an AI system is in place."@en ;
+                           skos:inScheme vair: ;
+                           skos:prefLabel "Uninformed Involvement"@en .
+
+
+###  https://w3id.org/vair#UnintendedInvolvement
+vair:UnintendedInvolvement rdf:type owl:Class ;
+                           rdfs:subClassOf airo:HumanInvovlvement ;
+                           rdfs:comment "Represents unintended involvement of a specific actor."@en ;
+                           rdfs:isDefinedBy vair: ;
+                           rdfs:label "Unintended Involvement"@en ;
+                           skos:definition "Represents unintended involvement of a specific actor."@en ;
+                           skos:inScheme vair: ;
+                           skos:prefLabel "Unintended Involvement"@en .
 
 
 ###  https://w3id.org/vair#UnrepresentativeTestData
@@ -5369,12 +5405,6 @@ vair:WrongDataSetDesignChoice rdf:type owl:NamedIndividual ,
      skos:prefLabel "API"@en .
 
 
-:ActiveInvolvement rdfs:isDefinedBy vair: ;
-                   skos:definition "Represents active interactation with an AI system."@en ;
-                   skos:inScheme vair: ;
-                   skos:prefLabel "Active Involvement"@en .
-
-
 :CannotOptOutOfOutput rdfs:isDefinedBy vair: ;
                       skos:definition "A mode of controllability that stakeholders cannot opt out of the system’s output."@en ;
                       skos:inScheme vair: ;
@@ -5400,18 +5430,6 @@ vair:WrongDataSetDesignChoice rdf:type owl:NamedIndividual ,
               skos:prefLabel "Deep Learning"@en .
 
 
-:InformedInvolvement rdfs:isDefinedBy vair: ;
-                     skos:definition "Represents that a specific actor was informed that an AI system is in place."@en ;
-                     skos:inScheme vair: ;
-                     skos:prefLabel "Informed Involvement"@en .
-
-
-:IntendedInvolvement rdfs:isDefinedBy vair: ;
-                     skos:definition "Represents involvement of a specific actor is as intended."@en ;
-                     skos:inScheme vair: ;
-                     skos:prefLabel "Intended Involvement"@en .
-
-
 :MachineLearning terms:source "ISO/IEC 22989, 3.3.5" ;
                  rdfs:isDefinedBy vair: ;
                  skos:definition "Process of optimizing model parameters through computational techniques, such that the model's  behaviour reflects the data or experience"@en ;
@@ -5431,12 +5449,6 @@ vair:WrongDataSetDesignChoice rdf:type owl:NamedIndividual ,
                     skos:prefLabel "Optting Out Of Output"@en .
 
 
-:PassiveInvolvement rdfs:isDefinedBy vair: ;
-                    skos:definition "Represents passive interactation with an AI system."@en ;
-                    skos:inScheme vair: ;
-                    skos:prefLabel "Passive Involvement"@en .
-
-
 :ReverseOutput rdfs:isDefinedBy vair: ;
                skos:definition "A mode of controllability that stakeholders can reverse the system’s output ex-post."@en ;
                skos:inScheme vair: ;
@@ -5447,18 +5459,6 @@ vair:WrongDataSetDesignChoice rdf:type owl:NamedIndividual ,
           skos:definition "Refers to a stand alone software system "@en ;
           skos:inScheme vair: ;
           skos:prefLabel "Software"@en .
-
-
-:UninformedInvolvement rdfs:isDefinedBy vair: ;
-                       skos:definition "Represents that a specific actor was not informed that an AI system is in place."@en ;
-                       skos:inScheme vair: ;
-                       skos:prefLabel "Uninformed Involvement"@en .
-
-
-:UnintendedInvolvement rdfs:isDefinedBy vair: ;
-                       skos:definition "Represents unintended involvement of a specific actor."@en ;
-                       skos:inScheme vair: ;
-                       skos:prefLabel "Unintended Involvement"@en .
 
 
 vair:AGI terms:source "ISO/IEC 22989, 3.1.14" ;
