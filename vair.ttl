@@ -646,11 +646,6 @@ vair:BiometricsBasedEmotionRecognition rdf:type owl:Class ;
                                                        "Refers to recognisting emtions based on biometrics information"@en .
 
 
-###  https://w3id.org/vair#BiometricsBasedEmotionSensing
-vair:BiometricsBasedEmotionSensing rdf:type owl:Class ;
-                                   rdfs:subClassOf vair:EmotionSensing .
-
-
 ###  https://w3id.org/vair#Blueprint
 vair:Blueprint rdf:type owl:Class ;
                rdfs:subClassOf airo:Document .
@@ -977,10 +972,6 @@ vair:EmotionRecognition rdf:type owl:Class ;
                         rdfs:subClassOf airo:AICapability .
 
 
-###  https://w3id.org/vair#EmotionSensing
-vair:EmotionSensing rdf:type owl:Class .
-
-
 ###  https://w3id.org/vair#Employee
 vair:Employee rdf:type owl:Class ;
               rdfs:subClassOf airo:AISubject .
@@ -1144,10 +1135,6 @@ vair:FireBrigade rdf:type owl:Class ;
                  skos:definition "Refers to fire department"@en ;
                  skos:inScheme vair: ;
                  skos:prefLabel "Fire Brigade"@en .
-
-
-###  https://w3id.org/vair#Framework
-vair:Framework rdf:type owl:Class .
 
 
 ###  https://w3id.org/vair#Freedom
@@ -1675,17 +1662,13 @@ vair:LowSecurity rdf:type owl:Class ;
 
 
 ###  https://w3id.org/vair#MachineLearning
-vair:MachineLearning rdf:type owl:Class .
+vair:MachineLearning rdf:type owl:Class ;
+                     rdfs:subClassOf airo:Technique .
 
 
 ###  https://w3id.org/vair#MachineLearningAlgorithm
 vair:MachineLearningAlgorithm rdf:type owl:Class ;
                               rdfs:subClassOf vair:Algorithm .
-
-
-###  https://w3id.org/vair#MachineLearningFramework
-vair:MachineLearningFramework rdf:type owl:Class ;
-                              rdfs:subClassOf vair:Framework .
 
 
 ###  https://w3id.org/vair#MachineLearningLibrary
@@ -5768,8 +5751,10 @@ vair:BehaviourAnalysis rdfs:comment "Capability of a system in analysing people'
                        skos:prefLabel "Behaviour Analysis"@en .
 
 
-vair:Bias rdfs:isDefinedBy vair: ;
-          skos:definition "systematic difference in treatment of certain objects, people or groups in comparison to others"@en ;
+vair:Bias rdfs:comment "Systematic difference in treatment of certain objects, people or groups in comparison to others."@en ;
+          rdfs:isDefinedBy vair: ;
+          rdfs:label "Bias"@en ;
+          skos:definition "Systematic difference in treatment of certain objects, people or groups in comparison to others."@en ;
           skos:inScheme vair: ;
           skos:prefLabel "Bias"@en .
 
@@ -5816,12 +5801,6 @@ vair:BiometricIdentification terms:source "The AI Act, Recital 15" ;
                              skos:definition "Automated recognition of physical, physiological and behavioural human features such as the face, eye movement, body shape, voice, prosody, gait, posture, heart rate, blood pressure, odour, keystrokes characteristics, for the purpose of establishing an individual’s identity by comparing biometric data of that individual to stored biometric data of individuals in a reference database, irrespective of whether the individual has given its consent or not"@en ;
                              skos:inScheme vair: ;
                              skos:prefLabel "Biometric Identification"@en .
-
-
-vair:BiometricsBasedEmotionSensing rdfs:isDefinedBy vair: ;
-                                   skos:definition "The capability of the system to sense emotions based on biometric data"@en ;
-                                   skos:inScheme vair: ;
-                                   skos:prefLabel "Biometrics-Based Emotion Sensing"@en .
 
 
 vair:Blueprint rdfs:isDefinedBy vair: ;
@@ -5974,13 +5953,17 @@ vair:DecisionTree terms:source "ISO/IEC 22989 3.3.2" ;
                   skos:related vair:MachineLearningTechnique .
 
 
-vair:DecreasedRobustness rdfs:isDefinedBy vair: ;
+vair:DecreasedRobustness rdfs:comment "Decreased level of system's robustness resulted from materialisation of a risk."@en ;
+                         rdfs:isDefinedBy vair: ;
+                         rdfs:label "Decreased Robustness"@en ;
                          skos:definition "Decreased level of system's robustness resulted from materialisation of a risk."@en ;
                          skos:inScheme vair: ;
                          skos:prefLabel "Decreased Robustness"@en .
 
 
-vair:DecreasedSecurity rdfs:isDefinedBy vair: ;
+vair:DecreasedSecurity rdfs:comment "Decreased level of security of system resulted from materialisation of a risk."@en ;
+                       rdfs:isDefinedBy vair: ;
+                       rdfs:label "Decreased Security"@en ;
                        skos:definition "Decreased level of security of system resulted from materialisation of a risk."@en ;
                        skos:inScheme vair: ;
                        skos:prefLabel "Decreased Security"@en .
@@ -5992,7 +5975,9 @@ vair:DeepFakeDetection rdfs:isDefinedBy vair: ;
                        skos:prefLabel "Deep Fake Detection"@en .
 
 
-vair:DegradedAccuracy rdfs:isDefinedBy vair: ;
+vair:DegradedAccuracy rdfs:comment "Decreased level of system's accuracy resulted from materialisation of a risk."@en ;
+                      rdfs:isDefinedBy vair: ;
+                      rdfs:label "Degraded Accuracy"@en ;
                       skos:definition "Decreased level of system's accuracy resulted from materialisation of a risk."@en ;
                       skos:inScheme vair: ;
                       skos:prefLabel "Degraded Accuracy"@en .
@@ -6210,12 +6195,6 @@ vair:EmotionRecognition terms:source "ISO/IEC 22989, 3.6.3"@en ;
                         skos:definition "Computationally identifying and categorizing emotions expressed in a piece of text, speech, video or image or combination thereof."@en ;
                         skos:inScheme vair: ;
                         skos:prefLabel "Emotion Recognition"@en .
-
-
-vair:EmotionSensing rdfs:isDefinedBy vair: ;
-                    skos:definition "The capability of the system to sense emotions"@en ;
-                    skos:inScheme vair: ;
-                    skos:prefLabel "Emotion Sensing"@en .
 
 
 vair:Employee rdfs:comment "A person in work-related contractual relationships"@en ;
@@ -7070,12 +7049,6 @@ vair:MachineLearningAlgorithm terms:source "ISO/IEC 22989 3.3.6" ;
                               skos:inScheme vair: ;
                               skos:prefLabel "Machine Learning Algorithm"@en ;
                               skos:related vair:MachineLearningTechnique .
-
-
-vair:MachineLearningFramework rdfs:isDefinedBy vair: ;
-                              skos:definition ""@en ;
-                              skos:inScheme vair: ;
-                              skos:prefLabel "Machine Learning Framework"@en .
 
 
 vair:MachineLearningLibrary rdfs:isDefinedBy vair: ;
