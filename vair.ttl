@@ -250,16 +250,17 @@ airo:AutomationLevel rdf:type owl:Class .
 airo:Consequence rdf:type owl:Class .
 
 
-###  https://w3id.org/airo#DataRiskSource
-airo:DataRiskSource rdf:type owl:Class .
+###  https://w3id.org/airo#Control
+airo:Control rdf:type owl:Class .
 
 
 ###  https://w3id.org/airo#DetectionControl
-airo:DetectionControl rdf:type owl:Class .
+airo:DetectionControl rdf:type owl:Class ;
+                      rdfs:subClassOf airo:Control .
 
 
-###  https://w3id.org/airo#Document
-airo:Document rdf:type owl:Class .
+###  https://w3id.org/airo#Documentation
+airo:Documentation rdf:type owl:Class .
 
 
 ###  https://w3id.org/airo#Domain
@@ -279,15 +280,18 @@ airo:ImpactedArea rdf:type owl:Class .
 
 
 ###  https://w3id.org/airo#InputDataRiskSource
-airo:InputDataRiskSource rdf:type owl:Class .
+airo:InputDataRiskSource rdf:type owl:Class ;
+                         rdfs:subClassOf vair:DataRiskSource .
 
 
 ###  https://w3id.org/airo#ManualControl
-airo:ManualControl rdf:type owl:Class .
+airo:ManualControl rdf:type owl:Class ;
+                   rdfs:subClassOf airo:Control .
 
 
 ###  https://w3id.org/airo#MitigationControl
-airo:MitigationControl rdf:type owl:Class .
+airo:MitigationControl rdf:type owl:Class ;
+                       rdfs:subClassOf airo:Control .
 
 
 ###  https://w3id.org/airo#Modality
@@ -327,15 +331,17 @@ airo:RiskSource rdf:type owl:Class .
 
 
 ###  https://w3id.org/airo#SemiAutomatedControl
-airo:SemiAutomatedControl rdf:type owl:Class .
+airo:SemiAutomatedControl rdf:type owl:Class ;
+                          rdfs:subClassOf airo:Control .
 
 
-###  https://w3id.org/airo#Stakeholder
-airo:Stakeholder rdf:type owl:Class .
+###  https://w3id.org/airo#Standard
+airo:Standard rdf:type owl:Class .
 
 
 ###  https://w3id.org/airo#SystemRiskSource
-airo:SystemRiskSource rdf:type owl:Class .
+airo:SystemRiskSource rdf:type owl:Class ;
+                      rdfs:subClassOf airo:RiskSource .
 
 
 ###  https://w3id.org/airo#Technique
@@ -343,23 +349,22 @@ airo:Technique rdf:type owl:Class .
 
 
 ###  https://w3id.org/airo#TestDataRiskSource
-airo:TestDataRiskSource rdf:type owl:Class .
+airo:TestDataRiskSource rdf:type owl:Class ;
+                        rdfs:subClassOf vair:DataRiskSource .
 
 
 ###  https://w3id.org/airo#TrainingDataRiskSource
-airo:TrainingDataRiskSource rdf:type owl:Class .
+airo:TrainingDataRiskSource rdf:type owl:Class ;
+                            rdfs:subClassOf vair:DataRiskSource .
 
 
 ###  https://w3id.org/airo#ValidationDataRiskSource
-airo:ValidationDataRiskSource rdf:type owl:Class .
+airo:ValidationDataRiskSource rdf:type owl:Class ;
+                              rdfs:subClassOf vair:DataRiskSource .
 
 
 ###  https://w3id.org/airo#WellbeingImpact
 airo:WellbeingImpact rdf:type owl:Class .
-
-
-###  https://w3id.org/airo#standard
-airo:standard rdf:type owl:Class .
 
 
 ###  https://w3id.org/vair#AGI
@@ -560,11 +565,6 @@ vair:AudioProcessing rdf:type owl:Class ;
                      skos:prefLabel "Audio Processing"@en .
 
 
-###  https://w3id.org/vair#AuthorisedRepresentative
-vair:AuthorisedRepresentative rdf:type owl:Class ;
-                              rdfs:subClassOf airo:Stakeholder .
-
-
 ###  https://w3id.org/vair#AutomaticSummarisation
 vair:AutomaticSummarisation rdf:type owl:Class ;
                             rdfs:subClassOf airo:AICapability .
@@ -648,7 +648,7 @@ vair:BiometricsBasedEmotionRecognition rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#Blueprint
 vair:Blueprint rdf:type owl:Class ;
-               rdfs:subClassOf airo:Document .
+               rdfs:subClassOf airo:Documentation .
 
 
 ###  https://w3id.org/vair#BorderControlManagement
@@ -707,11 +707,6 @@ vair:ConditionalAutomation rdf:type owl:Class ;
                            skos:prefLabel "Conditional Automation"@en .
 
 
-###  https://w3id.org/vair#ConformityAssessmentBody
-vair:ConformityAssessmentBody rdf:type owl:Class ;
-                              rdfs:subClassOf airo:Stakeholder .
-
-
 ###  https://w3id.org/vair#Content
 vair:Content rdf:type owl:Class ;
              rdfs:subClassOf airo:Output .
@@ -758,9 +753,18 @@ vair:DataPoisoning rdf:type owl:Class ;
                    rdfs:subClassOf vair:Attack .
 
 
+###  https://w3id.org/vair#DataRiskSource
+vair:DataRiskSource rdf:type owl:Class ;
+                    rdfs:subClassOf airo:RiskSource ;
+                    rdfs:comment "Risk sources related to data"@en ;
+                    rdfs:label "Data Risk Source"@en ;
+                    skos:definition "Risk sources related to data"@en ;
+                    skos:prefLabel "Data Risk Source"@en .
+
+
 ###  https://w3id.org/vair#Datasheet
 vair:Datasheet rdf:type owl:Class ;
-               rdfs:subClassOf airo:Document .
+               rdfs:subClassOf airo:Documentation .
 
 
 ###  https://w3id.org/vair#Death
@@ -820,7 +824,7 @@ vair:Design rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#DesignSpecification
 vair:DesignSpecification rdf:type owl:Class ;
-                         rdfs:subClassOf airo:Document .
+                         rdfs:subClassOf airo:Documentation .
 
 
 ###  https://w3id.org/vair#Detecting
@@ -925,7 +929,7 @@ vair:EUBody rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#EUDeclarationOfConformity
 vair:EUDeclarationOfConformity rdf:type owl:Class ;
-                               rdfs:subClassOf airo:Document .
+                               rdfs:subClassOf airo:Documentation .
 
 
 ###  https://w3id.org/vair#EUInstitution
@@ -1004,12 +1008,12 @@ vair:ErroneousValidationData rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#ErrorInDataCollection
 vair:ErrorInDataCollection rdf:type owl:Class ;
-                           rdfs:subClassOf airo:DataRiskSource .
+                           rdfs:subClassOf vair:DataRiskSource .
 
 
 ###  https://w3id.org/vair#ErrorInDataPrepration
 vair:ErrorInDataPrepration rdf:type owl:Class ;
-                           rdfs:subClassOf airo:DataRiskSource .
+                           rdfs:subClassOf vair:DataRiskSource .
 
 
 ###  https://w3id.org/vair#EvaluatingEligibilityForPublicAssistanceServices
@@ -1248,112 +1252,112 @@ vair:HumanOversightMeasure rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#IEC31010-2019
 vair:IEC31010-2019 rdf:type owl:Class ;
-                   rdfs:subClassOf airo:standard .
+                   rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISO10013-2021
 vair:ISO10013-2021 rdf:type owl:Class ;
-                   rdfs:subClassOf airo:standard .
+                   rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISO31000-2018
 vair:ISO31000-2018 rdf:type owl:Class ;
-                   rdfs:subClassOf airo:standard .
+                   rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISO9001-2015
 vair:ISO9001-2015 rdf:type owl:Class ;
-                  rdfs:subClassOf airo:standard .
+                  rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOGuide73-2009
 vair:ISOGuide73-2009 rdf:type owl:Class ;
-                     rdfs:subClassOf airo:standard .
+                     rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOIEC20546-2019
 vair:ISOIEC20546-2019 rdf:type owl:Class ;
-                      rdfs:subClassOf airo:standard .
+                      rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOIEC20547-3-2020
 vair:ISOIEC20547-3-2020 rdf:type owl:Class ;
-                        rdfs:subClassOf airo:standard .
+                        rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOIEC22989-2022
 vair:ISOIEC22989-2022 rdf:type owl:Class ;
-                      rdfs:subClassOf airo:standard .
+                      rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOIEC23053-2022
 vair:ISOIEC23053-2022 rdf:type owl:Class ;
-                      rdfs:subClassOf airo:standard .
+                      rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOIEC23894-2023
 vair:ISOIEC23894-2023 rdf:type owl:Class ;
-                      rdfs:subClassOf airo:standard .
+                      rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOIEC24668-2022
 vair:ISOIEC24668-2022 rdf:type owl:Class ;
-                      rdfs:subClassOf airo:standard .
+                      rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOIEC38507-2022
 vair:ISOIEC38507-2022 rdf:type owl:Class ;
-                      rdfs:subClassOf airo:standard .
+                      rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOIECTR20547-1-2020
 vair:ISOIECTR20547-1-2020 rdf:type owl:Class ;
-                          rdfs:subClassOf airo:standard .
+                          rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOIECTR20547-2-2018
 vair:ISOIECTR20547-2-2018 rdf:type owl:Class ;
-                          rdfs:subClassOf airo:standard .
+                          rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOIECTR20547-5-2018
 vair:ISOIECTR20547-5-2018 rdf:type owl:Class ;
-                          rdfs:subClassOf airo:standard .
+                          rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOIECTR24027-2021
 vair:ISOIECTR24027-2021 rdf:type owl:Class ;
-                        rdfs:subClassOf airo:standard .
+                        rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOIECTR24028-2020
 vair:ISOIECTR24028-2020 rdf:type owl:Class ;
-                        rdfs:subClassOf airo:standard .
+                        rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOIECTR24029-1-2021
 vair:ISOIECTR24029-1-2021 rdf:type owl:Class ;
-                          rdfs:subClassOf airo:standard .
+                          rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOIECTR24030-2021
 vair:ISOIECTR24030-2021 rdf:type owl:Class ;
-                        rdfs:subClassOf airo:standard .
+                        rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOIECTR24368-2022
 vair:ISOIECTR24368-2022 rdf:type owl:Class ;
-                        rdfs:subClassOf airo:standard .
+                        rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOIECTR24372-2021
 vair:ISOIECTR24372-2021 rdf:type owl:Class ;
-                        rdfs:subClassOf airo:standard .
+                        rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOIECTS4213-2022
 vair:ISOIECTS4213-2022 rdf:type owl:Class ;
-                       rdfs:subClassOf airo:standard .
+                       rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#IdentiftyingIndividuals
@@ -1364,11 +1368,6 @@ vair:IdentiftyingIndividuals rdf:type owl:Class ;
 ###  https://w3id.org/vair#ImageRecognition
 vair:ImageRecognition rdf:type owl:Class ;
                       rdfs:subClassOf airo:AICapability .
-
-
-###  https://w3id.org/vair#Importer
-vair:Importer rdf:type owl:Class ;
-              rdfs:subClassOf airo:Stakeholder .
 
 
 ###  https://w3id.org/vair#InaccurateDecision
@@ -1458,12 +1457,12 @@ vair:InformationRetrieval rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#InstallationInstruction
 vair:InstallationInstruction rdf:type owl:Class ;
-                             rdfs:subClassOf airo:Document .
+                             rdfs:subClassOf airo:Documentation .
 
 
 ###  https://w3id.org/vair#InstructionOfUse
 vair:InstructionOfUse rdf:type owl:Class ;
-                      rdfs:subClassOf airo:Document .
+                      rdfs:subClassOf airo:Documentation .
 
 
 ###  https://w3id.org/vair#InsufficientHumanOversightMeasure
@@ -1863,11 +1862,6 @@ vair:NoAutomation rdf:type owl:Class ;
                   skos:prefLabel "No Automation"@en .
 
 
-###  https://w3id.org/vair#NotifiedBody
-vair:NotifiedBody rdf:type owl:Class ;
-                  rdfs:subClassOf vair:ConformityAssessmentBody .
-
-
 ###  https://w3id.org/vair#NotifyingAuthority
 vair:NotifyingAuthority rdf:type owl:Class ;
                         rdfs:subClassOf vair:NationalAuthority .
@@ -1993,12 +1987,12 @@ vair:Police rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#PostMarketMonitoringPlan
 vair:PostMarketMonitoringPlan rdf:type owl:Class ;
-                              rdfs:subClassOf airo:Document .
+                              rdfs:subClassOf airo:Documentation .
 
 
 ###  https://w3id.org/vair#PostMarketMonitoringSystemDescription
 vair:PostMarketMonitoringSystemDescription rdf:type owl:Class ;
-                                           rdfs:subClassOf airo:Document .
+                                           rdfs:subClassOf airo:Documentation .
 
 
 ###  https://w3id.org/vair#PotentialJobApplicant
@@ -2060,11 +2054,6 @@ vair:ProducingRecommendation rdf:type owl:Class ;
 ###  https://w3id.org/vair#Product
 vair:Product rdf:type owl:Class ;
              rdfs:subClassOf airo:Modality .
-
-
-###  https://w3id.org/vair#ProductManufacturer
-vair:ProductManufacturer rdf:type owl:Class ;
-                         rdfs:subClassOf airo:Stakeholder .
 
 
 ###  https://w3id.org/vair#Profiling
@@ -2421,7 +2410,7 @@ vair:SymbolicReasoning rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#SystemArchitecture
 vair:SystemArchitecture rdf:type owl:Class ;
-                        rdfs:subClassOf airo:Document .
+                        rdfs:subClassOf airo:Documentation .
 
 
 ###  https://w3id.org/vair#SystemVulnerability
@@ -2431,7 +2420,7 @@ vair:SystemVulnerability rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#TechnicalDocumentation
 vair:TechnicalDocumentation rdf:type owl:Class ;
-                            rdfs:subClassOf airo:Document .
+                            rdfs:subClassOf airo:Documentation .
 
 
 ###  https://w3id.org/vair#TensorProcessingUnit
@@ -2441,12 +2430,12 @@ vair:TensorProcessingUnit rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#TestLog
 vair:TestLog rdf:type owl:Class ;
-             rdfs:subClassOf airo:Document .
+             rdfs:subClassOf airo:Documentation .
 
 
 ###  https://w3id.org/vair#TestReport
 vair:TestReport rdf:type owl:Class ;
-                rdfs:subClassOf airo:Document .
+                rdfs:subClassOf airo:Documentation .
 
 
 ###  https://w3id.org/vair#Tool
@@ -2461,7 +2450,7 @@ vair:TrainedModel rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#UnavailabilityOfDataSet
 vair:UnavailabilityOfDataSet rdf:type owl:Class ;
-                             rdfs:subClassOf airo:DataRiskSource .
+                             rdfs:subClassOf vair:DataRiskSource .
 
 
 ###  https://w3id.org/vair#UnrepresentativeTestData
@@ -2530,7 +2519,7 @@ vair:VocationalTrainingInstitution rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#WrongDataSetDesignChoice
 vair:WrongDataSetDesignChoice rdf:type owl:Class ;
-                              rdfs:subClassOf airo:DataRiskSource .
+                              rdfs:subClassOf vair:DataRiskSource .
 
 
 #################################################################
@@ -5706,12 +5695,6 @@ vair:Attack rdfs:isDefinedBy vair: ;
             skos:prefLabel "Attack"@en .
 
 
-vair:AuthorisedRepresentative rdfs:isDefinedBy vair: ;
-                              skos:definition "means any natural or legal person physically present or established in the Union who has received and accepted a written mandate from a provider of an AI system to, respectively, perform and carry out on its behalf the obligations and procedures established by the AI Act."@en ;
-                              skos:inScheme vair: ;
-                              skos:prefLabel "Authorised Representative"@en .
-
-
 vair:AutomaticSummarisation terms:source "ISO/IEC 22989, 3.6.1"@en ;
                             rdfs:comment "Shortening a portion of natural language content or text while retaining important semantic information."@en ;
                             rdfs:isDefinedBy vair: ;
@@ -5862,12 +5845,6 @@ vair:ComputerVision terms:source "ISO/IEC 22989, 3.7.1" ;
                     skos:definition "Capability of a functional unit to acquire, process and interpret data representing images or video."@en ;
                     skos:inScheme vair: ;
                     skos:prefLabel "Computer Vision"@en .
-
-
-vair:ConformityAssessmentBody rdfs:isDefinedBy vair: ;
-                              skos:definition "a body that performs third-party conformity assessment activities, including testing, certification and inspection"@en ;
-                              skos:inScheme vair: ;
-                              skos:prefLabel "Conformity Assessment Body"@en .
 
 
 vair:Content rdfs:isDefinedBy vair: ;
@@ -6668,12 +6645,6 @@ vair:ImageRecognition terms:source "ISO/IEC 22989, 3.7.4" ;
                       skos:prefLabel "Image Recognition"@en .
 
 
-vair:Importer rdfs:isDefinedBy vair: ;
-              skos:definition "any natural or legal person physically present or established in the Union that places on the market an AI system that bears the name or trademark of a natural or legal person established outside the Union."@en ;
-              skos:inScheme vair: ;
-              skos:prefLabel "Importer"@en .
-
-
 vair:InaccurateDecision rdfs:isDefinedBy vair: ;
                         skos:definition ""@en ;
                         skos:inScheme vair: ;
@@ -7289,12 +7260,6 @@ vair:NeuralNetwork terms:source "ISO/IEC 22989 3.4.8" ;
                    skos:prefLabel "Neural Network"@en .
 
 
-vair:NotifiedBody rdfs:isDefinedBy vair: ;
-                  skos:definition "a conformity assessment body designated in accordance with the AI Act and other relevant Union harmonisation legislation"@en ;
-                  skos:inScheme vair: ;
-                  skos:prefLabel "Notified Body"@en .
-
-
 vair:NotifyingAuthority rdfs:isDefinedBy vair: ;
                         skos:definition "the national authority responsible for setting up and carrying out the necessary procedures for the assessment, designation and notification of conformity assessment bodies and for their monitoring"@en ;
                         skos:inScheme vair: ;
@@ -7527,12 +7492,6 @@ vair:Product rdfs:isDefinedBy vair: ;
              skos:definition ""@en ;
              skos:inScheme vair: ;
              skos:prefLabel "Product"@en .
-
-
-vair:ProductManufacturer rdfs:isDefinedBy vair: ;
-                         skos:definition "a manufacturer within the meaning of any of the Union harmonisation legislation listed in Annex II of the AI Act."@en ;
-                         skos:inScheme vair: ;
-                         skos:prefLabel "Product Manufacturer"@en .
 
 
 vair:Profiling terms:source "GDPR, Art. 4(4)" ;
