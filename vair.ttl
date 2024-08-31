@@ -218,6 +218,10 @@ xsd:date rdf:type rdfs:Datatype .
 skos:Concept rdf:type owl:Class .
 
 
+###  https://w3id.org/airo#AICapability
+airo:AICapability rdf:type owl:Class .
+
+
 ###  https://w3id.org/airo#AIComponent
 airo:AIComponent rdf:type owl:Class .
 
@@ -240,10 +244,6 @@ airo:AISystem rdf:type owl:Class .
 
 ###  https://w3id.org/airo#AutomationLevel
 airo:AutomationLevel rdf:type owl:Class .
-
-
-###  https://w3id.org/airo#Capability
-airo:Capability rdf:type owl:Class .
 
 
 ###  https://w3id.org/airo#Consequence
@@ -374,7 +374,7 @@ vair:Action rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#ActionRecognition
 vair:ActionRecognition rdf:type owl:Class ;
-                       rdfs:subClassOf airo:Capability .
+                       rdfs:subClassOf vair:ComputerVision .
 
 
 ###  https://w3id.org/vair#AdministrationOfDemocraticProcesses
@@ -550,6 +550,16 @@ vair:Attack rdf:type owl:Class ;
             rdfs:subClassOf airo:RiskSource .
 
 
+###  https://w3id.org/vair#AudioProcessing
+vair:AudioProcessing rdf:type owl:Class ;
+                     rdfs:subClassOf airo:AICapability ;
+                     terms:source "AI Watch, Defining Artificial Intelligence 2.0" ;
+                     rdfs:comment "The capability to process audio recordings."@en ;
+                     rdfs:label "Audio Processing"@en ;
+                     skos:definition "The capability to process audio recordings." ;
+                     skos:prefLabel "Audio Processing"@en .
+
+
 ###  https://w3id.org/vair#AuthorisedRepresentative
 vair:AuthorisedRepresentative rdf:type owl:Class ;
                               rdfs:subClassOf airo:Stakeholder .
@@ -557,7 +567,7 @@ vair:AuthorisedRepresentative rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#AutomaticSummarisation
 vair:AutomaticSummarisation rdf:type owl:Class ;
-                            rdfs:subClassOf airo:Capability .
+                            rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#Autonomy
@@ -589,7 +599,7 @@ vair:BayesianOptimisation rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#BehaviourAnalysis
 vair:BehaviourAnalysis rdf:type owl:Class ;
-                       rdfs:subClassOf airo:Capability .
+                       rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#Bias
@@ -619,12 +629,21 @@ vair:BiasedValidationData rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#BiometricCategorisation
 vair:BiometricCategorisation rdf:type owl:Class ;
-                             rdfs:subClassOf airo:Capability .
+                             rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#BiometricIdentification
 vair:BiometricIdentification rdf:type owl:Class ;
-                             rdfs:subClassOf airo:Capability .
+                             rdfs:subClassOf airo:AICapability .
+
+
+###  https://w3id.org/vair#BiometricsBasedEmotionRecognition
+vair:BiometricsBasedEmotionRecognition rdf:type owl:Class ;
+                                       rdfs:subClassOf vair:EmotionRecognition ;
+                                       rdfs:comment "Refers to recognisting emtions based on biometrics information"@en ;
+                                       rdfs:label "Biometrics Based Emotion Recognition"@en ;
+                                       skos:definition "Biometrics Based Emotion Recognition"@en ,
+                                                       "Refers to recognisting emtions based on biometrics information"@en .
 
 
 ###  https://w3id.org/vair#BiometricsBasedEmotionSensing
@@ -674,7 +693,7 @@ vair:CommonSenseReasoning rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#ComputerVision
 vair:ComputerVision rdf:type owl:Class ;
-                    rdfs:subClassOf airo:Capability .
+                    rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#Concept
@@ -876,7 +895,7 @@ vair:Development rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#DialogueManagement
 vair:DialogueManagement rdf:type owl:Class ;
-                        rdfs:subClassOf airo:Capability .
+                        rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#DiscoveringCrimePatterns
@@ -955,7 +974,7 @@ vair:EmergencyServiceProvider rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#EmotionRecognition
 vair:EmotionRecognition rdf:type owl:Class ;
-                        rdfs:subClassOf airo:Capability .
+                        rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#EmotionSensing
@@ -1104,7 +1123,7 @@ vair:ExpertSystem rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#FaceRecognition
 vair:FaceRecognition rdf:type owl:Class ;
-                     rdfs:subClassOf airo:Capability .
+                     rdfs:subClassOf vair:ComputerVision .
 
 
 ###  https://w3id.org/vair#Family
@@ -1175,7 +1194,7 @@ vair:GeneticAlgorithm rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#GestureRecognition
 vair:GestureRecognition rdf:type owl:Class ;
-                        rdfs:subClassOf airo:Capability .
+                        rdfs:subClassOf vair:ComputerVision .
 
 
 ###  https://w3id.org/vair#GrantingHealthCareServices
@@ -1357,7 +1376,7 @@ vair:IdentiftyingIndividuals rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#ImageRecognition
 vair:ImageRecognition rdf:type owl:Class ;
-                      rdfs:subClassOf airo:Capability .
+                      rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#Importer
@@ -1447,7 +1466,7 @@ vair:InformationProvision rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#InformationRetrieval
 vair:InformationRetrieval rdf:type owl:Class ;
-                          rdfs:subClassOf airo:Capability .
+                          rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#InstallationInstruction
@@ -1617,7 +1636,7 @@ vair:Library rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#LieDetection
 vair:LieDetection rdf:type owl:Class ;
-                  rdfs:subClassOf airo:Capability .
+                  rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#LifeInsurancePricing
@@ -1691,7 +1710,7 @@ vair:MachineLearningTechnique rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#MachineTranslation
 vair:MachineTranslation rdf:type owl:Class ;
-                        rdfs:subClassOf airo:Capability .
+                        rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#MakingContractTerminationDecision
@@ -1817,7 +1836,7 @@ vair:MusicInformationRetrieval rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#NamedEntityRecognition
 vair:NamedEntityRecognition rdf:type owl:Class ;
-                            rdfs:subClassOf airo:Capability .
+                            rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#NarrowAI
@@ -1831,7 +1850,7 @@ vair:NationalAuthority rdf:type owl:Class .
 
 ###  https://w3id.org/vair#NaturalLanguageGeneration
 vair:NaturalLanguageGeneration rdf:type owl:Class ;
-                               rdfs:subClassOf airo:Capability .
+                               rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#NaturalLanguageProcessingSystem
@@ -1873,7 +1892,7 @@ vair:NotifyingAuthority rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#ObjectRecognition
 vair:ObjectRecognition rdf:type owl:Class ;
-                       rdfs:subClassOf airo:Capability .
+                       rdfs:subClassOf vair:ComputerVision .
 
 
 ###  https://w3id.org/vair#Operating
@@ -1933,7 +1952,7 @@ vair:OverridingOutcome rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#PartOfSpeechTagging
 vair:PartOfSpeechTagging rdf:type owl:Class ;
-                         rdfs:subClassOf airo:Capability .
+                         rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#PartialAutomation
@@ -1950,7 +1969,7 @@ vair:PartialAutomation rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#PatternRecognition
 vair:PatternRecognition rdf:type owl:Class ;
-                        rdfs:subClassOf airo:Capability ,
+                        rdfs:subClassOf airo:AICapability ,
                                         vair:Detection .
 
 
@@ -1961,7 +1980,7 @@ vair:PerformingBackgroundCheck rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#PersonalityTraitsAnalysis
 vair:PersonalityTraitsAnalysis rdf:type owl:Class ;
-                               rdfs:subClassOf airo:Capability .
+                               rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#PhysicalHealth
@@ -2067,7 +2086,7 @@ vair:ProductManufacturer rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#Profiling
 vair:Profiling rdf:type owl:Class ;
-               rdfs:subClassOf airo:Capability .
+               rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#ProsecutingCriminalOffences
@@ -2112,7 +2131,7 @@ vair:PublicServicesRecipient rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#QuestionAnswering
 vair:QuestionAnswering rdf:type owl:Class ;
-                       rdfs:subClassOf airo:Capability .
+                       rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#ReEvaluation
@@ -2177,7 +2196,7 @@ vair:ReinforcementLearning rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#RelationshipExtraction
 vair:RelationshipExtraction rdf:type owl:Class ;
-                            rdfs:subClassOf airo:Capability .
+                            rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#RemoteIdentification
@@ -2269,12 +2288,12 @@ vair:SemiSupervisedLearning rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#SensitiveAttributeInference
 vair:SensitiveAttributeInference rdf:type owl:Class ;
-                                 rdfs:subClassOf airo:Capability .
+                                 rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#SentimentAnalysis
 vair:SentimentAnalysis rdf:type owl:Class ;
-                       rdfs:subClassOf airo:Capability .
+                       rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#Service
@@ -2367,34 +2386,29 @@ vair:Software rdf:type owl:Class ;
               rdfs:subClassOf airo:Modality .
 
 
-###  https://w3id.org/vair#SoundEventRecognition
-vair:SoundEventRecognition rdf:type owl:Class ;
-                           rdfs:subClassOf airo:Capability .
-
-
 ###  https://w3id.org/vair#SoundSourceSeparation
 vair:SoundSourceSeparation rdf:type owl:Class ;
-                           rdfs:subClassOf airo:Capability .
+                           rdfs:subClassOf vair:AudioProcessing .
 
 
 ###  https://w3id.org/vair#SoundSynthesis
 vair:SoundSynthesis rdf:type owl:Class ;
-                    rdfs:subClassOf airo:Capability .
+                    rdfs:subClassOf vair:AudioProcessing .
 
 
 ###  https://w3id.org/vair#SpeakerRecognition
 vair:SpeakerRecognition rdf:type owl:Class ;
-                        rdfs:subClassOf airo:Capability .
+                        rdfs:subClassOf vair:AudioProcessing .
 
 
 ###  https://w3id.org/vair#SpeechRecognition
 vair:SpeechRecognition rdf:type owl:Class ;
-                       rdfs:subClassOf airo:Capability .
+                       rdfs:subClassOf vair:AudioProcessing .
 
 
 ###  https://w3id.org/vair#SpeechSynthesis
 vair:SpeechSynthesis rdf:type owl:Class ;
-                     rdfs:subClassOf airo:Capability .
+                     rdfs:subClassOf vair:AudioProcessing .
 
 
 ###  https://w3id.org/vair#StaffIncompetence
@@ -5499,8 +5513,11 @@ vair:Action rdfs:isDefinedBy vair: ;
             skos:prefLabel "Action"@en .
 
 
-vair:ActionRecognition rdfs:isDefinedBy vair: ;
-                       skos:definition ""@en ;
+vair:ActionRecognition terms:source "AI Watch, Defining Artificial Intelligence 2.0" ;
+                       rdfs:comment "The capability to recognise actions"@en ;
+                       rdfs:isDefinedBy vair: ;
+                       rdfs:label "Action Recognition"@en ;
+                       skos:definition "The capability to recognise actions"@en ;
                        skos:inScheme vair: ;
                        skos:prefLabel "Action Recognition"@en .
 
@@ -5712,8 +5729,11 @@ vair:AuthorisedRepresentative rdfs:isDefinedBy vair: ;
                               skos:prefLabel "Authorised Representative"@en .
 
 
-vair:AutomaticSummarisation rdfs:isDefinedBy vair: ;
-                            skos:definition "shortening a portion of natural language content or text while retaining important semantic information. [ISO/IEC 22989, 3.6.1]"@en ;
+vair:AutomaticSummarisation terms:source "ISO/IEC 22989, 3.6.1"@en ;
+                            rdfs:comment "Shortening a portion of natural language content or text while retaining important semantic information."@en ;
+                            rdfs:isDefinedBy vair: ;
+                            rdfs:label "Automatic Summarisation"@en ;
+                            skos:definition "Shortening a portion of natural language content or text while retaining important semantic information."@en ;
                             skos:inScheme vair: ;
                             skos:prefLabel "Automatic Summarisation"@en .
 
@@ -5740,8 +5760,10 @@ vair:BayesianOptimisation rdfs:isDefinedBy vair: ;
                           skos:prefLabel "Bayesian Optimisation"@en .
 
 
-vair:BehaviourAnalysis rdfs:isDefinedBy vair: ;
-                       skos:definition "Capability of a system for analysing people's behaviour"@en ;
+vair:BehaviourAnalysis rdfs:comment "Capability of a system in analysing people's behaviour"@en ;
+                       rdfs:isDefinedBy vair: ;
+                       rdfs:label "Behaviour Analysis"@en ;
+                       skos:definition "Capability of a system in analysing people's behaviour"@en ;
                        skos:inScheme vair: ;
                        skos:prefLabel "Behaviour Analysis"@en .
 
@@ -5779,14 +5801,18 @@ vair:BiasedValidationData rdfs:isDefinedBy vair: ;
                           skos:related vair:ValidationData .
 
 
-vair:BiometricCategorisation rdfs:isDefinedBy vair: ;
+vair:BiometricCategorisation rdfs:comment "The capability of the system is assigning natural persons to specific categories based on their biometric data" ;
+                             rdfs:isDefinedBy vair: ;
+                             rdfs:label "Biometric Categorisation"@en ;
                              skos:definition "The capability of the system is assigning natural persons to specific categories based on their biometric data"@en ;
                              skos:inScheme vair: ;
                              skos:prefLabel "Biometric Categorisation"@en .
 
 
-vair:BiometricIdentification terms:source "AI Act, Recital 16" ;
+vair:BiometricIdentification terms:source "The AI Act, Recital 15" ;
+                             rdfs:comment "Automated recognition of physical, physiological and behavioural human features such as the face, eye movement, body shape, voice, prosody, gait, posture, heart rate, blood pressure, odour, keystrokes characteristics, for the purpose of establishing an individual’s identity by comparing biometric data of that individual to stored biometric data of individuals in a reference database, irrespective of whether the individual has given its consent or not."@en ;
                              rdfs:isDefinedBy vair: ;
+                             rdfs:label "Biometric Identification"@en ;
                              skos:definition "Automated recognition of physical, physiological and behavioural human features such as the face, eye movement, body shape, voice, prosody, gait, posture, heart rate, blood pressure, odour, keystrokes characteristics, for the purpose of establishing an individual’s identity by comparing biometric data of that individual to stored biometric data of individuals in a reference database, irrespective of whether the individual has given its consent or not"@en ;
                              skos:inScheme vair: ;
                              skos:prefLabel "Biometric Identification"@en .
@@ -5850,8 +5876,11 @@ vair:CommonSenseReasoning rdfs:isDefinedBy vair: ;
                           skos:prefLabel "Common Sense Reasoning"@en .
 
 
-vair:ComputerVision rdfs:isDefinedBy vair: ;
-                    skos:definition "capability of a functional unit to acquire, process and interpret data representing images or video. [ISO/IEC 22989, 3.7.1]"@en ;
+vair:ComputerVision terms:source "ISO/IEC 22989, 3.7.1" ;
+                    rdfs:comment "Capability of a functional unit to acquire, process and interpret data representing images or video."@en ;
+                    rdfs:isDefinedBy vair: ;
+                    rdfs:label "Computer Vision"@en ;
+                    skos:definition "Capability of a functional unit to acquire, process and interpret data representing images or video."@en ;
                     skos:inScheme vair: ;
                     skos:prefLabel "Computer Vision"@en .
 
@@ -6078,8 +6107,11 @@ vair:Development rdfs:comment "Refers to the development phase in AI lifecyle"@e
                  skos:prefLabel "Development"@en .
 
 
-vair:DialogueManagement rdfs:isDefinedBy vair: ;
-                        skos:definition "choosing the appropriate next move in a dialogue based on user input, the dialogue history and other contextual knowledge to meet a desired goal. [ISO/IEC 22989, 3.6.2]"@en ;
+vair:DialogueManagement terms:source "ISO/IEC 22989, 3.6.2" ;
+                        rdfs:comment "Choosing the appropriate next move in a dialogue based on user input, the dialogue history and other contextual knowledge to meet a desired goal"@en ;
+                        rdfs:isDefinedBy vair: ;
+                        rdfs:label "Dialogue Management"@en ;
+                        skos:definition "Choosing the appropriate next move in a dialogue based on user input, the dialogue history and other contextual knowledge to meet a desired goal."@en ;
                         skos:inScheme vair: ;
                         skos:prefLabel "Dialogue Management"@en .
 
@@ -6171,8 +6203,11 @@ vair:EmergencyServiceProvider rdfs:comment "Provider of emergency first response
                               skos:prefLabel "Emergency Service Provider"@en .
 
 
-vair:EmotionRecognition rdfs:isDefinedBy vair: ;
-                        skos:definition "computationally identifying and categorizing emotions expressed in a piece of text, speech, video or image or combination thereof. [ISO/IEC 22989, 3.6.3]"@en ;
+vair:EmotionRecognition terms:source "ISO/IEC 22989, 3.6.3"@en ;
+                        rdfs:comment "Computationally identifying and categorizing emotions expressed in a piece of text, speech, video or image or combination thereof." ;
+                        rdfs:isDefinedBy vair: ;
+                        rdfs:label "Emotion Recognition"@en ;
+                        skos:definition "Computationally identifying and categorizing emotions expressed in a piece of text, speech, video or image or combination thereof."@en ;
                         skos:inScheme vair: ;
                         skos:prefLabel "Emotion Recognition"@en .
 
@@ -6375,8 +6410,11 @@ vair:ExpertSystem terms:source "ISO/IEC 22989, 3.1.13" ;
                   skos:related vair:ReasoningTechnique .
 
 
-vair:FaceRecognition rdfs:isDefinedBy vair: ;
-                     skos:definition "automatic pattern recognition comparing stored images of human faces with the image of an actual face, indicating any matching, if it exists, and any data, if they exist, identifying the person to whom the face belongs. [ISO/IEC 22989, 3.7.2]"@en ;
+vair:FaceRecognition terms:source "ISO/IEC 22989, 3.7.2" ;
+                     rdfs:comment "Automatic pattern recognition comparing stored images of human faces with the image of an actual face, indicating any matching, if it exists, and any data, if they exist, identifying the person to whom the face belongs."@en ;
+                     rdfs:isDefinedBy vair: ;
+                     rdfs:label "Face Recognition"@en ;
+                     skos:definition "Automatic pattern recognition comparing stored images of human faces with the image of an actual face, indicating any matching, if it exists, and any data, if they exist, identifying the person to whom the face belongs."@en ;
                      skos:inScheme vair: ;
                      skos:prefLabel "Face Recognition"@en .
 
@@ -6440,8 +6478,11 @@ vair:GeneticAlgorithm terms:source "ISO/IEC 22989, 3.1.15"@en ;
                       skos:prefLabel "Genetic Algorithm"@en .
 
 
-vair:GestureRecognition rdfs:isDefinedBy vair: ;
-                        skos:definition ""@en ;
+vair:GestureRecognition terms:source "AI Watch, Defining Artificial Intelligence 2.0" ;
+                        rdfs:comment "The capability of AI system to recognise human gestures." ;
+                        rdfs:isDefinedBy vair: ;
+                        rdfs:label "Gesture Recognition"@en ;
+                        skos:definition "The capability of AI system to recognise human gestures."@en ;
                         skos:inScheme vair: ;
                         skos:prefLabel "Gesture Recognition"@en .
 
@@ -6639,8 +6680,11 @@ vair:IdentiftyingIndividuals rdfs:isDefinedBy vair: ;
                              skos:prefLabel "Identiftying Individuals"@en .
 
 
-vair:ImageRecognition rdfs:isDefinedBy vair: ;
-                      skos:definition "image classification process that classifies object(s), pattern(s) or concept(s) in an image  [ISO/IEC 22989, 3.7.4]"@en ;
+vair:ImageRecognition terms:source "ISO/IEC 22989, 3.7.4" ;
+                      rdfs:comment "Image classification process that classifies object(s), pattern(s) or concept(s) in an image."@en ;
+                      rdfs:isDefinedBy vair: ;
+                      rdfs:label "Image Recognition"@en ;
+                      skos:definition "Image classification process that classifies object(s), pattern(s) or concept(s) in an image."@en ;
                       skos:inScheme vair: ;
                       skos:prefLabel "Image Recognition"@en .
 
@@ -6762,8 +6806,11 @@ vair:InformationProvision rdfs:isDefinedBy vair: ;
                           skos:prefLabel "Information Provision"@en .
 
 
-vair:InformationRetrieval rdfs:isDefinedBy vair: ;
-                          skos:definition "retrieving relevant documents or parts of documents from a dataset, typically based on keyword or natural language queries. [ISO/IEC 22989, 3.6.4]"@en ;
+vair:InformationRetrieval terms:source "ISO/IEC 22989, 3.6.4" ;
+                          rdfs:comment "Retrieving relevant documents or parts of documents from a dataset, typically based on keyword or natural language queries."@en ;
+                          rdfs:isDefinedBy vair: ;
+                          rdfs:label "Information Retrieval"@en ;
+                          skos:definition "Retrieving relevant documents or parts of documents from a dataset, typically based on keyword or natural language queries."@en ;
                           skos:inScheme vair: ;
                           skos:prefLabel "Information Retrieval"@en .
 
@@ -6961,7 +7008,9 @@ vair:Library rdfs:isDefinedBy vair: ;
              skos:related vair:MachineLearningTechnique .
 
 
-vair:LieDetection rdfs:isDefinedBy vair: ;
+vair:LieDetection rdfs:comment "Detecting lies"@en ;
+                  rdfs:isDefinedBy vair: ;
+                  rdfs:label "Lie Detection"@en ;
                   skos:definition "Detecting lies"@en ;
                   skos:inScheme vair: ;
                   skos:prefLabel "Lie Detection"@en .
@@ -7060,8 +7109,11 @@ vair:MachineLearningTechnique rdfs:isDefinedBy vair: ;
                               skos:prefLabel "MachineLearningTechnique"@en .
 
 
-vair:MachineTranslation rdfs:isDefinedBy vair: ;
-                        skos:definition "Automated translation of text or speech from one natural language to another using a computer system. [ISO/IEC 22989, 3.6.5]"@en ;
+vair:MachineTranslation terms:source "ISO/IEC 22989, 3.6.5" ;
+                        rdfs:comment "Automated translation of text or speech from one natural language to another using a computer system."@en ;
+                        rdfs:isDefinedBy vair: ;
+                        rdfs:label "Machine Translation"@en ;
+                        skos:definition "Automated translation of text or speech from one natural language to another using a computer system."@en ;
                         skos:inScheme vair: ;
                         skos:prefLabel "Machine Translation"@en .
 
@@ -7203,14 +7255,19 @@ vair:MultiAgentSystem rdfs:comment "A system consisting of multiple AI agents."@
                       skos:prefLabel "Multi Agent System"@en .
 
 
-vair:MusicInformationRetrieval rdfs:isDefinedBy vair: ;
-                               skos:definition ""@en ;
+vair:MusicInformationRetrieval terms:source "AI Watch, Defining Artificial Intelligence 2.0" ;
+                               rdfs:comment "Retrieving information from music."@en ;
+                               rdfs:isDefinedBy vair: ;
+                               rdfs:label "Music Information Retrieval"@en ;
+                               skos:definition "Retrieving information from music."@en ;
                                skos:inScheme vair: ;
                                skos:prefLabel "Music Information Retrieval"@en .
 
 
-vair:NamedEntityRecognition rdfs:isDefinedBy vair: ;
-                            skos:definition "recognizing and labelling the denotational names of entities and their categories for sequences of words in a stream of text or speech. [ISO/IEC 22989, 3.6.6]"@en ;
+vair:NamedEntityRecognition terms:source "ISO/IEC 22989, 3.6.6" ;
+                            rdfs:comment "Recognizing and labelling the denotational names of entities and their categories for sequences of words in a stream of text or speech."@en ;
+                            rdfs:isDefinedBy vair: ;
+                            skos:definition "Recognizing and labelling the denotational names of entities and their categories for sequences of words in a stream of text or speech."@en ;
                             skos:inScheme vair: ;
                             skos:prefLabel "Named Entity Recognition"@en .
 
@@ -7224,8 +7281,11 @@ vair:NarrowAI terms:source "ISO/IEC 22989, 3.1.24" ;
               skos:prefLabel "Narrow AI"@en .
 
 
-vair:NaturalLanguageGeneration rdfs:isDefinedBy vair: ;
-                               skos:definition "Converting data carrying semantics into natural language. [ISO/IEC 22989, 3.6.8]"@en ;
+vair:NaturalLanguageGeneration terms:source "ISO/IEC 22989, 3.6.8" ;
+                               rdfs:comment "Converting data carrying semantics into natural language."@en ;
+                               rdfs:isDefinedBy vair: ;
+                               rdfs:label "Natural Language Generation"@en ;
+                               skos:definition "Converting data carrying semantics into natural language."@en ;
                                skos:inScheme vair: ;
                                skos:prefLabel "Natural Language Generation"@en .
 
@@ -7268,8 +7328,11 @@ vair:NotifyingAuthority rdfs:isDefinedBy vair: ;
                         skos:prefLabel "Notifying Authority"@en .
 
 
-vair:ObjectRecognition rdfs:isDefinedBy vair: ;
-                       skos:definition ""@en ;
+vair:ObjectRecognition terms:source "AI Watch, Defining Artificial Intelligence 2.0" ;
+                       rdfs:comment "The capability to recognise objects"@en ;
+                       rdfs:isDefinedBy vair: ;
+                       rdfs:label "Object Recognition"@en ;
+                       skos:definition "The capability to recognise objects."@en ;
                        skos:inScheme vair: ;
                        skos:prefLabel "Object Recognition"@en .
 
@@ -7350,15 +7413,19 @@ vair:OverridingOutcome rdfs:isDefinedBy vair: ;
                        skos:related vair:Outcome .
 
 
-vair:PartOfSpeechTagging rdfs:isDefinedBy vair: ;
-                         skos:definition "assigning a category (e.g. verb, noun, adjective) to a word based on its grammatical properties. [ISO/IEC 22989, 3.6.13]"@en ;
+vair:PartOfSpeechTagging terms:source "ISO/IEC 22989, 3.6.13" ;
+                         rdfs:comment "Assigning a category (e.g. verb, noun, adjective) to a word based on its grammatical properties."@en ;
+                         rdfs:isDefinedBy vair: ;
+                         rdfs:label "Part Of Speech Tagging"@en ;
+                         skos:definition "Assigning a category (e.g. verb, noun, adjective) to a word based on its grammatical properties."@en ;
                          skos:inScheme vair: ;
                          skos:prefLabel "Part Of Speech Tagging"@en .
 
 
-vair:PatternRecognition rdfs:isDefinedBy vair: ;
-                        skos:definition ""@en ,
-                                        "Identification of unknown patterns in data"@en ;
+vair:PatternRecognition rdfs:comment "Identification of unknown patterns in data."@en ;
+                        rdfs:isDefinedBy vair: ;
+                        rdfs:label "Pattern Recognition"@en ;
+                        skos:definition "Identification of unknown patterns in data."@en ;
                         skos:inScheme vair: ;
                         skos:prefLabel "Pattern Recognition"@en .
 
@@ -7370,7 +7437,9 @@ vair:PerformingBackgroundCheck rdfs:isDefinedBy vair: ;
                                skos:related vair:LawEnforcement .
 
 
-vair:PersonalityTraitsAnalysis rdfs:isDefinedBy vair: ;
+vair:PersonalityTraitsAnalysis rdfs:comment "Capability of a system in determining and analysing people's personality traits"@en ;
+                               rdfs:isDefinedBy vair: ;
+                               rdfs:label "Personality Traits Analysis"@en ;
                                skos:definition "Capability of a system in determining and analysing people's personality traits"@en ;
                                skos:inScheme vair: ;
                                skos:prefLabel "Personality Traits Analysis"@en .
@@ -7493,8 +7562,11 @@ vair:ProductManufacturer rdfs:isDefinedBy vair: ;
                          skos:prefLabel "Product Manufacturer"@en .
 
 
-vair:Profiling rdfs:isDefinedBy vair: ;
-               skos:definition ""@en ;
+vair:Profiling terms:source "GDPR, Art. 4(4)" ;
+               rdfs:comment "Any form of automated processing of personal data consisting of the use of personal data to evaluate certain personal aspects relating to a natural person, in particular to analyse or predict aspects concerning that natural person’s performance at work, economic situation, health, personal preferences, interests, reliability, behaviour, location or movements."@en ;
+               rdfs:isDefinedBy vair: ;
+               rdfs:label "Profiling"@en ;
+               skos:definition "Any form of automated processing of personal data consisting of the use of personal data to evaluate certain personal aspects relating to a natural person, in particular to analyse or predict aspects concerning that natural person’s performance at work, economic situation, health, personal preferences, interests, reliability, behaviour, location or movements."@en ;
                skos:inScheme vair: ;
                skos:prefLabel "Profiling"@en .
 
@@ -7556,8 +7628,11 @@ vair:PublicServicesRecipient rdfs:comment "Person who is recipient of public ser
                              skos:prefLabel "Public Services Recipient"@en .
 
 
-vair:QuestionAnswering rdfs:isDefinedBy vair: ;
-                       skos:definition "determining the most appropriate answer to a question provided in natural language.  [ISO/IEC 22989, 3.6.14]"@en ;
+vair:QuestionAnswering terms:source "ISO/IEC 22989, 3.6.14" ;
+                       rdfs:comment "Determining the most appropriate answer to a question provided in natural language."@en ;
+                       rdfs:isDefinedBy vair: ;
+                       rdfs:label "Question Answering"@en ;
+                       skos:definition "Determining the most appropriate answer to a question provided in natural language."@en ;
                        skos:inScheme vair: ;
                        skos:prefLabel "Question Answering"@en .
 
@@ -7639,8 +7714,11 @@ vair:ReinforcementLearning rdfs:isDefinedBy vair: ;
                            skos:prefLabel "Reinforcement Learning"@en .
 
 
-vair:RelationshipExtraction rdfs:isDefinedBy vair: ;
-                            skos:definition "identifying relationships among entities mentioned in a text. [ISO/IEC 22989, 3.6.15]"@en ;
+vair:RelationshipExtraction terms:source "ISO/IEC 22989, 3.6.15" ;
+                            rdfs:comment "Identifying relationships among entities mentioned in a text."@en ;
+                            rdfs:isDefinedBy vair: ;
+                            rdfs:label "Relationship Extraction"@en ;
+                            skos:definition "Identifying relationships among entities mentioned in a text."@en ;
                             skos:inScheme vair: ;
                             skos:prefLabel "Relationship Extraction"@en .
 
@@ -7743,14 +7821,19 @@ vair:SemiSupervisedLearning rdfs:isDefinedBy vair: ;
                             skos:prefLabel "Semi Supervised Learning"@en .
 
 
-vair:SensitiveAttributeInference rdfs:isDefinedBy vair: ;
+vair:SensitiveAttributeInference rdfs:comment "The capability of infering sensitive or protected attributes or characteristics"@en ;
+                                 rdfs:isDefinedBy vair: ;
+                                 rdfs:label "Sensitive Attribute Inference"@en ;
                                  skos:definition "The capability of infering sensitive or protected attributes or characteristics"@en ;
                                  skos:inScheme vair: ;
                                  skos:prefLabel "Sensitive Attribute Inference"@en .
 
 
-vair:SentimentAnalysis rdfs:isDefinedBy vair: ;
-                       skos:definition "computationally identifying and categorizing opinions expressed in a piece of text, speech or image, to determine a range of feeling such as from positive to negative. [ISO/IEC 22989, 3.6.16]"@en ;
+vair:SentimentAnalysis terms:source "ISO/IEC 22989, 3.6.16" ;
+                       rdfs:comment "Computationally identifying and categorizing opinions expressed in a piece of text, speech or image, to determine a range of feeling such as from positive to negative."@en ;
+                       rdfs:isDefinedBy vair: ;
+                       rdfs:label "Sentiment Analysis"@en ;
+                       skos:definition "Computationally identifying and categorizing opinions expressed in a piece of text, speech or image, to determine a range of feeling such as from positive to negative."@en ;
                        skos:inScheme vair: ;
                        skos:prefLabel "Sentiment Analysis"@en .
 
@@ -7871,38 +7954,47 @@ vair:Software rdfs:isDefinedBy vair: ;
               skos:prefLabel "Software"@en .
 
 
-vair:SoundEventRecognition rdfs:isDefinedBy vair: ;
-                           skos:definition ""@en ;
-                           skos:inScheme vair: ;
-                           skos:prefLabel "Sound Event Recognition"@en .
-
-
-vair:SoundSourceSeparation rdfs:isDefinedBy vair: ;
-                           skos:definition ""@en ;
+vair:SoundSourceSeparation terms:source "AI Watch, Defining Artificial Intelligence 2.0" ;
+                           rdfs:comment "Extracting individual sound from audio recordings."@en ;
+                           rdfs:isDefinedBy vair: ;
+                           rdfs:label "Sound Source Separation"@en ;
+                           skos:definition "Extracting individual sound from audio recordings."@en ;
                            skos:inScheme vair: ;
                            skos:prefLabel "Sound Source Separation"@en .
 
 
-vair:SoundSynthesis rdfs:isDefinedBy vair: ;
-                    skos:definition ""@en ;
+vair:SoundSynthesis terms:source "AI Watch, Defining Artificial Intelligence 2.0" ;
+                    rdfs:comment "Generation of artificial sound."@en ;
+                    rdfs:isDefinedBy vair: ;
+                    rdfs:label "Sound Synthesis"@en ;
+                    skos:definition "Generation of artificial sound."@en ;
                     skos:inScheme vair: ;
                     skos:prefLabel "Sound Synthesis"@en .
 
 
-vair:SpeakerRecognition rdfs:isDefinedBy vair: ;
-                        skos:definition ""@en ;
+vair:SpeakerRecognition terms:source "AI Watch, Defining Artificial Intelligence 2.0" ;
+                        rdfs:comment "Recognising speaker in audio recordings."@en ;
+                        rdfs:isDefinedBy vair: ;
+                        rdfs:label "Speaker Recognition"@en ;
+                        skos:definition "Recognising speaker in audio recordings."@en ;
                         skos:inScheme vair: ;
                         skos:prefLabel "Speaker Recognition"@en .
 
 
-vair:SpeechRecognition rdfs:isDefinedBy vair: ;
-                       skos:definition "converting a speech signal to a representation of the content of the speech. [ISO/IEC 22989, 3.6.17]"@en ;
+vair:SpeechRecognition terms:source "ISO/IEC 22989, 3.6.17" ;
+                       rdfs:comment "Converting a speech signal to a representation of the content of the speech."@en ;
+                       rdfs:isDefinedBy vair: ;
+                       rdfs:label "Speech Recognition"@en ;
+                       skos:definition "Converting a speech signal to a representation of the content of the speech."@en ;
                        skos:inScheme vair: ;
                        skos:prefLabel "Speech Recognition"@en .
 
 
-vair:SpeechSynthesis rdfs:isDefinedBy vair: ;
-                     skos:definition "generation of artificial speech. [ISO/IEC 22989, 3.6.18]"@en ;
+vair:SpeechSynthesis terms:source "ISO/IEC 22989, 3.6.18" ;
+                     rdfs:comment "Generation of artificial speech."@en ;
+                     rdfs:isDefinedBy vair: ;
+                     rdfs:label "Speech Synthesis"@en ;
+                     skos:definition "Generation of artificial speech."@en ;
                      skos:inScheme vair: ;
                      skos:prefLabel "Speech Synthesis"@en .
 
