@@ -347,6 +347,15 @@ vair:AGI rdf:type owl:Class ;
          rdfs:subClassOf airo:AISystem .
 
 
+###  https://w3id.org/vair#AICards
+vair:AICards rdf:type owl:Class ;
+             rdfs:subClassOf airo:Documentation ;
+             rdfs:comment "A form of AI documentation"@en ;
+             rdfs:label "AI Cards"@en ;
+             skos:definition "A form of AI documentation"@en ;
+             skos:prefLabel "AI Cards"@en .
+
+
 ###  https://w3id.org/vair#Action
 vair:Action rdf:type owl:Class ;
             rdfs:subClassOf airo:Output .
@@ -630,11 +639,6 @@ vair:BiometricsBasedEmotionRecognition rdf:type owl:Class ;
                                        rdfs:label "Biometrics Based Emotion Recognition"@en ;
                                        skos:definition "Biometrics Based Emotion Recognition"@en ,
                                                        "Refers to recognisting emtions based on biometrics information"@en .
-
-
-###  https://w3id.org/vair#Blueprint
-vair:Blueprint rdf:type owl:Class ;
-               rdfs:subClassOf airo:Documentation .
 
 
 ###  https://w3id.org/vair#BorderControlManagement
@@ -1452,9 +1456,16 @@ vair:InstallationInstruction rdf:type owl:Class ;
                              rdfs:subClassOf airo:Documentation .
 
 
-###  https://w3id.org/vair#InstructionOfUse
-vair:InstructionOfUse rdf:type owl:Class ;
-                      rdfs:subClassOf airo:Documentation .
+###  https://w3id.org/vair#InstructionForUse
+vair:InstructionForUse rdf:type owl:Class ;
+                       rdfs:subClassOf airo:Documentation ;
+                       terms:source "AI Act, Art. 3(15)" ;
+                       rdfs:comment "The information provided by the provider to inform the deployer of, in particular, an AI system’s intended purpose and proper use."@en ;
+                       rdfs:isDefinedBy vair: ;
+                       rdfs:label "Instruction For Use"@en ;
+                       skos:definition "The information provided by the provider to inform the deployer of, in particular, an AI system’s intended purpose and proper use."@en ;
+                       skos:inScheme vair: ;
+                       skos:prefLabel "Instruction For Use"@en .
 
 
 ###  https://w3id.org/vair#InsufficientHumanOversightMeasure
@@ -1774,6 +1785,15 @@ vair:MigrationManagement rdf:type owl:Class ;
 ###  https://w3id.org/vair#Model
 vair:Model rdf:type owl:Class ;
            rdfs:subClassOf airo:AIComponent .
+
+
+###  https://w3id.org/vair#ModelCard
+vair:ModelCard rdf:type owl:Class ;
+               rdfs:subClassOf airo:Documentation ;
+               rdfs:comment "A form of model documentation"@en ;
+               rdfs:label "Model Card"@en ;
+               skos:definition "A form of model documentation"@en ;
+               skos:prefLabel "Model Card"@en .
 
 
 ###  https://w3id.org/vair#ModelEvasion
@@ -2405,9 +2425,15 @@ vair:SymbolicReasoning rdf:type owl:Class ;
                        rdfs:subClassOf vair:KnowledgeBasedTechnique .
 
 
-###  https://w3id.org/vair#SystemArchitecture
-vair:SystemArchitecture rdf:type owl:Class ;
-                        rdfs:subClassOf airo:Documentation .
+###  https://w3id.org/vair#SystemArchitectureDocumentation
+vair:SystemArchitectureDocumentation rdf:type owl:Class ;
+                                     rdfs:subClassOf airo:Documentation ;
+                                     rdfs:comment "Documentation specifying software architecture."@en ;
+                                     rdfs:isDefinedBy vair: ;
+                                     rdfs:label "System Architecture Documentation"@en ;
+                                     skos:definition "Documentation specifying software architecture."@en ;
+                                     skos:inScheme vair: ;
+                                     skos:prefLabel "System Architecture Documentation"@en .
 
 
 ###  https://w3id.org/vair#SystemVulnerability
@@ -5775,12 +5801,6 @@ vair:BiometricIdentification terms:source "The AI Act, Recital 15" ;
                              skos:prefLabel "Biometric Identification"@en .
 
 
-vair:Blueprint rdfs:isDefinedBy vair: ;
-               skos:definition ""@en ;
-               skos:inScheme vair: ;
-               skos:prefLabel "Blueprint"@en .
-
-
 vair:BorderControlManagement rdfs:comment "Activities related to border control management."@en ;
                              rdfs:isDefinedBy vair: ;
                              rdfs:label "Border Control Management"@en ;
@@ -5889,8 +5909,10 @@ vair:DataPoisoning rdfs:isDefinedBy vair: ;
                    skos:related vair:TrainingData .
 
 
-vair:Datasheet rdfs:isDefinedBy vair: ;
-               skos:definition ""@en ;
+vair:Datasheet rdfs:comment "A form of dataset documentation"@en ;
+               rdfs:isDefinedBy vair: ;
+               rdfs:label "Datasheet"@en ;
+               skos:definition "A form of dataset documentation"@en ;
                skos:inScheme vair: ;
                skos:prefLabel "Datasheet"@en .
 
@@ -5970,8 +5992,10 @@ vair:Design rdfs:comment "Refers to design phase of AI development"@en ;
             skos:prefLabel "Design"@en .
 
 
-vair:DesignSpecification rdfs:isDefinedBy vair: ;
-                         skos:definition ""@en ;
+vair:DesignSpecification rdfs:comment "Design specification of a system"@en ;
+                         rdfs:isDefinedBy vair: ;
+                         rdfs:label "Design Specification"@en ;
+                         skos:definition "Design specification of a system"@en ;
                          skos:inScheme vair: ;
                          skos:prefLabel "Design Specification"@en .
 
@@ -6108,8 +6132,10 @@ vair:EUBody rdfs:comment "Union body"@en ;
             skos:prefLabel "EU Body"@en .
 
 
-vair:EUDeclarationOfConformity rdfs:isDefinedBy vair: ;
-                               skos:definition ""@en ;
+vair:EUDeclarationOfConformity rdfs:comment "Document providing the EU declaration of conformity, as required by the AI Act, Article 47."@en ;
+                               rdfs:isDefinedBy vair: ;
+                               rdfs:label "EU Declaration Of Conformity"@en ;
+                               skos:definition "Document providing the EU declaration of conformity, as required by the AI Act, Article 47."@en ;
                                skos:inScheme vair: ;
                                skos:prefLabel "EU Declaration Of Conformity"@en .
 
@@ -6802,16 +6828,12 @@ vair:InformationRetrieval terms:source "ISO/IEC 22989, 3.6.4" ;
                           skos:prefLabel "Information Retrieval"@en .
 
 
-vair:InstallationInstruction rdfs:isDefinedBy vair: ;
-                             skos:definition ""@en ;
+vair:InstallationInstruction rdfs:comment "Instruction for installing an application."@en ;
+                             rdfs:isDefinedBy vair: ;
+                             rdfs:label "Installation Instruction"@en ;
+                             skos:definition "Instruction for installing an application."@en ;
                              skos:inScheme vair: ;
                              skos:prefLabel "Installation Instruction"@en .
-
-
-vair:InstructionOfUse rdfs:isDefinedBy vair: ;
-                      skos:definition ""@en ;
-                      skos:inScheme vair: ;
-                      skos:prefLabel "Instruction Of Use"@en .
 
 
 vair:InsufficientHumanOversightMeasure rdfs:isDefinedBy vair: ;
@@ -7444,14 +7466,18 @@ vair:Police rdfs:comment "Police"@en ;
             skos:prefLabel "Police"@en .
 
 
-vair:PostMarketMonitoringPlan rdfs:isDefinedBy vair: ;
-                              skos:definition ""@en ;
+vair:PostMarketMonitoringPlan rdfs:comment "Description of the post-market monitoring plan, as required by the AI Act."@en ;
+                              rdfs:isDefinedBy vair: ;
+                              rdfs:label "Post-market Monitoring Plan"@en ;
+                              skos:definition "Description of the post-market monitoring plan, as required by the AI Act."@en ;
                               skos:inScheme vair: ;
                               skos:prefLabel "Post-market Monitoring Plan"@en .
 
 
-vair:PostMarketMonitoringSystemDescription rdfs:isDefinedBy vair: ;
-                                           skos:definition ""@en ;
+vair:PostMarketMonitoringSystemDescription rdfs:comment "Description of the post-market monitoring system in place, as required by the AI Act."@en ;
+                                           rdfs:isDefinedBy vair: ;
+                                           rdfs:label "Post-market Monitoring System Description"@en ;
+                                           skos:definition "Description of the post-market monitoring system in place, as required by the AI Act."@en ;
                                            skos:inScheme vair: ;
                                            skos:prefLabel "Post-market Monitoring System Description"@en .
 
@@ -7996,22 +8022,18 @@ vair:SymbolicReasoning rdfs:isDefinedBy vair: ;
                        skos:prefLabel "Symbolic Reasoning"@en .
 
 
-vair:SystemArchitecture rdfs:isDefinedBy vair: ;
-                        skos:definition ""@en ;
-                        skos:inScheme vair: ;
-                        skos:prefLabel "System Architecture"@en .
-
-
 vair:SystemVulnerability rdfs:isDefinedBy vair: ;
                          skos:definition "Weakness of a system can be exploited by one or more threats. [Source: ISO/IEC TR 24028, 3.48 with modifications]"@en ;
                          skos:inScheme vair: ;
                          skos:prefLabel "System Vulnerability"@en .
 
 
-vair:TechnicalDocumentation rdfs:isDefinedBy vair: ;
-                            skos:definition ""@en ;
+vair:TechnicalDocumentation rdfs:comment "Documentation required by the AI Act, Article 11."@en ;
+                            rdfs:isDefinedBy vair: ;
+                            rdfs:label "Technical Documentation"@en ;
+                            skos:definition "Documentation required by the AI Act, Article 11."@en ;
                             skos:inScheme vair: ;
-                            skos:prefLabel "TechnicalDocumentation"@en .
+                            skos:prefLabel "Technical Documentation"@en .
 
 
 vair:TensorProcessingUnit rdfs:comment "An AI application-specific integrated circuit developed by Google."@en ;
@@ -8021,14 +8043,18 @@ vair:TensorProcessingUnit rdfs:comment "An AI application-specific integrated ci
                           skos:prefLabel "Tensor Processing Unit"@en .
 
 
-vair:TestLog rdfs:isDefinedBy vair: ;
-             skos:definition ""@en ;
+vair:TestLog rdfs:comment "Log of the tests performed."@en ;
+             rdfs:isDefinedBy vair: ;
+             rdfs:label "Test Log"@en ;
+             skos:definition "Log of the tests performed."@en ;
              skos:inScheme vair: ;
              skos:prefLabel "Test Log"@en .
 
 
-vair:TestReport rdfs:isDefinedBy vair: ;
-                skos:definition ""@en ;
+vair:TestReport rdfs:comment "A document that includes a summary of test activities and their results."@en ;
+                rdfs:isDefinedBy vair: ;
+                rdfs:label "Test Report"@en ;
+                skos:definition "A document that includes a summary of test activities and their results."@en ;
                 skos:inScheme vair: ;
                 skos:prefLabel "Test Report"@en .
 
