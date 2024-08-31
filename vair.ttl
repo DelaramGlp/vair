@@ -212,6 +212,10 @@ airo:AISubject rdf:type owl:Class .
 airo:AISystem rdf:type owl:Class .
 
 
+###  https://w3id.org/airo#AreaOfImpact
+airo:AreaOfImpact rdf:type owl:Class .
+
+
 ###  https://w3id.org/airo#AutomationLevel
 airo:AutomationLevel rdf:type owl:Class .
 
@@ -243,10 +247,6 @@ airo:HumanInvovlvement rdf:type owl:Class .
 
 ###  https://w3id.org/airo#Impact
 airo:Impact rdf:type owl:Class .
-
-
-###  https://w3id.org/airo#ImpactedArea
-airo:ImpactedArea rdf:type owl:Class .
 
 
 ###  https://w3id.org/airo#InputDataRiskSource
@@ -338,7 +338,8 @@ airo:ValidationDataRiskSource rdf:type owl:Class ;
 
 
 ###  https://w3id.org/airo#WellbeingImpact
-airo:WellbeingImpact rdf:type owl:Class .
+airo:WellbeingImpact rdf:type owl:Class ;
+                     rdfs:subClassOf airo:Impact .
 
 
 ###  https://w3id.org/vair#AGI
@@ -1128,7 +1129,7 @@ vair:FireBrigade rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#Freedom
 vair:Freedom rdf:type owl:Class ;
-             rdfs:subClassOf airo:ImpactedArea .
+             rdfs:subClassOf airo:AreaOfImpact .
 
 
 ###  https://w3id.org/vair#FullAutomation
@@ -1205,7 +1206,7 @@ vair:Hardware rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#Health
 vair:Health rdf:type owl:Class ;
-            rdfs:subClassOf airo:ImpactedArea .
+            rdfs:subClassOf airo:AreaOfImpact .
 
 
 ###  https://w3id.org/vair#HealthInsurancePricing
@@ -2037,11 +2038,6 @@ vair:Prediction rdf:type owl:Class ;
                 rdfs:subClassOf airo:Output .
 
 
-###  https://w3id.org/vair#Principle
-vair:Principle rdf:type owl:Class ;
-               rdfs:subClassOf airo:ImpactedArea .
-
-
 ###  https://w3id.org/vair#PrioritisationOfEmergencyService
 vair:PrioritisationOfEmergencyService rdf:type owl:Class ;
                                       rdfs:subClassOf vair:Planning .
@@ -2224,7 +2220,7 @@ vair:RevokingPublicAssistanceServices rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#Right
 vair:Right rdf:type owl:Class ;
-           rdfs:subClassOf airo:ImpactedArea .
+           rdfs:subClassOf airo:AreaOfImpact .
 
 
 ###  https://w3id.org/vair#Robot
@@ -2241,7 +2237,7 @@ vair:Robot rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#Safety
 vair:Safety rdf:type owl:Class ;
-            rdfs:subClassOf airo:ImpactedArea .
+            rdfs:subClassOf airo:AreaOfImpact .
 
 
 ###  https://w3id.org/vair#SafetyComponent
@@ -6398,8 +6394,10 @@ vair:FeedForwardNeuralNetwork terms:source "ISO/IEC 22989 3.4.6" ;
                               skos:prefLabel "Feed Forward Neural Network"@en .
 
 
-vair:Freedom rdfs:isDefinedBy vair: ;
-             skos:definition ""@en ;
+vair:Freedom rdfs:comment "Refers to freedoms given to individuals"@en ;
+             rdfs:isDefinedBy vair: ;
+             rdfs:label "Freedom"@en ;
+             skos:definition "Refers to freedoms given to individuals."@en ;
              skos:inScheme vair: ;
              skos:prefLabel "Freedom"@en .
 
@@ -6476,8 +6474,10 @@ vair:Hardware rdfs:comment "Physical equipment/components"@en ;
               skos:prefLabel "Hardware"@en .
 
 
-vair:Health rdfs:isDefinedBy vair: ;
-            skos:definition ""@en ;
+vair:Health rdfs:comment "Refers to an individuals' health."@en ;
+            rdfs:isDefinedBy vair: ;
+            rdfs:label "Health"@en ;
+            skos:definition "Refers to an individuals' health."@en ;
             skos:inScheme vair: ;
             skos:prefLabel "Health"@en .
 
@@ -7378,8 +7378,10 @@ vair:PersonalityTraitsAnalysis rdfs:comment "Capability of a system in determini
                                skos:prefLabel "Personality Traits Analysis"@en .
 
 
-vair:PhysicalHealth rdfs:isDefinedBy vair: ;
-                    skos:definition ""@en ;
+vair:PhysicalHealth rdfs:comment "Refers to physical health."@en ;
+                    rdfs:isDefinedBy vair: ;
+                    rdfs:label "Physical Health"@en ;
+                    skos:definition "Refers to physical health."@en ;
                     skos:inScheme vair: ;
                     skos:prefLabel "Physical Health"@en .
 
@@ -7458,12 +7460,6 @@ vair:Prediction rdfs:isDefinedBy vair: ;
                 skos:prefLabel "Prediction"@en .
 
 
-vair:Principle rdfs:isDefinedBy vair: ;
-               skos:definition ""@en ;
-               skos:inScheme vair: ;
-               skos:prefLabel "Principle"@en .
-
-
 vair:PrioritisationOfEmergencyService rdfs:isDefinedBy vair: ;
                                       skos:definition "Establishing priority in the dispatching of emergency first response services, including by firefighters and medical aid"@en ;
                                       skos:inScheme vair: ;
@@ -7513,8 +7509,10 @@ vair:PsychologicalHarm rdfs:isDefinedBy vair: ;
                        skos:prefLabel "Psychological Harm"@en .
 
 
-vair:PsychologicalHealth rdfs:isDefinedBy vair: ;
-                         skos:definition ""@en ;
+vair:PsychologicalHealth rdfs:comment "Refers to psychological health."@en ;
+                         rdfs:isDefinedBy vair: ;
+                         rdfs:label "Psychological Health"@en ;
+                         skos:definition "Refers to psychological health."@en ;
                          skos:inScheme vair: ;
                          skos:prefLabel "Psychological Health"@en .
 
@@ -7716,14 +7714,18 @@ vair:RevokingPublicAssistanceServices rdfs:isDefinedBy vair: ;
                                       skos:related vair:PublicService .
 
 
-vair:Right rdfs:isDefinedBy vair: ;
-           skos:definition ""@en ;
+vair:Right rdfs:comment "Refers to fundamental rights."@en ;
+           rdfs:isDefinedBy vair: ;
+           rdfs:label "Right"@en ;
+           skos:definition "Refers to fundamental rights."@en ;
            skos:inScheme vair: ;
            skos:prefLabel "Right"@en .
 
 
-vair:Safety rdfs:isDefinedBy vair: ;
-            skos:definition ""@en ;
+vair:Safety rdfs:comment "Refers to the state of safety."@en ;
+            rdfs:isDefinedBy vair: ;
+            rdfs:label "Safety"@en ;
+            skos:definition "Refers to the state of safety."@en ;
             skos:inScheme vair: ;
             skos:prefLabel "Safety"@en .
 
