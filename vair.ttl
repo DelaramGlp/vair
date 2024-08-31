@@ -243,6 +243,8 @@ vair:AICards rdf:type owl:Class ;
              rdfs:comment "A form of AI documentation"@en ;
              rdfs:label "AI Cards"@en ;
              skos:definition "A form of AI documentation"@en ;
+              rdfs:isDefinedBy vair: ;
+              skos:inScheme vair: ;
              skos:prefLabel "AI Cards"@en .
 
 
@@ -447,6 +449,8 @@ vair:AudioProcessing rdf:type owl:Class ;
                      rdfs:comment "The capability to process audio recordings."@en ;
                      rdfs:label "Audio Processing"@en ;
                      skos:definition "The capability to process audio recordings." ;
+                     rdfs:isDefinedBy vair: ;
+                     skos:inScheme vair: ;
                      skos:prefLabel "Audio Processing"@en .
 
 
@@ -527,6 +531,8 @@ vair:BiometricsBasedEmotionRecognition rdf:type owl:Class ;
                                        rdfs:subClassOf vair:EmotionRecognition ;
                                        rdfs:comment "Refers to recognisting emtions based on biometrics information"@en ;
                                        rdfs:label "Biometrics Based Emotion Recognition"@en ;
+                                       rdfs:isDefinedBy vair: ;
+                                        skos:inScheme vair: ;
                                        skos:definition "Biometrics Based Emotion Recognition"@en ,
                                                        "Refers to recognisting emtions based on biometrics information"@en .
 
@@ -656,6 +662,8 @@ vair:DataRiskSource rdf:type owl:Class ;
                     rdfs:subClassOf airo:RiskSource ;
                     rdfs:comment "Risk sources related to data"@en ;
                     rdfs:label "Data Risk Source"@en ;
+                     rdfs:isDefinedBy vair: ;
+                     skos:inScheme vair: ;
                     skos:definition "Risk sources related to data"@en ;
                     skos:prefLabel "Data Risk Source"@en .
 
@@ -761,6 +769,8 @@ vair:DetectionControl rdf:type owl:Class ;
                       rdfs:comment "Control that is applied for detection purposes, e.g. detecting risks"@en ;
                       rdfs:label "Detection Control"@en ;
                       skos:definition "Control that is applied for detection purposes, e.g. detecting risks"@en ;
+                       rdfs:isDefinedBy vair: ;
+                     skos:inScheme vair: ;
                       skos:prefLabel "Detection Control"@en .
 
 
@@ -1364,6 +1374,8 @@ vair:InputDataRiskSource rdf:type owl:Class ;
                          rdfs:comment "Risk sources related to input data"@en ;
                          rdfs:label "Input Data Risk Source"@en ;
                          skos:definition "Risk sources related to input data"@en ;
+                          rdfs:isDefinedBy vair: ;
+                     skos:inScheme vair: ;
                          skos:prefLabel "Input Data Risk Source"@en .
 
 
@@ -1593,6 +1605,8 @@ vair:MachineLearning rdf:type owl:Class ;
                      terms:source "ISO/IEC 22989, 3.3.5" ;
                      rdfs:comment "Process of optimizing model parameters through computational techniques, such that the model's behaviour reflects the data or experience."@en ;
                      rdfs:label "Machine Learning"@en ;
+                      rdfs:isDefinedBy vair: ;
+                     skos:inScheme vair: ;
                      skos:definition "Process of optimizing model parameters through computational techniques, such that the model's behaviour reflects the data or experience."@en ;
                      skos:prefLabel "Machine Learning"@en .
 
@@ -1683,6 +1697,8 @@ vair:ManualControl rdf:type owl:Class ;
                    rdfs:comment "Controls implemented manually by human actors"@en ;
                    rdfs:label "Manual Control"@en ;
                    skos:definition "Controls implemented manually by human actors"@en ;
+                    rdfs:isDefinedBy vair: ;
+                     skos:inScheme vair: ;
                    skos:prefLabel "Manual Control"@en .
 
 
@@ -1722,6 +1738,8 @@ vair:ModelCard rdf:type owl:Class ;
                rdfs:comment "A form of model documentation"@en ;
                rdfs:label "Model Card"@en ;
                skos:definition "A form of model documentation"@en ;
+                rdfs:isDefinedBy vair: ;
+               skos:inScheme vair: ;
                skos:prefLabel "Model Card"@en .
 
 
@@ -1741,6 +1759,8 @@ vair:ModelRiskSource rdf:type owl:Class ;
                      rdfs:comment "Risk sources related to the AI model"@en ;
                      rdfs:label "Model Risk Source"@en ;
                      skos:definition "Risk sources related to AI model"@en ;
+                      rdfs:isDefinedBy vair: ;
+                     skos:inScheme vair: ;
                      skos:prefLabel "Model Risk Source"@en .
 
 
@@ -1867,6 +1887,8 @@ vair:OperationalControl rdf:type owl:Class ;
                         rdfs:comment "Control related to operation of the system."@en ;
                         rdfs:label "Operational Control"@en ;
                         skos:definition "Control related to operation of the system."@en ;
+                         rdfs:isDefinedBy vair: ;
+                     skos:inScheme vair: ;
                         skos:prefLabel "Operational Control"@en .
 
 
@@ -1891,6 +1913,8 @@ vair:OrganisationalControl rdf:type owl:Class ;
                            rdfs:comment "Organisational measures applied to control risk sources, risks, consequences, or impacts."@en ;
                            rdfs:label "Organisational Control"@en ;
                            skos:definition "Organisational measures applied to control risk sources, risks, consequences, or impacts."@en ;
+                            rdfs:isDefinedBy vair: ;
+                     skos:inScheme vair: ;
                            skos:prefLabel "Organisational Control"@en .
 
 
@@ -1900,6 +1924,8 @@ vair:OrganisationalRiskSource rdf:type owl:Class ;
                               rdfs:comment "Risk sources related with the organisation developing, deploying, or using AI."@en ;
                               rdfs:label "Organisational Risk Source"@en ;
                               skos:definition "Risk sources related with the organisation developing, deploying, or using AI."@en ;
+                               rdfs:isDefinedBy vair: ;
+                     skos:inScheme vair: ;
                               skos:prefLabel "Organisational Risk Source"@en .
 
 
@@ -2265,6 +2291,8 @@ vair:SemiAutomatedControl rdf:type owl:Class ;
                           rdfs:comment "Controls that are implemeted in a semi automated manner."@en ;
                           rdfs:label "Semi Automated Control"@en ;
                           skos:definition "Controls that are implemeted in a semi automated manner."@en ;
+                           rdfs:isDefinedBy vair: ;
+                     skos:inScheme vair: ;
                           skos:prefLabel "Semi Automated Control"@en .
 
 
@@ -2440,6 +2468,8 @@ vair:SystemRiskSource rdf:type owl:Class ;
                       rdfs:comment "Risk sources related to the AI system"@en ;
                       rdfs:label "System Risk Source"@en ;
                       skos:definition "Risk sources related to the AI system"@en ;
+                       rdfs:isDefinedBy vair: ;
+                     skos:inScheme vair: ;
                       skos:prefLabel "System Risk Source"@en .
 
 
@@ -2457,6 +2487,8 @@ vair:TensorProcessingUnit rdf:type owl:Class ;
 vair:TestDataRiskSource rdf:type owl:Class ;
                         rdfs:subClassOf vair:DataRiskSource ;
                         rdfs:comment "Risk sources related to test data"@en ;
+                         rdfs:isDefinedBy vair: ;
+                     skos:inScheme vair: ;
                         skos:definition "Risk sources related to test data"@en .
 
 
@@ -2486,6 +2518,8 @@ vair:TrainingDataRiskSource rdf:type owl:Class ;
                             rdfs:comment "Risk sources related to training data"@en ;
                             rdfs:label "Training Data Risk Source"@en ;
                             skos:definition "Risk sources related to training data"@en ;
+                             rdfs:isDefinedBy vair: ;
+                     skos:inScheme vair: ;
                             skos:prefLabel "Training Data Risk Source"@en .
 
 
@@ -2552,6 +2586,8 @@ vair:ValidationDataRiskSource rdf:type owl:Class ;
                               rdfs:comment "Risk sources related to validation data"@en ;
                               rdfs:label "Validation Data Risk Source"@en ;
                               skos:definition "Risk sources related to validation data"@en ;
+                               rdfs:isDefinedBy vair: ;
+                     skos:inScheme vair: ;
                               skos:prefLabel "Validation Data Risk Source"@en .
 
 
@@ -2595,6 +2631,8 @@ vair:WellbeingImpact rdf:type owl:Class ;
                      rdfs:comment "Refers to impacts that affect wellbeing"@en ;
                      rdfs:label "Wellbeing Impact"@en ;
                      skos:definition "Refers to impacts that affect wellbeing"@en ;
+                      rdfs:isDefinedBy vair: ;
+                     skos:inScheme vair: ;
                      skos:prefLabel "Wellbeing Impact"@en .
 
 
