@@ -149,11 +149,6 @@ xsd:date rdf:type rdfs:Datatype .
                  rdfs:subClassOf airo:Technique .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#Software
-:Software rdf:type owl:Class ;
-          rdfs:subClassOf airo:Modality .
-
-
 ###  http://www.w3.org/2004/02/skos/core#Concept
 skos:Concept rdf:type owl:Class .
 
@@ -5458,12 +5453,6 @@ vair:WrongDataSetDesignChoice rdf:type owl:NamedIndividual ,
                  skos:prefLabel "Machine Learning"@en .
 
 
-:Software rdfs:isDefinedBy vair: ;
-          skos:definition "Refers to a stand alone software system "@en ;
-          skos:inScheme vair: ;
-          skos:prefLabel "Software"@en .
-
-
 vair:AGI terms:source "ISO/IEC 22989, 3.1.14" ;
          rdfs:comment "Type of AI system that addresses a broad range of tasks with a satisfactory level of performance."@en ;
          rdfs:isDefinedBy vair: ;
@@ -7540,8 +7529,10 @@ vair:ProducingRecommendation rdfs:isDefinedBy vair: ;
                              skos:prefLabel "Producing Recommendation"@en .
 
 
-vair:Product rdfs:isDefinedBy vair: ;
-             skos:definition ""@en ;
+vair:Product rdfs:comment "Refers to physical products."@en ;
+             rdfs:isDefinedBy vair: ;
+             rdfs:label "Product"@en ;
+             skos:definition "Refers to physical products."@en ;
              skos:inScheme vair: ;
              skos:prefLabel "Product"@en .
 
@@ -7797,8 +7788,11 @@ vair:Safety rdfs:comment "Refers to the state of safety."@en ;
             skos:prefLabel "Safety"@en .
 
 
-vair:SafetyComponent rdfs:isDefinedBy vair: ;
-                     skos:definition ""@en ;
+vair:SafetyComponent terms:source "AI Act, Art. 3(14)" ;
+                     rdfs:comment "Component of a product or of an AI system which fulfils a safety function for that product or AI system, or the failure or malfunctioning of which endangers the health and safety of persons or property"@en ;
+                     rdfs:isDefinedBy vair: ;
+                     rdfs:label "Safety Component"@en ;
+                     skos:definition "Component of a product or of an AI system which fulfils a safety function for that product or AI system, or the failure or malfunctioning of which endangers the health and safety of persons or property."@en ;
                      skos:inScheme vair: ;
                      skos:prefLabel "Safety Component"@en .
 
@@ -7838,8 +7832,10 @@ vair:SentimentAnalysis terms:source "ISO/IEC 22989, 3.6.16" ;
                        skos:prefLabel "Sentiment Analysis"@en .
 
 
-vair:Service rdfs:isDefinedBy vair: ;
-             skos:definition ""@en ;
+vair:Service rdfs:comment "Refers to system provided as a service"@en ;
+             rdfs:isDefinedBy vair: ;
+             rdfs:label "Service"@en ;
+             skos:definition "Refers to system provided as a service"@en ;
              skos:inScheme vair: ;
              skos:prefLabel "Service"@en .
 
@@ -7948,8 +7944,10 @@ vair:SocialRobot terms:source "AI Watch, Defining Artificial Intelligence 2.0" ;
                  skos:prefLabel "Social Robot"@en .
 
 
-vair:Software rdfs:isDefinedBy vair: ;
-              skos:definition ""@en ;
+vair:Software rdfs:comment "Refers to a stand alone software system"@en ;
+              rdfs:isDefinedBy vair: ;
+              rdfs:label "Software"@en ;
+              skos:definition "Refers to a stand alone software system"@en ;
               skos:inScheme vair: ;
               skos:prefLabel "Software"@en .
 
