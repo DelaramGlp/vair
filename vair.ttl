@@ -303,15 +303,18 @@ airo:ModeOfOutputControllability rdf:type owl:Class .
 
 
 ###  https://w3id.org/airo#OperationalControl
-airo:OperationalControl rdf:type owl:Class .
+airo:OperationalControl rdf:type owl:Class ;
+                        rdfs:subClassOf airo:Control .
 
 
 ###  https://w3id.org/airo#OrganisationalControl
-airo:OrganisationalControl rdf:type owl:Class .
+airo:OrganisationalControl rdf:type owl:Class ;
+                           rdfs:subClassOf airo:Control .
 
 
 ###  https://w3id.org/airo#OrganisationalRiskSource
-airo:OrganisationalRiskSource rdf:type owl:Class .
+airo:OrganisationalRiskSource rdf:type owl:Class ;
+                              rdfs:subClassOf airo:RiskSource .
 
 
 ###  https://w3id.org/airo#Output
@@ -319,7 +322,8 @@ airo:Output rdf:type owl:Class .
 
 
 ###  https://w3id.org/airo#PerfomanceRiskSource
-airo:PerfomanceRiskSource rdf:type owl:Class .
+airo:PerfomanceRiskSource rdf:type owl:Class ;
+                          rdfs:subClassOf airo:RiskSource .
 
 
 ###  https://w3id.org/airo#Purpose
@@ -1594,8 +1598,10 @@ vair:LackOfTransparency rdf:type owl:Class ;
 ###  https://w3id.org/vair#LawEnforcement
 vair:LawEnforcement rdf:type owl:Class ;
                     rdfs:subClassOf airo:Domain ;
+                    rdfs:comment "Activities related to enforcing the law."@en ;
                     rdfs:isDefinedBy vair: ;
-                    skos:definition ""@en ;
+                    rdfs:label "Law Enforcement"@en ;
+                    skos:definition "Activities related to enforcing the law."@en ;
                     skos:inScheme vair: ;
                     skos:prefLabel "Law Enforcement"@en .
 
@@ -1750,11 +1756,6 @@ vair:ManagingSupplyOfWater rdf:type owl:Class ;
                            rdfs:subClassOf vair:Managing .
 
 
-###  https://w3id.org/vair#MarketSurveillanceAuthority
-vair:MarketSurveillanceAuthority rdf:type owl:Class ;
-                                 rdfs:subClassOf vair:NationalAuthority .
-
-
 ###  https://w3id.org/vair#MedicalAidProvider
 vair:MedicalAidProvider rdf:type owl:Class ;
                         rdfs:subClassOf vair:EmergencyServiceProvider ;
@@ -1826,10 +1827,6 @@ vair:NarrowAI rdf:type owl:Class ;
               rdfs:subClassOf airo:AISystem .
 
 
-###  https://w3id.org/vair#NationalAuthority
-vair:NationalAuthority rdf:type owl:Class .
-
-
 ###  https://w3id.org/vair#NaturalLanguageGeneration
 vair:NaturalLanguageGeneration rdf:type owl:Class ;
                                rdfs:subClassOf airo:AICapability .
@@ -1860,11 +1857,6 @@ vair:NoAutomation rdf:type owl:Class ;
                   skos:definition "The level of automation where an operator fully controls the system"@en ;
                   skos:inScheme vair: ;
                   skos:prefLabel "No Automation"@en .
-
-
-###  https://w3id.org/vair#NotifyingAuthority
-vair:NotifyingAuthority rdf:type owl:Class ;
-                        rdfs:subClassOf vair:NationalAuthority .
 
 
 ###  https://w3id.org/vair#ObjectRecognition
@@ -5494,14 +5486,18 @@ vair:ActionRecognition terms:source "AI Watch, Defining Artificial Intelligence 
                        skos:prefLabel "Action Recognition"@en .
 
 
-vair:AdministrationOfDemocraticProcesses rdfs:isDefinedBy vair: ;
-                                         skos:definition "Administration of democratic processes "@en ;
+vair:AdministrationOfDemocraticProcesses rdfs:comment "Activities related to administration of democratic processes"@en ;
+                                         rdfs:isDefinedBy vair: ;
+                                         rdfs:label "Administration Of Democratic Processes"@en ;
+                                         skos:definition "Activities related to administration of democratic processes"@en ;
                                          skos:inScheme vair: ;
                                          skos:prefLabel "Administration Of Democratic Processes"@en .
 
 
-vair:AdministrationOfJustice rdfs:isDefinedBy vair: ;
-                             skos:definition "Administration of justice"@en ;
+vair:AdministrationOfJustice rdfs:comment "Activities related to administration of justice."@en ;
+                             rdfs:isDefinedBy vair: ;
+                             rdfs:label "Administration Of Justice"@en ;
+                             skos:definition "Activities related to administration of justice."@en ;
                              skos:inScheme vair: ;
                              skos:prefLabel "Administration Of Justice"@en .
 
@@ -5675,8 +5671,10 @@ vair:AssigningPersonsToEducationalInstitutions rdfs:isDefinedBy vair: ;
                                                skos:related vair:Education .
 
 
-vair:AsylumManagement rdfs:isDefinedBy vair: ;
-                      skos:definition "Asylum management"@en ;
+vair:AsylumManagement rdfs:comment "Activities related to asylum management"@en ;
+                      rdfs:isDefinedBy vair: ;
+                      rdfs:label "Asylum Management"@en ;
+                      skos:definition "Activities related to asylum management."@en ;
                       skos:inScheme vair: ;
                       skos:prefLabel "Asylum Management"@en .
 
@@ -5792,8 +5790,10 @@ vair:Blueprint rdfs:isDefinedBy vair: ;
                skos:prefLabel "Blueprint"@en .
 
 
-vair:BorderControlManagement rdfs:isDefinedBy vair: ;
-                             skos:definition "Border control management"@en ;
+vair:BorderControlManagement rdfs:comment "Activities related to border control management."@en ;
+                             rdfs:isDefinedBy vair: ;
+                             rdfs:label "Border Control Management"@en ;
+                             skos:definition "Activities related to border control management."@en ;
                              skos:inScheme vair: ;
                              skos:prefLabel "Border Control Management"@en .
 
@@ -5877,8 +5877,10 @@ vair:ConvolutionalNeuralNetwork terms:source "ISO/IEC 22989 3.4.2" ;
                                 skos:prefLabel "Convolutional Neural Network"@en .
 
 
-vair:CriticalInfrastructure rdfs:isDefinedBy vair: ;
-                            skos:definition "Refers to the sector or activities that aim at provision and maintainance of critical services "@en ;
+vair:CriticalInfrastructure rdfs:comment "Refers to the sector or activities that aim at provision and maintainance of critical services."@en ;
+                            rdfs:isDefinedBy vair: ;
+                            rdfs:label "Critical Infrastructure"@en ;
+                            skos:definition "Refers to the sector or activities that aim at provision and maintainance of critical services."@en ;
                             skos:inScheme vair: ;
                             skos:prefLabel "Critical Infrastructure"@en .
 
@@ -6137,8 +6139,10 @@ vair:EUOffice rdfs:comment "EU office"@en ;
               skos:prefLabel "EU Office"@en .
 
 
-vair:Education rdfs:isDefinedBy vair: ;
-               skos:definition "Indicates education or vocational training at any level or for any profession."@en ;
+vair:Education rdfs:comment "Indicates the sector that offers education or vocational training at any level or for any profession."@en ;
+               rdfs:isDefinedBy vair: ;
+               rdfs:label "Education"@en ;
+               skos:definition "Indicates the sector that offers education or vocational training at any level or for any profession."@en ;
                skos:inScheme vair: ;
                skos:prefLabel "Education"@en .
 
@@ -6182,8 +6186,10 @@ vair:Employee rdfs:comment "A person in work-related contractual relationships"@
               skos:prefLabel "Employee"@en .
 
 
-vair:Employment rdfs:isDefinedBy vair: ;
-                skos:definition "Refers to employment, workers’ management and access to self-employment"@en ;
+vair:Employment rdfs:comment "Refers to employment, workers’ management and access to self-employment."@en ;
+                rdfs:isDefinedBy vair: ;
+                rdfs:label "Employment"@en ;
+                skos:definition "Refers to employment, workers’ management and access to self-employment."@en ;
                 skos:inScheme vair: ;
                 skos:prefLabel "Employment"@en .
 
@@ -7130,15 +7136,10 @@ vair:ManagingSupplyOfWater rdfs:isDefinedBy vair: ;
                            skos:related vair:CriticalInfrastructure .
 
 
-vair:MarketSurveillanceAuthority rdfs:isDefinedBy vair: ;
-                                 skos:definition ""@en ,
-                                                 "the national authority carrying out the activities and taking the measures pursuant to Regulation (EU) 2019/1020"@en ;
-                                 skos:inScheme vair: ;
-                                 skos:prefLabel "Market Surveillance Authority"@en .
-
-
-vair:MigrationManagement rdfs:isDefinedBy vair: ;
-                         skos:definition "Migration management"@en ;
+vair:MigrationManagement rdfs:comment "Activities related to managing migration."@en ;
+                         rdfs:isDefinedBy vair: ;
+                         rdfs:label "Migration Management"@en ;
+                         skos:definition "Activities related to managing migration."@en ;
                          skos:inScheme vair: ;
                          skos:prefLabel "Migration Management"@en .
 
@@ -7258,12 +7259,6 @@ vair:NeuralNetwork terms:source "ISO/IEC 22989 3.4.8" ;
                    skos:definition "Network of one or more layers of neurons connected by weighted links with adjustable weights, which takes input data and produces an output."@en ;
                    skos:inScheme vair: ;
                    skos:prefLabel "Neural Network"@en .
-
-
-vair:NotifyingAuthority rdfs:isDefinedBy vair: ;
-                        skos:definition "the national authority responsible for setting up and carrying out the necessary procedures for the assessment, designation and notification of conformity assessment bodies and for their monitoring"@en ;
-                        skos:inScheme vair: ;
-                        skos:prefLabel "Notifying Authority"@en .
 
 
 vair:ObjectRecognition terms:source "AI Watch, Defining Artificial Intelligence 2.0" ;
@@ -7476,8 +7471,10 @@ vair:PrioritisationOfEmergencyService rdfs:isDefinedBy vair: ;
                                       skos:related vair:PublicService .
 
 
-vair:PrivateService rdfs:isDefinedBy vair: ;
-                    skos:definition "Business of supplying a service by a private body"@en ;
+vair:PrivateService rdfs:comment "Business of supplying a service by a private body."@en ;
+                    rdfs:isDefinedBy vair: ;
+                    rdfs:label "Private Service"@en ;
+                    skos:definition "Business of supplying a service by a private body."@en ;
                     skos:inScheme vair: ;
                     skos:prefLabel "Private Service"@en .
 
@@ -7538,8 +7535,10 @@ vair:PublicAuthorityAgent rdfs:comment "An entity that acts on behalf of public 
                           skos:prefLabel "Public Authority Agent"@en .
 
 
-vair:PublicService rdfs:isDefinedBy vair: ;
-                   skos:definition "Business of supplying a commodity or a service by a govermental or public body"@en ;
+vair:PublicService rdfs:comment "Business of supplying a commodity or a service by a govermental or public body."@en ;
+                   rdfs:isDefinedBy vair: ;
+                   rdfs:label "Public Service"@en ;
+                   skos:definition "Business of supplying a commodity or a service by a govermental or public body."@en ;
                    skos:inScheme vair: ;
                    skos:prefLabel "Public Service"@en .
 
