@@ -837,11 +837,6 @@ vair:EducationalInstitution rdf:type owl:Class ;
                             rdfs:subClassOf airo:AIOperator .
 
 
-###  https://w3id.org/vair#EmergancyTriage
-vair:EmergancyTriage rdf:type owl:Class ;
-                     rdfs:subClassOf vair:Assessment .
-
-
 ###  https://w3id.org/vair#EmergencyHealthCareProvider
 vair:EmergencyHealthCareProvider rdf:type owl:Class ;
                                  rdfs:subClassOf vair:EmergencyServiceProvider ;
@@ -925,11 +920,6 @@ vair:EvaluatingEmergencyCall rdf:type owl:Class ;
                              rdfs:subClassOf vair:Assessment .
 
 
-###  https://w3id.org/vair#EvaluatingEmployee
-vair:EvaluatingEmployee rdf:type owl:Class ;
-                        rdfs:subClassOf vair:Assessment .
-
-
 ###  https://w3id.org/vair#EvaluatingEmployeeBehaviour
 vair:EvaluatingEmployeeBehaviour rdf:type owl:Class ;
                                  rdfs:subClassOf vair:Assessment .
@@ -938,11 +928,6 @@ vair:EvaluatingEmployeeBehaviour rdf:type owl:Class ;
 ###  https://w3id.org/vair#EvaluatingEmployeePerformance
 vair:EvaluatingEmployeePerformance rdf:type owl:Class ;
                                    rdfs:subClassOf vair:Assessment .
-
-
-###  https://w3id.org/vair#EvaluatingInterview
-vair:EvaluatingInterview rdf:type owl:Class ;
-                         rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#EvaluatingJobCandidates
@@ -958,11 +943,6 @@ vair:EvaluatingJobInterview rdf:type owl:Class ;
 ###  https://w3id.org/vair#EvaluatingLearningOutcomes
 vair:EvaluatingLearningOutcomes rdf:type owl:Class ;
                                 rdfs:subClassOf vair:Assessment .
-
-
-###  https://w3id.org/vair#EvaluatingRecruitmentTest
-vair:EvaluatingRecruitmentTest rdf:type owl:Class ;
-                               rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#EvaluatingReliabilityOfEvidenceInInvestigationOfCriminalOffences
@@ -1640,8 +1620,8 @@ vair:MakingContractTerminationDecision rdf:type owl:Class ;
                                        rdfs:subClassOf vair:Assessment .
 
 
-###  https://w3id.org/vair#MakingDecisionOnTermsofWorkRelatedRelations
-vair:MakingDecisionOnTermsofWorkRelatedRelations rdf:type owl:Class ;
+###  https://w3id.org/vair#MakingDecisionOnTermsOfWorkRelatedRelations
+vair:MakingDecisionOnTermsOfWorkRelatedRelations rdf:type owl:Class ;
                                                  rdfs:subClassOf vair:Assessment .
 
 
@@ -4253,13 +4233,7 @@ vair:MakingContractTerminationDecision rdf:type owl:NamedIndividual ,
 ###  https://w3id.org/vair#MakingDecisionOnTermsOfWorkRelatedRelations
 vair:MakingDecisionOnTermsOfWorkRelatedRelations rdf:type owl:NamedIndividual ,
                                                           skos:Concept ,
-                                                          vair:Concept ;
-                                                 rdfs:comment "Making decisions affecting terms of work-related relationships"@en ;
-                                                 rdfs:isDefinedBy vair: ;
-                                                 rdfs:label "Making Decision On Terms Of Work-Related Relations"@en ;
-                                                 skos:definition "Making decisions affecting terms of work-related relationships"@en ;
-                                                 skos:inScheme vair: ;
-                                                 skos:prefLabel "Making Decision On Terms Of Work-Related Relations"@en .
+                                                          vair:Concept .
 
 
 ###  https://w3id.org/vair#MakingPrediction
@@ -6122,12 +6096,6 @@ vair:EducationalInstitution rdfs:comment "Educational institution at any level"@
                             skos:prefLabel "Educational Institution"@en .
 
 
-vair:EmergancyTriage rdfs:isDefinedBy vair: ;
-                     skos:definition "Emergency healthcare patient triage"@en ;
-                     skos:inScheme vair: ;
-                     skos:prefLabel "Emergancy Triage"@en .
-
-
 vair:EmergencyServiceProvider rdfs:comment "Provider of emergency first response services"@en ;
                               rdfs:isDefinedBy vair: ;
                               rdfs:label "Emergency Service Provider"@en ;
@@ -6238,13 +6206,6 @@ vair:EvaluatingEmergencyCall rdfs:comment "Evaluating emergency calls by natural
                              skos:prefLabel "Evaluating Emergency Call"@en .
 
 
-vair:EvaluatingEmployee rdfs:isDefinedBy vair: ;
-                        skos:definition ""@en ;
-                        skos:inScheme vair: ;
-                        skos:prefLabel "Evaluating Employee"@en ;
-                        skos:related vair:Employment .
-
-
 vair:EvaluatingEmployeeBehaviour rdfs:comment "Evaluating the behaviour of persons in work-related relationships."@en ;
                                  rdfs:isDefinedBy vair: ;
                                  rdfs:label "Evaluating Employee Behaviour"@en ;
@@ -6261,13 +6222,6 @@ vair:EvaluatingEmployeePerformance rdfs:comment "Evaluating the performance of p
                                    skos:inScheme vair: ;
                                    skos:prefLabel "Evaluating Employee Performance"@en ;
                                    skos:related vair:Employment .
-
-
-vair:EvaluatingInterview rdfs:isDefinedBy vair: ;
-                         skos:definition ""@en ;
-                         skos:inScheme vair: ;
-                         skos:prefLabel "Evaluating Interview"@en ;
-                         skos:related vair:Employment .
 
 
 vair:EvaluatingJobCandidates rdfs:comment "Evaluation of job candidates"@en ;
@@ -6294,13 +6248,6 @@ vair:EvaluatingLearningOutcomes rdfs:comment "Evaluating learning outcomes, incl
                                 skos:inScheme vair: ;
                                 skos:prefLabel "Evaluating Learning Outcomes"@en ;
                                 skos:related vair:Education .
-
-
-vair:EvaluatingRecruitmentTest rdfs:isDefinedBy vair: ;
-                               skos:definition ""@en ;
-                               skos:inScheme vair: ;
-                               skos:prefLabel "Evaluating Recruitment Test"@en ;
-                               skos:related vair:Employment .
 
 
 vair:EvaluatingReliabilityOfEvidenceInInvestigationOfCriminalOffences rdfs:comment "Evaluation of the reliability of evidence in the course of investigation of criminal offences"@en ;
@@ -7176,6 +7123,14 @@ vair:MakingContractTerminationDecision rdfs:comment "Making Contract Termination
                                        skos:inScheme vair: ;
                                        skos:prefLabel "Making Contract Termination Decision"@en ;
                                        skos:related vair:Employment .
+
+
+vair:MakingDecisionOnTermsOfWorkRelatedRelations rdfs:comment "Making decisions affecting terms of work-related relationships"@en ;
+                                                 rdfs:isDefinedBy vair: ;
+                                                 rdfs:label "Making Decision On Terms Of Work-Related Relations"@en ;
+                                                 skos:definition "Making decisions affecting terms of work-related relationships"@en ;
+                                                 skos:inScheme vair: ;
+                                                 skos:prefLabel "Making Decision On Terms Of Work-Related Relations"@en .
 
 
 vair:MakingPromotionDecision rdfs:comment "Making decisions on promotion"@en ;
