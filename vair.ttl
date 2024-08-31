@@ -139,21 +139,6 @@ xsd:date rdf:type rdfs:Datatype .
      rdfs:subClassOf airo:AIComponent .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#CannotOptOutOfOutput
-:CannotOptOutOfOutput rdf:type owl:Class ;
-                      rdfs:subClassOf airo:ModeOfOutputControllability .
-
-
-###  http://www.semanticweb.org/owl/owlapi/turtle#ChallengeOutput
-:ChallengeOutput rdf:type owl:Class ;
-                 rdfs:subClassOf airo:ModeOfOutputControllability .
-
-
-###  http://www.semanticweb.org/owl/owlapi/turtle#CorrectOutput
-:CorrectOutput rdf:type owl:Class ;
-               rdfs:subClassOf airo:ModeOfOutputControllability .
-
-
 ###  http://www.semanticweb.org/owl/owlapi/turtle#DeepLearning
 :DeepLearning rdf:type owl:Class ;
               rdfs:subClassOf vair:MachineLearning .
@@ -162,21 +147,6 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.semanticweb.org/owl/owlapi/turtle#MachineLearning
 :MachineLearning rdf:type owl:Class ;
                  rdfs:subClassOf airo:Technique .
-
-
-###  http://www.semanticweb.org/owl/owlapi/turtle#OpttingInOutput
-:OpttingInOutput rdf:type owl:Class ;
-                 rdfs:subClassOf airo:ModeOfOutputControllability .
-
-
-###  http://www.semanticweb.org/owl/owlapi/turtle#OpttingOutOfOutput
-:OpttingOutOfOutput rdf:type owl:Class ;
-                    rdfs:subClassOf airo:ModeOfOutputControllability .
-
-
-###  http://www.semanticweb.org/owl/owlapi/turtle#ReverseOutput
-:ReverseOutput rdf:type owl:Class ;
-               rdfs:subClassOf airo:ModeOfOutputControllability .
 
 
 ###  http://www.semanticweb.org/owl/owlapi/turtle#Software
@@ -275,11 +245,6 @@ airo:ModeOfOutputControllability rdf:type owl:Class .
 ###  https://w3id.org/airo#OperationalControl
 airo:OperationalControl rdf:type owl:Class ;
                         rdfs:subClassOf airo:Control .
-
-
-###  https://w3id.org/airo#OrganisationalControl
-airo:OrganisationalControl rdf:type owl:Class ;
-                           rdfs:subClassOf airo:Control .
 
 
 ###  https://w3id.org/airo#OrganisationalRiskSource
@@ -651,6 +616,17 @@ vair:BorderControlSecurityCheck rdf:type owl:Class ;
                                 rdfs:subClassOf airo:Purpose .
 
 
+###  https://w3id.org/vair#CannotOptOutOfOutput
+vair:CannotOptOutOfOutput rdf:type owl:Class ;
+                          rdfs:subClassOf airo:ModeOfOutputControllability ;
+                          rdfs:comment "A mode of controllability that stakeholders cannot opt out of the system’s output."@en ;
+                          rdfs:isDefinedBy vair: ;
+                          rdfs:label "Cannot Opt Out Of Output"@en ;
+                          skos:definition "A mode of controllability that stakeholders cannot opt out of the system’s output."@en ;
+                          skos:inScheme vair: ;
+                          skos:prefLabel "Cannot Opt Out Of Output"@en .
+
+
 ###  https://w3id.org/vair#CaseBasedReasoning
 vair:CaseBasedReasoning rdf:type owl:Class ;
                         rdfs:subClassOf vair:ReasoningTechnique .
@@ -659,6 +635,17 @@ vair:CaseBasedReasoning rdf:type owl:Class ;
 ###  https://w3id.org/vair#Categorisation
 vair:Categorisation rdf:type owl:Class ;
                     rdfs:subClassOf airo:Purpose .
+
+
+###  https://w3id.org/vair#ChallengeOutput
+vair:ChallengeOutput rdf:type owl:Class ;
+                     rdfs:subClassOf airo:ModeOfOutputControllability ;
+                     rdfs:comment "A mode of controllability that stakeholders can challenge the system’s output."@en ;
+                     rdfs:isDefinedBy vair: ;
+                     rdfs:label "Challenge Output"@en ;
+                     skos:definition "A mode of controllability that stakeholders can challenge the system’s output."@en ;
+                     skos:inScheme vair: ;
+                     skos:prefLabel "Challenge Output"@en .
 
 
 ###  https://w3id.org/vair#ClassifyingEmergencyCall
@@ -715,6 +702,17 @@ vair:ContinuousValidation rdf:type owl:Class ;
 ###  https://w3id.org/vair#ConvolutionalNeuralNetwork
 vair:ConvolutionalNeuralNetwork rdf:type owl:Class ;
                                 rdfs:subClassOf vair:FeedForwardNeuralNetwork .
+
+
+###  https://w3id.org/vair#CorrectOutput
+vair:CorrectOutput rdf:type owl:Class ;
+                   rdfs:subClassOf airo:ModeOfOutputControllability ;
+                   rdfs:comment "A mode of controllability that stakeholders can correct the system’s output."@en ;
+                   rdfs:isDefinedBy vair: ;
+                   rdfs:label "Correct Output"@en ;
+                   skos:definition "A mode of controllability that stakeholders can correct the system’s output."@en ;
+                   skos:inScheme vair: ;
+                   skos:prefLabel "Correct Output"@en .
 
 
 ###  https://w3id.org/vair#CourseAttendee
@@ -1432,7 +1430,7 @@ vair:InfluencingReferendumOutcome rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#InformationProvision
 vair:InformationProvision rdf:type owl:Class ;
-                          rdfs:subClassOf airo:OrganisationalControl .
+                          rdfs:subClassOf vair:OrganisationalControl .
 
 
 ###  https://w3id.org/vair#InformationRetrieval
@@ -1928,6 +1926,25 @@ vair:OptimisationMethod rdf:type owl:Class ;
                         rdfs:subClassOf vair:StatisticalTechnique .
 
 
+###  https://w3id.org/vair#OpttingInOutput
+vair:OpttingInOutput rdf:type owl:Class ;
+                     rdfs:subClassOf airo:ModeOfOutputControllability .
+
+
+###  https://w3id.org/vair#OpttingOutOfOutput
+vair:OpttingOutOfOutput rdf:type owl:Class ;
+                        rdfs:subClassOf airo:ModeOfOutputControllability .
+
+
+###  https://w3id.org/vair#OrganisationalControl
+vair:OrganisationalControl rdf:type owl:Class ;
+                           rdfs:subClassOf airo:Control ;
+                           rdfs:comment "Organisational measures applied to control risk sources, risks, consequences, or impacts."@en ;
+                           rdfs:label "Organisational Control"@en ;
+                           skos:definition "Organisational measures applied to control risk sources, risks, consequences, or impacts."@en ;
+                           skos:prefLabel "Organisational Control"@en .
+
+
 ###  https://w3id.org/vair#Overreliance
 vair:Overreliance rdf:type owl:Class ;
                   rdfs:subClassOf airo:Impact .
@@ -2216,6 +2233,11 @@ vair:ResidencePermitApplicant rdf:type owl:Class ;
 ###  https://w3id.org/vair#Retirement
 vair:Retirement rdf:type owl:Class ;
                 rdfs:subClassOf airo:AILifecyclePhase .
+
+
+###  https://w3id.org/vair#ReverseOutput
+vair:ReverseOutput rdf:type owl:Class ;
+                   rdfs:subClassOf airo:ModeOfOutputControllability .
 
 
 ###  https://w3id.org/vair#ReversingOutcome
@@ -2520,7 +2542,7 @@ vair:UnsupervisedLearning rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#UserTraining
 vair:UserTraining rdf:type owl:Class ;
-                  rdfs:subClassOf airo:OrganisationalControl .
+                  rdfs:subClassOf vair:OrganisationalControl .
 
 
 ###  https://w3id.org/vair#Validation
@@ -2661,18 +2683,6 @@ vair:WrongDataSetDesignChoice rdf:type owl:Class ;
                        vair:Concept .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#OpttingInOutput
-:OpttingInOutput rdf:type owl:NamedIndividual ,
-                          skos:Concept ,
-                          vair:Concept .
-
-
-###  http://www.semanticweb.org/owl/owlapi/turtle#OpttingOutOfOutput
-:OpttingOutOfOutput rdf:type owl:NamedIndividual ,
-                             skos:Concept ,
-                             vair:Concept .
-
-
 ###  http://www.semanticweb.org/owl/owlapi/turtle#PartialAutomation
 :PartialAutomation rdf:type owl:NamedIndividual ,
                             skos:Concept ,
@@ -2683,12 +2693,6 @@ vair:WrongDataSetDesignChoice rdf:type owl:Class ;
 :PassiveInvolvement rdf:type owl:NamedIndividual ,
                              skos:Concept ,
                              vair:Concept .
-
-
-###  http://www.semanticweb.org/owl/owlapi/turtle#ReverseOutput
-:ReverseOutput rdf:type owl:NamedIndividual ,
-                        skos:Concept ,
-                        vair:Concept .
 
 
 ###  http://www.semanticweb.org/owl/owlapi/turtle#Software
@@ -4556,6 +4560,18 @@ vair:OptimisationMethod rdf:type owl:NamedIndividual ,
                                  vair:Concept .
 
 
+###  https://w3id.org/vair#OpttingInOutput
+vair:OpttingInOutput rdf:type owl:NamedIndividual ,
+                              skos:Concept ,
+                              vair:Concept .
+
+
+###  https://w3id.org/vair#OpttingOutOfOutput
+vair:OpttingOutOfOutput rdf:type owl:NamedIndividual ,
+                                 skos:Concept ,
+                                 vair:Concept .
+
+
 ###  https://w3id.org/vair#Overreliance
 vair:Overreliance rdf:type owl:NamedIndividual ,
                            skos:Concept ,
@@ -4966,6 +4982,12 @@ vair:ResidencePermitApplicant rdf:type owl:NamedIndividual ,
 vair:Retirement rdf:type owl:NamedIndividual ,
                          skos:Concept ,
                          vair:Concept .
+
+
+###  https://w3id.org/vair#ReverseOutput
+vair:ReverseOutput rdf:type owl:NamedIndividual ,
+                            skos:Concept ,
+                            vair:Concept .
 
 
 ###  https://w3id.org/vair#ReversingOutcome
@@ -5422,24 +5444,6 @@ vair:WrongDataSetDesignChoice rdf:type owl:NamedIndividual ,
      skos:prefLabel "API"@en .
 
 
-:CannotOptOutOfOutput rdfs:isDefinedBy vair: ;
-                      skos:definition "A mode of controllability that stakeholders cannot opt out of the system’s output."@en ;
-                      skos:inScheme vair: ;
-                      skos:prefLabel "Cannot Opt Out Of Output"@en .
-
-
-:ChallengeOutput rdfs:isDefinedBy vair: ;
-                 skos:definition "A mode of controllability that stakeholders can challenge the system’s output."@en ;
-                 skos:inScheme vair: ;
-                 skos:prefLabel "Challenge Output"@en .
-
-
-:CorrectOutput rdfs:isDefinedBy vair: ;
-               skos:definition "A mode of controllability that stakeholders can correct the system’s output."@en ;
-               skos:inScheme vair: ;
-               skos:prefLabel "Correct Output"@en .
-
-
 :DeepLearning terms:source "ISO/IEC 22989, 3.4.4" ;
               rdfs:isDefinedBy vair: ;
               skos:definition "Approach to creating rich hierarchical representations through the training of neural networks with many hidden layers"@en ;
@@ -5452,24 +5456,6 @@ vair:WrongDataSetDesignChoice rdf:type owl:NamedIndividual ,
                  skos:definition "Process of optimizing model parameters through computational techniques, such that the model's  behaviour reflects the data or experience"@en ;
                  skos:inScheme vair: ;
                  skos:prefLabel "Machine Learning"@en .
-
-
-:OpttingInOutput rdfs:isDefinedBy vair: ;
-                 skos:definition "A mode of controllability that stakeholders can opt in  the system’s output."@en ;
-                 skos:inScheme vair: ;
-                 skos:prefLabel "Optting In Output"@en .
-
-
-:OpttingOutOfOutput rdfs:isDefinedBy vair: ;
-                    skos:definition "A mode of controllability that stakeholders can opt out of the system’s output."@en ;
-                    skos:inScheme vair: ;
-                    skos:prefLabel "Optting Out Of Output"@en .
-
-
-:ReverseOutput rdfs:isDefinedBy vair: ;
-               skos:definition "A mode of controllability that stakeholders can reverse the system’s output ex-post."@en ;
-               skos:inScheme vair: ;
-               skos:prefLabel "Reverse Output"@en .
 
 
 :Software rdfs:isDefinedBy vair: ;
@@ -7386,6 +7372,22 @@ vair:OptimisationMethod rdfs:isDefinedBy vair: ;
                         skos:prefLabel "Optimisation Method"@en .
 
 
+vair:OpttingInOutput rdfs:comment "A mode of controllability that stakeholders can opt in  the system’s output."@en ;
+                     rdfs:isDefinedBy vair: ;
+                     rdfs:label "Optting In Output"@en ;
+                     skos:definition "A mode of controllability that stakeholders can opt in  the system’s output."@en ;
+                     skos:inScheme vair: ;
+                     skos:prefLabel "Optting In Output"@en .
+
+
+vair:OpttingOutOfOutput rdfs:comment "A mode of controllability that stakeholders can opt out of the system’s output."@en ;
+                        rdfs:isDefinedBy vair: ;
+                        rdfs:label "Optting Out Of Output"@en ;
+                        skos:definition "A mode of controllability that stakeholders can opt out of the system’s output."@en ;
+                        skos:inScheme vair: ;
+                        skos:prefLabel "Optting Out Of Output"@en .
+
+
 vair:Overreliance rdfs:isDefinedBy vair: ;
                   skos:definition "tendency of automatically relying or over-relying on the output produced by an AI system"@en ;
                   skos:inScheme vair: ;
@@ -7749,6 +7751,14 @@ vair:Retirement terms:source "ISO/IEC 22989, 6.2.9" ;
                 skos:definition "The stage the AI system become obsolete"@en ;
                 skos:inScheme vair: ;
                 skos:prefLabel "Retirement"@en .
+
+
+vair:ReverseOutput rdfs:comment "A mode of controllability that stakeholders can reverse the system’s output ex-post."@en ;
+                   rdfs:isDefinedBy vair: ;
+                   rdfs:label "Reverse Output" ;
+                   skos:definition "A mode of controllability that stakeholders can reverse the system’s output ex-post."@en ;
+                   skos:inScheme vair: ;
+                   skos:prefLabel "Reverse Output"@en .
 
 
 vair:ReversingOutcome rdfs:isDefinedBy vair: ;
