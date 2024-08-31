@@ -144,11 +144,6 @@ xsd:date rdf:type rdfs:Datatype .
               rdfs:subClassOf vair:MachineLearning .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#MachineLearning
-:MachineLearning rdf:type owl:Class ;
-                 rdfs:subClassOf airo:Technique .
-
-
 ###  http://www.w3.org/2004/02/skos/core#Concept
 skos:Concept rdf:type owl:Class .
 
@@ -622,11 +617,6 @@ vair:CannotOptOutOfOutput rdf:type owl:Class ;
                           skos:prefLabel "Cannot Opt Out Of Output"@en .
 
 
-###  https://w3id.org/vair#CaseBasedReasoning
-vair:CaseBasedReasoning rdf:type owl:Class ;
-                        rdfs:subClassOf vair:ReasoningTechnique .
-
-
 ###  https://w3id.org/vair#Categorisation
 vair:Categorisation rdf:type owl:Class ;
                     rdfs:subClassOf airo:Purpose .
@@ -651,11 +641,6 @@ vair:ClassifyingEmergencyCall rdf:type owl:Class ;
 ###  https://w3id.org/vair#CognitiveComputing
 vair:CognitiveComputing rdf:type owl:Class ;
                         rdfs:subClassOf airo:AISystem .
-
-
-###  https://w3id.org/vair#CommonSenseReasoning
-vair:CommonSenseReasoning rdf:type owl:Class ;
-                          rdfs:subClassOf vair:ReasoningTechnique .
 
 
 ###  https://w3id.org/vair#ComputerVision
@@ -1614,11 +1599,6 @@ vair:LawEnforcementAuthorityAgent rdf:type owl:Class ;
                                   rdfs:subClassOf airo:AIOperator .
 
 
-###  https://w3id.org/vair#LearningTechnique
-vair:LearningTechnique rdf:type owl:Class ;
-                       rdfs:subClassOf airo:Technique .
-
-
 ###  https://w3id.org/vair#Library
 vair:Library rdf:type owl:Class ;
              rdfs:subClassOf airo:AIComponent .
@@ -1666,7 +1646,12 @@ vair:LowSecurity rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#MachineLearning
 vair:MachineLearning rdf:type owl:Class ;
-                     rdfs:subClassOf airo:Technique .
+                     rdfs:subClassOf airo:Technique ;
+                     terms:source "ISO/IEC 22989, 3.3.5" ;
+                     rdfs:comment "Process of optimizing model parameters through computational techniques, such that the model's behaviour reflects the data or experience."@en ;
+                     rdfs:label "Machine Learning"@en ;
+                     skos:definition "Process of optimizing model parameters through computational techniques, such that the model's behaviour reflects the data or experience."@en ;
+                     skos:prefLabel "Machine Learning"@en .
 
 
 ###  https://w3id.org/vair#MachineLearningAlgorithm
@@ -1687,11 +1672,6 @@ vair:MachineLearningModel rdf:type owl:Class ;
 ###  https://w3id.org/vair#MachineLearningPlatform
 vair:MachineLearningPlatform rdf:type owl:Class ;
                              rdfs:subClassOf vair:ApplicationPlatform .
-
-
-###  https://w3id.org/vair#MachineLearningTechnique
-vair:MachineLearningTechnique rdf:type owl:Class ;
-                              rdfs:subClassOf vair:LearningTechnique .
 
 
 ###  https://w3id.org/vair#MachineTranslation
@@ -2187,7 +2167,7 @@ vair:ReducingPublicAssistanceServices rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#ReinforcementLearning
 vair:ReinforcementLearning rdf:type owl:Class ;
-                           rdfs:subClassOf vair:MachineLearningTechnique .
+                           rdfs:subClassOf vair:MachineLearning .
 
 
 ###  https://w3id.org/vair#RelationshipExtraction
@@ -2284,7 +2264,7 @@ vair:SelectingPeople rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#SemiSupervisedLearning
 vair:SemiSupervisedLearning rdf:type owl:Class ;
-                            rdfs:subClassOf vair:MachineLearningTechnique .
+                            rdfs:subClassOf vair:MachineLearning .
 
 
 ###  https://w3id.org/vair#SensitiveAttributeInference
@@ -2424,7 +2404,7 @@ vair:StatisticalTechnique rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#SupervisedLearning
 vair:SupervisedLearning rdf:type owl:Class ;
-                        rdfs:subClassOf vair:MachineLearningTechnique .
+                        rdfs:subClassOf vair:MachineLearning .
 
 
 ###  https://w3id.org/vair#SupportVectorMachine
@@ -2527,7 +2507,7 @@ vair:UnrepresentativeValidationData rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#UnsupervisedLearning
 vair:UnsupervisedLearning rdf:type owl:Class ;
-                          rdfs:subClassOf vair:MachineLearningTechnique .
+                          rdfs:subClassOf vair:MachineLearning .
 
 
 ###  https://w3id.org/vair#UserTraining
@@ -5435,17 +5415,12 @@ vair:WrongDataSetDesignChoice rdf:type owl:NamedIndividual ,
 
 
 :DeepLearning terms:source "ISO/IEC 22989, 3.4.4" ;
+              rdfs:comment "Approach to creating rich hierarchical representations through the training of neural networks with many hidden layers"@en ;
               rdfs:isDefinedBy vair: ;
+              rdfs:label "Deep learning"@en ;
               skos:definition "Approach to creating rich hierarchical representations through the training of neural networks with many hidden layers"@en ;
               skos:inScheme vair: ;
               skos:prefLabel "Deep Learning"@en .
-
-
-:MachineLearning terms:source "ISO/IEC 22989, 3.3.5" ;
-                 rdfs:isDefinedBy vair: ;
-                 skos:definition "Process of optimizing model parameters through computational techniques, such that the model's  behaviour reflects the data or experience"@en ;
-                 skos:inScheme vair: ;
-                 skos:prefLabel "Machine Learning"@en .
 
 
 vair:AGI terms:source "ISO/IEC 22989, 3.1.14" ;
@@ -5692,7 +5667,8 @@ vair:AutomaticSummarisation terms:source "ISO/IEC 22989, 3.6.1"@en ;
 
 
 vair:BayesianEstimation rdfs:isDefinedBy vair: ;
-                        skos:definition ""@en ;
+                        rdfs:label "Bayesian Estimation"@en ;
+                        skos:definition "Refers to Bayesian estimation approach"@en ;
                         skos:inScheme vair: ;
                         skos:prefLabel "Bayesian Estimation"@en .
 
@@ -5703,8 +5679,7 @@ vair:BayesianNetwork terms:source "ISO/IEC 22989 3.3.1" ;
                      rdfs:label "Bayesian Network"@en ;
                      skos:definition "Probabilistic model  that uses Bayesian inference  for probability computations using a directed acyclic graph."@en ;
                      skos:inScheme vair: ;
-                     skos:prefLabel "Bayesian Network"@en ;
-                     skos:related vair:MachineLearningTechnique .
+                     skos:prefLabel "Bayesian Network"@en .
 
 
 vair:BayesianOptimisation rdfs:isDefinedBy vair: ;
@@ -5788,12 +5763,6 @@ vair:BorderControlSecurityCheck rdfs:isDefinedBy vair: ;
                                 skos:related vair:BorderControl .
 
 
-vair:CaseBasedReasoning rdfs:isDefinedBy vair: ;
-                        skos:definition ""@en ;
-                        skos:inScheme vair: ;
-                        skos:prefLabel "Case Based Reasoning"@en .
-
-
 vair:Categorisation rdfs:isDefinedBy vair: ;
                     skos:definition "Assigning natural persons to specific categories"@en ;
                     skos:inScheme vair: ;
@@ -5813,12 +5782,6 @@ vair:CognitiveComputing terms:source "ISO/IEC 22989, 3.1.8" ;
                         skos:definition "Category of AI systems that enables people and machines to interact more naturally."@en ;
                         skos:inScheme vair: ;
                         skos:prefLabel "Cognitive Computing"@en .
-
-
-vair:CommonSenseReasoning rdfs:isDefinedBy vair: ;
-                          skos:definition ""@en ;
-                          skos:inScheme vair: ;
-                          skos:prefLabel "Common Sense Reasoning"@en .
 
 
 vair:ComputerVision terms:source "ISO/IEC 22989, 3.7.1" ;
@@ -5917,8 +5880,7 @@ vair:DecisionTree terms:source "ISO/IEC 22989 3.3.2" ;
                   rdfs:label "Decision Tree"@en ;
                   skos:definition "Model for which inference  is encoded as paths from the root to a leaf node in a tree structure."@en ;
                   skos:inScheme vair: ;
-                  skos:prefLabel "Decision Tree"@en ;
-                  skos:related vair:MachineLearningTechnique .
+                  skos:prefLabel "Decision Tree"@en .
 
 
 vair:DecreasedRobustness rdfs:comment "Decreased level of system's robustness resulted from materialisation of a risk."@en ;
@@ -6755,8 +6717,10 @@ vair:IndividualRiskAssessment rdfs:isDefinedBy vair: ;
                               skos:related vair:LawEnforcement .
 
 
-vair:InductiveProgramming rdfs:isDefinedBy vair: ;
-                          skos:definition ""@en ;
+vair:InductiveProgramming rdfs:comment "Tthe inference of an algorithm or program featuring recursive calls or repetition control structures"@en ;
+                          rdfs:isDefinedBy vair: ;
+                          rdfs:label "Inductive Programming"@en ;
+                          skos:definition "The inference of an algorithm or program featuring recursive calls or repetition control structures"@en ;
                           skos:inScheme vair: ;
                           skos:prefLabel "Inductive Programming"@en .
 
@@ -6928,8 +6892,11 @@ vair:JudicialAuthorityAgent rdfs:comment "An entity that acts on behalf on judic
                             skos:prefLabel "Judicial Authority Agent"@en .
 
 
-vair:KnowledgeBasedTechnique rdfs:isDefinedBy vair: ;
-                             skos:definition ""@en ;
+vair:KnowledgeBasedTechnique rdfs:comment "Techniques based on the use of knowledge bases"@en ;
+                             rdfs:isDefinedBy vair: ;
+                             rdfs:label "Knowledge Based Technique"@en ;
+                             skos:definition ""@en ,
+                                             "Techniques based on the use of knowledge bases"@en ;
                              skos:inScheme vair: ;
                              skos:prefLabel "Knowledge Based Technique"@en .
 
@@ -6940,8 +6907,10 @@ vair:KnowledgeReasoning rdfs:isDefinedBy vair: ;
                         skos:prefLabel "Knowledge Reasoning"@en .
 
 
-vair:KnowledgeRepresentation rdfs:isDefinedBy vair: ;
-                             skos:definition ""@en ;
+vair:KnowledgeRepresentation rdfs:comment "Encoding knowledge in a formal language"@en ;
+                             rdfs:isDefinedBy vair: ;
+                             rdfs:label "Knowledge Representation"@en ;
+                             skos:definition "Encoding knowledge in a formal language"@en ;
                              skos:inScheme vair: ;
                              skos:prefLabel "Knowledge Representation"@en .
 
@@ -6973,18 +6942,11 @@ vair:LawEnforcementAuthorityAgent rdfs:comment "An entity that acts on behalf of
                                   skos:prefLabel "Law Enforcement Authority Agent"@en .
 
 
-vair:LearningTechnique rdfs:isDefinedBy vair: ;
-                       skos:definition ""@en ;
-                       skos:inScheme vair: ;
-                       skos:prefLabel "Learning Technique"@en .
-
-
 vair:Library rdfs:isDefinedBy vair: ;
              rdfs:label "Library"@en ;
              skos:definition ""@en ;
              skos:inScheme vair: ;
-             skos:prefLabel "Library"@en ;
-             skos:related vair:MachineLearningTechnique .
+             skos:prefLabel "Library"@en .
 
 
 vair:LieDetection rdfs:comment "Detecting lies"@en ;
@@ -7011,8 +6973,10 @@ vair:LifeInsuranceRiskAssessment rdfs:isDefinedBy vair: ;
                                               vair:PublicService .
 
 
-vair:LogicBasedTechnique rdfs:isDefinedBy vair: ;
-                         skos:definition ""@en ;
+vair:LogicBasedTechnique rdfs:comment "Refers to logic based techniques."@en ;
+                         rdfs:isDefinedBy vair: ;
+                         rdfs:label "Logic Based Technique"@en ;
+                         skos:definition "Refers to logic based techniques."@en ;
                          skos:inScheme vair: ;
                          skos:prefLabel "Logic Based Technique"@en .
 
@@ -7047,15 +7011,13 @@ vair:MachineLearningAlgorithm terms:source "ISO/IEC 22989 3.3.6" ;
                               rdfs:label "Machine Learning Algorithm"@en ;
                               skos:definition "An algorithm to determine parameters of a machine learning model from data according to given criteria."@en ;
                               skos:inScheme vair: ;
-                              skos:prefLabel "Machine Learning Algorithm"@en ;
-                              skos:related vair:MachineLearningTechnique .
+                              skos:prefLabel "Machine Learning Algorithm"@en .
 
 
 vair:MachineLearningLibrary rdfs:isDefinedBy vair: ;
                             skos:definition ""@en ;
                             skos:inScheme vair: ;
-                            skos:prefLabel "Machine Learning Library"@en ;
-                            skos:related vair:MachineLearningTechnique .
+                            skos:prefLabel "Machine Learning Library"@en .
 
 
 vair:MachineLearningModel terms:source "ISO/IEC 22989, 3.3.7" ;
@@ -7064,8 +7026,7 @@ vair:MachineLearningModel terms:source "ISO/IEC 22989, 3.3.7" ;
                           rdfs:label "Machine Learning Model"@en ;
                           skos:definition "Mathematical construct that generates an inference or prediction  based on input data or information."@en ;
                           skos:inScheme vair: ;
-                          skos:prefLabel "Machine Learning Model"@en ;
-                          skos:related vair:MachineLearningTechnique .
+                          skos:prefLabel "Machine Learning Model"@en .
 
 
 vair:MachineLearningPlatform rdfs:comment "Resource on which a ML model runs."@en ;
@@ -7074,12 +7035,6 @@ vair:MachineLearningPlatform rdfs:comment "Resource on which a ML model runs."@e
                              skos:definition "Resource on which a ML model runs."@en ;
                              skos:inScheme vair: ;
                              skos:prefLabel "Machine Learning Platform"@en .
-
-
-vair:MachineLearningTechnique rdfs:isDefinedBy vair: ;
-                              skos:definition ""@en ;
-                              skos:inScheme vair: ;
-                              skos:prefLabel "MachineLearningTechnique"@en .
 
 
 vair:MachineTranslation terms:source "ISO/IEC 22989, 3.6.5" ;
@@ -7623,10 +7578,12 @@ vair:ReEvaluation terms:source "ISO/IEC 22989, 6.2.8" ;
                   skos:prefLabel "Re-Evaluation"@en .
 
 
-vair:ReasoningTechnique rdfs:isDefinedBy vair: ;
-                        skos:definition ""@en ;
+vair:ReasoningTechnique rdfs:comment "Refers to reasoning techniques."@en ;
+                        rdfs:isDefinedBy vair: ;
+                        rdfs:label "Reasoning Technique"@en ;
+                        skos:definition "Refers to reasoning techniques."@en ;
                         skos:inScheme vair: ;
-                        skos:prefLabel "ReasoningTechnique"@en .
+                        skos:prefLabel "Reasoning Technique"@en .
 
 
 vair:ReclaimingHealthCareServices rdfs:isDefinedBy vair: ;
@@ -7687,8 +7644,11 @@ vair:ReducingPublicAssistanceServices rdfs:isDefinedBy vair: ;
                                       skos:related vair:PublicService .
 
 
-vair:ReinforcementLearning rdfs:isDefinedBy vair: ;
-                           skos:definition "learning of an optimal sequence of actions to maximize a reward through interaction with an environment [ISO/IEC 22989, 3.3.9]"@en ;
+vair:ReinforcementLearning terms:source "ISO/IEC 22989, 3.3.9" ;
+                           rdfs:comment "Learning of an optimal sequence of actions to maximize a reward through interaction with an environment"@en ;
+                           rdfs:isDefinedBy vair: ;
+                           rdfs:label "Reinforcement Learning"@en ;
+                           skos:definition "Learning of an optimal sequence of actions to maximize a reward through interaction with an environment"@en ;
                            skos:inScheme vair: ;
                            skos:prefLabel "Reinforcement Learning"@en .
 
@@ -7809,8 +7769,11 @@ vair:SelectingPeople rdfs:isDefinedBy vair: ;
                      skos:prefLabel "Selecting People"@en .
 
 
-vair:SemiSupervisedLearning rdfs:isDefinedBy vair: ;
-                            skos:definition "machine learning that makes use of both labelled and unlabelled data during training [ISO/IEC 22989, 3.3.11]"@en ;
+vair:SemiSupervisedLearning terms:source "ISO/IEC 22989, 3.3.11" ;
+                            rdfs:comment "Machine learning that makes use of both labelled and unlabelled data during training"@en ;
+                            rdfs:isDefinedBy vair: ;
+                            rdfs:label "Semi Supervised Learning"@en ;
+                            skos:definition "Machine learning that makes use of both labelled and unlabelled data during training"@en ;
                             skos:inScheme vair: ;
                             skos:prefLabel "Semi Supervised Learning"@en .
 
@@ -8003,14 +7966,19 @@ vair:StaffIncompetence rdfs:isDefinedBy vair: ;
                        skos:prefLabel "Staff Incompetence"@en .
 
 
-vair:StatisticalTechnique rdfs:isDefinedBy vair: ;
-                          skos:definition ""@en ;
+vair:StatisticalTechnique rdfs:comment "Refers to techniques that are based on statistics"@en ;
+                          rdfs:isDefinedBy vair: ;
+                          rdfs:label "Statistical Technique"@en ;
+                          skos:definition "Refers to techniques that are based on statistics"@en ;
                           skos:inScheme vair: ;
                           skos:prefLabel "Statistical Technique"@en .
 
 
-vair:SupervisedLearning rdfs:isDefinedBy vair: ;
-                        skos:definition "machine learning that makes only use of labelled data during training [ISO/IEC 22989, 3.3.11]"@en ;
+vair:SupervisedLearning terms:source "ISO/IEC 22989, 3.3.11" ;
+                        rdfs:comment "Machine learning that makes only use of labelled data during training"@en ;
+                        rdfs:isDefinedBy vair: ;
+                        rdfs:label "Supervised Learning"@en ;
+                        skos:definition "Machine learning that makes only use of labelled data during training"@en ;
                         skos:inScheme vair: ;
                         skos:prefLabel "Supervised Learning"@en .
 
@@ -8024,8 +7992,10 @@ vair:SupportVectorMachine terms:source "ISO/IEC 22989 3.3.13" ;
                           skos:prefLabel "Support Vector Machine"@en .
 
 
-vair:SymbolicReasoning rdfs:isDefinedBy vair: ;
-                       skos:definition ""@en ;
+vair:SymbolicReasoning rdfs:comment "Reasoning based on the knowledge encoded in a formal language"@en ;
+                       rdfs:isDefinedBy vair: ;
+                       rdfs:label "Symbolic Reasoning"@en ;
+                       skos:definition "Reasoning based on the knowledge encoded in a formal language"@en ;
                        skos:inScheme vair: ;
                        skos:prefLabel "Symbolic Reasoning"@en .
 
@@ -8113,8 +8083,11 @@ vair:UnrepresentativeValidationData rdfs:isDefinedBy vair: ;
                                     skos:related vair:ValidationData .
 
 
-vair:UnsupervisedLearning rdfs:isDefinedBy vair: ;
-                          skos:definition "machine learning that makes only use of unlabelled data during training [ISO/IEC 22989, 3.3.17]"@en ;
+vair:UnsupervisedLearning terms:source "ISO/IEC 22989, 3.3.17" ;
+                          rdfs:comment "Machine learning that makes only use of unlabelled data during training."@en ;
+                          rdfs:isDefinedBy vair: ;
+                          rdfs:label "Unsupervised Learning"@en ;
+                          skos:definition "Machine learning that makes only use of unlabelled data during training."@en ;
                           skos:inScheme vair: ;
                           skos:prefLabel "Unsupervised Learning"@en .
 
