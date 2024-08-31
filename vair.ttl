@@ -106,6 +106,10 @@ skos:definition rdf:type owl:AnnotationProperty .
 skos:inScheme rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/2004/02/skos/core#isDefinedBy
+skos:isDefinedBy rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2004/02/skos/core#prefLabel
 skos:prefLabel rdf:type owl:AnnotationProperty .
 
@@ -259,10 +263,6 @@ airo:AILifecyclePhase rdf:type owl:Class .
 
 ###  https://w3id.org/airo#AIOperator
 airo:AIOperator rdf:type owl:Class .
-
-
-###  https://w3id.org/airo#AIProvider
-airo:AIProvider rdf:type owl:Class .
 
 
 ###  https://w3id.org/airo#AISubject
@@ -739,9 +739,15 @@ vair:ConvolutionalNeuralNetwork rdf:type owl:Class ;
                                 rdfs:subClassOf vair:FeedForwardNeuralNetwork .
 
 
-###  https://w3id.org/vair#CourseApplicant
-vair:CourseApplicant rdf:type owl:Class ;
-                     rdfs:subClassOf airo:AISubject .
+###  https://w3id.org/vair#CourseAttendee
+vair:CourseAttendee rdf:type owl:Class ;
+                    rdfs:subClassOf airo:AISubject ;
+                    rdfs:comment "A person who attends a course."@en ;
+                    rdfs:isDefinedBy vair: ;
+                    rdfs:label "Course Attendee"@en ;
+                    skos:definition "A natural person who attends a course."@en ;
+                    skos:inScheme vair: ;
+                    skos:prefLabel "Course Attendee"@en .
 
 
 ###  https://w3id.org/vair#CriticalInfrastructure
@@ -1551,6 +1557,17 @@ vair:JobApplicationScreening rdf:type owl:Class ;
                              rdfs:subClassOf airo:Purpose .
 
 
+###  https://w3id.org/vair#JobCandidate
+vair:JobCandidate rdf:type owl:Class ;
+                  rdfs:subClassOf airo:AISubject ;
+                  rdfs:comment "A person who is considered for employment."@en ;
+                  rdfs:label "Job Candidate"@en ;
+                  skos:definition "A person who is considered for employment."@en ;
+                  skos:inScheme vair: ;
+                  skos:isDefinedBy vair: ;
+                  skos:prefLabel "Job Candidate"@en .
+
+
 ###  https://w3id.org/vair#JudicialAuthority
 vair:JudicialAuthority rdf:type owl:Class ;
                        rdfs:subClassOf airo:AIOperator .
@@ -1918,11 +1935,6 @@ vair:PartOfSpeechTagging rdf:type owl:Class ;
                          rdfs:subClassOf airo:Capability .
 
 
-###  https://w3id.org/vair#Passenger
-vair:Passenger rdf:type owl:Class ;
-               rdfs:subClassOf airo:AISubject .
-
-
 ###  https://w3id.org/vair#PatternRecognition
 vair:PatternRecognition rdf:type owl:Class ;
                         rdfs:subClassOf airo:Capability ,
@@ -1932,11 +1944,6 @@ vair:PatternRecognition rdf:type owl:Class ;
 ###  https://w3id.org/vair#PerformingBackgroundCheck
 vair:PerformingBackgroundCheck rdf:type owl:Class ;
                                rdfs:subClassOf airo:Purpose .
-
-
-###  https://w3id.org/vair#Perpetrator
-vair:Perpetrator rdf:type owl:Class ;
-                 rdfs:subClassOf airo:AISubject .
 
 
 ###  https://w3id.org/vair#PersonalityTraitsAnalysis
@@ -1982,6 +1989,17 @@ vair:PostMarketMonitoringSystemDescription rdf:type owl:Class ;
 ###  https://w3id.org/vair#PotentialJobApplicant
 vair:PotentialJobApplicant rdf:type owl:Class ;
                            rdfs:subClassOf airo:AISubject .
+
+
+###  https://w3id.org/vair#PotentialPublicServicesApplicant
+vair:PotentialPublicServicesApplicant rdf:type owl:Class ;
+                                      rdfs:subClassOf airo:AISubject ;
+                                      rdfs:comment "A person who may have applied for public services."@en ;
+                                      rdfs:label "Potential Public Services Applicant"@en ;
+                                      skos:definition "A person who may have applied for public services."@en ;
+                                      skos:inScheme vair: ;
+                                      skos:isDefinedBy vair: ;
+                                      skos:prefLabel "Potential Public Services Applicant"@en .
 
 
 ###  https://w3id.org/vair#PredictingOccurrenceOfCriminalOffence
@@ -2324,11 +2342,6 @@ vair:SettlingDispute rdf:type owl:Class ;
                      rdfs:subClassOf airo:Purpose .
 
 
-###  https://w3id.org/vair#SmallScaleProvider
-vair:SmallScaleProvider rdf:type owl:Class ;
-                        rdfs:subClassOf airo:AIProvider .
-
-
 ###  https://w3id.org/vair#SocialRobot
 vair:SocialRobot rdf:type owl:Class ;
                  rdfs:subClassOf vair:RobotSystem .
@@ -2387,11 +2400,6 @@ vair:SupervisedLearning rdf:type owl:Class ;
 ###  https://w3id.org/vair#SupportVectorMachine
 vair:SupportVectorMachine rdf:type owl:Class ;
                           rdfs:subClassOf vair:MachineLearningAlgorithm .
-
-
-###  https://w3id.org/vair#Suspect
-vair:Suspect rdf:type owl:Class ;
-             rdfs:subClassOf airo:AISubject .
 
 
 ###  https://w3id.org/vair#SymbolicReasoning
@@ -2496,11 +2504,6 @@ vair:VerificationOfMigrationSeekerClaims rdf:type owl:Class ;
 ###  https://w3id.org/vair#VerifyingAuthenticityOfTravelDocument
 vair:VerifyingAuthenticityOfTravelDocument rdf:type owl:Class ;
                                            rdfs:subClassOf vair:Assessment .
-
-
-###  https://w3id.org/vair#Victim
-vair:Victim rdf:type owl:Class ;
-            rdfs:subClassOf airo:AISubject .
 
 
 ###  https://w3id.org/vair#VisaApplicant
@@ -5720,7 +5723,9 @@ vair:AsylumManagement rdfs:isDefinedBy vair: ;
                       skos:prefLabel "Asylum Management"@en .
 
 
-vair:AsylumSeeker rdfs:isDefinedBy vair: ;
+vair:AsylumSeeker rdfs:comment "A person who has applied for asylum"@en ;
+                  rdfs:isDefinedBy vair: ;
+                  rdfs:label "Asylum Seeker"@en ;
                   skos:definition "A person who has applied for asylum"@en ;
                   skos:inScheme vair: ;
                   skos:prefLabel "Asylum Seeker"@en .
@@ -5928,18 +5933,6 @@ vair:ConvolutionalNeuralNetwork rdfs:isDefinedBy vair: ;
                                 skos:definition "feed forward neural network using convolution  in at least one of its layers. [ISO/IEC 22989 3.4.2]"@en ;
                                 skos:inScheme vair: ;
                                 skos:prefLabel "Convolutional Neural Network"@en .
-
-
-vair:CourseApplicant rdfs:isDefinedBy vair: ;
-                     skos:definition ""@en ;
-                     skos:inScheme vair: ;
-                     skos:prefLabel "Course Applicant"@en .
-
-
-vair:CourseAttendee rdfs:isDefinedBy vair: ;
-                    skos:definition "A natural person who attends a course."@en ;
-                    skos:inScheme vair: ;
-                    skos:prefLabel "Course Attendee"@en .
 
 
 vair:CriticalInfrastructure rdfs:isDefinedBy vair: ;
@@ -6239,7 +6232,9 @@ vair:EmotionSensing rdfs:isDefinedBy vair: ;
                     skos:prefLabel "Emotion Sensing"@en .
 
 
-vair:Employee rdfs:isDefinedBy vair: ;
+vair:Employee rdfs:comment "A person in work-related contractual relationships"@en ;
+              rdfs:isDefinedBy vair: ;
+              rdfs:label "Employee"@en ;
               skos:definition "A person in work-related contractual relationships"@en ;
               skos:inScheme vair: ;
               skos:prefLabel "Employee"@en .
@@ -6444,7 +6439,9 @@ vair:FaceRecognition rdfs:isDefinedBy vair: ;
                      skos:prefLabel "Face Recognition"@en .
 
 
-vair:Family rdfs:isDefinedBy vair: ;
+vair:Family rdfs:comment "A group of people related to each other by blood or marraige"@en ;
+            rdfs:isDefinedBy vair: ;
+            rdfs:label "Family"@en ;
             skos:definition "A group of people related to each other by blood or marraige"@en ;
             skos:inScheme vair: ;
             skos:prefLabel "Family"@en .
@@ -6754,13 +6751,17 @@ vair:IncompleteValidationData rdfs:isDefinedBy vair: ;
                               skos:related vair:ValidationData .
 
 
-vair:IndividualEnteredState rdfs:isDefinedBy vair: ;
+vair:IndividualEnteredState rdfs:comment "A person who has entered into the territory of a State"@en ;
+                            rdfs:isDefinedBy vair: ;
+                            rdfs:label "Individual Entered State"@en ;
                             skos:definition "A person who has entered into the territory of a State"@en ;
                             skos:inScheme vair: ;
                             skos:prefLabel "Individual Entered State"@en .
 
 
-vair:IndividualIntendsToEnterState rdfs:isDefinedBy vair: ;
+vair:IndividualIntendsToEnterState rdfs:comment "A person who intends to enter into the territory of a State"@en ;
+                                   rdfs:isDefinedBy vair: ;
+                                   rdfs:label "Individual Intends To Enter State"@en ;
                                    skos:definition "A person who intends to enter into the territory of a State"@en ;
                                    skos:inScheme vair: ;
                                    skos:prefLabel "Individual Intends To Enter State"@en .
@@ -6905,7 +6906,9 @@ vair:IrrelevantValidationData rdfs:isDefinedBy vair: ;
                               skos:related vair:ValidationData .
 
 
-vair:JobApplicant rdfs:isDefinedBy vair: ;
+vair:JobApplicant rdfs:comment "A person who has made an application for employment"@en ;
+                  rdfs:isDefinedBy vair: ;
+                  rdfs:label "Job Applicant"@en ;
                   skos:definition "A person who has made an application for employment"@en ;
                   skos:inScheme vair: ;
                   skos:prefLabel "Job Applicant"@en .
@@ -7265,7 +7268,9 @@ vair:NaturalLanguageProcessingSystem rdfs:isDefinedBy vair: ;
                                      skos:prefLabel "Natural Language Processing System"@en .
 
 
-vair:NaturalPerson rdfs:isDefinedBy vair: ;
+vair:NaturalPerson rdfs:comment "An individual human being"@en ;
+                   rdfs:isDefinedBy vair: ;
+                   rdfs:label "Natural Person"@en ;
                    skos:definition "An individual human being"@en ;
                    skos:inScheme vair: ;
                    skos:prefLabel "Natural Person"@en .
@@ -7377,12 +7382,6 @@ vair:PartOfSpeechTagging rdfs:isDefinedBy vair: ;
                          skos:prefLabel "Part Of Speech Tagging"@en .
 
 
-vair:Passenger rdfs:isDefinedBy vair: ;
-               skos:definition "A person who has entered or intends to a territory."@en ;
-               skos:inScheme vair: ;
-               skos:prefLabel "Passenger"@en .
-
-
 vair:PatternRecognition rdfs:isDefinedBy vair: ;
                         skos:definition ""@en ,
                                         "Identification of unknown patterns in data"@en ;
@@ -7395,12 +7394,6 @@ vair:PerformingBackgroundCheck rdfs:isDefinedBy vair: ;
                                skos:inScheme vair: ;
                                skos:prefLabel "Performing Background Check"@en ;
                                skos:related vair:LawEnforcement .
-
-
-vair:Perpetrator rdfs:isDefinedBy vair: ;
-                 skos:definition ""@en ;
-                 skos:inScheme vair: ;
-                 skos:prefLabel "Perpetrator"@en .
 
 
 vair:PersonalityTraitsAnalysis rdfs:isDefinedBy vair: ;
@@ -7454,8 +7447,10 @@ vair:PostMarketMonitoringSystemDescription rdfs:isDefinedBy vair: ;
                                            skos:prefLabel "Post-market Monitoring System Description"@en .
 
 
-vair:PotentialJobApplicant rdfs:isDefinedBy vair: ;
-                           skos:definition ""@en ;
+vair:PotentialJobApplicant rdfs:comment "A person who may have applied for employment."@en ;
+                           rdfs:isDefinedBy vair: ;
+                           rdfs:label "Potential Job Applicant"@en ;
+                           skos:definition "A person who may have applied for employment."@en ;
                            skos:inScheme vair: ;
                            skos:prefLabel "Potential Job Applicant"@en .
 
@@ -7571,13 +7566,17 @@ vair:PublicService rdfs:isDefinedBy vair: ;
                    skos:prefLabel "Public Service"@en .
 
 
-vair:PublicServicesApplicant rdfs:isDefinedBy vair: ;
+vair:PublicServicesApplicant rdfs:comment "A person who has applied for public services and benefits"@en ,
+                                          "Public Services Applicant"@en ;
+                             rdfs:isDefinedBy vair: ;
                              skos:definition "A person who has applied for public services and benefits"@en ;
                              skos:inScheme vair: ;
                              skos:prefLabel "Public Services Applicant"@en .
 
 
-vair:PublicServicesRecipient rdfs:isDefinedBy vair: ;
+vair:PublicServicesRecipient rdfs:comment "Person who is recipient of public services and benefits"@en ;
+                             rdfs:isDefinedBy vair: ;
+                             rdfs:label "Public Services Recipient"@en ;
                              skos:definition "Person who is recipient of public services and benefits"@en ;
                              skos:inScheme vair: ;
                              skos:prefLabel "Public Services Recipient"@en .
@@ -7704,7 +7703,9 @@ vair:ResearchingLaw rdfs:isDefinedBy vair: ;
                     skos:prefLabel "Researching Law"@en .
 
 
-vair:ResidencePermitApplicant rdfs:isDefinedBy vair: ;
+vair:ResidencePermitApplicant rdfs:comment "A person who has applied for a residence permit"@en ;
+                              rdfs:isDefinedBy vair: ;
+                              rdfs:label "Residence Permit Applicant"@en ;
                               skos:definition "A person who has applied for a residence permit"@en ;
                               skos:inScheme vair: ;
                               skos:prefLabel "Residence Permit Applicant"@en .
@@ -7889,12 +7890,6 @@ vair:SettlingDispute rdfs:isDefinedBy vair: ;
                      skos:prefLabel "Settling Dispute"@en .
 
 
-vair:SmallScaleProvider rdfs:isDefinedBy vair: ;
-                        skos:definition "a provider that  is a micro (has fewer than 10 employee and annual turnover or balance sheet below €2 million) or small enterprise (has fewer than 50 employee and annual turnover or balance sheet below €10 million) "@en ;
-                        skos:inScheme vair: ;
-                        skos:prefLabel "Small Scale Provider"@en .
-
-
 vair:SocialRobot rdfs:isDefinedBy vair: ;
                  skos:definition ""@en ;
                  skos:inScheme vair: ;
@@ -7965,12 +7960,6 @@ vair:SupportVectorMachine rdfs:isDefinedBy vair: ;
                           skos:definition "machine learning algorithm  that finds decision boundaries with maximal margins. [ISO/IEC 22989 3.3.13]"@en ;
                           skos:inScheme vair: ;
                           skos:prefLabel "Support Vector Machine"@en .
-
-
-vair:Suspect rdfs:isDefinedBy vair: ;
-             skos:definition "A person who is being accused of criminal offences"@en ;
-             skos:inScheme vair: ;
-             skos:prefLabel "Suspect"@en .
 
 
 vair:SymbolicReasoning rdfs:isDefinedBy vair: ;
@@ -8105,13 +8094,9 @@ vair:VerifyingAuthenticityOfTravelDocument rdfs:isDefinedBy vair: ;
                                            skos:prefLabel "Verifying Authenticity Of Travel Document"@en .
 
 
-vair:Victim rdfs:isDefinedBy vair: ;
-            skos:definition "Victim of a crime"@en ;
-            skos:inScheme vair: ;
-            skos:prefLabel "Victim"@en .
-
-
-vair:VisaApplicant rdfs:isDefinedBy vair: ;
+vair:VisaApplicant rdfs:comment "A person who has applied for a visa"@en ;
+                   rdfs:isDefinedBy vair: ;
+                   rdfs:label "Visa Applicant"@en ;
                    skos:definition "A person who has applied for a visa"@en ;
                    skos:inScheme vair: ;
                    skos:prefLabel "Visa Applicant"@en .
