@@ -144,16 +144,6 @@ xsd:date rdf:type rdfs:Datatype .
                    rdfs:subClassOf airo:HumanInvovlvement .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#AssistiveAutomation
-:AssistiveAutomation rdf:type owl:Class ;
-                     rdfs:subClassOf airo:AutomationLevel .
-
-
-###  http://www.semanticweb.org/owl/owlapi/turtle#Autonomy
-:Autonomy rdf:type owl:Class ;
-          rdfs:subClassOf airo:AutomationLevel .
-
-
 ###  http://www.semanticweb.org/owl/owlapi/turtle#CannotOptOutOfOutput
 :CannotOptOutOfOutput rdf:type owl:Class ;
                       rdfs:subClassOf airo:ModeOfOutputControllability .
@@ -164,11 +154,6 @@ xsd:date rdf:type rdfs:Datatype .
                  rdfs:subClassOf airo:ModeOfOutputControllability .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#ConditionalAutomation
-:ConditionalAutomation rdf:type owl:Class ;
-                       rdfs:subClassOf airo:AutomationLevel .
-
-
 ###  http://www.semanticweb.org/owl/owlapi/turtle#CorrectOutput
 :CorrectOutput rdf:type owl:Class ;
                rdfs:subClassOf airo:ModeOfOutputControllability .
@@ -177,16 +162,6 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.semanticweb.org/owl/owlapi/turtle#DeepLearning
 :DeepLearning rdf:type owl:Class ;
               rdfs:subClassOf vair:MachineLearning .
-
-
-###  http://www.semanticweb.org/owl/owlapi/turtle#FullAutomation
-:FullAutomation rdf:type owl:Class ;
-                rdfs:subClassOf airo:AutomationLevel .
-
-
-###  http://www.semanticweb.org/owl/owlapi/turtle#HighAutomation
-:HighAutomation rdf:type owl:Class ;
-                rdfs:subClassOf airo:AutomationLevel .
 
 
 ###  http://www.semanticweb.org/owl/owlapi/turtle#InformedInvolvement
@@ -204,11 +179,6 @@ xsd:date rdf:type rdfs:Datatype .
                  rdfs:subClassOf airo:Technique .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#NoAutomation
-:NoAutomation rdf:type owl:Class ;
-              rdfs:subClassOf airo:AutomationLevel .
-
-
 ###  http://www.semanticweb.org/owl/owlapi/turtle#OpttingInOutput
 :OpttingInOutput rdf:type owl:Class ;
                  rdfs:subClassOf airo:ModeOfOutputControllability .
@@ -217,11 +187,6 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.semanticweb.org/owl/owlapi/turtle#OpttingOutOfOutput
 :OpttingOutOfOutput rdf:type owl:Class ;
                     rdfs:subClassOf airo:ModeOfOutputControllability .
-
-
-###  http://www.semanticweb.org/owl/owlapi/turtle#PartialAutomation
-:PartialAutomation rdf:type owl:Class ;
-                   rdfs:subClassOf airo:AutomationLevel .
 
 
 ###  http://www.semanticweb.org/owl/owlapi/turtle#PassiveInvolvement
@@ -271,10 +236,6 @@ airo:AISubject rdf:type owl:Class .
 
 ###  https://w3id.org/airo#AISystem
 airo:AISystem rdf:type owl:Class .
-
-
-###  https://w3id.org/airo#Algorithm
-airo:Algorithm rdf:type owl:Class .
 
 
 ###  https://w3id.org/airo#AutomationLevel
@@ -562,6 +523,18 @@ vair:AssigningPersonsToVocationalTrainingInstitutions rdf:type owl:Class ;
                                                       rdfs:subClassOf vair:Assessment .
 
 
+###  https://w3id.org/vair#AssistiveAutomation
+vair:AssistiveAutomation rdf:type owl:Class ;
+                         rdfs:subClassOf airo:AutomationLevel ;
+                         terms:source "ISO/IEC 22989, 5.13" ;
+                         rdfs:comment "The level of automation where the system assists an operator"@en ;
+                         rdfs:isDefinedBy vair: ;
+                         rdfs:label "Assistive Automation"@en ;
+                         skos:definition "The level of automation where the system assists an operator"@en ;
+                         skos:inScheme vair: ;
+                         skos:prefLabel "Assistive Automation"@en .
+
+
 ###  https://w3id.org/vair#AsylumManagement
 vair:AsylumManagement rdf:type owl:Class ;
                       rdfs:subClassOf airo:Domain .
@@ -582,13 +555,21 @@ vair:AuthorisedRepresentative rdf:type owl:Class ;
                               rdfs:subClassOf airo:Stakeholder .
 
 
-###  https://w3id.org/vair#Authority
-vair:Authority rdf:type owl:Class .
-
-
 ###  https://w3id.org/vair#AutomaticSummarisation
 vair:AutomaticSummarisation rdf:type owl:Class ;
                             rdfs:subClassOf airo:Capability .
+
+
+###  https://w3id.org/vair#Autonomy
+vair:Autonomy rdf:type owl:Class ;
+              rdfs:subClassOf airo:AutomationLevel ;
+              terms:source "ISO/IEC 22989, 5.13" ;
+              rdfs:comment "The level of automation where the system is capable of modifying its intended domain of use or its goals without external intervention, control or oversight."@en ;
+              rdfs:isDefinedBy vair: ;
+              rdfs:label "Autonomy"@en ;
+              skos:definition "The level of automation where the system is capable of modifying its intended domain of use or its goals without external intervention, control or oversight."@en ;
+              skos:inScheme vair: ;
+              skos:prefLabel "Autonomy"@en .
 
 
 ###  https://w3id.org/vair#BayesianEstimation
@@ -698,6 +679,18 @@ vair:ComputerVision rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#Concept
 vair:Concept rdf:type owl:Class .
+
+
+###  https://w3id.org/vair#ConditionalAutomation
+vair:ConditionalAutomation rdf:type owl:Class ;
+                           rdfs:subClassOf airo:AutomationLevel ;
+                           terms:source "ISO/IEC 22989, 5.13" ;
+                           rdfs:comment "The level of automation where there is sustained and specific performance by a system, with an external agent being ready to take over when necessary."@en ;
+                           rdfs:isDefinedBy vair: ;
+                           rdfs:label "Conditional Automation"@en ;
+                           skos:definition "The level of automation where there is sustained and specific performance by a system, with an external agent being ready to take over when necessary."@en ;
+                           skos:inScheme vair: ;
+                           skos:prefLabel "Conditional Automation"@en .
 
 
 ###  https://w3id.org/vair#ConformityAssessmentBody
@@ -1009,16 +1002,6 @@ vair:ErrorInDataPrepration rdf:type owl:Class ;
                            rdfs:subClassOf airo:DataRiskSource .
 
 
-###  https://w3id.org/vair#EuropeanArtificialIntelligenceBoard
-vair:EuropeanArtificialIntelligenceBoard rdf:type owl:Class ;
-                                         rdfs:subClassOf vair:Authority .
-
-
-###  https://w3id.org/vair#EuropeanDataProtectionSupervisor
-vair:EuropeanDataProtectionSupervisor rdf:type owl:Class ;
-                                      rdfs:subClassOf vair:Authority .
-
-
 ###  https://w3id.org/vair#EvaluatingEligibilityForPublicAssistanceServices
 vair:EvaluatingEligibilityForPublicAssistanceServices rdf:type owl:Class ;
                                                       rdfs:subClassOf vair:Assessment .
@@ -1153,6 +1136,18 @@ vair:Freedom rdf:type owl:Class ;
              rdfs:subClassOf airo:ImpactedArea .
 
 
+###  https://w3id.org/vair#FullAutomation
+vair:FullAutomation rdf:type owl:Class ;
+                    rdfs:subClassOf airo:AutomationLevel ;
+                    terms:source "ISO/IEC 22989, 5.13" ;
+                    rdfs:comment "The level of automation where is capable of performing its entire mission without external intervention."@en ;
+                    rdfs:isDefinedBy vair: ;
+                    rdfs:label "Full Automation"@en ;
+                    skos:definition "The level of automation where is capable of performing its entire mission without external intervention."@en ;
+                    skos:inScheme vair: ;
+                    skos:prefLabel "Full Automation"@en .
+
+
 ###  https://w3id.org/vair#GeneralAI
 vair:GeneralAI rdf:type owl:Class ;
                rdfs:subClassOf airo:AISystem .
@@ -1226,6 +1221,18 @@ vair:HealthInsurancePricing rdf:type owl:Class ;
 ###  https://w3id.org/vair#HealthInsuranceRiskAssessment
 vair:HealthInsuranceRiskAssessment rdf:type owl:Class ;
                                    rdfs:subClassOf vair:Assessment .
+
+
+###  https://w3id.org/vair#HighAutomation
+vair:HighAutomation rdf:type owl:Class ;
+                    rdfs:subClassOf airo:AutomationLevel ;
+                    terms:source "ISO/IEC 22989, 5.13" ;
+                    rdfs:comment "The level of automation where there the system performs parts of its mission without external intervention." ;
+                    rdfs:isDefinedBy vair: ;
+                    rdfs:label "High Automation"@en ;
+                    skos:definition "The level of automation where there the system performs parts of its mission without external intervention."@en ;
+                    skos:inScheme vair: ;
+                    skos:prefLabel "High Automation"@en .
 
 
 ###  https://w3id.org/vair#HumanOversightMeasure
@@ -1839,7 +1846,19 @@ vair:NaturalPerson rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#NeuralNetwork
 vair:NeuralNetwork rdf:type owl:Class ;
-                   rdfs:subClassOf airo:Algorithm .
+                   rdfs:subClassOf vair:Algorithm .
+
+
+###  https://w3id.org/vair#NoAutomation
+vair:NoAutomation rdf:type owl:Class ;
+                  rdfs:subClassOf airo:AutomationLevel ;
+                  terms:source "ISO/IEC 22989, 5.13" ;
+                  rdfs:comment "The level of automation where an operator fully controls the system"@en ;
+                  rdfs:isDefinedBy vair: ;
+                  rdfs:label "No Automation"@en ;
+                  skos:definition "The level of automation where an operator fully controls the system"@en ;
+                  skos:inScheme vair: ;
+                  skos:prefLabel "No Automation"@en .
 
 
 ###  https://w3id.org/vair#NotifiedBody
@@ -1915,6 +1934,18 @@ vair:OverridingOutcome rdf:type owl:Class ;
 ###  https://w3id.org/vair#PartOfSpeechTagging
 vair:PartOfSpeechTagging rdf:type owl:Class ;
                          rdfs:subClassOf airo:Capability .
+
+
+###  https://w3id.org/vair#PartialAutomation
+vair:PartialAutomation rdf:type owl:Class ;
+                       rdfs:subClassOf airo:AutomationLevel ;
+                       terms:source "ISO/IEC 22989, 5.13" ;
+                       rdfs:comment "The level of automation where some sub-functions of the system are fully automated while the system remains under the control of an external agent"@en ;
+                       rdfs:isDefinedBy vair: ;
+                       rdfs:label "Partial Automation"@en ;
+                       skos:definition "The level of automation where some sub-functions of the system are fully automated while the system remains under the control of an external agent"@en ;
+                       skos:inScheme vair: ;
+                       skos:prefLabel "Partial Automation"@en .
 
 
 ###  https://w3id.org/vair#PatternRecognition
@@ -5366,20 +5397,6 @@ vair:WrongDataSetDesignChoice rdf:type owl:NamedIndividual ,
                    skos:prefLabel "Active Involvement"@en .
 
 
-:AssistiveAutomation terms:source "ISO/IEC 22989, 5.13" ;
-                     rdfs:isDefinedBy vair: ;
-                     skos:definition "The level of automation where the system assists an operator"@en ;
-                     skos:inScheme vair: ;
-                     skos:prefLabel "Assistive Automation"@en .
-
-
-:Autonomy terms:source "ISO/IEC 22989, 5.13" ;
-          rdfs:isDefinedBy vair: ;
-          skos:definition "The level of automation where the system is capable of modifying its intended domain of use or its goals without external intervention, control or oversight."@en ;
-          skos:inScheme vair: ;
-          skos:prefLabel "Autonomy"@en .
-
-
 :CannotOptOutOfOutput rdfs:isDefinedBy vair: ;
                       skos:definition "A mode of controllability that stakeholders cannot opt out of the system’s output."@en ;
                       skos:inScheme vair: ;
@@ -5390,13 +5407,6 @@ vair:WrongDataSetDesignChoice rdf:type owl:NamedIndividual ,
                  skos:definition "A mode of controllability that stakeholders can challenge the system’s output."@en ;
                  skos:inScheme vair: ;
                  skos:prefLabel "Challenge Output"@en .
-
-
-:ConditionalAutomation terms:source "ISO/IEC 22989, 5.13" ;
-                       rdfs:isDefinedBy vair: ;
-                       skos:definition "The level of automation where there is sustained and specific performance by a system, with an external agent being ready to take over when necessary."@en ;
-                       skos:inScheme vair: ;
-                       skos:prefLabel "Conditional Automation"@en .
 
 
 :CorrectOutput rdfs:isDefinedBy vair: ;
@@ -5410,20 +5420,6 @@ vair:WrongDataSetDesignChoice rdf:type owl:NamedIndividual ,
               skos:definition "Approach to creating rich hierarchical representations through the training of neural networks with many hidden layers"@en ;
               skos:inScheme vair: ;
               skos:prefLabel "Deep Learning"@en .
-
-
-:FullAutomation terms:source "ISO/IEC 22989, 5.13" ;
-                rdfs:isDefinedBy vair: ;
-                skos:definition "The level of automation where is capable of performing its entire mission without external intervention."@en ;
-                skos:inScheme vair: ;
-                skos:prefLabel "Full Automation"@en .
-
-
-:HighAutomation terms:source "ISO/IEC 22989, 5.13" ;
-                rdfs:isDefinedBy vair: ;
-                skos:definition "The level of automation where there the system performs parts of its mission without external intervention."@en ;
-                skos:inScheme vair: ;
-                skos:prefLabel "High Automation"@en .
 
 
 :InformedInvolvement rdfs:isDefinedBy vair: ;
@@ -5445,13 +5441,6 @@ vair:WrongDataSetDesignChoice rdf:type owl:NamedIndividual ,
                  skos:prefLabel "Machine Learning"@en .
 
 
-:NoAutomation terms:source "ISO/IEC 22989, 5.13" ;
-              rdfs:isDefinedBy vair: ;
-              skos:definition "The level of automation where an operator fully controls the system"@en ;
-              skos:inScheme vair: ;
-              skos:prefLabel "No Automation"@en .
-
-
 :OpttingInOutput rdfs:isDefinedBy vair: ;
                  skos:definition "A mode of controllability that stakeholders can opt in  the system’s output."@en ;
                  skos:inScheme vair: ;
@@ -5462,13 +5451,6 @@ vair:WrongDataSetDesignChoice rdf:type owl:NamedIndividual ,
                     skos:definition "A mode of controllability that stakeholders can opt out of the system’s output."@en ;
                     skos:inScheme vair: ;
                     skos:prefLabel "Optting Out Of Output"@en .
-
-
-:PartialAutomation terms:source "ISO/IEC 22989, 5.13" ;
-                   rdfs:isDefinedBy vair: ;
-                   skos:definition "The level of automation where some sub-functions of the system are fully automated while the system remains under the control of an external agent"@en ;
-                   skos:inScheme vair: ;
-                   skos:prefLabel "Partial Automation"@en .
 
 
 :PassiveInvolvement rdfs:isDefinedBy vair: ;
@@ -5730,12 +5712,6 @@ vair:AuthorisedRepresentative rdfs:isDefinedBy vair: ;
                               skos:prefLabel "Authorised Representative"@en .
 
 
-vair:Authority rdfs:isDefinedBy vair: ;
-               skos:definition ""@en ;
-               skos:inScheme vair: ;
-               skos:prefLabel "Authority"@en .
-
-
 vair:AutomaticSummarisation rdfs:isDefinedBy vair: ;
                             skos:definition "shortening a portion of natural language content or text while retaining important semantic information. [ISO/IEC 22989, 3.6.1]"@en ;
                             skos:inScheme vair: ;
@@ -5907,8 +5883,11 @@ vair:ContinuousValidation terms:source "ISO/IEC 22989, 6.2.7" ;
                           skos:prefLabel "Continuous Validation"@en .
 
 
-vair:ConvolutionalNeuralNetwork rdfs:isDefinedBy vair: ;
-                                skos:definition "feed forward neural network using convolution  in at least one of its layers. [ISO/IEC 22989 3.4.2]"@en ;
+vair:ConvolutionalNeuralNetwork terms:source "ISO/IEC 22989 3.4.2" ;
+                                rdfs:comment "Feed forward neural network using convolution  in at least one of its layers."@en ;
+                                rdfs:isDefinedBy vair: ;
+                                rdfs:label "Convolutional Neural Network"@en ;
+                                skos:definition "Feed forward neural network using convolution in at least one of its layers."@en ;
                                 skos:inScheme vair: ;
                                 skos:prefLabel "Convolutional Neural Network"@en .
 
@@ -6260,18 +6239,6 @@ vair:ErrorInDataPrepration rdfs:isDefinedBy vair: ;
                            skos:related vair:DataPrepration .
 
 
-vair:EuropeanArtificialIntelligenceBoard rdfs:isDefinedBy vair: ;
-                                         skos:definition ""@en ;
-                                         skos:inScheme vair: ;
-                                         skos:prefLabel "European Artificial Intelligence Board"@en .
-
-
-vair:EuropeanDataProtectionSupervisor rdfs:isDefinedBy vair: ;
-                                      skos:definition "The European Data Protection Supervisor (EDPS) is the European Union’s (EU) independent data protection authority"@en ;
-                                      skos:inScheme vair: ;
-                                      skos:prefLabel "European Data Protection Supervisor"@en .
-
-
 vair:EvaluatingEligibilityForPublicAssistanceServices rdfs:isDefinedBy vair: ;
                                                       skos:definition "Evaluating the eligibility of natural persons for essential public assistance benefits and services, including healthcare services,"@en ;
                                                       skos:inScheme vair: ;
@@ -6422,8 +6389,11 @@ vair:Family rdfs:comment "A group of people related to each other by blood or ma
             skos:prefLabel "Family"@en .
 
 
-vair:FeedForwardNeuralNetwork rdfs:isDefinedBy vair: ;
-                              skos:definition "neural network where information is fed from the input layer to the output layer in one direction only. [ISO/IEC 22989 3.4.6]"@en ;
+vair:FeedForwardNeuralNetwork terms:source "ISO/IEC 22989 3.4.6" ;
+                              rdfs:comment "Neural network where information is fed from the input layer to the output layer in one direction only."@en ;
+                              rdfs:isDefinedBy vair: ;
+                              rdfs:label "Feed Forward Neural Network"@en ;
+                              skos:definition "Neural network where information is fed from the input layer to the output layer in one direction only."@en ;
                               skos:inScheme vair: ;
                               skos:prefLabel "Feed Forward Neural Network"@en .
 
@@ -7277,8 +7247,11 @@ vair:NaturalPerson rdfs:comment "An individual human being"@en ;
                    skos:prefLabel "Natural Person"@en .
 
 
-vair:NeuralNetwork rdfs:isDefinedBy vair: ;
-                   skos:definition "network of one or more layers of neurons connected by weighted links with adjustable weights, which takes input data and produces an output. [ISO/IEC 22989 3.4.8]"@en ;
+vair:NeuralNetwork terms:source "ISO/IEC 22989 3.4.8" ;
+                   rdfs:comment "Network of one or more layers of neurons connected by weighted links with adjustable weights, which takes input data and produces an output."@en ;
+                   rdfs:isDefinedBy vair: ;
+                   rdfs:label "Neural Network"@en ;
+                   skos:definition "Network of one or more layers of neurons connected by weighted links with adjustable weights, which takes input data and produces an output."@en ;
                    skos:inScheme vair: ;
                    skos:prefLabel "Neural Network"@en .
 
