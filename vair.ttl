@@ -110,6 +110,10 @@ skos:inScheme rdf:type owl:AnnotationProperty .
 skos:isDefinedBy rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/2004/02/skos/core#label
+skos:label rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2004/02/skos/core#prefLabel
 skos:prefLabel rdf:type owl:AnnotationProperty .
 
@@ -305,11 +309,6 @@ vair:ApplicationPlatform rdf:type owl:Class ;
                          skos:prefLabel "Application Platform"@en .
 
 
-###  https://w3id.org/vair#ApplicationScreening
-vair:ApplicationScreening rdf:type owl:Class ;
-                          rdfs:subClassOf vair:Assessment .
-
-
 ###  https://w3id.org/vair#ApplicationSpecificIntegratedCircuit
 vair:ApplicationSpecificIntegratedCircuit rdf:type owl:Class ;
                                           rdfs:subClassOf vair:Hardware .
@@ -325,19 +324,9 @@ vair:Approval rdf:type owl:Class ;
               rdfs:subClassOf vair:ManualControl .
 
 
-###  https://w3id.org/vair#AssesingStudent
-vair:AssesingStudent rdf:type owl:Class ;
-                     rdfs:subClassOf vair:Assessment .
-
-
 ###  https://w3id.org/vair#AssessingAccessibleLevelOfEducation
 vair:AssessingAccessibleLevelOfEducation rdf:type owl:Class ;
                                          rdfs:subClassOf vair:Assessment .
-
-
-###  https://w3id.org/vair#AssessingAdmissionTest
-vair:AssessingAdmissionTest rdf:type owl:Class ;
-                            rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#AssessingCreditworthiness
@@ -348,11 +337,6 @@ vair:AssessingCreditworthiness rdf:type owl:Class ;
 ###  https://w3id.org/vair#AssessingHealthRisk
 vair:AssessingHealthRisk rdf:type owl:Class ;
                          rdfs:subClassOf vair:AssessingPeopleRelatedRisk .
-
-
-###  https://w3id.org/vair#AssessingImmigrationEligibility
-vair:AssessingImmigrationEligibility rdf:type owl:Class ;
-                                     rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#AssessingLevelOfEducation
@@ -402,7 +386,7 @@ vair:AssessingSecurityRisk rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#Assessment
 vair:Assessment rdf:type owl:Class ;
-                rdfs:subClassOf vair:DecisionMaking .
+                rdfs:subClassOf airo:Purpose .
 
 
 ###  https://w3id.org/vair#AssigningPersonsToEducationalInstitutions
@@ -540,11 +524,6 @@ vair:BiometricsBasedEmotionRecognition rdf:type owl:Class ;
 ###  https://w3id.org/vair#BorderControlManagement
 vair:BorderControlManagement rdf:type owl:Class ;
                              rdfs:subClassOf airo:Domain .
-
-
-###  https://w3id.org/vair#BorderControlSecurityCheck
-vair:BorderControlSecurityCheck rdf:type owl:Class ;
-                                rdfs:subClassOf airo:Purpose .
 
 
 ###  https://w3id.org/vair#CannotOptOutOfOutput
@@ -698,11 +677,6 @@ vair:DecreasedSecurity rdf:type owl:Class ;
                        rdfs:subClassOf airo:Consequence .
 
 
-###  https://w3id.org/vair#DectectingCriminalOffences
-vair:DectectingCriminalOffences rdf:type owl:Class ;
-                                rdfs:subClassOf airo:Purpose .
-
-
 ###  https://w3id.org/vair#DeepFakeDetection
 vair:DeepFakeDetection rdf:type owl:Class ;
                        rdfs:subClassOf vair:Detection .
@@ -730,7 +704,7 @@ vair:DesignSpecification rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#DetectingCriminalOffences
 vair:DetectingCriminalOffences rdf:type owl:Class ;
-                               rdfs:subClassOf airo:Purpose .
+                               rdfs:subClassOf vair:Detection .
 
 
 ###  https://w3id.org/vair#DetectingEmotionalState
@@ -764,7 +738,7 @@ vair:DetectingProhibitedBehaviourDuringTest rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#Detection
 vair:Detection rdf:type owl:Class ;
-               rdfs:subClassOf vair:DecisionMaking .
+               rdfs:subClassOf airo:Purpose .
 
 
 ###  https://w3id.org/vair#DetectionControl
@@ -821,11 +795,6 @@ vair:DiscoveringCrimePatterns rdf:type owl:Class ;
 ###  https://w3id.org/vair#DiscoveringCrimeRelationships
 vair:DiscoveringCrimeRelationships rdf:type owl:Class ;
                                    rdfs:subClassOf vair:Detection .
-
-
-###  https://w3id.org/vair#DispatchingEmergencyServiceProvider
-vair:DispatchingEmergencyServiceProvider rdf:type owl:Class ;
-                                         rdfs:subClassOf vair:Planning .
 
 
 ###  https://w3id.org/vair#DistortionInHumanBehaviour
@@ -1013,7 +982,7 @@ vair:EvaluatingReliabilityOfEvidenceInProsecutionOfCriminalOffences rdf:type owl
 
 ###  https://w3id.org/vair#ExaminingApplication
 vair:ExaminingApplication rdf:type owl:Class ;
-                          rdfs:subClassOf vair:DecisionMaking .
+                          rdfs:subClassOf airo:Purpose .
 
 
 ###  https://w3id.org/vair#ExaminingAsylumApplication
@@ -1118,14 +1087,9 @@ vair:GrantingHealthCareServices rdf:type owl:Class ;
                                 rdfs:subClassOf vair:GrantingPublicAssistanceServices .
 
 
-###  https://w3id.org/vair#GrantingPublicAssistanceService
-vair:GrantingPublicAssistanceService rdf:type owl:Class ;
-                                     rdfs:subClassOf vair:DecisionMaking .
-
-
 ###  https://w3id.org/vair#GrantingPublicAssistanceServices
 vair:GrantingPublicAssistanceServices rdf:type owl:Class ;
-                                      rdfs:subClassOf airo:Purpose ;
+                                      rdfs:subClassOf vair:DecisionMaking ;
                                       rdfs:comment "Granting natural persons essential public assistance benefits and services"@en ;
                                       rdfs:isDefinedBy vair: ;
                                       rdfs:label "Granting Public Assistance Services"@en ;
@@ -1681,11 +1645,6 @@ vair:MakingDecisionOnTermsofWorkRelatedRelations rdf:type owl:Class ;
                                                  rdfs:subClassOf vair:Assessment .
 
 
-###  https://w3id.org/vair#MakingPrediction
-vair:MakingPrediction rdf:type owl:Class ;
-                      rdfs:subClassOf airo:Purpose .
-
-
 ###  https://w3id.org/vair#MakingPromotionDecision
 vair:MakingPromotionDecision rdf:type owl:Class ;
                              rdfs:subClassOf vair:Assessment .
@@ -1932,12 +1891,6 @@ vair:PassiveInvolvement rdf:type owl:Class ;
                         skos:prefLabel "Passive Involvement"@en .
 
 
-###  https://w3id.org/vair#PatternRecognition
-vair:PatternRecognition rdf:type owl:Class ;
-                        rdfs:subClassOf airo:AICapability ,
-                                        vair:Detection .
-
-
 ###  https://w3id.org/vair#PerfomanceRiskSource
 vair:PerfomanceRiskSource rdf:type owl:Class ;
                           rdfs:subClassOf airo:RiskSource ;
@@ -1974,7 +1927,7 @@ vair:PlacingTargetedJobAdvert rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#Planning
 vair:Planning rdf:type owl:Class ;
-              rdfs:subClassOf vair:DecisionMaking .
+              rdfs:subClassOf airo:Purpose .
 
 
 ###  https://w3id.org/vair#Police
@@ -2006,21 +1959,6 @@ vair:PotentialPublicServicesApplicant rdf:type owl:Class ;
                                       skos:inScheme vair: ;
                                       skos:isDefinedBy vair: ;
                                       skos:prefLabel "Potential Public Services Applicant"@en .
-
-
-###  https://w3id.org/vair#PredictingOccurrenceOfCriminalOffence
-vair:PredictingOccurrenceOfCriminalOffence rdf:type owl:Class ;
-                                           rdfs:subClassOf vair:MakingPrediction .
-
-
-###  https://w3id.org/vair#PredictingRecidivism
-vair:PredictingRecidivism rdf:type owl:Class ;
-                          rdfs:subClassOf vair:MakingPrediction .
-
-
-###  https://w3id.org/vair#PredictingReoccurrenceOfCriminalOffence
-vair:PredictingReoccurrenceOfCriminalOffence rdf:type owl:Class ;
-                                             rdfs:subClassOf vair:MakingPrediction .
 
 
 ###  https://w3id.org/vair#Prediction
@@ -2125,7 +2063,7 @@ vair:RecognisingEmotions rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#RecognisingIndividuals
 vair:RecognisingIndividuals rdf:type owl:Class ;
-                            rdfs:subClassOf vair:Assessment .
+                            rdfs:subClassOf airo:Purpose .
 
 
 ###  https://w3id.org/vair#Recommendation
@@ -2238,11 +2176,6 @@ vair:SafetyComponent rdf:type owl:Class ;
 ###  https://w3id.org/vair#SearchMethod
 vair:SearchMethod rdf:type owl:Class ;
                   rdfs:subClassOf vair:StatisticalTechnique .
-
-
-###  https://w3id.org/vair#SelectingPeople
-vair:SelectingPeople rdf:type owl:Class ;
-                     rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#SemiAutomatedControl
@@ -2572,20 +2505,6 @@ vair:ValidationDataRiskSource rdf:type owl:Class ;
 ###  https://w3id.org/vair#Verification
 vair:Verification rdf:type owl:Class ;
                   rdfs:subClassOf airo:AILifecyclePhase .
-
-
-###  https://w3id.org/vair#VerificationOfAsylumSeekerClaims
-vair:VerificationOfAsylumSeekerClaims rdf:type owl:Class ;
-                                      rdfs:subClassOf airo:Purpose ;
-                                      rdfs:isDefinedBy vair: ;
-                                      skos:definition ""@en ;
-                                      skos:inScheme vair: ;
-                                      skos:prefLabel "Verification Of Asylum Seeker Claims"@en .
-
-
-###  https://w3id.org/vair#VerificationOfMigrationSeekerClaims
-vair:VerificationOfMigrationSeekerClaims rdf:type owl:Class ;
-                                         rdfs:subClassOf airo:Purpose .
 
 
 ###  https://w3id.org/vair#VerifyingAuthenticityOfTravelDocument
@@ -5555,13 +5474,6 @@ vair:AllocatingTasks rdfs:comment "Assignment of tasks to persons"@en ;
                      skos:prefLabel "Allocating Tasks"@en .
 
 
-vair:ApplicationScreening rdfs:isDefinedBy vair: ;
-                          skos:definition ""@en ;
-                          skos:inScheme vair: ;
-                          skos:prefLabel "Application Screening"@en ;
-                          skos:related vair:Employment .
-
-
 vair:ApplicationSpecificIntegratedCircuit rdfs:comment "An integrated circuit chip customized for a particular use."@en ;
                                           rdfs:isDefinedBy vair: ;
                                           rdfs:label "Application Specific Integrated Circuit"@en ;
@@ -5570,12 +5482,12 @@ vair:ApplicationSpecificIntegratedCircuit rdfs:comment "An integrated circuit ch
                                           skos:prefLabel "Application Specific Integrated Circuit"@en .
 
 
-vair:ApplyingTheLawToFacts rdfs:isDefinedBy vair: ;
+vair:ApplyingTheLawToFacts rdfs:comment "Applying the law to a concrete set of facts"@en ;
+                           rdfs:isDefinedBy vair: ;
+                           rdfs:label "Applying The Law To Facts"@en ;
                            skos:definition "Applying the law to a concrete set of facts"@en ;
-                           rdfs:comment "Applying the law to a concrete set of facts"@en ;
                            skos:inScheme vair: ;
-                           skos:prefLabel "Applying The Law To Facts"@en ;
-                           rdfs:label "Applying The Law To Facts"@en .
+                           skos:prefLabel "Applying The Law To Facts"@en .
 
 
 vair:Approval rdfs:comment "Approval or refusual of a request, excutation of process, etc. to prevent or mitigate a risk."@en ;
@@ -5586,26 +5498,12 @@ vair:Approval rdfs:comment "Approval or refusual of a request, excutation of pro
               skos:prefLabel "Approval"@en .
 
 
-vair:AssesingStudent rdfs:isDefinedBy vair: ;
-                     skos:definition "Assessmening students in educational institutions"@en ;
-                     skos:inScheme vair: ;
-                     skos:prefLabel "Assessing Student"@en ;
-                     skos:related vair:Education .
-
-
 vair:AssessingAccessibleLevelOfEducation rdfs:comment "Assessing the appropriate level of education that an individual will be able to access"@en ;
                                          rdfs:isDefinedBy vair: ;
                                          rdfs:label "Assessing Accessible Level Of Education"@en ;
                                          skos:definition "Assessing the appropriate level of education that an individual will be able to access"@en ;
                                          skos:inScheme vair: ;
                                          skos:prefLabel "Assessing Accessible Level Of Education"@en .
-
-
-vair:AssessingAdmissionTest rdfs:isDefinedBy vair: ;
-                            skos:definition "Assessing tests required for admission to educational institutions"@en ;
-                            skos:inScheme vair: ;
-                            skos:prefLabel "Assessing Admission Test"@en ;
-                            skos:related vair:Education .
 
 
 vair:AssessingCreditworthiness rdfs:comment "Evaluation the creditworthiness of natural persons or establishing their credit score"@en ;
@@ -5622,13 +5520,6 @@ vair:AssessingHealthRisk rdfs:comment "Assessing health risk posed by a person"@
                          skos:definition "Assessing health risk posed by a person"@en ;
                          skos:inScheme vair: ;
                          skos:prefLabel "Assessing Health Risk"@en .
-
-
-vair:AssessingImmigrationEligibility rdfs:isDefinedBy vair: ;
-                                     skos:definition "Examination of applications for asylum, visa and residence permits and associated complaints"@en ;
-                                     skos:inScheme vair: ;
-                                     skos:prefLabel "Assessing Immigration Eligibility"@en ;
-                                     skos:related vair:MigrationManagement .
 
 
 vair:AssessingLevelOfEducation rdfs:comment "Assessing the appropriate level of education that an individual will receive"@en ;
@@ -5866,13 +5757,6 @@ vair:BorderControlManagement rdfs:comment "Activities related to border control 
                              skos:prefLabel "Border Control Management"@en .
 
 
-vair:BorderControlSecurityCheck rdfs:isDefinedBy vair: ;
-                                skos:definition ""@en ;
-                                skos:inScheme vair: ;
-                                skos:prefLabel "Border Control Security Check"@en ;
-                                skos:related vair:BorderControl .
-
-
 vair:Categorisation rdfs:comment "Assigning natural persons to specific categories"@en ;
                     rdfs:isDefinedBy vair: ;
                     rdfs:label "Categorisation"@en ;
@@ -6005,7 +5889,9 @@ vair:DecreasedSecurity rdfs:comment "Decreased level of security of system resul
                        skos:prefLabel "Decreased Security"@en .
 
 
-vair:DeepFakeDetection rdfs:isDefinedBy vair: ;
+vair:DeepFakeDetection rdfs:comment "Dectection of content that is generated using deep fake"@en ;
+                       rdfs:isDefinedBy vair: ;
+                       rdfs:label "Deep Fake Detection"@en ;
                        skos:definition "Dectection of content that is generated using deep fake"@en ;
                        skos:inScheme vair: ;
                        skos:prefLabel "Deep Fake Detection"@en .
@@ -6061,18 +5947,20 @@ vair:DetectingEmotionalState rdfs:comment "Detection of the emotional state of a
                              skos:prefLabel "Detecting Emotional State"@en .
 
 
-vair:DetectingIndividuals rdfs:isDefinedBy vair: ;
-                          skos:definition "Detecting natural persons "@en ;
-                          rdfs:comment "Detecting natural persons "@en ;
-                          skos:inScheme vair: ;
+vair:DetectingIndividuals rdfs:comment "Detecting natural persons "@en ;
+                          rdfs:isDefinedBy vair: ;
                           rdfs:label "Detecting Individuals"@en ;
+                          skos:definition "Detecting natural persons "@en ;
+                          skos:inScheme vair: ;
                           skos:prefLabel "Detecting Individuals"@en .
 
 
-vair:DetectingNon-AuthenticDocument rdfs:isDefinedBy vair: ;
-                                    skos:definition ""@en ;
+vair:DetectingNon-AuthenticDocument rdfs:comment "Detection of  non-authentic documents"@en ;
+                                    rdfs:isDefinedBy vair: ;
+                                    rdfs:label "Detecting Non Authentic Document"@en ;
+                                    skos:definition "Detection of  non-authentic documents"@en ;
                                     skos:inScheme vair: ;
-                                    skos:prefLabel "Detecting Non-Authentic Document"@en .
+                                    skos:prefLabel "Detecting Non Authentic Document"@en .
 
 
 vair:DetectingProhibitedBehaviourDuringTest rdfs:comment "Detecting prohibited behaviour during tests"@en ;
@@ -6151,14 +6039,18 @@ vair:DialogueManagement terms:source "ISO/IEC 22989, 3.6.2" ;
                         skos:prefLabel "Dialogue Management"@en .
 
 
-vair:DiscoveringCrimePatterns rdfs:isDefinedBy vair: ;
+vair:DiscoveringCrimePatterns rdfs:comment "Identifying unkown patterns of crime"@en ;
+                              rdfs:isDefinedBy vair: ;
+                              rdfs:label "Discovering Crime Patterns"@en ;
                               skos:definition "Identifying unkown patterns of crime"@en ;
                               skos:inScheme vair: ;
                               skos:prefLabel "Discovering Crime Patterns"@en ;
                               skos:related vair:LawEnforcement .
 
 
-vair:DiscoveringCrimeRelationships rdfs:isDefinedBy vair: ;
+vair:DiscoveringCrimeRelationships rdfs:comment "Discovering hidden relationships related to crime"@en ;
+                                   rdfs:isDefinedBy vair: ;
+                                   rdfs:label "Discovering Crime Relationships"@en ;
                                    skos:definition "Discovering hidden relationships related to crime"@en ;
                                    skos:inScheme vair: ;
                                    skos:prefLabel "Discovering Crime Relationships"@en ;
@@ -6581,13 +6473,6 @@ vair:GrantingHealthCareServices rdfs:comment "Granting natural persons healthcar
                                 skos:prefLabel "Granting Health Care Services"@en .
 
 
-vair:GrantingPublicAssistanceService rdfs:isDefinedBy vair: ;
-                                     skos:definition ""@en ;
-                                     skos:inScheme vair: ;
-                                     skos:prefLabel "Granting Public Assistance Service"@en ;
-                                     skos:related vair:PublicService .
-
-
 vair:Group rdfs:isDefinedBy vair: ;
            skos:definition "A group of persons such as citizens, marginsalised groups, etc."@en ;
            skos:inScheme vair: ;
@@ -6991,21 +6876,21 @@ vair:IntelligentControlSystem terms:source "AI Watch, Defining Artificial Intell
                               skos:prefLabel "Intelligent Control System"@en .
 
 
-vair:InterpretingFacts rdfs:isDefinedBy vair: ;
+vair:InterpretingFacts rdfs:comment "Interpreting facts"@en ;
+                       rdfs:isDefinedBy vair: ;
+                       rdfs:label "Interpreting Facts"@en ;
                        skos:definition "Interpreting facts"@en ;
-                       rdfs:comment "Interpreting facts"@en ;
                        skos:inScheme vair: ;
                        skos:prefLabel "Interpreting Facts"@en ;
-                       rdfs:label "Interpreting Facts"@en ;
                        skos:related vair:Law .
 
 
-vair:InterpretingLaw rdfs:isDefinedBy vair: ;
+vair:InterpretingLaw rdfs:comment "Interpreting the law"@en ;
+                     rdfs:isDefinedBy vair: ;
+                     rdfs:label "Interpreting Law"@en ;
                      skos:definition "Interpreting the law"@en ;
-                     rdfs:comment "Interpreting the law"@en ;
                      skos:inScheme vair: ;
-                     skos:prefLabel "Interpreting Law"@en ;
-                     rdfs:label "Interpreting Law"@en .
+                     skos:prefLabel "Interpreting Law"@en .
 
 
 vair:Interruption rdfs:comment "Interrupting the system's operation"@en ;
@@ -7293,12 +7178,6 @@ vair:MakingContractTerminationDecision rdfs:comment "Making Contract Termination
                                        skos:related vair:Employment .
 
 
-vair:MakingPrediction rdfs:isDefinedBy vair: ;
-                      skos:definition "Predicting something based on the existing information"@en ;
-                      skos:inScheme vair: ;
-                      skos:prefLabel "Making Prediction"@en .
-
-
 vair:MakingPromotionDecision rdfs:comment "Making decisions on promotion"@en ;
                              rdfs:isDefinedBy vair: ;
                              rdfs:label "Making Promotion Decision"@en ;
@@ -7342,9 +7221,10 @@ vair:ModelInversion terms:source "ALTAI" ;
                     skos:related vair:Model .
 
 
-vair:Monitoring rdfs:isDefinedBy vair: ;
-                skos:definition ""@en ,
-                                "Observing and keeping track of something"@en ;
+vair:Monitoring rdfs:comment "Observing and keeping track of something"@en ;
+                rdfs:isDefinedBy vair: ;
+                rdfs:label "Monitoring"@en ;
+                skos:definition "Observing and keeping track of something"@en ;
                 skos:inScheme vair: ;
                 skos:prefLabel "Monitoring"@en .
 
@@ -7513,16 +7393,10 @@ vair:PartOfSpeechTagging terms:source "ISO/IEC 22989, 3.6.13" ;
                          skos:prefLabel "Part Of Speech Tagging"@en .
 
 
-vair:PatternRecognition rdfs:comment "Identification of unknown patterns in data."@en ;
-                        rdfs:isDefinedBy vair: ;
-                        rdfs:label "Pattern Recognition"@en ;
-                        skos:definition "Identification of unknown patterns in data."@en ;
-                        skos:inScheme vair: ;
-                        skos:prefLabel "Pattern Recognition"@en .
-
-
-vair:PerformingBackgroundCheck rdfs:isDefinedBy vair: ;
-                               skos:definition ""@en ;
+vair:PerformingBackgroundCheck rdfs:comment "Performing background checks"@en ;
+                               rdfs:isDefinedBy vair: ;
+                               rdfs:label "Performing Background Check"@en ;
+                               skos:definition "Performing background checks"@en ;
                                skos:inScheme vair: ;
                                skos:prefLabel "Performing Background Check"@en ;
                                skos:related vair:LawEnforcement .
@@ -7599,27 +7473,6 @@ vair:PotentialJobApplicant rdfs:comment "A person who may have applied for emplo
                            skos:prefLabel "Potential Job Applicant"@en .
 
 
-vair:PredictingOccurrenceOfCriminalOffence rdfs:isDefinedBy vair: ;
-                                           skos:definition ""@en ;
-                                           skos:inScheme vair: ;
-                                           skos:prefLabel "Predicting Occurrence Of Criminal Offence"@en ;
-                                           skos:related vair:LawEnforcement .
-
-
-vair:PredictingRecidivism rdfs:isDefinedBy vair: ;
-                          skos:definition ""@en ;
-                          skos:inScheme vair: ;
-                          skos:prefLabel "Predicting Recidivism"@en ;
-                          skos:related vair:LawEnforcement .
-
-
-vair:PredictingReoccurrenceOfCriminalOffence rdfs:isDefinedBy vair: ;
-                                             skos:definition ""@en ;
-                                             skos:inScheme vair: ;
-                                             skos:prefLabel "Predicting Reoccurrence Of Criminal Offence"@en ;
-                                             skos:related vair:LawEnforcement .
-
-
 vair:Prediction terms:source "ISO/IEC 22989, 3.1.27" ;
                 rdfs:comment "Primary output of an AI system when provided with input data or information."@en ;
                 rdfs:isDefinedBy vair: ;
@@ -7646,8 +7499,10 @@ vair:PrivateService rdfs:comment "Business of supplying a service by a private b
                     skos:prefLabel "Private Service"@en .
 
 
-vair:ProducingRecommendation rdfs:isDefinedBy vair: ;
-                             skos:definition "producing meaningful recommendations to users of the system"@en ;
+vair:ProducingRecommendation rdfs:comment "Producing meaningful recommendations to users of the system"@en ;
+                             rdfs:isDefinedBy vair: ;
+                             rdfs:label "Producing Recommendation"@en ;
+                             skos:definition "Producing meaningful recommendations to users of the system"@en ;
                              skos:inScheme vair: ;
                              skos:prefLabel "Producing Recommendation"@en .
 
@@ -7785,9 +7640,9 @@ vair:RecognisingEmotions rdfs:comment "Recognising emotions of a natural person"
                          skos:prefLabel "Recognising Emotions"@en .
 
 
-vair:RecognisingIndividuals rdfs:isDefinedBy vair: ;
+vair:RecognisingIndividuals rdfs:comment "Recognising natural persons "@en ;
+                            rdfs:isDefinedBy vair: ;
                             skos:definition "Recognising natural persons "@en ;
-                            rdfs:comment "Recognising natural persons "@en ;
                             skos:inScheme vair: ;
                             skos:label "Recognising Individuals"@en ;
                             skos:prefLabel "Recognising Individuals"@en .
@@ -7859,19 +7714,19 @@ vair:RemoteIdentification terms:source "AI Act, Recital 17" ;
                           skos:prefLabel "Remote Identification"@en .
 
 
-vair:ResearchingFacts rdfs:isDefinedBy vair: ;
-                      skos:definition "Researching facts"@en ;
-                      rdfs:comment "Researching facts"@en ;
-                      skos:inScheme vair: ;
+vair:ResearchingFacts rdfs:comment "Researching facts"@en ;
+                      rdfs:isDefinedBy vair: ;
                       rdfs:label "Researching Facts"@en ;
+                      skos:definition "Researching facts"@en ;
+                      skos:inScheme vair: ;
                       skos:prefLabel "Researching Facts"@en .
 
 
-vair:ResearchingLaw rdfs:isDefinedBy vair: ;
-                    skos:definition "Researching the law"@en ;
-                    rdfs:comment "Researching the law"@en ;
-                    skos:inScheme vair: ;
+vair:ResearchingLaw rdfs:comment "Researching the law"@en ;
+                    rdfs:isDefinedBy vair: ;
                     rdfs:label "Researching Law"@en ;
+                    skos:definition "Researching the law"@en ;
+                    skos:inScheme vair: ;
                     skos:prefLabel "Researching Law"@en .
 
 
@@ -8108,11 +7963,11 @@ vair:ServingSafetyFunctionInOperationOfTheSupplyOfWater rdfs:comment "Purpose of
                                                         skos:prefLabel "Serving Safety Function In Operation Of The Supply Of Water"@en .
 
 
-vair:SettlingDispute rdfs:isDefinedBy vair: ;
-                     skos:definition "Alternative dispute resolution"@en ;
-                     rdfs:comment "Alternative dispute resolution"@en ;
-                     skos:inScheme vair: ;
+vair:SettlingDispute rdfs:comment "Alternative dispute resolution"@en ;
+                     rdfs:isDefinedBy vair: ;
                      rdfs:label "Settling Dispute"@en ;
+                     skos:definition "Alternative dispute resolution"@en ;
+                     skos:inScheme vair: ;
                      skos:prefLabel "Settling Dispute"@en .
 
 
@@ -8340,14 +8195,9 @@ vair:Verification terms:source "ISO/IEC 22989, 6.2.4" ;
                   skos:prefLabel "Verification"@en .
 
 
-vair:VerificationOfMigrationSeekerClaims rdfs:isDefinedBy vair: ;
-                                         skos:definition ""@en ;
-                                         skos:inScheme vair: ;
-                                         skos:prefLabel "Verification Of Migration Seeker Claims"@en ;
-                                         skos:related vair:MigrationManagement .
-
-
-vair:VerifyingAuthenticityOfTravelDocument rdfs:isDefinedBy vair: ;
+vair:VerifyingAuthenticityOfTravelDocument rdfs:comment "Verifying of the authenticity of travel documents and supporting documentation of natural persons and detection of non-authentic documents by checking their security features."@en ;
+                                           rdfs:isDefinedBy vair: ;
+                                           rdfs:label "Verifying Authenticity Of Travel Document"@en ;
                                            skos:definition "Verifying of the authenticity of travel documents and supporting documentation of natural persons and detection of non-authentic documents by checking their security features."@en ;
                                            skos:inScheme vair: ;
                                            skos:prefLabel "Verifying Authenticity Of Travel Document"@en .
