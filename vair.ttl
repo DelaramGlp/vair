@@ -1136,6 +1136,15 @@ vair:ISO31000-2018 rdf:type owl:Class ;
                    rdfs:subClassOf airo:Standard .
 
 
+###  https://w3id.org/vair#ISO31073_2022
+vair:ISO31073_2022 rdf:type owl:Class ;
+                   rdfs:subClassOf airo:Standard ;
+                   rdfs:comment "ISO 31073:2022 Risk management — Vocabulary"@en ;
+                   rdfs:label "ISO 31073:2022"@en ;
+                   skos:definition "ISO 31073:2022 Risk management — Vocabulary"@en ;
+                   skos:prefLabel "ISO 31073:2022"@en .
+
+
 ###  https://w3id.org/vair#ISO9001-2015
 vair:ISO9001-2015 rdf:type owl:Class ;
                   rdfs:subClassOf airo:Standard .
@@ -1166,6 +1175,15 @@ vair:ISOIEC23894-2023 rdf:type owl:Class ;
                       rdfs:subClassOf airo:Standard .
 
 
+###  https://w3id.org/vair#ISOIEC23894_2023
+vair:ISOIEC23894_2023 rdf:type owl:Class ;
+                      rdfs:subClassOf airo:Standard ;
+                      rdfs:comment "ISO/IEC 23894:2023 Information technology — Artificial intelligence — Guidance on risk management"@en ;
+                      rdfs:label "ISO/IEC 23894:2023"@en ;
+                      skos:definition "ISO/IEC 23894:2023 Information technology — Artificial intelligence — Guidance on risk management"@en ;
+                      skos:label "ISO/IEC 23894:2023"@en .
+
+
 ###  https://w3id.org/vair#ISOIEC24668-2022
 vair:ISOIEC24668-2022 rdf:type owl:Class ;
                       rdfs:subClassOf airo:Standard .
@@ -1174,6 +1192,15 @@ vair:ISOIEC24668-2022 rdf:type owl:Class ;
 ###  https://w3id.org/vair#ISOIEC38507-2022
 vair:ISOIEC38507-2022 rdf:type owl:Class ;
                       rdfs:subClassOf airo:Standard .
+
+
+###  https://w3id.org/vair#ISOIEC42001_2023
+vair:ISOIEC42001_2023 rdf:type owl:Class ;
+                      rdfs:subClassOf airo:Standard ;
+                      rdfs:comment "ISO/IEC 42001:2023 Information technology — Artificial intelligence — Management system"@en ;
+                      rdfs:label "ISO/IEC 42001:2023"@en ;
+                      skos:definition "ISO/IEC 42001:2023 Information technology — Artificial intelligence — Management system"@en ;
+                      skos:prefLabel "ISO/IEC 42001:2023"@en .
 
 
 ###  https://w3id.org/vair#ISOIECTR20547-1-2020
