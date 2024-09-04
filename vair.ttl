@@ -152,6 +152,10 @@ xsd:date rdf:type rdfs:Datatype .
 skos:Concept rdf:type owl:Class .
 
 
+###  http://www.w3.org/2004/02/skos/core#concept
+skos:concept rdf:type owl:Class .
+
+
 ###  https://w3id.org/airo#AICapability
 airo:AICapability rdf:type owl:Class .
 
@@ -242,16 +246,9 @@ vair:AGI rdf:type owl:Class ;
 
 
 ###  https://w3id.org/vair#AICards
-vair:AICards rdf:type owl:Class, skos:concept ;
-             rdfs:subClassOf airo:Documentation ;
-             rdfs:comment "A form of AI documentation"@en ;
-             rdfs:isDefinedBy vair: ;
-             rdfs:label "AI Cards"@en ;
-             skos:definition "A form of AI documentation"@en ;
-             
-             skos:prefLabel "AI Cards"@en .
+vair:AICards rdf:type owl:Class ;
+             rdfs:subClassOf airo:Documentation .
 
- 
 
 ###  https://w3id.org/vair#Action
 vair:Action rdf:type owl:Class ;
@@ -722,10 +719,10 @@ vair:DetectingIndividuals rdf:type owl:Class ;
 vair:DetectingLies rdf:type owl:Class ;
                    rdfs:subClassOf airo:Purpose ;
                    rdfs:comment "Dectecting lies"@en ;
-                   rdfs:label "Detecting Lies"@en ;
                    rdfs:isDefinedBy vair: ;
-                   skos:inScheme vair: ;
+                   rdfs:label "Detecting Lies"@en ;
                    skos:definition "Dectecting lies"@en ;
+                   skos:inScheme vair: ;
                    skos:prefLabel "Detecting Lies"@en .
 
 
@@ -858,10 +855,10 @@ vair:EmergencyServiceProvider rdf:type owl:Class ;
 vair:EmergencyTriage rdf:type owl:Class ;
                      rdfs:subClassOf airo:Purpose ;
                      rdfs:comment "Emergency triaging"@en ;
+                     rdfs:isDefinedBy vair: ;
                      rdfs:label "Emergency Triage"@en ;
                      skos:definition "Emergency triaging"@en ;
-                     rdfs:isDefinedBy vair: ;
-                    skos:inScheme vair: ;
+                     skos:inScheme vair: ;
                      skos:prefLabel "Emergency Triage"@en .
 
 
@@ -1184,10 +1181,10 @@ vair:ISOIEC23894-2023 rdf:type owl:Class ;
 vair:ISOIEC23894_2023 rdf:type owl:Class ;
                       rdfs:subClassOf airo:Standard ;
                       rdfs:comment "ISO/IEC 23894:2023 Information technology — Artificial intelligence — Guidance on risk management"@en ;
-                      rdfs:label "ISO/IEC 23894:2023"@en ;
-                      skos:inScheme vair: ;
                       rdfs:isDefinedBy vair: ;
+                      rdfs:label "ISO/IEC 23894:2023"@en ;
                       skos:definition "ISO/IEC 23894:2023 Information technology — Artificial intelligence — Guidance on risk management"@en ;
+                      skos:inScheme vair: ;
                       skos:label "ISO/IEC 23894:2023"@en .
 
 
@@ -1205,10 +1202,10 @@ vair:ISOIEC38507-2022 rdf:type owl:Class ;
 vair:ISOIEC42001_2023 rdf:type owl:Class ;
                       rdfs:subClassOf airo:Standard ;
                       rdfs:comment "ISO/IEC 42001:2023 Information technology — Artificial intelligence — Management system"@en ;
+                      rdfs:isDefinedBy vair: ;
                       rdfs:label "ISO/IEC 42001:2023"@en ;
                       skos:definition "ISO/IEC 42001:2023 Information technology — Artificial intelligence — Management system"@en ;
                       skos:inScheme vair: ;
-                      rdfs:isDefinedBy vair: ;
                       skos:prefLabel "ISO/IEC 42001:2023"@en .
 
 
@@ -1336,10 +1333,10 @@ vair:IndustrialRobot rdf:type owl:Class ;
 vair:Influencing rdf:type owl:Class ;
                  rdfs:subClassOf airo:Purpose ;
                  rdfs:comment "Purpose of influencing"@en ;
-                 rdfs:label "Influencing"@en ;
                  rdfs:isDefinedBy vair: ;
-                 skos:inScheme vair: ;
+                 rdfs:label "Influencing"@en ;
                  skos:definition "Purpose of influencing"@en ;
+                 skos:inScheme vair: ;
                  skos:prefLabel "Influencing"@en .
 
 
@@ -1357,10 +1354,10 @@ vair:InfluencingReferendumOutcome rdf:type owl:Class ;
 vair:InfluencingVotingBehaviour rdf:type owl:Class ;
                                 rdfs:subClassOf vair:Influencing ;
                                 rdfs:comment "Purpose of influencing voting behaviour of people"@en ;
-                                rdfs:label "Influencing Voting Behaviour"@en ;
                                 rdfs:isDefinedBy vair: ;
-                               skos:inScheme vair: ;
+                                rdfs:label "Influencing Voting Behaviour"@en ;
                                 skos:definition "Purpose of influencing voting behaviour of people"@en ;
+                                skos:inScheme vair: ;
                                 skos:prefLabel "Influencing Voting Behaviour"@en .
 
 
@@ -2171,6 +2168,15 @@ vair:Right rdf:type owl:Class ;
            rdfs:subClassOf airo:AreaOfImpact .
 
 
+###  https://w3id.org/vair#RightToNondiscrimination
+vair:RightToNondiscrimination rdf:type owl:Class ;
+                              rdfs:subClassOf airo:AreaOfImpact ;
+                              rdfs:comment "Refers to the fundamental right to non-discrimination"@en ;
+                              rdfs:label "Right To Non-discrimination"@en ;
+                              skos:definition "Refers to the fundamental right to non-discrimination"@en ;
+                              skos:prefLabel "Right To Non-discrimination"@en .
+
+
 ###  https://w3id.org/vair#Robot
 vair:Robot rdf:type owl:Class ;
            rdfs:subClassOf airo:AISystem ;
@@ -2248,9 +2254,9 @@ vair:ServingSafetyFunctionInManagement rdf:type owl:Class ;
 vair:ServingSafetyFunctionInManagementOfCriticalDigitalInfrastructure rdf:type owl:Class ;
                                                                       rdfs:subClassOf vair:ServingSafetyFunctionInManagement ;
                                                                       rdfs:comment "Purpose of providing safety function in management of critical digital infrastructure"@en ;
+                                                                      rdfs:isDefinedBy vair: ;
                                                                       rdfs:label "Serving Safety Function In Management Of Critical Digital Infrastructure"@en ;
                                                                       skos:definition "Purpose of providing safety function in management of critical digital infrastructure"@en ;
-                                                                      rdfs:isDefinedBy vair: ;
                                                                       skos:inScheme vair: ;
                                                                       skos:prefLabel "Serving Safety Function In Management Of Critical Digital Infrastructure"@en .
 
@@ -2290,9 +2296,9 @@ vair:ServingSafetyFunctionInOperationOfCriticalDigitalInfrastructure rdf:type ow
                                                                      rdfs:subClassOf vair:ServingSafetyFunctionInOperation ;
                                                                      rdfs:comment "Purpose of providing safety function in operation of critical digital infrastructure"@en ;
                                                                      rdfs:isDefinedBy vair: ;
-                                                                      skos:inScheme vair: ;
                                                                      rdfs:label "Serving Safety Function In Operation Of Critical Digital Infrastructure"@en ;
                                                                      skos:definition "Purpose of providing safety function in operation of critical digital infrastructure"@en ;
+                                                                     skos:inScheme vair: ;
                                                                      skos:prefLabel "Serving Safety Function In Operation Of Critical Digital Infrastructure"@en .
 
 
@@ -2568,118 +2574,135 @@ vair:WrongDataDesignChoice rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
-
+###  http://www.semanticweb.org/owl/owlapi/turtle#API
 :API rdf:type owl:NamedIndividual ,
               skos:Concept ,
               vair:Concept .
 
 
-
+###  http://www.semanticweb.org/owl/owlapi/turtle#ActiveInvolvement
 :ActiveInvolvement rdf:type owl:NamedIndividual ,
                             skos:Concept ,
                             vair:Concept .
 
 
-
+###  http://www.semanticweb.org/owl/owlapi/turtle#AssistiveAutomation
 :AssistiveAutomation rdf:type owl:NamedIndividual ,
                               skos:Concept ,
                               vair:Concept .
 
 
-
+###  http://www.semanticweb.org/owl/owlapi/turtle#Autonomy
 :Autonomy rdf:type owl:NamedIndividual ,
                    skos:Concept ,
                    vair:Concept .
 
 
-
+###  http://www.semanticweb.org/owl/owlapi/turtle#CannotOptOutOfOutput
 :CannotOptOutOfOutput rdf:type owl:NamedIndividual ,
                                skos:Concept ,
                                vair:Concept .
 
 
-
+###  http://www.semanticweb.org/owl/owlapi/turtle#ChallengeOutput
 :ChallengeOutput rdf:type owl:NamedIndividual ,
                           skos:Concept ,
                           vair:Concept .
 
 
-
+###  http://www.semanticweb.org/owl/owlapi/turtle#ConditionalAutomation
 :ConditionalAutomation rdf:type owl:NamedIndividual ,
                                 skos:Concept ,
                                 vair:Concept .
 
 
+###  http://www.semanticweb.org/owl/owlapi/turtle#CorrectOutput
 :CorrectOutput rdf:type owl:NamedIndividual ,
                         skos:Concept ,
                         vair:Concept .
 
 
+###  http://www.semanticweb.org/owl/owlapi/turtle#DeepLearning
 :DeepLearning rdf:type owl:NamedIndividual ,
                        skos:Concept ,
                        vair:Concept .
 
 
+###  http://www.semanticweb.org/owl/owlapi/turtle#FullAutomation
 :FullAutomation rdf:type owl:NamedIndividual ,
                          skos:Concept ,
                          vair:Concept .
 
 
+###  http://www.semanticweb.org/owl/owlapi/turtle#HighAutomation
 :HighAutomation rdf:type owl:NamedIndividual ,
                          skos:Concept ,
                          vair:Concept .
 
 
+###  http://www.semanticweb.org/owl/owlapi/turtle#InformedInvolvement
 :InformedInvolvement rdf:type owl:NamedIndividual ,
                               skos:Concept ,
                               vair:Concept .
 
 
+###  http://www.semanticweb.org/owl/owlapi/turtle#IntendedInvolvement
 :IntendedInvolvement rdf:type owl:NamedIndividual ,
                               skos:Concept ,
                               vair:Concept .
 
 
+###  http://www.semanticweb.org/owl/owlapi/turtle#MachineLearning
 :MachineLearning rdf:type owl:NamedIndividual ,
                           skos:Concept ,
                           vair:Concept .
 
 
+###  http://www.semanticweb.org/owl/owlapi/turtle#NoAutomation
 :NoAutomation rdf:type owl:NamedIndividual ,
                        skos:Concept ,
                        vair:Concept .
 
 
+###  http://www.semanticweb.org/owl/owlapi/turtle#PartialAutomation
 :PartialAutomation rdf:type owl:NamedIndividual ,
                             skos:Concept ,
                             vair:Concept .
 
 
+###  http://www.semanticweb.org/owl/owlapi/turtle#PassiveInvolvement
 :PassiveInvolvement rdf:type owl:NamedIndividual ,
                              skos:Concept ,
                              vair:Concept .
 
 
+###  http://www.semanticweb.org/owl/owlapi/turtle#Software
 :Software rdf:type owl:NamedIndividual ,
                    skos:Concept ,
                    vair:Concept .
 
 
+###  http://www.semanticweb.org/owl/owlapi/turtle#UninformedInvolvement
 :UninformedInvolvement rdf:type owl:NamedIndividual ,
                                 skos:Concept ,
                                 vair:Concept .
 
 
+###  http://www.semanticweb.org/owl/owlapi/turtle#UnintendedInvolvement
 :UnintendedInvolvement rdf:type owl:NamedIndividual ,
                                 skos:Concept ,
                                 vair:Concept .
-
 
 
 ###  https://w3id.org/vair#AGI
 vair:AGI rdf:type owl:NamedIndividual ,
                   skos:Concept ,
                   vair:Concept .
+
+
+###  https://w3id.org/vair#AICards
+vair:AICards rdf:type owl:NamedIndividual ,
+                      skos:concept .
 
 
 ###  https://w3id.org/vair#AIComponent
@@ -5412,6 +5435,13 @@ vair:AGI terms:source "ISO/IEC 22989, 3.1.14" ;
          skos:inScheme vair: ;
          skos:prefLabel "Artificial General Intelligence"@en ;
          skos:related vair:GeneralAI .
+
+
+vair:AICards rdfs:comment "A form of AI documentation"@en ;
+             rdfs:isDefinedBy vair: ;
+             rdfs:label "AI Cards"@en ;
+             skos:definition "A form of AI documentation"@en ;
+             skos:prefLabel "AI Cards"@en .
 
 
 vair:Action rdfs:comment "Action performed by a system."@en ;
