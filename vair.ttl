@@ -8,9 +8,9 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vair: <https://w3id.org/vair#> .
 @prefix terms: <http://purl.org/dc/terms/> .
-@base <http://www.semanticweb.org/owl/owlapi/turtle#> .
+@base <https://w3id.org/vair#> .
 
-[ rdf:type owl:Ontology ;
+<https://w3id.org/vair> rdf:type owl:Ontology ;
    terms:bibliographicCitation "Delaram Golpayegani, Harshvardhan J. Pandit, and Dave Lewis. To Be High-Risk, or Not To Be—Semantic Specifications and Implications of the AI Act’s High-Risk AI Applications and Harmonised Standards. Proceedings of the 2023 ACM Conference on Fairness, Accountability, and Transparency. 2023" ;
    terms:contributor "Dave Lewis" ,
                      "Harshvardhan J. Pandit" ;
@@ -32,7 +32,7 @@
    rdfs:label "Vocabulary of AI Risks"@en ;
    owl:versionInfo "1.0"@en ;
    <http://xmlns.com/foaf/0.1/logo> <https://github.com/DelaramGlp/airo/blob/main/figures/airo-logo.png?raw=true>
- ] .
+ .
 
 #################################################################
 #    Annotation properties
@@ -2170,7 +2170,7 @@ vair:Right rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#RightToNondiscrimination
 vair:RightToNondiscrimination rdf:type owl:Class ;
-                              rdfs:subClassOf airo:AreaOfImpact ;
+                              rdfs:subClassOf vair:Right ;
                               rdfs:comment "Refers to the fundamental right to non-discrimination"@en ;
                               rdfs:label "Right To Non-discrimination"@en ;
                               skos:definition "Refers to the fundamental right to non-discrimination"@en ;
