@@ -1,77 +1,4 @@
 [ {
-  "@id" : "_:genid1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "http://purl.org/dc/terms/bibliographicCitation" : [ {
-    "@value" : "Delaram Golpayegani, Harshvardhan J. Pandit, and Dave Lewis. To Be High-Risk, or Not To Be—Semantic Specifications and Implications of the AI Act’s High-Risk AI Applications and Harmonised Standards. Proceedings of the 2023 ACM Conference on Fairness, Accountability, and Transparency. 2023"
-  } ],
-  "http://purl.org/dc/terms/contributor" : [ {
-    "@value" : "Dave Lewis"
-  }, {
-    "@value" : "Harshvardhan J. Pandit"
-  } ],
-  "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2022-12-22"
-  } ],
-  "http://purl.org/dc/terms/creator" : [ {
-    "@value" : "Delaram Golpayegani"
-  } ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "VAIR is a taxonomy of AI and risk concepts."
-  } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-01-01"
-  } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@id" : "https://creativecommons.org/licenses/by/4.0/"
-  } ],
-  "http://purl.org/dc/terms/modified" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2024-07-18"
-  } ],
-  "http://purl.org/dc/terms/publisher" : [ {
-    "@value" : "ADAPT Centre, Trinity College Dublin"
-  } ],
-  "http://purl.org/dc/terms/source" : [ {
-    "@language" : "en",
-    "@value" : "EU AI Act"
-  }, {
-    "@language" : "en",
-    "@value" : "ISO 31000 series"
-  }, {
-    "@language" : "en",
-    "@value" : "ISO/IEC 22989:2023"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@value" : "VAIR"
-  } ],
-  "http://purl.org/ontology/bibo/doi" : [ {
-    "@language" : "en",
-    "@value" : "10.5281/zenodo.10894914"
-  } ],
-  "http://purl.org/ontology/bibo/status" : [ {
-    "@value" : "http://purl.org/ontology/bibo/status/published"
-  } ],
-  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
-    "@value" : "vair"
-  } ],
-  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
-    "@value" : "https://w3id.org/vair#"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Vocabulary of AI Risks"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "en",
-    "@value" : "1.0"
-  } ],
-  "http://xmlns.com/foaf/0.1/logo" : [ {
-    "@id" : "https://github.com/DelaramGlp/airo/blob/main/figures/airo-logo.png?raw=true"
-  } ]
-}, {
   "@id" : "http://purl.org/dc/terms/bibliographicCitation",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -336,6 +263,9 @@
   "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "http://www.w3.org/2004/02/skos/core#definition",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -420,26 +350,77 @@
   "@id" : "https://w3id.org/airo#Standard",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "https://w3id.org/vair#",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  "@id" : "https://w3id.org/vair",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/bibliographicCitation" : [ {
+    "@value" : "Delaram Golpayegani, Harshvardhan J. Pandit, and Dave Lewis. To Be High-Risk, or Not To Be—Semantic Specifications and Implications of the AI Act’s High-Risk AI Applications and Harmonised Standards. Proceedings of the 2023 ACM Conference on Fairness, Accountability, and Transparency. 2023"
+  } ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Dave Lewis"
   }, {
-    "@id" : "https://w3id.org/vair#Concept"
+    "@value" : "Harshvardhan J. Pandit"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/vair#"
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2022-12-22"
   } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Delaram Golpayegani"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : ""
+    "@value" : "VAIR is a taxonomy of AI and risk concepts."
   } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "https://w3id.org/vair#"
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-01-01"
   } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-07-18"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@value" : "ADAPT Centre, Trinity College Dublin"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
     "@language" : "en",
-    "@value" : ""
+    "@value" : "EU AI Act"
+  }, {
+    "@language" : "en",
+    "@value" : "ISO 31000 series"
+  }, {
+    "@language" : "en",
+    "@value" : "ISO/IEC 22989:2023"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "VAIR"
+  } ],
+  "http://purl.org/ontology/bibo/doi" : [ {
+    "@language" : "en",
+    "@value" : "10.5281/zenodo.10894914"
+  } ],
+  "http://purl.org/ontology/bibo/status" : [ {
+    "@value" : "http://purl.org/ontology/bibo/status/published"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "vair"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://w3id.org/vair#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Vocabulary of AI Risks"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "en",
+    "@value" : "1.0"
+  } ],
+  "http://xmlns.com/foaf/0.1/logo" : [ {
+    "@id" : "https://github.com/DelaramGlp/airo/blob/main/figures/airo-logo.png?raw=true"
   } ]
 }, {
   "@id" : "https://w3id.org/vair#AGI",
@@ -482,7 +463,10 @@
   } ]
 }, {
   "@id" : "https://w3id.org/vair#AICards",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#concept"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A form of AI documentation"
@@ -500,9 +484,6 @@
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "A form of AI documentation"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "https://w3id.org/vair#"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -3264,6 +3245,9 @@
     "@language" : "en",
     "@value" : "Dectecting lies"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/vair#"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Detecting Lies"
@@ -3274,6 +3258,9 @@
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "Dectecting lies"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/vair#"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -4137,6 +4124,9 @@
     "@language" : "en",
     "@value" : "Emergency triaging"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/vair#"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Emergency Triage"
@@ -4147,6 +4137,9 @@
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "Emergency triaging"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/vair#"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -4564,7 +4557,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "EvaluatingEligibilityforHealthCareServices"
+    "@value" : "Evaluating Eligibility For Healthcare Services"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/vair#EvaluatingEligibilityForPublicAssistanceServices"
@@ -4578,7 +4571,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
-    "@value" : "EvaluatingEligibilityforHealthCareServices"
+    "@value" : "Evaluating Eligibility For Healthcare Services"
   } ]
 }, {
   "@id" : "https://w3id.org/vair#EvaluatingEmergencyCall",
@@ -6012,6 +6005,28 @@
     "@value" : "ISO 31000:2018"
   } ]
 }, {
+  "@id" : "https://w3id.org/vair#ISO31073_2022",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "ISO 31073:2022 Risk management — Vocabulary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ISO 31073:2022"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/airo#Standard"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "ISO 31073:2022 Risk management — Vocabulary"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "ISO 31073:2022"
+  } ]
+}, {
   "@id" : "https://w3id.org/vair#ISO9001-2015",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -6218,6 +6233,34 @@
     "@value" : "ISO/IEC 23894:2023"
   } ]
 }, {
+  "@id" : "https://w3id.org/vair#ISOIEC23894_2023",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "ISO/IEC 23894:2023 Information technology — Artificial intelligence — Guidance on risk management"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/vair#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ISO/IEC 23894:2023"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/airo#Standard"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "ISO/IEC 23894:2023 Information technology — Artificial intelligence — Guidance on risk management"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/vair#"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#label" : [ {
+    "@language" : "en",
+    "@value" : "ISO/IEC 23894:2023"
+  } ]
+}, {
   "@id" : "https://w3id.org/vair#ISOIEC24668-2022",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -6282,6 +6325,34 @@
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "ISO/IEC 38507:2022"
+  } ]
+}, {
+  "@id" : "https://w3id.org/vair#ISOIEC42001_2023",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "ISO/IEC 42001:2023 Information technology — Artificial intelligence — Management system"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/vair#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ISO/IEC 42001:2023"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/airo#Standard"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "ISO/IEC 42001:2023 Information technology — Artificial intelligence — Management system"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/vair#"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "ISO/IEC 42001:2023"
   } ]
 }, {
   "@id" : "https://w3id.org/vair#ISOIECTR20547-1-2020",
@@ -7110,6 +7181,9 @@
     "@language" : "en",
     "@value" : "Purpose of influencing"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/vair#"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Influencing"
@@ -7120,6 +7194,9 @@
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "Purpose of influencing"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/vair#"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -7198,6 +7275,9 @@
     "@language" : "en",
     "@value" : "Purpose of influencing voting behaviour of people"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/vair#"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Influencing Voting Behaviour"
@@ -7208,6 +7288,9 @@
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "Purpose of influencing voting behaviour of people"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/vair#"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -12199,6 +12282,28 @@
     "@value" : "Right"
   } ]
 }, {
+  "@id" : "https://w3id.org/vair#RightToNondiscrimination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Refers to the fundamental right to non-discrimination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Right To Non-discrimination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/vair#Right"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Refers to the fundamental right to non-discrimination"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Right To Non-discrimination"
+  } ]
+}, {
   "@id" : "https://w3id.org/vair#Robot",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -12650,6 +12755,9 @@
     "@language" : "en",
     "@value" : "Purpose of providing safety function in management of critical digital infrastructure"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/vair#"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Serving Safety Function In Management Of Critical Digital Infrastructure"
@@ -12660,6 +12768,9 @@
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "Purpose of providing safety function in management of critical digital infrastructure"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/vair#"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -12870,6 +12981,9 @@
     "@language" : "en",
     "@value" : "Purpose of providing safety function in operation of critical digital infrastructure"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/vair#"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Serving Safety Function In Operation Of Critical Digital Infrastructure"
@@ -12880,6 +12994,9 @@
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "Purpose of providing safety function in operation of critical digital infrastructure"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "https://w3id.org/vair#"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -13692,6 +13809,10 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/vair#"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Test Data Risk Source"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/vair#DataRiskSource"
   } ],
@@ -13701,6 +13822,10 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
     "@id" : "https://w3id.org/vair#"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Test Data Risk Source"
   } ]
 }, {
   "@id" : "https://w3id.org/vair#TestLog",
