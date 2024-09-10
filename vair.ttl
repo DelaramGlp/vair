@@ -16,6 +16,7 @@
                      "Harshvardhan J. Pandit" ;
    terms:created "2022-12-22"^^xsd:date ;
    terms:creator "Delaram Golpayegani" ;
+   owl:versionIRI <https://w3id.org/vair/1.0> ;
    terms:description "VAIR is a taxonomy of AI and risk concepts."@en ;
    terms:issued "2023-01-01"^^xsd:date ;
    terms:license <https://creativecommons.org/licenses/by/4.0/> ;
