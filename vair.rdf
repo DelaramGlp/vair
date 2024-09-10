@@ -1,14 +1,16 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/vair#"
-     xml:base="https://w3id.org/vair"
+<rdf:RDF xmlns="http://www.semanticweb.org/owl/owlapi/turtle#"
+     xml:base="http://www.semanticweb.org/owl/owlapi/turtle"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:airo="https://w3id.org/airo#"
      xmlns:bibo="http://purl.org/ontology/bibo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vair="https://w3id.org/vair#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/vair">
@@ -856,7 +858,12 @@
 
     <!-- https://w3id.org/vair#Concept -->
 
-    <owl:Class rdf:about="https://w3id.org/vair#Concept"/>
+    <owl:Class rdf:about="https://w3id.org/vair#Concept">
+        <rdfs:comment xml:lang="en">Represents a concept in VAIR</rdfs:comment>
+        <rdfs:label xml:lang="en">Concept</rdfs:label>
+        <skos:definition xml:lang="en">Represents a concept in VAIR.</skos:definition>
+        <skos:prefLabel xml:lang="en">Concept</skos:prefLabel>
+    </owl:Class>
     
 
 
@@ -1462,9 +1469,10 @@
     <!-- https://w3id.org/vair#ExaminingApplication -->
 
     <owl:Class rdf:about="https://w3id.org/vair#ExaminingApplication">
+        <rdfs:comment xml:lang="en">Purposes related to examining an application</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <skos:definition xml:lang="en"></skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Examining Application</rdfs:label>
+        <skos:definition xml:lang="en">Purposes related to examining an application</skos:definition>
         <skos:prefLabel xml:lang="en">Examining Application</skos:prefLabel>
     </owl:Class>
     
