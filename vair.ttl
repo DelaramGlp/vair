@@ -8,32 +8,31 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vair: <https://w3id.org/vair#> .
 @prefix terms: <http://purl.org/dc/terms/> .
-@base <https://w3id.org/vair#> .
+@base <http://www.semanticweb.org/owl/owlapi/turtle#> .
 
 <https://w3id.org/vair> rdf:type owl:Ontology ;
-   terms:bibliographicCitation "Delaram Golpayegani, Harshvardhan J. Pandit, and Dave Lewis. To Be High-Risk, or Not To Be—Semantic Specifications and Implications of the AI Act’s High-Risk AI Applications and Harmonised Standards. Proceedings of the 2023 ACM Conference on Fairness, Accountability, and Transparency. 2023" ;
-   terms:contributor "Dave Lewis" ,
-                     "Harshvardhan J. Pandit" ;
-   terms:created "2022-12-22"^^xsd:date ;
-   terms:creator "Delaram Golpayegani" ;
-   owl:versionIRI <https://w3id.org/vair/1.0> ;
-   terms:description "VAIR is a taxonomy of AI and risk concepts."@en ;
-   terms:issued "2023-01-01"^^xsd:date ;
-   terms:license <https://creativecommons.org/licenses/by/4.0/> ;
-   terms:modified "2024-07-18"^^xsd:date ;
-   terms:publisher "ADAPT Centre, Trinity College Dublin" ;
-   terms:source "EU AI Act"@en ,
-                "ISO 31000 series"@en ,
-                "ISO/IEC 22989:2023"@en ;
-   terms:title "VAIR" ;
-   <http://purl.org/ontology/bibo/doi> "10.5281/zenodo.10894914"@en ;
-   <http://purl.org/ontology/bibo/status> "http://purl.org/ontology/bibo/status/published" ;
-   <http://purl.org/vocab/vann/preferredNamespacePrefix> "vair" ;
-   <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/vair#" ;
-   rdfs:label "Vocabulary of AI Risks"@en ;
-   owl:versionInfo "1.0"@en ;
-   <http://xmlns.com/foaf/0.1/logo> <https://github.com/DelaramGlp/airo/blob/main/figures/airo-logo.png?raw=true>
- .
+                         owl:versionIRI <https://w3id.org/vair/1.0> ;
+                         terms:bibliographicCitation "Delaram Golpayegani, Harshvardhan J. Pandit, and Dave Lewis. To Be High-Risk, or Not To Be—Semantic Specifications and Implications of the AI Act’s High-Risk AI Applications and Harmonised Standards. Proceedings of the 2023 ACM Conference on Fairness, Accountability, and Transparency. 2023" ;
+                         terms:contributor "Dave Lewis" ,
+                                           "Harshvardhan J. Pandit" ;
+                         terms:created "2022-12-22"^^xsd:date ;
+                         terms:creator "Delaram Golpayegani" ;
+                         terms:description "VAIR is a taxonomy of AI and risk concepts."@en ;
+                         terms:issued "2023-01-01"^^xsd:date ;
+                         terms:license <https://creativecommons.org/licenses/by/4.0/> ;
+                         terms:modified "2024-07-18"^^xsd:date ;
+                         terms:publisher "ADAPT Centre, Trinity College Dublin" ;
+                         terms:source "EU AI Act"@en ,
+                                      "ISO 31000 series"@en ,
+                                      "ISO/IEC 22989:2023"@en ;
+                         terms:title "VAIR" ;
+                         <http://purl.org/ontology/bibo/doi> "10.5281/zenodo.10894914"@en ;
+                         <http://purl.org/ontology/bibo/status> "http://purl.org/ontology/bibo/status/published" ;
+                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "vair" ;
+                         <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/vair#" ;
+                         rdfs:label "Vocabulary of AI Risks"@en ;
+                         owl:versionInfo "1.0"@en ;
+                         <http://xmlns.com/foaf/0.1/logo> <https://github.com/DelaramGlp/airo/blob/main/figures/airo-logo.png?raw=true> .
 
 #################################################################
 #    Annotation properties
@@ -568,7 +567,11 @@ vair:ComputerVision rdf:type owl:Class ;
 
 
 ###  https://w3id.org/vair#Concept
-vair:Concept rdf:type owl:Class .
+vair:Concept rdf:type owl:Class ;
+             rdfs:comment "Represents a concept in VAIR"@en ;
+             rdfs:label "Concept"@en ;
+             skos:definition "Represents a concept in VAIR."@en ;
+             skos:prefLabel "Concept"@en .
 
 
 ###  https://w3id.org/vair#ConditionalAutomation
@@ -963,7 +966,13 @@ vair:EvaluatingReliabilityOfEvidenceInProsecutionOfCriminalOffences rdf:type owl
                                                                     rdfs:subClassOf vair:Assessment .
 
 
-
+###  https://w3id.org/vair#ExaminingApplication
+vair:ExaminingApplication rdf:type owl:Class ;
+                          rdfs:comment "Purposes related to examining an application"@en ;
+                          rdfs:isDefinedBy vair: ;
+                          rdfs:label "Examining Application"@en ;
+                          skos:definition "Purposes related to examining an application"@en ;
+                          skos:prefLabel "Examining Application"@en .
 
 
 ###  https://w3id.org/vair#ExaminingAsylumApplication
@@ -1009,10 +1018,10 @@ vair:FeedForwardNeuralNetwork rdf:type owl:Class ;
 ###  https://w3id.org/vair#FireBrigade
 vair:FireBrigade rdf:type owl:Class ;
                  rdfs:subClassOf vair:EmergencyServiceProvider ;
+                 rdfs:comment "Refers to fire department"@en ;
                  rdfs:isDefinedBy vair: ;
                  rdfs:label "Fire Brigade"@en ;
                  skos:definition "Refers to fire department"@en ;
-                 rdfs:comment "Refers to fire department"@en ;
                  skos:inScheme vair: ;
                  skos:prefLabel "Fire Brigade"@en .
 
@@ -3586,8 +3595,6 @@ vair:EvolutionaryAlgorithm rdf:type owl:NamedIndividual ,
                                     vair:Concept .
 
 
-
-
 ###  https://w3id.org/vair#ExaminingAsylumApplication
 vair:ExaminingAsylumApplication rdf:type owl:NamedIndividual ,
                                          skos:Concept ,
@@ -5624,12 +5631,12 @@ vair:AssessingSecurityRisk rdfs:comment "Assess security risk posed by a person"
                            skos:prefLabel "Assessing Security Risk"@en .
 
 
-vair:Assessment rdfs:isDefinedBy vair: ;
+vair:Assessment rdfs:comment "Assessment and evaluation"@en ;
+                rdfs:isDefinedBy vair: ;
+                rdfs:label "Assessment"@en ;
                 skos:definition "Assessment and evaluation"@en ;
                 skos:inScheme vair: ;
-                skos:prefLabel "Assessment"@en ;
-                rdfs:label "Assessment"@en ;
-                rdfs:comment  "Assessment and evaluation"@en.
+                skos:prefLabel "Assessment"@en .
 
 
 vair:AssigningPersonsToEducationalInstitutions rdfs:comment "Assigning natural persons to educational institutions at all levels."@en ;
@@ -5683,10 +5690,10 @@ vair:AutomaticSummarisation terms:source "ISO/IEC 22989, 3.6.1"@en ;
                             skos:prefLabel "Automatic Summarisation"@en .
 
 
-vair:BayesianEstimation rdfs:isDefinedBy vair: ;
+vair:BayesianEstimation rdfs:comment "Refers to Bayesian estimation approach"@en ;
+                        rdfs:isDefinedBy vair: ;
                         rdfs:label "Bayesian Estimation"@en ;
                         skos:definition "Refers to Bayesian estimation approach"@en ;
-                        rdfs:comment "Refers to Bayesian estimation approach"@en ;
                         skos:inScheme vair: ;
                         skos:prefLabel "Bayesian Estimation"@en .
 
@@ -5885,11 +5892,11 @@ vair:Decision rdfs:comment "Decision generated by an AI system"@en ;
               skos:prefLabel "Decision"@en .
 
 
-vair:DecisionMaking rdfs:isDefinedBy vair: ;
+vair:DecisionMaking rdfs:comment "Generation of decisions"@en ;
+                    rdfs:isDefinedBy vair: ;
+                    rdfs:label "Decision Making"@en ;
                     skos:definition "Generation of decisions"@en ;
                     skos:inScheme vair: ;
-                    rdfs:label "Decision Making"@en ;
-                    rdfs:comment "Generation of decisions"@en ;
                     skos:prefLabel "Decision Making"@en .
 
 
@@ -6002,8 +6009,8 @@ vair:DetectingProhibitedBehaviourDuringTest rdfs:comment "Detecting prohibited b
 
 vair:Detection rdfs:comment "Purposes related to detecting"@en ;
                rdfs:isDefinedBy vair: ;
-               skos:definition "Purposes related to detecting"@en ;
                rdfs:label "Detection"@en ;
+               skos:definition "Purposes related to detecting"@en ;
                skos:inScheme vair: ;
                skos:prefLabel "Detection"@en .
 
@@ -6232,10 +6239,10 @@ vair:ErrorInDataCollection rdfs:comment "Refers to errors in data collection pro
 
 vair:ErrorInDataPrepration rdfs:comment "Refers to errors in data prepration process"@en ;
                            rdfs:isDefinedBy vair: ;
+                           rdfs:label "Error In Data Prepration"@en ;
                            skos:definition "Refers to errors in data prepration process"@en ;
                            skos:inScheme vair: ;
                            skos:prefLabel "Error In Data Prepration"@en ;
-                           rdfs:label "Error In Data Prepration"@en ;
                            skos:related vair:DataPrepration .
 
 
@@ -6330,12 +6337,6 @@ vair:EvaluatingReliabilityOfEvidenceInProsecutionOfCriminalOffences rdfs:comment
                                                                     skos:definition "Evaluation of the reliability of evidence in the course of prosecution of criminal offences"@en ;
                                                                     skos:inScheme vair: ;
                                                                     skos:prefLabel "Evaluating Reliability Of Evidence In Prosecution Of Criminal Offences "@en .
-
-
-vair:ExaminingApplication rdfs:isDefinedBy vair: ;
-                          skos:definition ""@en ;
-                          skos:inScheme vair: ;
-                          skos:prefLabel "Examining Application"@en .
 
 
 vair:ExaminingAsylumApplication rdfs:comment "Examining asylum application"@en ;
@@ -6477,12 +6478,12 @@ vair:GrantingHealthCareServices rdfs:comment "Granting natural persons healthcar
                                 skos:prefLabel "Granting Health Care Services"@en .
 
 
-vair:Group rdfs:isDefinedBy vair: ;
+vair:Group rdfs:comment "A group of persons such as citizens, marginsalised groups, etc."@en ;
+           rdfs:isDefinedBy vair: ;
+           rdfs:label "Group"@en ;
            skos:definition "A group of persons such as citizens, marginsalised groups, etc."@en ;
            skos:inScheme vair: ;
-           skos:prefLabel "Group"@en;
-           rdfs:label "Group"@en;
-           rdfs:comment "A group of persons such as citizens, marginsalised groups, etc."@en .
+           skos:prefLabel "Group"@en .
 
 
 vair:Hardware rdfs:comment "Physical equipment/components"@en ;
@@ -6790,11 +6791,11 @@ vair:IndividualIntendsToEnterState rdfs:comment "A person who intends to enter i
                                    skos:prefLabel "Individual Intends To Enter State"@en .
 
 
-vair:IndividualRiskAssessment rdfs:isDefinedBy vair: ;
+vair:IndividualRiskAssessment rdfs:comment "Assessing the risk of a natural person for offending or reoffending or the risk for potential victims of criminal offences"@en ;
+                              rdfs:isDefinedBy vair: ;
+                              rdfs:label "Individual Risk Assessment"@en ;
                               skos:definition "Assessing the risk of a natural person for offending or reoffending or the risk for potential victims of criminal offences"@en ;
                               skos:inScheme vair: ;
-                              rdfs:label "Individual Risk Assessment"@en ;
-                              rdfs:comment  "Assessing the risk of a natural person for offending or reoffending or the risk for potential victims of criminal offences"@en ;
                               skos:prefLabel "Individual Risk Assessment"@en ;
                               skos:related vair:LawEnforcement .
 
@@ -7020,10 +7021,10 @@ vair:KnowledgeBasedTechnique rdfs:comment "Techniques based on the use of knowle
                              skos:prefLabel "Knowledge Based Technique"@en .
 
 
-vair:KnowledgeReasoning rdfs:isDefinedBy vair: ;
-                        skos:definition "Capturing knowledge and acquiring new knowledge"@en ;
-                        rdfs:comment "Capturing knowledge and acquiring new knowledge"@en ;
+vair:KnowledgeReasoning rdfs:comment "Capturing knowledge and acquiring new knowledge"@en ;
+                        rdfs:isDefinedBy vair: ;
                         rdfs:label "Knowledge Reasoning"@en ;
+                        skos:definition "Capturing knowledge and acquiring new knowledge"@en ;
                         skos:inScheme vair: ;
                         skos:prefLabel "Knowledge Reasoning"@en .
 
@@ -7065,10 +7066,10 @@ vair:LawEnforcementAuthorityAgent rdfs:comment "An entity that acts on behalf of
                                   skos:prefLabel "Law Enforcement Authority Agent"@en .
 
 
-vair:Library rdfs:isDefinedBy vair: ;
+vair:Library rdfs:comment "A collection of pre-written code"@en ;
+             rdfs:isDefinedBy vair: ;
              rdfs:label "Library"@en ;
              skos:definition "A collection of pre-written code"@en ;
-             rdfs:comment "A collection of pre-written code"@en ;
              skos:inScheme vair: ;
              skos:prefLabel "Library"@en .
 
@@ -7109,12 +7110,12 @@ vair:LogicBasedTechnique rdfs:comment "Refers to logic based techniques."@en ;
                          skos:prefLabel "Logic Based Technique"@en .
 
 
-vair:LongShortTermMemory rdfs:isDefinedBy vair: ;
+vair:LongShortTermMemory terms:source "ISO/IEC 22989 3.4.7" ;
+                         rdfs:comment "type of recurrent neural network that processes sequential data with a satisfactory performance for both long and short span dependencies."@en ;
+                         rdfs:isDefinedBy vair: ;
+                         rdfs:label "Long ShortTerm Memory"@en ;
                          skos:definition "type of recurrent neural network that processes sequential data with a satisfactory performance for both long and short span dependencies. "@en ;
                          skos:inScheme vair: ;
-                         terms:source "ISO/IEC 22989 3.4.7";
-                         rdfs:label "Long ShortTerm Memory"@en ;
-                         rdfs:comment "type of recurrent neural network that processes sequential data with a satisfactory performance for both long and short span dependencies."@en ;
                          skos:prefLabel "Long ShortTerm Memory"@en .
 
 
@@ -7151,11 +7152,11 @@ vair:MachineLearningAlgorithm terms:source "ISO/IEC 22989 3.3.6" ;
                               skos:prefLabel "Machine Learning Algorithm"@en .
 
 
-vair:MachineLearningLibrary rdfs:isDefinedBy vair: ;
+vair:MachineLearningLibrary rdfs:comment "Refers to liberaries for machine learning"@en ;
+                            rdfs:isDefinedBy vair: ;
+                            rdfs:label "Machine Learning Library"@en ;
                             skos:definition "Refers to liberaries for machine learning"@en ;
                             skos:inScheme vair: ;
-                            rdfs:comment "Refers to liberaries for machine learning"@en ;
-                            rdfs:label "Machine Learning Library"@en ;
                             skos:prefLabel "Machine Learning Library"@en .
 
 
@@ -7188,10 +7189,10 @@ vair:MachineTranslation terms:source "ISO/IEC 22989, 3.6.5" ;
 vair:MakingContractTerminationDecision rdfs:comment "Making Contract Termination Decision"@en ,
                                                     "Making decisions on termination of work-related contractual relationship"@en ;
                                        rdfs:isDefinedBy vair: ;
+                                       rdfs:label "Making Contract Termination Decision"@en ;
                                        skos:definition "Making decisions on termination of work-related contractual relationship"@en ;
                                        skos:inScheme vair: ;
                                        skos:prefLabel "Making Contract Termination Decision"@en ;
-                                       rdfs:label "Making Contract Termination Decision"@en ;
                                        skos:related vair:Employment .
 
 
@@ -7220,12 +7221,12 @@ vair:MigrationManagement rdfs:comment "Activities related to managing migration.
                          skos:prefLabel "Migration Management"@en .
 
 
-vair:Model rdfs:isDefinedBy vair: ;
+vair:Model terms:source "ISO/IEC 22989, 3.1.23" ;
+           rdfs:comment "physical, mathematical or otherwise logical representation of a system, entity, phenomenon, process or data. "@en ;
+           rdfs:isDefinedBy vair: ;
+           rdfs:label "Model"@en ;
            skos:definition "physical, mathematical or otherwise logical representation of a system, entity, phenomenon, process or data. "@en ;
            skos:inScheme vair: ;
-           terms:source "ISO/IEC 22989, 3.1.23" ;
-           rdfs:comment  "physical, mathematical or otherwise logical representation of a system, entity, phenomenon, process or data. "@en ;
-           rdfs:label "Model"@en ;
            skos:prefLabel "Model"@en .
 
 
@@ -7304,9 +7305,9 @@ vair:MusicInformationRetrieval terms:source "AI Watch, Defining Artificial Intel
 vair:NamedEntityRecognition terms:source "ISO/IEC 22989, 3.6.6" ;
                             rdfs:comment "Recognizing and labelling the denotational names of entities and their categories for sequences of words in a stream of text or speech."@en ;
                             rdfs:isDefinedBy vair: ;
+                            rdfs:label "Named Entity Recognition"@en ;
                             skos:definition "Recognizing and labelling the denotational names of entities and their categories for sequences of words in a stream of text or speech."@en ;
                             skos:inScheme vair: ;
-                            rdfs:label "Named Entity Recognition"@en ;
                             skos:prefLabel "Named Entity Recognition"@en .
 
 
@@ -7396,9 +7397,9 @@ vair:OpttingOutOfOutput rdfs:comment "A mode of controllability that stakeholder
                         skos:prefLabel "Optting Out Of Output"@en .
 
 
-vair:Overreliance rdfs:isDefinedBy vair: ;
+vair:Overreliance rdfs:comment "Tendency of automatically relying or over-relying on the output produced by an AI system"@en ;
+                  rdfs:isDefinedBy vair: ;
                   rdfs:label "Overreliance"@en ;
-                  rdfs:comment  "Tendency of automatically relying or over-relying on the output produced by an AI system"@en ;
                   skos:definition "Tendency of automatically relying or over-relying on the output produced by an AI system"@en ;
                   skos:inScheme vair: ;
                   skos:prefLabel "Overreliance"@en .
@@ -7464,10 +7465,10 @@ vair:PlacingTargetedJobAdvert rdfs:comment "Placing targeted job advertisments"@
                               skos:related vair:Employment .
 
 
-vair:Planning rdfs:isDefinedBy vair: ;
-              skos:definition "Planning purposes"@en ;
-              rdfs:comment "Planning purposes"@en ;
+vair:Planning rdfs:comment "Planning purposes"@en ;
+              rdfs:isDefinedBy vair: ;
               rdfs:label "Planning"@en ;
+              skos:definition "Planning purposes"@en ;
               skos:inScheme vair: ;
               skos:prefLabel "Planning"@en .
 
@@ -7580,17 +7581,17 @@ vair:PsychologicalHealth rdfs:comment "Refers to psychological health."@en ;
                          skos:prefLabel "Psychological Health"@en .
 
 
-vair:PublicAuthority rdfs:label "Public Authority"@en ;
-                     rdfs:comment  "Refers to public authorities and bodies."@en ;
+vair:PublicAuthority rdfs:comment "Refers to public authorities and bodies."@en ;
                      rdfs:isDefinedBy vair: ;
+                     rdfs:label "Public Authority"@en ;
                      skos:definition "Refers to public authorities and bodies."@en ;
                      skos:inScheme vair: ;
                      skos:prefLabel "Public Authority"@en .
 
 
 vair:PublicAuthorityAgent rdfs:comment "An entity that acts on behalf of public authorities."@en ;
-                          rdfs:label   "Public Authority Agent"@en ;
                           rdfs:isDefinedBy vair: ;
+                          rdfs:label "Public Authority Agent"@en ;
                           skos:definition "An entity that acts on behalf of public authorities."@en ;
                           skos:inScheme vair: ;
                           skos:prefLabel "Public Authority Agent"@en .
@@ -7605,8 +7606,8 @@ vair:PublicService rdfs:comment "Business of supplying a commodity or a service 
 
 
 vair:PublicServicesApplicant rdfs:comment "A person who has applied for public services and benefits"@en ;
-                             rdfs:label  "Public Services Applicant"@en ;
                              rdfs:isDefinedBy vair: ;
+                             rdfs:label "Public Services Applicant"@en ;
                              skos:definition "A person who has applied for public services and benefits"@en ;
                              skos:inScheme vair: ;
                              skos:prefLabel "Public Services Applicant"@en .
@@ -7631,8 +7632,8 @@ vair:QuestionAnswering terms:source "ISO/IEC 22989, 3.6.14" ;
 
 vair:ReEvaluation terms:source "ISO/IEC 22989, 6.2.8" ;
                   rdfs:comment "After the operation and monitoring stage, based on the results of the work of the AI system, the need for a reassessment can arise."@en ;
-                    rdfs:label  "Re-Evaluation"@en ;
                   rdfs:isDefinedBy vair: ;
+                  rdfs:label "Re-Evaluation"@en ;
                   skos:definition "After the operation and monitoring stage, based on the results of the work of the AI system, the need for a reassessment can arise."@en ;
                   skos:inScheme vair: ;
                   skos:prefLabel "Re-Evaluation"@en .
@@ -7673,9 +7674,9 @@ vair:RecognisingEmotions rdfs:comment "Recognising emotions of a natural person"
 
 vair:RecognisingIndividuals rdfs:comment "Recognising natural persons "@en ;
                             rdfs:isDefinedBy vair: ;
+                            rdfs:label "Recognising Individuals"@en ;
                             skos:definition "Recognising natural persons "@en ;
                             skos:inScheme vair: ;
-                            rdfs:label "Recognising Individuals"@en ;
                             skos:prefLabel "Recognising Individuals"@en .
 
 
@@ -7695,12 +7696,12 @@ vair:Recruiting rdfs:comment "Recruiting people for a job"@en ;
                 skos:prefLabel "Recruiting"@en .
 
 
-vair:RecurrentNeuralNetwork rdfs:isDefinedBy vair: ;
+vair:RecurrentNeuralNetwork terms:source "ISO/IEC 22989 3.4.10" ;
+                            rdfs:comment "neural network in which outputs from both the previous layer and the previous processing step are fed into the current layer. "@en ;
+                            rdfs:isDefinedBy vair: ;
+                            rdfs:label "Recurrent Neural Network"@en ;
                             skos:definition "neural network in which outputs from both the previous layer and the previous processing step are fed into the current layer. "@en ;
                             skos:inScheme vair: ;
-                            terms:source "ISO/IEC 22989 3.4.10" ;
-                            rdfs:label "Recurrent Neural Network"@en ;
-                            rdfs:comment "neural network in which outputs from both the previous layer and the previous processing step are fed into the current layer. "@en ;
                             skos:prefLabel "Recurrent Neural Network"@en .
 
 
@@ -8119,9 +8120,9 @@ vair:TechnicalDocumentation rdfs:comment "Documentation required by the AI Act, 
 
 vair:TensorProcessingUnit rdfs:comment "An AI application-specific integrated circuit developed by Google."@en ;
                           rdfs:isDefinedBy vair: ;
+                          rdfs:label "Tensor Processing Unit"@en ;
                           skos:definition "An AI application-specific integrated circuit developed by Google."@en ;
                           skos:inScheme vair: ;
-                          rdfs:label "Tensor Processing Unit"@en ;
                           skos:prefLabel "Tensor Processing Unit"@en .
 
 
