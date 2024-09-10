@@ -1012,6 +1012,7 @@ vair:FireBrigade rdf:type owl:Class ;
                  rdfs:isDefinedBy vair: ;
                  rdfs:label "Fire Brigade"@en ;
                  skos:definition "Refers to fire department"@en ;
+                 rdfs:comment "Refers to fire department"@en ;
                  skos:inScheme vair: ;
                  skos:prefLabel "Fire Brigade"@en .
 
@@ -5685,6 +5686,7 @@ vair:AutomaticSummarisation terms:source "ISO/IEC 22989, 3.6.1"@en ;
 vair:BayesianEstimation rdfs:isDefinedBy vair: ;
                         rdfs:label "Bayesian Estimation"@en ;
                         skos:definition "Refers to Bayesian estimation approach"@en ;
+                        rdfs:comment "Refers to Bayesian estimation approach"@en ;
                         skos:inScheme vair: ;
                         skos:prefLabel "Bayesian Estimation"@en .
 
@@ -7065,7 +7067,8 @@ vair:LawEnforcementAuthorityAgent rdfs:comment "An entity that acts on behalf of
 
 vair:Library rdfs:isDefinedBy vair: ;
              rdfs:label "Library"@en ;
-             skos:definition ""@en ;
+             skos:definition "A collection of pre-written code"@en ;
+             rdfs:comment "A collection of pre-written code"@en ;
              skos:inScheme vair: ;
              skos:prefLabel "Library"@en .
 
@@ -7394,8 +7397,8 @@ vair:OpttingOutOfOutput rdfs:comment "A mode of controllability that stakeholder
 
 
 vair:Overreliance rdfs:isDefinedBy vair: ;
-                  rdfs:label "Overreliance"@en ,
-                             "Tendency of automatically relying or over-relying on the output produced by an AI system"@en ;
+                  rdfs:label "Overreliance"@en ;
+                  rdfs:comment  "Tendency of automatically relying or over-relying on the output produced by an AI system"@en ;
                   skos:definition "Tendency of automatically relying or over-relying on the output produced by an AI system"@en ;
                   skos:inScheme vair: ;
                   skos:prefLabel "Overreliance"@en .
