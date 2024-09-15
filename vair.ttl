@@ -253,13 +253,7 @@ vair:ActionRecognition rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#ActiveInvolvement
 vair:ActiveInvolvement rdf:type owl:Class ;
-                       rdfs:subClassOf airo:HumanInvovlvement ;
-                       rdfs:comment "Represents active interactation with an AI system."@en ;
-                       rdfs:isDefinedBy vair: ;
-                       rdfs:label "Active Involvement"@en ;
-                       skos:definition "Represents active interactation with an AI system."@en ;
-                       skos:inScheme vair: ;
-                       skos:prefLabel "Active Involvement"@en .
+                       rdfs:subClassOf airo:HumanInvovlvement .
 
 
 ###  https://w3id.org/vair#AdministrationOfDemocraticProcesses
@@ -484,13 +478,7 @@ vair:BorderControlManagement rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#CannotOptOutOfOutput
 vair:CannotOptOutOfOutput rdf:type owl:Class ;
-                          rdfs:subClassOf airo:ModeOfOutputControllability ;
-                          rdfs:comment "A mode of controllability that stakeholders cannot opt out of the system’s output."@en ;
-                          rdfs:isDefinedBy vair: ;
-                          rdfs:label "Cannot Opt Out Of Output"@en ;
-                          skos:definition "A mode of controllability that stakeholders cannot opt out of the system’s output."@en ;
-                          skos:inScheme vair: ;
-                          skos:prefLabel "Cannot Opt Out Of Output"@en .
+                          rdfs:subClassOf airo:ModeOfOutputControllability .
 
 
 ###  https://w3id.org/vair#Categorisation
@@ -500,13 +488,7 @@ vair:Categorisation rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#ChallengeOutput
 vair:ChallengeOutput rdf:type owl:Class ;
-                     rdfs:subClassOf airo:ModeOfOutputControllability ;
-                     rdfs:comment "A mode of controllability that stakeholders can challenge the system’s output."@en ;
-                     rdfs:isDefinedBy vair: ;
-                     rdfs:label "Challenge Output"@en ;
-                     skos:definition "A mode of controllability that stakeholders can challenge the system’s output."@en ;
-                     skos:inScheme vair: ;
-                     skos:prefLabel "Challenge Output"@en .
+                     rdfs:subClassOf airo:ModeOfOutputControllability .
 
 
 ###  https://w3id.org/vair#ClassifyingEmergencyCall
@@ -559,13 +541,7 @@ vair:ConvolutionalNeuralNetwork rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#CorrectOutput
 vair:CorrectOutput rdf:type owl:Class ;
-                   rdfs:subClassOf airo:ModeOfOutputControllability ;
-                   rdfs:comment "A mode of controllability that stakeholders can correct the system’s output."@en ;
-                   rdfs:isDefinedBy vair: ;
-                   rdfs:label "Correct Output"@en ;
-                   skos:definition "A mode of controllability that stakeholders can correct the system’s output."@en ;
-                   skos:inScheme vair: ;
-                   skos:prefLabel "Correct Output"@en .
+                   rdfs:subClassOf airo:ModeOfOutputControllability .
 
 
 ###  https://w3id.org/vair#CourseAttendee
@@ -671,7 +647,7 @@ vair:DetectingIndividuals rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#DetectingLies
 vair:DetectingLies rdf:type owl:Class ;
-                   rdfs:subClassOf airo:Purpose ;
+                   rdfs:subClassOf vair:Detection ;
                    rdfs:comment "Dectecting lies"@en ;
                    rdfs:isDefinedBy vair: ;
                    rdfs:label "Detecting Lies"@en ;
@@ -917,6 +893,7 @@ vair:ExaminingApplication rdf:type owl:Class ;
                           rdfs:subClassOf airo:Purpose ;
                           rdfs:comment "Purposes related to examining an application"@en ;
                           rdfs:isDefinedBy vair: ;
+                          skos:inScheme vair: ;
                           rdfs:label "Examining Application"@en ;
                           skos:definition "Purposes related to examining an application"@en ;
                           skos:prefLabel "Examining Application"@en .
@@ -1079,6 +1056,8 @@ vair:ISO31073_2022 rdf:type owl:Class ;
                    rdfs:subClassOf airo:Standard ;
                    rdfs:comment "ISO 31073:2022 Risk management — Vocabulary"@en ;
                    rdfs:label "ISO 31073:2022"@en ;
+                   rdfs:isDefinedBy vair: ;
+                   skos:inScheme vair: ;
                    skos:definition "ISO 31073:2022 Risk management — Vocabulary"@en ;
                    skos:prefLabel "ISO 31073:2022"@en .
 
@@ -1299,7 +1278,7 @@ vair:InfluencingVotingBehaviour rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#InformationProvision
 vair:InformationProvision rdf:type owl:Class ;
-                          rdfs:subClassOf vair:OrganisationalControl .
+                          rdfs:subClassOf vair:OrganisationalMeasure .
 
 
 ###  https://w3id.org/vair#InformationRetrieval
@@ -1309,13 +1288,7 @@ vair:InformationRetrieval rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#InformedInvolvement
 vair:InformedInvolvement rdf:type owl:Class ;
-                         rdfs:subClassOf airo:HumanInvovlvement ;
-                         rdfs:comment "Represents that a specific actor was informed that an AI system is in place."@en ;
-                         rdfs:isDefinedBy vair: ;
-                         rdfs:label "Informed Involvement"@en ;
-                         skos:definition "Represents that a specific actor was informed that an AI system is in place."@en ;
-                         skos:inScheme vair: ;
-                         skos:prefLabel "Informed Involvement"@en .
+                         rdfs:subClassOf airo:HumanInvovlvement .
 
 
 ###  https://w3id.org/vair#InputDataRiskSource
@@ -1356,13 +1329,7 @@ vair:IntelligentControlSystem rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#IntendedInvolvement
 vair:IntendedInvolvement rdf:type owl:Class ;
-                         rdfs:subClassOf airo:HumanInvovlvement ;
-                         rdfs:comment "Represents involvement of a specific actor is as intended."@en ;
-                         rdfs:isDefinedBy vair: ;
-                         rdfs:label "Intended Involvement"@en ;
-                         skos:definition "Represents involvement of a specific actor is as intended."@en ;
-                         skos:inScheme vair: ;
-                         skos:prefLabel "Intended Involvement"@en .
+                         rdfs:subClassOf airo:HumanInvovlvement .
 
 
 ###  https://w3id.org/vair#InterpretingFacts
@@ -1377,12 +1344,12 @@ vair:InterpretingLaw rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#Interruption
 vair:Interruption rdf:type owl:Class ;
-                  rdfs:subClassOf vair:OperationalControl .
+                  rdfs:subClassOf vair:OperationalMeasure .
 
 
 ###  https://w3id.org/vair#Intervention
 vair:Intervention rdf:type owl:Class ;
-                  rdfs:subClassOf vair:OperationalControl .
+                  rdfs:subClassOf vair:OperationalMeasure .
 
 
 ###  https://w3id.org/vair#InvestigatingCriminalOffences
@@ -1610,12 +1577,14 @@ vair:MigrationManagement rdf:type owl:Class ;
 
 
 ###  https://w3id.org/vair#MitigationControl
-vair:MitigationControl rdf:type owl:Class ;
+vair:MitigationMeasure rdf:type owl:Class ;
                        rdfs:subClassOf airo:RiskControl ;
+                       rdfs:isDefinedBy vair: ;
+                       skos:inScheme vair: ;
                        rdfs:comment "Control that is applied for mitigation purposes, e.g. ,mitigating risk sources, impacts, etc."@en ;
-                       rdfs:label "Mitigation Control"@en ;
+                       rdfs:label "Mitigation Measure"@en ;
                        skos:definition "Control that is applied for mitigation purposes, e.g. ,mitigating risk sources, impacts, etc."@en ;
-                       skos:prefLabel "Mitigation Control"@en .
+                       skos:prefLabel "Mitigation Measure"@en .
 
 
 ###  https://w3id.org/vair#Model
@@ -1724,15 +1693,15 @@ vair:Operation rdf:type owl:Class ;
                rdfs:subClassOf airo:AILifecyclePhase .
 
 
-###  https://w3id.org/vair#OperationalControl
-vair:OperationalControl rdf:type owl:Class ;
+###  https://w3id.org/vair#OperationalMeasure
+vair:OperationalMeasure rdf:type owl:Class ;
                         rdfs:subClassOf airo:RiskControl ;
                         rdfs:comment "Control related to operation of the system."@en ;
                         rdfs:isDefinedBy vair: ;
-                        rdfs:label "Operational Control"@en ;
+                        rdfs:label "Operational Measure"@en ;
                         skos:definition "Control related to operation of the system."@en ;
                         skos:inScheme vair: ;
-                        skos:prefLabel "Operational Control"@en .
+                        skos:prefLabel "Operational Measure"@en .
 
 
 ###  https://w3id.org/vair#OptimisationMethod
@@ -1750,15 +1719,15 @@ vair:OpttingOutOfOutput rdf:type owl:Class ;
                         rdfs:subClassOf airo:ModeOfOutputControllability .
 
 
-###  https://w3id.org/vair#OrganisationalControl
-vair:OrganisationalControl rdf:type owl:Class ;
+###  https://w3id.org/vair#OrganisationalMeasure
+vair:OrganisationalMeasure rdf:type owl:Class ;
                            rdfs:subClassOf airo:RiskControl ;
                            rdfs:comment "Organisational measures applied to control risk sources, risks, consequences, or impacts."@en ;
                            rdfs:isDefinedBy vair: ;
-                           rdfs:label "Organisational Control"@en ;
+                           rdfs:label "Organisational Measure"@en ;
                            skos:definition "Organisational measures applied to control risk sources, risks, consequences, or impacts."@en ;
                            skos:inScheme vair: ;
-                           skos:prefLabel "Organisational Control"@en .
+                           skos:prefLabel "Organisational Measure"@en .
 
 
 ###  https://w3id.org/vair#OrganisationalRiskSource
@@ -1779,7 +1748,7 @@ vair:Overreliance rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#OverridingOutcome
 vair:OverridingOutcome rdf:type owl:Class ;
-                       rdfs:subClassOf vair:MitigationControl .
+                       rdfs:subClassOf vair:MitigationMeasure .
 
 
 ###  https://w3id.org/vair#PartOfSpeechTagging
@@ -1794,18 +1763,14 @@ vair:PartialAutomation rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#PassiveInvolvement
 vair:PassiveInvolvement rdf:type owl:Class ;
-                        rdfs:subClassOf airo:HumanInvovlvement ;
-                        rdfs:comment "Represents passive interactation with an AI system."@en ;
-                        rdfs:isDefinedBy vair: ;
-                        rdfs:label "Passive Involvement"@en ;
-                        skos:definition "Represents passive interactation with an AI system."@en ;
-                        skos:inScheme vair: ;
-                        skos:prefLabel "Passive Involvement"@en .
+                        rdfs:subClassOf airo:HumanInvovlvement .
 
 
 ###  https://w3id.org/vair#PerfomanceRiskSource
 vair:PerfomanceRiskSource rdf:type owl:Class ;
                           rdfs:subClassOf airo:RiskSource ;
+                          rdfs:isDefinedBy vair: ;
+                          skos:inScheme vair: ;
                           rdfs:comment "Risk sources related to performance"@en ;
                           rdfs:label "Perfomance Risk Source"@en ;
                           skos:definition "Risk sources related to performance"@en ;
@@ -2039,7 +2004,7 @@ vair:ReverseOutput rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#ReversingOutcome
 vair:ReversingOutcome rdf:type owl:Class ;
-                      rdfs:subClassOf vair:MitigationControl .
+                      rdfs:subClassOf vair:MitigationMeasure .
 
 
 ###  https://w3id.org/vair#RevokingHealthCareServices
@@ -2345,24 +2310,12 @@ vair:UnavailabilityOfData rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#UninformedInvolvement
 vair:UninformedInvolvement rdf:type owl:Class ;
-                           rdfs:subClassOf airo:HumanInvovlvement ;
-                           rdfs:comment "Represents that a specific actor was not informed that an AI system is in place."@en ;
-                           rdfs:isDefinedBy vair: ;
-                           rdfs:label "Uninformed Involvement"@en ;
-                           skos:definition "Represents that a specific actor was not informed that an AI system is in place."@en ;
-                           skos:inScheme vair: ;
-                           skos:prefLabel "Uninformed Involvement"@en .
+                           rdfs:subClassOf airo:HumanInvovlvement .
 
 
 ###  https://w3id.org/vair#UnintendedInvolvement
 vair:UnintendedInvolvement rdf:type owl:Class ;
-                           rdfs:subClassOf airo:HumanInvovlvement ;
-                           rdfs:comment "Represents unintended involvement of a specific actor."@en ;
-                           rdfs:isDefinedBy vair: ;
-                           rdfs:label "Unintended Involvement"@en ;
-                           skos:definition "Represents unintended involvement of a specific actor."@en ;
-                           skos:inScheme vair: ;
-                           skos:prefLabel "Unintended Involvement"@en .
+                           rdfs:subClassOf airo:HumanInvovlvement .
 
 
 ###  https://w3id.org/vair#UnrepresentativeTestData
@@ -2387,7 +2340,7 @@ vair:UnsupervisedLearning rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#UserTraining
 vair:UserTraining rdf:type owl:Class ;
-                  rdfs:subClassOf vair:OrganisationalControl .
+                  rdfs:subClassOf vair:OrganisationalMeasure .
 
 
 ###  https://w3id.org/vair#Validation
@@ -2428,13 +2381,7 @@ vair:VocationalTrainingInstitution rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#WellbeingImpact
 vair:WellbeingImpact rdf:type owl:Class ;
-                     rdfs:subClassOf airo:Impact ;
-                     rdfs:comment "Refers to impacts that affect wellbeing"@en ;
-                     rdfs:isDefinedBy vair: ;
-                     rdfs:label "Wellbeing Impact"@en ;
-                     skos:definition "Refers to impacts that affect wellbeing"@en ;
-                     skos:inScheme vair: ;
-                     skos:prefLabel "Wellbeing Impact"@en .
+                     rdfs:subClassOf airo:Impact .
 
 
 ###  https://w3id.org/vair#WrongDataDesignChoice
@@ -2451,7 +2398,96 @@ vair:WrongDataDesignChoice rdf:type owl:Class ;
               skos:Concept ,
               vair:Concept .
 
+vair:GrantingPublicAssistanceServices rdf:type owl:NamedIndividual ,
+              skos:Concept ,
+              vair:Concept .
 
+vair:ISO31073_2022 rdf:type owl:NamedIndividual ,
+              skos:Concept ,
+              vair:Concept .
+vair:ISOIEC23894_2023 rdf:type owl:NamedIndividual ,
+              skos:Concept ,
+              vair:Concept .
+vair:ISOIEC42001_2023 rdf:type owl:NamedIndividual ,
+              skos:Concept ,
+              vair:Concept .             
+
+vair:DetectionControl rdf:type owl:NamedIndividual ,
+              skos:Concept ,
+              vair:Concept .
+vair:ManualControl rdf:type owl:NamedIndividual ,
+              skos:Concept ,
+              vair:Concept .
+
+vair:DataRiskSource rdf:type owl:NamedIndividual ,
+              skos:Concept ,
+              vair:Concept .              
+vair:InputDataRiskSource rdf:type owl:NamedIndividual ,
+              skos:Concept ,
+              vair:Concept . 
+vair:ModelRiskSource rdf:type owl:NamedIndividual ,
+              skos:Concept ,
+              vair:Concept . 
+vair:OrganisationalRiskSource rdf:type owl:NamedIndividual ,
+              skos:Concept ,
+              vair:Concept . 
+vair:PerfomanceRiskSource rdf:type owl:NamedIndividual ,
+              skos:Concept ,
+              vair:Concept . 
+vair:SystemRiskSource rdf:type owl:NamedIndividual ,
+              skos:Concept ,
+              vair:Concept .                                                         
+
+vair:TestDataRiskSource rdf:type owl:NamedIndividual ,
+              skos:Concept ,
+              vair:Concept .  
+vair:TrainingDataRiskSource rdf:type owl:NamedIndividual ,
+              skos:Concept ,
+              vair:Concept .  
+vair:ValidationDataRiskSource rdf:type owl:NamedIndividual ,
+              skos:Concept ,
+              vair:Concept .                                         
+ vair:MitigationMeasure rdf:type owl:NamedIndividual ,
+              skos:Concept ,
+              vair:Concept .              
+
+vair:OperationalMeasure rdf:type owl:NamedIndividual ,
+              skos:Concept ,
+              vair:Concept .
+vair:OrganisationalMeasure rdf:type owl:NamedIndividual ,
+              skos:Concept ,
+              vair:Concept .
+
+vair:SemiAutomatedControl rdf:type owl:NamedIndividual ,
+              skos:Concept ,
+              vair:Concept .
+                            
+vair:DetectingLies rdf:type owl:NamedIndividual ,
+              skos:Concept ,
+              vair:Concept . 
+vair:EmergencyTriage rdf:type owl:NamedIndividual ,
+              skos:Concept ,
+              vair:Concept . 
+
+vair:ExaminingApplication rdf:type owl:NamedIndividual ,
+              skos:Concept ,
+              vair:Concept .                                          
+vair:Influencing rdf:type owl:NamedIndividual ,
+              skos:Concept ,
+              vair:Concept .
+vair:InfluencingVotingBehaviour rdf:type owl:NamedIndividual ,
+              skos:Concept ,
+              vair:Concept . 
+vair:JobApplicationAnalysis rdf:type owl:NamedIndividual ,
+              skos:Concept ,
+              vair:Concept .  
+
+vair:ServingSafetyFunctionInManagementOfCriticalDigitalInfrastructure rdf:type owl:NamedIndividual ,
+              skos:Concept ,
+              vair:Concept . 
+vair:ServingSafetyFunctionInOperationOfCriticalDigitalInfrastructure rdf:type owl:NamedIndividual ,
+              skos:Concept ,
+              vair:Concept .                                                     
 ###  http://www.semanticweb.org/owl/owlapi/turtle#ActiveInvolvement
 :ActiveInvolvement rdf:type owl:NamedIndividual ,
                             skos:Concept ,
@@ -2594,6 +2630,12 @@ vair:ActionRecognition rdf:type owl:NamedIndividual ,
                                 vair:Concept .
 
 
+###  https://w3id.org/vair#ActiveInvolvement
+vair:ActiveInvolvement rdf:type owl:NamedIndividual ,
+                                skos:Concept ,
+                                vair:Concept .
+
+
 ###  https://w3id.org/vair#AdministrationOfDemocraticProcesses
 vair:AdministrationOfDemocraticProcesses rdf:type owl:NamedIndividual ,
                                                   skos:Concept ,
@@ -2653,42 +2695,12 @@ vair:Approval rdf:type owl:NamedIndividual ,
                        skos:Concept ,
                        vair:Concept .
 
-###  https://w3id.org/vair#ActiveInvolvement
-vair:ActiveInvolvement rdf:type owl:NamedIndividual ,
-                       skos:Concept ,
-                       vair:Concept .
 
-###  https://w3id.org/vair#InformedInvolvement
-vair:InformedInvolvement rdf:type owl:NamedIndividual ,
-                       skos:Concept ,
-                       vair:Concept .
-
-###  https://w3id.org/vair#IntendedInvolvement
-vair:IntendedInvolvement rdf:type owl:NamedIndividual ,
-                       skos:Concept ,
-                       vair:Concept .  
-
-###  https://w3id.org/vair#PassiveInvolvement
-vair:PassiveInvolvement rdf:type owl:NamedIndividual ,
-                       skos:Concept ,
-                       vair:Concept . 
-###  https://w3id.org/vair#UninformedInvolvement
-vair:UninformedInvolvement rdf:type owl:NamedIndividual ,
-                       skos:Concept ,
-                       vair:Concept .                                                                  
-###  https://w3id.org/vair#UnintendedInvolvement
-vair:UnintendedInvolvement rdf:type owl:NamedIndividual ,
-                       skos:Concept ,
-                       vair:Concept .
 ###  https://w3id.org/vair#AssesingStudent
 vair:AssesingStudent rdf:type owl:NamedIndividual ,
                               skos:Concept ,
                               vair:Concept .
 
-###  https://w3id.org/vair#WellbeingImpact
-vair:WellbeingImpact rdf:type owl:NamedIndividual ,
-                              skos:Concept ,
-                              vair:Concept .
 
 ###  https://w3id.org/vair#AssessingAccessibleLevelOfEducation
 vair:AssessingAccessibleLevelOfEducation rdf:type owl:NamedIndividual ,
@@ -2948,6 +2960,12 @@ vair:BorderControlSecurityCheck rdf:type owl:NamedIndividual ,
                                          vair:Concept .
 
 
+###  https://w3id.org/vair#CannotOptOutOfOutput
+vair:CannotOptOutOfOutput rdf:type owl:NamedIndividual ,
+                                   skos:Concept ,
+                                   vair:Concept .
+
+
 ###  https://w3id.org/vair#CaseBasedReasoning
 vair:CaseBasedReasoning rdf:type owl:NamedIndividual ,
                                  skos:Concept ,
@@ -2958,6 +2976,12 @@ vair:CaseBasedReasoning rdf:type owl:NamedIndividual ,
 vair:Categorisation rdf:type owl:NamedIndividual ,
                              skos:Concept ,
                              vair:Concept .
+
+
+###  https://w3id.org/vair#ChallengeOutput
+vair:ChallengeOutput rdf:type owl:NamedIndividual ,
+                              skos:Concept ,
+                              vair:Concept .
 
 
 ###  https://w3id.org/vair#ClassifyingEmergencyCall
@@ -3024,6 +3048,12 @@ vair:ContinuousValidation rdf:type owl:NamedIndividual ,
 vair:ConvolutionalNeuralNetwork rdf:type owl:NamedIndividual ,
                                          skos:Concept ,
                                          vair:Concept .
+
+
+###  https://w3id.org/vair#CorrectOutput
+vair:CorrectOutput rdf:type owl:NamedIndividual ,
+                            skos:Concept ,
+                            vair:Concept .
 
 
 ###  https://w3id.org/vair#CourseApplicant
@@ -3972,6 +4002,12 @@ vair:InformationRetrieval rdf:type owl:NamedIndividual ,
                                    vair:Concept .
 
 
+###  https://w3id.org/vair#InformedInvolvement
+vair:InformedInvolvement rdf:type owl:NamedIndividual ,
+                                  skos:Concept ,
+                                  vair:Concept .
+
+
 ###  https://w3id.org/vair#InputData
 vair:InputData rdf:type owl:NamedIndividual ,
                         skos:Concept ,
@@ -4016,6 +4052,12 @@ vair:InsufficientInstruction rdf:type owl:NamedIndividual ,
 vair:IntelligentControlSystem rdf:type owl:NamedIndividual ,
                                        skos:Concept ,
                                        vair:Concept .
+
+
+###  https://w3id.org/vair#IntendedInvolvement
+vair:IntendedInvolvement rdf:type owl:NamedIndividual ,
+                                  skos:Concept ,
+                                  vair:Concept .
 
 
 ###  https://w3id.org/vair#InterpretingFacts
@@ -4581,6 +4623,12 @@ vair:Passenger rdf:type owl:NamedIndividual ,
                         vair:Concept .
 
 
+###  https://w3id.org/vair#PassiveInvolvement
+vair:PassiveInvolvement rdf:type owl:NamedIndividual ,
+                                 skos:Concept ,
+                                 vair:Concept .
+
+
 ###  https://w3id.org/vair#PatternRecognition
 vair:PatternRecognition rdf:type owl:NamedIndividual ,
                                  skos:Concept ,
@@ -4986,19 +5034,7 @@ vair:ReversingOutcome rdf:type owl:NamedIndividual ,
                                skos:Concept ,
                                vair:Concept .
 
-###  https://w3id.org/vair#CannotOptOutOfOutput
-vair:CannotOptOutOfOutput rdf:type owl:NamedIndividual ,
-                               skos:Concept ,
-                               vair:Concept .
-###  https://w3id.org/vair#ChallengeOutput
-vair:ChallengeOutput rdf:type owl:NamedIndividual ,
-                               skos:Concept ,
-                               vair:Concept .
 
-###  https://w3id.org/vair#CorrectOutput
-vair:CorrectOutput rdf:type owl:NamedIndividual ,
-                               skos:Concept ,
-                               vair:Concept .
 ###  https://w3id.org/vair#RevokingHealthCareServices
 vair:RevokingHealthCareServices rdf:type owl:NamedIndividual ,
                                          skos:Concept ,
@@ -5365,6 +5401,18 @@ vair:UnavailabilityOfData rdf:type owl:NamedIndividual ,
                                    vair:Concept .
 
 
+###  https://w3id.org/vair#UninformedInvolvement
+vair:UninformedInvolvement rdf:type owl:NamedIndividual ,
+                                    skos:Concept ,
+                                    vair:Concept .
+
+
+###  https://w3id.org/vair#UnintendedInvolvement
+vair:UnintendedInvolvement rdf:type owl:NamedIndividual ,
+                                    skos:Concept ,
+                                    vair:Concept .
+
+
 ###  https://w3id.org/vair#UnrepresentativeTestData
 vair:UnrepresentativeTestData rdf:type owl:NamedIndividual ,
                                        skos:Concept ,
@@ -5447,6 +5495,12 @@ vair:VocationalTrainingInstitution rdf:type owl:NamedIndividual ,
                                             vair:Concept .
 
 
+###  https://w3id.org/vair#WellbeingImpact
+vair:WellbeingImpact rdf:type owl:NamedIndividual ,
+                              skos:Concept ,
+                              vair:Concept .
+
+
 ###  https://w3id.org/vair#WrongDataDesignChoice
 vair:WrongDataDesignChoice rdf:type owl:NamedIndividual ,
                                     skos:Concept ,
@@ -5498,6 +5552,14 @@ vair:ActionRecognition terms:source "AI Watch, Defining Artificial Intelligence 
                        skos:definition "The capability to recognise actions"@en ;
                        skos:inScheme vair: ;
                        skos:prefLabel "Action Recognition"@en .
+
+
+vair:ActiveInvolvement rdfs:comment "Represents active interactation with an AI system."@en ;
+                       rdfs:isDefinedBy vair: ;
+                       rdfs:label "Active Involvement"@en ;
+                       skos:definition "Represents active interactation with an AI system."@en ;
+                       skos:inScheme vair: ;
+                       skos:prefLabel "Active Involvement"@en .
 
 
 vair:AdministrationOfDemocraticProcesses rdfs:comment "Activities related to administration of democratic processes"@en ;
@@ -5870,12 +5932,28 @@ vair:BorderControlManagement rdfs:comment "Activities related to border control 
                              skos:prefLabel "Border Control Management"@en .
 
 
+vair:CannotOptOutOfOutput rdfs:comment "A mode of controllability that stakeholders cannot opt out of the system’s output."@en ;
+                          rdfs:isDefinedBy vair: ;
+                          rdfs:label "Cannot Opt Out Of Output"@en ;
+                          skos:definition "A mode of controllability that stakeholders cannot opt out of the system’s output."@en ;
+                          skos:inScheme vair: ;
+                          skos:prefLabel "Cannot Opt Out Of Output"@en .
+
+
 vair:Categorisation rdfs:comment "Assigning natural persons to specific categories"@en ;
                     rdfs:isDefinedBy vair: ;
                     rdfs:label "Categorisation"@en ;
                     skos:definition "Assigning natural persons to specific categories"@en ;
                     skos:inScheme vair: ;
                     skos:prefLabel "Categorisation"@en .
+
+
+vair:ChallengeOutput rdfs:comment "A mode of controllability that stakeholders can challenge the system’s output."@en ;
+                     rdfs:isDefinedBy vair: ;
+                     rdfs:label "Challenge Output"@en ;
+                     skos:definition "A mode of controllability that stakeholders can challenge the system’s output."@en ;
+                     skos:inScheme vair: ;
+                     skos:prefLabel "Challenge Output"@en .
 
 
 vair:ClassifyingEmergencyCall rdfs:comment "Classifying emergency calls by natural persons"@en ;
@@ -5945,6 +6023,14 @@ vair:ConvolutionalNeuralNetwork terms:source "ISO/IEC 22989 3.4.2" ;
                                 skos:definition "Feed forward neural network using convolution in at least one of its layers."@en ;
                                 skos:inScheme vair: ;
                                 skos:prefLabel "Convolutional Neural Network"@en .
+
+
+vair:CorrectOutput rdfs:comment "A mode of controllability that stakeholders can correct the system’s output."@en ;
+                   rdfs:isDefinedBy vair: ;
+                   rdfs:label "Correct Output"@en ;
+                   skos:definition "A mode of controllability that stakeholders can correct the system’s output."@en ;
+                   skos:inScheme vair: ;
+                   skos:prefLabel "Correct Output"@en .
 
 
 vair:CourseAttendee rdfs:comment "A person who attends a course."@en ;
@@ -6990,6 +7076,14 @@ vair:InformationRetrieval terms:source "ISO/IEC 22989, 3.6.4" ;
                           skos:prefLabel "Information Retrieval"@en .
 
 
+vair:InformedInvolvement rdfs:comment "Represents that a specific actor was informed that an AI system is in place."@en ;
+                         rdfs:isDefinedBy vair: ;
+                         rdfs:label "Informed Involvement"@en ;
+                         skos:definition "Represents that a specific actor was informed that an AI system is in place."@en ;
+                         skos:inScheme vair: ;
+                         skos:prefLabel "Informed Involvement"@en .
+
+
 vair:InstallationInstruction rdfs:comment "Instruction for installing an application."@en ;
                              rdfs:isDefinedBy vair: ;
                              rdfs:label "Installation Instruction"@en ;
@@ -7031,6 +7125,14 @@ vair:IntelligentControlSystem terms:source "AI Watch, Defining Artificial Intell
                                               "An AI-based control system" ;
                               skos:inScheme vair: ;
                               skos:prefLabel "Intelligent Control System"@en .
+
+
+vair:IntendedInvolvement rdfs:comment "Represents involvement of a specific actor is as intended."@en ;
+                         rdfs:isDefinedBy vair: ;
+                         rdfs:label "Intended Involvement"@en ;
+                         skos:definition "Represents involvement of a specific actor is as intended."@en ;
+                         skos:inScheme vair: ;
+                         skos:prefLabel "Intended Involvement"@en .
 
 
 vair:InterpretingFacts rdfs:comment "Interpreting facts"@en ;
@@ -7628,6 +7730,14 @@ vair:PartialAutomation terms:source "ISO/IEC 22989, 5.13" ;
                        skos:definition "The level of automation where some sub-functions of the system are fully automated while the system remains under the control of an external agent"@en ;
                        skos:inScheme vair: ;
                        skos:prefLabel "Partial Automation"@en .
+
+
+vair:PassiveInvolvement rdfs:comment "Represents passive interactation with an AI system."@en ;
+                        rdfs:isDefinedBy vair: ;
+                        rdfs:label "Passive Involvement"@en ;
+                        skos:definition "Represents passive interactation with an AI system."@en ;
+                        skos:inScheme vair: ;
+                        skos:prefLabel "Passive Involvement"@en .
 
 
 vair:PerformingBackgroundCheck rdfs:comment "Performing background checks"@en ;
@@ -8409,6 +8519,22 @@ vair:UnavailabilityOfData rdfs:comment "Use of datasets that are not available"@
                           skos:prefLabel "Unavailability Of Data"@en .
 
 
+vair:UninformedInvolvement rdfs:comment "Represents that a specific actor was not informed that an AI system is in place."@en ;
+                           rdfs:isDefinedBy vair: ;
+                           rdfs:label "Uninformed Involvement"@en ;
+                           skos:definition "Represents that a specific actor was not informed that an AI system is in place."@en ;
+                           skos:inScheme vair: ;
+                           skos:prefLabel "Uninformed Involvement"@en .
+
+
+vair:UnintendedInvolvement rdfs:comment "Represents unintended involvement of a specific actor."@en ;
+                           rdfs:isDefinedBy vair: ;
+                           rdfs:label "Unintended Involvement"@en ;
+                           skos:definition "Represents unintended involvement of a specific actor."@en ;
+                           skos:inScheme vair: ;
+                           skos:prefLabel "Unintended Involvement"@en .
+
+
 vair:UnrepresentativeTestData rdfs:comment "Use of unrepresentative  data for testing"@en ;
                               rdfs:isDefinedBy vair: ;
                               rdfs:label "Unrepresentative Test Data"@en ;
@@ -8495,12 +8621,82 @@ vair:VocationalTrainingInstitution rdfs:comment "Vocational training institution
                                    skos:prefLabel "Vocational Training Institution"@en .
 
 
+vair:WellbeingImpact rdfs:comment "Refers to impacts that affect wellbeing"@en ;
+                     rdfs:isDefinedBy vair: ;
+                     rdfs:label "Wellbeing Impact"@en ;
+                     skos:definition "Refers to impacts that affect wellbeing"@en ;
+                     skos:inScheme vair: ;
+                     skos:prefLabel "Wellbeing Impact"@en .
+
+
 vair:WrongDataDesignChoice rdfs:comment "Refers to the wrong choice made in the selecting datasets."@en ;
                            rdfs:isDefinedBy vair: ;
                            rdfs:label "Wrong Data Design Choice"@en ;
                            skos:definition "Refers to the wrong choice made in the selecting datasets."@en ;
                            skos:inScheme vair: ;
                            skos:prefLabel "Wrong Data Design Choice"@en .
+
+###  https://w3id.org/vair#TechnicalMeasure
+vair:TechnicalMeasure rdf:type owl:NamedIndividual ,
+                                    skos:Concept ,
+                                    vair:Concept .
+
+###  https://w3id.org/vair#TechnicalMeasure
+vair:TechnicalMeasure rdf:type owl:Class ;
+                           rdfs:subClassOf airo:RiskControl .
+
+vair:TechnicalMeasure rdfs:comment "Refers to technical measures "@en ;
+                           rdfs:isDefinedBy vair: ;
+                           rdfs:label "Technical Measure"@en ;
+                           skos:definition "Refers to technical measures"@en ;
+                           skos:inScheme vair: ;
+                           skos:prefLabel "Technical Measure"@en .  
+###  https://w3id.org/vair#MonitoringMeasure
+vair:MonitoringMeasure rdf:type owl:NamedIndividual ,
+                                    skos:Concept ,
+                                    vair:Concept .
+
+###  https://w3id.org/vair#MonitoringMeasure
+vair:MonitoringMeasure rdf:type owl:Class ;
+                           rdfs:subClassOf airo:RiskControl .
+
+vair:MonitoringMeasure rdfs:comment "Refers to monitoring measures "@en ;
+                           rdfs:isDefinedBy vair: ;
+                           rdfs:label "Monitoring Measure"@en ;
+                           skos:definition "Refers to monitoring measures"@en ;
+                           skos:inScheme vair: ;
+                           skos:prefLabel "Monitoring Measure"@en .   
+###  https://w3id.org/vair#SecurityMeasure
+vair:SecurityMeasure rdf:type owl:NamedIndividual ,
+                                    skos:Concept ,
+                                    vair:Concept .
+
+###  https://w3id.org/vair#SecurityMeasure
+vair:SecurityMeasure rdf:type owl:Class ;
+                           rdfs:subClassOf airo:RiskControl .
+
+vair:SecurityMeasure rdfs:comment "Refers to security measures "@en ;
+                           rdfs:isDefinedBy vair: ;
+                           rdfs:label "Security Measure"@en ;
+                           skos:definition "Refers to security measures"@en ;
+                           skos:inScheme vair: ;
+                           skos:prefLabel "Security Measure"@en .  
+
+###  https://w3id.org/vair#TransparencyMeasure
+vair:TransparencyMeasure rdf:type owl:NamedIndividual ,
+                                    skos:Concept ,
+                                    vair:Concept .
+
+###  https://w3id.org/vair#TransparencyMeasure
+vair:TransparencyMeasure rdf:type owl:Class ;
+                           rdfs:subClassOf airo:RiskControl .
+
+vair:TransparencyMeasure rdfs:comment "Refers to transparency measures "@en ;
+                           rdfs:isDefinedBy vair: ;
+                           rdfs:label "Transparency Measure"@en ;
+                           skos:definition "Refers to transparency measures"@en ;
+                           skos:inScheme vair: ;
+                           skos:prefLabel "Transparency Measure"@en .                                                               
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
