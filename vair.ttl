@@ -143,14 +143,8 @@ xsd:date rdf:type rdfs:Datatype .
      rdfs:subClassOf airo:AIComponent .
 
 
-###  http://www.semanticweb.org/owl/owlapi/turtle#DeepLearning
-:DeepLearning rdf:type owl:Class ;
-              rdfs:subClassOf vair:MachineLearning .
-
-
 ###  http://www.w3.org/2004/02/skos/core#Concept
 skos:Concept rdf:type owl:Class .
-
 
 
 ###  https://w3id.org/airo#AICapability
@@ -193,10 +187,6 @@ airo:AutomationLevel rdf:type owl:Class .
 airo:Consequence rdf:type owl:Class .
 
 
-###  https://w3id.org/airo#Control
-airo:RiskControl rdf:type owl:Class .
-
-
 ###  https://w3id.org/airo#Documentation
 airo:Documentation rdf:type owl:Class .
 
@@ -227,6 +217,10 @@ airo:Output rdf:type owl:Class .
 
 ###  https://w3id.org/airo#Purpose
 airo:Purpose rdf:type owl:Class .
+
+
+###  https://w3id.org/airo#RiskControl
+airo:RiskControl rdf:type owl:Class .
 
 
 ###  https://w3id.org/airo#RiskSource
@@ -295,13 +289,7 @@ vair:AllocatingTasks rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#ApplicationPlatform
 vair:ApplicationPlatform rdf:type owl:Class ;
-                         rdfs:subClassOf airo:AIComponent ;
-                         rdfs:comment "Resource on which an application runs."@en ;
-                         rdfs:isDefinedBy vair: ;
-                         rdfs:label "Application Platform"@en ;
-                         skos:definition "Resource on which an application runs."@en ;
-                         skos:inScheme vair: ;
-                         skos:prefLabel "Application Platform"@en .
+                         rdfs:subClassOf airo:AIComponent .
 
 
 ###  https://w3id.org/vair#ApplicationSpecificIntegratedCircuit
@@ -396,14 +384,7 @@ vair:AssigningPersonsToVocationalTrainingInstitutions rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#AssistiveAutomation
 vair:AssistiveAutomation rdf:type owl:Class ;
-                         rdfs:subClassOf airo:AutomationLevel ;
-                         terms:source "ISO/IEC 22989, 5.13" ;
-                         rdfs:comment "The level of automation where the system assists an operator"@en ;
-                         rdfs:isDefinedBy vair: ;
-                         rdfs:label "Assistive Automation"@en ;
-                         skos:definition "The level of automation where the system assists an operator"@en ;
-                         skos:inScheme vair: ;
-                         skos:prefLabel "Assistive Automation"@en .
+                         rdfs:subClassOf airo:AutomationLevel .
 
 
 ###  https://w3id.org/vair#AsylumManagement
@@ -420,19 +401,10 @@ vair:AsylumSeeker rdf:type owl:Class ;
 vair:Attack rdf:type owl:Class ;
             rdfs:subClassOf airo:RiskSource .
 
-vair:AudioProcessing rdf:type owl:NamedIndividual ,
-                                    skos:Concept ,
-                                    vair:Concept .
+
 ###  https://w3id.org/vair#AudioProcessing
 vair:AudioProcessing rdf:type owl:Class ;
-                     rdfs:subClassOf airo:AICapability ;
-                     terms:source "AI Watch, Defining Artificial Intelligence 2.0" ;
-                     rdfs:comment "The capability to process audio recordings."@en ;
-                     rdfs:isDefinedBy vair: ;
-                     rdfs:label "Audio Processing"@en ;
-                     skos:definition "The capability to process audio recordings." ;
-                     skos:inScheme vair: ;
-                     skos:prefLabel "Audio Processing"@en .
+                     rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#AutomaticSummarisation
@@ -442,14 +414,7 @@ vair:AutomaticSummarisation rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#Autonomy
 vair:Autonomy rdf:type owl:Class ;
-              rdfs:subClassOf airo:AutomationLevel ;
-              terms:source "ISO/IEC 22989, 5.13" ;
-              rdfs:comment "The level of automation where the system is capable of modifying its intended domain of use or its goals without external intervention, control or oversight."@en ;
-              rdfs:isDefinedBy vair: ;
-              rdfs:label "Autonomy"@en ;
-              skos:definition "The level of automation where the system is capable of modifying its intended domain of use or its goals without external intervention, control or oversight."@en ;
-              skos:inScheme vair: ;
-              skos:prefLabel "Autonomy"@en .
+              rdfs:subClassOf airo:AutomationLevel .
 
 
 ###  https://w3id.org/vair#BayesianEstimation
@@ -509,13 +474,7 @@ vair:BiometricIdentification rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#BiometricsBasedEmotionRecognition
 vair:BiometricsBasedEmotionRecognition rdf:type owl:Class ;
-                                       rdfs:subClassOf vair:EmotionRecognition ;
-                                       rdfs:comment "Refers to recognisting emtions based on biometrics information"@en ;
-                                       rdfs:isDefinedBy vair: ;
-                                       rdfs:label "Biometrics Based Emotion Recognition"@en ;
-                                       skos:definition "Refers to recognisting emtions based on biometrics information"@en ;
-                                       skos:inScheme vair: ;
-                                       skos:prefLabel "Biometrics Based Emotion Recognition"@en .
+                                       rdfs:subClassOf vair:EmotionRecognition .
 
 
 ###  https://w3id.org/vair#BorderControlManagement
@@ -575,14 +534,7 @@ vair:Concept rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#ConditionalAutomation
 vair:ConditionalAutomation rdf:type owl:Class ;
-                           rdfs:subClassOf airo:AutomationLevel ;
-                           terms:source "ISO/IEC 22989, 5.13" ;
-                           rdfs:comment "The level of automation where there is sustained and specific performance by a system, with an external agent being ready to take over when necessary."@en ;
-                           rdfs:isDefinedBy vair: ;
-                           rdfs:label "Conditional Automation"@en ;
-                           skos:definition "The level of automation where there is sustained and specific performance by a system, with an external agent being ready to take over when necessary."@en ;
-                           skos:inScheme vair: ;
-                           skos:prefLabel "Conditional Automation"@en .
+                           rdfs:subClassOf airo:AutomationLevel .
 
 
 ###  https://w3id.org/vair#Content
@@ -618,13 +570,7 @@ vair:CorrectOutput rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#CourseAttendee
 vair:CourseAttendee rdf:type owl:Class ;
-                    rdfs:subClassOf airo:AISubject ;
-                    rdfs:comment "A person who attends a course."@en ;
-                    rdfs:isDefinedBy vair: ;
-                    rdfs:label "Course Attendee"@en ;
-                    skos:definition "A natural person who attends a course."@en ;
-                    skos:inScheme vair: ;
-                    skos:prefLabel "Course Attendee"@en .
+                    rdfs:subClassOf airo:AISubject .
 
 
 ###  https://w3id.org/vair#CriticalInfrastructure
@@ -681,6 +627,11 @@ vair:DecreasedSecurity rdf:type owl:Class ;
 ###  https://w3id.org/vair#DeepFakeDetection
 vair:DeepFakeDetection rdf:type owl:Class ;
                        rdfs:subClassOf vair:Detection .
+
+
+###  https://w3id.org/vair#DeepLearning
+vair:DeepLearning rdf:type owl:Class ;
+                  rdfs:subClassOf vair:MachineLearning .
 
 
 ###  https://w3id.org/vair#DegradedAccuracy
@@ -839,30 +790,10 @@ vair:Education rdf:type owl:Class ;
 vair:EducationalInstitution rdf:type owl:Class ;
                             rdfs:subClassOf airo:AIOperator .
 
-###  https://w3id.org/vair#EmergencyHealthCareProvider
-vair:EmergencyHealthCareProvider  rdf:type owl:NamedIndividual ,
-              skos:Concept ,
-              vair:Concept .
-
-###  https://w3id.org/vair#FireBrigade
-vair:FireBrigade rdf:type owl:NamedIndividual ,
-              skos:Concept ,
-              vair:Concept .  
-
-###  https://w3id.org/vair#MedicalAidProvider
-vair:MedicalAidProvider rdf:type owl:NamedIndividual ,
-              skos:Concept ,
-              vair:Concept .  
 
 ###  https://w3id.org/vair#EmergencyHealthCareProvider
 vair:EmergencyHealthCareProvider rdf:type owl:Class ;
-                                 rdfs:subClassOf vair:EmergencyServiceProvider ;
-                                 rdfs:comment "Refer to emergency healthcare providers"@en ;
-                                 rdfs:label "Emergency Healthcare Provider"@en ;
-                                 rdfs:isDefinedBy vair: ;
-                                 skos:inScheme vair: ;
-                                 skos:definition "Refer to emergency healthcare providers"@en ;
-                                 skos:prefLabel "Emergency Healthcare Provider"@en .
+                                 rdfs:subClassOf vair:EmergencyServiceProvider .
 
 
 ###  https://w3id.org/vair#EmergencyServiceProvider
@@ -983,6 +914,7 @@ vair:EvaluatingReliabilityOfEvidenceInProsecutionOfCriminalOffences rdf:type owl
 
 ###  https://w3id.org/vair#ExaminingApplication
 vair:ExaminingApplication rdf:type owl:Class ;
+                          rdfs:subClassOf airo:Purpose ;
                           rdfs:comment "Purposes related to examining an application"@en ;
                           rdfs:isDefinedBy vair: ;
                           rdfs:label "Examining Application"@en ;
@@ -1032,13 +964,7 @@ vair:FeedForwardNeuralNetwork rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#FireBrigade
 vair:FireBrigade rdf:type owl:Class ;
-                 rdfs:subClassOf vair:EmergencyServiceProvider ;
-                 rdfs:comment "Refers to fire department"@en ;
-                 rdfs:isDefinedBy vair: ;
-                 rdfs:label "Fire Brigade"@en ;
-                 skos:definition "Refers to fire department"@en ;
-                 skos:inScheme vair: ;
-                 skos:prefLabel "Fire Brigade"@en .
+                 rdfs:subClassOf vair:EmergencyServiceProvider .
 
 
 ###  https://w3id.org/vair#Freedom
@@ -1048,14 +974,7 @@ vair:Freedom rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#FullAutomation
 vair:FullAutomation rdf:type owl:Class ;
-                    rdfs:subClassOf airo:AutomationLevel ;
-                    terms:source "ISO/IEC 22989, 5.13" ;
-                    rdfs:comment "The level of automation where is capable of performing its entire mission without external intervention."@en ;
-                    rdfs:isDefinedBy vair: ;
-                    rdfs:label "Full Automation"@en ;
-                    skos:definition "The level of automation where is capable of performing its entire mission without external intervention."@en ;
-                    skos:inScheme vair: ;
-                    skos:prefLabel "Full Automation"@en .
+                    rdfs:subClassOf airo:AutomationLevel .
 
 
 ###  https://w3id.org/vair#GeneralAI
@@ -1132,14 +1051,7 @@ vair:HealthInsuranceRiskAssessment rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#HighAutomation
 vair:HighAutomation rdf:type owl:Class ;
-                    rdfs:subClassOf airo:AutomationLevel ;
-                    terms:source "ISO/IEC 22989, 5.13" ;
-                    rdfs:comment "The level of automation where there the system performs parts of its mission without external intervention." ;
-                    rdfs:isDefinedBy vair: ;
-                    rdfs:label "High Automation"@en ;
-                    skos:definition "The level of automation where there the system performs parts of its mission without external intervention."@en ;
-                    skos:inScheme vair: ;
-                    skos:prefLabel "High Automation"@en .
+                    rdfs:subClassOf airo:AutomationLevel .
 
 
 ###  https://w3id.org/vair#HumanOversightMeasure
@@ -1424,14 +1336,7 @@ vair:InstallationInstruction rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#InstructionForUse
 vair:InstructionForUse rdf:type owl:Class ;
-                       rdfs:subClassOf airo:Documentation ;
-                       terms:source "AI Act, Art. 3(15)" ;
-                       rdfs:comment "The information provided by the provider to inform the deployer of, in particular, an AI system’s intended purpose and proper use."@en ;
-                       rdfs:isDefinedBy vair: ;
-                       rdfs:label "Instruction For Use"@en ;
-                       skos:definition "The information provided by the provider to inform the deployer of, in particular, an AI system’s intended purpose and proper use."@en ;
-                       skos:inScheme vair: ;
-                       skos:prefLabel "Instruction For Use"@en .
+                       rdfs:subClassOf airo:Documentation .
 
 
 ###  https://w3id.org/vair#InsufficientHumanOversightMeasure
@@ -1534,13 +1439,7 @@ vair:JobApplicationScreening rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#JobCandidate
 vair:JobCandidate rdf:type owl:Class ;
-                  rdfs:subClassOf airo:AISubject ;
-                  rdfs:comment "A person who is considered for employment."@en ;
-                  rdfs:label "Job Candidate"@en ;
-                  skos:definition "A person who is considered for employment."@en ;
-                  skos:inScheme vair: ;
-                  skos:isDefinedBy vair: ;
-                  skos:prefLabel "Job Candidate"@en .
+                  rdfs:subClassOf airo:AISubject .
 
 
 ###  https://w3id.org/vair#JudicialAuthority
@@ -1614,6 +1513,11 @@ vair:LifeInsuranceRiskAssessment rdf:type owl:Class ;
                                  rdfs:subClassOf vair:Assessment .
 
 
+###  https://w3id.org/vair#LoggingMeasure
+vair:LoggingMeasure rdf:type owl:Class ;
+                    rdfs:subClassOf airo:RiskControl .
+
+
 ###  https://w3id.org/vair#LogicBasedTechnique
 vair:LogicBasedTechnique rdf:type owl:Class ;
                          rdfs:subClassOf airo:AITechnique .
@@ -1641,14 +1545,7 @@ vair:LowSecurity rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#MachineLearning
 vair:MachineLearning rdf:type owl:Class ;
-                     rdfs:subClassOf airo:AITechnique ;
-                     terms:source "ISO/IEC 22989, 3.3.5" ;
-                     rdfs:comment "Process of optimizing model parameters through computational techniques, such that the model's behaviour reflects the data or experience."@en ;
-                     rdfs:isDefinedBy vair: ;
-                     rdfs:label "Machine Learning"@en ;
-                     skos:definition "Process of optimizing model parameters through computational techniques, such that the model's behaviour reflects the data or experience."@en ;
-                     skos:inScheme vair: ;
-                     skos:prefLabel "Machine Learning"@en .
+                     rdfs:subClassOf airo:AITechnique .
 
 
 ###  https://w3id.org/vair#MachineLearningAlgorithm
@@ -1704,13 +1601,7 @@ vair:ManualControl rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#MedicalAidProvider
 vair:MedicalAidProvider rdf:type owl:Class ;
-                        rdfs:subClassOf vair:EmergencyServiceProvider ;
-                        rdfs:comment "Entity that provides medical aid"@en ;
-                        rdfs:isDefinedBy vair: ;
-                        rdfs:label "Medical Aid Provider"@en ;
-                        skos:definition "Entity that provides medical aid"@en ;
-                        skos:inScheme vair: ;
-                        skos:prefLabel "Medical Aid Provider"@en .
+                        rdfs:subClassOf vair:EmergencyServiceProvider .
 
 
 ###  https://w3id.org/vair#MigrationManagement
@@ -1734,13 +1625,7 @@ vair:Model rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#ModelCard
 vair:ModelCard rdf:type owl:Class ;
-               rdfs:subClassOf airo:Documentation ;
-               rdfs:comment "A form of model documentation"@en ;
-               rdfs:isDefinedBy vair: ;
-               rdfs:label "Model Card"@en ;
-               skos:definition "A form of model documentation"@en ;
-               skos:inScheme vair: ;
-               skos:prefLabel "Model Card"@en .
+               rdfs:subClassOf airo:Documentation .
 
 
 ###  https://w3id.org/vair#ModelEvasion
@@ -1826,14 +1711,7 @@ vair:NeuralNetwork rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#NoAutomation
 vair:NoAutomation rdf:type owl:Class ;
-                  rdfs:subClassOf airo:AutomationLevel ;
-                  terms:source "ISO/IEC 22989, 5.13" ;
-                  rdfs:comment "The level of automation where an operator fully controls the system"@en ;
-                  rdfs:isDefinedBy vair: ;
-                  rdfs:label "No Automation"@en ;
-                  skos:definition "The level of automation where an operator fully controls the system"@en ;
-                  skos:inScheme vair: ;
-                  skos:prefLabel "No Automation"@en .
+                  rdfs:subClassOf airo:AutomationLevel .
 
 
 ###  https://w3id.org/vair#ObjectRecognition
@@ -1911,14 +1789,7 @@ vair:PartOfSpeechTagging rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#PartialAutomation
 vair:PartialAutomation rdf:type owl:Class ;
-                       rdfs:subClassOf airo:AutomationLevel ;
-                       terms:source "ISO/IEC 22989, 5.13" ;
-                       rdfs:comment "The level of automation where some sub-functions of the system are fully automated while the system remains under the control of an external agent"@en ;
-                       rdfs:isDefinedBy vair: ;
-                       rdfs:label "Partial Automation"@en ;
-                       skos:definition "The level of automation where some sub-functions of the system are fully automated while the system remains under the control of an external agent"@en ;
-                       skos:inScheme vair: ;
-                       skos:prefLabel "Partial Automation"@en .
+                       rdfs:subClassOf airo:AutomationLevel .
 
 
 ###  https://w3id.org/vair#PassiveInvolvement
@@ -1993,13 +1864,7 @@ vair:PotentialJobApplicant rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#PotentialPublicServicesApplicant
 vair:PotentialPublicServicesApplicant rdf:type owl:Class ;
-                                      rdfs:subClassOf airo:AISubject ;
-                                      rdfs:comment "A person who may have applied for public services."@en ;
-                                      rdfs:label "Potential Public Services Applicant"@en ;
-                                      skos:definition "A person who may have applied for public services."@en ;
-                                      skos:inScheme vair: ;
-                                      skos:isDefinedBy vair: ;
-                                      skos:prefLabel "Potential Public Services Applicant"@en .
+                                      rdfs:subClassOf airo:AISubject .
 
 
 ###  https://w3id.org/vair#Prediction
@@ -2194,23 +2059,12 @@ vair:Right rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#RightToNondiscrimination
 vair:RightToNondiscrimination rdf:type owl:Class ;
-                              rdfs:subClassOf vair:Right ;
-                              rdfs:comment "Refers to the fundamental right to non-discrimination"@en ;
-                              rdfs:label "Right To Non-discrimination"@en ;
-                              skos:definition "Refers to the fundamental right to non-discrimination"@en ;
-                              skos:prefLabel "Right To Non-discrimination"@en .
+                              rdfs:subClassOf vair:Right .
 
 
 ###  https://w3id.org/vair#Robot
 vair:Robot rdf:type owl:Class ;
-           rdfs:subClassOf airo:AISystem ;
-           rdfs:comment "An automation system with actuators that performs intended tasks in the physical world, by means of sensing its environment and a software control system."@en ;
-           rdfs:isDefinedBy vair: ;
-           rdfs:label "Robot"@en ,
-                      "ISO/IEC 22989, 3.1.29" ;
-           skos:definition "An automation system with actuators that performs intended tasks in the physical world, by means of sensing its environment and a software control system."@en ;
-           skos:inScheme vair: ;
-           skos:prefLabel "Robot"@en .
+           rdfs:subClassOf airo:AISystem .
 
 
 ###  https://w3id.org/vair#Safety
@@ -2418,13 +2272,7 @@ vair:SymbolicReasoning rdf:type owl:Class ;
 
 ###  https://w3id.org/vair#SystemArchitectureDocumentation
 vair:SystemArchitectureDocumentation rdf:type owl:Class ;
-                                     rdfs:subClassOf airo:Documentation ;
-                                     rdfs:comment "Documentation specifying software architecture."@en ;
-                                     rdfs:isDefinedBy vair: ;
-                                     rdfs:label "System Architecture Documentation"@en ;
-                                     skos:definition "Documentation specifying software architecture."@en ;
-                                     skos:inScheme vair: ;
-                                     skos:prefLabel "System Architecture Documentation"@en .
+                                     rdfs:subClassOf airo:Documentation .
 
 
 ###  https://w3id.org/vair#SystemRiskSource
@@ -2602,7 +2450,6 @@ vair:WrongDataDesignChoice rdf:type owl:Class ;
 :API rdf:type owl:NamedIndividual ,
               skos:Concept ,
               vair:Concept .
-              
 
 
 ###  http://www.semanticweb.org/owl/owlapi/turtle#ActiveInvolvement
@@ -2645,12 +2492,6 @@ vair:WrongDataDesignChoice rdf:type owl:Class ;
 :CorrectOutput rdf:type owl:NamedIndividual ,
                         skos:Concept ,
                         vair:Concept .
-
-
-###  http://www.semanticweb.org/owl/owlapi/turtle#DeepLearning
-:DeepLearning rdf:type owl:NamedIndividual ,
-                       skos:Concept ,
-                       vair:Concept .
 
 
 ###  http://www.semanticweb.org/owl/owlapi/turtle#FullAutomation
@@ -2727,7 +2568,8 @@ vair:AGI rdf:type owl:NamedIndividual ,
 
 ###  https://w3id.org/vair#AICards
 vair:AICards rdf:type owl:NamedIndividual ,
-                      skos:Concept .
+                      skos:Concept ,
+                      vair:Concept .
 
 
 ###  https://w3id.org/vair#AIComponent
@@ -2782,6 +2624,12 @@ vair:AllocatingTasks rdf:type owl:NamedIndividual ,
                               vair:Concept .
 
 
+###  https://w3id.org/vair#ApplicationPlatform
+vair:ApplicationPlatform rdf:type owl:NamedIndividual ,
+                                  skos:Concept ,
+                                  vair:Concept .
+
+
 ###  https://w3id.org/vair#ApplicationScreening
 vair:ApplicationScreening rdf:type owl:NamedIndividual ,
                                    skos:Concept ,
@@ -2805,7 +2653,33 @@ vair:Approval rdf:type owl:NamedIndividual ,
                        skos:Concept ,
                        vair:Concept .
 
+###  https://w3id.org/vair#ActiveInvolvement
+vair:ActiveInvolvement rdf:type owl:NamedIndividual ,
+                       skos:Concept ,
+                       vair:Concept .
 
+###  https://w3id.org/vair#InformedInvolvement
+vair:InformedInvolvement rdf:type owl:NamedIndividual ,
+                       skos:Concept ,
+                       vair:Concept .
+
+###  https://w3id.org/vair#IntendedInvolvement
+vair:IntendedInvolvement rdf:type owl:NamedIndividual ,
+                       skos:Concept ,
+                       vair:Concept .  
+
+###  https://w3id.org/vair#PassiveInvolvement
+vair:PassiveInvolvement rdf:type owl:NamedIndividual ,
+                       skos:Concept ,
+                       vair:Concept . 
+###  https://w3id.org/vair#UninformedInvolvement
+vair:UninformedInvolvement rdf:type owl:NamedIndividual ,
+                       skos:Concept ,
+                       vair:Concept .                                                                  
+###  https://w3id.org/vair#UnintendedInvolvement
+vair:UnintendedInvolvement rdf:type owl:NamedIndividual ,
+                       skos:Concept ,
+                       vair:Concept .
 ###  https://w3id.org/vair#AssesingStudent
 vair:AssesingStudent rdf:type owl:NamedIndividual ,
                               skos:Concept ,
@@ -2914,6 +2788,12 @@ vair:AssigningPersonsToVocationalTrainingInstitutions rdf:type owl:NamedIndividu
                                                                vair:Concept .
 
 
+###  https://w3id.org/vair#AssistiveAutomation
+vair:AssistiveAutomation rdf:type owl:NamedIndividual ,
+                                  skos:Concept ,
+                                  vair:Concept .
+
+
 ###  https://w3id.org/vair#AsylumManagement
 vair:AsylumManagement rdf:type owl:NamedIndividual ,
                                skos:Concept ,
@@ -2930,6 +2810,12 @@ vair:AsylumSeeker rdf:type owl:NamedIndividual ,
 vair:Attack rdf:type owl:NamedIndividual ,
                      skos:Concept ,
                      vair:Concept .
+
+
+###  https://w3id.org/vair#AudioProcessing
+vair:AudioProcessing rdf:type owl:NamedIndividual ,
+                              skos:Concept ,
+                              vair:Concept .
 
 
 ###  https://w3id.org/vair#AuthorisedRepresentative
@@ -2954,6 +2840,12 @@ vair:AutomaticSummarisation rdf:type owl:NamedIndividual ,
 vair:AutonomousSystem rdf:type owl:NamedIndividual ,
                                skos:Concept ,
                                vair:Concept .
+
+
+###  https://w3id.org/vair#Autonomy
+vair:Autonomy rdf:type owl:NamedIndividual ,
+                       skos:Concept ,
+                       vair:Concept .
 
 
 ###  https://w3id.org/vair#BayesianEstimation
@@ -3022,6 +2914,12 @@ vair:BiometricIdentification rdf:type owl:NamedIndividual ,
                                       vair:Concept .
 
 
+###  https://w3id.org/vair#BiometricsBasedEmotionRecognition
+vair:BiometricsBasedEmotionRecognition rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                vair:Concept .
+
+
 ###  https://w3id.org/vair#BiometricsBasedEmotionSensing
 vair:BiometricsBasedEmotionSensing rdf:type owl:NamedIndividual ,
                                             skos:Concept ,
@@ -3088,6 +2986,12 @@ vair:ComputerVision rdf:type owl:NamedIndividual ,
                              vair:Concept .
 
 
+###  https://w3id.org/vair#ConditionalAutomation
+vair:ConditionalAutomation rdf:type owl:NamedIndividual ,
+                                    skos:Concept ,
+                                    vair:Concept .
+
+
 ###  https://w3id.org/vair#ConformityAssessmentBody
 vair:ConformityAssessmentBody rdf:type owl:NamedIndividual ,
                                        skos:Concept ,
@@ -3122,6 +3026,12 @@ vair:ConvolutionalNeuralNetwork rdf:type owl:NamedIndividual ,
 vair:CourseApplicant rdf:type owl:NamedIndividual ,
                               skos:Concept ,
                               vair:Concept .
+
+
+###  https://w3id.org/vair#CourseAttendee
+vair:CourseAttendee rdf:type owl:NamedIndividual ,
+                             skos:Concept ,
+                             vair:Concept .
 
 
 ###  https://w3id.org/vair#CriticalInfrastructure
@@ -3210,6 +3120,12 @@ vair:DecreasedSecurity rdf:type owl:NamedIndividual ,
 vair:DeepFakeDetection rdf:type owl:NamedIndividual ,
                                 skos:Concept ,
                                 vair:Concept .
+
+
+###  https://w3id.org/vair#DeepLearning
+vair:DeepLearning rdf:type owl:NamedIndividual ,
+                           skos:Concept ,
+                           vair:Concept .
 
 
 ###  https://w3id.org/vair#DegradedAccuracy
@@ -3419,6 +3335,12 @@ vair:EducationalInstitution rdf:type owl:NamedIndividual ,
 vair:EmergancyTriage rdf:type owl:NamedIndividual ,
                               skos:Concept ,
                               vair:Concept .
+
+
+###  https://w3id.org/vair#EmergencyHealthCareProvider
+vair:EmergencyHealthCareProvider rdf:type owl:NamedIndividual ,
+                                          skos:Concept ,
+                                          vair:Concept .
 
 
 ###  https://w3id.org/vair#EmergencyServiceProvider
@@ -3670,6 +3592,12 @@ vair:FeedForwardNeuralNetwork rdf:type owl:NamedIndividual ,
                                        vair:Concept .
 
 
+###  https://w3id.org/vair#FireBrigade
+vair:FireBrigade rdf:type owl:NamedIndividual ,
+                          skos:Concept ,
+                          vair:Concept .
+
+
 ###  https://w3id.org/vair#Firefighter
 vair:Firefighter rdf:type owl:NamedIndividual ,
                           skos:Concept ,
@@ -3680,6 +3608,12 @@ vair:Firefighter rdf:type owl:NamedIndividual ,
 vair:Freedom rdf:type owl:NamedIndividual ,
                       skos:Concept ,
                       vair:Concept .
+
+
+###  https://w3id.org/vair#FullAutomation
+vair:FullAutomation rdf:type owl:NamedIndividual ,
+                             skos:Concept ,
+                             vair:Concept .
 
 
 ###  https://w3id.org/vair#GeneralAI
@@ -3758,6 +3692,12 @@ vair:HealthInsurancePricing rdf:type owl:NamedIndividual ,
 vair:HealthInsuranceRiskAssessment rdf:type owl:NamedIndividual ,
                                             skos:Concept ,
                                             vair:Concept .
+
+
+###  https://w3id.org/vair#HighAutomation
+vair:HighAutomation rdf:type owl:NamedIndividual ,
+                             skos:Concept ,
+                             vair:Concept .
 
 
 ###  https://w3id.org/vair#HumanBehaviour
@@ -4044,6 +3984,12 @@ vair:InstallationInstruction rdf:type owl:NamedIndividual ,
                                       vair:Concept .
 
 
+###  https://w3id.org/vair#InstructionForUse
+vair:InstructionForUse rdf:type owl:NamedIndividual ,
+                                skos:Concept ,
+                                vair:Concept .
+
+
 ###  https://w3id.org/vair#InstructionOfUse
 vair:InstructionOfUse rdf:type owl:NamedIndividual ,
                                skos:Concept ,
@@ -4140,6 +4086,12 @@ vair:JobApplicationScreening rdf:type owl:NamedIndividual ,
                                       vair:Concept .
 
 
+###  https://w3id.org/vair#JobCandidate
+vair:JobCandidate rdf:type owl:NamedIndividual ,
+                           skos:Concept ,
+                           vair:Concept .
+
+
 ###  https://w3id.org/vair#JudicialAuthority
 vair:JudicialAuthority rdf:type owl:NamedIndividual ,
                                 skos:Concept ,
@@ -4218,6 +4170,12 @@ vair:LifeInsuranceRiskAssessment rdf:type owl:NamedIndividual ,
                                           vair:Concept .
 
 
+###  https://w3id.org/vair#LoggingMeasure
+vair:LoggingMeasure rdf:type owl:NamedIndividual ,
+                             skos:Concept ,
+                             vair:Concept .
+
+
 ###  https://w3id.org/vair#LogicBasedTechnique
 vair:LogicBasedTechnique rdf:type owl:NamedIndividual ,
                                   skos:Concept ,
@@ -4246,6 +4204,12 @@ vair:LowRobustness rdf:type owl:NamedIndividual ,
 vair:LowSecurity rdf:type owl:NamedIndividual ,
                           skos:Concept ,
                           vair:Concept .
+
+
+###  https://w3id.org/vair#MachineLearning
+vair:MachineLearning rdf:type owl:NamedIndividual ,
+                              skos:Concept ,
+                              vair:Concept .
 
 
 ###  https://w3id.org/vair#MachineLearningAlgorithm
@@ -4277,10 +4241,6 @@ vair:MachineLearningPlatform rdf:type owl:NamedIndividual ,
                                       skos:Concept ,
                                       vair:Concept .
 
-###  https://w3id.org/vair#ApplicationPlatform
-vair:ApplicationPlatform rdf:type owl:NamedIndividual ,
-                                      skos:Concept ,
-                                      vair:Concept .
 
 ###  https://w3id.org/vair#MachineLearningTechnique
 vair:MachineLearningTechnique rdf:type owl:NamedIndividual ,
@@ -4383,6 +4343,12 @@ vair:MedicalAid rdf:type owl:NamedIndividual ,
                          vair:Concept .
 
 
+###  https://w3id.org/vair#MedicalAidProvider
+vair:MedicalAidProvider rdf:type owl:NamedIndividual ,
+                                 skos:Concept ,
+                                 vair:Concept .
+
+
 ###  https://w3id.org/vair#MigrationManagement
 vair:MigrationManagement rdf:type owl:NamedIndividual ,
                                   skos:Concept ,
@@ -4393,6 +4359,12 @@ vair:MigrationManagement rdf:type owl:NamedIndividual ,
 vair:Model rdf:type owl:NamedIndividual ,
                     skos:Concept ,
                     vair:Concept .
+
+
+###  https://w3id.org/vair#ModelCard
+vair:ModelCard rdf:type owl:NamedIndividual ,
+                        skos:Concept ,
+                        vair:Concept .
 
 
 ###  https://w3id.org/vair#ModelEvasion
@@ -4483,6 +4455,12 @@ vair:NaturalPerson rdf:type owl:NamedIndividual ,
 vair:NeuralNetwork rdf:type owl:NamedIndividual ,
                             skos:Concept ,
                             vair:Concept .
+
+
+###  https://w3id.org/vair#NoAutomation
+vair:NoAutomation rdf:type owl:NamedIndividual ,
+                           skos:Concept ,
+                           vair:Concept .
 
 
 ###  https://w3id.org/vair#NotifiedBody
@@ -4587,6 +4565,12 @@ vair:PartOfSpeechTagging rdf:type owl:NamedIndividual ,
                                   vair:Concept .
 
 
+###  https://w3id.org/vair#PartialAutomation
+vair:PartialAutomation rdf:type owl:NamedIndividual ,
+                                skos:Concept ,
+                                vair:Concept .
+
+
 ###  https://w3id.org/vair#Passenger
 vair:Passenger rdf:type owl:NamedIndividual ,
                         skos:Concept ,
@@ -4679,6 +4663,12 @@ vair:PostMarketMonitoringSystemDescription rdf:type owl:NamedIndividual ,
 vair:PotentialJobApplicant rdf:type owl:NamedIndividual ,
                                     skos:Concept ,
                                     vair:Concept .
+
+
+###  https://w3id.org/vair#PotentialPublicServicesApplicant
+vair:PotentialPublicServicesApplicant rdf:type owl:NamedIndividual ,
+                                               skos:Concept ,
+                                               vair:Concept .
 
 
 ###  https://w3id.org/vair#PreTrainedModel
@@ -5011,6 +5001,18 @@ vair:Right rdf:type owl:NamedIndividual ,
                     vair:Concept .
 
 
+###  https://w3id.org/vair#RightToNondiscrimination
+vair:RightToNondiscrimination rdf:type owl:NamedIndividual ,
+                                       skos:Concept ,
+                                       vair:Concept .
+
+
+###  https://w3id.org/vair#Robot
+vair:Robot rdf:type owl:NamedIndividual ,
+                    skos:Concept ,
+                    vair:Concept .
+
+
 ###  https://w3id.org/vair#RobotSystem
 vair:RobotSystem rdf:type owl:NamedIndividual ,
                           skos:Concept ,
@@ -5190,15 +5192,11 @@ vair:SoundEventRecognition rdf:type owl:NamedIndividual ,
                                     vair:Concept .
 
 
-###  https://w3id.org/vair#BiometricsBasedEmotionRecognition
-vair:BiometricsBasedEmotionRecognition rdf:type owl:NamedIndividual ,
-                                    skos:Concept ,
-                                    vair:Concept .
-
 ###  https://w3id.org/vair#SoundSourceSeparation
 vair:SoundSourceSeparation rdf:type owl:NamedIndividual ,
                                     skos:Concept ,
                                     vair:Concept .
+
 
 ###  https://w3id.org/vair#SoundSynthesis
 vair:SoundSynthesis rdf:type owl:NamedIndividual ,
@@ -5264,6 +5262,12 @@ vair:SymbolicReasoning rdf:type owl:NamedIndividual ,
 vair:SystemArchitecture rdf:type owl:NamedIndividual ,
                                  skos:Concept ,
                                  vair:Concept .
+
+
+###  https://w3id.org/vair#SystemArchitectureDocumentation
+vair:SystemArchitectureDocumentation rdf:type owl:NamedIndividual ,
+                                              skos:Concept ,
+                                              vair:Concept .
 
 
 ###  https://w3id.org/vair#SystemVulnerability
@@ -5445,15 +5449,6 @@ vair:WrongDataDesignChoice rdf:type owl:NamedIndividual ,
      skos:prefLabel "API"@en .
 
 
-:DeepLearning terms:source "ISO/IEC 22989, 3.4.4" ;
-              rdfs:comment "Approach to creating rich hierarchical representations through the training of neural networks with many hidden layers"@en ;
-              rdfs:isDefinedBy vair: ;
-              rdfs:label "Deep learning"@en ;
-              skos:definition "Approach to creating rich hierarchical representations through the training of neural networks with many hidden layers"@en ;
-              skos:inScheme vair: ;
-              skos:prefLabel "Deep Learning"@en .
-
-
 vair:AGI terms:source "ISO/IEC 22989, 3.1.14" ;
          rdfs:comment "Type of AI system that addresses a broad range of tasks with a satisfactory level of performance."@en ;
          rdfs:isDefinedBy vair: ;
@@ -5468,6 +5463,7 @@ vair:AICards rdfs:comment "A form of AI documentation"@en ;
              rdfs:isDefinedBy vair: ;
              rdfs:label "AI Cards"@en ;
              skos:definition "A form of AI documentation"@en ;
+             skos:inScheme vair: ;
              skos:prefLabel "AI Cards"@en .
 
 
@@ -5527,6 +5523,14 @@ vair:AllocatingTasks rdfs:comment "Assignment of tasks to persons"@en ;
                      skos:definition "Assignment of tasks to persons"@en ;
                      skos:inScheme vair: ;
                      skos:prefLabel "Allocating Tasks"@en .
+
+
+vair:ApplicationPlatform rdfs:comment "Resource on which an application runs."@en ;
+                         rdfs:isDefinedBy vair: ;
+                         rdfs:label "Application Platform"@en ;
+                         skos:definition "Resource on which an application runs."@en ;
+                         skos:inScheme vair: ;
+                         skos:prefLabel "Application Platform"@en .
 
 
 vair:ApplicationSpecificIntegratedCircuit rdfs:comment "An integrated circuit chip customized for a particular use."@en ;
@@ -5681,6 +5685,15 @@ vair:AssigningPersonsToVocationalTrainingInstitutions rdfs:comment "Assigning na
                                                       skos:related vair:Education .
 
 
+vair:AssistiveAutomation terms:source "ISO/IEC 22989, 5.13" ;
+                         rdfs:comment "The level of automation where the system assists an operator"@en ;
+                         rdfs:isDefinedBy vair: ;
+                         rdfs:label "Assistive Automation"@en ;
+                         skos:definition "The level of automation where the system assists an operator"@en ;
+                         skos:inScheme vair: ;
+                         skos:prefLabel "Assistive Automation"@en .
+
+
 vair:AsylumManagement rdfs:comment "Activities related to asylum management"@en ;
                       rdfs:isDefinedBy vair: ;
                       rdfs:label "Asylum Management"@en ;
@@ -5705,6 +5718,15 @@ vair:Attack rdfs:comment "Malicious attempts to exploit vulnerabilities"@en ;
             skos:prefLabel "Attack"@en .
 
 
+vair:AudioProcessing terms:source "AI Watch, Defining Artificial Intelligence 2.0" ;
+                     rdfs:comment "The capability to process audio recordings."@en ;
+                     rdfs:isDefinedBy vair: ;
+                     rdfs:label "Audio Processing"@en ;
+                     skos:definition "The capability to process audio recordings." ;
+                     skos:inScheme vair: ;
+                     skos:prefLabel "Audio Processing"@en .
+
+
 vair:AutomaticSummarisation terms:source "ISO/IEC 22989, 3.6.1"@en ;
                             rdfs:comment "Shortening a portion of natural language content or text while retaining important semantic information."@en ;
                             rdfs:isDefinedBy vair: ;
@@ -5712,6 +5734,15 @@ vair:AutomaticSummarisation terms:source "ISO/IEC 22989, 3.6.1"@en ;
                             skos:definition "Shortening a portion of natural language content or text while retaining important semantic information."@en ;
                             skos:inScheme vair: ;
                             skos:prefLabel "Automatic Summarisation"@en .
+
+
+vair:Autonomy terms:source "ISO/IEC 22989, 5.13" ;
+              rdfs:comment "The level of automation where the system is capable of modifying its intended domain of use or its goals without external intervention, control or oversight."@en ;
+              rdfs:isDefinedBy vair: ;
+              rdfs:label "Autonomy"@en ;
+              skos:definition "The level of automation where the system is capable of modifying its intended domain of use or its goals without external intervention, control or oversight."@en ;
+              skos:inScheme vair: ;
+              skos:prefLabel "Autonomy"@en .
 
 
 vair:BayesianEstimation rdfs:comment "Refers to Bayesian estimation approach"@en ;
@@ -5807,6 +5838,14 @@ vair:BiometricIdentification terms:source "The AI Act, Recital 15" ;
                              skos:prefLabel "Biometric Identification"@en .
 
 
+vair:BiometricsBasedEmotionRecognition rdfs:comment "Refers to recognisting emtions based on biometrics information"@en ;
+                                       rdfs:isDefinedBy vair: ;
+                                       rdfs:label "Biometrics Based Emotion Recognition"@en ;
+                                       skos:definition "Refers to recognisting emtions based on biometrics information"@en ;
+                                       skos:inScheme vair: ;
+                                       skos:prefLabel "Biometrics Based Emotion Recognition"@en .
+
+
 vair:BorderControlManagement rdfs:comment "Activities related to border control management."@en ;
                              rdfs:isDefinedBy vair: ;
                              rdfs:label "Border Control Management"@en ;
@@ -5849,6 +5888,15 @@ vair:ComputerVision terms:source "ISO/IEC 22989, 3.7.1" ;
                     skos:prefLabel "Computer Vision"@en .
 
 
+vair:ConditionalAutomation terms:source "ISO/IEC 22989, 5.13" ;
+                           rdfs:comment "The level of automation where there is sustained and specific performance by a system, with an external agent being ready to take over when necessary."@en ;
+                           rdfs:isDefinedBy vair: ;
+                           rdfs:label "Conditional Automation"@en ;
+                           skos:definition "The level of automation where there is sustained and specific performance by a system, with an external agent being ready to take over when necessary."@en ;
+                           skos:inScheme vair: ;
+                           skos:prefLabel "Conditional Automation"@en .
+
+
 vair:Content rdfs:comment "Content generated using an AI system."@en ;
              rdfs:isDefinedBy vair: ;
              rdfs:label "Content"@en ;
@@ -5881,6 +5929,14 @@ vair:ConvolutionalNeuralNetwork terms:source "ISO/IEC 22989 3.4.2" ;
                                 skos:definition "Feed forward neural network using convolution in at least one of its layers."@en ;
                                 skos:inScheme vair: ;
                                 skos:prefLabel "Convolutional Neural Network"@en .
+
+
+vair:CourseAttendee rdfs:comment "A person who attends a course."@en ;
+                    rdfs:isDefinedBy vair: ;
+                    rdfs:label "Course Attendee"@en ;
+                    skos:definition "A natural person who attends a course."@en ;
+                    skos:inScheme vair: ;
+                    skos:prefLabel "Course Attendee"@en .
 
 
 vair:CriticalInfrastructure rdfs:comment "Refers to the sector or activities that aim at provision and maintainance of critical services."@en ;
@@ -5955,6 +6011,15 @@ vair:DeepFakeDetection rdfs:comment "Dectection of content that is generated usi
                        skos:definition "Dectection of content that is generated using deep fake"@en ;
                        skos:inScheme vair: ;
                        skos:prefLabel "Deep Fake Detection"@en .
+
+
+vair:DeepLearning terms:source "ISO/IEC 22989, 3.4.4" ;
+                  rdfs:comment "Approach to creating rich hierarchical representations through the training of neural networks with many hidden layers"@en ;
+                  rdfs:isDefinedBy vair: ;
+                  rdfs:label "Deep learning"@en ;
+                  skos:definition "Approach to creating rich hierarchical representations through the training of neural networks with many hidden layers"@en ;
+                  skos:inScheme vair: ;
+                  skos:prefLabel "Deep Learning"@en .
 
 
 vair:DegradedAccuracy rdfs:comment "Decreased level of system's accuracy resulted from materialisation of a risk."@en ;
@@ -6181,6 +6246,14 @@ vair:EducationalInstitution rdfs:comment "Educational institution at any level"@
                             skos:definition "Educational institution at any level"@en ;
                             skos:inScheme vair: ;
                             skos:prefLabel "Educational Institution"@en .
+
+
+vair:EmergencyHealthCareProvider rdfs:comment "Refer to emergency healthcare providers"@en ;
+                                 rdfs:isDefinedBy vair: ;
+                                 rdfs:label "Emergency Healthcare Provider"@en ;
+                                 skos:definition "Refer to emergency healthcare providers"@en ;
+                                 skos:inScheme vair: ;
+                                 skos:prefLabel "Emergency Healthcare Provider"@en .
 
 
 vair:EmergencyServiceProvider rdfs:comment "Provider of emergency first response services"@en ;
@@ -6435,12 +6508,29 @@ vair:FeedForwardNeuralNetwork terms:source "ISO/IEC 22989 3.4.6" ;
                               skos:prefLabel "Feed Forward Neural Network"@en .
 
 
+vair:FireBrigade rdfs:comment "Refers to fire department"@en ;
+                 rdfs:isDefinedBy vair: ;
+                 rdfs:label "Fire Brigade"@en ;
+                 skos:definition "Refers to fire department"@en ;
+                 skos:inScheme vair: ;
+                 skos:prefLabel "Fire Brigade"@en .
+
+
 vair:Freedom rdfs:comment "Refers to freedoms given to individuals"@en ;
              rdfs:isDefinedBy vair: ;
              rdfs:label "Freedom"@en ;
              skos:definition "Refers to freedoms given to individuals."@en ;
              skos:inScheme vair: ;
              skos:prefLabel "Freedom"@en .
+
+
+vair:FullAutomation terms:source "ISO/IEC 22989, 5.13" ;
+                    rdfs:comment "The level of automation where is capable of performing its entire mission without external intervention."@en ;
+                    rdfs:isDefinedBy vair: ;
+                    rdfs:label "Full Automation"@en ;
+                    skos:definition "The level of automation where is capable of performing its entire mission without external intervention."@en ;
+                    skos:inScheme vair: ;
+                    skos:prefLabel "Full Automation"@en .
 
 
 vair:GeneralAI terms:source "ISO/IEC 22989, 3.1.14" ;
@@ -6544,6 +6634,15 @@ vair:HealthInsuranceRiskAssessment rdfs:comment "Risk assessment in relation to 
                                    skos:prefLabel "Health Insurance Risk Assessment"@en ;
                                    skos:related vair:PrivateService ,
                                                 vair:PublicService .
+
+
+vair:HighAutomation terms:source "ISO/IEC 22989, 5.13" ;
+                    rdfs:comment "The level of automation where there the system performs parts of its mission without external intervention." ;
+                    rdfs:isDefinedBy vair: ;
+                    rdfs:label "High Automation"@en ;
+                    skos:definition "The level of automation where there the system performs parts of its mission without external intervention."@en ;
+                    skos:inScheme vair: ;
+                    skos:prefLabel "High Automation"@en .
 
 
 vair:HumanOversightMeasure rdfs:comment "Overseening the system by natural persons to detect, prevent or minimise risk."@en ;
@@ -6883,6 +6982,15 @@ vair:InstallationInstruction rdfs:comment "Instruction for installing an applica
                              skos:prefLabel "Installation Instruction"@en .
 
 
+vair:InstructionForUse terms:source "AI Act, Art. 3(15)" ;
+                       rdfs:comment "The information provided by the provider to inform the deployer of, in particular, an AI system’s intended purpose and proper use."@en ;
+                       rdfs:isDefinedBy vair: ;
+                       rdfs:label "Instruction For Use"@en ;
+                       skos:definition "The information provided by the provider to inform the deployer of, in particular, an AI system’s intended purpose and proper use."@en ;
+                       skos:inScheme vair: ;
+                       skos:prefLabel "Instruction For Use"@en .
+
+
 vair:InsufficientHumanOversightMeasure rdfs:comment "Lack of appropriate human oversight measures"@en ;
                                        rdfs:isDefinedBy vair: ;
                                        rdfs:label "Insufficient Human Oversight Measure"@en ;
@@ -7012,6 +7120,14 @@ vair:JobApplicationScreening rdfs:comment "Screening job applications"@en ;
                              skos:prefLabel "Job Application Screening"@en .
 
 
+vair:JobCandidate rdfs:comment "A person who is considered for employment."@en ;
+                  rdfs:label "Job Candidate"@en ;
+                  skos:definition "A person who is considered for employment."@en ;
+                  skos:inScheme vair: ;
+                  skos:isDefinedBy vair: ;
+                  skos:prefLabel "Job Candidate"@en .
+
+
 vair:JobCandidateSelection rdfs:comment "Selecting people for a job for a position "@en ;
                            rdfs:isDefinedBy vair: ;
                            rdfs:label "Job Candidate Selection"@en ;
@@ -7126,6 +7242,14 @@ vair:LifeInsuranceRiskAssessment rdfs:comment "Risk assessment in relation to na
                                               vair:PublicService .
 
 
+vair:LoggingMeasure rdfs:comment "Refers to logging measure in place "@en ;
+                    rdfs:isDefinedBy vair: ;
+                    rdfs:label "Logging Measure"@en ;
+                    skos:definition "Refers to logging measure in place"@en ;
+                    skos:inScheme vair: ;
+                    skos:prefLabel "Logging Measure"@en .
+
+
 vair:LogicBasedTechnique rdfs:comment "Refers to logic based techniques."@en ;
                          rdfs:isDefinedBy vair: ;
                          rdfs:label "Logic Based Technique"@en ;
@@ -7165,6 +7289,15 @@ vair:LowSecurity rdfs:comment "Lack of appropriate level of security."@en ;
                  skos:definition "Lack of appropriate level of security."@en ;
                  skos:inScheme vair: ;
                  skos:prefLabel "Low Security"@en .
+
+
+vair:MachineLearning terms:source "ISO/IEC 22989, 3.3.5" ;
+                     rdfs:comment "Process of optimizing model parameters through computational techniques, such that the model's behaviour reflects the data or experience."@en ;
+                     rdfs:isDefinedBy vair: ;
+                     rdfs:label "Machine Learning"@en ;
+                     skos:definition "Process of optimizing model parameters through computational techniques, such that the model's behaviour reflects the data or experience."@en ;
+                     skos:inScheme vair: ;
+                     skos:prefLabel "Machine Learning"@en .
 
 
 vair:MachineLearningAlgorithm terms:source "ISO/IEC 22989 3.3.6" ;
@@ -7237,6 +7370,14 @@ vair:MakingPromotionDecision rdfs:comment "Making decisions on promotion"@en ;
                              skos:related vair:Employment .
 
 
+vair:MedicalAidProvider rdfs:comment "Entity that provides medical aid"@en ;
+                        rdfs:isDefinedBy vair: ;
+                        rdfs:label "Medical Aid Provider"@en ;
+                        skos:definition "Entity that provides medical aid"@en ;
+                        skos:inScheme vair: ;
+                        skos:prefLabel "Medical Aid Provider"@en .
+
+
 vair:MigrationManagement rdfs:comment "Activities related to managing migration."@en ;
                          rdfs:isDefinedBy vair: ;
                          rdfs:label "Migration Management"@en ;
@@ -7252,6 +7393,14 @@ vair:Model terms:source "ISO/IEC 22989, 3.1.23" ;
            skos:definition "physical, mathematical or otherwise logical representation of a system, entity, phenomenon, process or data. "@en ;
            skos:inScheme vair: ;
            skos:prefLabel "Model"@en .
+
+
+vair:ModelCard rdfs:comment "A form of model documentation"@en ;
+               rdfs:isDefinedBy vair: ;
+               rdfs:label "Model Card"@en ;
+               skos:definition "A form of model documentation"@en ;
+               skos:inScheme vair: ;
+               skos:prefLabel "Model Card"@en .
 
 
 vair:ModelEvasion terms:source "ALTAI" ;
@@ -7379,6 +7528,15 @@ vair:NeuralNetwork terms:source "ISO/IEC 22989 3.4.8" ;
                    skos:prefLabel "Neural Network"@en .
 
 
+vair:NoAutomation terms:source "ISO/IEC 22989, 5.13" ;
+                  rdfs:comment "The level of automation where an operator fully controls the system"@en ;
+                  rdfs:isDefinedBy vair: ;
+                  rdfs:label "No Automation"@en ;
+                  skos:definition "The level of automation where an operator fully controls the system"@en ;
+                  skos:inScheme vair: ;
+                  skos:prefLabel "No Automation"@en .
+
+
 vair:ObjectRecognition terms:source "AI Watch, Defining Artificial Intelligence 2.0" ;
                        rdfs:comment "The capability to recognise objects"@en ;
                        rdfs:isDefinedBy vair: ;
@@ -7445,6 +7603,15 @@ vair:PartOfSpeechTagging terms:source "ISO/IEC 22989, 3.6.13" ;
                          skos:definition "Assigning a category (e.g. verb, noun, adjective) to a word based on its grammatical properties."@en ;
                          skos:inScheme vair: ;
                          skos:prefLabel "Part Of Speech Tagging"@en .
+
+
+vair:PartialAutomation terms:source "ISO/IEC 22989, 5.13" ;
+                       rdfs:comment "The level of automation where some sub-functions of the system are fully automated while the system remains under the control of an external agent"@en ;
+                       rdfs:isDefinedBy vair: ;
+                       rdfs:label "Partial Automation"@en ;
+                       skos:definition "The level of automation where some sub-functions of the system are fully automated while the system remains under the control of an external agent"@en ;
+                       skos:inScheme vair: ;
+                       skos:prefLabel "Partial Automation"@en .
 
 
 vair:PerformingBackgroundCheck rdfs:comment "Performing background checks"@en ;
@@ -7527,6 +7694,14 @@ vair:PotentialJobApplicant rdfs:comment "A person who may have applied for emplo
                            skos:definition "A person who may have applied for employment."@en ;
                            skos:inScheme vair: ;
                            skos:prefLabel "Potential Job Applicant"@en .
+
+
+vair:PotentialPublicServicesApplicant rdfs:comment "A person who may have applied for public services."@en ;
+                                      rdfs:label "Potential Public Services Applicant"@en ;
+                                      skos:definition "A person who may have applied for public services."@en ;
+                                      skos:inScheme vair: ;
+                                      skos:isDefinedBy vair: ;
+                                      skos:prefLabel "Potential Public Services Applicant"@en .
 
 
 vair:Prediction terms:source "ISO/IEC 22989, 3.1.27" ;
@@ -7848,6 +8023,23 @@ vair:Right rdfs:comment "Refers to fundamental rights."@en ;
            skos:prefLabel "Right"@en .
 
 
+vair:RightToNondiscrimination rdfs:comment "Refers to the fundamental right to non-discrimination"@en ;
+                              rdfs:isDefinedBy vair: ;
+                              rdfs:label "Right To Non-discrimination"@en ;
+                              skos:definition "Refers to the fundamental right to non-discrimination"@en ;
+                              skos:inScheme vair: ;
+                              skos:prefLabel "Right To Non-discrimination"@en .
+
+
+vair:Robot rdfs:comment "An automation system with actuators that performs intended tasks in the physical world, by means of sensing its environment and a software control system."@en ;
+           rdfs:isDefinedBy vair: ;
+           rdfs:label "Robot"@en ,
+                      "ISO/IEC 22989, 3.1.29" ;
+           skos:definition "An automation system with actuators that performs intended tasks in the physical world, by means of sensing its environment and a software control system."@en ;
+           skos:inScheme vair: ;
+           skos:prefLabel "Robot"@en .
+
+
 vair:Safety rdfs:comment "Refers to the state of safety."@en ;
             rdfs:isDefinedBy vair: ;
             rdfs:label "Safety"@en ;
@@ -8134,6 +8326,14 @@ vair:SymbolicReasoning rdfs:comment "Reasoning based on the knowledge encoded in
                        skos:prefLabel "Symbolic Reasoning"@en .
 
 
+vair:SystemArchitectureDocumentation rdfs:comment "Documentation specifying software architecture."@en ;
+                                     rdfs:isDefinedBy vair: ;
+                                     rdfs:label "System Architecture Documentation"@en ;
+                                     skos:definition "Documentation specifying software architecture."@en ;
+                                     skos:inScheme vair: ;
+                                     skos:prefLabel "System Architecture Documentation"@en .
+
+
 vair:TechnicalDocumentation rdfs:comment "Documentation required by the AI Act, Article 11."@en ;
                             rdfs:isDefinedBy vair: ;
                             rdfs:label "Technical Documentation"@en ;
@@ -8285,21 +8485,6 @@ vair:WrongDataDesignChoice rdfs:comment "Refers to the wrong choice made in the 
                            skos:definition "Refers to the wrong choice made in the selecting datasets."@en ;
                            skos:inScheme vair: ;
                            skos:prefLabel "Wrong Data Design Choice"@en .
-###  https://w3id.org/vair#LoggingMeasure
-vair:LoggingMeasure rdf:type owl:NamedIndividual ,
-                                    skos:Concept ,
-                                    vair:Concept .
-
-###  https://w3id.org/vair#LoggingMeasure
-vair:LoggingMeasure rdf:type owl:Class ;
-                           rdfs:subClassOf airo:RiskControl .
-
-vair:LoggingMeasure rdfs:comment "Refers to logging measure in place "@en ;
-                           rdfs:isDefinedBy vair: ;
-                           rdfs:label "Logging Measure"@en ;
-                           skos:definition "Refers to logging measure in place"@en ;
-                           skos:inScheme vair: ;
-                           skos:prefLabel "Logging Measure"@en .                             
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
