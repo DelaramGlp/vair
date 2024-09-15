@@ -839,12 +839,28 @@ vair:Education rdf:type owl:Class ;
 vair:EducationalInstitution rdf:type owl:Class ;
                             rdfs:subClassOf airo:AIOperator .
 
+###  https://w3id.org/vair#EmergencyHealthCareProvider
+vair:EmergencyHealthCareProvider  rdf:type owl:NamedIndividual ,
+              skos:Concept ,
+              vair:Concept .
+
+###  https://w3id.org/vair#FireBrigade
+vair:FireBrigade rdf:type owl:NamedIndividual ,
+              skos:Concept ,
+              vair:Concept .  
+
+###  https://w3id.org/vair#MedicalAidProvider
+vair:MedicalAidProvider rdf:type owl:NamedIndividual ,
+              skos:Concept ,
+              vair:Concept .  
 
 ###  https://w3id.org/vair#EmergencyHealthCareProvider
 vair:EmergencyHealthCareProvider rdf:type owl:Class ;
                                  rdfs:subClassOf vair:EmergencyServiceProvider ;
                                  rdfs:comment "Refer to emergency healthcare providers"@en ;
                                  rdfs:label "Emergency Healthcare Provider"@en ;
+                                 rdfs:isDefinedBy vair: ;
+                                 skos:inScheme vair: ;
                                  skos:definition "Refer to emergency healthcare providers"@en ;
                                  skos:prefLabel "Emergency Healthcare Provider"@en .
 
@@ -2586,6 +2602,7 @@ vair:WrongDataDesignChoice rdf:type owl:Class ;
 :API rdf:type owl:NamedIndividual ,
               skos:Concept ,
               vair:Concept .
+              
 
 
 ###  http://www.semanticweb.org/owl/owlapi/turtle#ActiveInvolvement
@@ -4260,6 +4277,10 @@ vair:MachineLearningPlatform rdf:type owl:NamedIndividual ,
                                       skos:Concept ,
                                       vair:Concept .
 
+###  https://w3id.org/vair#ApplicationPlatform
+vair:ApplicationPlatform rdf:type owl:NamedIndividual ,
+                                      skos:Concept ,
+                                      vair:Concept .
 
 ###  https://w3id.org/vair#MachineLearningTechnique
 vair:MachineLearningTechnique rdf:type owl:NamedIndividual ,
@@ -5169,11 +5190,15 @@ vair:SoundEventRecognition rdf:type owl:NamedIndividual ,
                                     vair:Concept .
 
 
+###  https://w3id.org/vair#BiometricsBasedEmotionRecognition
+vair:BiometricsBasedEmotionRecognition rdf:type owl:NamedIndividual ,
+                                    skos:Concept ,
+                                    vair:Concept .
+
 ###  https://w3id.org/vair#SoundSourceSeparation
 vair:SoundSourceSeparation rdf:type owl:NamedIndividual ,
                                     skos:Concept ,
                                     vair:Concept .
-
 
 ###  https://w3id.org/vair#SoundSynthesis
 vair:SoundSynthesis rdf:type owl:NamedIndividual ,
