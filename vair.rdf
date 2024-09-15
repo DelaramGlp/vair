@@ -1,16 +1,14 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/owl/owlapi/turtle#"
-     xml:base="http://www.semanticweb.org/owl/owlapi/turtle"
+<rdf:RDF xmlns="https://w3id.org/vair#"
+     xml:base="https://w3id.org/vair"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:airo="https://w3id.org/airo#"
      xmlns:bibo="http://purl.org/ontology/bibo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:vair="https://w3id.org/vair#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/vair">
@@ -219,23 +217,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#DeepLearning -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#DeepLearning">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/vair#MachineLearning"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-    
-
-
-    <!-- http://www.w3.org/2004/02/skos/core#concept -->
-
-    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#concept"/>
     
 
 
@@ -299,12 +283,6 @@
     
 
 
-    <!-- https://w3id.org/airo#Control -->
-
-    <owl:Class rdf:about="https://w3id.org/airo#Control"/>
-    
-
-
     <!-- https://w3id.org/airo#Documentation -->
 
     <owl:Class rdf:about="https://w3id.org/airo#Documentation"/>
@@ -317,9 +295,9 @@
     
 
 
-    <!-- https://w3id.org/airo#HumanInvovlvement -->
+    <!-- https://w3id.org/airo#HumanInvolvement -->
 
-    <owl:Class rdf:about="https://w3id.org/airo#HumanInvovlvement"/>
+    <owl:Class rdf:about="https://w3id.org/airo#HumanInvolvement"/>
     
 
 
@@ -350,6 +328,12 @@
     <!-- https://w3id.org/airo#Purpose -->
 
     <owl:Class rdf:about="https://w3id.org/airo#Purpose"/>
+    
+
+
+    <!-- https://w3id.org/airo#RiskControl -->
+
+    <owl:Class rdf:about="https://w3id.org/airo#RiskControl"/>
     
 
 
@@ -400,13 +384,7 @@
     <!-- https://w3id.org/vair#ActiveInvolvement -->
 
     <owl:Class rdf:about="https://w3id.org/vair#ActiveInvolvement">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#HumanInvovlvement"/>
-        <rdfs:comment xml:lang="en">Represents active interactation with an AI system.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Active Involvement</rdfs:label>
-        <skos:definition xml:lang="en">Represents active interactation with an AI system.</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Active Involvement</skos:prefLabel>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#HumanInvolvement"/>
     </owl:Class>
     
 
@@ -455,12 +433,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#ApplicationPlatform">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AIComponent"/>
-        <rdfs:comment xml:lang="en">Resource on which an application runs.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Application Platform</rdfs:label>
-        <skos:definition xml:lang="en">Resource on which an application runs.</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Application Platform</skos:prefLabel>
     </owl:Class>
     
 
@@ -613,13 +585,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#AssistiveAutomation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AutomationLevel"/>
-        <terms:source>ISO/IEC 22989, 5.13</terms:source>
-        <rdfs:comment xml:lang="en">The level of automation where the system assists an operator</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Assistive Automation</rdfs:label>
-        <skos:definition xml:lang="en">The level of automation where the system assists an operator</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Assistive Automation</skos:prefLabel>
     </owl:Class>
     
 
@@ -652,13 +617,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#AudioProcessing">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AICapability"/>
-        <terms:source>AI Watch, Defining Artificial Intelligence 2.0</terms:source>
-        <rdfs:comment xml:lang="en">The capability to process audio recordings.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Audio Processing</rdfs:label>
-        <skos:definition>The capability to process audio recordings.</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Audio Processing</skos:prefLabel>
     </owl:Class>
     
 
@@ -675,13 +633,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#Autonomy">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AutomationLevel"/>
-        <terms:source>ISO/IEC 22989, 5.13</terms:source>
-        <rdfs:comment xml:lang="en">The level of automation where the system is capable of modifying its intended domain of use or its goals without external intervention, control or oversight.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Autonomy</rdfs:label>
-        <skos:definition xml:lang="en">The level of automation where the system is capable of modifying its intended domain of use or its goals without external intervention, control or oversight.</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Autonomy</skos:prefLabel>
     </owl:Class>
     
 
@@ -778,12 +729,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#BiometricsBasedEmotionRecognition">
         <rdfs:subClassOf rdf:resource="https://w3id.org/vair#EmotionRecognition"/>
-        <rdfs:comment xml:lang="en">Refers to recognisting emtions based on biometrics information</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Biometrics Based Emotion Recognition</rdfs:label>
-        <skos:definition xml:lang="en">Refers to recognisting emtions based on biometrics information</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Biometrics Based Emotion Recognition</skos:prefLabel>
     </owl:Class>
     
 
@@ -800,12 +745,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#CannotOptOutOfOutput">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#ModeOfOutputControllability"/>
-        <rdfs:comment xml:lang="en">A mode of controllability that stakeholders cannot opt out of the system’s output.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Cannot Opt Out Of Output</rdfs:label>
-        <skos:definition xml:lang="en">A mode of controllability that stakeholders cannot opt out of the system’s output.</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Cannot Opt Out Of Output</skos:prefLabel>
     </owl:Class>
     
 
@@ -822,12 +761,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#ChallengeOutput">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#ModeOfOutputControllability"/>
-        <rdfs:comment xml:lang="en">A mode of controllability that stakeholders can challenge the system’s output.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Challenge Output</rdfs:label>
-        <skos:definition xml:lang="en">A mode of controllability that stakeholders can challenge the system’s output.</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Challenge Output</skos:prefLabel>
     </owl:Class>
     
 
@@ -871,13 +804,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#ConditionalAutomation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AutomationLevel"/>
-        <terms:source>ISO/IEC 22989, 5.13</terms:source>
-        <rdfs:comment xml:lang="en">The level of automation where there is sustained and specific performance by a system, with an external agent being ready to take over when necessary.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Conditional Automation</rdfs:label>
-        <skos:definition xml:lang="en">The level of automation where there is sustained and specific performance by a system, with an external agent being ready to take over when necessary.</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Conditional Automation</skos:prefLabel>
     </owl:Class>
     
 
@@ -918,12 +844,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#CorrectOutput">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#ModeOfOutputControllability"/>
-        <rdfs:comment xml:lang="en">A mode of controllability that stakeholders can correct the system’s output.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Correct Output</rdfs:label>
-        <skos:definition xml:lang="en">A mode of controllability that stakeholders can correct the system’s output.</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Correct Output</skos:prefLabel>
     </owl:Class>
     
 
@@ -932,12 +852,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#CourseAttendee">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AISubject"/>
-        <rdfs:comment xml:lang="en">A person who attends a course.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Course Attendee</rdfs:label>
-        <skos:definition xml:lang="en">A natural person who attends a course.</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Course Attendee</skos:prefLabel>
     </owl:Class>
     
 
@@ -962,12 +876,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#DataRiskSource">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#RiskSource"/>
-        <rdfs:comment xml:lang="en">Risk sources related to data</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Data Risk Source</rdfs:label>
-        <skos:definition xml:lang="en">Risk sources related to data</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Data Risk Source</skos:prefLabel>
     </owl:Class>
     
 
@@ -1024,6 +932,14 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#DeepFakeDetection">
         <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Detection"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/vair#DeepLearning -->
+
+    <owl:Class rdf:about="https://w3id.org/vair#DeepLearning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/vair#MachineLearning"/>
     </owl:Class>
     
 
@@ -1087,13 +1003,7 @@
     <!-- https://w3id.org/vair#DetectingLies -->
 
     <owl:Class rdf:about="https://w3id.org/vair#DetectingLies">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Purpose"/>
-        <rdfs:comment xml:lang="en">Dectecting lies</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Detecting Lies</rdfs:label>
-        <skos:definition xml:lang="en">Dectecting lies</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Detecting Lies</skos:prefLabel>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Detection"/>
     </owl:Class>
     
 
@@ -1125,13 +1035,7 @@
     <!-- https://w3id.org/vair#DetectionControl -->
 
     <owl:Class rdf:about="https://w3id.org/vair#DetectionControl">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Control"/>
-        <rdfs:comment xml:lang="en">Control that is applied for detection purposes, e.g. detecting risks</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Detection Control</rdfs:label>
-        <skos:definition xml:lang="en">Control that is applied for detection purposes, e.g. detecting risks</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Detection Control</skos:prefLabel>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#RiskControl"/>
     </owl:Class>
     
 
@@ -1276,10 +1180,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#EmergencyHealthCareProvider">
         <rdfs:subClassOf rdf:resource="https://w3id.org/vair#EmergencyServiceProvider"/>
-        <rdfs:comment xml:lang="en">Refer to emergency healthcare providers</rdfs:comment>
-        <rdfs:label xml:lang="en">Emergency Healthcare Provider</rdfs:label>
-        <skos:definition xml:lang="en">Refer to emergency healthcare providers</skos:definition>
-        <skos:prefLabel xml:lang="en">Emergency Healthcare Provider</skos:prefLabel>
     </owl:Class>
     
 
@@ -1296,12 +1196,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#EmergencyTriage">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Purpose"/>
-        <rdfs:comment xml:lang="en">Emergency triaging</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Emergency Triage</rdfs:label>
-        <skos:definition xml:lang="en">Emergency triaging</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Emergency Triage</skos:prefLabel>
     </owl:Class>
     
 
@@ -1469,11 +1363,7 @@
     <!-- https://w3id.org/vair#ExaminingApplication -->
 
     <owl:Class rdf:about="https://w3id.org/vair#ExaminingApplication">
-        <rdfs:comment xml:lang="en">Purposes related to examining an application</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Examining Application</rdfs:label>
-        <skos:definition xml:lang="en">Purposes related to examining an application</skos:definition>
-        <skos:prefLabel xml:lang="en">Examining Application</skos:prefLabel>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Purpose"/>
     </owl:Class>
     
 
@@ -1546,12 +1436,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#FireBrigade">
         <rdfs:subClassOf rdf:resource="https://w3id.org/vair#EmergencyServiceProvider"/>
-        <rdfs:comment xml:lang="en">Refers to fire department</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Fire Brigade</rdfs:label>
-        <skos:definition xml:lang="en">Refers to fire department</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Fire Brigade</skos:prefLabel>
     </owl:Class>
     
 
@@ -1568,13 +1452,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#FullAutomation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AutomationLevel"/>
-        <terms:source>ISO/IEC 22989, 5.13</terms:source>
-        <rdfs:comment xml:lang="en">The level of automation where is capable of performing its entire mission without external intervention.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Full Automation</rdfs:label>
-        <skos:definition xml:lang="en">The level of automation where is capable of performing its entire mission without external intervention.</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Full Automation</skos:prefLabel>
     </owl:Class>
     
 
@@ -1639,13 +1516,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#GrantingPublicAssistanceServices">
         <rdfs:subClassOf rdf:resource="https://w3id.org/vair#DecisionMaking"/>
-        <rdfs:comment xml:lang="en">Granting natural persons essential public assistance benefits and services</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Granting Public Assistance Services</rdfs:label>
-        <skos:definition xml:lang="en">Granting natural persons essential public assistance benefits and services</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Granting Public Assistance Services</skos:prefLabel>
-        <skos:related rdf:resource="https://w3id.org/vair#PublicService"/>
     </owl:Class>
     
 
@@ -1694,13 +1564,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#HighAutomation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AutomationLevel"/>
-        <terms:source>ISO/IEC 22989, 5.13</terms:source>
-        <rdfs:comment>The level of automation where there the system performs parts of its mission without external intervention.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">High Automation</rdfs:label>
-        <skos:definition xml:lang="en">The level of automation where there the system performs parts of its mission without external intervention.</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">High Automation</skos:prefLabel>
     </owl:Class>
     
 
@@ -1741,10 +1604,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#ISO31073_2022">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Standard"/>
-        <rdfs:comment xml:lang="en">ISO 31073:2022 Risk management — Vocabulary</rdfs:comment>
-        <rdfs:label xml:lang="en">ISO 31073:2022</rdfs:label>
-        <skos:definition xml:lang="en">ISO 31073:2022 Risk management — Vocabulary</skos:definition>
-        <skos:prefLabel xml:lang="en">ISO 31073:2022</skos:prefLabel>
     </owl:Class>
     
 
@@ -1801,12 +1660,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#ISOIEC23894_2023">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Standard"/>
-        <rdfs:comment xml:lang="en">ISO/IEC 23894:2023 Information technology — Artificial intelligence — Guidance on risk management</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">ISO/IEC 23894:2023</rdfs:label>
-        <skos:definition xml:lang="en">ISO/IEC 23894:2023 Information technology — Artificial intelligence — Guidance on risk management</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:label xml:lang="en">ISO/IEC 23894:2023</skos:label>
     </owl:Class>
     
 
@@ -1831,12 +1684,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#ISOIEC42001_2023">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Standard"/>
-        <rdfs:comment xml:lang="en">ISO/IEC 42001:2023 Information technology — Artificial intelligence — Management system</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">ISO/IEC 42001:2023</rdfs:label>
-        <skos:definition xml:lang="en">ISO/IEC 42001:2023 Information technology — Artificial intelligence — Management system</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">ISO/IEC 42001:2023</skos:prefLabel>
     </owl:Class>
     
 
@@ -2037,12 +1884,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#Influencing">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Purpose"/>
-        <rdfs:comment xml:lang="en">Purpose of influencing</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Influencing</rdfs:label>
-        <skos:definition xml:lang="en">Purpose of influencing</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Influencing</skos:prefLabel>
     </owl:Class>
     
 
@@ -2067,12 +1908,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#InfluencingVotingBehaviour">
         <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Influencing"/>
-        <rdfs:comment xml:lang="en">Purpose of influencing voting behaviour of people</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Influencing Voting Behaviour</rdfs:label>
-        <skos:definition xml:lang="en">Purpose of influencing voting behaviour of people</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Influencing Voting Behaviour</skos:prefLabel>
     </owl:Class>
     
 
@@ -2080,7 +1915,7 @@
     <!-- https://w3id.org/vair#InformationProvision -->
 
     <owl:Class rdf:about="https://w3id.org/vair#InformationProvision">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/vair#OrganisationalControl"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/vair#OrganisationalMeasure"/>
     </owl:Class>
     
 
@@ -2096,13 +1931,7 @@
     <!-- https://w3id.org/vair#InformedInvolvement -->
 
     <owl:Class rdf:about="https://w3id.org/vair#InformedInvolvement">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#HumanInvovlvement"/>
-        <rdfs:comment xml:lang="en">Represents that a specific actor was informed that an AI system is in place.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Informed Involvement</rdfs:label>
-        <skos:definition xml:lang="en">Represents that a specific actor was informed that an AI system is in place.</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Informed Involvement</skos:prefLabel>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#HumanInvolvement"/>
     </owl:Class>
     
 
@@ -2111,12 +1940,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#InputDataRiskSource">
         <rdfs:subClassOf rdf:resource="https://w3id.org/vair#DataRiskSource"/>
-        <rdfs:comment xml:lang="en">Risk sources related to input data</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Input Data Risk Source</rdfs:label>
-        <skos:definition xml:lang="en">Risk sources related to input data</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Input Data Risk Source</skos:prefLabel>
     </owl:Class>
     
 
@@ -2133,13 +1956,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#InstructionForUse">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Documentation"/>
-        <terms:source>AI Act, Art. 3(15)</terms:source>
-        <rdfs:comment xml:lang="en">The information provided by the provider to inform the deployer of, in particular, an AI system’s intended purpose and proper use.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Instruction For Use</rdfs:label>
-        <skos:definition xml:lang="en">The information provided by the provider to inform the deployer of, in particular, an AI system’s intended purpose and proper use.</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Instruction For Use</skos:prefLabel>
     </owl:Class>
     
 
@@ -2171,13 +1987,7 @@
     <!-- https://w3id.org/vair#IntendedInvolvement -->
 
     <owl:Class rdf:about="https://w3id.org/vair#IntendedInvolvement">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#HumanInvovlvement"/>
-        <rdfs:comment xml:lang="en">Represents involvement of a specific actor is as intended.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Intended Involvement</rdfs:label>
-        <skos:definition xml:lang="en">Represents involvement of a specific actor is as intended.</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Intended Involvement</skos:prefLabel>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#HumanInvolvement"/>
     </owl:Class>
     
 
@@ -2201,7 +2011,7 @@
     <!-- https://w3id.org/vair#Interruption -->
 
     <owl:Class rdf:about="https://w3id.org/vair#Interruption">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/vair#OperationalControl"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/vair#OperationalMeasure"/>
     </owl:Class>
     
 
@@ -2209,7 +2019,7 @@
     <!-- https://w3id.org/vair#Intervention -->
 
     <owl:Class rdf:about="https://w3id.org/vair#Intervention">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/vair#OperationalControl"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/vair#OperationalMeasure"/>
     </owl:Class>
     
 
@@ -2266,13 +2076,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#JobApplicationAnalysis">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Purpose"/>
-        <rdfs:comment xml:lang="en">Analysis of job applications</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Job Application Analysis</rdfs:label>
-        <skos:definition xml:lang="en">Analysis of job applications</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Job Application Analysis</skos:prefLabel>
-        <skos:related rdf:resource="https://w3id.org/vair#Employment"/>
     </owl:Class>
     
 
@@ -2297,12 +2100,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#JobCandidate">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AISubject"/>
-        <rdfs:comment xml:lang="en">A person who is considered for employment.</rdfs:comment>
-        <rdfs:label xml:lang="en">Job Candidate</rdfs:label>
-        <skos:definition xml:lang="en">A person who is considered for employment.</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Job Candidate</skos:prefLabel>
     </owl:Class>
     
 
@@ -2417,6 +2214,14 @@
     
 
 
+    <!-- https://w3id.org/vair#LoggingMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/vair#LoggingMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#RiskControl"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/vair#LogicBasedTechnique -->
 
     <owl:Class rdf:about="https://w3id.org/vair#LogicBasedTechnique">
@@ -2461,13 +2266,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#MachineLearning">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AITechnique"/>
-        <terms:source>ISO/IEC 22989, 3.3.5</terms:source>
-        <rdfs:comment xml:lang="en">Process of optimizing model parameters through computational techniques, such that the model&apos;s behaviour reflects the data or experience.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Machine Learning</rdfs:label>
-        <skos:definition xml:lang="en">Process of optimizing model parameters through computational techniques, such that the model&apos;s behaviour reflects the data or experience.</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Machine Learning</skos:prefLabel>
     </owl:Class>
     
 
@@ -2539,13 +2337,7 @@
     <!-- https://w3id.org/vair#ManualControl -->
 
     <owl:Class rdf:about="https://w3id.org/vair#ManualControl">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Control"/>
-        <rdfs:comment xml:lang="en">Controls implemented manually by human actors</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Manual Control</rdfs:label>
-        <skos:definition xml:lang="en">Controls implemented manually by human actors</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Manual Control</skos:prefLabel>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#RiskControl"/>
     </owl:Class>
     
 
@@ -2554,12 +2346,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#MedicalAidProvider">
         <rdfs:subClassOf rdf:resource="https://w3id.org/vair#EmergencyServiceProvider"/>
-        <rdfs:comment xml:lang="en">Entity that provides medical aid</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Medical Aid Provider</rdfs:label>
-        <skos:definition xml:lang="en">Entity that provides medical aid</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Medical Aid Provider</skos:prefLabel>
     </owl:Class>
     
 
@@ -2572,14 +2358,10 @@
     
 
 
-    <!-- https://w3id.org/vair#MitigationControl -->
+    <!-- https://w3id.org/vair#MitigationMeasure -->
 
-    <owl:Class rdf:about="https://w3id.org/vair#MitigationControl">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Control"/>
-        <rdfs:comment xml:lang="en">Control that is applied for mitigation purposes, e.g. ,mitigating risk sources, impacts, etc.</rdfs:comment>
-        <rdfs:label xml:lang="en">Mitigation Control</rdfs:label>
-        <skos:definition xml:lang="en">Control that is applied for mitigation purposes, e.g. ,mitigating risk sources, impacts, etc.</skos:definition>
-        <skos:prefLabel xml:lang="en">Mitigation Control</skos:prefLabel>
+    <owl:Class rdf:about="https://w3id.org/vair#MitigationMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#RiskControl"/>
     </owl:Class>
     
 
@@ -2596,12 +2378,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#ModelCard">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Documentation"/>
-        <rdfs:comment xml:lang="en">A form of model documentation</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Model Card</rdfs:label>
-        <skos:definition xml:lang="en">A form of model documentation</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Model Card</skos:prefLabel>
     </owl:Class>
     
 
@@ -2626,12 +2402,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#ModelRiskSource">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#RiskSource"/>
-        <rdfs:comment xml:lang="en">Risk sources related to the AI model</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Model Risk Source</rdfs:label>
-        <skos:definition xml:lang="en">Risk sources related to AI model</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Model Risk Source</skos:prefLabel>
     </owl:Class>
     
 
@@ -2656,6 +2426,14 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#MonitoringEmployeePerformance">
         <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Monitoring"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/vair#MonitoringMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/vair#MonitoringMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#RiskControl"/>
     </owl:Class>
     
 
@@ -2736,13 +2514,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#NoAutomation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AutomationLevel"/>
-        <terms:source>ISO/IEC 22989, 5.13</terms:source>
-        <rdfs:comment xml:lang="en">The level of automation where an operator fully controls the system</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">No Automation</rdfs:label>
-        <skos:definition xml:lang="en">The level of automation where an operator fully controls the system</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">No Automation</skos:prefLabel>
     </owl:Class>
     
 
@@ -2763,16 +2534,10 @@
     
 
 
-    <!-- https://w3id.org/vair#OperationalControl -->
+    <!-- https://w3id.org/vair#OperationalMeasure -->
 
-    <owl:Class rdf:about="https://w3id.org/vair#OperationalControl">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Control"/>
-        <rdfs:comment xml:lang="en">Control related to operation of the system.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Operational Control</rdfs:label>
-        <skos:definition xml:lang="en">Control related to operation of the system.</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Operational Control</skos:prefLabel>
+    <owl:Class rdf:about="https://w3id.org/vair#OperationalMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#RiskControl"/>
     </owl:Class>
     
 
@@ -2801,16 +2566,10 @@
     
 
 
-    <!-- https://w3id.org/vair#OrganisationalControl -->
+    <!-- https://w3id.org/vair#OrganisationalMeasure -->
 
-    <owl:Class rdf:about="https://w3id.org/vair#OrganisationalControl">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Control"/>
-        <rdfs:comment xml:lang="en">Organisational measures applied to control risk sources, risks, consequences, or impacts.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Organisational Control</rdfs:label>
-        <skos:definition xml:lang="en">Organisational measures applied to control risk sources, risks, consequences, or impacts.</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Organisational Control</skos:prefLabel>
+    <owl:Class rdf:about="https://w3id.org/vair#OrganisationalMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#RiskControl"/>
     </owl:Class>
     
 
@@ -2819,12 +2578,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#OrganisationalRiskSource">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#RiskSource"/>
-        <rdfs:comment xml:lang="en">Risk sources related with the organisation developing, deploying, or using AI.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Organisational Risk Source</rdfs:label>
-        <skos:definition xml:lang="en">Risk sources related with the organisation developing, deploying, or using AI.</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Organisational Risk Source</skos:prefLabel>
     </owl:Class>
     
 
@@ -2840,7 +2593,7 @@
     <!-- https://w3id.org/vair#OverridingOutcome -->
 
     <owl:Class rdf:about="https://w3id.org/vair#OverridingOutcome">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/vair#MitigationControl"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/vair#MitigationMeasure"/>
     </owl:Class>
     
 
@@ -2857,13 +2610,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#PartialAutomation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AutomationLevel"/>
-        <terms:source>ISO/IEC 22989, 5.13</terms:source>
-        <rdfs:comment xml:lang="en">The level of automation where some sub-functions of the system are fully automated while the system remains under the control of an external agent</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Partial Automation</rdfs:label>
-        <skos:definition xml:lang="en">The level of automation where some sub-functions of the system are fully automated while the system remains under the control of an external agent</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Partial Automation</skos:prefLabel>
     </owl:Class>
     
 
@@ -2871,13 +2617,7 @@
     <!-- https://w3id.org/vair#PassiveInvolvement -->
 
     <owl:Class rdf:about="https://w3id.org/vair#PassiveInvolvement">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#HumanInvovlvement"/>
-        <rdfs:comment xml:lang="en">Represents passive interactation with an AI system.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Passive Involvement</rdfs:label>
-        <skos:definition xml:lang="en">Represents passive interactation with an AI system.</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Passive Involvement</skos:prefLabel>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#HumanInvolvement"/>
     </owl:Class>
     
 
@@ -2886,10 +2626,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#PerfomanceRiskSource">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#RiskSource"/>
-        <rdfs:comment xml:lang="en">Risk sources related to performance</rdfs:comment>
-        <rdfs:label xml:lang="en">Perfomance Risk Source</rdfs:label>
-        <skos:definition xml:lang="en">Risk sources related to performance</skos:definition>
-        <skos:prefLabel xml:lang="en">Perfomance Risk Source</skos:prefLabel>
     </owl:Class>
     
 
@@ -2978,12 +2714,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#PotentialPublicServicesApplicant">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AISubject"/>
-        <rdfs:comment xml:lang="en">A person who may have applied for public services.</rdfs:comment>
-        <rdfs:label xml:lang="en">Potential Public Services Applicant</rdfs:label>
-        <skos:definition xml:lang="en">A person who may have applied for public services.</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Potential Public Services Applicant</skos:prefLabel>
     </owl:Class>
     
 
@@ -3263,7 +2993,7 @@
     <!-- https://w3id.org/vair#ReversingOutcome -->
 
     <owl:Class rdf:about="https://w3id.org/vair#ReversingOutcome">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/vair#MitigationControl"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/vair#MitigationMeasure"/>
     </owl:Class>
     
 
@@ -3296,10 +3026,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#RightToNondiscrimination">
         <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Right"/>
-        <rdfs:comment xml:lang="en">Refers to the fundamental right to non-discrimination</rdfs:comment>
-        <rdfs:label xml:lang="en">Right To Non-discrimination</rdfs:label>
-        <skos:definition xml:lang="en">Refers to the fundamental right to non-discrimination</skos:definition>
-        <skos:prefLabel xml:lang="en">Right To Non-discrimination</skos:prefLabel>
     </owl:Class>
     
 
@@ -3308,13 +3034,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#Robot">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AISystem"/>
-        <rdfs:comment xml:lang="en">An automation system with actuators that performs intended tasks in the physical world, by means of sensing its environment and a software control system.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Robot</rdfs:label>
-        <rdfs:label>ISO/IEC 22989, 3.1.29</rdfs:label>
-        <skos:definition xml:lang="en">An automation system with actuators that performs intended tasks in the physical world, by means of sensing its environment and a software control system.</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Robot</skos:prefLabel>
     </owl:Class>
     
 
@@ -3343,16 +3062,18 @@
     
 
 
+    <!-- https://w3id.org/vair#SecurityMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/vair#SecurityMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#RiskControl"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/vair#SemiAutomatedControl -->
 
     <owl:Class rdf:about="https://w3id.org/vair#SemiAutomatedControl">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Control"/>
-        <rdfs:comment xml:lang="en">Controls that are implemeted in a semi automated manner.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Semi Automated Control</rdfs:label>
-        <skos:definition xml:lang="en">Controls that are implemeted in a semi automated manner.</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Semi Automated Control</skos:prefLabel>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#RiskControl"/>
     </owl:Class>
     
 
@@ -3417,12 +3138,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#ServingSafetyFunctionInManagementOfCriticalDigitalInfrastructure">
         <rdfs:subClassOf rdf:resource="https://w3id.org/vair#ServingSafetyFunctionInManagement"/>
-        <rdfs:comment xml:lang="en">Purpose of providing safety function in management of critical digital infrastructure</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Serving Safety Function In Management Of Critical Digital Infrastructure</rdfs:label>
-        <skos:definition xml:lang="en">Purpose of providing safety function in management of critical digital infrastructure</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Serving Safety Function In Management Of Critical Digital Infrastructure</skos:prefLabel>
     </owl:Class>
     
 
@@ -3479,12 +3194,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#ServingSafetyFunctionInOperationOfCriticalDigitalInfrastructure">
         <rdfs:subClassOf rdf:resource="https://w3id.org/vair#ServingSafetyFunctionInOperation"/>
-        <rdfs:comment xml:lang="en">Purpose of providing safety function in operation of critical digital infrastructure</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Serving Safety Function In Operation Of Critical Digital Infrastructure</rdfs:label>
-        <skos:definition xml:lang="en">Purpose of providing safety function in operation of critical digital infrastructure</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Serving Safety Function In Operation Of Critical Digital Infrastructure</skos:prefLabel>
     </owl:Class>
     
 
@@ -3637,12 +3346,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#SystemArchitectureDocumentation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Documentation"/>
-        <rdfs:comment xml:lang="en">Documentation specifying software architecture.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">System Architecture Documentation</rdfs:label>
-        <skos:definition xml:lang="en">Documentation specifying software architecture.</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">System Architecture Documentation</skos:prefLabel>
     </owl:Class>
     
 
@@ -3651,12 +3354,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#SystemRiskSource">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#RiskSource"/>
-        <rdfs:comment xml:lang="en">Risk sources related to the AI system</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">System Risk Source</rdfs:label>
-        <skos:definition xml:lang="en">Risk sources related to the AI system</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">System Risk Source</skos:prefLabel>
     </owl:Class>
     
 
@@ -3665,6 +3362,14 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#TechnicalDocumentation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Documentation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/vair#TechnicalMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/vair#TechnicalMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#RiskControl"/>
     </owl:Class>
     
 
@@ -3681,12 +3386,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#TestDataRiskSource">
         <rdfs:subClassOf rdf:resource="https://w3id.org/vair#DataRiskSource"/>
-        <rdfs:comment xml:lang="en">Risk sources related to test data</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Test Data Risk Source</rdfs:label>
-        <skos:definition xml:lang="en">Risk sources related to test data</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Test Data Risk Source</skos:prefLabel>
     </owl:Class>
     
 
@@ -3727,12 +3426,14 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#TrainingDataRiskSource">
         <rdfs:subClassOf rdf:resource="https://w3id.org/vair#DataRiskSource"/>
-        <rdfs:comment xml:lang="en">Risk sources related to training data</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Training Data Risk Source</rdfs:label>
-        <skos:definition xml:lang="en">Risk sources related to training data</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Training Data Risk Source</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/vair#TransparencyMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/vair#TransparencyMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#RiskControl"/>
     </owl:Class>
     
 
@@ -3748,13 +3449,7 @@
     <!-- https://w3id.org/vair#UninformedInvolvement -->
 
     <owl:Class rdf:about="https://w3id.org/vair#UninformedInvolvement">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#HumanInvovlvement"/>
-        <rdfs:comment xml:lang="en">Represents that a specific actor was not informed that an AI system is in place.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Uninformed Involvement</rdfs:label>
-        <skos:definition xml:lang="en">Represents that a specific actor was not informed that an AI system is in place.</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Uninformed Involvement</skos:prefLabel>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#HumanInvolvement"/>
     </owl:Class>
     
 
@@ -3762,13 +3457,7 @@
     <!-- https://w3id.org/vair#UnintendedInvolvement -->
 
     <owl:Class rdf:about="https://w3id.org/vair#UnintendedInvolvement">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#HumanInvovlvement"/>
-        <rdfs:comment xml:lang="en">Represents unintended involvement of a specific actor.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Unintended Involvement</rdfs:label>
-        <skos:definition xml:lang="en">Represents unintended involvement of a specific actor.</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Unintended Involvement</skos:prefLabel>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#HumanInvolvement"/>
     </owl:Class>
     
 
@@ -3808,7 +3497,7 @@
     <!-- https://w3id.org/vair#UserTraining -->
 
     <owl:Class rdf:about="https://w3id.org/vair#UserTraining">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/vair#OrganisationalControl"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/vair#OrganisationalMeasure"/>
     </owl:Class>
     
 
@@ -3825,12 +3514,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#ValidationDataRiskSource">
         <rdfs:subClassOf rdf:resource="https://w3id.org/vair#DataRiskSource"/>
-        <rdfs:comment xml:lang="en">Risk sources related to validation data</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Validation Data Risk Source</rdfs:label>
-        <skos:definition xml:lang="en">Risk sources related to validation data</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Validation Data Risk Source</skos:prefLabel>
     </owl:Class>
     
 
@@ -3871,12 +3554,6 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#WellbeingImpact">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Impact"/>
-        <rdfs:comment xml:lang="en">Refers to impacts that affect wellbeing</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Wellbeing Impact</rdfs:label>
-        <skos:definition xml:lang="en">Refers to impacts that affect wellbeing</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Wellbeing Impact</skos:prefLabel>
     </owl:Class>
     
 
@@ -3966,15 +3643,6 @@
     <!-- http://www.semanticweb.org/owl/owlapi/turtle#CorrectOutput -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#CorrectOutput">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#DeepLearning -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#DeepLearning">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -4092,7 +3760,8 @@
     <!-- https://w3id.org/vair#AICards -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#AICards">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#concept"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
     
 
@@ -4122,6 +3791,15 @@
     <!-- https://w3id.org/vair#ActionRecognition -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#ActionRecognition">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#ActiveInvolvement -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#ActiveInvolvement">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -4167,6 +3845,15 @@
     <!-- https://w3id.org/vair#AllocatingTasks -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#AllocatingTasks">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#ApplicationPlatform -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#ApplicationPlatform">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -4371,6 +4058,15 @@
     
 
 
+    <!-- https://w3id.org/vair#AssistiveAutomation -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#AssistiveAutomation">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#AsylumManagement -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#AsylumManagement">
@@ -4392,6 +4088,15 @@
     <!-- https://w3id.org/vair#Attack -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#Attack">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#AudioProcessing -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#AudioProcessing">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -4428,6 +4133,15 @@
     <!-- https://w3id.org/vair#AutonomousSystem -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#AutonomousSystem">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#Autonomy -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#Autonomy">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -4533,6 +4247,15 @@
     
 
 
+    <!-- https://w3id.org/vair#BiometricsBasedEmotionRecognition -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#BiometricsBasedEmotionRecognition">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#BiometricsBasedEmotionSensing -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#BiometricsBasedEmotionSensing">
@@ -4569,6 +4292,15 @@
     
 
 
+    <!-- https://w3id.org/vair#CannotOptOutOfOutput -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#CannotOptOutOfOutput">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#CaseBasedReasoning -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#CaseBasedReasoning">
@@ -4581,6 +4313,15 @@
     <!-- https://w3id.org/vair#Categorisation -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#Categorisation">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#ChallengeOutput -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#ChallengeOutput">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -4632,6 +4373,15 @@
     
 
 
+    <!-- https://w3id.org/vair#ConditionalAutomation -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#ConditionalAutomation">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#ConformityAssessmentBody -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#ConformityAssessmentBody">
@@ -4677,9 +4427,27 @@
     
 
 
+    <!-- https://w3id.org/vair#CorrectOutput -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#CorrectOutput">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#CourseApplicant -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#CourseApplicant">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#CourseAttendee -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#CourseAttendee">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -4720,6 +4488,15 @@
     <!-- https://w3id.org/vair#DataPoisoning -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#DataPoisoning">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#DataRiskSource -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#DataRiskSource">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -4816,6 +4593,15 @@
     
 
 
+    <!-- https://w3id.org/vair#DeepLearning -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#DeepLearning">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#DegradedAccuracy -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#DegradedAccuracy">
@@ -4888,6 +4674,15 @@
     
 
 
+    <!-- https://w3id.org/vair#DetectingLies -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#DetectingLies">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#DetectingNon-AuthenticDocument -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#DetectingNon-AuthenticDocument">
@@ -4909,6 +4704,15 @@
     <!-- https://w3id.org/vair#Detection -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#Detection">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#DetectionControl -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#DetectionControl">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -5121,9 +4925,27 @@ or the importer, that makes an AI system available on the Union market</skos:def
     
 
 
+    <!-- https://w3id.org/vair#EmergencyHealthCareProvider -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#EmergencyHealthCareProvider">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#EmergencyServiceProvider -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#EmergencyServiceProvider">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#EmergencyTriage -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#EmergencyTriage">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -5401,6 +5223,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     
 
 
+    <!-- https://w3id.org/vair#ExaminingApplication -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#ExaminingApplication">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#ExaminingAsylumApplication -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#ExaminingAsylumApplication">
@@ -5487,6 +5318,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     
 
 
+    <!-- https://w3id.org/vair#FireBrigade -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#FireBrigade">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#Firefighter -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#Firefighter">
@@ -5499,6 +5339,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     <!-- https://w3id.org/vair#Freedom -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#Freedom">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#FullAutomation -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#FullAutomation">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -5577,6 +5426,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     
 
 
+    <!-- https://w3id.org/vair#GrantingPublicAssistanceServices -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#GrantingPublicAssistanceServices">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#Group -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#Group">
@@ -5616,6 +5474,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     <!-- https://w3id.org/vair#HealthInsuranceRiskAssessment -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#HealthInsuranceRiskAssessment">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#HighAutomation -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#HighAutomation">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -5665,6 +5532,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     <!-- https://w3id.org/vair#ISO31000-2018 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#ISO31000-2018">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#ISO31073_2022 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#ISO31073_2022">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -5734,6 +5610,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     
 
 
+    <!-- https://w3id.org/vair#ISOIEC23894_2023 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#ISOIEC23894_2023">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#ISOIEC24668-2022 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#ISOIEC24668-2022">
@@ -5746,6 +5631,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     <!-- https://w3id.org/vair#ISOIEC38507-2022 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#ISOIEC38507-2022">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#ISOIEC42001_2023 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#ISOIEC42001_2023">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -5986,6 +5880,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     
 
 
+    <!-- https://w3id.org/vair#Influencing -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#Influencing">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#InfluencingElectionOutcome -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#InfluencingElectionOutcome">
@@ -5998,6 +5901,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     <!-- https://w3id.org/vair#InfluencingReferendumOutcome -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#InfluencingReferendumOutcome">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#InfluencingVotingBehaviour -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#InfluencingVotingBehaviour">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -6022,6 +5934,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     
 
 
+    <!-- https://w3id.org/vair#InformedInvolvement -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#InformedInvolvement">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#InputData -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#InputData">
@@ -6035,9 +5956,27 @@ or the importer, that makes an AI system available on the Union market</skos:def
     
 
 
+    <!-- https://w3id.org/vair#InputDataRiskSource -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#InputDataRiskSource">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#InstallationInstruction -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#InstallationInstruction">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#InstructionForUse -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#InstructionForUse">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -6074,6 +6013,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     <!-- https://w3id.org/vair#IntelligentControlSystem -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#IntelligentControlSystem">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#IntendedInvolvement -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#IntendedInvolvement">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -6170,6 +6118,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     
 
 
+    <!-- https://w3id.org/vair#JobApplicationAnalysis -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#JobApplicationAnalysis">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#JobApplicationFiltering -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#JobApplicationFiltering">
@@ -6182,6 +6139,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     <!-- https://w3id.org/vair#JobApplicationScreening -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#JobApplicationScreening">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#JobCandidate -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#JobCandidate">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -6305,6 +6271,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     
 
 
+    <!-- https://w3id.org/vair#LoggingMeasure -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#LoggingMeasure">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#LogicBasedTechnique -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#LogicBasedTechnique">
@@ -6344,6 +6319,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     <!-- https://w3id.org/vair#LowSecurity -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#LowSecurity">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#MachineLearning -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#MachineLearning">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -6526,6 +6510,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     
 
 
+    <!-- https://w3id.org/vair#ManualControl -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#ManualControl">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#MarketSurveillanceAuthority -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#MarketSurveillanceAuthority">
@@ -6544,6 +6537,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     
 
 
+    <!-- https://w3id.org/vair#MedicalAidProvider -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#MedicalAidProvider">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#MigrationManagement -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#MigrationManagement">
@@ -6553,9 +6555,27 @@ or the importer, that makes an AI system available on the Union market</skos:def
     
 
 
+    <!-- https://w3id.org/vair#MitigationMeasure -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#MitigationMeasure">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#Model -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#Model">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#ModelCard -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#ModelCard">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -6574,6 +6594,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     <!-- https://w3id.org/vair#ModelInversion -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#ModelInversion">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#ModelRiskSource -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#ModelRiskSource">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -6601,6 +6630,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     <!-- https://w3id.org/vair#MonitoringEmployeePerformance -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#MonitoringEmployeePerformance">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#MonitoringMeasure -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#MonitoringMeasure">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -6691,6 +6729,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     <!-- https://w3id.org/vair#NeuralNetwork -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#NeuralNetwork">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#NoAutomation -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#NoAutomation">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -6796,6 +6843,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     
 
 
+    <!-- https://w3id.org/vair#OperationalMeasure -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#OperationalMeasure">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#OptimisationMethod -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#OptimisationMethod">
@@ -6817,6 +6873,24 @@ or the importer, that makes an AI system available on the Union market</skos:def
     <!-- https://w3id.org/vair#OpttingOutOfOutput -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#OpttingOutOfOutput">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#OrganisationalMeasure -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#OrganisationalMeasure">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#OrganisationalRiskSource -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#OrganisationalRiskSource">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -6850,6 +6924,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     
 
 
+    <!-- https://w3id.org/vair#PartialAutomation -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#PartialAutomation">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#Passenger -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#Passenger">
@@ -6859,9 +6942,27 @@ or the importer, that makes an AI system available on the Union market</skos:def
     
 
 
+    <!-- https://w3id.org/vair#PassiveInvolvement -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#PassiveInvolvement">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#PatternRecognition -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#PatternRecognition">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#PerfomanceRiskSource -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#PerfomanceRiskSource">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -6983,6 +7084,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     <!-- https://w3id.org/vair#PotentialJobApplicant -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#PotentialJobApplicant">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#PotentialPublicServicesApplicant -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#PotentialPublicServicesApplicant">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -7472,6 +7582,24 @@ or the importer, that makes an AI system available on the Union market</skos:def
     
 
 
+    <!-- https://w3id.org/vair#RightToNondiscrimination -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#RightToNondiscrimination">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#Robot -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#Robot">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#RobotSystem -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#RobotSystem">
@@ -7522,9 +7650,27 @@ or the importer, that makes an AI system available on the Union market</skos:def
     
 
 
+    <!-- https://w3id.org/vair#SecurityMeasure -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#SecurityMeasure">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#SelectingPeople -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#SelectingPeople">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#SemiAutomatedControl -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#SemiAutomatedControl">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -7594,6 +7740,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     
 
 
+    <!-- https://w3id.org/vair#ServingSafetyFunctionInManagementOfCriticalDigitalInfrastructure -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#ServingSafetyFunctionInManagementOfCriticalDigitalInfrastructure">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#ServingSafetyFunctionInManagementOfRoadTraffic -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#ServingSafetyFunctionInManagementOfRoadTraffic">
@@ -7642,6 +7797,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     <!-- https://w3id.org/vair#ServingSafetyFunctionInOperation -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#ServingSafetyFunctionInOperation">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#ServingSafetyFunctionInOperationOfCriticalDigitalInfrastructure -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#ServingSafetyFunctionInOperationOfCriticalDigitalInfrastructure">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -7846,6 +8010,24 @@ or the importer, that makes an AI system available on the Union market</skos:def
     
 
 
+    <!-- https://w3id.org/vair#SystemArchitectureDocumentation -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#SystemArchitectureDocumentation">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#SystemRiskSource -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#SystemRiskSource">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#SystemVulnerability -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#SystemVulnerability">
@@ -7858,6 +8040,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     <!-- https://w3id.org/vair#TechnicalDocumentation -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#TechnicalDocumentation">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#TechnicalMeasure -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#TechnicalMeasure">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -7882,6 +8073,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:definition xml:lang="en">data used to assess the performance of a final model. [ISO/IEC 22989, 3.2.14]</skos:definition>
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Test Data</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#TestDataRiskSource -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#TestDataRiskSource">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
     
 
@@ -7949,9 +8149,45 @@ or the importer, that makes an AI system available on the Union market</skos:def
     
 
 
+    <!-- https://w3id.org/vair#TrainingDataRiskSource -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#TrainingDataRiskSource">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#TransparencyMeasure -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#TransparencyMeasure">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#UnavailabilityOfData -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#UnavailabilityOfData">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#UninformedInvolvement -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#UninformedInvolvement">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#UnintendedInvolvement -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#UnintendedInvolvement">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -8025,6 +8261,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     
 
 
+    <!-- https://w3id.org/vair#ValidationDataRiskSource -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#ValidationDataRiskSource">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#Verification -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#Verification">
@@ -8079,6 +8324,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     
 
 
+    <!-- https://w3id.org/vair#WellbeingImpact -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#WellbeingImpact">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#WrongDataDesignChoice -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#WrongDataDesignChoice">
@@ -8104,15 +8358,6 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">API</skos:prefLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#DeepLearning">
-        <terms:source>ISO/IEC 22989, 3.4.4</terms:source>
-        <rdfs:comment xml:lang="en">Approach to creating rich hierarchical representations through the training of neural networks with many hidden layers</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <rdfs:label xml:lang="en">Deep learning</rdfs:label>
-        <skos:definition xml:lang="en">Approach to creating rich hierarchical representations through the training of neural networks with many hidden layers</skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Deep Learning</skos:prefLabel>
-    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#AGI">
         <terms:source>ISO/IEC 22989, 3.1.14</terms:source>
         <rdfs:comment xml:lang="en">Type of AI system that addresses a broad range of tasks with a satisfactory level of performance.</rdfs:comment>
@@ -8128,6 +8373,7 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
         <rdfs:label xml:lang="en">AI Cards</rdfs:label>
         <skos:definition xml:lang="en">A form of AI documentation</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">AI Cards</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#Action">
@@ -8146,6 +8392,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:definition xml:lang="en">The capability to recognise actions</skos:definition>
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Action Recognition</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#ActiveInvolvement">
+        <rdfs:comment xml:lang="en">Represents active interactation with an AI system.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Active Involvement</rdfs:label>
+        <skos:definition xml:lang="en">Represents active interactation with an AI system.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Active Involvement</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#AdministrationOfDemocraticProcesses">
         <rdfs:comment xml:lang="en">Activities related to administration of democratic processes</rdfs:comment>
@@ -8187,6 +8441,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:definition xml:lang="en">Assignment of tasks to persons</skos:definition>
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Allocating Tasks</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#ApplicationPlatform">
+        <rdfs:comment xml:lang="en">Resource on which an application runs.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Application Platform</rdfs:label>
+        <skos:definition xml:lang="en">Resource on which an application runs.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Application Platform</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#ApplicationSpecificIntegratedCircuit">
         <rdfs:comment xml:lang="en">An integrated circuit chip customized for a particular use.</rdfs:comment>
@@ -8340,6 +8602,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:prefLabel xml:lang="en">Assigning Persons To Vocational Training Institutions</skos:prefLabel>
         <skos:related rdf:resource="https://w3id.org/vair#Education"/>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#AssistiveAutomation">
+        <terms:source>ISO/IEC 22989, 5.13</terms:source>
+        <rdfs:comment xml:lang="en">The level of automation where the system assists an operator</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Assistive Automation</rdfs:label>
+        <skos:definition xml:lang="en">The level of automation where the system assists an operator</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Assistive Automation</skos:prefLabel>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#AsylumManagement">
         <rdfs:comment xml:lang="en">Activities related to asylum management</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
@@ -8364,6 +8635,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Attack</skos:prefLabel>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#AudioProcessing">
+        <terms:source>AI Watch, Defining Artificial Intelligence 2.0</terms:source>
+        <rdfs:comment xml:lang="en">The capability to process audio recordings.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Audio Processing</rdfs:label>
+        <skos:definition>The capability to process audio recordings.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Audio Processing</skos:prefLabel>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#AutomaticSummarisation">
         <terms:source xml:lang="en">ISO/IEC 22989, 3.6.1</terms:source>
         <rdfs:comment xml:lang="en">Shortening a portion of natural language content or text while retaining important semantic information.</rdfs:comment>
@@ -8372,6 +8652,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:definition xml:lang="en">Shortening a portion of natural language content or text while retaining important semantic information.</skos:definition>
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Automatic Summarisation</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#Autonomy">
+        <terms:source>ISO/IEC 22989, 5.13</terms:source>
+        <rdfs:comment xml:lang="en">The level of automation where the system is capable of modifying its intended domain of use or its goals without external intervention, control or oversight.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Autonomy</rdfs:label>
+        <skos:definition xml:lang="en">The level of automation where the system is capable of modifying its intended domain of use or its goals without external intervention, control or oversight.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Autonomy</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#BayesianEstimation">
         <rdfs:comment xml:lang="en">Refers to Bayesian estimation approach</rdfs:comment>
@@ -8466,6 +8755,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Biometric Identification</skos:prefLabel>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#BiometricsBasedEmotionRecognition">
+        <rdfs:comment xml:lang="en">Refers to recognisting emtions based on biometrics information</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Biometrics Based Emotion Recognition</rdfs:label>
+        <skos:definition xml:lang="en">Refers to recognisting emtions based on biometrics information</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Biometrics Based Emotion Recognition</skos:prefLabel>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#BorderControlManagement">
         <rdfs:comment xml:lang="en">Activities related to border control management.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
@@ -8474,6 +8771,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Border Control Management</skos:prefLabel>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#CannotOptOutOfOutput">
+        <rdfs:comment xml:lang="en">A mode of controllability that stakeholders cannot opt out of the system’s output.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Cannot Opt Out Of Output</rdfs:label>
+        <skos:definition xml:lang="en">A mode of controllability that stakeholders cannot opt out of the system’s output.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Cannot Opt Out Of Output</skos:prefLabel>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#Categorisation">
         <rdfs:comment xml:lang="en">Assigning natural persons to specific categories</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
@@ -8481,6 +8786,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:definition xml:lang="en">Assigning natural persons to specific categories</skos:definition>
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Categorisation</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#ChallengeOutput">
+        <rdfs:comment xml:lang="en">A mode of controllability that stakeholders can challenge the system’s output.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Challenge Output</rdfs:label>
+        <skos:definition xml:lang="en">A mode of controllability that stakeholders can challenge the system’s output.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Challenge Output</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#ClassifyingEmergencyCall">
         <rdfs:comment xml:lang="en">Classifying emergency calls by natural persons</rdfs:comment>
@@ -8507,6 +8820,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:definition xml:lang="en">Capability of a functional unit to acquire, process and interpret data representing images or video.</skos:definition>
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Computer Vision</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#ConditionalAutomation">
+        <terms:source>ISO/IEC 22989, 5.13</terms:source>
+        <rdfs:comment xml:lang="en">The level of automation where there is sustained and specific performance by a system, with an external agent being ready to take over when necessary.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Conditional Automation</rdfs:label>
+        <skos:definition xml:lang="en">The level of automation where there is sustained and specific performance by a system, with an external agent being ready to take over when necessary.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Conditional Automation</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#Content">
         <rdfs:comment xml:lang="en">Content generated using an AI system.</rdfs:comment>
@@ -8542,6 +8864,22 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Convolutional Neural Network</skos:prefLabel>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#CorrectOutput">
+        <rdfs:comment xml:lang="en">A mode of controllability that stakeholders can correct the system’s output.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Correct Output</rdfs:label>
+        <skos:definition xml:lang="en">A mode of controllability that stakeholders can correct the system’s output.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Correct Output</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#CourseAttendee">
+        <rdfs:comment xml:lang="en">A person who attends a course.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Course Attendee</rdfs:label>
+        <skos:definition xml:lang="en">A natural person who attends a course.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Course Attendee</skos:prefLabel>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#CriticalInfrastructure">
         <rdfs:comment xml:lang="en">Refers to the sector or activities that aim at provision and maintainance of critical services.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
@@ -8558,6 +8896,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Data Poisoning</skos:prefLabel>
         <skos:related rdf:resource="https://w3id.org/vair#TrainingData"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#DataRiskSource">
+        <rdfs:comment xml:lang="en">Risk sources related to data</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Data Risk Source</rdfs:label>
+        <skos:definition xml:lang="en">Risk sources related to data</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Data Risk Source</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#Datasheet">
         <rdfs:comment xml:lang="en">A form of dataset documentation</rdfs:comment>
@@ -8615,6 +8961,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:definition xml:lang="en">Dectection of content that is generated using deep fake</skos:definition>
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Deep Fake Detection</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#DeepLearning">
+        <terms:source>ISO/IEC 22989, 3.4.4</terms:source>
+        <rdfs:comment xml:lang="en">Approach to creating rich hierarchical representations through the training of neural networks with many hidden layers</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Deep learning</rdfs:label>
+        <skos:definition xml:lang="en">Approach to creating rich hierarchical representations through the training of neural networks with many hidden layers</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Deep Learning</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#DegradedAccuracy">
         <rdfs:comment xml:lang="en">Decreased level of system&apos;s accuracy resulted from materialisation of a risk.</rdfs:comment>
@@ -8674,6 +9029,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Detecting Individuals</skos:prefLabel>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#DetectingLies">
+        <rdfs:comment xml:lang="en">Dectecting lies</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Detecting Lies</rdfs:label>
+        <skos:definition xml:lang="en">Dectecting lies</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Detecting Lies</skos:prefLabel>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#DetectingNon-AuthenticDocument">
         <rdfs:comment xml:lang="en">Detection of  non-authentic documents</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
@@ -8697,6 +9060,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:definition xml:lang="en">Purposes related to detecting</skos:definition>
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Detection</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#DetectionControl">
+        <rdfs:comment xml:lang="en">Control that is applied for detection purposes, e.g. detecting risks</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Detection Control</rdfs:label>
+        <skos:definition xml:lang="en">Control that is applied for detection purposes, e.g. detecting risks</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Detection Control</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#DeterminingAccessToEducationalInstitutions">
         <rdfs:comment xml:lang="en">Determining access to educational institutions all levels.</rdfs:comment>
@@ -8842,6 +9213,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Educational Institution</skos:prefLabel>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#EmergencyHealthCareProvider">
+        <rdfs:comment xml:lang="en">Refer to emergency healthcare providers</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Emergency Healthcare Provider</rdfs:label>
+        <skos:definition xml:lang="en">Refer to emergency healthcare providers</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Emergency Healthcare Provider</skos:prefLabel>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#EmergencyServiceProvider">
         <rdfs:comment xml:lang="en">Provider of emergency first response services</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
@@ -8849,6 +9228,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:definition xml:lang="en">Provider of emergency first response services</skos:definition>
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Emergency Service Provider</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#EmergencyTriage">
+        <rdfs:comment xml:lang="en">Emergency triaging</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Emergency Triage</rdfs:label>
+        <skos:definition xml:lang="en">Emergency triaging</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Emergency Triage</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#EmotionRecognition">
         <terms:source xml:lang="en">ISO/IEC 22989, 3.6.3</terms:source>
@@ -9022,6 +9409,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Evaluating Reliability Of Evidence In Prosecution Of Criminal Offences </skos:prefLabel>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#ExaminingApplication">
+        <rdfs:comment xml:lang="en">Purposes related to examining an application</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Examining Application</rdfs:label>
+        <skos:definition xml:lang="en">Purposes related to examining an application</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Examining Application</skos:prefLabel>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#ExaminingAsylumApplication">
         <rdfs:comment xml:lang="en">Examining asylum application</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
@@ -9094,6 +9489,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Feed Forward Neural Network</skos:prefLabel>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#FireBrigade">
+        <rdfs:comment xml:lang="en">Refers to fire department</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Fire Brigade</rdfs:label>
+        <skos:definition xml:lang="en">Refers to fire department</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Fire Brigade</skos:prefLabel>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#Freedom">
         <rdfs:comment xml:lang="en">Refers to freedoms given to individuals</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
@@ -9101,6 +9504,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:definition xml:lang="en">Refers to freedoms given to individuals.</skos:definition>
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Freedom</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#FullAutomation">
+        <terms:source>ISO/IEC 22989, 5.13</terms:source>
+        <rdfs:comment xml:lang="en">The level of automation where is capable of performing its entire mission without external intervention.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Full Automation</rdfs:label>
+        <skos:definition xml:lang="en">The level of automation where is capable of performing its entire mission without external intervention.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Full Automation</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#GeneralAI">
         <terms:source>ISO/IEC 22989, 3.1.14</terms:source>
@@ -9161,6 +9573,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Granting Health Care Services</skos:prefLabel>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#GrantingPublicAssistanceServices">
+        <rdfs:comment xml:lang="en">Granting natural persons essential public assistance benefits and services</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Granting Public Assistance Services</rdfs:label>
+        <skos:definition xml:lang="en">Granting natural persons essential public assistance benefits and services</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Granting Public Assistance Services</skos:prefLabel>
+        <skos:related rdf:resource="https://w3id.org/vair#PublicService"/>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#Group">
         <rdfs:comment xml:lang="en">A group of persons such as citizens, marginsalised groups, etc.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
@@ -9205,6 +9626,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:related rdf:resource="https://w3id.org/vair#PrivateService"/>
         <skos:related rdf:resource="https://w3id.org/vair#PublicService"/>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#HighAutomation">
+        <terms:source>ISO/IEC 22989, 5.13</terms:source>
+        <rdfs:comment>The level of automation where there the system performs parts of its mission without external intervention.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">High Automation</rdfs:label>
+        <skos:definition xml:lang="en">The level of automation where there the system performs parts of its mission without external intervention.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">High Automation</skos:prefLabel>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#HumanOversightMeasure">
         <rdfs:comment xml:lang="en">Overseening the system by natural persons to detect, prevent or minimise risk.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
@@ -9236,6 +9666,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:definition xml:lang="en">Risk management — Guidelines</skos:definition>
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">ISO 31000:2018</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#ISO31073_2022">
+        <rdfs:comment xml:lang="en">ISO 31073:2022 Risk management — Vocabulary</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">ISO 31073:2022</rdfs:label>
+        <skos:definition xml:lang="en">ISO 31073:2022 Risk management — Vocabulary</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">ISO 31073:2022</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#ISO9001-2015">
         <rdfs:comment xml:lang="en">Quality management systems — Requirements</rdfs:comment>
@@ -9285,6 +9723,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">ISO/IEC 23894:2023</skos:prefLabel>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#ISOIEC23894_2023">
+        <rdfs:comment xml:lang="en">ISO/IEC 23894:2023 Information technology — Artificial intelligence — Guidance on risk management</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">ISO/IEC 23894:2023</rdfs:label>
+        <skos:definition xml:lang="en">ISO/IEC 23894:2023 Information technology — Artificial intelligence — Guidance on risk management</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:label xml:lang="en">ISO/IEC 23894:2023</skos:label>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#ISOIEC24668-2022">
         <rdfs:comment xml:lang="en">Information technology — Artificial intelligence — Process management framework for big data analytics</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
@@ -9300,6 +9746,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:definition xml:lang="en">Information technology — Governance of IT — Governance implications of the use of artificial intelligence by organizations</skos:definition>
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">ISO/IEC 38507:2022</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#ISOIEC42001_2023">
+        <rdfs:comment xml:lang="en">ISO/IEC 42001:2023 Information technology — Artificial intelligence — Management system</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">ISO/IEC 42001:2023</rdfs:label>
+        <skos:definition xml:lang="en">ISO/IEC 42001:2023 Information technology — Artificial intelligence — Management system</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">ISO/IEC 42001:2023</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#ISOIECTR20547-1-2020">
         <rdfs:comment xml:lang="en">Information technology — Big data reference architecture — Part 1: Framework and application process</rdfs:comment>
@@ -9501,6 +9955,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Industrial Robot</skos:prefLabel>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#Influencing">
+        <rdfs:comment xml:lang="en">Purpose of influencing</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Influencing</rdfs:label>
+        <skos:definition xml:lang="en">Purpose of influencing</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Influencing</skos:prefLabel>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#InfluencingElectionOutcome">
         <rdfs:comment xml:lang="en">Influencing the outcome of an election.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
@@ -9516,6 +9978,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:definition xml:lang="en">Influencing the outcome of a referendum.</skos:definition>
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Influencing Referendum Outcome</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#InfluencingVotingBehaviour">
+        <rdfs:comment xml:lang="en">Purpose of influencing voting behaviour of people</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Influencing Voting Behaviour</rdfs:label>
+        <skos:definition xml:lang="en">Purpose of influencing voting behaviour of people</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Influencing Voting Behaviour</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#InformationProvision">
         <rdfs:comment xml:lang="en">Providing information to inform the user of in particular an AI system’s intended purpose and proper use, inclusive of the specific geographical, behavioural or functional setting within which the  AI system is intended to be used.</rdfs:comment>
@@ -9534,6 +10004,22 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Information Retrieval</skos:prefLabel>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#InformedInvolvement">
+        <rdfs:comment xml:lang="en">Represents that a specific actor was informed that an AI system is in place.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Informed Involvement</rdfs:label>
+        <skos:definition xml:lang="en">Represents that a specific actor was informed that an AI system is in place.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Informed Involvement</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#InputDataRiskSource">
+        <rdfs:comment xml:lang="en">Risk sources related to input data</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Input Data Risk Source</rdfs:label>
+        <skos:definition xml:lang="en">Risk sources related to input data</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Input Data Risk Source</skos:prefLabel>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#InstallationInstruction">
         <rdfs:comment xml:lang="en">Instruction for installing an application.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
@@ -9541,6 +10027,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:definition xml:lang="en">Instruction for installing an application.</skos:definition>
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Installation Instruction</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#InstructionForUse">
+        <terms:source>AI Act, Art. 3(15)</terms:source>
+        <rdfs:comment xml:lang="en">The information provided by the provider to inform the deployer of, in particular, an AI system’s intended purpose and proper use.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Instruction For Use</rdfs:label>
+        <skos:definition xml:lang="en">The information provided by the provider to inform the deployer of, in particular, an AI system’s intended purpose and proper use.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Instruction For Use</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#InsufficientHumanOversightMeasure">
         <rdfs:comment xml:lang="en">Lack of appropriate human oversight measures</rdfs:comment>
@@ -9567,6 +10062,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:definition>An AI-based control system</skos:definition>
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Intelligent Control System</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#IntendedInvolvement">
+        <rdfs:comment xml:lang="en">Represents involvement of a specific actor is as intended.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Intended Involvement</rdfs:label>
+        <skos:definition xml:lang="en">Represents involvement of a specific actor is as intended.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Intended Involvement</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#InterpretingFacts">
         <rdfs:comment xml:lang="en">Interpreting facts</rdfs:comment>
@@ -9654,6 +10157,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Job Applicant</skos:prefLabel>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#JobApplicationAnalysis">
+        <rdfs:comment xml:lang="en">Analysis of job applications</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Job Application Analysis</rdfs:label>
+        <skos:definition xml:lang="en">Analysis of job applications</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Job Application Analysis</skos:prefLabel>
+        <skos:related rdf:resource="https://w3id.org/vair#Employment"/>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#JobApplicationFiltering">
         <rdfs:comment xml:lang="en">Filtering applications for recruitment or selection of natural persons</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
@@ -9670,6 +10182,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:definition xml:lang="en">Screening job applications </skos:definition>
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Job Application Screening</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#JobCandidate">
+        <rdfs:comment xml:lang="en">A person who is considered for employment.</rdfs:comment>
+        <rdfs:label xml:lang="en">Job Candidate</rdfs:label>
+        <skos:definition xml:lang="en">A person who is considered for employment.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Job Candidate</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#JobCandidateSelection">
         <rdfs:comment xml:lang="en">Selecting people for a job for a position </rdfs:comment>
@@ -9785,6 +10305,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:related rdf:resource="https://w3id.org/vair#PrivateService"/>
         <skos:related rdf:resource="https://w3id.org/vair#PublicService"/>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#LoggingMeasure">
+        <rdfs:comment xml:lang="en">Refers to logging measure in place </rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Logging Measure</rdfs:label>
+        <skos:definition xml:lang="en">Refers to logging measure in place</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Logging Measure</skos:prefLabel>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#LogicBasedTechnique">
         <rdfs:comment xml:lang="en">Refers to logic based techniques.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
@@ -9825,6 +10353,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:definition xml:lang="en">Lack of appropriate level of security.</skos:definition>
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Low Security</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#MachineLearning">
+        <terms:source>ISO/IEC 22989, 3.3.5</terms:source>
+        <rdfs:comment xml:lang="en">Process of optimizing model parameters through computational techniques, such that the model&apos;s behaviour reflects the data or experience.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Machine Learning</rdfs:label>
+        <skos:definition xml:lang="en">Process of optimizing model parameters through computational techniques, such that the model&apos;s behaviour reflects the data or experience.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Machine Learning</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#MachineLearningAlgorithm">
         <terms:source>ISO/IEC 22989 3.3.6</terms:source>
@@ -9896,6 +10433,22 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:prefLabel xml:lang="en">Making Promotion Decision</skos:prefLabel>
         <skos:related rdf:resource="https://w3id.org/vair#Employment"/>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#ManualControl">
+        <rdfs:comment xml:lang="en">Controls implemented manually by human actors</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Manual Control</rdfs:label>
+        <skos:definition xml:lang="en">Controls implemented manually by human actors</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Manual Control</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#MedicalAidProvider">
+        <rdfs:comment xml:lang="en">Entity that provides medical aid</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Medical Aid Provider</rdfs:label>
+        <skos:definition xml:lang="en">Entity that provides medical aid</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Medical Aid Provider</skos:prefLabel>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#MigrationManagement">
         <rdfs:comment xml:lang="en">Activities related to managing migration.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
@@ -9903,6 +10456,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:definition xml:lang="en">Activities related to managing migration.</skos:definition>
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Migration Management</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#MitigationMeasure">
+        <rdfs:comment xml:lang="en">Control that is applied for mitigation purposes, e.g. ,mitigating risk sources, impacts, etc.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Mitigation Measure</rdfs:label>
+        <skos:definition xml:lang="en">Control that is applied for mitigation purposes, e.g. ,mitigating risk sources, impacts, etc.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Mitigation Measure</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#Model">
         <terms:source>ISO/IEC 22989, 3.1.23</terms:source>
@@ -9912,6 +10473,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:definition xml:lang="en">physical, mathematical or otherwise logical representation of a system, entity, phenomenon, process or data. </skos:definition>
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Model</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#ModelCard">
+        <rdfs:comment xml:lang="en">A form of model documentation</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Model Card</rdfs:label>
+        <skos:definition xml:lang="en">A form of model documentation</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Model Card</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#ModelEvasion">
         <terms:source>ALTAI</terms:source>
@@ -9932,6 +10501,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Model Inversion</skos:prefLabel>
         <skos:related rdf:resource="https://w3id.org/vair#Model"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#ModelRiskSource">
+        <rdfs:comment xml:lang="en">Risk sources related to the AI model</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Model Risk Source</rdfs:label>
+        <skos:definition xml:lang="en">Risk sources related to AI model</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Model Risk Source</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#Monitoring">
         <rdfs:comment xml:lang="en">Observing and keeping track of something</rdfs:comment>
@@ -9958,6 +10535,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Monitoring Employee Performance</skos:prefLabel>
         <skos:related rdf:resource="https://w3id.org/vair#Employment"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#MonitoringMeasure">
+        <rdfs:comment xml:lang="en">Refers to monitoring measures </rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Monitoring Measure</rdfs:label>
+        <skos:definition xml:lang="en">Refers to monitoring measures</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Monitoring Measure</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#MonitoringProhibitedBehaviourDuringTest">
         <rdfs:comment xml:lang="en">Monitoring prohibited behaviour during tests</rdfs:comment>
@@ -10038,6 +10623,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Neural Network</skos:prefLabel>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#NoAutomation">
+        <terms:source>ISO/IEC 22989, 5.13</terms:source>
+        <rdfs:comment xml:lang="en">The level of automation where an operator fully controls the system</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">No Automation</rdfs:label>
+        <skos:definition xml:lang="en">The level of automation where an operator fully controls the system</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">No Automation</skos:prefLabel>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#ObjectRecognition">
         <terms:source>AI Watch, Defining Artificial Intelligence 2.0</terms:source>
         <rdfs:comment xml:lang="en">The capability to recognise objects</rdfs:comment>
@@ -10055,6 +10649,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:definition xml:lang="en">Refers to the operation stage when an AI system is running and generally available for use.</skos:definition>
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Operation</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#OperationalMeasure">
+        <rdfs:comment xml:lang="en">Control related to operation of the system.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Operational Measure</rdfs:label>
+        <skos:definition xml:lang="en">Control related to operation of the system.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Operational Measure</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#OptimisationMethod">
         <rdfs:comment xml:lang="en">Refers to optimisation Method</rdfs:comment>
@@ -10079,6 +10681,22 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:definition xml:lang="en">A mode of controllability that stakeholders can opt out of the system’s output.</skos:definition>
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Optting Out Of Output</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#OrganisationalMeasure">
+        <rdfs:comment xml:lang="en">Organisational measures applied to control risk sources, risks, consequences, or impacts.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Organisational Measure</rdfs:label>
+        <skos:definition xml:lang="en">Organisational measures applied to control risk sources, risks, consequences, or impacts.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Organisational Measure</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#OrganisationalRiskSource">
+        <rdfs:comment xml:lang="en">Risk sources related with the organisation developing, deploying, or using AI.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Organisational Risk Source</rdfs:label>
+        <skos:definition xml:lang="en">Risk sources related with the organisation developing, deploying, or using AI.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Organisational Risk Source</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#Overreliance">
         <rdfs:comment xml:lang="en">Tendency of automatically relying or over-relying on the output produced by an AI system</rdfs:comment>
@@ -10105,6 +10723,31 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:definition xml:lang="en">Assigning a category (e.g. verb, noun, adjective) to a word based on its grammatical properties.</skos:definition>
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Part Of Speech Tagging</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#PartialAutomation">
+        <terms:source>ISO/IEC 22989, 5.13</terms:source>
+        <rdfs:comment xml:lang="en">The level of automation where some sub-functions of the system are fully automated while the system remains under the control of an external agent</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Partial Automation</rdfs:label>
+        <skos:definition xml:lang="en">The level of automation where some sub-functions of the system are fully automated while the system remains under the control of an external agent</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Partial Automation</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#PassiveInvolvement">
+        <rdfs:comment xml:lang="en">Represents passive interactation with an AI system.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Passive Involvement</rdfs:label>
+        <skos:definition xml:lang="en">Represents passive interactation with an AI system.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Passive Involvement</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#PerfomanceRiskSource">
+        <rdfs:comment xml:lang="en">Risk sources related to performance</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Perfomance Risk Source</rdfs:label>
+        <skos:definition xml:lang="en">Risk sources related to performance</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Perfomance Risk Source</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#PerformingBackgroundCheck">
         <rdfs:comment xml:lang="en">Performing background checks</rdfs:comment>
@@ -10187,6 +10830,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:definition xml:lang="en">A person who may have applied for employment.</skos:definition>
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Potential Job Applicant</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#PotentialPublicServicesApplicant">
+        <rdfs:comment xml:lang="en">A person who may have applied for public services.</rdfs:comment>
+        <rdfs:label xml:lang="en">Potential Public Services Applicant</rdfs:label>
+        <skos:definition xml:lang="en">A person who may have applied for public services.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Potential Public Services Applicant</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#Prediction">
         <terms:source>ISO/IEC 22989, 3.1.27</terms:source>
@@ -10507,6 +11158,23 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Right</skos:prefLabel>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#RightToNondiscrimination">
+        <rdfs:comment xml:lang="en">Refers to the fundamental right to non-discrimination</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Right To Non-discrimination</rdfs:label>
+        <skos:definition xml:lang="en">Refers to the fundamental right to non-discrimination</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Right To Non-discrimination</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#Robot">
+        <rdfs:comment xml:lang="en">An automation system with actuators that performs intended tasks in the physical world, by means of sensing its environment and a software control system.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Robot</rdfs:label>
+        <rdfs:label>ISO/IEC 22989, 3.1.29</rdfs:label>
+        <skos:definition xml:lang="en">An automation system with actuators that performs intended tasks in the physical world, by means of sensing its environment and a software control system.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Robot</skos:prefLabel>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#Safety">
         <rdfs:comment xml:lang="en">Refers to the state of safety.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
@@ -10531,6 +11199,22 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:definition xml:lang="en">Refers to statistical-based search Methods</skos:definition>
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Search Method</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#SecurityMeasure">
+        <rdfs:comment xml:lang="en">Refers to security measures </rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Security Measure</rdfs:label>
+        <skos:definition xml:lang="en">Refers to security measures</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Security Measure</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#SemiAutomatedControl">
+        <rdfs:comment xml:lang="en">Controls that are implemeted in a semi automated manner.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Semi Automated Control</rdfs:label>
+        <skos:definition xml:lang="en">Controls that are implemeted in a semi automated manner.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Semi Automated Control</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#SemiSupervisedLearning">
         <terms:source>ISO/IEC 22989, 3.3.11</terms:source>
@@ -10593,6 +11277,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Serving Safety Function In Management</skos:prefLabel>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#ServingSafetyFunctionInManagementOfCriticalDigitalInfrastructure">
+        <rdfs:comment xml:lang="en">Purpose of providing safety function in management of critical digital infrastructure</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Serving Safety Function In Management Of Critical Digital Infrastructure</rdfs:label>
+        <skos:definition xml:lang="en">Purpose of providing safety function in management of critical digital infrastructure</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Serving Safety Function In Management Of Critical Digital Infrastructure</skos:prefLabel>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#ServingSafetyFunctionInManagementOfRoadTraffic">
         <rdfs:comment xml:lang="en">Purpose of providing safety function in management of road traffic</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
@@ -10640,6 +11332,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:definition xml:lang="en">Purpose of providing safety function in operation of services</skos:definition>
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Serving Safety Function In Operation</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#ServingSafetyFunctionInOperationOfCriticalDigitalInfrastructure">
+        <rdfs:comment xml:lang="en">Purpose of providing safety function in operation of critical digital infrastructure</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Serving Safety Function In Operation Of Critical Digital Infrastructure</rdfs:label>
+        <skos:definition xml:lang="en">Purpose of providing safety function in operation of critical digital infrastructure</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Serving Safety Function In Operation Of Critical Digital Infrastructure</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#ServingSafetyFunctionInOperationOfRoadTraffic">
         <rdfs:comment xml:lang="en">Purpose of providing safety function in operation of road traffic</rdfs:comment>
@@ -10793,6 +11493,22 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Symbolic Reasoning</skos:prefLabel>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#SystemArchitectureDocumentation">
+        <rdfs:comment xml:lang="en">Documentation specifying software architecture.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">System Architecture Documentation</rdfs:label>
+        <skos:definition xml:lang="en">Documentation specifying software architecture.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">System Architecture Documentation</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#SystemRiskSource">
+        <rdfs:comment xml:lang="en">Risk sources related to the AI system</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">System Risk Source</rdfs:label>
+        <skos:definition xml:lang="en">Risk sources related to the AI system</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">System Risk Source</skos:prefLabel>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#TechnicalDocumentation">
         <rdfs:comment xml:lang="en">Documentation required by the AI Act, Article 11.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
@@ -10801,6 +11517,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Technical Documentation</skos:prefLabel>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#TechnicalMeasure">
+        <rdfs:comment xml:lang="en">Refers to technical measures </rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Technical Measure</rdfs:label>
+        <skos:definition xml:lang="en">Refers to technical measures</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Technical Measure</skos:prefLabel>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#TensorProcessingUnit">
         <rdfs:comment xml:lang="en">An AI application-specific integrated circuit developed by Google.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
@@ -10808,6 +11532,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:definition xml:lang="en">An AI application-specific integrated circuit developed by Google.</skos:definition>
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Tensor Processing Unit</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#TestDataRiskSource">
+        <rdfs:comment xml:lang="en">Risk sources related to test data</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Test Data Risk Source</rdfs:label>
+        <skos:definition xml:lang="en">Risk sources related to test data</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Test Data Risk Source</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#TestLog">
         <rdfs:comment xml:lang="en">Log of the tests performed.</rdfs:comment>
@@ -10844,6 +11576,22 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:prefLabel xml:lang="en">Trained Model</skos:prefLabel>
         <skos:related rdf:resource="https://w3id.org/vair#ModelTraning"/>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#TrainingDataRiskSource">
+        <rdfs:comment xml:lang="en">Risk sources related to training data</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Training Data Risk Source</rdfs:label>
+        <skos:definition xml:lang="en">Risk sources related to training data</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Training Data Risk Source</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#TransparencyMeasure">
+        <rdfs:comment xml:lang="en">Refers to transparency measures </rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Transparency Measure</rdfs:label>
+        <skos:definition xml:lang="en">Refers to transparency measures</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Transparency Measure</skos:prefLabel>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#UnavailabilityOfData">
         <rdfs:comment xml:lang="en">Use of datasets that are not available</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
@@ -10851,6 +11599,22 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:definition xml:lang="en">Use of datasets that are not available</skos:definition>
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Unavailability Of Data</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#UninformedInvolvement">
+        <rdfs:comment xml:lang="en">Represents that a specific actor was not informed that an AI system is in place.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Uninformed Involvement</rdfs:label>
+        <skos:definition xml:lang="en">Represents that a specific actor was not informed that an AI system is in place.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Uninformed Involvement</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#UnintendedInvolvement">
+        <rdfs:comment xml:lang="en">Represents unintended involvement of a specific actor.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Unintended Involvement</rdfs:label>
+        <skos:definition xml:lang="en">Represents unintended involvement of a specific actor.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Unintended Involvement</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#UnrepresentativeTestData">
         <rdfs:comment xml:lang="en">Use of unrepresentative  data for testing</rdfs:comment>
@@ -10905,6 +11669,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Validation</skos:prefLabel>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#ValidationDataRiskSource">
+        <rdfs:comment xml:lang="en">Risk sources related to validation data</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Validation Data Risk Source</rdfs:label>
+        <skos:definition xml:lang="en">Risk sources related to validation data</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Validation Data Risk Source</skos:prefLabel>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#Verification">
         <terms:source>ISO/IEC 22989, 6.2.4</terms:source>
         <rdfs:comment xml:lang="en">Verifying the AI system from the design and development stage works according to requirements and meets objectives.</rdfs:comment>
@@ -10937,6 +11709,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:definition xml:lang="en">Vocational training institution at any level</skos:definition>
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Vocational Training Institution</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#WellbeingImpact">
+        <rdfs:comment xml:lang="en">Refers to impacts that affect wellbeing</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Wellbeing Impact</rdfs:label>
+        <skos:definition xml:lang="en">Refers to impacts that affect wellbeing</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Wellbeing Impact</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#WrongDataDesignChoice">
         <rdfs:comment xml:lang="en">Refers to the wrong choice made in the selecting datasets.</rdfs:comment>
