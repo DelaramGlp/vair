@@ -2685,6 +2685,10 @@ vair:AssesingStudent rdf:type owl:NamedIndividual ,
                               skos:Concept ,
                               vair:Concept .
 
+###  https://w3id.org/vair#WellbeingImpact
+vair:WellbeingImpact rdf:type owl:NamedIndividual ,
+                              skos:Concept ,
+                              vair:Concept .
 
 ###  https://w3id.org/vair#AssessingAccessibleLevelOfEducation
 vair:AssessingAccessibleLevelOfEducation rdf:type owl:NamedIndividual ,
@@ -4982,7 +4986,19 @@ vair:ReversingOutcome rdf:type owl:NamedIndividual ,
                                skos:Concept ,
                                vair:Concept .
 
+###  https://w3id.org/vair#CannotOptOutOfOutput
+vair:CannotOptOutOfOutput rdf:type owl:NamedIndividual ,
+                               skos:Concept ,
+                               vair:Concept .
+###  https://w3id.org/vair#ChallengeOutput
+vair:ChallengeOutput rdf:type owl:NamedIndividual ,
+                               skos:Concept ,
+                               vair:Concept .
 
+###  https://w3id.org/vair#CorrectOutput
+vair:CorrectOutput rdf:type owl:NamedIndividual ,
+                               skos:Concept ,
+                               vair:Concept .
 ###  https://w3id.org/vair#RevokingHealthCareServices
 vair:RevokingHealthCareServices rdf:type owl:NamedIndividual ,
                                          skos:Concept ,
