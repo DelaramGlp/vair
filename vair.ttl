@@ -152,9 +152,6 @@ xsd:date rdf:type rdfs:Datatype .
 skos:Concept rdf:type owl:Class .
 
 
-###  http://www.w3.org/2004/02/skos/core#concept
-skos:concept rdf:type owl:Class .
-
 
 ###  https://w3id.org/airo#AICapability
 airo:AICapability rdf:type owl:Class .
@@ -423,7 +420,9 @@ vair:AsylumSeeker rdf:type owl:Class ;
 vair:Attack rdf:type owl:Class ;
             rdfs:subClassOf airo:RiskSource .
 
-
+vair:AudioProcessing rdf:type owl:NamedIndividual ,
+                                    skos:Concept ,
+                                    vair:Concept .
 ###  https://w3id.org/vair#AudioProcessing
 vair:AudioProcessing rdf:type owl:Class ;
                      rdfs:subClassOf airo:AICapability ;
@@ -2711,7 +2710,7 @@ vair:AGI rdf:type owl:NamedIndividual ,
 
 ###  https://w3id.org/vair#AICards
 vair:AICards rdf:type owl:NamedIndividual ,
-                      skos:concept .
+                      skos:Concept .
 
 
 ###  https://w3id.org/vair#AIComponent
