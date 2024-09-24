@@ -139,375 +139,375 @@ xsd:date rdf:type rdfs:Datatype .
 #################################################################
 
 ###  http://www.semanticweb.org/owl/owlapi/turtle#API
-:API rdf:type owl:Class ;
+:API rdf:type rdfs:Class, owl:Class ;
      rdfs:subClassOf airo:AIComponent .
 
 
 ###  http://www.w3.org/2004/02/skos/core#Concept
-skos:Concept rdf:type owl:Class .
+skos:Concept rdf:type rdfs:Class, owl:Class .
 
 
 ###  https://w3id.org/airo#AICapability
-airo:AICapability rdf:type owl:Class .
+airo:AICapability rdf:type rdfs:Class, owl:Class .
 
 
 ###  https://w3id.org/airo#AIComponent
-airo:AIComponent rdf:type owl:Class .
+airo:AIComponent rdf:type rdfs:Class, owl:Class .
 
 
 ###  https://w3id.org/airo#AILifecyclePhase
-airo:AILifecyclePhase rdf:type owl:Class .
+airo:AILifecyclePhase rdf:type rdfs:Class, owl:Class .
 
 
 ###  https://w3id.org/airo#AIOperator
-airo:AIOperator rdf:type owl:Class .
+airo:AIOperator rdf:type rdfs:Class, owl:Class .
 
 
 ###  https://w3id.org/airo#AISubject
-airo:AISubject rdf:type owl:Class .
+airo:AISubject rdf:type rdfs:Class, owl:Class .
 
 
 ###  https://w3id.org/airo#AISystem
-airo:AISystem rdf:type owl:Class .
+airo:AISystem rdf:type rdfs:Class, owl:Class .
 
 
 ###  https://w3id.org/airo#AITechnique
-airo:AITechnique rdf:type owl:Class .
+airo:AITechnique rdf:type rdfs:Class, owl:Class .
 
 
 ###  https://w3id.org/airo#AreaOfImpact
-airo:AreaOfImpact rdf:type owl:Class .
+airo:AreaOfImpact rdf:type rdfs:Class, owl:Class .
 
 
 ###  https://w3id.org/airo#AutomationLevel
-airo:AutomationLevel rdf:type owl:Class .
+airo:AutomationLevel rdf:type rdfs:Class, owl:Class .
 
 
 ###  https://w3id.org/airo#Consequence
-airo:Consequence rdf:type owl:Class .
+airo:Consequence rdf:type rdfs:Class, owl:Class .
 
 
 ###  https://w3id.org/airo#Documentation
-airo:Documentation rdf:type owl:Class .
+airo:Documentation rdf:type rdfs:Class, owl:Class .
 
 
 ###  https://w3id.org/airo#Domain
-airo:Domain rdf:type owl:Class .
+airo:Domain rdf:type rdfs:Class, owl:Class .
 
 
 ###  https://w3id.org/airo#HumanInvolvement
-airo:HumanInvolvement rdf:type owl:Class .
+airo:HumanInvolvement rdf:type rdfs:Class, owl:Class .
 
 
 ###  https://w3id.org/airo#Impact
-airo:Impact rdf:type owl:Class .
+airo:Impact rdf:type rdfs:Class, owl:Class .
 
 
 ###  https://w3id.org/airo#Modality
-airo:Modality rdf:type owl:Class .
+airo:Modality rdf:type rdfs:Class, owl:Class .
 
 
 ###  https://w3id.org/airo#ModeOfOutputControllability
-airo:ModeOfOutputControllability rdf:type owl:Class .
+airo:ModeOfOutputControllability rdf:type rdfs:Class, owl:Class .
 
 
 ###  https://w3id.org/airo#Output
-airo:Output rdf:type owl:Class .
+airo:Output rdf:type rdfs:Class, owl:Class .
 
 
 ###  https://w3id.org/airo#Purpose
-airo:Purpose rdf:type owl:Class .
+airo:Purpose rdf:type rdfs:Class, owl:Class .
 
 
 ###  https://w3id.org/airo#RiskControl
-airo:RiskControl rdf:type owl:Class .
+airo:RiskControl rdf:type rdfs:Class, owl:Class .
 
 
 ###  https://w3id.org/airo#RiskSource
-airo:RiskSource rdf:type owl:Class .
+airo:RiskSource rdf:type rdfs:Class, owl:Class .
 
 
 ###  https://w3id.org/airo#Standard
-airo:Standard rdf:type owl:Class .
+airo:Standard rdf:type rdfs:Class, owl:Class .
 
 
 ###  https://w3id.org/vair#AGI
-vair:AGI rdf:type owl:Class ;
+vair:AGI rdf:type rdfs:Class, owl:Class ;
          rdfs:subClassOf airo:AISystem .
 
 
 ###  https://w3id.org/vair#AICards
-vair:AICards rdf:type owl:Class ;
+vair:AICards rdf:type rdfs:Class, owl:Class ;
              rdfs:subClassOf airo:Documentation .
 
 
 ###  https://w3id.org/vair#Action
-vair:Action rdf:type owl:Class ;
+vair:Action rdf:type rdfs:Class, owl:Class ;
             rdfs:subClassOf airo:Output .
 
 
 ###  https://w3id.org/vair#ActionRecognition
-vair:ActionRecognition rdf:type owl:Class ;
+vair:ActionRecognition rdf:type rdfs:Class, owl:Class ;
                        rdfs:subClassOf vair:ComputerVision .
 
 
 ###  https://w3id.org/vair#ActiveInvolvement
-vair:ActiveInvolvement rdf:type owl:Class ;
+vair:ActiveInvolvement rdf:type rdfs:Class, owl:Class ;
                        rdfs:subClassOf airo:HumanInvolvement .
 
 
 ###  https://w3id.org/vair#AdministrationOfDemocraticProcesses
-vair:AdministrationOfDemocraticProcesses rdf:type owl:Class ;
+vair:AdministrationOfDemocraticProcesses rdf:type rdfs:Class, owl:Class ;
                                          rdfs:subClassOf airo:Domain .
 
 
 ###  https://w3id.org/vair#AdministrationOfJustice
-vair:AdministrationOfJustice rdf:type owl:Class ;
+vair:AdministrationOfJustice rdf:type rdfs:Class, owl:Class ;
                              rdfs:subClassOf airo:Domain .
 
 
 ###  https://w3id.org/vair#AdversarialAttack
-vair:AdversarialAttack rdf:type owl:Class ;
+vair:AdversarialAttack rdf:type rdfs:Class, owl:Class ;
                        rdfs:subClassOf vair:Attack .
 
 
 ###  https://w3id.org/vair#Algorithm
-vair:Algorithm rdf:type owl:Class ;
+vair:Algorithm rdf:type rdfs:Class, owl:Class ;
                rdfs:subClassOf airo:AIComponent .
 
 
 ###  https://w3id.org/vair#AllocatingTasks
-vair:AllocatingTasks rdf:type owl:Class ;
+vair:AllocatingTasks rdf:type rdfs:Class, owl:Class ;
                      rdfs:subClassOf vair:Planning .
 
 
 ###  https://w3id.org/vair#ApplicationPlatform
-vair:ApplicationPlatform rdf:type owl:Class ;
+vair:ApplicationPlatform rdf:type rdfs:Class, owl:Class ;
                          rdfs:subClassOf airo:AIComponent .
 
 
 ###  https://w3id.org/vair#ApplicationSpecificIntegratedCircuit
-vair:ApplicationSpecificIntegratedCircuit rdf:type owl:Class ;
+vair:ApplicationSpecificIntegratedCircuit rdf:type rdfs:Class, owl:Class ;
                                           rdfs:subClassOf vair:Hardware .
 
 
 ###  https://w3id.org/vair#ApplyingTheLawToFacts
-vair:ApplyingTheLawToFacts rdf:type owl:Class ;
+vair:ApplyingTheLawToFacts rdf:type rdfs:Class, owl:Class ;
                            rdfs:subClassOf vair:KnowledgeReasoning .
 
 
 ###  https://w3id.org/vair#Approval
-vair:Approval rdf:type owl:Class ;
+vair:Approval rdf:type rdfs:Class, owl:Class ;
               rdfs:subClassOf vair:ManualControl .
 
 
 ###  https://w3id.org/vair#AssessingAccessibleLevelOfEducation
-vair:AssessingAccessibleLevelOfEducation rdf:type owl:Class ;
+vair:AssessingAccessibleLevelOfEducation rdf:type rdfs:Class, owl:Class ;
                                          rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#AssessingCreditworthiness
-vair:AssessingCreditworthiness rdf:type owl:Class ;
+vair:AssessingCreditworthiness rdf:type rdfs:Class, owl:Class ;
                                rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#AssessingHealthRisk
-vair:AssessingHealthRisk rdf:type owl:Class ;
+vair:AssessingHealthRisk rdf:type rdfs:Class, owl:Class ;
                          rdfs:subClassOf vair:AssessingPeopleRelatedRisk .
 
 
 ###  https://w3id.org/vair#AssessingLevelOfEducation
-vair:AssessingLevelOfEducation rdf:type owl:Class ;
+vair:AssessingLevelOfEducation rdf:type rdfs:Class, owl:Class ;
                                rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#AssessingPastCriminalBehaviour
-vair:AssessingPastCriminalBehaviour rdf:type owl:Class ;
+vair:AssessingPastCriminalBehaviour rdf:type rdfs:Class, owl:Class ;
                                     rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#AssessingPeopleRelatedRisk
-vair:AssessingPeopleRelatedRisk rdf:type owl:Class ;
+vair:AssessingPeopleRelatedRisk rdf:type rdfs:Class, owl:Class ;
                                 rdfs:subClassOf vair:IndividualRiskAssessment .
 
 
 ###  https://w3id.org/vair#AssessingPersonalityTraits
-vair:AssessingPersonalityTraits rdf:type owl:Class ;
+vair:AssessingPersonalityTraits rdf:type rdfs:Class, owl:Class ;
                                 rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#AssessingRiskOfBecomingVictimOfCrime
-vair:AssessingRiskOfBecomingVictimOfCrime rdf:type owl:Class ;
+vair:AssessingRiskOfBecomingVictimOfCrime rdf:type rdfs:Class, owl:Class ;
                                           rdfs:subClassOf vair:IndividualRiskAssessment .
 
 
 ###  https://w3id.org/vair#AssessingRiskOfIrregularImmigration
-vair:AssessingRiskOfIrregularImmigration rdf:type owl:Class ;
+vair:AssessingRiskOfIrregularImmigration rdf:type rdfs:Class, owl:Class ;
                                          rdfs:subClassOf vair:AssessingPeopleRelatedRisk .
 
 
 ###  https://w3id.org/vair#AssessingRiskOfOffending
-vair:AssessingRiskOfOffending rdf:type owl:Class ;
+vair:AssessingRiskOfOffending rdf:type rdfs:Class, owl:Class ;
                               rdfs:subClassOf vair:IndividualRiskAssessment .
 
 
 ###  https://w3id.org/vair#AssessingRiskOfReoffending
-vair:AssessingRiskOfReoffending rdf:type owl:Class ;
+vair:AssessingRiskOfReoffending rdf:type rdfs:Class, owl:Class ;
                                 rdfs:subClassOf vair:IndividualRiskAssessment .
 
 
 ###  https://w3id.org/vair#AssessingSecurityRisk
-vair:AssessingSecurityRisk rdf:type owl:Class ;
+vair:AssessingSecurityRisk rdf:type rdfs:Class, owl:Class ;
                            rdfs:subClassOf vair:AssessingPeopleRelatedRisk .
 
 
 ###  https://w3id.org/vair#Assessment
-vair:Assessment rdf:type owl:Class ;
+vair:Assessment rdf:type rdfs:Class, owl:Class ;
                 rdfs:subClassOf airo:Purpose .
 
 
 ###  https://w3id.org/vair#AssigningPersonsToEducationalInstitutions
-vair:AssigningPersonsToEducationalInstitutions rdf:type owl:Class ;
+vair:AssigningPersonsToEducationalInstitutions rdf:type rdfs:Class, owl:Class ;
                                                rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#AssigningPersonsToVocationalTrainingInstitutions
-vair:AssigningPersonsToVocationalTrainingInstitutions rdf:type owl:Class ;
+vair:AssigningPersonsToVocationalTrainingInstitutions rdf:type rdfs:Class, owl:Class ;
                                                       rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#AssistiveAutomation
-vair:AssistiveAutomation rdf:type owl:Class ;
+vair:AssistiveAutomation rdf:type rdfs:Class, owl:Class ;
                          rdfs:subClassOf airo:AutomationLevel .
 
 
 ###  https://w3id.org/vair#AsylumManagement
-vair:AsylumManagement rdf:type owl:Class ;
+vair:AsylumManagement rdf:type rdfs:Class, owl:Class ;
                       rdfs:subClassOf airo:Domain .
 
 
 ###  https://w3id.org/vair#AsylumSeeker
-vair:AsylumSeeker rdf:type owl:Class ;
+vair:AsylumSeeker rdf:type rdfs:Class, owl:Class ;
                   rdfs:subClassOf airo:AISubject .
 
 
 ###  https://w3id.org/vair#Attack
-vair:Attack rdf:type owl:Class ;
+vair:Attack rdf:type rdfs:Class, owl:Class ;
             rdfs:subClassOf airo:RiskSource .
 
 
 ###  https://w3id.org/vair#AudioProcessing
-vair:AudioProcessing rdf:type owl:Class ;
+vair:AudioProcessing rdf:type rdfs:Class, owl:Class ;
                      rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#AutomaticSummarisation
-vair:AutomaticSummarisation rdf:type owl:Class ;
+vair:AutomaticSummarisation rdf:type rdfs:Class, owl:Class ;
                             rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#Autonomy
-vair:Autonomy rdf:type owl:Class ;
+vair:Autonomy rdf:type rdfs:Class, owl:Class ;
               rdfs:subClassOf airo:AutomationLevel .
 
 
 ###  https://w3id.org/vair#BayesianEstimation
-vair:BayesianEstimation rdf:type owl:Class ;
+vair:BayesianEstimation rdf:type rdfs:Class, owl:Class ;
                         rdfs:subClassOf vair:StatisticalTechnique .
 
 
 ###  https://w3id.org/vair#BayesianNetwork
-vair:BayesianNetwork rdf:type owl:Class ;
+vair:BayesianNetwork rdf:type rdfs:Class, owl:Class ;
                      rdfs:subClassOf vair:Model .
 
 
 ###  https://w3id.org/vair#BayesianOptimisation
-vair:BayesianOptimisation rdf:type owl:Class ;
+vair:BayesianOptimisation rdf:type rdfs:Class, owl:Class ;
                           rdfs:subClassOf vair:StatisticalTechnique .
 
 
 ###  https://w3id.org/vair#BehaviourAnalysis
-vair:BehaviourAnalysis rdf:type owl:Class ;
+vair:BehaviourAnalysis rdf:type rdfs:Class, owl:Class ;
                        rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#Bias
-vair:Bias rdf:type owl:Class ;
+vair:Bias rdf:type rdfs:Class, owl:Class ;
           rdfs:subClassOf airo:Consequence .
 
 
 ###  https://w3id.org/vair#BiasDetection
-vair:BiasDetection rdf:type owl:Class ;
+vair:BiasDetection rdf:type rdfs:Class, owl:Class ;
                    rdfs:subClassOf vair:DetectionControl .
 
 
 ###  https://w3id.org/vair#BiasedTestData
-vair:BiasedTestData rdf:type owl:Class ;
+vair:BiasedTestData rdf:type rdfs:Class, owl:Class ;
                     rdfs:subClassOf vair:TestDataRiskSource .
 
 
 ###  https://w3id.org/vair#BiasedTrainingData
-vair:BiasedTrainingData rdf:type owl:Class ;
+vair:BiasedTrainingData rdf:type rdfs:Class, owl:Class ;
                         rdfs:subClassOf vair:TrainingDataRiskSource .
 
 
 ###  https://w3id.org/vair#BiasedValidationData
-vair:BiasedValidationData rdf:type owl:Class ;
+vair:BiasedValidationData rdf:type rdfs:Class, owl:Class ;
                           rdfs:subClassOf vair:ValidationDataRiskSource .
 
 
 ###  https://w3id.org/vair#BiometricCategorisation
-vair:BiometricCategorisation rdf:type owl:Class ;
+vair:BiometricCategorisation rdf:type rdfs:Class, owl:Class ;
                              rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#BiometricIdentification
-vair:BiometricIdentification rdf:type owl:Class ;
+vair:BiometricIdentification rdf:type rdfs:Class, owl:Class ;
                              rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#BiometricsBasedEmotionRecognition
-vair:BiometricsBasedEmotionRecognition rdf:type owl:Class ;
+vair:BiometricsBasedEmotionRecognition rdf:type rdfs:Class, owl:Class ;
                                        rdfs:subClassOf vair:EmotionRecognition .
 
 
 ###  https://w3id.org/vair#BorderControlManagement
-vair:BorderControlManagement rdf:type owl:Class ;
+vair:BorderControlManagement rdf:type rdfs:Class, owl:Class ;
                              rdfs:subClassOf airo:Domain .
 
 
 ###  https://w3id.org/vair#CannotOptOutOfOutput
-vair:CannotOptOutOfOutput rdf:type owl:Class ;
+vair:CannotOptOutOfOutput rdf:type rdfs:Class, owl:Class ;
                           rdfs:subClassOf airo:ModeOfOutputControllability .
 
 
 ###  https://w3id.org/vair#Categorisation
-vair:Categorisation rdf:type owl:Class ;
+vair:Categorisation rdf:type rdfs:Class, owl:Class ;
                     rdfs:subClassOf airo:Purpose .
 
 
 ###  https://w3id.org/vair#ChallengeOutput
-vair:ChallengeOutput rdf:type owl:Class ;
+vair:ChallengeOutput rdf:type rdfs:Class, owl:Class ;
                      rdfs:subClassOf airo:ModeOfOutputControllability .
 
 
 ###  https://w3id.org/vair#ClassifyingEmergencyCall
-vair:ClassifyingEmergencyCall rdf:type owl:Class ;
+vair:ClassifyingEmergencyCall rdf:type rdfs:Class, owl:Class ;
                               rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#CognitiveComputing
-vair:CognitiveComputing rdf:type owl:Class ;
+vair:CognitiveComputing rdf:type rdfs:Class, owl:Class ;
                         rdfs:subClassOf airo:AISystem .
 
 
 ###  https://w3id.org/vair#ComputerVision
-vair:ComputerVision rdf:type owl:Class ;
+vair:ComputerVision rdf:type rdfs:Class, owl:Class ;
                     rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#Concept
-vair:Concept rdf:type owl:Class ;
+vair:Concept rdf:type rdfs:Class, owl:Class ;
              rdfs:comment "Represents a concept in VAIR"@en ;
              rdfs:label "Concept"@en ;
              skos:definition "Represents a concept in VAIR."@en ;
@@ -515,852 +515,852 @@ vair:Concept rdf:type owl:Class ;
 
 
 ###  https://w3id.org/vair#ConditionalAutomation
-vair:ConditionalAutomation rdf:type owl:Class ;
+vair:ConditionalAutomation rdf:type rdfs:Class, owl:Class ;
                            rdfs:subClassOf airo:AutomationLevel .
 
 
 ###  https://w3id.org/vair#Content
-vair:Content rdf:type owl:Class ;
+vair:Content rdf:type rdfs:Class, owl:Class ;
              rdfs:subClassOf airo:Output .
 
 
 ###  https://w3id.org/vair#ContentGeneration
-vair:ContentGeneration rdf:type owl:Class ;
+vair:ContentGeneration rdf:type rdfs:Class, owl:Class ;
                        rdfs:subClassOf airo:Purpose .
 
 
 ###  https://w3id.org/vair#ContinuousValidation
-vair:ContinuousValidation rdf:type owl:Class ;
+vair:ContinuousValidation rdf:type rdfs:Class, owl:Class ;
                           rdfs:subClassOf airo:AILifecyclePhase .
 
 
 ###  https://w3id.org/vair#ConvolutionalNeuralNetwork
-vair:ConvolutionalNeuralNetwork rdf:type owl:Class ;
+vair:ConvolutionalNeuralNetwork rdf:type rdfs:Class, owl:Class ;
                                 rdfs:subClassOf vair:FeedForwardNeuralNetwork .
 
 
 ###  https://w3id.org/vair#CorrectOutput
-vair:CorrectOutput rdf:type owl:Class ;
+vair:CorrectOutput rdf:type rdfs:Class, owl:Class ;
                    rdfs:subClassOf airo:ModeOfOutputControllability .
 
 
 ###  https://w3id.org/vair#CourseAttendee
-vair:CourseAttendee rdf:type owl:Class ;
+vair:CourseAttendee rdf:type rdfs:Class, owl:Class ;
                     rdfs:subClassOf airo:AISubject .
 
 
 ###  https://w3id.org/vair#CriticalInfrastructure
-vair:CriticalInfrastructure rdf:type owl:Class ;
+vair:CriticalInfrastructure rdf:type rdfs:Class, owl:Class ;
                             rdfs:subClassOf airo:Domain .
 
 
 ###  https://w3id.org/vair#DataPoisoning
-vair:DataPoisoning rdf:type owl:Class ;
+vair:DataPoisoning rdf:type rdfs:Class, owl:Class ;
                    rdfs:subClassOf vair:Attack .
 
 
 ###  https://w3id.org/vair#DataRiskSource
-vair:DataRiskSource rdf:type owl:Class ;
+vair:DataRiskSource rdf:type rdfs:Class, owl:Class ;
                     rdfs:subClassOf airo:RiskSource .
 
 
 ###  https://w3id.org/vair#Datasheet
-vair:Datasheet rdf:type owl:Class ;
+vair:Datasheet rdf:type rdfs:Class, owl:Class ;
                rdfs:subClassOf airo:Documentation .
 
 
 ###  https://w3id.org/vair#Decision
-vair:Decision rdf:type owl:Class ;
+vair:Decision rdf:type rdfs:Class, owl:Class ;
               rdfs:subClassOf airo:Output .
 
 
 ###  https://w3id.org/vair#DecisionMaking
-vair:DecisionMaking rdf:type owl:Class ;
+vair:DecisionMaking rdf:type rdfs:Class, owl:Class ;
                     rdfs:subClassOf airo:Purpose .
 
 
 ###  https://w3id.org/vair#DecisionTree
-vair:DecisionTree rdf:type owl:Class ;
+vair:DecisionTree rdf:type rdfs:Class, owl:Class ;
                   rdfs:subClassOf vair:Model .
 
 
 ###  https://w3id.org/vair#DecreasedRobustness
-vair:DecreasedRobustness rdf:type owl:Class ;
+vair:DecreasedRobustness rdf:type rdfs:Class, owl:Class ;
                          rdfs:subClassOf airo:Consequence .
 
 
 ###  https://w3id.org/vair#DecreasedSecurity
-vair:DecreasedSecurity rdf:type owl:Class ;
+vair:DecreasedSecurity rdf:type rdfs:Class, owl:Class ;
                        rdfs:subClassOf airo:Consequence .
 
 
 ###  https://w3id.org/vair#DeepFakeDetection
-vair:DeepFakeDetection rdf:type owl:Class ;
+vair:DeepFakeDetection rdf:type rdfs:Class, owl:Class ;
                        rdfs:subClassOf vair:Detection .
 
 
 ###  https://w3id.org/vair#DeepLearning
-vair:DeepLearning rdf:type owl:Class ;
+vair:DeepLearning rdf:type rdfs:Class, owl:Class ;
                   rdfs:subClassOf vair:MachineLearning .
 
 
 ###  https://w3id.org/vair#DegradedAccuracy
-vair:DegradedAccuracy rdf:type owl:Class ;
+vair:DegradedAccuracy rdf:type rdfs:Class, owl:Class ;
                       rdfs:subClassOf airo:Consequence .
 
 
 ###  https://w3id.org/vair#Deployment
-vair:Deployment rdf:type owl:Class ;
+vair:Deployment rdf:type rdfs:Class, owl:Class ;
                 rdfs:subClassOf airo:AILifecyclePhase .
 
 
 ###  https://w3id.org/vair#Design
-vair:Design rdf:type owl:Class ;
+vair:Design rdf:type rdfs:Class, owl:Class ;
             rdfs:subClassOf airo:AILifecyclePhase .
 
 
 ###  https://w3id.org/vair#DesignSpecification
-vair:DesignSpecification rdf:type owl:Class ;
+vair:DesignSpecification rdf:type rdfs:Class, owl:Class ;
                          rdfs:subClassOf airo:Documentation .
 
 
 ###  https://w3id.org/vair#DetectingCriminalOffences
-vair:DetectingCriminalOffences rdf:type owl:Class ;
+vair:DetectingCriminalOffences rdf:type rdfs:Class, owl:Class ;
                                rdfs:subClassOf vair:Detection .
 
 
 ###  https://w3id.org/vair#DetectingEmotionalState
-vair:DetectingEmotionalState rdf:type owl:Class ;
+vair:DetectingEmotionalState rdf:type rdfs:Class, owl:Class ;
                              rdfs:subClassOf vair:Detection .
 
 
 ###  https://w3id.org/vair#DetectingIndividuals
-vair:DetectingIndividuals rdf:type owl:Class ;
+vair:DetectingIndividuals rdf:type rdfs:Class, owl:Class ;
                           rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#DetectingLies
-vair:DetectingLies rdf:type owl:Class ;
+vair:DetectingLies rdf:type rdfs:Class, owl:Class ;
                    rdfs:subClassOf vair:Detection .
 
 
 ###  https://w3id.org/vair#DetectingNon-AuthenticDocument
-vair:DetectingNon-AuthenticDocument rdf:type owl:Class ;
+vair:DetectingNon-AuthenticDocument rdf:type rdfs:Class, owl:Class ;
                                     rdfs:subClassOf vair:Detection .
 
 
 ###  https://w3id.org/vair#DetectingProhibitedBehaviourDuringTest
-vair:DetectingProhibitedBehaviourDuringTest rdf:type owl:Class ;
+vair:DetectingProhibitedBehaviourDuringTest rdf:type rdfs:Class, owl:Class ;
                                             rdfs:subClassOf vair:Detection .
 
 
 ###  https://w3id.org/vair#Detection
-vair:Detection rdf:type owl:Class ;
+vair:Detection rdf:type rdfs:Class, owl:Class ;
                rdfs:subClassOf airo:Purpose .
 
 
 ###  https://w3id.org/vair#DetectionControl
-vair:DetectionControl rdf:type owl:Class ;
+vair:DetectionControl rdf:type rdfs:Class, owl:Class ;
                       rdfs:subClassOf airo:RiskControl .
 
 
 ###  https://w3id.org/vair#DeterminingAccessToEducationalInstitutions
-vair:DeterminingAccessToEducationalInstitutions rdf:type owl:Class ;
+vair:DeterminingAccessToEducationalInstitutions rdf:type rdfs:Class, owl:Class ;
                                                 rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#DeterminingAccessToVocationalTrainingInstitutions
-vair:DeterminingAccessToVocationalTrainingInstitutions rdf:type owl:Class ;
+vair:DeterminingAccessToVocationalTrainingInstitutions rdf:type rdfs:Class, owl:Class ;
                                                        rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#DeterminingAdmissionToEducationalInstitutions
-vair:DeterminingAdmissionToEducationalInstitutions rdf:type owl:Class ;
+vair:DeterminingAdmissionToEducationalInstitutions rdf:type rdfs:Class, owl:Class ;
                                                    rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#DeterminingAdmissionToVocationalTrainingInstitutions
-vair:DeterminingAdmissionToVocationalTrainingInstitutions rdf:type owl:Class ;
+vair:DeterminingAdmissionToVocationalTrainingInstitutions rdf:type rdfs:Class, owl:Class ;
                                                           rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#DeterminingCreditScore
-vair:DeterminingCreditScore rdf:type owl:Class ;
+vair:DeterminingCreditScore rdf:type rdfs:Class, owl:Class ;
                             rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#Development
-vair:Development rdf:type owl:Class ;
+vair:Development rdf:type rdfs:Class, owl:Class ;
                  rdfs:subClassOf airo:AILifecyclePhase .
 
 
 ###  https://w3id.org/vair#DialogueManagement
-vair:DialogueManagement rdf:type owl:Class ;
+vair:DialogueManagement rdf:type rdfs:Class, owl:Class ;
                         rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#DiscoveringCrimePatterns
-vair:DiscoveringCrimePatterns rdf:type owl:Class ;
+vair:DiscoveringCrimePatterns rdf:type rdfs:Class, owl:Class ;
                               rdfs:subClassOf vair:Detection .
 
 
 ###  https://w3id.org/vair#DiscoveringCrimeRelationships
-vair:DiscoveringCrimeRelationships rdf:type owl:Class ;
+vair:DiscoveringCrimeRelationships rdf:type rdfs:Class, owl:Class ;
                                    rdfs:subClassOf vair:Detection .
 
 
 ###  https://w3id.org/vair#DistortionInHumanBehaviour
-vair:DistortionInHumanBehaviour rdf:type owl:Class ;
+vair:DistortionInHumanBehaviour rdf:type rdfs:Class, owl:Class ;
                                 rdfs:subClassOf vair:WellbeingImpact .
 
 
 ###  https://w3id.org/vair#EUAgency
-vair:EUAgency rdf:type owl:Class ;
+vair:EUAgency rdf:type rdfs:Class, owl:Class ;
               rdfs:subClassOf airo:AIOperator .
 
 
 ###  https://w3id.org/vair#EUBody
-vair:EUBody rdf:type owl:Class ;
+vair:EUBody rdf:type rdfs:Class, owl:Class ;
             rdfs:subClassOf airo:AIOperator .
 
 
 ###  https://w3id.org/vair#EUDeclarationOfConformity
-vair:EUDeclarationOfConformity rdf:type owl:Class ;
+vair:EUDeclarationOfConformity rdf:type rdfs:Class, owl:Class ;
                                rdfs:subClassOf airo:Documentation .
 
 
 ###  https://w3id.org/vair#EUInstitution
-vair:EUInstitution rdf:type owl:Class ;
+vair:EUInstitution rdf:type rdfs:Class, owl:Class ;
                    rdfs:subClassOf airo:AIOperator .
 
 
 ###  https://w3id.org/vair#EUOffice
-vair:EUOffice rdf:type owl:Class ;
+vair:EUOffice rdf:type rdfs:Class, owl:Class ;
               rdfs:subClassOf airo:AIOperator .
 
 
 ###  https://w3id.org/vair#Education
-vair:Education rdf:type owl:Class ;
+vair:Education rdf:type rdfs:Class, owl:Class ;
                rdfs:subClassOf airo:Domain .
 
 
 ###  https://w3id.org/vair#EducationalInstitution
-vair:EducationalInstitution rdf:type owl:Class ;
+vair:EducationalInstitution rdf:type rdfs:Class, owl:Class ;
                             rdfs:subClassOf airo:AIOperator .
 
 
 ###  https://w3id.org/vair#EmergencyHealthCareProvider
-vair:EmergencyHealthCareProvider rdf:type owl:Class ;
+vair:EmergencyHealthCareProvider rdf:type rdfs:Class, owl:Class ;
                                  rdfs:subClassOf vair:EmergencyServiceProvider .
 
 
 ###  https://w3id.org/vair#EmergencyServiceProvider
-vair:EmergencyServiceProvider rdf:type owl:Class ;
+vair:EmergencyServiceProvider rdf:type rdfs:Class, owl:Class ;
                               rdfs:subClassOf airo:AIOperator .
 
 
 ###  https://w3id.org/vair#EmergencyTriage
-vair:EmergencyTriage rdf:type owl:Class ;
+vair:EmergencyTriage rdf:type rdfs:Class, owl:Class ;
                      rdfs:subClassOf airo:Purpose .
 
 
 ###  https://w3id.org/vair#EmotionRecognition
-vair:EmotionRecognition rdf:type owl:Class ;
+vair:EmotionRecognition rdf:type rdfs:Class, owl:Class ;
                         rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#Employee
-vair:Employee rdf:type owl:Class ;
+vair:Employee rdf:type rdfs:Class, owl:Class ;
               rdfs:subClassOf airo:AISubject .
 
 
 ###  https://w3id.org/vair#Employment
-vair:Employment rdf:type owl:Class ;
+vair:Employment rdf:type rdfs:Class, owl:Class ;
                 rdfs:subClassOf airo:Domain .
 
 
 ###  https://w3id.org/vair#ErroneousInputData
-vair:ErroneousInputData rdf:type owl:Class ;
+vair:ErroneousInputData rdf:type rdfs:Class, owl:Class ;
                         rdfs:subClassOf vair:InputDataRiskSource .
 
 
 ###  https://w3id.org/vair#ErroneousTestData
-vair:ErroneousTestData rdf:type owl:Class ;
+vair:ErroneousTestData rdf:type rdfs:Class, owl:Class ;
                        rdfs:subClassOf vair:TestDataRiskSource .
 
 
 ###  https://w3id.org/vair#ErroneousTrainingData
-vair:ErroneousTrainingData rdf:type owl:Class ;
+vair:ErroneousTrainingData rdf:type rdfs:Class, owl:Class ;
                            rdfs:subClassOf vair:TrainingDataRiskSource .
 
 
 ###  https://w3id.org/vair#ErroneousValidationData
-vair:ErroneousValidationData rdf:type owl:Class ;
+vair:ErroneousValidationData rdf:type rdfs:Class, owl:Class ;
                              rdfs:subClassOf vair:ValidationDataRiskSource .
 
 
 ###  https://w3id.org/vair#ErrorInDataCollection
-vair:ErrorInDataCollection rdf:type owl:Class ;
+vair:ErrorInDataCollection rdf:type rdfs:Class, owl:Class ;
                            rdfs:subClassOf vair:DataRiskSource .
 
 
 ###  https://w3id.org/vair#ErrorInDataPrepration
-vair:ErrorInDataPrepration rdf:type owl:Class ;
+vair:ErrorInDataPrepration rdf:type rdfs:Class, owl:Class ;
                            rdfs:subClassOf vair:DataRiskSource .
 
 
 ###  https://w3id.org/vair#EvaluatingEligibilityForPublicAssistanceServices
-vair:EvaluatingEligibilityForPublicAssistanceServices rdf:type owl:Class ;
+vair:EvaluatingEligibilityForPublicAssistanceServices rdf:type rdfs:Class, owl:Class ;
                                                       rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#EvaluatingEligibilityforHealthCareServices
-vair:EvaluatingEligibilityforHealthCareServices rdf:type owl:Class ;
+vair:EvaluatingEligibilityforHealthCareServices rdf:type rdfs:Class, owl:Class ;
                                                 rdfs:subClassOf vair:EvaluatingEligibilityForPublicAssistanceServices .
 
 
 ###  https://w3id.org/vair#EvaluatingEmergencyCall
-vair:EvaluatingEmergencyCall rdf:type owl:Class ;
+vair:EvaluatingEmergencyCall rdf:type rdfs:Class, owl:Class ;
                              rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#EvaluatingEmployeeBehaviour
-vair:EvaluatingEmployeeBehaviour rdf:type owl:Class ;
+vair:EvaluatingEmployeeBehaviour rdf:type rdfs:Class, owl:Class ;
                                  rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#EvaluatingEmployeePerformance
-vair:EvaluatingEmployeePerformance rdf:type owl:Class ;
+vair:EvaluatingEmployeePerformance rdf:type rdfs:Class, owl:Class ;
                                    rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#EvaluatingJobCandidates
-vair:EvaluatingJobCandidates rdf:type owl:Class ;
+vair:EvaluatingJobCandidates rdf:type rdfs:Class, owl:Class ;
                              rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#EvaluatingJobInterview
-vair:EvaluatingJobInterview rdf:type owl:Class ;
+vair:EvaluatingJobInterview rdf:type rdfs:Class, owl:Class ;
                             rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#EvaluatingLearningOutcomes
-vair:EvaluatingLearningOutcomes rdf:type owl:Class ;
+vair:EvaluatingLearningOutcomes rdf:type rdfs:Class, owl:Class ;
                                 rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#EvaluatingReliabilityOfEvidenceInInvestigationOfCriminalOffences
-vair:EvaluatingReliabilityOfEvidenceInInvestigationOfCriminalOffences rdf:type owl:Class ;
+vair:EvaluatingReliabilityOfEvidenceInInvestigationOfCriminalOffences rdf:type rdfs:Class, owl:Class ;
                                                                       rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#EvaluatingReliabilityOfEvidenceInMigrationRelatedApplications
-vair:EvaluatingReliabilityOfEvidenceInMigrationRelatedApplications rdf:type owl:Class ;
+vair:EvaluatingReliabilityOfEvidenceInMigrationRelatedApplications rdf:type rdfs:Class, owl:Class ;
                                                                    rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#EvaluatingReliabilityOfEvidenceInProsecutionOfCriminalOffences
-vair:EvaluatingReliabilityOfEvidenceInProsecutionOfCriminalOffences rdf:type owl:Class ;
+vair:EvaluatingReliabilityOfEvidenceInProsecutionOfCriminalOffences rdf:type rdfs:Class, owl:Class ;
                                                                     rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#ExaminingApplication
-vair:ExaminingApplication rdf:type owl:Class ;
+vair:ExaminingApplication rdf:type rdfs:Class, owl:Class ;
                           rdfs:subClassOf airo:Purpose .
 
 
 ###  https://w3id.org/vair#ExaminingAsylumApplication
-vair:ExaminingAsylumApplication rdf:type owl:Class ;
+vair:ExaminingAsylumApplication rdf:type rdfs:Class, owl:Class ;
                                 rdfs:subClassOf vair:ExaminingApplication .
 
 
 ###  https://w3id.org/vair#ExaminingMigrationRelatedComplaints
-vair:ExaminingMigrationRelatedComplaints rdf:type owl:Class ;
+vair:ExaminingMigrationRelatedComplaints rdf:type rdfs:Class, owl:Class ;
                                          rdfs:subClassOf vair:ExaminingApplication .
 
 
 ###  https://w3id.org/vair#ExaminingResidencePermitsApplication
-vair:ExaminingResidencePermitsApplication rdf:type owl:Class ;
+vair:ExaminingResidencePermitsApplication rdf:type rdfs:Class, owl:Class ;
                                           rdfs:subClassOf vair:ExaminingApplication .
 
 
 ###  https://w3id.org/vair#ExaminingVisaApplication
-vair:ExaminingVisaApplication rdf:type owl:Class ;
+vair:ExaminingVisaApplication rdf:type rdfs:Class, owl:Class ;
                               rdfs:subClassOf vair:ExaminingApplication .
 
 
 ###  https://w3id.org/vair#ExpertSystem
-vair:ExpertSystem rdf:type owl:Class ;
+vair:ExpertSystem rdf:type rdfs:Class, owl:Class ;
                   rdfs:subClassOf airo:AISystem .
 
 
 ###  https://w3id.org/vair#FaceRecognition
-vair:FaceRecognition rdf:type owl:Class ;
+vair:FaceRecognition rdf:type rdfs:Class, owl:Class ;
                      rdfs:subClassOf vair:ComputerVision .
 
 
 ###  https://w3id.org/vair#Family
-vair:Family rdf:type owl:Class ;
+vair:Family rdf:type rdfs:Class, owl:Class ;
             rdfs:subClassOf airo:AISubject .
 
 
 ###  https://w3id.org/vair#FeedForwardNeuralNetwork
-vair:FeedForwardNeuralNetwork rdf:type owl:Class ;
+vair:FeedForwardNeuralNetwork rdf:type rdfs:Class, owl:Class ;
                               rdfs:subClassOf vair:NeuralNetwork .
 
 
 ###  https://w3id.org/vair#FireBrigade
-vair:FireBrigade rdf:type owl:Class ;
+vair:FireBrigade rdf:type rdfs:Class, owl:Class ;
                  rdfs:subClassOf vair:EmergencyServiceProvider .
 
 
 ###  https://w3id.org/vair#Freedom
-vair:Freedom rdf:type owl:Class ;
+vair:Freedom rdf:type rdfs:Class, owl:Class ;
              rdfs:subClassOf airo:AreaOfImpact .
 
 
 ###  https://w3id.org/vair#FullAutomation
-vair:FullAutomation rdf:type owl:Class ;
+vair:FullAutomation rdf:type rdfs:Class, owl:Class ;
                     rdfs:subClassOf airo:AutomationLevel .
 
 
 ###  https://w3id.org/vair#GeneralAI
-vair:GeneralAI rdf:type owl:Class ;
+vair:GeneralAI rdf:type rdfs:Class, owl:Class ;
                rdfs:subClassOf airo:AISystem .
 
 
 ###  https://w3id.org/vair#GeneratingAudioContent
-vair:GeneratingAudioContent rdf:type owl:Class ;
+vair:GeneratingAudioContent rdf:type rdfs:Class, owl:Class ;
                             rdfs:subClassOf vair:ContentGeneration .
 
 
 ###  https://w3id.org/vair#GeneratingImageContent
-vair:GeneratingImageContent rdf:type owl:Class ;
+vair:GeneratingImageContent rdf:type rdfs:Class, owl:Class ;
                             rdfs:subClassOf vair:ContentGeneration .
 
 
 ###  https://w3id.org/vair#GeneratingVideoContent
-vair:GeneratingVideoContent rdf:type owl:Class ;
+vair:GeneratingVideoContent rdf:type rdfs:Class, owl:Class ;
                             rdfs:subClassOf vair:ContentGeneration .
 
 
 ###  https://w3id.org/vair#GeneticAlgorithm
-vair:GeneticAlgorithm rdf:type owl:Class ;
+vair:GeneticAlgorithm rdf:type rdfs:Class, owl:Class ;
                       rdfs:subClassOf vair:Algorithm .
 
 
 ###  https://w3id.org/vair#GestureRecognition
-vair:GestureRecognition rdf:type owl:Class ;
+vair:GestureRecognition rdf:type rdfs:Class, owl:Class ;
                         rdfs:subClassOf vair:ComputerVision .
 
 
 ###  https://w3id.org/vair#GrantingHealthCareServices
-vair:GrantingHealthCareServices rdf:type owl:Class ;
+vair:GrantingHealthCareServices rdf:type rdfs:Class, owl:Class ;
                                 rdfs:subClassOf vair:GrantingPublicAssistanceServices .
 
 
 ###  https://w3id.org/vair#GrantingPublicAssistanceServices
-vair:GrantingPublicAssistanceServices rdf:type owl:Class ;
+vair:GrantingPublicAssistanceServices rdf:type rdfs:Class, owl:Class ;
                                       rdfs:subClassOf vair:DecisionMaking .
 
 
 ###  https://w3id.org/vair#Group
-vair:Group rdf:type owl:Class ;
+vair:Group rdf:type rdfs:Class, owl:Class ;
            rdfs:subClassOf airo:AISubject .
 
 
 ###  https://w3id.org/vair#Hardware
-vair:Hardware rdf:type owl:Class ;
+vair:Hardware rdf:type rdfs:Class, owl:Class ;
               rdfs:subClassOf airo:AIComponent .
 
 
 ###  https://w3id.org/vair#Health
-vair:Health rdf:type owl:Class ;
+vair:Health rdf:type rdfs:Class, owl:Class ;
             rdfs:subClassOf airo:AreaOfImpact .
 
 
 ###  https://w3id.org/vair#HealthInsurancePricing
-vair:HealthInsurancePricing rdf:type owl:Class ;
+vair:HealthInsurancePricing rdf:type rdfs:Class, owl:Class ;
                             rdfs:subClassOf vair:DecisionMaking .
 
 
 ###  https://w3id.org/vair#HealthInsuranceRiskAssessment
-vair:HealthInsuranceRiskAssessment rdf:type owl:Class ;
+vair:HealthInsuranceRiskAssessment rdf:type rdfs:Class, owl:Class ;
                                    rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#HighAutomation
-vair:HighAutomation rdf:type owl:Class ;
+vair:HighAutomation rdf:type rdfs:Class, owl:Class ;
                     rdfs:subClassOf airo:AutomationLevel .
 
 
 ###  https://w3id.org/vair#HumanOversightMeasure
-vair:HumanOversightMeasure rdf:type owl:Class ;
+vair:HumanOversightMeasure rdf:type rdfs:Class, owl:Class ;
                            rdfs:subClassOf vair:SemiAutomatedControl .
 
 
 ###  https://w3id.org/vair#IEC31010-2019
-vair:IEC31010-2019 rdf:type owl:Class ;
+vair:IEC31010-2019 rdf:type rdfs:Class, owl:Class ;
                    rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISO10013-2021
-vair:ISO10013-2021 rdf:type owl:Class ;
+vair:ISO10013-2021 rdf:type rdfs:Class, owl:Class ;
                    rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISO31000-2018
-vair:ISO31000-2018 rdf:type owl:Class ;
+vair:ISO31000-2018 rdf:type rdfs:Class, owl:Class ;
                    rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISO31073_2022
-vair:ISO31073_2022 rdf:type owl:Class ;
+vair:ISO31073_2022 rdf:type rdfs:Class, owl:Class ;
                    rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISO9001-2015
-vair:ISO9001-2015 rdf:type owl:Class ;
+vair:ISO9001-2015 rdf:type rdfs:Class, owl:Class ;
                   rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOIEC20546-2019
-vair:ISOIEC20546-2019 rdf:type owl:Class ;
+vair:ISOIEC20546-2019 rdf:type rdfs:Class, owl:Class ;
                       rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOIEC20547-3-2020
-vair:ISOIEC20547-3-2020 rdf:type owl:Class ;
+vair:ISOIEC20547-3-2020 rdf:type rdfs:Class, owl:Class ;
                         rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOIEC22989-2022
-vair:ISOIEC22989-2022 rdf:type owl:Class ;
+vair:ISOIEC22989-2022 rdf:type rdfs:Class, owl:Class ;
                       rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOIEC23053-2022
-vair:ISOIEC23053-2022 rdf:type owl:Class ;
+vair:ISOIEC23053-2022 rdf:type rdfs:Class, owl:Class ;
                       rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOIEC23894-2023
-vair:ISOIEC23894-2023 rdf:type owl:Class ;
+vair:ISOIEC23894-2023 rdf:type rdfs:Class, owl:Class ;
                       rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOIEC23894_2023
-vair:ISOIEC23894_2023 rdf:type owl:Class ;
+vair:ISOIEC23894_2023 rdf:type rdfs:Class, owl:Class ;
                       rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOIEC24668-2022
-vair:ISOIEC24668-2022 rdf:type owl:Class ;
+vair:ISOIEC24668-2022 rdf:type rdfs:Class, owl:Class ;
                       rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOIEC38507-2022
-vair:ISOIEC38507-2022 rdf:type owl:Class ;
+vair:ISOIEC38507-2022 rdf:type rdfs:Class, owl:Class ;
                       rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOIEC42001_2023
-vair:ISOIEC42001_2023 rdf:type owl:Class ;
+vair:ISOIEC42001_2023 rdf:type rdfs:Class, owl:Class ;
                       rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOIECTR20547-1-2020
-vair:ISOIECTR20547-1-2020 rdf:type owl:Class ;
+vair:ISOIECTR20547-1-2020 rdf:type rdfs:Class, owl:Class ;
                           rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOIECTR20547-2-2018
-vair:ISOIECTR20547-2-2018 rdf:type owl:Class ;
+vair:ISOIECTR20547-2-2018 rdf:type rdfs:Class, owl:Class ;
                           rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOIECTR20547-5-2018
-vair:ISOIECTR20547-5-2018 rdf:type owl:Class ;
+vair:ISOIECTR20547-5-2018 rdf:type rdfs:Class, owl:Class ;
                           rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOIECTR24027-2021
-vair:ISOIECTR24027-2021 rdf:type owl:Class ;
+vair:ISOIECTR24027-2021 rdf:type rdfs:Class, owl:Class ;
                         rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOIECTR24028-2020
-vair:ISOIECTR24028-2020 rdf:type owl:Class ;
+vair:ISOIECTR24028-2020 rdf:type rdfs:Class, owl:Class ;
                         rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOIECTR24029-1-2021
-vair:ISOIECTR24029-1-2021 rdf:type owl:Class ;
+vair:ISOIECTR24029-1-2021 rdf:type rdfs:Class, owl:Class ;
                           rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOIECTR24030-2021
-vair:ISOIECTR24030-2021 rdf:type owl:Class ;
+vair:ISOIECTR24030-2021 rdf:type rdfs:Class, owl:Class ;
                         rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOIECTR24368-2022
-vair:ISOIECTR24368-2022 rdf:type owl:Class ;
+vair:ISOIECTR24368-2022 rdf:type rdfs:Class, owl:Class ;
                         rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOIECTR24372-2021
-vair:ISOIECTR24372-2021 rdf:type owl:Class ;
+vair:ISOIECTR24372-2021 rdf:type rdfs:Class, owl:Class ;
                         rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#ISOIECTS4213-2022
-vair:ISOIECTS4213-2022 rdf:type owl:Class ;
+vair:ISOIECTS4213-2022 rdf:type rdfs:Class, owl:Class ;
                        rdfs:subClassOf airo:Standard .
 
 
 ###  https://w3id.org/vair#IdentiftyingIndividuals
-vair:IdentiftyingIndividuals rdf:type owl:Class ;
+vair:IdentiftyingIndividuals rdf:type rdfs:Class, owl:Class ;
                              rdfs:subClassOf airo:Purpose .
 
 
 ###  https://w3id.org/vair#ImageRecognition
-vair:ImageRecognition rdf:type owl:Class ;
+vair:ImageRecognition rdf:type rdfs:Class, owl:Class ;
                       rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#InaccurateDecision
-vair:InaccurateDecision rdf:type owl:Class ;
+vair:InaccurateDecision rdf:type rdfs:Class, owl:Class ;
                         rdfs:subClassOf vair:LowAccuracy .
 
 
 ###  https://w3id.org/vair#InaccuratePrediction
-vair:InaccuratePrediction rdf:type owl:Class ;
+vair:InaccuratePrediction rdf:type rdfs:Class, owl:Class ;
                           rdfs:subClassOf vair:LowAccuracy .
 
 
 ###  https://w3id.org/vair#InaccurateRecommendation
-vair:InaccurateRecommendation rdf:type owl:Class ;
+vair:InaccurateRecommendation rdf:type rdfs:Class, owl:Class ;
                               rdfs:subClassOf vair:LowAccuracy .
 
 
 ###  https://w3id.org/vair#Inception
-vair:Inception rdf:type owl:Class ;
+vair:Inception rdf:type rdfs:Class, owl:Class ;
                rdfs:subClassOf airo:AILifecyclePhase .
 
 
 ###  https://w3id.org/vair#IncompleteTestData
-vair:IncompleteTestData rdf:type owl:Class ;
+vair:IncompleteTestData rdf:type rdfs:Class, owl:Class ;
                         rdfs:subClassOf vair:TestDataRiskSource .
 
 
 ###  https://w3id.org/vair#IncompleteTrainingData
-vair:IncompleteTrainingData rdf:type owl:Class ;
+vair:IncompleteTrainingData rdf:type rdfs:Class, owl:Class ;
                             rdfs:subClassOf vair:TrainingDataRiskSource .
 
 
 ###  https://w3id.org/vair#IncompleteValidationData
-vair:IncompleteValidationData rdf:type owl:Class ;
+vair:IncompleteValidationData rdf:type rdfs:Class, owl:Class ;
                               rdfs:subClassOf vair:ValidationDataRiskSource .
 
 
 ###  https://w3id.org/vair#IndividualEnteredState
-vair:IndividualEnteredState rdf:type owl:Class ;
+vair:IndividualEnteredState rdf:type rdfs:Class, owl:Class ;
                             rdfs:subClassOf airo:AISubject .
 
 
 ###  https://w3id.org/vair#IndividualIntendsToEnterState
-vair:IndividualIntendsToEnterState rdf:type owl:Class ;
+vair:IndividualIntendsToEnterState rdf:type rdfs:Class, owl:Class ;
                                    rdfs:subClassOf airo:AISubject .
 
 
 ###  https://w3id.org/vair#IndividualRiskAssessment
-vair:IndividualRiskAssessment rdf:type owl:Class ;
+vair:IndividualRiskAssessment rdf:type rdfs:Class, owl:Class ;
                               rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#InductiveProgramming
-vair:InductiveProgramming rdf:type owl:Class ;
+vair:InductiveProgramming rdf:type rdfs:Class, owl:Class ;
                           rdfs:subClassOf vair:KnowledgeBasedTechnique .
 
 
 ###  https://w3id.org/vair#IndustrialRobot
-vair:IndustrialRobot rdf:type owl:Class ;
+vair:IndustrialRobot rdf:type rdfs:Class, owl:Class ;
                      rdfs:subClassOf vair:Robot .
 
 
 ###  https://w3id.org/vair#Influencing
-vair:Influencing rdf:type owl:Class ;
+vair:Influencing rdf:type rdfs:Class, owl:Class ;
                  rdfs:subClassOf airo:Purpose .
 
 
 ###  https://w3id.org/vair#InfluencingElectionOutcome
-vair:InfluencingElectionOutcome rdf:type owl:Class ;
+vair:InfluencingElectionOutcome rdf:type rdfs:Class, owl:Class ;
                                 rdfs:subClassOf vair:Influencing .
 
 
 ###  https://w3id.org/vair#InfluencingReferendumOutcome
-vair:InfluencingReferendumOutcome rdf:type owl:Class ;
+vair:InfluencingReferendumOutcome rdf:type rdfs:Class, owl:Class ;
                                   rdfs:subClassOf vair:Influencing .
 
 
 ###  https://w3id.org/vair#InfluencingVotingBehaviour
-vair:InfluencingVotingBehaviour rdf:type owl:Class ;
+vair:InfluencingVotingBehaviour rdf:type rdfs:Class, owl:Class ;
                                 rdfs:subClassOf vair:Influencing .
 
 
 ###  https://w3id.org/vair#InformationProvision
-vair:InformationProvision rdf:type owl:Class ;
+vair:InformationProvision rdf:type rdfs:Class, owl:Class ;
                           rdfs:subClassOf vair:OrganisationalMeasure .
 
 
 ###  https://w3id.org/vair#InformationRetrieval
-vair:InformationRetrieval rdf:type owl:Class ;
+vair:InformationRetrieval rdf:type rdfs:Class, owl:Class ;
                           rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#InformedInvolvement
-vair:InformedInvolvement rdf:type owl:Class ;
+vair:InformedInvolvement rdf:type rdfs:Class, owl:Class ;
                          rdfs:subClassOf airo:HumanInvolvement .
 
 
 ###  https://w3id.org/vair#InputDataRiskSource
-vair:InputDataRiskSource rdf:type owl:Class ;
+vair:InputDataRiskSource rdf:type rdfs:Class, owl:Class ;
                          rdfs:subClassOf vair:DataRiskSource .
 
 
 ###  https://w3id.org/vair#InstallationInstruction
-vair:InstallationInstruction rdf:type owl:Class ;
+vair:InstallationInstruction rdf:type rdfs:Class, owl:Class ;
                              rdfs:subClassOf airo:Documentation .
 
 
 ###  https://w3id.org/vair#InstructionForUse
-vair:InstructionForUse rdf:type owl:Class ;
+vair:InstructionForUse rdf:type rdfs:Class, owl:Class ;
                        rdfs:subClassOf airo:Documentation .
 
 
 ###  https://w3id.org/vair#InsufficientHumanOversightMeasure
-vair:InsufficientHumanOversightMeasure rdf:type owl:Class ;
+vair:InsufficientHumanOversightMeasure rdf:type rdfs:Class, owl:Class ;
                                        rdfs:subClassOf vair:OrganisationalRiskSource .
 
 
 ###  https://w3id.org/vair#InsufficientInstruction
-vair:InsufficientInstruction rdf:type owl:Class ;
+vair:InsufficientInstruction rdf:type rdfs:Class, owl:Class ;
                              rdfs:subClassOf vair:OrganisationalRiskSource .
 
 
 ###  https://w3id.org/vair#IntelligentControlSystem
-vair:IntelligentControlSystem rdf:type owl:Class ;
+vair:IntelligentControlSystem rdf:type rdfs:Class, owl:Class ;
                               rdfs:subClassOf airo:AISystem .
 
 
 ###  https://w3id.org/vair#IntendedInvolvement
-vair:IntendedInvolvement rdf:type owl:Class ;
+vair:IntendedInvolvement rdf:type rdfs:Class, owl:Class ;
                          rdfs:subClassOf airo:HumanInvolvement .
 
 
 ###  https://w3id.org/vair#InterpretingFacts
-vair:InterpretingFacts rdf:type owl:Class ;
+vair:InterpretingFacts rdf:type rdfs:Class, owl:Class ;
                        rdfs:subClassOf vair:KnowledgeReasoning .
 
 
 ###  https://w3id.org/vair#InterpretingLaw
-vair:InterpretingLaw rdf:type owl:Class ;
+vair:InterpretingLaw rdf:type rdfs:Class, owl:Class ;
                      rdfs:subClassOf vair:KnowledgeReasoning .
 
 
 ###  https://w3id.org/vair#Interruption
-vair:Interruption rdf:type owl:Class ;
+vair:Interruption rdf:type rdfs:Class, owl:Class ;
                   rdfs:subClassOf vair:OperationalMeasure .
 
 
 ###  https://w3id.org/vair#Intervention
-vair:Intervention rdf:type owl:Class ;
+vair:Intervention rdf:type rdfs:Class, owl:Class ;
                   rdfs:subClassOf vair:OperationalMeasure .
 
 
 ###  https://w3id.org/vair#InvestigatingCriminalOffences
-vair:InvestigatingCriminalOffences rdf:type owl:Class ;
+vair:InvestigatingCriminalOffences rdf:type rdfs:Class, owl:Class ;
                                    rdfs:subClassOf airo:Purpose .
 
 
 ###  https://w3id.org/vair#IoTSystem
-vair:IoTSystem rdf:type owl:Class ;
+vair:IoTSystem rdf:type rdfs:Class, owl:Class ;
                rdfs:subClassOf airo:AISystem .
 
 
 ###  https://w3id.org/vair#IrrelevantTestData
-vair:IrrelevantTestData rdf:type owl:Class ;
+vair:IrrelevantTestData rdf:type rdfs:Class, owl:Class ;
                         rdfs:subClassOf vair:TestDataRiskSource .
 
 
 ###  https://w3id.org/vair#IrrelevantTrainingData
-vair:IrrelevantTrainingData rdf:type owl:Class ;
+vair:IrrelevantTrainingData rdf:type rdfs:Class, owl:Class ;
                             rdfs:subClassOf vair:TrainingDataRiskSource .
 
 
 ###  https://w3id.org/vair#IrrelevantValidationData
-vair:IrrelevantValidationData rdf:type owl:Class ;
+vair:IrrelevantValidationData rdf:type rdfs:Class, owl:Class ;
                               rdfs:subClassOf vair:ValidationDataRiskSource .
 
 
 ###  https://w3id.org/vair#JobApplicant
-vair:JobApplicant rdf:type owl:Class ;
+vair:JobApplicant rdf:type rdfs:Class, owl:Class ;
                   rdfs:subClassOf airo:AISubject .
 
 
 ###  https://w3id.org/vair#JobApplicationAnalysis
-vair:JobApplicationAnalysis rdf:type owl:Class ;
+vair:JobApplicationAnalysis rdf:type rdfs:Class, owl:Class ;
                             rdfs:subClassOf airo:Purpose .
 
 
 ###  https://w3id.org/vair#JobApplicationFiltering
-vair:JobApplicationFiltering rdf:type owl:Class ;
+vair:JobApplicationFiltering rdf:type rdfs:Class, owl:Class ;
                              rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#JobApplicationScreening
-vair:JobApplicationScreening rdf:type owl:Class ;
+vair:JobApplicationScreening rdf:type rdfs:Class, owl:Class ;
                              rdfs:subClassOf airo:Purpose .
 
 
 ###  https://w3id.org/vair#JobCandidate
-vair:JobCandidate rdf:type owl:Class ;
+vair:JobCandidate rdf:type rdfs:Class, owl:Class ;
                   rdfs:subClassOf airo:AISubject .
 
 
 ###  https://w3id.org/vair#JudicialAuthority
-vair:JudicialAuthority rdf:type owl:Class ;
+vair:JudicialAuthority rdf:type rdfs:Class, owl:Class ;
                        rdfs:subClassOf airo:AIOperator .
 
 
 ###  https://w3id.org/vair#JudicialAuthorityAgent
-vair:JudicialAuthorityAgent rdf:type owl:Class ;
+vair:JudicialAuthorityAgent rdf:type rdfs:Class, owl:Class ;
                             rdfs:subClassOf airo:AIOperator .
 
 
 ###  https://w3id.org/vair#KnowledgeBasedTechnique
-vair:KnowledgeBasedTechnique rdf:type owl:Class ;
+vair:KnowledgeBasedTechnique rdf:type rdfs:Class, owl:Class ;
                              rdfs:subClassOf airo:AITechnique .
 
 
 ###  https://w3id.org/vair#KnowledgeReasoning
-vair:KnowledgeReasoning rdf:type owl:Class ;
+vair:KnowledgeReasoning rdf:type rdfs:Class, owl:Class ;
                         rdfs:subClassOf airo:Purpose .
 
 
 ###  https://w3id.org/vair#KnowledgeRepresentation
-vair:KnowledgeRepresentation rdf:type owl:Class ;
+vair:KnowledgeRepresentation rdf:type rdfs:Class, owl:Class ;
                              rdfs:subClassOf vair:KnowledgeBasedTechnique .
 
 
 ###  https://w3id.org/vair#LackOfTransparency
-vair:LackOfTransparency rdf:type owl:Class ;
+vair:LackOfTransparency rdf:type rdfs:Class, owl:Class ;
                         rdfs:subClassOf vair:OrganisationalRiskSource .
 
 
 ###  https://w3id.org/vair#LawEnforcement
-vair:LawEnforcement rdf:type owl:Class ;
+vair:LawEnforcement rdf:type rdfs:Class, owl:Class ;
                     rdfs:subClassOf airo:Domain ;
                     rdfs:comment "Activities related to enforcing the law."@en ;
                     rdfs:isDefinedBy vair: ;
@@ -1371,877 +1371,877 @@ vair:LawEnforcement rdf:type owl:Class ;
 
 
 ###  https://w3id.org/vair#LawEnforcementAuthority
-vair:LawEnforcementAuthority rdf:type owl:Class ;
+vair:LawEnforcementAuthority rdf:type rdfs:Class, owl:Class ;
                              rdfs:subClassOf airo:AIOperator .
 
 
 ###  https://w3id.org/vair#LawEnforcementAuthorityAgent
-vair:LawEnforcementAuthorityAgent rdf:type owl:Class ;
+vair:LawEnforcementAuthorityAgent rdf:type rdfs:Class, owl:Class ;
                                   rdfs:subClassOf airo:AIOperator .
 
 
 ###  https://w3id.org/vair#Library
-vair:Library rdf:type owl:Class ;
+vair:Library rdf:type rdfs:Class, owl:Class ;
              rdfs:subClassOf airo:AIComponent .
 
 
 ###  https://w3id.org/vair#LieDetection
-vair:LieDetection rdf:type owl:Class ;
+vair:LieDetection rdf:type rdfs:Class, owl:Class ;
                   rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#LifeInsurancePricing
-vair:LifeInsurancePricing rdf:type owl:Class ;
+vair:LifeInsurancePricing rdf:type rdfs:Class, owl:Class ;
                           rdfs:subClassOf vair:DecisionMaking .
 
 
 ###  https://w3id.org/vair#LifeInsuranceRiskAssessment
-vair:LifeInsuranceRiskAssessment rdf:type owl:Class ;
+vair:LifeInsuranceRiskAssessment rdf:type rdfs:Class, owl:Class ;
                                  rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#LoggingMeasure
-vair:LoggingMeasure rdf:type owl:Class ;
+vair:LoggingMeasure rdf:type rdfs:Class, owl:Class ;
                     rdfs:subClassOf airo:RiskControl .
 
 
 ###  https://w3id.org/vair#LogicBasedTechnique
-vair:LogicBasedTechnique rdf:type owl:Class ;
+vair:LogicBasedTechnique rdf:type rdfs:Class, owl:Class ;
                          rdfs:subClassOf airo:AITechnique .
 
 
 ###  https://w3id.org/vair#LongShortTermMemory
-vair:LongShortTermMemory rdf:type owl:Class ;
+vair:LongShortTermMemory rdf:type rdfs:Class, owl:Class ;
                          rdfs:subClassOf vair:RecurrentNeuralNetwork .
 
 
 ###  https://w3id.org/vair#LowAccuracy
-vair:LowAccuracy rdf:type owl:Class ;
+vair:LowAccuracy rdf:type rdfs:Class, owl:Class ;
                  rdfs:subClassOf vair:PerfomanceRiskSource .
 
 
 ###  https://w3id.org/vair#LowRobustness
-vair:LowRobustness rdf:type owl:Class ;
+vair:LowRobustness rdf:type rdfs:Class, owl:Class ;
                    rdfs:subClassOf vair:PerfomanceRiskSource .
 
 
 ###  https://w3id.org/vair#LowSecurity
-vair:LowSecurity rdf:type owl:Class ;
+vair:LowSecurity rdf:type rdfs:Class, owl:Class ;
                  rdfs:subClassOf vair:PerfomanceRiskSource .
 
 
 ###  https://w3id.org/vair#MachineLearning
-vair:MachineLearning rdf:type owl:Class ;
+vair:MachineLearning rdf:type rdfs:Class, owl:Class ;
                      rdfs:subClassOf airo:AITechnique .
 
 
 ###  https://w3id.org/vair#MachineLearningAlgorithm
-vair:MachineLearningAlgorithm rdf:type owl:Class ;
+vair:MachineLearningAlgorithm rdf:type rdfs:Class, owl:Class ;
                               rdfs:subClassOf vair:Algorithm .
 
 
 ###  https://w3id.org/vair#MachineLearningLibrary
-vair:MachineLearningLibrary rdf:type owl:Class ;
+vair:MachineLearningLibrary rdf:type rdfs:Class, owl:Class ;
                             rdfs:subClassOf vair:Library .
 
 
 ###  https://w3id.org/vair#MachineLearningModel
-vair:MachineLearningModel rdf:type owl:Class ;
+vair:MachineLearningModel rdf:type rdfs:Class, owl:Class ;
                           rdfs:subClassOf vair:Model .
 
 
 ###  https://w3id.org/vair#MachineLearningPlatform
-vair:MachineLearningPlatform rdf:type owl:Class ;
+vair:MachineLearningPlatform rdf:type rdfs:Class, owl:Class ;
                              rdfs:subClassOf vair:ApplicationPlatform .
 
 
 ###  https://w3id.org/vair#MachineTranslation
-vair:MachineTranslation rdf:type owl:Class ;
+vair:MachineTranslation rdf:type rdfs:Class, owl:Class ;
                         rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#MakingContractTerminationDecision
-vair:MakingContractTerminationDecision rdf:type owl:Class ;
+vair:MakingContractTerminationDecision rdf:type rdfs:Class, owl:Class ;
                                        rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#MakingDecisionOnTermsOfWorkRelatedRelations
-vair:MakingDecisionOnTermsOfWorkRelatedRelations rdf:type owl:Class ;
+vair:MakingDecisionOnTermsOfWorkRelatedRelations rdf:type rdfs:Class, owl:Class ;
                                                  rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#MakingPromotionDecision
-vair:MakingPromotionDecision rdf:type owl:Class ;
+vair:MakingPromotionDecision rdf:type rdfs:Class, owl:Class ;
                              rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#ManualControl
-vair:ManualControl rdf:type owl:Class ;
+vair:ManualControl rdf:type rdfs:Class, owl:Class ;
                    rdfs:subClassOf airo:RiskControl .
 
 
 ###  https://w3id.org/vair#MedicalAidProvider
-vair:MedicalAidProvider rdf:type owl:Class ;
+vair:MedicalAidProvider rdf:type rdfs:Class, owl:Class ;
                         rdfs:subClassOf vair:EmergencyServiceProvider .
 
 
 ###  https://w3id.org/vair#MigrationManagement
-vair:MigrationManagement rdf:type owl:Class ;
+vair:MigrationManagement rdf:type rdfs:Class, owl:Class ;
                          rdfs:subClassOf airo:Domain .
 
 
 ###  https://w3id.org/vair#MitigationMeasure
-vair:MitigationMeasure rdf:type owl:Class ;
+vair:MitigationMeasure rdf:type rdfs:Class, owl:Class ;
                        rdfs:subClassOf airo:RiskControl .
 
 
 ###  https://w3id.org/vair#Model
-vair:Model rdf:type owl:Class ;
+vair:Model rdf:type rdfs:Class, owl:Class ;
            rdfs:subClassOf airo:AIComponent .
 
 
 ###  https://w3id.org/vair#ModelCard
-vair:ModelCard rdf:type owl:Class ;
+vair:ModelCard rdf:type rdfs:Class, owl:Class ;
                rdfs:subClassOf airo:Documentation .
 
 
 ###  https://w3id.org/vair#ModelEvasion
-vair:ModelEvasion rdf:type owl:Class ;
+vair:ModelEvasion rdf:type rdfs:Class, owl:Class ;
                   rdfs:subClassOf vair:Attack .
 
 
 ###  https://w3id.org/vair#ModelInversion
-vair:ModelInversion rdf:type owl:Class ;
+vair:ModelInversion rdf:type rdfs:Class, owl:Class ;
                     rdfs:subClassOf vair:Attack .
 
 
 ###  https://w3id.org/vair#ModelRiskSource
-vair:ModelRiskSource rdf:type owl:Class ;
+vair:ModelRiskSource rdf:type rdfs:Class, owl:Class ;
                      rdfs:subClassOf airo:RiskSource .
 
 
 ###  https://w3id.org/vair#Monitoring
-vair:Monitoring rdf:type owl:Class ;
+vair:Monitoring rdf:type rdfs:Class, owl:Class ;
                 rdfs:subClassOf airo:Purpose .
 
 
 ###  https://w3id.org/vair#MonitoringEmployeeBehaviour
-vair:MonitoringEmployeeBehaviour rdf:type owl:Class ;
+vair:MonitoringEmployeeBehaviour rdf:type rdfs:Class, owl:Class ;
                                  rdfs:subClassOf vair:Monitoring .
 
 
 ###  https://w3id.org/vair#MonitoringEmployeePerformance
-vair:MonitoringEmployeePerformance rdf:type owl:Class ;
+vair:MonitoringEmployeePerformance rdf:type rdfs:Class, owl:Class ;
                                    rdfs:subClassOf vair:Monitoring .
 
 
 ###  https://w3id.org/vair#MonitoringMeasure
-vair:MonitoringMeasure rdf:type owl:Class ;
+vair:MonitoringMeasure rdf:type rdfs:Class, owl:Class ;
                        rdfs:subClassOf airo:RiskControl .
 
 
 ###  https://w3id.org/vair#MonitoringProhibitedBehaviourDuringTest
-vair:MonitoringProhibitedBehaviourDuringTest rdf:type owl:Class ;
+vair:MonitoringProhibitedBehaviourDuringTest rdf:type rdfs:Class, owl:Class ;
                                              rdfs:subClassOf vair:Monitoring .
 
 
 ###  https://w3id.org/vair#MultiAgentSystem
-vair:MultiAgentSystem rdf:type owl:Class ;
+vair:MultiAgentSystem rdf:type rdfs:Class, owl:Class ;
                       rdfs:subClassOf airo:AISystem .
 
 
 ###  https://w3id.org/vair#MusicInformationRetrieval
-vair:MusicInformationRetrieval rdf:type owl:Class ;
+vair:MusicInformationRetrieval rdf:type rdfs:Class, owl:Class ;
                                rdfs:subClassOf vair:InformationRetrieval .
 
 
 ###  https://w3id.org/vair#NamedEntityRecognition
-vair:NamedEntityRecognition rdf:type owl:Class ;
+vair:NamedEntityRecognition rdf:type rdfs:Class, owl:Class ;
                             rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#NarrowAI
-vair:NarrowAI rdf:type owl:Class ;
+vair:NarrowAI rdf:type rdfs:Class, owl:Class ;
               rdfs:subClassOf airo:AISystem .
 
 
 ###  https://w3id.org/vair#NaturalLanguageGeneration
-vair:NaturalLanguageGeneration rdf:type owl:Class ;
+vair:NaturalLanguageGeneration rdf:type rdfs:Class, owl:Class ;
                                rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#NaturalLanguageProcessingSystem
-vair:NaturalLanguageProcessingSystem rdf:type owl:Class ;
+vair:NaturalLanguageProcessingSystem rdf:type rdfs:Class, owl:Class ;
                                      rdfs:subClassOf airo:AISystem .
 
 
 ###  https://w3id.org/vair#NaturalPerson
-vair:NaturalPerson rdf:type owl:Class ;
+vair:NaturalPerson rdf:type rdfs:Class, owl:Class ;
                    rdfs:subClassOf airo:AISubject .
 
 
 ###  https://w3id.org/vair#NeuralNetwork
-vair:NeuralNetwork rdf:type owl:Class ;
+vair:NeuralNetwork rdf:type rdfs:Class, owl:Class ;
                    rdfs:subClassOf vair:Algorithm .
 
 
 ###  https://w3id.org/vair#NoAutomation
-vair:NoAutomation rdf:type owl:Class ;
+vair:NoAutomation rdf:type rdfs:Class, owl:Class ;
                   rdfs:subClassOf airo:AutomationLevel .
 
 
 ###  https://w3id.org/vair#ObjectRecognition
-vair:ObjectRecognition rdf:type owl:Class ;
+vair:ObjectRecognition rdf:type rdfs:Class, owl:Class ;
                        rdfs:subClassOf vair:ComputerVision .
 
 
 ###  https://w3id.org/vair#Operation
-vair:Operation rdf:type owl:Class ;
+vair:Operation rdf:type rdfs:Class, owl:Class ;
                rdfs:subClassOf airo:AILifecyclePhase .
 
 
 ###  https://w3id.org/vair#OperationalMeasure
-vair:OperationalMeasure rdf:type owl:Class ;
+vair:OperationalMeasure rdf:type rdfs:Class, owl:Class ;
                         rdfs:subClassOf airo:RiskControl .
 
 
 ###  https://w3id.org/vair#OptimisationMethod
-vair:OptimisationMethod rdf:type owl:Class ;
+vair:OptimisationMethod rdf:type rdfs:Class, owl:Class ;
                         rdfs:subClassOf vair:StatisticalTechnique .
 
 
 ###  https://w3id.org/vair#OpttingInOutput
-vair:OpttingInOutput rdf:type owl:Class ;
+vair:OpttingInOutput rdf:type rdfs:Class, owl:Class ;
                      rdfs:subClassOf airo:ModeOfOutputControllability .
 
 
 ###  https://w3id.org/vair#OpttingOutOfOutput
-vair:OpttingOutOfOutput rdf:type owl:Class ;
+vair:OpttingOutOfOutput rdf:type rdfs:Class, owl:Class ;
                         rdfs:subClassOf airo:ModeOfOutputControllability .
 
 
 ###  https://w3id.org/vair#OrganisationalMeasure
-vair:OrganisationalMeasure rdf:type owl:Class ;
+vair:OrganisationalMeasure rdf:type rdfs:Class, owl:Class ;
                            rdfs:subClassOf airo:RiskControl .
 
 
 ###  https://w3id.org/vair#OrganisationalRiskSource
-vair:OrganisationalRiskSource rdf:type owl:Class ;
+vair:OrganisationalRiskSource rdf:type rdfs:Class, owl:Class ;
                               rdfs:subClassOf airo:RiskSource .
 
 
 ###  https://w3id.org/vair#Overreliance
-vair:Overreliance rdf:type owl:Class ;
+vair:Overreliance rdf:type rdfs:Class, owl:Class ;
                   rdfs:subClassOf airo:Impact .
 
 
 ###  https://w3id.org/vair#OverridingOutcome
-vair:OverridingOutcome rdf:type owl:Class ;
+vair:OverridingOutcome rdf:type rdfs:Class, owl:Class ;
                        rdfs:subClassOf vair:MitigationMeasure .
 
 
 ###  https://w3id.org/vair#PartOfSpeechTagging
-vair:PartOfSpeechTagging rdf:type owl:Class ;
+vair:PartOfSpeechTagging rdf:type rdfs:Class, owl:Class ;
                          rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#PartialAutomation
-vair:PartialAutomation rdf:type owl:Class ;
+vair:PartialAutomation rdf:type rdfs:Class, owl:Class ;
                        rdfs:subClassOf airo:AutomationLevel .
 
 
 ###  https://w3id.org/vair#PassiveInvolvement
-vair:PassiveInvolvement rdf:type owl:Class ;
+vair:PassiveInvolvement rdf:type rdfs:Class, owl:Class ;
                         rdfs:subClassOf airo:HumanInvolvement .
 
 
 ###  https://w3id.org/vair#PerfomanceRiskSource
-vair:PerfomanceRiskSource rdf:type owl:Class ;
+vair:PerfomanceRiskSource rdf:type rdfs:Class, owl:Class ;
                           rdfs:subClassOf airo:RiskSource .
 
 
 ###  https://w3id.org/vair#PerformingBackgroundCheck
-vair:PerformingBackgroundCheck rdf:type owl:Class ;
+vair:PerformingBackgroundCheck rdf:type rdfs:Class, owl:Class ;
                                rdfs:subClassOf airo:Purpose .
 
 
 ###  https://w3id.org/vair#PersonalityTraitsAnalysis
-vair:PersonalityTraitsAnalysis rdf:type owl:Class ;
+vair:PersonalityTraitsAnalysis rdf:type rdfs:Class, owl:Class ;
                                rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#PhysicalHealth
-vair:PhysicalHealth rdf:type owl:Class ;
+vair:PhysicalHealth rdf:type rdfs:Class, owl:Class ;
                     rdfs:subClassOf vair:Health .
 
 
 ###  https://w3id.org/vair#PhysicalInjury
-vair:PhysicalInjury rdf:type owl:Class ;
+vair:PhysicalInjury rdf:type rdfs:Class, owl:Class ;
                     rdfs:subClassOf vair:WellbeingImpact .
 
 
 ###  https://w3id.org/vair#PlacingTargetedJobAdvert
-vair:PlacingTargetedJobAdvert rdf:type owl:Class ;
+vair:PlacingTargetedJobAdvert rdf:type rdfs:Class, owl:Class ;
                               rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#Planning
-vair:Planning rdf:type owl:Class ;
+vair:Planning rdf:type rdfs:Class, owl:Class ;
               rdfs:subClassOf airo:Purpose .
 
 
 ###  https://w3id.org/vair#Police
-vair:Police rdf:type owl:Class ;
+vair:Police rdf:type rdfs:Class, owl:Class ;
             rdfs:subClassOf vair:EmergencyServiceProvider .
 
 
 ###  https://w3id.org/vair#PostMarketMonitoringPlan
-vair:PostMarketMonitoringPlan rdf:type owl:Class ;
+vair:PostMarketMonitoringPlan rdf:type rdfs:Class, owl:Class ;
                               rdfs:subClassOf airo:Documentation .
 
 
 ###  https://w3id.org/vair#PostMarketMonitoringSystemDescription
-vair:PostMarketMonitoringSystemDescription rdf:type owl:Class ;
+vair:PostMarketMonitoringSystemDescription rdf:type rdfs:Class, owl:Class ;
                                            rdfs:subClassOf airo:Documentation .
 
 
 ###  https://w3id.org/vair#PotentialJobApplicant
-vair:PotentialJobApplicant rdf:type owl:Class ;
+vair:PotentialJobApplicant rdf:type rdfs:Class, owl:Class ;
                            rdfs:subClassOf airo:AISubject .
 
 
 ###  https://w3id.org/vair#PotentialPublicServicesApplicant
-vair:PotentialPublicServicesApplicant rdf:type owl:Class ;
+vair:PotentialPublicServicesApplicant rdf:type rdfs:Class, owl:Class ;
                                       rdfs:subClassOf airo:AISubject .
 
 
 ###  https://w3id.org/vair#Prediction
-vair:Prediction rdf:type owl:Class ;
+vair:Prediction rdf:type rdfs:Class, owl:Class ;
                 rdfs:subClassOf airo:Output .
 
 
 ###  https://w3id.org/vair#PrioritisationOfEmergencyService
-vair:PrioritisationOfEmergencyService rdf:type owl:Class ;
+vair:PrioritisationOfEmergencyService rdf:type rdfs:Class, owl:Class ;
                                       rdfs:subClassOf vair:Planning .
 
 
 ###  https://w3id.org/vair#PrivateService
-vair:PrivateService rdf:type owl:Class ;
+vair:PrivateService rdf:type rdfs:Class, owl:Class ;
                     rdfs:subClassOf airo:Domain .
 
 
 ###  https://w3id.org/vair#ProducingRecommendation
-vair:ProducingRecommendation rdf:type owl:Class ;
+vair:ProducingRecommendation rdf:type rdfs:Class, owl:Class ;
                              rdfs:subClassOf airo:Purpose .
 
 
 ###  https://w3id.org/vair#Product
-vair:Product rdf:type owl:Class ;
+vair:Product rdf:type rdfs:Class, owl:Class ;
              rdfs:subClassOf airo:Modality .
 
 
 ###  https://w3id.org/vair#Profiling
-vair:Profiling rdf:type owl:Class ;
+vair:Profiling rdf:type rdfs:Class, owl:Class ;
                rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#ProsecutingCriminalOffences
-vair:ProsecutingCriminalOffences rdf:type owl:Class ;
+vair:ProsecutingCriminalOffences rdf:type rdfs:Class, owl:Class ;
                                  rdfs:subClassOf airo:Purpose .
 
 
 ###  https://w3id.org/vair#PsychologicalHarm
-vair:PsychologicalHarm rdf:type owl:Class ;
+vair:PsychologicalHarm rdf:type rdfs:Class, owl:Class ;
                        rdfs:subClassOf vair:WellbeingImpact .
 
 
 ###  https://w3id.org/vair#PsychologicalHealth
-vair:PsychologicalHealth rdf:type owl:Class ;
+vair:PsychologicalHealth rdf:type rdfs:Class, owl:Class ;
                          rdfs:subClassOf vair:Health .
 
 
 ###  https://w3id.org/vair#PublicAuthority
-vair:PublicAuthority rdf:type owl:Class ;
+vair:PublicAuthority rdf:type rdfs:Class, owl:Class ;
                      rdfs:subClassOf airo:AIOperator .
 
 
 ###  https://w3id.org/vair#PublicAuthorityAgent
-vair:PublicAuthorityAgent rdf:type owl:Class ;
+vair:PublicAuthorityAgent rdf:type rdfs:Class, owl:Class ;
                           rdfs:subClassOf airo:AIOperator .
 
 
 ###  https://w3id.org/vair#PublicService
-vair:PublicService rdf:type owl:Class ;
+vair:PublicService rdf:type rdfs:Class, owl:Class ;
                    rdfs:subClassOf airo:Domain .
 
 
 ###  https://w3id.org/vair#PublicServicesApplicant
-vair:PublicServicesApplicant rdf:type owl:Class ;
+vair:PublicServicesApplicant rdf:type rdfs:Class, owl:Class ;
                              rdfs:subClassOf airo:AISubject .
 
 
 ###  https://w3id.org/vair#PublicServicesRecipient
-vair:PublicServicesRecipient rdf:type owl:Class ;
+vair:PublicServicesRecipient rdf:type rdfs:Class, owl:Class ;
                              rdfs:subClassOf airo:AISubject .
 
 
 ###  https://w3id.org/vair#QuestionAnswering
-vair:QuestionAnswering rdf:type owl:Class ;
+vair:QuestionAnswering rdf:type rdfs:Class, owl:Class ;
                        rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#ReEvaluation
-vair:ReEvaluation rdf:type owl:Class ;
+vair:ReEvaluation rdf:type rdfs:Class, owl:Class ;
                   rdfs:subClassOf airo:AILifecyclePhase .
 
 
 ###  https://w3id.org/vair#ReasoningTechnique
-vair:ReasoningTechnique rdf:type owl:Class ;
+vair:ReasoningTechnique rdf:type rdfs:Class, owl:Class ;
                         rdfs:subClassOf airo:AITechnique .
 
 
 ###  https://w3id.org/vair#ReclaimingHealthCareServices
-vair:ReclaimingHealthCareServices rdf:type owl:Class ;
+vair:ReclaimingHealthCareServices rdf:type rdfs:Class, owl:Class ;
                                   rdfs:subClassOf vair:ReclaimingPublicAssistanceServices .
 
 
 ###  https://w3id.org/vair#ReclaimingPublicAssistanceServices
-vair:ReclaimingPublicAssistanceServices rdf:type owl:Class ;
+vair:ReclaimingPublicAssistanceServices rdf:type rdfs:Class, owl:Class ;
                                         rdfs:subClassOf vair:DecisionMaking .
 
 
 ###  https://w3id.org/vair#RecognisingEmotions
-vair:RecognisingEmotions rdf:type owl:Class ;
+vair:RecognisingEmotions rdf:type rdfs:Class, owl:Class ;
                          rdfs:subClassOf vair:Detection .
 
 
 ###  https://w3id.org/vair#RecognisingIndividuals
-vair:RecognisingIndividuals rdf:type owl:Class ;
+vair:RecognisingIndividuals rdf:type rdfs:Class, owl:Class ;
                             rdfs:subClassOf airo:Purpose .
 
 
 ###  https://w3id.org/vair#Recommendation
-vair:Recommendation rdf:type owl:Class ;
+vair:Recommendation rdf:type rdfs:Class, owl:Class ;
                     rdfs:subClassOf airo:Output .
 
 
 ###  https://w3id.org/vair#Recruiting
-vair:Recruiting rdf:type owl:Class ;
+vair:Recruiting rdf:type rdfs:Class, owl:Class ;
                 rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#RecurrentNeuralNetwork
-vair:RecurrentNeuralNetwork rdf:type owl:Class ;
+vair:RecurrentNeuralNetwork rdf:type rdfs:Class, owl:Class ;
                             rdfs:subClassOf vair:NeuralNetwork .
 
 
 ###  https://w3id.org/vair#ReducingHealthCareServices
-vair:ReducingHealthCareServices rdf:type owl:Class ;
+vair:ReducingHealthCareServices rdf:type rdfs:Class, owl:Class ;
                                 rdfs:subClassOf vair:ReducingPublicAssistanceServices .
 
 
 ###  https://w3id.org/vair#ReducingPublicAssistanceServices
-vair:ReducingPublicAssistanceServices rdf:type owl:Class ;
+vair:ReducingPublicAssistanceServices rdf:type rdfs:Class, owl:Class ;
                                       rdfs:subClassOf vair:DecisionMaking .
 
 
 ###  https://w3id.org/vair#ReinforcementLearning
-vair:ReinforcementLearning rdf:type owl:Class ;
+vair:ReinforcementLearning rdf:type rdfs:Class, owl:Class ;
                            rdfs:subClassOf vair:MachineLearning .
 
 
 ###  https://w3id.org/vair#RelationshipExtraction
-vair:RelationshipExtraction rdf:type owl:Class ;
+vair:RelationshipExtraction rdf:type rdfs:Class, owl:Class ;
                             rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#RemoteIdentification
-vair:RemoteIdentification rdf:type owl:Class ;
+vair:RemoteIdentification rdf:type rdfs:Class, owl:Class ;
                           rdfs:subClassOf vair:IdentiftyingIndividuals .
 
 
 ###  https://w3id.org/vair#ResearchingFacts
-vair:ResearchingFacts rdf:type owl:Class ;
+vair:ResearchingFacts rdf:type rdfs:Class, owl:Class ;
                       rdfs:subClassOf airo:Purpose .
 
 
 ###  https://w3id.org/vair#ResearchingLaw
-vair:ResearchingLaw rdf:type owl:Class ;
+vair:ResearchingLaw rdf:type rdfs:Class, owl:Class ;
                     rdfs:subClassOf airo:Purpose .
 
 
 ###  https://w3id.org/vair#ResidencePermitApplicant
-vair:ResidencePermitApplicant rdf:type owl:Class ;
+vair:ResidencePermitApplicant rdf:type rdfs:Class, owl:Class ;
                               rdfs:subClassOf airo:AISubject .
 
 
 ###  https://w3id.org/vair#Retirement
-vair:Retirement rdf:type owl:Class ;
+vair:Retirement rdf:type rdfs:Class, owl:Class ;
                 rdfs:subClassOf airo:AILifecyclePhase .
 
 
 ###  https://w3id.org/vair#ReverseOutput
-vair:ReverseOutput rdf:type owl:Class ;
+vair:ReverseOutput rdf:type rdfs:Class, owl:Class ;
                    rdfs:subClassOf airo:ModeOfOutputControllability .
 
 
 ###  https://w3id.org/vair#ReversingOutcome
-vair:ReversingOutcome rdf:type owl:Class ;
+vair:ReversingOutcome rdf:type rdfs:Class, owl:Class ;
                       rdfs:subClassOf vair:MitigationMeasure .
 
 
 ###  https://w3id.org/vair#RevokingHealthCareServices
-vair:RevokingHealthCareServices rdf:type owl:Class ;
+vair:RevokingHealthCareServices rdf:type rdfs:Class, owl:Class ;
                                 rdfs:subClassOf vair:RevokingPublicAssistanceServices .
 
 
 ###  https://w3id.org/vair#RevokingPublicAssistanceServices
-vair:RevokingPublicAssistanceServices rdf:type owl:Class ;
+vair:RevokingPublicAssistanceServices rdf:type rdfs:Class, owl:Class ;
                                       rdfs:subClassOf vair:DecisionMaking .
 
 
 ###  https://w3id.org/vair#Right
-vair:Right rdf:type owl:Class ;
+vair:Right rdf:type rdfs:Class, owl:Class ;
            rdfs:subClassOf airo:AreaOfImpact .
 
 
 ###  https://w3id.org/vair#RightToNondiscrimination
-vair:RightToNondiscrimination rdf:type owl:Class ;
+vair:RightToNondiscrimination rdf:type rdfs:Class, owl:Class ;
                               rdfs:subClassOf vair:Right .
 
 
 ###  https://w3id.org/vair#Robot
-vair:Robot rdf:type owl:Class ;
+vair:Robot rdf:type rdfs:Class, owl:Class ;
            rdfs:subClassOf airo:AISystem .
 
 
 ###  https://w3id.org/vair#Safety
-vair:Safety rdf:type owl:Class ;
+vair:Safety rdf:type rdfs:Class, owl:Class ;
             rdfs:subClassOf airo:AreaOfImpact .
 
 
 ###  https://w3id.org/vair#SafetyComponent
-vair:SafetyComponent rdf:type owl:Class ;
+vair:SafetyComponent rdf:type rdfs:Class, owl:Class ;
                      rdfs:subClassOf airo:Modality .
 
 
 ###  https://w3id.org/vair#SearchMethod
-vair:SearchMethod rdf:type owl:Class ;
+vair:SearchMethod rdf:type rdfs:Class, owl:Class ;
                   rdfs:subClassOf vair:StatisticalTechnique .
 
 
 ###  https://w3id.org/vair#SecurityMeasure
-vair:SecurityMeasure rdf:type owl:Class ;
+vair:SecurityMeasure rdf:type rdfs:Class, owl:Class ;
                      rdfs:subClassOf airo:RiskControl .
 
 
 ###  https://w3id.org/vair#SemiAutomatedControl
-vair:SemiAutomatedControl rdf:type owl:Class ;
+vair:SemiAutomatedControl rdf:type rdfs:Class, owl:Class ;
                           rdfs:subClassOf airo:RiskControl .
 
 
 ###  https://w3id.org/vair#SemiSupervisedLearning
-vair:SemiSupervisedLearning rdf:type owl:Class ;
+vair:SemiSupervisedLearning rdf:type rdfs:Class, owl:Class ;
                             rdfs:subClassOf vair:MachineLearning .
 
 
 ###  https://w3id.org/vair#SensitiveAttributeInference
-vair:SensitiveAttributeInference rdf:type owl:Class ;
+vair:SensitiveAttributeInference rdf:type rdfs:Class, owl:Class ;
                                  rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#SentimentAnalysis
-vair:SentimentAnalysis rdf:type owl:Class ;
+vair:SentimentAnalysis rdf:type rdfs:Class, owl:Class ;
                        rdfs:subClassOf airo:AICapability .
 
 
 ###  https://w3id.org/vair#Service
-vair:Service rdf:type owl:Class ;
+vair:Service rdf:type rdfs:Class, owl:Class ;
              rdfs:subClassOf airo:Modality .
 
 
 ###  https://w3id.org/vair#ServiceRobot
-vair:ServiceRobot rdf:type owl:Class ;
+vair:ServiceRobot rdf:type rdfs:Class, owl:Class ;
                   rdfs:subClassOf vair:Robot .
 
 
 ###  https://w3id.org/vair#ServingSafetyFunction
-vair:ServingSafetyFunction rdf:type owl:Class ;
+vair:ServingSafetyFunction rdf:type rdfs:Class, owl:Class ;
                            rdfs:subClassOf airo:Purpose .
 
 
 ###  https://w3id.org/vair#ServingSafetyFunctionInManagement
-vair:ServingSafetyFunctionInManagement rdf:type owl:Class ;
+vair:ServingSafetyFunctionInManagement rdf:type rdfs:Class, owl:Class ;
                                        rdfs:subClassOf vair:ServingSafetyFunction .
 
 
 ###  https://w3id.org/vair#ServingSafetyFunctionInManagementOfCriticalDigitalInfrastructure
-vair:ServingSafetyFunctionInManagementOfCriticalDigitalInfrastructure rdf:type owl:Class ;
+vair:ServingSafetyFunctionInManagementOfCriticalDigitalInfrastructure rdf:type rdfs:Class, owl:Class ;
                                                                       rdfs:subClassOf vair:ServingSafetyFunctionInManagement .
 
 
 ###  https://w3id.org/vair#ServingSafetyFunctionInManagementOfRoadTraffic
-vair:ServingSafetyFunctionInManagementOfRoadTraffic rdf:type owl:Class ;
+vair:ServingSafetyFunctionInManagementOfRoadTraffic rdf:type rdfs:Class, owl:Class ;
                                                     rdfs:subClassOf vair:ServingSafetyFunctionInManagement .
 
 
 ###  https://w3id.org/vair#ServingSafetyFunctionInManagementOfTheSupplyOfElectricity
-vair:ServingSafetyFunctionInManagementOfTheSupplyOfElectricity rdf:type owl:Class ;
+vair:ServingSafetyFunctionInManagementOfTheSupplyOfElectricity rdf:type rdfs:Class, owl:Class ;
                                                                rdfs:subClassOf vair:ServingSafetyFunctionInManagement .
 
 
 ###  https://w3id.org/vair#ServingSafetyFunctionInManagementOfTheSupplyOfGas
-vair:ServingSafetyFunctionInManagementOfTheSupplyOfGas rdf:type owl:Class ;
+vair:ServingSafetyFunctionInManagementOfTheSupplyOfGas rdf:type rdfs:Class, owl:Class ;
                                                        rdfs:subClassOf vair:ServingSafetyFunctionInManagement .
 
 
 ###  https://w3id.org/vair#ServingSafetyFunctionInManagementOfTheSupplyOfHeating
-vair:ServingSafetyFunctionInManagementOfTheSupplyOfHeating rdf:type owl:Class ;
+vair:ServingSafetyFunctionInManagementOfTheSupplyOfHeating rdf:type rdfs:Class, owl:Class ;
                                                            rdfs:subClassOf vair:ServingSafetyFunctionInManagement .
 
 
 ###  https://w3id.org/vair#ServingSafetyFunctionInManagementOfTheSupplyOfWater
-vair:ServingSafetyFunctionInManagementOfTheSupplyOfWater rdf:type owl:Class ;
+vair:ServingSafetyFunctionInManagementOfTheSupplyOfWater rdf:type rdfs:Class, owl:Class ;
                                                          rdfs:subClassOf vair:ServingSafetyFunctionInManagement .
 
 
 ###  https://w3id.org/vair#ServingSafetyFunctionInOperation
-vair:ServingSafetyFunctionInOperation rdf:type owl:Class ;
+vair:ServingSafetyFunctionInOperation rdf:type rdfs:Class, owl:Class ;
                                       rdfs:subClassOf vair:ServingSafetyFunction .
 
 
 ###  https://w3id.org/vair#ServingSafetyFunctionInOperationOfCriticalDigitalInfrastructure
-vair:ServingSafetyFunctionInOperationOfCriticalDigitalInfrastructure rdf:type owl:Class ;
+vair:ServingSafetyFunctionInOperationOfCriticalDigitalInfrastructure rdf:type rdfs:Class, owl:Class ;
                                                                      rdfs:subClassOf vair:ServingSafetyFunctionInOperation .
 
 
 ###  https://w3id.org/vair#ServingSafetyFunctionInOperationOfRoadTraffic
-vair:ServingSafetyFunctionInOperationOfRoadTraffic rdf:type owl:Class ;
+vair:ServingSafetyFunctionInOperationOfRoadTraffic rdf:type rdfs:Class, owl:Class ;
                                                    rdfs:subClassOf vair:ServingSafetyFunctionInOperation .
 
 
 ###  https://w3id.org/vair#ServingSafetyFunctionInOperationOfTheSupplyOfElectricity
-vair:ServingSafetyFunctionInOperationOfTheSupplyOfElectricity rdf:type owl:Class ;
+vair:ServingSafetyFunctionInOperationOfTheSupplyOfElectricity rdf:type rdfs:Class, owl:Class ;
                                                               rdfs:subClassOf vair:ServingSafetyFunctionInOperation .
 
 
 ###  https://w3id.org/vair#ServingSafetyFunctionInOperationOfTheSupplyOfGas
-vair:ServingSafetyFunctionInOperationOfTheSupplyOfGas rdf:type owl:Class ;
+vair:ServingSafetyFunctionInOperationOfTheSupplyOfGas rdf:type rdfs:Class, owl:Class ;
                                                       rdfs:subClassOf vair:ServingSafetyFunctionInOperation .
 
 
 ###  https://w3id.org/vair#ServingSafetyFunctionInOperationOfTheSupplyOfHeating
-vair:ServingSafetyFunctionInOperationOfTheSupplyOfHeating rdf:type owl:Class ;
+vair:ServingSafetyFunctionInOperationOfTheSupplyOfHeating rdf:type rdfs:Class, owl:Class ;
                                                           rdfs:subClassOf vair:ServingSafetyFunctionInOperation .
 
 
 ###  https://w3id.org/vair#ServingSafetyFunctionInOperationOfTheSupplyOfWater
-vair:ServingSafetyFunctionInOperationOfTheSupplyOfWater rdf:type owl:Class ;
+vair:ServingSafetyFunctionInOperationOfTheSupplyOfWater rdf:type rdfs:Class, owl:Class ;
                                                         rdfs:subClassOf vair:ServingSafetyFunctionInOperation .
 
 
 ###  https://w3id.org/vair#SettlingDispute
-vair:SettlingDispute rdf:type owl:Class ;
+vair:SettlingDispute rdf:type rdfs:Class, owl:Class ;
                      rdfs:subClassOf airo:Purpose .
 
 
 ###  https://w3id.org/vair#SocialRobot
-vair:SocialRobot rdf:type owl:Class ;
+vair:SocialRobot rdf:type rdfs:Class, owl:Class ;
                  rdfs:subClassOf vair:Robot .
 
 
 ###  https://w3id.org/vair#Software
-vair:Software rdf:type owl:Class ;
+vair:Software rdf:type rdfs:Class, owl:Class ;
               rdfs:subClassOf airo:Modality .
 
 
 ###  https://w3id.org/vair#SoundSourceSeparation
-vair:SoundSourceSeparation rdf:type owl:Class ;
+vair:SoundSourceSeparation rdf:type rdfs:Class, owl:Class ;
                            rdfs:subClassOf vair:AudioProcessing .
 
 
 ###  https://w3id.org/vair#SoundSynthesis
-vair:SoundSynthesis rdf:type owl:Class ;
+vair:SoundSynthesis rdf:type rdfs:Class, owl:Class ;
                     rdfs:subClassOf vair:AudioProcessing .
 
 
 ###  https://w3id.org/vair#SpeakerRecognition
-vair:SpeakerRecognition rdf:type owl:Class ;
+vair:SpeakerRecognition rdf:type rdfs:Class, owl:Class ;
                         rdfs:subClassOf vair:AudioProcessing .
 
 
 ###  https://w3id.org/vair#SpeechRecognition
-vair:SpeechRecognition rdf:type owl:Class ;
+vair:SpeechRecognition rdf:type rdfs:Class, owl:Class ;
                        rdfs:subClassOf vair:AudioProcessing .
 
 
 ###  https://w3id.org/vair#SpeechSynthesis
-vair:SpeechSynthesis rdf:type owl:Class ;
+vair:SpeechSynthesis rdf:type rdfs:Class, owl:Class ;
                      rdfs:subClassOf vair:AudioProcessing .
 
 
 ###  https://w3id.org/vair#StaffIncompetence
-vair:StaffIncompetence rdf:type owl:Class ;
+vair:StaffIncompetence rdf:type rdfs:Class, owl:Class ;
                        rdfs:subClassOf vair:OrganisationalRiskSource .
 
 
 ###  https://w3id.org/vair#StatisticalTechnique
-vair:StatisticalTechnique rdf:type owl:Class ;
+vair:StatisticalTechnique rdf:type rdfs:Class, owl:Class ;
                           rdfs:subClassOf airo:AITechnique .
 
 
 ###  https://w3id.org/vair#SupervisedLearning
-vair:SupervisedLearning rdf:type owl:Class ;
+vair:SupervisedLearning rdf:type rdfs:Class, owl:Class ;
                         rdfs:subClassOf vair:MachineLearning .
 
 
 ###  https://w3id.org/vair#SupportVectorMachine
-vair:SupportVectorMachine rdf:type owl:Class ;
+vair:SupportVectorMachine rdf:type rdfs:Class, owl:Class ;
                           rdfs:subClassOf vair:MachineLearningAlgorithm .
 
 
 ###  https://w3id.org/vair#SymbolicReasoning
-vair:SymbolicReasoning rdf:type owl:Class ;
+vair:SymbolicReasoning rdf:type rdfs:Class, owl:Class ;
                        rdfs:subClassOf vair:KnowledgeBasedTechnique .
 
 
 ###  https://w3id.org/vair#SystemArchitectureDocumentation
-vair:SystemArchitectureDocumentation rdf:type owl:Class ;
+vair:SystemArchitectureDocumentation rdf:type rdfs:Class, owl:Class ;
                                      rdfs:subClassOf airo:Documentation .
 
 
 ###  https://w3id.org/vair#SystemRiskSource
-vair:SystemRiskSource rdf:type owl:Class ;
+vair:SystemRiskSource rdf:type rdfs:Class, owl:Class ;
                       rdfs:subClassOf airo:RiskSource .
 
 
 ###  https://w3id.org/vair#TechnicalDocumentation
-vair:TechnicalDocumentation rdf:type owl:Class ;
+vair:TechnicalDocumentation rdf:type rdfs:Class, owl:Class ;
                             rdfs:subClassOf airo:Documentation .
 
 
 ###  https://w3id.org/vair#TechnicalMeasure
-vair:TechnicalMeasure rdf:type owl:Class ;
+vair:TechnicalMeasure rdf:type rdfs:Class, owl:Class ;
                       rdfs:subClassOf airo:RiskControl .
 
 
 ###  https://w3id.org/vair#TensorProcessingUnit
-vair:TensorProcessingUnit rdf:type owl:Class ;
+vair:TensorProcessingUnit rdf:type rdfs:Class, owl:Class ;
                           rdfs:subClassOf vair:ApplicationSpecificIntegratedCircuit .
 
 
 ###  https://w3id.org/vair#TestDataRiskSource
-vair:TestDataRiskSource rdf:type owl:Class ;
+vair:TestDataRiskSource rdf:type rdfs:Class, owl:Class ;
                         rdfs:subClassOf vair:DataRiskSource .
 
 
 ###  https://w3id.org/vair#TestLog
-vair:TestLog rdf:type owl:Class ;
+vair:TestLog rdf:type rdfs:Class, owl:Class ;
              rdfs:subClassOf airo:Documentation .
 
 
 ###  https://w3id.org/vair#TestReport
-vair:TestReport rdf:type owl:Class ;
+vair:TestReport rdf:type rdfs:Class, owl:Class ;
                 rdfs:subClassOf airo:Documentation .
 
 
 ###  https://w3id.org/vair#Tool
-vair:Tool rdf:type owl:Class ;
+vair:Tool rdf:type rdfs:Class, owl:Class ;
           rdfs:subClassOf airo:AIComponent .
 
 
 ###  https://w3id.org/vair#TrainedModel
-vair:TrainedModel rdf:type owl:Class ;
+vair:TrainedModel rdf:type rdfs:Class, owl:Class ;
                   rdfs:subClassOf vair:Model .
 
 
 ###  https://w3id.org/vair#TrainingDataRiskSource
-vair:TrainingDataRiskSource rdf:type owl:Class ;
+vair:TrainingDataRiskSource rdf:type rdfs:Class, owl:Class ;
                             rdfs:subClassOf vair:DataRiskSource .
 
 
 ###  https://w3id.org/vair#TransparencyMeasure
-vair:TransparencyMeasure rdf:type owl:Class ;
+vair:TransparencyMeasure rdf:type rdfs:Class, owl:Class ;
                          rdfs:subClassOf airo:RiskControl .
 
 
 ###  https://w3id.org/vair#UnavailabilityOfData
-vair:UnavailabilityOfData rdf:type owl:Class ;
+vair:UnavailabilityOfData rdf:type rdfs:Class, owl:Class ;
                           rdfs:subClassOf vair:DataRiskSource .
 
 
 ###  https://w3id.org/vair#UninformedInvolvement
-vair:UninformedInvolvement rdf:type owl:Class ;
+vair:UninformedInvolvement rdf:type rdfs:Class, owl:Class ;
                            rdfs:subClassOf airo:HumanInvolvement .
 
 
 ###  https://w3id.org/vair#UnintendedInvolvement
-vair:UnintendedInvolvement rdf:type owl:Class ;
+vair:UnintendedInvolvement rdf:type rdfs:Class, owl:Class ;
                            rdfs:subClassOf airo:HumanInvolvement .
 
 
 ###  https://w3id.org/vair#UnrepresentativeTestData
-vair:UnrepresentativeTestData rdf:type owl:Class ;
+vair:UnrepresentativeTestData rdf:type rdfs:Class, owl:Class ;
                               rdfs:subClassOf vair:TestDataRiskSource .
 
 
 ###  https://w3id.org/vair#UnrepresentativeTrainingData
-vair:UnrepresentativeTrainingData rdf:type owl:Class ;
+vair:UnrepresentativeTrainingData rdf:type rdfs:Class, owl:Class ;
                                   rdfs:subClassOf vair:TrainingDataRiskSource .
 
 
 ###  https://w3id.org/vair#UnrepresentativeValidationData
-vair:UnrepresentativeValidationData rdf:type owl:Class ;
+vair:UnrepresentativeValidationData rdf:type rdfs:Class, owl:Class ;
                                     rdfs:subClassOf vair:ValidationDataRiskSource .
 
 
 ###  https://w3id.org/vair#UnsupervisedLearning
-vair:UnsupervisedLearning rdf:type owl:Class ;
+vair:UnsupervisedLearning rdf:type rdfs:Class, owl:Class ;
                           rdfs:subClassOf vair:MachineLearning .
 
 
 ###  https://w3id.org/vair#UserTraining
-vair:UserTraining rdf:type owl:Class ;
+vair:UserTraining rdf:type rdfs:Class, owl:Class ;
                   rdfs:subClassOf vair:OrganisationalMeasure .
 
 
 ###  https://w3id.org/vair#Validation
-vair:Validation rdf:type owl:Class ;
+vair:Validation rdf:type rdfs:Class, owl:Class ;
                 rdfs:subClassOf airo:AILifecyclePhase .
 
 
 ###  https://w3id.org/vair#ValidationDataRiskSource
-vair:ValidationDataRiskSource rdf:type owl:Class ;
+vair:ValidationDataRiskSource rdf:type rdfs:Class, owl:Class ;
                               rdfs:subClassOf vair:DataRiskSource .
 
 
 ###  https://w3id.org/vair#Verification
-vair:Verification rdf:type owl:Class ;
+vair:Verification rdf:type rdfs:Class, owl:Class ;
                   rdfs:subClassOf airo:AILifecyclePhase .
 
 
 ###  https://w3id.org/vair#VerifyingAuthenticityOfTravelDocument
-vair:VerifyingAuthenticityOfTravelDocument rdf:type owl:Class ;
+vair:VerifyingAuthenticityOfTravelDocument rdf:type rdfs:Class, owl:Class ;
                                            rdfs:subClassOf vair:Assessment .
 
 
 ###  https://w3id.org/vair#VisaApplicant
-vair:VisaApplicant rdf:type owl:Class ;
+vair:VisaApplicant rdf:type rdfs:Class, owl:Class ;
                    rdfs:subClassOf airo:AISubject .
 
 
 ###  https://w3id.org/vair#VocationalTrainingInstitution
-vair:VocationalTrainingInstitution rdf:type owl:Class ;
+vair:VocationalTrainingInstitution rdf:type rdfs:Class, owl:Class ;
                                    rdfs:subClassOf airo:AIOperator .
 
 
 ###  https://w3id.org/vair#WellbeingImpact
-vair:WellbeingImpact rdf:type owl:Class ;
+vair:WellbeingImpact rdf:type rdfs:Class, owl:Class ;
                      rdfs:subClassOf airo:Impact .
 
 
 ###  https://w3id.org/vair#WrongDataDesignChoice
-vair:WrongDataDesignChoice rdf:type owl:Class ;
+vair:WrongDataDesignChoice rdf:type rdfs:Class, owl:Class ;
                            rdfs:subClassOf vair:DataRiskSource .
 
 
@@ -8834,7 +8834,7 @@ vair:Student rdf:type owl:NamedIndividual ,
                                     vair:Concept .
 
 ###  https://w3id.org/vair#Student
-vair:Student rdf:type owl:Class ;
+vair:Student rdf:type rdfs:Class, owl:Class ;
                            rdfs:subClassOf airo:AISubject .
 
 vair:Student rdfs:comment "Refers to students at all levels "@en ;
