@@ -2368,7 +2368,7 @@ vair:AIComponent rdf:type owl:NamedIndividual ,
                           skos:Concept ,
                           vair:Concept ;
                  rdfs:isDefinedBy vair: ;
-                 skos:definition "functional element that constructs an AI system. [ISo/IEC 22989, 3.1.2]"@en ;
+                 skos:definition "functional element that constructs an AI system. [ISO/IEC 22989, 3.1.2]"@en ;
                  skos:inScheme vair: ;
                  skos:prefLabel "AI Component"@en .
 
@@ -6082,7 +6082,7 @@ vair:DegradedAccuracy rdfs:comment "Decreased level of system's accuracy resulte
 
 
 vair:Deployment terms:source "ISO/IEC 22989, 6.2.5" ;
-                rdfs:comment "Refers to deployment phase oThe AI system is installed, released or configured for operation in a target environment."@en ;
+                rdfs:comment "Refers to deployment phase when the AI system is installed, released or configured for operation in a target environment."@en ;
                 rdfs:isDefinedBy vair: ;
                 rdfs:label "Deployment"@en ;
                 skos:definition "Refers to deployment phase when the AI system is installed, released or configured for operation in a target environment."@en ;
