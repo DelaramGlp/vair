@@ -307,6 +307,12 @@
     
 
 
+    <!-- https://w3id.org/airo#LocalityOfUse -->
+
+    <owl:Class rdf:about="https://w3id.org/airo#LocalityOfUse"/>
+    
+
+
     <!-- https://w3id.org/airo#Modality -->
 
     <owl:Class rdf:about="https://w3id.org/airo#Modality"/>
@@ -346,6 +352,12 @@
     <!-- https://w3id.org/airo#Standard -->
 
     <owl:Class rdf:about="https://w3id.org/airo#Standard"/>
+    
+
+
+    <!-- https://w3id.org/airo#Technique -->
+
+    <owl:Class rdf:about="https://w3id.org/airo#Technique"/>
     
 
 
@@ -765,6 +777,14 @@
     
 
 
+    <!-- https://w3id.org/vair#ClassificationOfPeople -->
+
+    <owl:Class rdf:about="https://w3id.org/vair#ClassificationOfPeople">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Purpose"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/vair#ClassifyingEmergencyCall -->
 
     <owl:Class rdf:about="https://w3id.org/vair#ClassifyingEmergencyCall">
@@ -856,6 +876,14 @@
     
 
 
+    <!-- https://w3id.org/vair#CreatingFacialRecognitionDatabase -->
+
+    <owl:Class rdf:about="https://w3id.org/vair#CreatingFacialRecognitionDatabase">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Purpose"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/vair#CriticalInfrastructure -->
 
     <owl:Class rdf:about="https://w3id.org/vair#CriticalInfrastructure">
@@ -884,6 +912,14 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#Datasheet">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Documentation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/vair#DeceptiveTechnique -->
+
+    <owl:Class rdf:about="https://w3id.org/vair#DeceptiveTechnique">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Technique"/>
     </owl:Class>
     
 
@@ -1080,6 +1116,14 @@
     
 
 
+    <!-- https://w3id.org/vair#DetrimentalTreatment -->
+
+    <owl:Class rdf:about="https://w3id.org/vair#DetrimentalTreatment">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Impact"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/vair#Development -->
 
     <owl:Class rdf:about="https://w3id.org/vair#Development">
@@ -1108,6 +1152,14 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#DiscoveringCrimeRelationships">
         <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Detection"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/vair#DiscriminatoryTreatment -->
+
+    <owl:Class rdf:about="https://w3id.org/vair#DiscriminatoryTreatment">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Impact"/>
     </owl:Class>
     
 
@@ -1172,6 +1224,14 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#EducationalInstitution">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AIOperator"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/vair#EducationalSetting -->
+
+    <owl:Class rdf:about="https://w3id.org/vair#EducationalSetting">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#LocalityOfUse"/>
     </owl:Class>
     
 
@@ -1360,6 +1420,14 @@
     
 
 
+    <!-- https://w3id.org/vair#EvaluationOfPeople -->
+
+    <owl:Class rdf:about="https://w3id.org/vair#EvaluationOfPeople">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Assessment"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/vair#ExaminingApplication -->
 
     <owl:Class rdf:about="https://w3id.org/vair#ExaminingApplication">
@@ -1400,10 +1468,26 @@
     
 
 
+    <!-- https://w3id.org/vair#ExpandingFacialRecognitionDatabase -->
+
+    <owl:Class rdf:about="https://w3id.org/vair#ExpandingFacialRecognitionDatabase">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Purpose"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/vair#ExpertSystem -->
 
     <owl:Class rdf:about="https://w3id.org/vair#ExpertSystem">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AISystem"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/vair#ExploitationOfVulnerability -->
+
+    <owl:Class rdf:about="https://w3id.org/vair#ExploitationOfVulnerability">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Consequence"/>
     </owl:Class>
     
 
@@ -1532,6 +1616,14 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#Hardware">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AIComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/vair#Harm -->
+
+    <owl:Class rdf:about="https://w3id.org/vair#Harm">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Impact"/>
     </owl:Class>
     
 
@@ -1780,6 +1872,14 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#ImageRecognition">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AICapability"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/vair#ImpairedDecisionMaking -->
+
+    <owl:Class rdf:about="https://w3id.org/vair#ImpairedDecisionMaking">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Consequence"/>
     </owl:Class>
     
 
@@ -2342,6 +2442,14 @@
     
 
 
+    <!-- https://w3id.org/vair#MaterialDistortionOfBehaviour -->
+
+    <owl:Class rdf:about="https://w3id.org/vair#MaterialDistortionOfBehaviour">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Consequence"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/vair#MedicalAidProvider -->
 
     <owl:Class rdf:about="https://w3id.org/vair#MedicalAidProvider">
@@ -2718,6 +2826,14 @@
     
 
 
+    <!-- https://w3id.org/vair#PredictingRiskOfOffending -->
+
+    <owl:Class rdf:about="https://w3id.org/vair#PredictingRiskOfOffending">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Purpose"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/vair#Prediction -->
 
     <owl:Class rdf:about="https://w3id.org/vair#Prediction">
@@ -2830,6 +2946,14 @@
     
 
 
+    <!-- https://w3id.org/vair#PubliclyAccessibleSpace -->
+
+    <owl:Class rdf:about="https://w3id.org/vair#PubliclyAccessibleSpace">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#LocalityOfUse"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/vair#QuestionAnswering -->
 
     <owl:Class rdf:about="https://w3id.org/vair#QuestionAnswering">
@@ -2842,6 +2966,14 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#ReEvaluation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AILifecyclePhase"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/vair#RealTimeRemoteBiometricIdentification -->
+
+    <owl:Class rdf:about="https://w3id.org/vair#RealTimeRemoteBiometricIdentification">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/vair#BiometricIdentification"/>
     </owl:Class>
     
 
@@ -3254,6 +3386,14 @@
     
 
 
+    <!-- https://w3id.org/vair#SocialScoring -->
+
+    <owl:Class rdf:about="https://w3id.org/vair#SocialScoring">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AICapability"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/vair#Software -->
 
     <owl:Class rdf:about="https://w3id.org/vair#Software">
@@ -3314,6 +3454,22 @@
 
     <owl:Class rdf:about="https://w3id.org/vair#StatisticalTechnique">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AITechnique"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/vair#Student -->
+
+    <owl:Class rdf:about="https://w3id.org/vair#Student">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AISubject"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/vair#SubliminalTechnique -->
+
+    <owl:Class rdf:about="https://w3id.org/vair#SubliminalTechnique">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Technique"/>
     </owl:Class>
     
 
@@ -3446,6 +3602,14 @@
     
 
 
+    <!-- https://w3id.org/vair#UnfavourableTreatment -->
+
+    <owl:Class rdf:about="https://w3id.org/vair#UnfavourableTreatment">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Impact"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/vair#UninformedInvolvement -->
 
     <owl:Class rdf:about="https://w3id.org/vair#UninformedInvolvement">
@@ -3550,10 +3714,42 @@
     
 
 
+    <!-- https://w3id.org/vair#VulnerableGroup -->
+
+    <owl:Class rdf:about="https://w3id.org/vair#VulnerableGroup">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/vair#Group"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/vair#VulnerablePerson -->
+
+    <owl:Class rdf:about="https://w3id.org/vair#VulnerablePerson">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/vair#NaturalPerson"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/vair#WebScraping -->
+
+    <owl:Class rdf:about="https://w3id.org/vair#WebScraping">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#AICapability"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/vair#WellbeingImpact -->
 
     <owl:Class rdf:about="https://w3id.org/vair#WellbeingImpact">
         <rdfs:subClassOf rdf:resource="https://w3id.org/airo#Impact"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/vair#Workplace -->
+
+    <owl:Class rdf:about="https://w3id.org/vair#Workplace">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/airo#LocalityOfUse"/>
     </owl:Class>
     
 
@@ -3586,15 +3782,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#ActiveInvolvement -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#ActiveInvolvement">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/owl/owlapi/turtle#AssistiveAutomation -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#AssistiveAutomation">
@@ -3616,15 +3803,6 @@
     <!-- http://www.semanticweb.org/owl/owlapi/turtle#CannotOptOutOfOutput -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#CannotOptOutOfOutput">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#ChallengeOutput -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#ChallengeOutput">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -3772,7 +3950,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <skos:definition xml:lang="en">functional element that constructs an AI system. [ISo/IEC 22989, 3.1.2]</skos:definition>
+        <skos:definition xml:lang="en">functional element that constructs an AI system. [ISO/IEC 22989, 3.1.2]</skos:definition>
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">AI Component</skos:prefLabel>
     </owl:NamedIndividual>
@@ -4328,6 +4506,15 @@
     
 
 
+    <!-- https://w3id.org/vair#ClassificationOfPeople -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#ClassificationOfPeople">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#ClassifyingEmergencyCall -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#ClassifyingEmergencyCall">
@@ -4454,6 +4641,15 @@
     
 
 
+    <!-- https://w3id.org/vair#CreatingFacialRecognitionDatabase -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#CreatingFacialRecognitionDatabase">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#CriticalInfrastructure -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#CriticalInfrastructure">
@@ -4524,6 +4720,15 @@
     <!-- https://w3id.org/vair#Death -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#Death">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#DeceptiveTechnique -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#DeceptiveTechnique">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -4764,6 +4969,15 @@
     
 
 
+    <!-- https://w3id.org/vair#DetrimentalTreatment -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#DetrimentalTreatment">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#Development -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#Development">
@@ -4808,6 +5022,15 @@
     <!-- https://w3id.org/vair#DiscoveringCrimeRelationships -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#DiscoveringCrimeRelationships">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#DiscriminatoryTreatment -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#DiscriminatoryTreatment">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -4910,6 +5133,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     <!-- https://w3id.org/vair#EducationalInstitution -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#EducationalInstitution">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#EducationalSetting -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#EducationalSetting">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -5214,6 +5446,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     
 
 
+    <!-- https://w3id.org/vair#EvaluationOfPeople -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#EvaluationOfPeople">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#EvolutionaryAlgorithm -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#EvolutionaryAlgorithm">
@@ -5268,6 +5509,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     
 
 
+    <!-- https://w3id.org/vair#ExpandingFacialRecognitionDatabase -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#ExpandingFacialRecognitionDatabase">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#ExpertSystem -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#ExpertSystem">
@@ -5287,6 +5537,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Explaining Algorithm</skos:prefLabel>
         <skos:related rdf:resource="https://w3id.org/vair#Algorithm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#ExploitationOfVulnerability -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#ExploitationOfVulnerability">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
     
 
@@ -5447,6 +5706,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     <!-- https://w3id.org/vair#Hardware -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#Hardware">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#Harm -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#Harm">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -5748,6 +6016,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     <!-- https://w3id.org/vair#ImageRecognition -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#ImageRecognition">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#ImpairedDecisionMaking -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#ImpairedDecisionMaking">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -6528,6 +6805,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     
 
 
+    <!-- https://w3id.org/vair#MaterialDistortionOfBehaviour -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#MaterialDistortionOfBehaviour">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#MedicalAid -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#MedicalAid">
@@ -7139,6 +7425,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     
 
 
+    <!-- https://w3id.org/vair#PredictingRiskOfOffending -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#PredictingRiskOfOffending">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#Prediction -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#Prediction">
@@ -7327,10 +7622,6 @@ or the importer, that makes an AI system available on the Union market</skos:def
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#PubliclyAccessibleSpace">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
-        <skos:definition xml:lang="en"></skos:definition>
-        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
-        <skos:prefLabel xml:lang="en">Publicly Accessible Space</skos:prefLabel>
     </owl:NamedIndividual>
     
 
@@ -7347,6 +7638,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     <!-- https://w3id.org/vair#ReEvaluation -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#ReEvaluation">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#RealTimeRemoteBiometricIdentification -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#RealTimeRemoteBiometricIdentification">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -7884,6 +8184,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     
 
 
+    <!-- https://w3id.org/vair#SocialScoring -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#SocialScoring">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#Software -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#Software">
@@ -7959,6 +8268,24 @@ or the importer, that makes an AI system available on the Union market</skos:def
     <!-- https://w3id.org/vair#StatisticalTechnique -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#StatisticalTechnique">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#Student -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#Student">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#SubliminalTechnique -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#SubliminalTechnique">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -8176,6 +8503,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
     
 
 
+    <!-- https://w3id.org/vair#UnfavourableTreatment -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#UnfavourableTreatment">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#UninformedInvolvement -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#UninformedInvolvement">
@@ -8324,9 +8660,45 @@ or the importer, that makes an AI system available on the Union market</skos:def
     
 
 
+    <!-- https://w3id.org/vair#VulnerableGroup -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#VulnerableGroup">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#VulnerablePerson -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#VulnerablePerson">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#WebScraping -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#WebScraping">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/vair#WellbeingImpact -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/vair#WellbeingImpact">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/vair#Workplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/vair#Workplace">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdf:type rdf:resource="https://w3id.org/vair#Concept"/>
     </owl:NamedIndividual>
@@ -8795,6 +9167,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Challenge Output</skos:prefLabel>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#ClassificationOfPeople">
+        <rdfs:comment xml:lang="en">The classification of natural persons or groups of persons over a certain period of time</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Classification Of People</rdfs:label>
+        <skos:definition xml:lang="en">The classification of natural persons or groups of persons over a certain period of time</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Classification Of People</skos:prefLabel>
+        <skos:related rdf:resource="https://w3id.org/vair#SocialScoring"/>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#ClassifyingEmergencyCall">
         <rdfs:comment xml:lang="en">Classifying emergency calls by natural persons</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
@@ -8880,6 +9261,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Course Attendee</skos:prefLabel>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#CreatingFacialRecognitionDatabase">
+        <rdfs:comment xml:lang="en">Creating facial recognition databases</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Creating Facial Recognition Database</rdfs:label>
+        <skos:definition xml:lang="en">Creating facial recognition databases</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Creating Facial Recognition Database</skos:prefLabel>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#CriticalInfrastructure">
         <rdfs:comment xml:lang="en">Refers to the sector or activities that aim at provision and maintainance of critical services.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
@@ -8912,6 +9301,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:definition xml:lang="en">A form of dataset documentation</skos:definition>
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Datasheet</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#DeceptiveTechnique">
+        <terms:source>AI Act, Recital (29) </terms:source>
+        <rdfs:comment xml:lang="en">Techniques that subvert or impair a person’s autonomy, decision-making or free choice in ways that the person is not consciously aware or, where it is aware, can still be deceived or is not able to control or resist them.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Deceptive Technique</rdfs:label>
+        <skos:definition xml:lang="en">Techniques that subvert or impair a person’s autonomy, decision-making or free choice in ways that the person is not consciously aware or, where it is aware, can still be deceived or is not able to control or resist them.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Deceptive Technique</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#Decision">
         <rdfs:comment xml:lang="en">Decision generated by an AI system</rdfs:comment>
@@ -8981,7 +9379,7 @@ or the importer, that makes an AI system available on the Union market</skos:def
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#Deployment">
         <terms:source>ISO/IEC 22989, 6.2.5</terms:source>
-        <rdfs:comment xml:lang="en">Refers to deployment phase oThe AI system is installed, released or configured for operation in a target environment.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to deployment phase when the AI system is installed, released or configured for operation in a target environment.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
         <rdfs:label xml:lang="en">Deployment</rdfs:label>
         <skos:definition xml:lang="en">Refers to deployment phase when the AI system is installed, released or configured for operation in a target environment.</skos:definition>
@@ -9113,6 +9511,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Determining Credit Score</skos:prefLabel>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#DetrimentalTreatment">
+        <rdfs:comment xml:lang="en">Detrimental treatment of persons.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Detrimental Treatment</rdfs:label>
+        <skos:definition xml:lang="en">Detrimental treatment of persons.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Detrimental Treatment</skos:prefLabel>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#Development">
         <rdfs:comment xml:lang="en">Refers to the development phase in AI lifecyle</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
@@ -9147,6 +9553,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Discovering Crime Relationships</skos:prefLabel>
         <skos:related rdf:resource="https://w3id.org/vair#LawEnforcemnet"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#DiscriminatoryTreatment">
+        <rdfs:comment xml:lang="en">Discriminatory and unfair outcomes for certain individuals and groups.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Discriminatory Treatment</rdfs:label>
+        <skos:definition xml:lang="en">Discriminatory and unfair outcomes for certain individuals and groups.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Discriminatory Treatment</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#DistortionInHumanBehaviour">
         <rdfs:comment xml:lang="en">Represent distortion of human behaviour caused by AI</rdfs:comment>
@@ -9212,6 +9626,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:definition xml:lang="en">Educational institution at any level</skos:definition>
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Educational Institution</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#EducationalSetting">
+        <rdfs:comment xml:lang="en">Environment where educational activities occur, including education institutions.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Educational Setting</rdfs:label>
+        <skos:definition xml:lang="en">Environment where educational activities occur, including education institutions. </skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Educational Setting</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#EmergencyHealthCareProvider">
         <rdfs:comment xml:lang="en">Refer to emergency healthcare providers</rdfs:comment>
@@ -9409,6 +9831,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Evaluating Reliability Of Evidence In Prosecution Of Criminal Offences </skos:prefLabel>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#EvaluationOfPeople">
+        <rdfs:comment xml:lang="en">The evaluation of natural persons or groups of persons over a certain period of time</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Evaluation Of People</rdfs:label>
+        <skos:definition xml:lang="en">The evaluation of natural persons or groups of persons over a certain period of time</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Evaluation Of People</skos:prefLabel>
+        <skos:related rdf:resource="https://w3id.org/vair#SocialScoring"/>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#ExaminingApplication">
         <rdfs:comment xml:lang="en">Purposes related to examining an application</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
@@ -9453,6 +9884,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:prefLabel xml:lang="en">Examining Visa Application</skos:prefLabel>
         <skos:related rdf:resource="https://w3id.org/vair#MigrationManagement"/>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#ExpandingFacialRecognitionDatabase">
+        <rdfs:comment xml:lang="en">Expanding facial recognition databases</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Expanding Facial Recognition Database</rdfs:label>
+        <skos:definition xml:lang="en">Expanding facial recognition databases</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Expanding Facial Recognition Database</skos:prefLabel>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#ExpertSystem">
         <terms:source>ISO/IEC 22989, 3.1.13</terms:source>
         <rdfs:comment xml:lang="en">AI system that accumulates, combines and encapsulates knowledge provided by a human expert or experts in a specific domain to infer solutions to problems.</rdfs:comment>
@@ -9462,6 +9901,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Expert System</skos:prefLabel>
         <skos:related rdf:resource="https://w3id.org/vair#ReasoningTechnique"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#ExploitationOfVulnerability">
+        <rdfs:comment xml:lang="en">Exploitation of individual vulnerabilities.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Exploitation Of Vulnerability</rdfs:label>
+        <skos:definition xml:lang="en">Exploitation of individual vulnerabilities.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Exploitation Of Vulnerability</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#FaceRecognition">
         <terms:source>ISO/IEC 22989, 3.7.2</terms:source>
@@ -9597,6 +10044,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:definition xml:lang="en">Physical equipment/components</skos:definition>
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Hardware</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#Harm">
+        <rdfs:comment xml:lang="en">Harmful impacts associated with an AI system. The types of harms include physical, psychological, financial, and economic harms that may be compound with broader societal harms in certain cases.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Harm</rdfs:label>
+        <skos:definition xml:lang="en">Harmful impacts associated with an AI system. The types of harms include physical, psychological, financial, and economic harms that may be compound with broader societal harms in certain cases.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Harm</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#Health">
         <rdfs:comment xml:lang="en">Refers to an individuals&apos; health.</rdfs:comment>
@@ -9851,6 +10306,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:definition xml:lang="en">Image classification process that classifies object(s), pattern(s) or concept(s) in an image.</skos:definition>
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Image Recognition</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#ImpairedDecisionMaking">
+        <rdfs:comment xml:lang="en">Impairing the ability to make an informed decision.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Impaired Decision Making</rdfs:label>
+        <skos:definition xml:lang="en">Impairing the ability to make an informed decision.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Impaired Decision Making</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#InaccurateDecision">
         <rdfs:comment xml:lang="en">Inaccurate decision generated by the system.</rdfs:comment>
@@ -10441,6 +10904,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Manual Control</skos:prefLabel>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#MaterialDistortionOfBehaviour">
+        <rdfs:comment xml:lang="en">Materially distorting the behaviour of a person or a group of persons.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Material Distortion Of Behaviour</rdfs:label>
+        <skos:definition xml:lang="en">Materially distorting the behaviour of a person or a group of persons.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Material Distortion Of Behaviour</skos:prefLabel>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#MedicalAidProvider">
         <rdfs:comment xml:lang="en">Entity that provides medical aid</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
@@ -10839,6 +11310,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Potential Public Services Applicant</skos:prefLabel>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#PredictingRiskOfOffending">
+        <rdfs:comment xml:lang="en">Predicting Risk of Committing a Criminal Offence</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Predicting Risk Of Offending</rdfs:label>
+        <skos:definition xml:lang="en">Predicting Risk of Committing a Criminal Offence</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Predicting Risk Of Offending</skos:prefLabel>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#Prediction">
         <terms:source>ISO/IEC 22989, 3.1.27</terms:source>
         <rdfs:comment xml:lang="en">Primary output of an AI system when provided with input data or information.</rdfs:comment>
@@ -10955,6 +11434,16 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Public Services Recipient</skos:prefLabel>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#PubliclyAccessibleSpace">
+        <terms:source>AI Act, Article 3(44)</terms:source>
+        <rdfs:comment xml:lang="en">Any publicly or privately owned physical place accessible to an undetermined number of natural persons, regardless of whether certain conditions for access may apply, and regardless of the potential capacity restrictions.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Publicly Accessible Space</rdfs:label>
+        <skos:definition xml:lang="en"></skos:definition>
+        <skos:definition xml:lang="en">Any publicly or privately owned physical place accessible to an undetermined number of natural persons, regardless of whether certain conditions for access may apply, and regardless of the potential capacity restrictions</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Publicly Accessible Space</skos:prefLabel>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#QuestionAnswering">
         <terms:source>ISO/IEC 22989, 3.6.14</terms:source>
         <rdfs:comment xml:lang="en">Determining the most appropriate answer to a question provided in natural language.</rdfs:comment>
@@ -10972,6 +11461,15 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:definition xml:lang="en">After the operation and monitoring stage, based on the results of the work of the AI system, the need for a reassessment can arise.</skos:definition>
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Re-Evaluation</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#RealTimeRemoteBiometricIdentification">
+        <terms:source>AI Act, Article (42)</terms:source>
+        <rdfs:comment xml:lang="en">Capability of capturing of biometric data, the comparison and the identification all occur without a significant delay, comprising not only instant identification, but also limited short delays in order to avoid circumvention</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Real Time Remote Biometric Identification</rdfs:label>
+        <skos:definition xml:lang="en">Capability of capturing of biometric data, the comparison and the identification all occur without a significant delay, comprising not only instant identification, but also limited short delays in order to avoid circumvention.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Real Time Remote Biometric Identification</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#ReasoningTechnique">
         <rdfs:comment xml:lang="en">Refers to reasoning techniques.</rdfs:comment>
@@ -11398,6 +11896,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Social Robot</skos:prefLabel>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#SocialScoring">
+        <rdfs:comment xml:lang="en">Capability of an AI system to assign a social score to natural persons or groups of persons over a certain period of time based on their social behaviour or known, inferred or predicted personal or personality characteristics.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Social Scoring</rdfs:label>
+        <skos:definition xml:lang="en">Capability of an AI system to assign a social score to natural persons or groups of persons over a certain period of time based on their social behaviour or known, inferred or predicted personal or personality characteristics.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Social Scoring</skos:prefLabel>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#Software">
         <rdfs:comment xml:lang="en">Refers to a stand alone software system</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
@@ -11466,6 +11972,23 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:definition xml:lang="en">Refers to techniques that are based on statistics</skos:definition>
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Statistical Technique</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#Student">
+        <rdfs:comment xml:lang="en">Refers to students at all levels </rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Student</rdfs:label>
+        <skos:definition xml:lang="en">Refers to students at all levels.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Student</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#SubliminalTechnique">
+        <terms:source>AI Act, Article 5(1)(a)</terms:source>
+        <rdfs:comment xml:lang="en">Technique that operates beyond (below or above) the threshold of conscious awareness.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Subliminal Technique</rdfs:label>
+        <skos:definition xml:lang="en">Technique that operates beyond (below or above) the threshold of conscious awareness</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Subliminal Technique</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#SupervisedLearning">
         <terms:source>ISO/IEC 22989, 3.3.11</terms:source>
@@ -11600,6 +12123,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Unavailability Of Data</skos:prefLabel>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#UnfavourableTreatment">
+        <rdfs:comment xml:lang="en">Unfavourable treatment of persons.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Unfavourable Treatment</rdfs:label>
+        <skos:definition xml:lang="en">Unfavourable treatment of persons.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Unfavourable Treatment</skos:prefLabel>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#UninformedInvolvement">
         <rdfs:comment xml:lang="en">Represents that a specific actor was not informed that an AI system is in place.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
@@ -11710,6 +12241,30 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Vocational Training Institution</skos:prefLabel>
     </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#VulnerableGroup">
+        <rdfs:comment xml:lang="en">A group of persons that is in a vulnerable state due to their age, disability or a specific social or economic situation. </rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Vulnerable Group</rdfs:label>
+        <skos:definition xml:lang="en">A  group of persons that is in a vulnerable state due to their age, disability or a specific social or economic situation.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Vulnerable Group</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#VulnerablePerson">
+        <rdfs:comment xml:lang="en">An individual human being who is in a vulnerable state due to their age, disability or a specific social or economic situation. </rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Vulnerable Person</rdfs:label>
+        <skos:definition xml:lang="en">An individual human being who is in a vulnerable state due to their age, disability or a specific social or economic situation.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Vulnerable Person</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#WebScraping">
+        <rdfs:comment xml:lang="en">Capability of an AI system to extract data from the web.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Web Scraping</rdfs:label>
+        <skos:definition xml:lang="en">Capability of an AI system to extract data from the web.</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Web Scraping</skos:prefLabel>
+    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#WellbeingImpact">
         <rdfs:comment xml:lang="en">Refers to impacts that affect wellbeing</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
@@ -11717,6 +12272,14 @@ or the importer, that makes an AI system available on the Union market</skos:def
         <skos:definition xml:lang="en">Refers to impacts that affect wellbeing</skos:definition>
         <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
         <skos:prefLabel xml:lang="en">Wellbeing Impact</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/vair#Workplace">
+        <rdfs:comment xml:lang="en">Place of work</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/vair#"/>
+        <rdfs:label xml:lang="en">Workplace</rdfs:label>
+        <skos:definition xml:lang="en">Place of work</skos:definition>
+        <skos:inScheme rdf:resource="https://w3id.org/vair#"/>
+        <skos:prefLabel xml:lang="en">Workplace</skos:prefLabel>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/vair#WrongDataDesignChoice">
         <rdfs:comment xml:lang="en">Refers to the wrong choice made in the selecting datasets.</rdfs:comment>
