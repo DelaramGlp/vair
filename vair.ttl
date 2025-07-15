@@ -215,6 +215,9 @@ airo:ModeOfOutputControllability rdf:type rdfs:Class, owl:Class .
 airo:Output rdf:type rdfs:Class, owl:Class .
 
 
+###  https://w3id.org/airo#LocalityOfUse
+airo:LocalityOfUse rdf:type rdfs:Class, owl:Class .
+
 ###  https://w3id.org/airo#Purpose
 airo:Purpose rdf:type rdfs:Class, owl:Class .
 
@@ -8845,4 +8848,380 @@ vair:Student rdfs:comment "Refers to students at all levels "@en ;
                            skos:prefLabel "Student"@en .                                                               
 
 
+
+vair:EvaluationOfPeople rdf:type rdfs:Class, owl:Class ;
+                rdfs:subClassOf vair:Assessment .
+
+
+vair:EvaluationOfPeople rdf:type owl:NamedIndividual ,
+                                                        skos:Concept ,
+                                                        vair:Concept .  
+
+
+vair:EvaluationOfPeople rdfs:comment "The evaluation of natural persons or groups of persons over a certain period of time"@en ;
+                                               rdfs:isDefinedBy vair: ;
+                                               rdfs:label "Evaluation Of People"@en ;
+                                               skos:definition "The evaluation of natural persons or groups of persons over a certain period of time"@en ;
+                                               skos:inScheme vair: ;
+                                               skos:prefLabel "Evaluation Of People"@en ;
+                                               skos:related vair:SocialScoring    .   
+
+
+
+vair:ClassificationOfPeople rdf:type rdfs:Class, owl:Class ;
+                rdfs:subClassOf airo:Purpose .
+
+
+vair:ClassificationOfPeople rdf:type owl:NamedIndividual ,
+                                                        skos:Concept ,
+                                                        vair:Concept .  
+
+
+vair:ClassificationOfPeople rdfs:comment "The classification of natural persons or groups of persons over a certain period of time"@en ;
+                                               rdfs:isDefinedBy vair: ;
+                                               rdfs:label "Classification Of People"@en ;
+                                               skos:definition "The classification of natural persons or groups of persons over a certain period of time"@en ;
+                                               skos:inScheme vair: ;
+                                               skos:prefLabel "Classification Of People"@en ;
+                                               skos:related vair:SocialScoring    .       
+
+vair:PredictingRiskOfOffending rdf:type rdfs:Class, owl:Class ;
+                rdfs:subClassOf airo:Purpose .
+
+
+vair:PredictingRiskOfOffending rdf:type owl:NamedIndividual ,
+                                                        skos:Concept ,
+                                                        vair:Concept .  
+
+
+vair:PredictingRiskOfOffending rdfs:comment "Predicting Risk of Committing a Criminal Offence"@en ;
+                                               rdfs:isDefinedBy vair: ;
+                                               rdfs:label "Predicting Risk Of Offending"@en ;
+                                               skos:definition "Predicting Risk of Committing a Criminal Offence"@en ;
+                                               skos:inScheme vair: ;
+                                               skos:prefLabel "Predicting Risk Of Offending"@en .  
+
+
+vair:CreatingFacialRecognitionDatabase rdf:type rdfs:Class, owl:Class ;
+                rdfs:subClassOf airo:Purpose .
+
+
+vair:CreatingFacialRecognitionDatabase rdf:type owl:NamedIndividual ,
+                                                        skos:Concept ,
+                                                        vair:Concept .  
+
+
+vair:CreatingFacialRecognitionDatabase rdfs:comment "Creating facial recognition databases"@en ;
+                                               rdfs:isDefinedBy vair: ;
+                                               rdfs:label "Creating Facial Recognition Database"@en ;
+                                               skos:definition "Creating facial recognition databases"@en ;
+                                               skos:inScheme vair: ;
+                                               skos:prefLabel "Creating Facial Recognition Database"@en .  
+
+vair:ExpandingFacialRecognitionDatabase rdf:type rdfs:Class, owl:Class ;
+                rdfs:subClassOf airo:Purpose .
+
+
+vair:ExpandingFacialRecognitionDatabase rdf:type owl:NamedIndividual ,
+                                                        skos:Concept ,
+                                                        vair:Concept .  
+
+
+vair:ExpandingFacialRecognitionDatabase rdfs:comment "Expanding facial recognition databases"@en ;
+                                               rdfs:isDefinedBy vair: ;
+                                               rdfs:label "Expanding Facial Recognition Database"@en ;
+                                               skos:definition "Expanding facial recognition databases"@en ;
+                                               skos:inScheme vair: ;
+                                               skos:prefLabel "Expanding Facial Recognition Database"@en .                                                                                                                                                              
+
+vair:SubliminalTechnique rdf:type rdfs:Class, owl:Class ;
+                rdfs:subClassOf airo:Technique .
+
+
+vair:SubliminalTechnique rdf:type owl:NamedIndividual ,
+                                                        skos:Concept ,
+                                                        vair:Concept .  
+
+
+vair:SubliminalTechnique rdfs:comment "Technique that operates beyond (below or above) the threshold of conscious awareness."@en ;
+                                               rdfs:isDefinedBy vair: ;
+                                               rdfs:label "Subliminal Technique"@en ;
+                                               skos:definition "Technique that operates beyond (below or above) the threshold of conscious awareness"@en ;
+                                               skos:inScheme vair: ;
+                                               skos:prefLabel "Subliminal Technique"@en;
+                                               terms:source "AI Act, Article 5(1)(a)"  . 
+
+
+vair:DeceptiveTechnique rdf:type rdfs:Class, owl:Class ;
+                rdfs:subClassOf airo:Technique .
+
+
+vair:DeceptiveTechnique rdf:type owl:NamedIndividual ,
+                                                        skos:Concept ,
+                                                        vair:Concept .  
+
+
+vair:DeceptiveTechnique rdfs:comment "Techniques that subvert or impair a person’s autonomy, decision-making or free choice in ways that the person is not consciously aware or, where it is aware, can still be deceived or is not able to control or resist them."@en ;
+                                               rdfs:isDefinedBy vair: ;
+                                               rdfs:label "Deceptive Technique"@en ;
+                                               skos:definition "Techniques that subvert or impair a person’s autonomy, decision-making or free choice in ways that the person is not consciously aware or, where it is aware, can still be deceived or is not able to control or resist them."@en ;
+                                               skos:inScheme vair: ;
+                                               skos:prefLabel "Deceptive Technique"@en;
+                                               terms:source "AI Act, Recital (29) "  .    
+
+
+vair:SocialScoring rdf:type rdfs:Class, owl:Class ;
+                rdfs:subClassOf airo:AICapability .
+
+
+vair:SocialScoring rdf:type owl:NamedIndividual ,
+                                                        skos:Concept ,
+                                                        vair:Concept .  
+
+
+vair:SocialScoring rdfs:comment "Capability of an AI system to assign a social score to natural persons or groups of persons over a certain period of time based on their social behaviour or known, inferred or predicted personal or personality characteristics."@en ;
+                                               rdfs:isDefinedBy vair: ;
+                                               rdfs:label "Social Scoring"@en ;
+                                               skos:definition "Capability of an AI system to assign a social score to natural persons or groups of persons over a certain period of time based on their social behaviour or known, inferred or predicted personal or personality characteristics."@en ;
+                                               skos:inScheme vair: ;
+                                               skos:prefLabel "Social Scoring"@en . 
+
+
+vair:WebScraping rdf:type rdfs:Class, owl:Class ;
+                rdfs:subClassOf airo:AICapability .
+
+
+vair:WebScraping rdf:type owl:NamedIndividual ,
+                                                        skos:Concept ,
+                                                        vair:Concept .  
+
+
+vair:WebScraping rdfs:comment "Capability of an AI system to extract data from the web."@en ;
+                                               rdfs:isDefinedBy vair: ;
+                                               rdfs:label "Web Scraping"@en ;
+                                               skos:definition "Capability of an AI system to extract data from the web."@en ;
+                                               skos:inScheme vair: ;
+                                               skos:prefLabel "Web Scraping"@en .    
+
+vair:RealTimeRemoteBiometricIdentification rdf:type rdfs:Class, owl:Class ;
+                rdfs:subClassOf vair:BiometricIdentification .
+
+
+vair:RealTimeRemoteBiometricIdentification rdf:type owl:NamedIndividual ,
+                                                        skos:Concept ,
+                                                        vair:Concept .  
+
+
+vair:RealTimeRemoteBiometricIdentification rdfs:comment "Capability of capturing of biometric data, the comparison and the identification all occur without a significant delay, comprising not only instant identification, but also limited short delays in order to avoid circumvention"@en ;
+                                               rdfs:isDefinedBy vair: ;
+                                               rdfs:label "Real Time Remote Biometric Identification"@en ;
+                                               skos:definition "Capability of capturing of biometric data, the comparison and the identification all occur without a significant delay, comprising not only instant identification, but also limited short delays in order to avoid circumvention."@en ;
+                                               skos:inScheme vair: ;
+                                               skos:prefLabel "Real Time Remote Biometric Identification"@en;
+                                               terms:source "AI Act, Article (42)"  .  
+
+
+vair:VulnerablePerson rdf:type rdfs:Class, owl:Class ;
+                rdfs:subClassOf vair:NaturalPerson .
+
+
+vair:VulnerablePerson rdf:type owl:NamedIndividual ,
+                                                        skos:Concept ,
+                                                        vair:Concept .  
+
+
+vair:VulnerablePerson rdfs:comment "An individual human being who is in a vulnerable state due to their age, disability or a specific social or economic situation. "@en ;
+                                               rdfs:isDefinedBy vair: ;
+                                               rdfs:label "Vulnerable Person"@en ;
+                                               skos:definition "An individual human being who is in a vulnerable state due to their age, disability or a specific social or economic situation."@en ;
+                                               skos:inScheme vair: ;
+                                               skos:prefLabel "Vulnerable Person"@en  .   
+
+
+vair:VulnerableGroup rdf:type rdfs:Class, owl:Class ;
+                rdfs:subClassOf vair:Group .
+
+
+vair:VulnerableGroup rdf:type owl:NamedIndividual ,
+                                                        skos:Concept ,
+                                                        vair:Concept .  
+
+
+vair:VulnerableGroup rdfs:comment "A group of persons that is in a vulnerable state due to their age, disability or a specific social or economic situation. "@en ;
+                                               rdfs:isDefinedBy vair: ;
+                                               rdfs:label "Vulnerable Group"@en ;
+                                               skos:definition "A  group of persons that is in a vulnerable state due to their age, disability or a specific social or economic situation."@en ;
+                                               skos:inScheme vair: ;
+                                               skos:prefLabel "Vulnerable Group"@en  .         
+
+
+
+vair:Workplace rdf:type rdfs:Class, owl:Class ;
+                rdfs:subClassOf airo:LocalityOfUse .
+
+
+vair:Workplace rdf:type owl:NamedIndividual ,
+                                                        skos:Concept ,
+                                                        vair:Concept .  
+
+vair:Workplace rdfs:comment "Place of work"@en ;
+                                               rdfs:isDefinedBy vair: ;
+                                               rdfs:label "Workplace"@en ;
+                                               skos:definition "Place of work"@en ;
+                                               skos:inScheme vair: ;
+                                               skos:prefLabel "Workplace"@en  . 
+
+
+vair:EducationalSetting rdf:type rdfs:Class, owl:Class ;
+                rdfs:subClassOf airo:LocalityOfUse .
+
+
+vair:EducationalSetting  rdf:type owl:NamedIndividual ,
+                                                        skos:Concept ,
+                                                        vair:Concept .  
+
+
+vair:EducationalSetting rdfs:comment "Environment where educational activities occur, including education institutions."@en ;
+                                               rdfs:isDefinedBy vair: ;
+                                               rdfs:label "Educational Setting"@en ;
+                                               skos:definition "Environment where educational activities occur, including education institutions. "@en ;
+                                               skos:inScheme vair: ;
+                                               skos:prefLabel "Educational Setting"@en  .    
+
+
+vair:PubliclyAccessibleSpace rdf:type rdfs:Class, owl:Class ;
+                rdfs:subClassOf airo:LocalityOfUse .
+
+
+vair:PubliclyAccessibleSpace  rdf:type owl:NamedIndividual ,
+                                                        skos:Concept ,
+                                                        vair:Concept .  
+
+
+vair:PubliclyAccessibleSpace rdfs:comment "Any publicly or privately owned physical place accessible to an undetermined number of natural persons, regardless of whether certain conditions for access may apply, and regardless of the potential capacity restrictions."@en ;
+                                               rdfs:isDefinedBy vair: ;
+                                               rdfs:label "Publicly Accessible Space"@en ;
+                                               skos:definition "Any publicly or privately owned physical place accessible to an undetermined number of natural persons, regardless of whether certain conditions for access may apply, and regardless of the potential capacity restrictions"@en ;
+                                               skos:inScheme vair: ;
+                                               skos:prefLabel "Publicly Accessible Space"@en ;
+                                               terms:source "AI Act, Article 3(44)"  . 
+
+vair:ImpairedDecisionMaking rdf:type rdfs:Class, owl:Class ;
+                rdfs:subClassOf airo:Consequence .
+
+
+vair:ImpairedDecisionMaking  rdf:type owl:NamedIndividual ,
+                                                        skos:Concept ,
+                                                        vair:Concept .  
+
+
+vair:ImpairedDecisionMaking rdfs:comment "Impairing the ability to make an informed decision."@en ;
+                                               rdfs:isDefinedBy vair: ;
+                                               rdfs:label "Impaired Decision Making"@en ;
+                                               skos:definition "Impairing the ability to make an informed decision."@en ;
+                                               skos:inScheme vair: ;
+                                               skos:prefLabel "Impaired Decision Making"@en  . 
+
+
+vair:MaterialDistortionOfBehaviour rdf:type rdfs:Class, owl:Class ;
+                rdfs:subClassOf airo:Consequence .
+
+
+vair:MaterialDistortionOfBehaviour rdf:type owl:NamedIndividual ,
+                                                        skos:Concept ,
+                                                        vair:Concept .  
+
+
+vair:MaterialDistortionOfBehaviour rdfs:comment "Materially distorting the behaviour of a person or a group of persons."@en ;
+                                               rdfs:isDefinedBy vair: ;
+                                               rdfs:label "Material Distortion Of Behaviour"@en ;
+                                               skos:definition "Materially distorting the behaviour of a person or a group of persons."@en ;
+                                               skos:inScheme vair: ;
+                                               skos:prefLabel "Material Distortion Of Behaviour"@en  .                                                                                                                
+
+
+vair:ExploitationOfVulnerability rdf:type rdfs:Class, owl:Class ;
+                rdfs:subClassOf airo:Consequence .
+
+
+vair:ExploitationOfVulnerability rdf:type owl:NamedIndividual ,
+                                                        skos:Concept ,
+                                                        vair:Concept .  
+
+
+vair:ExploitationOfVulnerability rdfs:comment "Exploitation of individual vulnerabilities."@en ;
+                                               rdfs:isDefinedBy vair: ;
+                                               rdfs:label "Exploitation Of Vulnerability"@en ;
+                                               skos:definition "Exploitation of individual vulnerabilities."@en ;
+                                               skos:inScheme vair: ;
+                                               skos:prefLabel "Exploitation Of Vulnerability"@en  .                                                                 
+
+
+vair:Harm rdf:type rdfs:Class, owl:Class ;
+                rdfs:subClassOf airo:Impact .
+
+
+vair:Harm rdf:type owl:NamedIndividual ,
+                                                        skos:Concept ,
+                                                        vair:Concept .  
+
+
+vair:Harm rdfs:comment "Harmful impacts associated with an AI system. The types of harms include physical, psychological, financial, and economic harms that may be compound with broader societal harms in certain cases."@en ;
+                                               rdfs:isDefinedBy vair: ;
+                                               rdfs:label "Harm"@en ;
+                                               skos:definition "Harmful impacts associated with an AI system. The types of harms include physical, psychological, financial, and economic harms that may be compound with broader societal harms in certain cases."@en ;
+                                               skos:inScheme vair: ;
+                                               skos:prefLabel "Harm"@en  . 
+
+
+vair:DiscriminatoryTreatment rdf:type rdfs:Class, owl:Class ;
+                rdfs:subClassOf airo:Impact .
+
+
+vair:DiscriminatoryTreatment rdf:type owl:NamedIndividual ,
+                                                        skos:Concept ,
+                                                        vair:Concept .  
+
+
+vair:DiscriminatoryTreatment rdfs:comment "Discriminatory and unfair outcomes for certain individuals and groups."@en ;
+                                               rdfs:isDefinedBy vair: ;
+                                               rdfs:label "Discriminatory Treatment"@en ;
+                                               skos:definition "Discriminatory and unfair outcomes for certain individuals and groups."@en ;
+                                               skos:inScheme vair: ;
+                                               skos:prefLabel "Discriminatory Treatment"@en  .  
+
+
+ vair:DetrimentalTreatment rdf:type rdfs:Class, owl:Class ;
+                rdfs:subClassOf airo:Impact .
+
+
+vair:DetrimentalTreatment rdf:type owl:NamedIndividual ,
+                                                        skos:Concept ,
+                                                        vair:Concept .  
+
+
+vair:DetrimentalTreatment rdfs:comment "Detrimental treatment of persons."@en ;
+                                               rdfs:isDefinedBy vair: ;
+                                               rdfs:label "Detrimental Treatment"@en ;
+                                               skos:definition "Detrimental treatment of persons."@en ;
+                                               skos:inScheme vair: ;
+                                               skos:prefLabel "Detrimental Treatment"@en  .
+
+
+vair:UnfavourableTreatment rdf:type rdfs:Class, owl:Class ;
+                rdfs:subClassOf airo:Impact .
+
+
+vair:UnfavourableTreatment rdf:type owl:NamedIndividual ,
+                                                        skos:Concept ,
+                                                        vair:Concept .  
+
+
+vair:UnfavourableTreatment rdfs:comment "Unfavourable treatment of persons."@en ;
+                                               rdfs:isDefinedBy vair: ;
+                                               rdfs:label "Unfavourable Treatment"@en ;
+                                               skos:definition "Unfavourable treatment of persons."@en ;
+                                               skos:inScheme vair: ;
+                                               skos:prefLabel "Unfavourable Treatment"@en  .
+                                                                                                                                                                                                                                                          
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
